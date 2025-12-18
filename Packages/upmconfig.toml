@@ -1,0 +1,10 @@
+[npmRegistry]
+url = "https://registry.npmjs.org"
+
+[npmScopedRegistries."com.unity"]
+url = "https://packages.unity.com"
+scopes = ["com.unity"]
+
+[npmScopedRegistries."com.unity.modules"]
+url = "https://packages.unity.com"
+scopes = ["com.unity.modules"]

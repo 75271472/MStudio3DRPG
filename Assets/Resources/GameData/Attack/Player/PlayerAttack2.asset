@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce11b6d208c105247ba61133149aba42, type: 3}
+  m_Name: PlayerAttack2
+  m_EditorClassIdentifier: 
+  actionName: Attack2
+  transitionDuration: 0.1
+  comboStateIndex: -1
+  comboAttackTime: 0.6
+  damage: 10
+  criticalMultipler: 2
+  criticalRate: 0.4
+  attackRange: 1.3
+  attackAngle: 10
+  attackDieCoeff: 1
+  attackEffectInfo:
+    duration: 1.4
+    force: 0
+    forceVect: {x: 1.1089631, y: 0, z: 1.7555032}
+    attacker: {fileID: 0}
+  attackEffectList:
+  - {fileID: 0}

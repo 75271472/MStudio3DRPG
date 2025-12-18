@@ -1,0 +1,57 @@
+[
+    {
+        "id": 0,
+        "name": "slimeGuard",
+        "defaultSpeed": 1.5,
+        "stopDistance": 0.5,
+        "angularSpeed": 800,
+        "acceleration": 80,
+        "moveType": 0,
+        "chaseSpeed": 2.5,
+        "waitTime": 1.5
+    },
+    {
+        "id": 1,
+        "name": "slimePatrol",
+        "defaultSpeed": 1.5,
+        "stopDistance": 0.5,
+        "angularSpeed": 800,
+        "acceleration": 80,
+        "moveType": 1,
+        "chaseSpeed": 2.5,
+        "waitTime": 1.5
+    },
+    {
+        "id": 2,
+        "name": "turtleGuard",
+        "defaultSpeed": 1.5,
+        "stopDistance": 0.5,
+        "angularSpeed": 800,
+        "acceleration": 80,
+        "moveType": 1,
+        "chaseSpeed": 2.5,
+        "waitTime": 1.5
+    },
+    {
+        "id": 3,
+        "name": "gruntGuard",
+        "defaultSpeed": 1.5,
+        "stopDistance": 0.5,
+        "angularSpeed": 800,
+        "acceleration": 80,
+        "moveType": 0,
+        "chaseSpeed": 2.5,
+        "waitTime": 1.5
+    },
+    {
+        "id": 4,
+        "name": "golemGuard",
+        "defaultSpeed": 1.5,
+        "stopDistance": 0.5,
+        "angularSpeed": 800,
+        "acceleration": 80,
+        "moveType": 0,
+        "chaseSpeed": 2.5,
+        "waitTime": 1.5
+    }
+]

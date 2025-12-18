@@ -1,0 +1,195 @@
+[
+    {
+        "id": 0,
+        "questName": "采集蘑菇",
+        "description": "雷蒙长官让我采集一个普通蘑菇和一个毒蘑菇",
+        "questRequireInfos": [
+            {
+                "name": "Mushroom1",
+                "requireAmount": 1,
+                "requireType": 1
+            },
+            {
+                "name": "Mushroom2",
+                "requireAmount": 1,
+                "requireType": 1
+            }
+        ],
+        "rewardItemInfos": [
+            {
+                "itemInfoType": 0,
+                "quantity": 3,
+                "itemId": 0,
+                "index": 0
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "questName": "初试锋芒",
+        "description": "雷蒙长官让我击杀一个史莱姆和一个海龟",
+        "questRequireInfos": [
+            {
+                "name": "Slime",
+                "requireAmount": 1,
+                "requireType": 0
+            },
+            {
+                "name": "Turtle",
+                "requireAmount": 1,
+                "requireType": 0
+            }
+        ],
+        "rewardItemInfos": [
+            {
+                "itemInfoType": 1,
+                "quantity": 1,
+                "itemId": 0,
+                "index": 0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "questName": "Quest2",
+        "description": "Quest2的描述\n多行描述\n多行描述",
+        "questRequireInfos": [
+            {
+                "name": "Slime",
+                "requireAmount": 3,
+                "requireType": 0
+            },
+            {
+                "name": "Turtle",
+                "requireAmount": 3,
+                "requireType": 0
+            }
+        ],
+        "rewardItemInfos": [
+            {
+                "itemInfoType": 0,
+                "quantity": 10,
+                "itemId": 0,
+                "index": 0
+            },
+            {
+                "itemInfoType": 1,
+                "quantity": 3,
+                "itemId": 0,
+                "index": 1
+            },
+            {
+                "itemInfoType": 1,
+                "quantity": 3,
+                "itemId": 2,
+                "index": 1
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "questName": "Quest3",
+        "description": "Quest3的描述\n多行描述\n多行描述\n多行描述",
+        "questRequireInfos": [
+            {
+                "name": "Slime",
+                "requireAmount": 3,
+                "requireType": 0
+            },
+            {
+                "name": "Turtle",
+                "requireAmount": 4,
+                "requireType": 0
+            }
+        ],
+        "rewardItemInfos": [
+            {
+                "itemInfoType": 0,
+                "quantity": 1,
+                "itemId": 0,
+                "index": 3
+            },
+            {
+                "itemInfoType": 1,
+                "quantity": 3,
+                "itemId": 2,
+                "index": 1
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "questName": "Quest4",
+        "description": "Quest4的单行描述",
+        "questRequireInfos": [
+            {
+                "name": "Slime",
+                "requireAmount": 3,
+                "requireType": 0
+            },
+            {
+                "name": "Turtle",
+                "requireAmount": 5,
+                "requireType": 0
+            }
+        ],
+        "rewardItemInfos": [
+            {
+                "itemInfoType": 1,
+                "quantity": 3,
+                "itemId": 2,
+                "index": 1
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "questName": "Quest5",
+        "description": "Quest5的描述\n多行描述\n多行描述\n多行描述\n多行描述",
+        "questRequireInfos": [
+            {
+                "name": "Slime",
+                "requireAmount": 3,
+                "requireType": 0
+            },
+            {
+                "name": "Turtle",
+                "requireAmount": 6,
+                "requireType": 0
+            }
+        ],
+        "rewardItemInfos": [
+            {
+                "itemInfoType": 0,
+                "quantity": 1,
+                "itemId": 0,
+                "index": 5
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "questName": "Quest6",
+        "description": "Quest6的描述\n多行描述\n多行描述\n多行描述\n多行描述",
+        "questRequireInfos": [
+            {
+                "name": "Mushroom1",
+                "requireAmount": 1,
+                "requireType": 1
+            },
+            {
+                "name": "Mushroom2",
+                "requireAmount": 1,
+                "requireType": 1
+            }
+        ],
+        "rewardItemInfos": [
+            {
+                "itemInfoType": 0,
+                "quantity": 1,
+                "itemId": 0,
+                "index": 6
+            }
+        ]
+    }
+]

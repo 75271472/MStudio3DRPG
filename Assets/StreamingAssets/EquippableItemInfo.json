@@ -1,0 +1,41 @@
+[
+    {
+        "id": 0,
+        "itemType": 1,
+        "isStackable": false,
+        "name": "Sword",
+        "maxStackSize": 1,
+        "imgPath": "Sprites/Sword",
+        "description": "这是一把普通的剑",
+        "equippableItemType": 1,
+        "attackRangeFactor": 1,
+        "weaponPrefabPath": "Prefabs/Weapon/Sword",
+        "attackInfoId": 5
+    },
+    {
+        "id": 1,
+        "itemType": 1,
+        "isStackable": false,
+        "name": "Fist",
+        "maxStackSize": 1,
+        "imgPath": "Sprites/Fist",
+        "description": "拳头",
+        "equippableItemType": 1,
+        "attackRangeFactor": 0.65,
+        "weaponPrefabPath": "Prefabs/Weapon/Fist",
+        "attackInfoId": 0
+    },
+    {
+        "id": 2,
+        "itemType": 1,
+        "isStackable": false,
+        "name": "Shield",
+        "maxStackSize": 1,
+        "imgPath": "Sprites/Shield",
+        "description": "这是一个普通的盾牌",
+        "equippableItemType": 2,
+        "attackRangeFactor": 0.65,
+        "weaponPrefabPath": "Prefabs/Weapon/Shield",
+        "attackInfoId": -1
+    }
+]

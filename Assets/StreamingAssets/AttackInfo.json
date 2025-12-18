@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "name": "DefaultPlayerAttackInfo",
+        "damage": 5,
+        "criticalMultipler": 2,
+        "criticalRate": 0.3
+    },
+    {
+        "id": 1,
+        "name": "DefaultSlimeBaseAttackInfo",
+        "damage": 10,
+        "criticalMultipler": 2,
+        "criticalRate": 0.3
+    },
+    {
+        "id": 2,
+        "name": "DefaultTurtleBaseAttackInfo",
+        "damage": 10,
+        "criticalMultipler": 2,
+        "criticalRate": 0.3
+    },
+    {
+        "id": 3,
+        "name": "DefaultGruntBaseAttackInfo",
+        "damage": 10,
+        "criticalMultipler": 2,
+        "criticalRate": 0.3
+    },
+    {
+        "id": 4,
+        "name": "DefaultGolemBaseAttackInfo",
+        "damage": 10,
+        "criticalMultipler": 2,
+        "criticalRate": 0.3
+    },
+    {
+        "id": 5,
+        "name": "DefaultSwordAttackInfo",
+        "damage": 10,
+        "criticalMultipler": 2,
+        "criticalRate": 0.3
+    }
+]

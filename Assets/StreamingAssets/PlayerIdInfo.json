@@ -1,0 +1,10 @@
+[
+    {
+        "id": 0,
+        "name": "player",
+        "moveInfoId": 0,
+        "stateInfoId": 0,
+        "attackInfoId": 1,
+        "defaultWeaponInfoId": 1
+    }
+]

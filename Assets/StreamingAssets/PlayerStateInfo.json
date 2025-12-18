@@ -1,0 +1,13 @@
+[
+    {
+        "id": 0,
+        "name": "player",
+        "maxHealth": 100000,
+        "health": 100000,
+        "currentLevel": 1,
+        "maxLevel": 30,
+        "baseExp": 30,
+        "currentExp": 0,
+        "levelBuff": 0.1
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "name": "DefaultSlimeBaseStateInfo",
+        "health": 1,
+        "point": 8
+    },
+    {
+        "id": 1,
+        "name": "DefaultTurtleBaseStateInfo",
+        "health": 50,
+        "point": 15
+    },
+    {
+        "id": 2,
+        "name": "DefaultGruntBaseStateInfo",
+        "health": 10000,
+        "point": 50
+    },
+    {
+        "id": 3,
+        "name": "DefaultGolemBaseStateInfo",
+        "health": 1000,
+        "point": 100
+    }
+]

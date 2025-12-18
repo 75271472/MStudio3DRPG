@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "name": "Slime",
+        "moveInfoId": 0,
+        "stateInfoId": 0,
+        "attackInfoId": 1
+    },
+    {
+        "id": 1,
+        "name": "Turtle",
+        "moveInfoId": 2,
+        "stateInfoId": 1,
+        "attackInfoId": 2
+    },
+    {
+        "id": 2,
+        "name": "Grunt",
+        "moveInfoId": 3,
+        "stateInfoId": 2,
+        "attackInfoId": 3
+    },
+    {
+        "id": 3,
+        "name": "Golem",
+        "moveInfoId": 4,
+        "stateInfoId": 3,
+        "attackInfoId": 4
+    }
+]

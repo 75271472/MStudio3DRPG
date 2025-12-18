@@ -1,0 +1,66 @@
+[
+    {
+        "id": 0,
+        "isStackable": true,
+        "itemType": 0,
+        "name": "Apple",
+        "maxStackSize": 99,
+        "imgPath": "Sprites/Apple",
+        "description": "这是一颗苹果",
+        "modifierInfos": [
+            {
+                "modifierType": "Health",
+                "value": 30
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "isStackable": true,
+        "itemType": 0,
+        "name": "Pear",
+        "maxStackSize": 99,
+        "imgPath": "Sprites/Pear",
+        "description": "这是一颗梨",
+        "modifierInfos": [
+            {
+                "modifierType": "Health",
+                "value": 10
+            },
+            {
+                "modifierType": "Strength",
+                "value": 10
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "isStackable": true,
+        "itemType": 0,
+        "name": "Mushroom1",
+        "maxStackSize": 99,
+        "imgPath": "Sprites/Mushroom1",
+        "description": "这是一颗有毒的蘑菇",
+        "modifierInfos": [
+            {
+                "modifierType": "HealthDamage",
+                "value": 25
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "isStackable": true,
+        "itemType": 0,
+        "name": "Mushroom2",
+        "maxStackSize": 99,
+        "imgPath": "Sprites/Mushroom2",
+        "description": "这是一颗普通的蘑菇",
+        "modifierInfos": [
+            {
+                "modifierType": "Health",
+                "value": 25
+            }
+        ]
+    }
+]

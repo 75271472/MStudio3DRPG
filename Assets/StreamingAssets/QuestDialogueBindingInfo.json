@@ -1,0 +1,16 @@
+[
+    {
+        "npcId": 0,
+        "questId": 0,
+        "notAcceptedDialogueId": 0,
+        "startDialogueId": 5,
+        "completeDialogueId": 8
+    },
+    {
+        "npcId": 0,
+        "questId": 1,
+        "notAcceptedDialogueId": 11,
+        "startDialogueId": 11,
+        "completeDialogueId": 11
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "id": 0,
+        "name": "player",
+        "defaultSpeed": 5,
+        "stopDistance": 0.3,
+        "angularSpeed": 800,
+        "acceleration": 40
+    }
+]

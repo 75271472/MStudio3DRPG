@@ -1,0 +1,299 @@
+[
+    {
+        "id": 0,
+        "name": "task0-NotAccepted",
+        "text": "喂，那边那个新来的！站住！我看你脚步虚浮，两眼发直，是不是三天没吃饭了？",
+        "dialogueOptionList": [
+            {
+                "text": "确实...快饿晕了。",
+                "targetId": 1,
+                "isTakeTask": false
+            },
+            {
+                "text": "我不饿，我可是很强的！",
+                "targetId": 2,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 1,
+        "name": "task0-NotAccepted",
+        "text": "哼，算你诚实。在这个森林里，不懂得找吃的，还没见到怪物就先饿死了。",
+        "dialogueOptionList": [
+            {
+                "text": "你能教我生存的方法吗？",
+                "targetId": 3,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 2,
+        "name": "task0-NotAccepted",
+        "text": "强？哈！别逗了。上一个像你这么说话的新手，因为误食毒蘑菇，现在还在医务室里口吐白沫呢。",
+        "dialogueOptionList": [
+            {
+                "text": "呃...毒蘑菇？。",
+                "targetId": 3,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 3,
+        "name": "task0-NotAccepted",
+        "text": "听好了，去村外的树林采集些普通蘑菇和毒蘑菇回来。红色的能吃，紫色的虽然有毒，但药剂师很需要。",
+        "dialogueOptionList": [
+            {
+                "text": "为了肚子，交给我吧！",
+                "targetId": -1,
+                "isTakeTask": true
+            },
+            {
+                "text": "白干活吗？有报酬吗？",
+                "targetId": 4,
+                "isTakeTask": false
+            }
+        ],
+        "questId": 0
+    },
+    {
+        "id": 4,
+        "name": "task0-NotAccepted",
+        "text": "啧，真是个贪心的小鬼。如果你能带回来，我这里有个刚摘的红苹果赏给你。吃了它能恢复生命值，这总行了吧？",
+        "dialogueOptionList": [
+            {
+                "text": "成交！为了苹果！",
+                "targetId": -1,
+                "isTakeTask": true
+            },
+            {
+                "text": "我再考虑考虑。",
+                "targetId": -1,
+                "isTakeTask": false
+            }
+        ],
+        "questId": 0
+    },
+    {
+        "id": 5,
+        "name": "task0-Start",
+        "text": "你怎么又回来了？两手空空的，难道是想请我吃空气蘑菇吗？",
+        "dialogueOptionList": [
+            {
+                "text": "我不小心忘了它们长什么样...",
+                "targetId": 8,
+                "isTakeTask": false
+            },
+            {
+                "text": "我只是回来歇一口气。",
+                "targetId": 9,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 6,
+        "name": "task0-Start",
+        "text": "（雷蒙重重地叹了口气）听好了，把耳朵竖起来！\n普通蘑菇是单调的灰色，毒蘑菇是鲜艳的红色。\n别再让我重复第三遍，快去！",
+        "dialogueOptionList": [
+            {
+                "text": "这次记住了，长官！",
+                "targetId": -1,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 7,
+        "name": "task0-Start",
+        "text": "休息？在战场上，敌人可不会给你休息的时间！趁太阳还没下山，快滚回树林里去干活！",
+        "dialogueOptionList": [
+            {
+                "text": "这就去！",
+                "targetId": -1,
+                "isTakeTask": true
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 8,
+        "name": "task0-Complete",
+        "text": "回来了？让我看看你的背囊...嗯…",
+        "dialogueOptionList": [
+            {
+                "text": "都在这了，长官。",
+                "targetId": 9,
+                "isTakeTask": false
+            },
+            {
+                "text": "应该...没采错吧？",
+                "targetId": 9,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 9,
+        "name": "task0-Complete",
+        "text": "雷蒙仔细检查了每一朵蘑菇）不错，分拣得很完美。看来你已经掌握了野外生存的第一课：不要把看起来鲜艳的东西随便塞进嘴里。",
+        "dialogueOptionList": [
+            {
+                "text": "那是当然。",
+                "targetId": 10,
+                "isTakeTask": false
+            },
+            {
+                "text": "谢谢指导。",
+                "targetId": 10,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 10,
+        "name": "task0-Complete",
+        "text": "干得好。拿去吧，这是之前承诺的红苹果。记住，在这个危险的世界里，保持健康的血量（HP）往往比拥有利剑更重要。",
+        "dialogueOptionList": [
+            {
+                "text": "谢谢雷蒙队长！",
+                "targetId": -1,
+                "isTakeTask": true
+            }
+        ],
+        "questId": 0
+    },
+    {
+        "id": 11,
+        "name": "task1-NotAccepted",
+        "text": "看来那个苹果让你恢复了不少精神。既然吃饱了，就别赖在这儿晒太阳了。",
+        "dialogueOptionList": [
+            {
+                "text": "我想找点更有挑战性的事做。",
+                "targetId": 12,
+                "isTakeTask": false
+            },
+            {
+                "text": "我的拳头已经挥腻了。",
+                "targetId": 12,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 12,
+        "name": "task1-NotAccepted",
+        "text": "口气不小。正好，最近商队投诉，说村口的路被一群史莱姆(Slime)和海龟(Turtle)堵住了。那些粘糊糊的东西虽然不强，但实在太烦人了。",
+        "dialogueOptionList": [
+            {
+                "text": "史莱姆？听起来很好欺负。",
+                "targetId": 13,
+                "isTakeTask": false
+            },
+            {
+                "text": "海龟？它们的壳似乎很硬。",
+                "targetId": 14,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 13,
+        "name": "task1-NotAccepted",
+        "text": "别大意！史莱姆的粘液会减缓你的速度，如果你被包围，连跑都跑不掉。战场上死得最快的往往是那些自以为是的家伙。",
+        "dialogueOptionList": [
+            {
+                "text": "呃...我会注意的。",
+                "targetId": 15,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 14,
+        "name": "task1-NotAccepted",
+        "text": "观察力不错。对付海龟不能硬砍，要抓住它们攻击时的破绽，或者绕到侧面。看来你有成为战士的潜质。",
+        "dialogueOptionList": [
+            {
+                "text": "受教了。",
+                "targetId": 15,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 15,
+        "name": "task1-NotAccepted",
+        "text": "去清理掉它们。如果你能证明自己不是个只会采蘑菇的农夫，我就把你手里那根破木棍换成一把真正的铁剑。",
+        "dialogueOptionList": [
+            {
+                "text": "为了铁剑，冲啊！",
+                "targetId": -1,
+                "isTakeTask": true
+            },
+            {
+                "text": "那些怪物看起来太恶心了...",
+                "targetId": -1,
+                "isTakeTask": false
+            }
+        ],
+        "questId": 1
+    },
+    {
+        "id": 16,
+        "name": "task1-Start",
+        "text": "怎么，被乌龟打得找不着北？还是被史莱姆粘住了脚？商队还在等着通车呢，不要浪费时间！",
+        "dialogueOptionList": [
+            {
+                "text": "这怪物比我想象的难缠...",
+                "targetId": 17,
+                "isTakeTask": true
+            },
+            {
+                "text": "那些怪物看起来太恶心了...",
+                "targetId": 16,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 17,
+        "name": "task1-Start",
+        "text": "所以我刚才说了不要蛮干！\n史莱姆的粘液很烦人，注意保持距离；\n海龟缩壳的时候防御力极高，别浪费力气砍龟壳，等它伸出头或者攻击后的僵直时间再打！",
+        "dialogueOptionList": [
+            {
+                "text": "这次记住了！",
+                "targetId": -1,
+                "isTakeTask": false
+            }
+        ],
+        "questId": -1
+    },
+    {
+        "id": 18,
+        "name": "task1-Start",
+        "text": "磨刀？我看你是在磨洋工！\n快去！在天黑之前把路清理出来，否则那把铁剑我就送给隔壁村的二傻子了！",
+        "dialogueOptionList": [
+            {
+                "text": "为别！我这就去！",
+                "targetId": -1,
+                "isTakeTask": true
+            }
+        ],
+        "questId": -1
+    }
+]
