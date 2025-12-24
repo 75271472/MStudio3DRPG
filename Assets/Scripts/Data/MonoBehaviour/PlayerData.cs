@@ -88,6 +88,13 @@ public class PlayerData : CharacterData
         base.CharacterDataInit(PlayerManager.Instance);
     }
 
+    // 重置攻击武器，
+    public void OnResetEquipEventInvoke()
+    {
+        // 卸下当前武器，让广播默认武器
+        OnUnloadHandler(PlayerWeaponInfo);
+    }
+
     public void OnEquipEventInvoke()
     {
         InventoryController.UpdateEquipEvent();

@@ -49,8 +49,8 @@ public class HotInventoryPanel : BaseInventoryPanel
             hotInventoryBK = GetComponentInChildren<HotInventoryBK>();
         }
 
-        hotInventoryBK.OnPointerEnterEvent += OnPointerEnterHandler;
-        hotInventoryBK.OnPointerExitEvent += OnPointerExitHandler;
+        //hotInventoryBK.OnPointerEnterEvent += OnPointerEnterHandler;
+        //hotInventoryBK.OnPointerExitEvent += OnPointerExitHandler;
 
         InputManager.Instance.OnHotItemEvent += OnHotItemHandler;
     }

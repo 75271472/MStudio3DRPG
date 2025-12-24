@@ -135,6 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dfb71a0e44fda748a2b5ff2028970bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &5584862763773526424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,8 +204,7 @@ MonoBehaviour:
   <AttackComboList>k__BackingField:
     attackComboList:
     - {fileID: 11400000, guid: 710fa7b53a2cf9a449e092594a20134a, type: 2}
-    - {fileID: 11400000, guid: c9e944503483b3149b4c4bba1fe07998, type: 2}
-  <Id>k__BackingField: 0
+  <MonsterInfoId>k__BackingField: 0
 --- !u!114 &859354064940920860
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,6 +20,7 @@ public class InventoryController : MonoBehaviour
     public const int PlayerStateItemQuantity = 2;
 
     public event Action<InventoryItemInfo> OnCheckItemEvent;
+    // 装备物品事件，供PlayerData监听执行OnEnqupHandler，在执行OnEquipItemEvent将消息分发给外部
     public event Action<EquippableItemInfo> OnEquipEvent, 
     // 此时OnUnloadEvent中传入的itemInfo为空，StateItemUI中的物品已被卸下后
     // 执行该回调
@@ -175,13 +176,13 @@ public class InventoryController : MonoBehaviour
 
     public void OnPlayerPauseHandler()
     {
-        PlayerManager.Instance.PlayerStateMachine.Pause();
+        //PlayerManager.Instance.PlayerStateMachine.Pause();
     }
 
     public void OnPlayerUnPauseHandler()
     {
         if (IsPanelOpen) return;
-        PlayerManager.Instance.PlayerStateMachine.UnPause();
+        //PlayerManager.Instance.PlayerStateMachine.UnPause();
     }
 
     public int AddItem(InventoryItemInfo inventoryItemInfo)

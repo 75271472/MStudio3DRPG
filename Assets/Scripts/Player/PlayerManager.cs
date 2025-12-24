@@ -30,10 +30,6 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         PlayerStateMachine.CharacterStateMachineInit(this);
         PlayerUI.PlayerInit(this, PlayerData);
 
-        // 不在这里进行切换武器的事件注册，而是在PlayerStateMachine.Init中
-        // 在执行WeaponHandler.SetWeapon之前进行事件注册
-        // 因为SetWeapon执行就会触发事件，而那时还没有注册事件
-        //PlayerData.SwitchWeaponRegist(PlayerStateMachine.WeaponHandler);
         PlayerData.OnPickUpEvent += (inventoryItemInfo) => 
             OnPickUpEvent?.Invoke(inventoryItemInfo);
         PlayerData.HealthEventRegist(PlayerStateMachine.Health);
@@ -42,6 +38,8 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         PlayerUI.CharacterDataEventRegist(PlayerData);
         PlayerUI.UpdateExpRegist(PlayerData);
 
+        // 装备武器前先保障装备了默认武器
+        PlayerData.OnResetEquipEventInvoke();
         // 所有时间注册结束后执行一次PlayerData.OnEquipEvent
         // 更新WeaponHandler和AttackComboList
         PlayerData.OnEquipEventInvoke();

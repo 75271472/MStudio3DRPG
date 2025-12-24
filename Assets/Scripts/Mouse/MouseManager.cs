@@ -14,6 +14,7 @@ public class MouseManager : MonoBehaviourManager<MouseManager>
     private GroundTarget groundTarget;
     private MouseCursor mouseCursor;
     private RaycastHit hitInfo;
+    private bool isOverUI;
 
     public void MouseManagerInit()
     {
@@ -33,6 +34,9 @@ public class MouseManager : MonoBehaviourManager<MouseManager>
 
     private void Update()
     {
+        // 【新增逻辑】在 Update 中检测并缓存 UI 状态
+        // Update 运行在 Input 事件处理之后，此时查询是安全的
+        UpdateIsOverUI();
         UpdateHitInfo();
         UpdateMouseCursor();
     }
@@ -40,6 +44,12 @@ public class MouseManager : MonoBehaviourManager<MouseManager>
     private void OnDestroy()
     {
         OnMoveEvent = null;
+    }
+
+    private void UpdateIsOverUI()
+    {
+        isOverUI = EventSystem.current != null && 
+            EventSystem.current.IsPointerOverGameObject();
     }
 
     private void UpdateHitInfo()
@@ -60,6 +70,12 @@ public class MouseManager : MonoBehaviourManager<MouseManager>
 
     private void UpdateMouseCursor()
     {
+        if (isOverUI)
+        {
+            mouseCursor.SwitchCursor(EMouseCursor.Arrow);
+            return;
+        }
+        
         if (hitInfo.collider == null) return;
 
         switch (hitInfo.collider.tag)
@@ -91,6 +107,7 @@ public class MouseManager : MonoBehaviourManager<MouseManager>
 
     private void OnMoveHandler()
     {
+        if (isOverUI) return;
         if (hitInfo.collider == null) return;
 
         StopAllCoroutines();
