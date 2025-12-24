@@ -5,6 +5,8 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+# 忽略 Assets/AssetPacks文件夹
+/Assets/AssetPacks/
 
 # Visual Studio cache directory
 .vs/
