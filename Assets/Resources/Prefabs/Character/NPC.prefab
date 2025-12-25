@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1137659798040538171}
   - component: {fileID: 7745602180201383964}
   m_Layer: 17
-  m_Name: CharacterCamera
+  m_Name: ProfileCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <AttackComboList>k__BackingField:
     attackComboList: []
+  NPCIdInfoId: 0
 --- !u!114 &5516766878660354409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,46 +2296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9bd9b50cada475419bdd20325697f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultDialogueIndex: 0
   profileTexture: {fileID: 8400000, guid: 98488938d3878454eb38ffc381ce259d, type: 2}
-  npcName: "\u5B88\u536B\u961F\u957F-\u96F7\u8499"
-  questDialogueBindings:
-  - questId: 0
-    questState: 0
-    dialogueIndex: 0
-  - questId: 0
-    questState: 1
-    dialogueIndex: 1
-  - questId: 0
-    questState: 2
-    dialogueIndex: 2
-  - questId: 1
-    questState: 0
-    dialogueIndex: 3
-  - questId: 1
-    questState: 1
-    dialogueIndex: 4
-  - questId: 1
-    questState: 2
-    dialogueIndex: 5
-  - questId: 2
-    questState: 0
-    dialogueIndex: 6
-  - questId: 2
-    questState: 1
-    dialogueIndex: 7
-  - questId: 2
-    questState: 2
-    dialogueIndex: 8
-  - questId: 3
-    questState: 0
-    dialogueIndex: 9
-  - questId: 3
-    questState: 1
-    dialogueIndex: 10
-  - questId: 3
-    questState: 2
-    dialogueIndex: 11
 --- !u!1 &8294845925672446051
 GameObject:
   m_ObjectHideFlags: 0

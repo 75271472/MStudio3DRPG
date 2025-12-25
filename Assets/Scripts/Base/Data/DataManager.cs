@@ -12,7 +12,6 @@ public class IntInfo
 {
     public int value;
 }
-
 public class CharacterTransInfo
 {
     public bool IsEmpty => positionArray == null || rotationArray == null;
@@ -114,6 +113,8 @@ public class DataManager : BaseManager<DataManager>
     public const string NPCIDINFO = "NPCIdInfo";
     public const string DIALOGUEPIECEINFO = "DialoguePieceInfo";
     public const string QUESTDIALOGUEBINDINGINFO = "QuestDialogueBindingInfo";
+    public const string CONDITIONDIALOGUEPIECEINFO = "ConditionDialoguePieceInfo";
+    public const string CONDITIONDIALOGUEBINDING = "ConditionDialogueBinding";
 
     public const string ATTACKINFO = "AttackInfo";
     public const string EDIBLEITEMINFO = "EdibleItemInfo";
@@ -143,6 +144,9 @@ public class DataManager : BaseManager<DataManager>
     public Dictionary<int, List<QuestDialogueBinding>> BindingMap { get; private set; }
     public Dictionary<int, DialoguePiece> DialoguePieceMap { get; private set; }
 
+    public Dictionary<int, List<ConditionDialogueBinding>> ConditionBindingMap { get; private set; }
+    public Dictionary<int, ConditionDialoguePiece> ConditionDialoguePieceMap { get; private set; }
+
     public List<EdibleItemInfo> EdibleItemInfoList { get; private set; }
     public List<EquippableItemInfo> EquippableItemInfoList { get; private set; }
     //public List<InventoryItemInfo> InventoryItemInfoList { get; private set; }
@@ -171,7 +175,10 @@ public class DataManager : BaseManager<DataManager>
         LoadNPCInfoList();
 
         LoadBindingMap();
-        LoadDialoguePieceList();
+        LoadDialoguePieceMap();
+
+        LoadConditionBindingMap();
+        LoadConditionDialoguePieceMap();
 
         if (MonoManager.Instance.IsDebug)
         {
@@ -217,8 +224,8 @@ public class DataManager : BaseManager<DataManager>
         InventoryItemInfo defaultWeaponInfo = new InventoryItemInfo(
             EquippableItemInfoList[PlayerIdInfo.defaultWeaponInfoId], 1);
 
-        PlayerInfo = new PlayerInfo(PlayerIdInfo.name,
-            moveInfo, stateInfo, transInfo, attackInfo, defaultWeaponInfo);
+        PlayerInfo = new PlayerInfo(PlayerIdInfo.name, moveInfo, stateInfo, transInfo, 
+            attackInfo, defaultWeaponInfo, PlayerIdInfo.characterDialogueId);
     }
 
     private void LoadInventoryItemInfoList()
@@ -344,7 +351,7 @@ public class DataManager : BaseManager<DataManager>
 
         foreach (var idInfo in NPCIdInfoList)
         {
-            NPCInfoList.Add(new NPCInfo(idInfo.name));
+            NPCInfoList.Add(new NPCInfo(idInfo.name, idInfo.characterDialogueId));
         }
     }
 
@@ -358,9 +365,9 @@ public class DataManager : BaseManager<DataManager>
 
         foreach (var binding in BindingList)
         {
-            if (BindingMap.ContainsKey(binding.npcId))
+            if (BindingMap.ContainsKey(binding.characterId))
             {
-                BindingMap[binding.npcId].Add(binding);
+                BindingMap[binding.characterId].Add(binding);
             }
             else
             {
@@ -368,12 +375,12 @@ public class DataManager : BaseManager<DataManager>
                     new List<QuestDialogueBinding>();
 
                 bindingList.Add(binding);
-                BindingMap.Add(binding.npcId, bindingList);
+                BindingMap.Add(binding.characterId, bindingList);
             }
         }
     }
 
-    public void LoadDialoguePieceList()
+    public void LoadDialoguePieceMap()
     {
         DialoguePieceMap = new Dictionary<int, DialoguePiece>();
 
@@ -383,6 +390,45 @@ public class DataManager : BaseManager<DataManager>
         foreach (var piece in pieceList)
         {
             DialoguePieceMap.Add(piece.id, piece);
+        }
+    }
+
+    public void LoadConditionBindingMap()
+    {
+        ConditionBindingMap = new Dictionary<int, List<ConditionDialogueBinding>>();
+
+        List<ConditionDialogueBinding> ConditionBindingList = JsonManager.Instance.
+            LoadDataFromStreamingAssets<List<ConditionDialogueBinding>>(
+            CONDITIONDIALOGUEBINDING);
+
+        foreach (var binding in ConditionBindingList)
+        {
+            if (ConditionBindingMap.ContainsKey(binding.characterId))
+            {
+                ConditionBindingMap[binding.characterId].Add(binding);
+            }
+            else
+            {
+                List<ConditionDialogueBinding> bindingList =
+                    new List<ConditionDialogueBinding>();
+
+                bindingList.Add(binding);
+                ConditionBindingMap.Add(binding.characterId, bindingList);
+            }
+        }
+    }
+
+    public void LoadConditionDialoguePieceMap()
+    {
+        ConditionDialoguePieceMap = new Dictionary<int, ConditionDialoguePiece>();
+
+        List<ConditionDialoguePiece> pieceList = JsonManager.Instance.
+            LoadDataFromStreamingAssets<List<ConditionDialoguePiece>>(
+            CONDITIONDIALOGUEPIECEINFO);
+
+        foreach (var piece in pieceList)
+        {
+            ConditionDialoguePieceMap.Add(piece.id, piece);
         }
     }
 

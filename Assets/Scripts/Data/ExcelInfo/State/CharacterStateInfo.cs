@@ -3,6 +3,7 @@ using UnityEngine;
 public class CharacterStateInfo
 {
     public int maxHealth;
+    public int defence;
 }
 
 public class CharacterState

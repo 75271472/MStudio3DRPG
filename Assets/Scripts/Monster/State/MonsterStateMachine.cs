@@ -12,6 +12,7 @@ public class MonsterStateMachine : CharacterStateMachine
     public MonsterStateInfo MonsterStateSO { get; private set; }
     public MonsterMoveInfo MonsterMoveSO { get; private set; }
     public AttackComboList MonsterComboList { get; private set; }
+    public EMonsterMoveType MonsterMoveType { get; private set; }
 
     public bool IsActiveTarget => MonsterTargeter != null && MonsterTargeter.IsActive;
 
@@ -32,6 +33,8 @@ public class MonsterStateMachine : CharacterStateMachine
 
         MonsterStateSO = MonsterManager.Instance.GetMonster(Id).
             MonsterData.MonsterStateInfo;
+        MonsterMoveType = MonsterManager.Instance.GetMonster(Id).
+            MonsterData.MoveType;
         MonsterMoveSO = MonsterManager.Instance.GetMonster(Id).
             MonsterData.MonsterMoveInfo;
         MonsterComboList = MonsterManager.Instance.GetMonster(Id).

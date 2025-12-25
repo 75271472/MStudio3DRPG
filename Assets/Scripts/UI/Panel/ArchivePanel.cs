@@ -163,7 +163,10 @@ public class ArchivePanel : BasePanel
         continueGameDirector.stopped += (o) =>
         {
             LoadSceneManager.Instance.LoadSceneAsync(DataManager.FIRSTSCENE,
-            () => PlayerManager.Instance.PlayerTransInit());
+                () => {
+                    PlayerManager.Instance.PlayerTransInit();
+                    PlayerManager.Instance.PlayerDialogueTrigger();
+                });
         };
 
         continueGameDirector.Play();

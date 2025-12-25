@@ -9881,7 +9881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5437626000733516345, guid: 2f16cef19e5a0104f9aa6ee69c248be0, type: 3}
       propertyPath: m_Name
-      value: GreenPortal
+      value: PurplePortal
       objectReference: {fileID: 0}
     - target: {fileID: 6090321022436887509, guid: 2f16cef19e5a0104f9aa6ee69c248be0, type: 3}
       propertyPath: <PortalId>k__BackingField

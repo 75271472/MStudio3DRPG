@@ -90,7 +90,7 @@ public class InventoryData : MonoBehaviour
         //    quantity = AddItem(itemInfoType, itemId, quantity);
 
         // 更新UI
-        UpdateInventoryUI();
+        UpdateInventory();
         return quantity;
     }
 
@@ -120,7 +120,7 @@ public class InventoryData : MonoBehaviour
         }
 
         // 更新UI
-        UpdateInventoryUI();
+        UpdateInventory();
         return quantity;
     }
 
@@ -233,7 +233,7 @@ public class InventoryData : MonoBehaviour
         inventoryItemList[indexA] = inventoryItemList[indexB];
         inventoryItemList[indexB] = itemA;
 
-        UpdateInventoryUI();
+        UpdateInventory();
     }
 
     public void ClearItem()
@@ -268,19 +268,34 @@ public class InventoryData : MonoBehaviour
         return inventoryItemList[index];
     }
 
-    public void RemoveItem(int index, int amount)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="index"></param>
+    /// <param name="amount"></param>
+    /// <returns>Remove的数量的InventoryItemInfo</returns>
+    public InventoryItemInfo RemoveItem(int index, int amount)
     {
-        if (index < 0 || index >= inventoryItemList.Count) return;
-        if (inventoryItemList[index].IsEmpty) return;
+        if (index < 0 || index >= inventoryItemList.Count) return null;
+        if (inventoryItemList[index].IsEmpty) return null;
 
         int reminder = inventoryItemList[index].quantity - amount;
+        ItemInfo itemInfo = inventoryItemList[index].itemInfo;
+        InventoryItemInfo inventoryItemInfo = 
+            new InventoryItemInfo(inventoryItemList[index], -1);
         if (reminder <= 0)
+        {
             inventoryItemList[index] = InventoryItem.GetEmptyItem();
+        }
         else
-            inventoryItemList[index] = 
+        {
+            inventoryItemInfo.quantity = amount;
+            inventoryItemList[index] =
                 inventoryItemList[index].ChangeQuantity(reminder);
+        }
+        UpdateInventory();
 
-        UpdateInventoryUI();
+        return inventoryItemInfo;
     }
 
     public int GetEmptyItem()
@@ -294,7 +309,7 @@ public class InventoryData : MonoBehaviour
         return -1;
     }
 
-    public void UpdateInventoryUI()
+    public void UpdateInventory()
     {
         OnInventoryUpdatedEvent?.Invoke(GetCurrentInventoryState());
     }

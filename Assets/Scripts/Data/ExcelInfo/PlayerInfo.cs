@@ -14,6 +14,7 @@ public abstract class CharacterIdInfo
 public class PlayerIdInfo : CharacterIdInfo
 {
     public int defaultWeaponInfoId;
+    public int characterDialogueId;
     //public int weaponInfoId;
 }
 
@@ -26,7 +27,7 @@ public class NPCIdInfo
 {
     public int id;
     public string name;
-    public int dialogueId;
+    public int characterDialogueId;
 }
 
 public class PlayerInfo
@@ -37,6 +38,7 @@ public class PlayerInfo
     public CharacterTransInfo playerTransInfo;
     public AttackInfo playerAttackInfo;
     public InventoryItemInfo defaultWeaponInfo;
+    public int characterDialogueId;
     //public InventoryItemInfo playerWeaponInfo;
     //public InventoryItemInfo playerShieldInfo;
 
@@ -44,7 +46,8 @@ public class PlayerInfo
 
     public PlayerInfo(string name, PlayerMoveInfo playerMoveInfo, 
         PlayerStateInfo playerStateInfo, CharacterTransInfo playerTransInfo, 
-        AttackInfo playerAttackInfo, InventoryItemInfo defaultWeaponInfo)
+        AttackInfo playerAttackInfo, InventoryItemInfo defaultWeaponInfo, 
+        int characterDialogueId)
     {
         this.playerName = name;
         this.playerMoveInfo = playerMoveInfo;
@@ -52,6 +55,7 @@ public class PlayerInfo
         this.playerTransInfo = playerTransInfo; 
         this.playerAttackInfo = playerAttackInfo;
         this.defaultWeaponInfo = defaultWeaponInfo;
+        this.characterDialogueId = characterDialogueId;
         //this.playerWeaponInfo = playerWeaponInfo;
         //this.playerShieldInfo = playerShieldInfo;
     }
@@ -79,9 +83,11 @@ public class MonsterInfo
 public class NPCInfo
 {
     public string npcName;
+    public int characterDialogueId;
 
-    public NPCInfo(string npcName)
+    public NPCInfo(string npcName , int characterDialogueId)
     {
         this.npcName = npcName;
+        this.characterDialogueId = characterDialogueId;
     }
 }

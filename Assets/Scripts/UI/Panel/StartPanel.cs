@@ -81,7 +81,10 @@ public class StartPanel : BasePanel
         startGameDirector.stopped += (o) =>
         {
             LoadSceneManager.Instance.LoadSceneAsync(DataManager.FIRSTSCENE,
-            () => PlayerManager.Instance.PlayerTransInit());
+                () => {
+                    PlayerManager.Instance.PlayerTransInit();
+                    PlayerManager.Instance.PlayerDialogueTrigger();
+                });
         };
 
         startGameDirector.Play();

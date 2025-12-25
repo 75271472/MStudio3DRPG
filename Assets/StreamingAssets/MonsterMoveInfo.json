@@ -6,7 +6,6 @@
         "stopDistance": 0.5,
         "angularSpeed": 800,
         "acceleration": 80,
-        "moveType": 0,
         "chaseSpeed": 2.5,
         "waitTime": 1.5
     },
@@ -17,7 +16,6 @@
         "stopDistance": 0.5,
         "angularSpeed": 800,
         "acceleration": 80,
-        "moveType": 1,
         "chaseSpeed": 2.5,
         "waitTime": 1.5
     },
@@ -28,7 +26,6 @@
         "stopDistance": 0.5,
         "angularSpeed": 800,
         "acceleration": 80,
-        "moveType": 1,
         "chaseSpeed": 2.5,
         "waitTime": 1.5
     },
@@ -39,7 +36,6 @@
         "stopDistance": 0.5,
         "angularSpeed": 800,
         "acceleration": 80,
-        "moveType": 0,
         "chaseSpeed": 2.5,
         "waitTime": 1.5
     },
@@ -50,7 +46,6 @@
         "stopDistance": 0.5,
         "angularSpeed": 800,
         "acceleration": 80,
-        "moveType": 0,
         "chaseSpeed": 2.5,
         "waitTime": 1.5
     }

@@ -10,7 +10,7 @@ public enum EMonsterMoveType
 
 public class MonsterMoveInfo : CharacterMoveInfo
 {
-    public EMonsterMoveType moveType;
+    //public EMonsterMoveType moveType;
     public float chaseSpeed;
     public float waitTime;
 }

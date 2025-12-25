@@ -17,7 +17,7 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
     public CharacterUI CharacterUI => PlayerUI;
     public GameObject CharacterGameObject => gameObject;
 
-    public event Action<InventoryItemInfo> OnPickUpEvent;
+    public event Action<InventoryItemInfo> OnUpdateItemEvent, OnRemoveItemEvent;
     public event Action<ICharacter> OnCharacterDieEvent;
 
     public void PlayerManagerInit()
@@ -30,8 +30,15 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         PlayerStateMachine.CharacterStateMachineInit(this);
         PlayerUI.PlayerInit(this, PlayerData);
 
-        PlayerData.OnPickUpEvent += (inventoryItemInfo) => 
-            OnPickUpEvent?.Invoke(inventoryItemInfo);
+        PlayerData.OnUpdateItemEvent += (inventoryItemInfo) => {
+            print("PlayerManager OnUpdateItemEvent Trigger");
+            OnUpdateItemEvent?.Invoke(inventoryItemInfo);
+        };
+            
+        PlayerData.OnRemoveItemEvent += (inventoryItemInfo) => {
+            print("PlayerManager OnResetItemEvent Trigger");
+            OnRemoveItemEvent?.Invoke(inventoryItemInfo);
+        };
         PlayerData.HealthEventRegist(PlayerStateMachine.Health);
         PlayerStateMachine.DieDataRegist(PlayerData);
         PlayerStateMachine.SwitchEquipItemRegist(PlayerData);
@@ -55,6 +62,11 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         //print("PlayerManagerInit");
     }
 
+    public void PlayerDialogueTrigger()
+    {
+        PlayerData.PlayerDialogueTrigger.DialogueTrigger();
+    }
+
     public void PlayerTransInit()
     {
         PlayerInitTrans initTrans = FindObjectOfType<PlayerInitTrans>();
@@ -71,6 +83,13 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         //UpdatePlayerTrans(playerTrans.position, playerTrans.rotation);
         gameObject.transform.SetPositionAndRotation(playerTrans.GetPosition(), 
             playerTrans.GetRotation());
+    }
+
+    public void ResetEvent()
+    {
+        OnCharacterDieEvent = null;
+        OnRemoveItemEvent = null;
+        OnUpdateItemEvent = null;
     }
 
     private void UpdatePlayerTrans(Vector3 position, Quaternion rotation)

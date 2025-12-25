@@ -46,12 +46,14 @@ public abstract class CharacterData : MonoBehaviour
     public abstract void OnTakeDamageHandler(int damage, GameObject attacker);
     public abstract void OnRecoveryHandler(int recovery);
 
+    // 修改MonsterState中的血量，MonsterState中的血量保存在内存中
     protected void TakeDamage(MonsterState state, int damage, GameObject attacker)
     {
         // CharacterStateData中手动设置IsDie为True时
         // 游戏时再次收到伤害不会进入if判断
         if (state.isDie || damage <= 0) return;
 
+        print("CharacterData: " + name + " " + state.health);
         state.health = Mathf.Max(state.health - damage, 0);
         print("CharacterData: " + name + " " + state.health);
         OnTakeDamageEvent?.Invoke(damage, state.health, 
@@ -66,6 +68,7 @@ public abstract class CharacterData : MonoBehaviour
         }
     }
 
+    // 修改PlayerStateInfo中的血量，PlayerStateInfo数据会写入外存
     protected void TakeDamage(PlayerStateInfo stateInfo,
         int damage, GameObject attacker)
     {
@@ -73,6 +76,7 @@ public abstract class CharacterData : MonoBehaviour
         // 游戏时再次收到伤害不会进入if判断
         if (stateInfo.isDie || damage <= 0) return;
 
+        print("CharacterData: " + name + " " + stateInfo.health);
         stateInfo.health = Mathf.Max(stateInfo.health - damage, 0);
         print("CharacterData: " + name + " " + stateInfo.health);
         OnTakeDamageEvent?.Invoke(damage, stateInfo.health, stateInfo.maxHealth);

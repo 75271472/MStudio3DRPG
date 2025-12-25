@@ -30,3 +30,10 @@ public class DialoguePiece
     //    QuestManager.Instance.SelectQuest(questId);
     //}
 }
+
+public class ConditionDialoguePiece
+{
+    public int id;
+    public string text;
+    public int targetId;
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "description": "first-dialogue",
+        "text": "我在哪，头好晕~~~",
+        "targetId": 1
+    },
+    {
+        "id": 1,
+        "description": "first-dialogue",
+        "text": "试试还能不能移动，（使用鼠标右键点击地面进行移动）",
+        "targetId": 2
+    },
+    {
+        "id": 2,
+        "description": "first-dialogue",
+        "text": "那边有个人，去问问他什么情况",
+        "targetId": -1
+    }
+]

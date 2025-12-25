@@ -6,6 +6,7 @@ public class DialogueData : MonoBehaviour
 {
     // 运行时状态：当前正在播放的对话链（如果有后续跳转）
     private DialoguePiece currentPiece;
+    private int startPieceId;
 
     // 事件：通知 Manager 更新 UI
     public event Action<KeyValuePair<string, List<string>>?> OnUpdateDialogueEvent;
@@ -22,7 +23,15 @@ public class DialogueData : MonoBehaviour
         if (piece == null) return;
 
         this.currentPiece = piece;
+        this.startPieceId = piece.id;
         UpdateUI();
+    }
+
+    public void EndDialogue()
+    {
+        OnUpdateDialogueEvent?.Invoke(null);
+        currentPiece = null;
+        startPieceId = 0;
     }
 
     public void UpdateDialogue(int optionIndex)
@@ -44,7 +53,10 @@ public class DialogueData : MonoBehaviour
                 QuestManager.Instance.SelectQuest(currentPiece.questId);
             }
 
-            nextPieceId = option.targetId;
+            if (option.targetId != -1)
+            {
+                nextPieceId = startPieceId + option.targetId;
+            }
         }
         else
         {
@@ -52,7 +64,7 @@ public class DialogueData : MonoBehaviour
             // 如果你的设计是 Piece 只有选项跳转，没有默认跳转，那这里就结束了
             // 或者你可以给 DialoguePiece 加一个 defaultTargetId
             // 假设：如果没有选项，就结束了，除非你有连续对话的设计
-            nextPieceId = -1;
+            nextPieceId = currentPiece.id + 1;
         }
 
         // 2. 跳转到下一句
@@ -70,12 +82,6 @@ public class DialogueData : MonoBehaviour
 
         // 3. 没有下一句，结束对话
         EndDialogue();
-    }
-
-    public void EndDialogue()
-    {
-        OnUpdateDialogueEvent?.Invoke(null);
-        currentPiece = null;
     }
 
     private void UpdateUI()

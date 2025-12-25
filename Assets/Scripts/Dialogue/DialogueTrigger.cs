@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    [Header("Identity")]
-    [Tooltip("Excel表中对应的 NPC ID")]
-    [SerializeField] private int npcId;
+    protected int characterId;
+    protected string characterName;
 
-    [Header("UI Display")]
-    [SerializeField] private Texture profileTexture;
-    [SerializeField] private string npcName;
+    [SerializeField] protected Texture profileTexture;
+
+    public virtual void DialogueTriggerInit(int characterId, string characterName)
+    {
+        this.characterId = characterId;
+        this.characterName = characterName;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,7 +22,7 @@ public class DialogueTrigger : MonoBehaviour
             "Talk", () => {
                 // 修改点：不再自己计算 Index，而是直接把 NPC ID 扔给 Manager
                 // Manager 会去 DataManager 里查表计算
-                DialogueManager.Instance.BeginDialogue(npcId, profileTexture, npcName);
+                DialogueManager.Instance.BeginDialogue(characterId, profileTexture, characterName);
 
                 UIManager.Instance.HidePanel<InputActionPanel>();
             });

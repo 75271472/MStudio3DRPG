@@ -19,7 +19,8 @@ public class InventoryController : MonoBehaviour
     public const int HotItemQuantitty = 8;
     public const int PlayerStateItemQuantity = 2;
 
-    public event Action<InventoryItemInfo> OnCheckItemEvent;
+    // 向外部广播背包中的物品
+    public event Action<InventoryItemInfo> OnCheckItemEvent, OnRemoveItemEvent;
     // 装备物品事件，供PlayerData监听执行OnEnqupHandler，在执行OnEquipItemEvent将消息分发给外部
     public event Action<EquippableItemInfo> OnEquipEvent, 
     // 此时OnUnloadEvent中传入的itemInfo为空，StateItemUI中的物品已被卸下后
@@ -44,6 +45,8 @@ public class InventoryController : MonoBehaviour
     {
         OnEquipEvent = null;
         OnUnloadEvent = null;
+        OnCheckItemEvent = null;
+        OnRemoveItemEvent = null;
 
         this.Character = character;
 
@@ -69,10 +72,12 @@ public class InventoryController : MonoBehaviour
         ItemPickUp.ItemPickUpInit(this);
 
         InputManager.Instance.OnOpenBagEvent += SwitchPanel;
-        QuestManager.Instance.OnStartQusetEvent += OnCheckInventoryHandler;
+        // 接受任务时，检查仓库中的所有物品
+        QuestManager.Instance.OnStartQusetEvent += (Quest) =>
+            OnCheckInventoryHandler();
         
         // 初始化执行完毕后更新UI面板，显示InventoryData中加载的数据
-        InventoryData.UpdateInventoryUI();
+        InventoryData.UpdateInventory();
     }
 
     private void SwitchPanel()
@@ -359,6 +364,13 @@ public class InventoryController : MonoBehaviour
         return index;
     }
 
+    private void RemoveItem(int index, int quantity)
+    {
+        InventoryItemInfo inventoryItemInfo = 
+            InventoryData.RemoveItem(index, quantity);
+        OnRemoveItemEvent?.Invoke(inventoryItemInfo);
+    }
+
     private void ResetAllItems()
     {
         InventoryPanel.ResetAllItems();
@@ -469,12 +481,12 @@ public class InventoryController : MonoBehaviour
         PerformAction(GetIndex(indexInfo));
     }
 
-    private void OnCheckInventoryHandler(Quest quest)
+    private void OnCheckInventoryHandler()
     {
-        Dictionary<int, InventoryItem> inventoryItemDict = 
-            InventoryData.GetCurrentInventoryState();
+        print("Inventory OnChecInventoryHandler Trigger");
+        Dictionary<int, InventoryItem> stateDict = InventoryData.GetCurrentInventoryState();
 
-        foreach (var pair in inventoryItemDict)
+        foreach (var pair in stateDict)
         {
             OnCheckItemEvent?.Invoke(new InventoryItemInfo(pair.Value.itemInfo, 
                 pair.Value.quantity));
@@ -489,7 +501,7 @@ public class InventoryController : MonoBehaviour
         // 先将要使用的物品从背包中移除
         if (inventoryItem.itemInfo is IDestroyableItem itemDestroy)
         {
-            InventoryData.RemoveItem(index, 1);
+            RemoveItem(index, 1);
         }
         // 在使用物品
         if (inventoryItem.itemInfo is IItemAction itemAction)
@@ -501,8 +513,7 @@ public class InventoryController : MonoBehaviour
     private void DropItem(int index, int quantity)
     {
         print("DropItem");
-
-        InventoryData.RemoveItem(index, quantity);
+        RemoveItem(index, quantity);
         ResetSelection();
     }
 

@@ -20,7 +20,9 @@ public class PlayerData : CharacterData
     public InventoryController InventoryController { get; private set; }
     public QuestController QuestController { get; private set; }
 
-    public event Action<InventoryItemInfo> OnPickUpEvent;
+    public PlayerDialogueTrigger PlayerDialogueTrigger { get; private set; }
+
+    public event Action<InventoryItemInfo> OnUpdateItemEvent, OnRemoveItemEvent;
     public event Action<int, int, int> OnUpdateExpEvent;
     public event Action<EquippableItemInfo> OnEquipItemEvent, OnUnloadItemEvent;
 
@@ -58,6 +60,8 @@ public class PlayerData : CharacterData
         OnEquipItemEvent = null;
         OnUnloadItemEvent = null;
         OnUpdateExpEvent = null;
+        OnUpdateItemEvent = null;
+        OnRemoveItemEvent = null;
 
         PlayerInfo = DataManager.Instance.PlayerInfo;
 
@@ -69,13 +73,18 @@ public class PlayerData : CharacterData
 
         InventoryController = GetComponent<InventoryController>();
         QuestController = GetComponent<QuestController>();
+        PlayerDialogueTrigger = GetComponent<PlayerDialogueTrigger>();
 
         InventoryController.InventoryControllerInit(character);
         InventoryController.OnEquipEvent += OnEquipHandler;
         InventoryController.OnUnloadEvent += OnUnloadHandler;
-        InventoryController.OnCheckItemEvent += OnPickUpHandler;
+        InventoryController.OnCheckItemEvent += OnUpdateItemHandler;
+        InventoryController.OnRemoveItemEvent += OnRemoveItemHandler;
 
         QuestController.QuestControllerInit();
+
+        PlayerDialogueTrigger.DialogueTriggerInit(PlayerInfo.characterDialogueId,
+            PlayerInfo.playerName);
 
         //OnEquipItemEvent += (weaponInfo) => print("OnEquipEvent");
         //OnUnloadItemEvent += (weaponInfo) => print("OnUnloadEvent");
@@ -166,9 +175,18 @@ public class PlayerData : CharacterData
         //OnUnloadItemEvent?.Invoke(itemInfo);
     }
 
-    private void OnPickUpHandler(InventoryItemInfo inventoryItemInfo)
+    private void OnUpdateItemHandler(InventoryItemInfo inventoryItemInfo)
     {
-        OnPickUpEvent?.Invoke(inventoryItemInfo);
+        print("PlayerData OnUpdateItemHandler Trigger");
+
+        OnUpdateItemEvent?.Invoke(inventoryItemInfo);
+    }
+
+    private void OnRemoveItemHandler(InventoryItemInfo inventoryItemInfo)
+    {
+        print("PlayerData OnResetItemHandler Trigger");
+
+        OnRemoveItemEvent?.Invoke(inventoryItemInfo);
     }
 
     private void OnSaveHandler()

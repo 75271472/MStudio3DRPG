@@ -8,6 +8,7 @@
         "maxLevel": 30,
         "baseExp": 30,
         "currentExp": 0,
-        "levelBuff": 0.1
+        "levelBuff": 0.1,
+        "defence": 5
     }
 ]

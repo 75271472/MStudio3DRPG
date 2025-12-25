@@ -5,7 +5,7 @@
 [System.Serializable]
 public class QuestDialogueBinding
 {
-    public int npcId;
+    public int characterId;
     public int questId;              // 绑定的任务ID
 
     public int notAcceptedDialogueId = -1;

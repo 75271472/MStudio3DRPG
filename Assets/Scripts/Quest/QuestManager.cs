@@ -19,31 +19,26 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
 
     public void QuestManagerInit()
     {
+        OnStartQusetEvent = null;
+        OnCompletedQuestEvent = null;
+        OnRequireUpdateEvent = null;
+
         activeQuestDict.Clear();
         finishedQuestDict.Clear();
 
         List<QuestRecord> questRecordList = DataManager.Instance.QuestRecordList;
         foreach (QuestRecord record in questRecordList)
         {
-            if (record.questState == EQuestState.NotAccepted) continue;
-
-            Quest quest = new Quest(record);
-            print("LoadQeust：" + quest.questState);
-
-            if (record.questState == EQuestState.Finished)
-            {
-                finishedQuestDict.Add(record.id, quest);
-            }
-            else
-            {
-                activeQuestDict.Add(record.id, quest);
-            }
+            LoadQuest(record);
         }
 
         questInfoList = DataManager.Instance.QuestInfoList;
 
+        MonsterManager.Instance.ResetEvent();   
         MonsterManager.Instance.OnMonsterDieEvent += OnKillEnemyHandler;
-        PlayerManager.Instance.OnPickUpEvent += OnCollectItemHandler;
+        PlayerManager.Instance.ResetEvent();
+        PlayerManager.Instance.OnUpdateItemEvent += OnCollectItemHandler;
+        PlayerManager.Instance.OnRemoveItemEvent += OnRemoveItemHandler;
     }
     
     public override void Init()
@@ -130,6 +125,14 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
 
     private void OnCollectItemHandler(InventoryItemInfo inventoryItemInfo)
     {
+        print("QuestManager OnUpdateItemHandler Trigger");
+        UpdateRequire(null, inventoryItemInfo);
+    }
+
+    private void OnRemoveItemHandler(InventoryItemInfo inventoryItemInfo)
+    {
+        print("QuestManager OnResetItemHandler Trigger");
+        inventoryItemInfo.quantity = -inventoryItemInfo.quantity;
         UpdateRequire(null, inventoryItemInfo);
     }
 
@@ -140,6 +143,31 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         UIManager.Instance.ShowPanel<NoticePanel>().
             UpdateTipTxt($"任务完成：{quest.questName}，可以去领取奖励了");
         OnCompletedQuestEvent?.Invoke(quest);
+    }
+
+    // 从硬盘中加载任务数据，并更新内存中的任务数据
+    private void LoadQuest(QuestRecord record)
+    {
+        if (record.questState == EQuestState.NotAccepted) return;
+
+        Quest quest = new Quest(record);
+        print("LoadQeust：" + quest.questState);
+
+        if (record.questState == EQuestState.Finished)
+        {
+            finishedQuestDict.Add(record.id, quest);
+            //FinishQuest(quest);
+        }
+        else if (record.questState == EQuestState.Complete)
+        {
+            activeQuestDict.Add(record.id, quest);
+        }
+        else if (record.questState == EQuestState.Start)
+        {
+            quest.OnQuestCompletedEvent += OnQuestCompletedHandler;
+            OnRequireUpdateEvent += quest.UpdateRequire;
+            activeQuestDict.Add(record.id, quest);
+        }
     }
 
     private void StartQuest(int questId)
@@ -179,6 +207,8 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
     private void UpdateRequire(ICharacter character = null, 
         InventoryItemInfo inventoryItemInfo = null)
     {
+        print("QuestManager UpdateRequire Trigger");
+
         RequireDataPayload requireDataPayload = new RequireDataPayload(
             character, inventoryItemInfo);
 

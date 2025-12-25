@@ -32,7 +32,7 @@ public class MonsterPatroller : MonoBehaviour
     public GameObject GetPatrolPos()
     {
         // 如果守卫为Guard状态，则永远返回巡逻基点
-        if (MonsterManager.Instance.GetMonster(Id).MonsterData.GetMoveType() ==
+        if (MonsterManager.Instance.GetMonster(Id).MonsterData.MoveType ==
             EMonsterMoveType.Guard)
         {
             return basePatrol;

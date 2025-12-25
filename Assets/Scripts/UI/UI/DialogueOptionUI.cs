@@ -25,6 +25,9 @@ public class DialogueOptionUI : MonoBehaviour
 
             optionBtnList.Add(optionBtnUI);
         }
+
+        ExtensionTool.UpdateUI(this.transform);
+        ExtensionTool.UpdateUI(transform.parent);
     }
 
     public void ResetEvent()

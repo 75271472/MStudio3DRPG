@@ -42,6 +42,12 @@ public class Health : MonoBehaviour
         OnTakeDamageEvent?.Invoke(damage, obj);
     }
 
+    public void SelfDamage(int damage, GameObject obj)
+    {
+        if (IsDie || obj != gameObject) return;
+        OnTakeDamageEvent?.Invoke(damage, obj);
+    }
+
     public void Recovery(int recovery)
     {
         if (IsDie) return;

@@ -25,7 +25,7 @@ public class MouseCursor : MonoBehaviour
 
     public void SwitchCursor(EMouseCursor cursorType)
     {
-        print(cursorType);
+        //print(cursorType);
         CursorInfo cursorInfo = textureList.Find(
             cursorInfo => cursorInfo.cursorType == cursorType);
         if (cursorInfo == null) return;

@@ -16,6 +16,8 @@ public class MonsterData : CharacterData
     public MonsterMoveInfo MonsterMoveInfo => MonsterInfo.monsterMoveInfo;
     public override AttackInfo AttackInfo => MonsterInfo.monsterAttackInfo;
 
+    [field: SerializeField] public EMonsterMoveType MoveType { get; set; }
+
     // Monster类型id，用于获取指定类型的MonsterInfo
     [field: SerializeField] public int MonsterInfoId { get; private set; }
 
@@ -44,11 +46,6 @@ public class MonsterData : CharacterData
         CharacterDataInit(Character);
 
         this.Id = id;
-    }
-
-    public EMonsterMoveType GetMoveType()
-    {
-        return MonsterMoveInfo.moveType;
     }
 
     public override void OnTakeDamageHandler(int damage, GameObject attacker)

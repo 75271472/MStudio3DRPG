@@ -1,16 +1,26 @@
 [
     {
-        "npcId": 0,
-        "questId": 0,
+        "characterId": 0,
+        "characterName": "player",
+        "questId": -1,
         "notAcceptedDialogueId": 0,
-        "startDialogueId": 5,
-        "completeDialogueId": 8
+        "startDialogueId": -1,
+        "completeDialogueId": -1
     },
     {
-        "npcId": 0,
+        "characterId": 1,
+        "characterName": "Ramon",
         "questId": 1,
-        "notAcceptedDialogueId": 11,
-        "startDialogueId": 11,
+        "notAcceptedDialogueId": 3,
+        "startDialogueId": 8,
         "completeDialogueId": 11
+    },
+    {
+        "characterId": 1,
+        "characterName": "Ramon",
+        "questId": 2,
+        "notAcceptedDialogueId": 14,
+        "startDialogueId": 19,
+        "completeDialogueId": 22
     }
 ]

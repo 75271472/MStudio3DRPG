@@ -40,6 +40,11 @@ public class MonsterManager : MonoBehaviourManager<MonsterManager>
             return null;
     }
 
+    public void ResetEvent()
+    {
+        OnMonsterDieEvent = null;
+    }
+
     private void OnMonsterDieHandler(ICharacter character)
     {
         OnMonsterDieEvent?.Invoke(character);

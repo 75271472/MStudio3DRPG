@@ -1,6 +1,13 @@
 [
     {
         "id": 0,
+        "questName": "playerFirstTalk",
+        "description": null,
+        "questRequireInfos": [],
+        "rewardItemInfos": []
+    },
+    {
+        "id": 1,
         "questName": "采集蘑菇",
         "description": "雷蒙长官让我采集一个普通蘑菇和一个毒蘑菇",
         "questRequireInfos": [
@@ -25,7 +32,7 @@
         ]
     },
     {
-        "id": 1,
+        "id": 2,
         "questName": "初试锋芒",
         "description": "雷蒙长官让我击杀一个史莱姆和一个海龟",
         "questRequireInfos": [
@@ -50,7 +57,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "questName": "Quest2",
         "description": "Quest2的描述\n多行描述\n多行描述",
         "questRequireInfos": [
@@ -87,7 +94,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "questName": "Quest3",
         "description": "Quest3的描述\n多行描述\n多行描述\n多行描述",
         "questRequireInfos": [
@@ -118,7 +125,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "questName": "Quest4",
         "description": "Quest4的单行描述",
         "questRequireInfos": [
@@ -143,7 +150,7 @@
         ]
     },
     {
-        "id": 5,
+        "id": 6,
         "questName": "Quest5",
         "description": "Quest5的描述\n多行描述\n多行描述\n多行描述\n多行描述",
         "questRequireInfos": [
@@ -168,7 +175,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 7,
         "questName": "Quest6",
         "description": "Quest6的描述\n多行描述\n多行描述\n多行描述\n多行描述",
         "questRequireInfos": [

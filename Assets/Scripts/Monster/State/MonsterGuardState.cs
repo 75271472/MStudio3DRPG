@@ -22,7 +22,7 @@ public class MonsterGuardState : MonsterBaseState, IDefaultState
         stateMachine.Animator.CrossFadeInFixedTime(GuartHash, CrossFixedTime);
 
         // 只有Guard状态才会对patrolObj赋值
-        if (stateMachine.MonsterMoveSO.moveType == EMonsterMoveType.Guard)
+        if (stateMachine.MonsterMoveType == EMonsterMoveType.Guard)
         {
             patrolObj = stateMachine.MonsterPatroller.GetPatrolPos();
         }
