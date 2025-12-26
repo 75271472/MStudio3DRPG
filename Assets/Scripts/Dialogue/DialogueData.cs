@@ -5,10 +5,13 @@ using UnityEngine;
 public class DialogueData : MonoBehaviour
 {
     // 运行时状态：当前正在播放的对话链（如果有后续跳转）
+    // currentPiece也可用于判断当前是否处于播放状态
     private DialoguePiece currentPiece;
-    private int startPieceId;
+    private int startPieceId = -1;
+    private int questId = -1;
 
     // 事件：通知 Manager 更新 UI
+    // 对话数据 键为DialoguePiece.text，值为DialogueOption.text
     public event Action<KeyValuePair<string, List<string>>?> OnUpdateDialogueEvent;
 
     public void DialogueDataInit()
@@ -18,20 +21,20 @@ public class DialogueData : MonoBehaviour
         // 或者像上面 Manager 代码里那样，直接把 Manager 的 Handler 传进来，或者暴露 Event 给 Manager
     }
 
-    public void StartDialogue(DialoguePiece piece)
+    public void StartDialogue(DialoguePiece piece, int questId)
     {
         if (piece == null) return;
 
         this.currentPiece = piece;
         this.startPieceId = piece.id;
+        this.questId = questId;
         UpdateUI();
     }
 
     public void EndDialogue()
     {
-        OnUpdateDialogueEvent?.Invoke(null);
         currentPiece = null;
-        startPieceId = 0;
+        startPieceId = -1;
     }
 
     public void UpdateDialogue(int optionIndex)
@@ -41,6 +44,7 @@ public class DialogueData : MonoBehaviour
         // 1. 处理选项逻辑
         int nextPieceId = -1;
 
+        // 选择了DialoguePiece中的Option
         if (optionIndex != -1 && currentPiece.dialogueOptionList != null &&
             currentPiece.dialogueOptionList.Count > optionIndex)
         {
@@ -50,7 +54,7 @@ public class DialogueData : MonoBehaviour
             if (option.isTakeTask)
             {
                 // 这里的 questId 最好存在 Option 里或者 Piece 里
-                QuestManager.Instance.SelectQuest(currentPiece.questId);
+                QuestManager.Instance.SelectQuest(questId);
             }
 
             if (option.targetId != -1)
@@ -58,30 +62,30 @@ public class DialogueData : MonoBehaviour
                 nextPieceId = startPieceId + option.targetId;
             }
         }
-        else
+        else if (currentPiece.targetId != -1)
         {
-            // 点击继续：如果没有选项，通常 targetId 会存在 Piece 的某个字段，或者没有后续
-            // 如果你的设计是 Piece 只有选项跳转，没有默认跳转，那这里就结束了
-            // 或者你可以给 DialoguePiece 加一个 defaultTargetId
-            // 假设：如果没有选项，就结束了，除非你有连续对话的设计
-            nextPieceId = currentPiece.id + 1;
+            // 点击继续：如果没有选项，则直接赋值
+            // targetId = -1，结束对话
+            // target != -1，进行跳转
+            nextPieceId = startPieceId + currentPiece.targetId;
         }
 
         // 2. 跳转到下一句
         if (nextPieceId != -1)
         {
             // 去 DataManager 查下一句
-            var nextPiece = DataManager.Instance.DialoguePieceMap[nextPieceId];
-            if (nextPiece != null)
+            if (DataManager.Instance.DialoguePieceMap.
+                TryGetValue(nextPieceId, out var piece))
             {
-                currentPiece = nextPiece;
+                currentPiece = piece;
                 UpdateUI();
                 return;
             }
         }
 
         // 3. 没有下一句，结束对话
-        EndDialogue();
+        // 不能直接调用EndDialogue，否则会反复调用DialogueManager中的EndDialogue
+        OnUpdateDialogueEvent?.Invoke(null);
     }
 
     private void UpdateUI()

@@ -12,18 +12,21 @@ public class DialogueOptionUI : MonoBehaviour
     {
         ResteOptionList();
 
-        foreach (string optionString in optionStringList)
+        if (optionStringList != null)
         {
-            GameObject optionObj = PoolManager.Instance.
-                PullObj(DataManager.OPTIONBUTTONUI);
-            optionObj.transform.SetParent(this.transform);
+            foreach (string optionString in optionStringList)
+            {
+                GameObject optionObj = PoolManager.Instance.
+                    PullObj(DataManager.OPTIONBUTTONUI);
+                optionObj.transform.SetParent(this.transform);
 
-            OptionBtnUI optionBtnUI = optionObj.GetComponent<OptionBtnUI>();
-            optionBtnUI.ResetOptionBtn();
-            optionBtnUI.SetOptionBtn(optionString);
-            optionBtnUI.OnBtnClickEvent += OnOptionBtnClickHandler;
+                OptionBtnUI optionBtnUI = optionObj.GetComponent<OptionBtnUI>();
+                optionBtnUI.ResetOptionBtn();
+                optionBtnUI.SetOptionBtn(optionString);
+                optionBtnUI.OnBtnClickEvent += OnOptionBtnClickHandler;
 
-            optionBtnList.Add(optionBtnUI);
+                optionBtnList.Add(optionBtnUI);
+            }
         }
 
         ExtensionTool.UpdateUI(this.transform);

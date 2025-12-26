@@ -32,6 +32,9 @@ public class MonsterController : MonoBehaviour, ICharacter
         MonsterUI.MonsterUIInit(this, MonsterData, id);
 
         MonsterData.HealthEventRegist(MonsterStateMachine.Health);
+        // 当Player对Monster造成伤害时，摄像机抖动
+        MonsterData.OnTakeDamageEvent += (a, b, c) =>
+            CameraManager.Instance.ShakeCamera(0.8f, 0.1f);
         MonsterStateMachine.DieDataRegist(MonsterData);
         MonsterUI.TakeDamageRegist(MonsterData);
 

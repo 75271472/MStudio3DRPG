@@ -10,25 +10,7 @@ public class DialoguePiece
     [TextArea] public string text;
 
     public List<DialogueOption> dialogueOptionList;
-    public int questId = -1;
-
-    //public void DialoguePieceInit()
-    //{
-    //    if (questId != -1)
-    //    {
-    //        foreach (var option in dialogueOptionList)
-    //        {
-    //            option.OnSelectEvent += OnSelectHandler;
-    //        }
-    //    }
-    //}
-
-    //public void OnSelectHandler(bool isTakeTask)
-    //{
-    //    if (!isTakeTask) return;
-
-    //    QuestManager.Instance.SelectQuest(questId);
-    //}
+    public int  targetId;
 }
 
 public class ConditionDialoguePiece
@@ -36,4 +18,11 @@ public class ConditionDialoguePiece
     public int id;
     public string text;
     public int targetId;
+}
+
+public class ConditionInfo
+{
+    public int conditionId;
+    public string description;
+    public bool isTriggered;
 }

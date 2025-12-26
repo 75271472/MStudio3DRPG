@@ -199,6 +199,7 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
 
         quest.SetFinishState();
         quest.RealizeReward();
+        quest.SubstituteItems();
 
         UIManager.Instance.ShowPanel<NoticePanel>().
             UpdateTipTxt($"ÈÎÎñ½áÊø£º{quest.questName}");

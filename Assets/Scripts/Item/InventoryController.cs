@@ -215,6 +215,16 @@ public class InventoryController : MonoBehaviour
             quantity, index);
     }
 
+    public void DropItem(string itemName, int quantity)
+    {
+        InventoryData.RemoveItem(itemName, quantity);
+    }
+
+    //public void DropItem(InventoryItemInfo inventoryItemInfo)
+    //{
+    //    InventoryData.RemoveItem(inventoryItemInfo);
+    //}
+
     public void UpdateItem()
     {
         InventoryData.UpdateItem();

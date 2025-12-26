@@ -2,342 +2,836 @@
     {
         "id": 0,
         "description": "task0-NotAccepted-0",
-        "text": "喂，那边那个新来的！站住！我看你脚步虚浮，两眼发直，是不是三天没吃饭了？",
+        "text": "站住！看你面色苍白，走路摇摇晃晃的……你是从村外逃难来的吗？我是这里的守卫队长 Ramon。",
         "dialogueOptionList": [
             {
-                "text": "确实...快饿晕了。",
+                "text": "我……我不记得了，头好痛。",
                 "targetId": 1,
                 "isTakeTask": false
             },
             {
-                "text": "我不饿，我可是很强的！",
+                "text": "这里是哪？我好饿，没力气了……",
                 "targetId": 2,
                 "isTakeTask": false
             }
         ],
-        "questId": -1
+        "targetId": -1
     },
     {
         "id": 1,
         "description": "task0-NotAccepted-1",
-        "text": "哼，算你诚实。在这个森林里，不懂得找吃的，还没见到怪物就先饿死了。",
-        "dialogueOptionList": [
-            {
-                "text": "你能教我生存的方法吗？",
-                "targetId": 3,
-                "isTakeTask": false
-            }
-        ],
-        "questId": -1
+        "text": "失忆了？这年头在野外晕倒还能活着醒来，你命真大。看你的样子，身体已经虚弱到极点了。",
+        "dialogueOptionList": [],
+        "targetId": 3
     },
     {
         "id": 2,
         "description": "task0-NotAccepted-2",
-        "text": "强？哈！别逗了。上一个像你这么说话的新手，因为误食毒蘑菇，现在还在医务室里口吐白沫呢。",
-        "dialogueOptionList": [
-            {
-                "text": "呃...毒蘑菇？。",
-                "targetId": 3,
-                "isTakeTask": false
-            }
-        ],
-        "questId": -1
+        "text": "这里是人类村庄的边界。看你这副样子，确实像是个饿了好几天的流浪汉，连站都站不稳了。",
+        "dialogueOptionList": [],
+        "targetId": 3
     },
     {
         "id": 3,
         "description": "task0-NotAccepted-3",
-        "text": "听好了，去村外的树林采集些普通蘑菇和毒蘑菇回来。红色的能吃，紫色的虽然有毒，但药剂师很需要。",
+        "text": "本来我该给你几个苹果充饥，但最近村子外面的史莱姆和甲龟发疯似的攻击商队，村里补给断了好几天，我也没办法白白施舍给你。不过，如果你愿意帮我个小忙，我或许能指点你如何在这里活下去。",
         "dialogueOptionList": [
             {
-                "text": "为了肚子，交给我吧！",
-                "targetId": -1,
-                "isTakeTask": true
+                "text": "只要能活下去，我什么都愿意做。",
+                "targetId": 5,
+                "isTakeTask": false
             },
             {
-                "text": "白干活吗？有报酬吗？",
+                "text": "史莱姆？听起来很危险，我不想去。",
                 "targetId": 4,
                 "isTakeTask": false
             }
         ],
-        "questId": 1
+        "targetId": -1
     },
     {
         "id": 4,
         "description": "task0-NotAccepted-4",
-        "text": "啧，真是个贪心的小鬼。如果你能带回来，我这里有个刚摘的红苹果赏给你。吃了它能恢复生命值，这总行了吧？",
+        "text": "放心，不需要你现在去战斗。村口附近长着两种蘑菇，我要你去采一个普通蘑菇和一个毒蘑菇带回来给我。作为交换，我会告诉你生存的法则。",
         "dialogueOptionList": [
             {
-                "text": "成交！为了苹果！",
+                "text": "没问题，我去采回来。",
                 "targetId": -1,
                 "isTakeTask": true
             },
             {
-                "text": "我再考虑考虑。",
-                "targetId": -1,
+                "text": "我现在连路都走不动，还是算了吧。",
+                "targetId": 6,
                 "isTakeTask": false
             }
         ],
-        "questId": 1
+        "targetId": -1
     },
     {
         "id": 5,
-        "description": "task0-Start-0",
-        "text": "你怎么又回来了？两手空空的，难道是想请我吃空气蘑菇吗？",
+        "description": "task0-NotAccepted-5",
+        "text": "这就对了。记住：普通蘑菇能恢复生命，毒蘑菇会让你痛不欲生。只有学会分辨它们，你才能在这个乱世活下去。快去快回！",
         "dialogueOptionList": [
             {
-                "text": "我不小心忘了它们长什么样...",
-                "targetId": 1,
-                "isTakeTask": false
+                "text": "没问题，我去采回来。",
+                "targetId": -1,
+                "isTakeTask": true
             },
             {
-                "text": "我只是回来歇一口气。",
-                "targetId": 2,
+                "text": "我现在连路都走不动，还是算了吧。",
+                "targetId": 6,
                 "isTakeTask": false
             }
         ],
-        "questId": -1
+        "targetId": -1
     },
     {
         "id": 6,
-        "description": "task0-Start-1",
-        "text": "（雷蒙重重地叹了口气）听好了，把耳朵竖起来！\n普通蘑菇是单调的灰色，毒蘑菇是鲜艳的红色。\n别再让我重复第三遍，快去！",
-        "dialogueOptionList": [
-            {
-                "text": "这次记住了，长官！",
-                "targetId": -1,
-                "isTakeTask": false
-            }
-        ],
-        "questId": -1
+        "description": "task0-NotAccepted-6",
+        "text": "哼，连这点小事都不愿意做？在这个世道，不劳动的人只有死路一条。如果你改变主意了，再来找我吧。",
+        "dialogueOptionList": [],
+        "targetId": -1
     },
     {
         "id": 7,
-        "description": "task0-Start-2",
-        "text": "休息？在战场上，敌人可不会给你休息的时间！趁太阳还没下山，快滚回树林里去干活！",
+        "description": "task0-Start-0",
+        "text": "两手空空？看来你还没完成我交代的任务。在这个危机四伏的村口，行动迟缓可是致命的。",
         "dialogueOptionList": [
             {
-                "text": "这就去！",
-                "targetId": -1,
-                "isTakeTask": true
-            }
-        ],
-        "questId": -1
-    },
-    {
-        "id": 8,
-        "description": "task0-Complete-0",
-        "text": "回来了？让我看看你的背囊...嗯…",
-        "dialogueOptionList": [
-            {
-                "text": "都在这了，长官。",
+                "text": "抱歉，我忘了具体需要找什么了。",
                 "targetId": 1,
                 "isTakeTask": false
             },
             {
-                "text": "应该...没采错吧？",
-                "targetId": 1,
-                "isTakeTask": false
-            }
-        ],
-        "questId": -1
-    },
-    {
-        "id": 9,
-        "description": "task0-Complete-1",
-        "text": "雷蒙仔细检查了每一朵蘑菇）不错，分拣得很完美。看来你已经掌握了野外生存的第一课：不要把看起来鲜艳的东西随便塞进嘴里。",
-        "dialogueOptionList": [
-            {
-                "text": "那是当然。",
+                "text": "那些蘑菇具体长在什么位置？",
                 "targetId": 2,
                 "isTakeTask": false
             },
             {
-                "text": "谢谢指导。",
-                "targetId": 2,
-                "isTakeTask": false
-            }
-        ],
-        "questId": -1
-    },
-    {
-        "id": 10,
-        "description": "task0-Complete-2",
-        "text": "干得好。拿去吧，这是之前承诺的红苹果。记住，在这个危险的世界里，保持健康的血量（HP）往往比拥有利剑更重要。",
-        "dialogueOptionList": [
-            {
-                "text": "谢谢雷蒙队长！",
-                "targetId": -1,
-                "isTakeTask": true
-            }
-        ],
-        "questId": 1
-    },
-    {
-        "id": 11,
-        "description": "task1-NotAccepted-0",
-        "text": "看来那个苹果让你恢复了不少精神。既然吃饱了，就别赖在这儿晒太阳了。",
-        "dialogueOptionList": [
-            {
-                "text": "我想找点更有挑战性的事做。",
-                "targetId": 1,
-                "isTakeTask": false
-            },
-            {
-                "text": "我的拳头已经挥腻了。",
-                "targetId": 1,
-                "isTakeTask": false
-            }
-        ],
-        "questId": -1
-    },
-    {
-        "id": 12,
-        "description": "task1-NotAccepted-1",
-        "text": "口气不小。正好，最近商队投诉，说村口的路被一群史莱姆(Slime)和海龟(Turtle)堵住了。那些粘糊糊的东西虽然不强，但实在太烦人了。",
-        "dialogueOptionList": [
-            {
-                "text": "史莱姆？听起来很好欺负。",
-                "targetId": 2,
-                "isTakeTask": false
-            },
-            {
-                "text": "海龟？它们的壳似乎很硬。",
+                "text": "我只是路过休息一下，这就去办。",
                 "targetId": 3,
                 "isTakeTask": false
             }
         ],
-        "questId": -1
+        "targetId": -1
+    },
+    {
+        "id": 8,
+        "description": "task0-Start-1",
+        "text": "听好了，我只说最后一遍：一个普通蘑菇用来救命，一个毒蘑菇用来换取物资。别搞混了，快去！",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 9,
+        "description": "task0-Start-2",
+        "text": "睁大眼睛看看脚下！它们通常生长在树荫下或者草丛茂盛的地方。别告诉我你连这点观察力都没有。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 10,
+        "description": "task0-Start-3",
+        "text": "那就别在这里浪费时间。现在的每一秒钟，村外的野兽都可能再次发起进攻。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 11,
+        "description": "task0-Completed-0",
+        "text": "哦？这么快就回来了。让我看看……普通的用来止血，有毒的可以用来制作陷阱或是和某些商人做特殊交换。你分得很清楚，没让我失望。",
+        "dialogueOptionList": [
+            {
+                "text": "这并不难，只要稍微细心一点。",
+                "targetId": 1,
+                "isTakeTask": true
+            },
+            {
+                "text": "现在可以给我一些吃的了吗？",
+                "targetId": 2,
+                "isTakeTask": true
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 12,
+        "description": "task0-Completed-1",
+        "text": "在这个混乱的时候，细心是一种稀缺的品质。看你干活干净利落，身手比一般的难民敏捷多了。",
+        "dialogueOptionList": [],
+        "targetId": 3
     },
     {
         "id": 13,
-        "description": "task1-NotAccepted-2",
-        "text": "别大意！史莱姆的粘液会减缓你的速度，如果你被包围，连跑都跑不掉。战场上死得最快的往往是那些自以为是的家伙。",
-        "dialogueOptionList": [
-            {
-                "text": "呃...我会注意的。",
-                "targetId": 4,
-                "isTakeTask": false
-            }
-        ],
-        "questId": -1
+        "description": "task0-Completed-2",
+        "text": "哈哈，放心，我Ramon从不赖账。这些蘑菇算是你为村庄做的第一份贡献，看你干活这么利索，我都开始怀疑你失忆前是不是个练家子了。",
+        "dialogueOptionList": [],
+        "targetId": 3
     },
     {
         "id": 14,
-        "description": "task1-NotAccepted-3",
-        "text": "观察力不错。对付海龟不能硬砍，要抓住它们攻击时的破绽，或者绕到侧面。看来你有成为战士的潜质。",
+        "description": "task0-Completed-3",
+        "text": "既然你证明了自己的生存能力，我有必要告诉你现在的真实处境。最近村外的史莱姆和甲龟变得异常狂暴，甚至开始主动攻击人类，我们的人手严重不足。",
         "dialogueOptionList": [
             {
-                "text": "受教了。",
+                "text": "需要我帮忙吗？",
+                "targetId": 4,
+                "isTakeTask": false
+            },
+            {
+                "text": "听起来很糟糕，但我只想找回记忆。",
                 "targetId": 4,
                 "isTakeTask": false
             }
         ],
-        "questId": -1
+        "targetId": -1
     },
     {
         "id": 15,
-        "description": "task1-NotAccepted-4",
-        "text": "去清理掉它们。如果你能证明自己不是个只会采蘑菇的农夫，我就把你手里那根破木棍换成一把真正的铁剑。",
+        "description": "task0-Completed-4",
+        "text": "不管你想做什么，想要在这个世界立足，光会采蘑菇是不够的。拿着这些补给，先去休息一下。稍后，我有个更棘手的任务想委托给你——那是关于战斗的试炼。",
         "dialogueOptionList": [
             {
-                "text": "为了铁剑，冲啊！",
+                "text": "谢谢，我会准备好的。",
                 "targetId": -1,
                 "isTakeTask": true
-            },
-            {
-                "text": "那些怪物看起来太恶心了...",
-                "targetId": -1,
-                "isTakeTask": false
             }
         ],
-        "questId": 2
+        "targetId": -1
     },
     {
         "id": 16,
-        "description": "task1-Start-0",
-        "text": "怎么，被乌龟打得找不着北？还是被史莱姆粘住了脚？商队还在等着通车呢，不要浪费时间！",
+        "description": "task1-NotAccepted-0",
+        "text": "就像我刚才提到的，最近村外的日子不太平。那些平日里温顺的史莱姆和甲龟，最近不知发了什么疯，开始疯狂攻击过往的商队和村民。",
         "dialogueOptionList": [
             {
-                "text": "这怪物比我想象的难缠...",
+                "text": "为什么不派卫兵去清理它们？",
                 "targetId": 1,
-                "isTakeTask": true
+                "isTakeTask": false
             },
             {
-                "text": "那些怪物看起来太恶心了...",
+                "text": "看来你们遇到大麻烦了。",
                 "targetId": 2,
                 "isTakeTask": false
             }
         ],
-        "questId": -1
+        "targetId": -1
     },
     {
         "id": 17,
-        "description": "task1-Start-1",
-        "text": "所以我刚才说了不要蛮干！\n史莱姆的粘液很烦人，注意保持距离；\n海龟缩壳的时候防御力极高，别浪费力气砍龟壳，等它伸出头或者攻击后的僵直时间再打！",
-        "dialogueOptionList": [
-            {
-                "text": "这次记住了！",
-                "targetId": -1,
-                "isTakeTask": false
-            }
-        ],
-        "questId": -1
+        "description": "task1-NotAccepted-1",
+        "text": "卫兵？哼，大部分卫兵都在前线死守，村里的守备力量已经捉襟见肘了。我们现在连一把多余的剑都不敢随便发给陌生人。",
+        "dialogueOptionList": [],
+        "targetId": 3
     },
     {
         "id": 18,
-        "description": "task1-Start-2",
-        "text": "磨刀？我看你是在磨洋工！\n快去！在天黑之前把路清理出来，否则那把铁剑我就送给隔壁村的二傻子了！",
-        "dialogueOptionList": [
-            {
-                "text": "别！我这就去！",
-                "targetId": -1,
-                "isTakeTask": true
-            }
-        ],
-        "questId": -1
+        "description": "task1-NotAccepted-2",
+        "text": "确实是个大麻烦。如果不尽快控制住村口的局势，连这里的补给线都要断了。我们需要每一个能战斗的人，包括你。",
+        "dialogueOptionList": [],
+        "targetId": 3
     },
     {
         "id": 19,
-        "description": "task1-Complete-0",
-        "text": "哈！看看这满身的粘液。看来那群史莱姆给你留下了深刻的印象，不过既然你站在这里，说明它们已经是过去式了。",
+        "description": "task1-NotAccepted-3",
+        "text": "虽然你采蘑菇很利索，但在战场上那是两码事。我想给你一把武器，但村里的铁剑库存紧缺，我必须把剑给真正有实力的人。 去村口，用你的拳头解决掉一只史莱姆和一只甲龟。证明你有资格拿剑。",
         "dialogueOptionList": [
             {
-                "text": "别提了，但我把路清理干净了。",
+                "text": "你是说……赤手空拳？这太疯狂了。",
+                "targetId": 4,
+                "isTakeTask": false
+            },
+            {
+                "text": "没问题，对付它们不需要武器。",
+                "targetId": 5,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 20,
+        "description": "task1-NotAccepted-4",
+        "text": "怎么，怕了？如果连最弱的史莱姆都不敢用拳头面对，那你也不配在这个世道活下去。这是对你的考验，只要你完成任务，我就把这把精制铁剑送给你。",
+        "dialogueOptionList": [
+            {
+                "text": "为了那把剑，我干了！",
+                "targetId": -1,
+                "isTakeTask": true
+            },
+            {
+                "text": "我还没疯，我不想去送死。",
+                "targetId": 6,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 21,
+        "description": "task1-NotAccepted-5",
+        "text": "好胆识！记住，战斗时注意闪避，利用你的身手周旋。别让我失望，去让那些怪物尝尝苦头！",
+        "dialogueOptionList": [
+            {
+                "text": "为了那把剑，我干了！",
+                "targetId": -1,
+                "isTakeTask": true
+            },
+            {
+                "text": "我还没疯，我不想去送死。",
+                "targetId": 6,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 22,
+        "description": "task1-NotAccepted-6",
+        "text": "看来我看错你了。连面对几只小怪物的勇气都没有，那你就在这里等着被饿死吧。那把铁剑会留给真正的勇士。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 23,
+        "description": "task1-Start-0",
+        "text": "你还在村子里晃悠什么？那把铁剑可不会自己飞到你手里。我还没收到那两只怪物的死讯。",
+        "dialogueOptionList": [
+            {
+                "text": "赤手空拳太难了，打它们我很吃亏。",
                 "targetId": 1,
                 "isTakeTask": false
             },
             {
-                "text": "简直是一场噩梦…",
-                "targetId": 1,
+                "text": "我找不到它们具体在哪。",
+                "targetId": 2,
+                "isTakeTask": false
+            },
+            {
+                "text": "我只是回来调整一下状态，马上就去。",
+                "targetId": 3,
                 "isTakeTask": false
             }
         ],
-        "questId": -1
+        "targetId": -1
     },
     {
-        "id": 20,
-        "description": "task1-Complete-1",
-        "text": "做得好。商队刚刚已经顺利通过了。看来你不仅仅会采蘑菇，作为一名新手战士，你的坚韧值得称赞。",
+        "id": 24,
+        "description": "task1-Start-1",
+        "text": "如果你只会像木头一样站着对砍，那当然吃亏！战斗的精髓在于移动。打一下，退一步，绕到它们侧面或者身后。用你的脑子战斗，而不是蛮力！",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 25,
+        "description": "task1-Start-2",
+        "text": "就在村口外面！那些红色的粘液怪（史莱姆）和硬壳的家伙（甲龟）正在四处游荡。只要你走出安全区，想避开它们都难。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 26,
+        "description": "task1-Start-3",
+        "text": "那最好快点。我的耐心和库存的铁剑一样，都是有限的。去证明你配得上那把武器！",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 27,
+        "description": "task1-Completed-0",
+        "text": "哈！我刚才在望楼上看到了。你真的赤手空拳干掉了它们？那记勾拳打得真漂亮，看来我之前太小看你了。",
         "dialogueOptionList": [
             {
-                "text": "那么，关于那把剑…",
+                "text": "这并不容易，差点就没命了。",
+                "targetId": 1,
+                "isTakeTask": false
+            },
+            {
+                "text": "只是热身而已，这些怪物太弱了。",
                 "targetId": 2,
                 "isTakeTask": false
             }
         ],
-        "questId": -1
+        "targetId": -1
     },
     {
-        "id": 21,
-        "description": "task1-Complete-2",
-        "text": "放心，雷蒙从不食言。接住！\\n这是我年轻时用过的铁剑。虽然剑鞘有点磨损，但剑刃依旧锋利。好好爱护它，从现在起，它就是你在战场上唯一的依靠。",
+        "id": 28,
+        "description": "task1-Completed-1",
+        "text": "能在绝境中生存下来就是本事。既然你能用拳头活下来，那有了武器，你就能保护更多人。",
+        "dialogueOptionList": [],
+        "targetId": 4
+    },
+    {
+        "id": 29,
+        "description": "task1-Completed-2",
+        "text": "好大的口气！不过我喜欢你的自信。像你这样身手不凡的人，正是我们现在急需的。",
+        "dialogueOptionList": [],
+        "targetId": 4
+    },
+    {
+        "id": 30,
+        "description": "task1-Completed-4",
+        "text": "（Ramon 解下腰间备用的一把长剑，双手递给你） 拿着。这是你应该得到的报酬——一把精制铁剑。虽然不是什么神兵利器，但斩开甲龟的硬壳绰绰有余。从此以后，你不再是手无寸铁的难民了。",
         "dialogueOptionList": [
             {
-                "text": "终于有像样的武器了！",
+                "text": "谢谢，我会善用它的。",
+                "targetId": 5,
+                "isTakeTask": true
+            },
+            {
+                "text": "终于有象样的家伙了。",
+                "targetId": 5,
+                "isTakeTask": true
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 31,
+        "description": "task1-Completed-5",
+        "text": "既然你有了武器，也就有了承担更大责任的能力。我一直想知道，为什么这些野物会频繁攻击村庄。我想委托你去密林深处调查一番，如果是你的话，或许能查出真相。",
+        "dialogueOptionList": [
+            {
+                "text": "交给我吧，我会去查个水落石出。",
+                "targetId": -1,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 32,
+        "description": "task2-NotAccepted-0",
+        "text": "既然你已经武装起来了，我也就不把你当外人看了。那把剑不是装饰品，现在村庄面临的危机远比你在村口看到的要严重。",
+        "dialogueOptionList": [
+            {
+                "text": "你是说那些发狂的动物？",
+                "targetId": 1,
+                "isTakeTask": false
+            },
+            {
+                "text": "我有种不祥的预感。",
+                "targetId": 2,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 33,
+        "description": "task2-NotAccepted-1",
+        "text": "没错。根据守卫们的观察，那些攻击村庄的史莱姆和甲龟，全部都是从密林深处涌出来的。那里一定发生了什么变故。",
+        "dialogueOptionList": [],
+        "targetId": 3
+    },
+    {
+        "id": 34,
+        "description": "task2-NotAccepted-2",
+        "text": "你的直觉很准。空气中弥漫着一股不安的气息。所有的迹象都指向同一个源头——密林深处。",
+        "dialogueOptionList": [],
+        "targetId": 3
+    },
+    {
+        "id": 35,
+        "description": "task2-NotAccepted-3",
+        "text": "我需要有人深入密林腹地去调查。这很危险，你要一路杀进去，直到密林的最深处，搞清楚到底是什么在驱使这些野物攻击人类。村里的卫兵要死守防线，我只能拜托身手不凡的你了。",
+        "dialogueOptionList": [
+            {
+                "text": "交给我吧，我会查明真相的。",
+                "targetId": 4,
+                "isTakeTask": false
+            },
+            {
+                "text": "听起来像是去送死，我有什么好处？",
+                "targetId": 4,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 36,
+        "description": "task2-NotAccepted-4",
+        "text": "这是一次深入敌后的侦查。如果你能带回有价值的情报，或许就能救下整个村庄。怎么样，你敢去吗？",
+        "dialogueOptionList": [
+            {
+                "text": "为了村庄的安全，我义不容辞。",
+                "targetId": 5,
+                "isTakeTask": true
+            },
+            {
+                "text": "密林太深了，我还没准备好。",
+                "targetId": 6,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 37,
+        "description": "task2-NotAccepted-5",
+        "text": "很好！握紧你的剑，一路杀过去。不管你在深处看到了什么，记得活着回来告诉我。祝你好运！",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 38,
+        "description": "task2-NotAccepted-6",
+        "text": "谨慎也是一种生存智慧……但危机不会因为你的退缩而消失。等你觉得手中的剑够锋利了，再来找我。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 39,
+        "description": "task2-Start-0",
+        "text": "（Ramon 看到你回来，立刻迎了上来，神情有些焦急） 情况怎么样？找到野兽发狂的源头了吗？我看你好像还没查出什么结果。",
+        "dialogueOptionList": [
+            {
+                "text": "密林里的怪物太多了，我很难深入。",
+                "targetId": 1,
+                "isTakeTask": false
+            },
+            {
+                "text": "树林太密，我有点迷失方向了。",
+                "targetId": 2,
+                "isTakeTask": false
+            },
+            {
+                "text": "我只是回来休整一下，马上就回去。",
+                "targetId": 3,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 40,
+        "description": "task2-Start-1",
+        "text": "那些怪物就是最大的线索！哪里怪物最密集，哪里就是问题的核心。握紧你的剑，杀出一条血路来，别让它们挡住你的脚步。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 41,
+        "description": "task2-Start-2",
+        "text": "沿着怪物涌来的方向逆流而上。它们是从密林最深处出来的，只要你一直往那个方向走，就一定会发现什么。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 42,
+        "description": "task2-Start-3",
+        "text": "那就抓紧时间。每一分钟过去，村庄的防线就多一分危险。我在这里等着你的好消息，快去！",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 43,
+        "description": "task2-Completed-0",
+        "text": "（Ramon 满脸疲惫，盔甲上多了几道新划痕，看来刚才村口又经历了一场恶战） 你终于回来了！快告诉我，你在密林深处到底看到了什么？为什么野兽都不受控制的攻击人类？",
+        "dialogueOptionList": [
+            {
+                "text": "有一口熬着绿色毒药的大锅，还有一个漩涡。",
+                "targetId": 1,
+                "isTakeTask": false
+            },
+            {
+                "text": "那里有个奇怪的传送门，还有刺鼻的药水味。",
+                "targetId": 1,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 44,
+        "description": "task2-Completed-1",
+        "text": "（听完你的描述，Ramon 的脸色变得极其难看） 绿色的大锅……还有刺鼻的气味……该死，果然是它们！只有哥布林才会使用这种邪恶的炼金术。 原来如此，它们在用那种药水给史莱姆和甲龟下蛊，控制了它们的心智来攻击我们！",
+        "dialogueOptionList": [
+            {
+                "text": "哥布林？但我没看到它们。",
+                "targetId": -1,
+                "isTakeTask": false
+            },
+            {
+                "text": "那个漩涡又是做什么的？",
+                "targetId": -1,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 45,
+        "description": "task2-Completed-2",
+        "text": "它们很狡猾。那个旋转的漩涡一定是传送门。哥布林就是通过它，秘密连接了地牢世界和我们这里，不停的熬着毒药，蛊惑野物！",
+        "dialogueOptionList": [],
+        "targetId": 4
+    },
+    {
+        "id": 46,
+        "description": "task2-Completed-3",
+        "text": "那是传送门！哥布林利用它打通了地牢世界和人类世界的连接。难怪野物这么不正常，是另一个哥布林通过传送门来搞的鬼！",
+        "dialogueOptionList": [],
+        "targetId": 4
+    },
+    {
+        "id": 47,
+        "description": "task2-Completed-4",
+        "text": "我想立刻冲进去毁了它，但你也看到了，我必须留在这里指挥防守，否则村庄立刻就会沦陷。现在我能信任的人只有你了。 勇士，虽然这很危险，但我请求你——进入那个传送门，去哥布林的地盘查清楚它们到底在策划什么阴谋！",
+        "dialogueOptionList": [
+            {
+                "text": "为了村庄，我会去查个水落石出。",
                 "targetId": -1,
                 "isTakeTask": true
             }
         ],
-        "questId": 2
+        "targetId": -1
+    },
+    {
+        "id": 48,
+        "description": "task3-NotAccepted-0",
+        "text": "就像我刚才推断的，那个漩涡就是哥布林入侵的通道。只要它还开着，敌人就可能涌入我们的世界，造成更大的破坏",
+        "dialogueOptionList": [
+            {
+                "text": "我去把那个传送门砸了。",
+                "targetId": 1,
+                "isTakeTask": false
+            },
+            {
+                "text": "我们对那边的情况一无所知。",
+                "targetId": 2,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 49,
+        "description": "task3-NotAccepted-1",
+        "text": "没那么简单。那个传送门是由魔法维持的，普通的物理攻击无法摧毁它。况且传送门在某种程度上能够帮助我们查明真相，冒然摧毁反而丧失先机",
+        "dialogueOptionList": [],
+        "targetId": 3
+    },
+    {
+        "id": 50,
+        "description": "task3-NotAccepted-2",
+        "text": "你说得对，情报就是生命。我们不知道传送门对面有多少军队，也不知道它们到底策划了什么规模的进攻。这正是需要你去调查的原因。",
+        "dialogueOptionList": [],
+        "targetId": 3
+    },
+    {
+        "id": 51,
+        "description": "task3-NotAccepted-3",
+        "text": "我要你通过那个传送门，潜入哥布林的地牢世界。虽然我很想派一支军队支援你，但现在村庄危在旦夕，我必须留守。 这可能是一趟单程票……但我相信如果是你，一定能查明真相并活着回来。去调查哥布林到底在搞什么鬼。",
+        "dialogueOptionList": [
+            {
+                "text": "这是唯一的办法了，我去。",
+                "targetId": 5,
+                "isTakeTask": true
+            },
+            {
+                "text": "去哥布林的老巢？这太疯狂了。",
+                "targetId": 4,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 52,
+        "description": "task3-NotAccepted-4",
+        "text": "确实疯狂，但只有疯狂的勇士才能拯救现在的局面。只要找到它们进攻计划的证据，我们或许就能找到反击的机会。",
+        "dialogueOptionList": [
+            {
+                "text": "别担心，我会把它们的老底翻出来的。",
+                "targetId": 5,
+                "isTakeTask": true
+            },
+            {
+                "text": "抱歉，我还没准备好面对这种危险。",
+                "targetId": 6,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 53,
+        "description": "task3-NotAccepted-5",
+        "text": "勇气可嘉！那个传送门就在密林深处。深吸一口气，跳进去。无论看到什么，一定要查清楚它们的最终目的。全村人的性命就交给你了！",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 54,
+        "description": "task3-NotAccepted-6",
+        "text": "我理解你的恐惧，面对未知的世界谁都会颤抖。但请记住，如果我们坐以待毙，战火迟早会烧到这里。希望你能尽快改变主意。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 55,
+        "description": "task3-Start-0",
+        "text": "（看到你回来，Ramon 几乎是从椅子上跳了起来） 怎么样？你通过那个漩涡了吗？有没有查到哥布林到底在策划什么？快告诉我，是不是大举进攻马上就要开始了？",
+        "dialogueOptionList": [
+            {
+                "text": "传送门那边敌人太多了，我得回来补给一下。",
+                "targetId": 1,
+                "isTakeTask": false
+            },
+            {
+                "text": "我还没找到什么有价值的线索。",
+                "targetId": 2,
+                "isTakeTask": false
+            },
+            {
+                "text": "那个传送门具体在什么位置？我迷路了。",
+                "targetId": 3,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 56,
+        "description": "task3-Start-1",
+        "text": "这是意料之中的。那是哥布林的老巢，它们肯定会拼死抵抗。但别忘了，你现在不仅是为自己而战，更是为了身后这个村庄。坚持住，杀光它们，直到它们再也不敢阻挡你。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 57,
+        "description": "task3-Start-2",
+        "text": "不可能没有线索。哥布林虽然狡猾，但它们总会留下命令或计划书。仔细搜查每一个角落，特别是它们首领所在的地方，一定藏着关于这场入侵的秘密。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 58,
+        "description": "task3-Start-3",
+        "text": "就在密林深处！那口绿色大锅旁边旋转的漩涡就是入口。别再浪费时间了，每一秒的拖延都可能让敌人多一分准备。",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 59,
+        "description": "task3-Completed-0",
+        "text": "（你气喘吁吁地跑回村口，却发现这里空无一人） Ramon 队长？你在哪里！我带回了哥布林的情报！ （你环顾四周，只看到了满地的狼藉和远处徘徊的哥布林）",
+        "dialogueOptionList": [],
+        "targetId": 1
+    },
+    {
+        "id": 60,
+        "description": "task3-Completed-1",
+        "text": "（你的目光落在脚边的血泊中，那里静静地躺着一面熟悉的盾牌） 这是……Ramon 的盾牌？上面全是缺口和血迹…… 不……不会的。那样强壮的战士，怎么会……",
+        "dialogueOptionList": [],
+        "targetId": 2
+    },
+    {
+        "id": 61,
+        "description": "task3-Completed-2",
+        "text": "（你紧紧攥着从地牢带回的那张纸条，上面的字迹此刻显得格外刺眼） 人类已经快扛不住了，马上时机就成熟啦，你我一起踏平人类世界…… 可恶！原来当我们去调查的时候，它们就已经发动了总攻。Ramon 是为了守卫村庄才……",
+        "dialogueOptionList": [],
+        "targetId": 3
+    },
+    {
+        "id": 62,
+        "description": "task3-Completed-3",
+        "text": "（你缓缓捡起沉重的盾牌，眼中的悲伤逐渐变成了坚毅） 可恶，Ramon 已经不在了……但我还在！",
+        "dialogueOptionList": [
+            {
+                "text": "我会继承守卫队长的遗志。不管那个金色传送门通向哪里，不管这背后还有什么敌人，我都会把它们全部消灭！",
+                "isTakeTask": true
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 63,
+        "description": "task4-NotAccepted-0",
+        "text": "（你站在光芒耀眼的传送门前，甚至能感觉到对面吹来的干燥热风） 这个金色的漩涡……那张纸条上说，哥布林已经去联合新的盟友了。如果我没猜错，这后面就是它们的集结地——沙漠世界。",
+        "dialogueOptionList": [],
+        "targetId": 1
+    },
+    {
+        "id": 64,
+        "description": "task4-NotAccepted-1",
+        "text": "（你低头看了一眼手中 Ramon 留下的盾牌，握紧了剑柄） Ramon 队长为了守护这里付出了生命，现在只有我能阻止这场浩劫了。哥布林和那个所谓的‘石头人’正在做最后的进攻准备，我必须在它们出发前解决掉它们！",
+        "dialogueOptionList": [],
+        "targetId": 2
+    },
+    {
+        "id": 65,
+        "description": "task4-NotAccepted-2",
+        "text": "（深吸一口气，你在这个未知的入口前做出了决定） 只要跨过这一步，就没有退路了。是为了 Ramon，也是为了幸存的人们……我要去终结这一切。",
+        "dialogueOptionList": [
+            {
+                "text": "继承遗志，决一死战！",
+                "targetId": -1,
+                "isTakeTask": true
+            },
+            {
+                "text": "我需要再检查一下装备。",
+                "targetId": -1,
+                "isTakeTask": false
+            }
+        ],
+        "targetId": -1
+    },
+    {
+        "id": 66,
+        "description": "task4-Start-0",
+        "text": "（刚一落地，灼热的气浪就扑面而来，漫天的黄沙让你几乎睁不开眼） 咳咳……这里就是沙漠世界吗？空气烫得像着了火一样，和人类世界完全不同。",
+        "dialogueOptionList": [],
+        "targetId": 1
+    },
+    {
+        "id": 67,
+        "description": "task4-Start-1",
+        "text": "（你眯起眼睛观察四周，发现沙丘之间到处都是绿色的身影） 糟了，我不该惊讶的。哥布林的大部队已经抵达了这里，它们马上就要准备做最后的进攻了",
+        "dialogueOptionList": [],
+        "targetId": 2
+    },
+    {
+        "id": 68,
+        "description": "task4-Start-2",
+        "text": "（在大地的震颤中，一个巨大的岩石身影缓缓站了起来，遮住了太阳） 天哪，看那个大家伙……那是石头人！它的体型比传说中还要巨大，浑身散发着危险的气息。哥布林竟然真的联合了这种怪物。",
+        "dialogueOptionList": [],
+        "targetId": 3
+    },
+    {
+        "id": 69,
+        "description": "task4-Start-3",
+        "text": "（你举起 Ramon 的盾牌，用力拍击了一下剑身，发出清脆的响声） 绝不能让这支军队跨过传送门！哪怕只有我一个人，我也要把它拦在这里。为了 Ramon，为了村庄……杀光它们！",
+        "dialogueOptionList": [],
+        "targetId": -1
+    },
+    {
+        "id": 70,
+        "description": "task4-Completed-0",
+        "text": "（随着一声震耳欲聋的巨响，巨大的岩石身躯轰然倒塌，化作一堆碎石。周围的哥布林看到首领倒下，尖叫着四散而逃） 终于……结束了。那个大家伙倒下了，哥布林的野心也随之粉碎了。",
+        "dialogueOptionList": [],
+        "targetId": 1
+    },
+    {
+        "id": 71,
+        "description": "task4-Completed-1",
+        "text": "（你大口喘着粗气，汗水浸透了盔甲。你缓缓举起手中满是划痕的盾牌，看向天空） Ramon 队长，你看到了吗？我做到了。无论是哥布林还是石头人，都别想再踏入我们的世界半步。",
+        "dialogueOptionList": [],
+        "targetId": 2
+    },
+    {
+        "id": 72,
+        "description": "task4-Completed-2",
+        "text": "（金色的传送门开始闪烁，似乎因为失去了魔力维持即将关闭） 传送门快要消失了，我得赶紧回去。",
+        "dialogueOptionList": [
+            {
+                "text": "不知道现在的村庄怎么样了……希望一切都还来得及。",
+                "targetId": -1,
+                "isTakeTask": true
+            }
+        ],
+        "targetId": -1
     }
 ]

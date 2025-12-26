@@ -6,7 +6,7 @@ public class PlayerDialogueTrigger : DialogueTrigger
 {
     public void DialogueTrigger()
     {
-        DialogueManager.Instance.BeginDialogue(characterId, profileTexture, 
+        DialogueManager.Instance.BeginConditionDialogue(characterId, profileTexture, 
             characterName);
     }
 }

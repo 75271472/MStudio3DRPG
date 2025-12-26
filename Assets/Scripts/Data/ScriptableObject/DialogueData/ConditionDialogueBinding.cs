@@ -7,4 +7,5 @@ public class ConditionDialogueBinding
 {
     public int characterId;
     public int dialogueId;
+    public int conditionId;
 }

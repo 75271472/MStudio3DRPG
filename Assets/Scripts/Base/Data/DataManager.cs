@@ -1,12 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.IO;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class IntInfo
 {
@@ -98,6 +93,7 @@ public class DataManager : BaseManager<DataManager>
     public const string INVENTORYINFO = "InventoryInfo";
     public const string PLAYERINFO = "PlayerInfo";
     public const string QUESTRECORD = "QuestRecord";
+    public const string CONDITIONINFO = "ConditionInfo";
     #endregion
 
     #region streamingAssets
@@ -153,7 +149,7 @@ public class DataManager : BaseManager<DataManager>
 
     public List<QuestInfo> QuestInfoList { get; private set; }
     public List<QuestRecord> QuestRecordList { get; private set; }
-    //public 
+    public List<ConditionInfo> ConditionInfoList { get; private set; }
 
     public DataManager()
     {
@@ -196,6 +192,7 @@ public class DataManager : BaseManager<DataManager>
         LoadPlayerInfo();
         LoadInventoryItemInfoList();
         LoadQuestRecordList();
+        LoadConditionInfoList();
     }
 
     // 如果不填入值，就是用DataManager中的ArchiveIndex加载存档
@@ -255,6 +252,15 @@ public class DataManager : BaseManager<DataManager>
         {
             QuestRecordList.Add(new QuestRecord(questInfo));
         }
+    }
+
+    private void LoadConditionInfoList()
+    {
+        ConditionInfoList = GetConditionInfoListByIndex(ArchiveIndex);
+        if (ConditionInfoList != null) return;
+
+        ConditionInfoList = JsonManager.Instance.
+            LoadDataFromStreamingAssets<List<ConditionInfo>>(CONDITIONINFO);
     }
 
     /// <summary>
@@ -478,6 +484,16 @@ public class DataManager : BaseManager<DataManager>
         return null;
     }
 
+    public ConditionDialoguePiece GetConditionDialoguePieceById(int pieceId)
+    {
+        if (ConditionDialoguePieceMap.TryGetValue(pieceId, out var piece))
+        {
+            return piece;
+        }
+
+        return null;
+    }
+
     public ItemInfo GetItemInfo(int itemInfoType, int itemId)
     {
         if (itemId < 0) return null;
@@ -686,6 +702,21 @@ public class DataManager : BaseManager<DataManager>
             questRecordListPath, out var questRecordList))
         {
             return questRecordList;
+        }
+
+        return null;
+    }
+
+    public List<ConditionInfo> GetConditionInfoListByIndex(int archiveIndex)
+    {
+        if (!CheckArchiveExist(archiveIndex)) return null;
+
+        string conditionListPath = GetSavePath(archiveIndex, CONDITIONINFO);
+
+        if (JsonManager.Instance.LoadDataFromPersistentData<List<ConditionInfo>>(
+            conditionListPath, out var conditionInfoList))
+        {
+            return conditionInfoList;
         }
 
         return null;

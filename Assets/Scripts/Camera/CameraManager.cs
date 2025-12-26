@@ -26,4 +26,9 @@ public class CameraManager : MonoBehaviourManager<CameraManager>
     {
         CameraController.SwitchPause(isPause);
     }
+
+    public void ShakeCamera(float intensity, float time)
+    {
+        CameraController.ShakeCamera(intensity, time);
+    }
 }

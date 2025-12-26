@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6915449014075161975}
   - component: {fileID: 8004269607435419934}
+  - component: {fileID: 4769271779069470038}
   - component: {fileID: 5594542536633282270}
   m_Layer: 0
   m_Name: DialogueManager
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904434724890291822}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 68.741875, y: -1.8597354, z: -126.31553}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -46,6 +47,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsNotSubManagerInit: 0
+--- !u!114 &4769271779069470038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904434724890291822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abf28281a8807c428cbef7161a2de6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5594542536633282270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,6 +71,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89e45dd440467ed4aaf7e647dd931158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueDataSOList:
-  - {fileID: 11400000, guid: edd37939552387745b3ffc25ef29e3cc, type: 2}
-  - {fileID: 11400000, guid: 1f6085719d50f5344866cc75aaeaacd7, type: 2}

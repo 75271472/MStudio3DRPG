@@ -70,7 +70,7 @@ public class QuestRequire
     public int currentAmount;
     public bool isComplated;
 
-    public event Action<QuestRequire> OnRequireCompletedEvent;
+    public event Action<QuestRequire> OnUpdateRequireEvent;
 
     public QuestRequire() { }
 
@@ -95,9 +95,10 @@ public class QuestRequire
         if (questRequireInfo.requireType != ERequireType.KillEnemy) return;
         if (monsterName != questRequireInfo.name) return;
 
-        currentAmount = Mathf.Min(currentAmount + 1, questRequireInfo.requireAmount);
+        currentAmount++;
 
-        CheckCompleted();
+        isComplated = currentAmount >= questRequireInfo.requireAmount;
+        OnUpdateRequireEvent?.Invoke(this);
     }
 
     public void UpdateCollectItemRequire(string itemName, int quantity)
@@ -108,32 +109,16 @@ public class QuestRequire
         Debug.Log("UpdateItemRequire: " + questRequireInfo.name);
 
         // 根据传入的数据重置进度
-        currentAmount = Mathf.Clamp(currentAmount + quantity, 0, 
-            questRequireInfo.requireAmount);
+        currentAmount = Mathf.Max(currentAmount + quantity, 0);
 
-        CheckCompleted();
-    }
-
-    public void ResetItemRequire()
-    {
-        Debug.Log("ResetItemRequire: " + questRequireInfo.name);
-
-        currentAmount = 0;
-        isComplated = false;
+        isComplated = currentAmount >= questRequireInfo.requireAmount;
+        // 当进度更新时触发
+        OnUpdateRequireEvent?.Invoke(this);
     }
 
     public void ResetEvent()
     {
-        OnRequireCompletedEvent = null;
-    }
-
-    private void CheckCompleted()
-    {
-        if (currentAmount < questRequireInfo.requireAmount) return;
-        if (isComplated) return;
-
-        isComplated = true;
-        OnRequireCompletedEvent?.Invoke(this);
+        OnUpdateRequireEvent = null;
     }
 }
 
@@ -160,7 +145,7 @@ public class Quest
         foreach (var questRequireInfo in questInfo.questRequireInfos)
         {
             QuestRequire questRequire = new QuestRequire(questRequireInfo);
-            questRequire.OnRequireCompletedEvent += OnRequireComlatedHandler;
+            questRequire.OnUpdateRequireEvent += OnUpdateRequireHandler;
             questRequireList.Add(questRequire);
         }
     }
@@ -179,7 +164,7 @@ public class Quest
         foreach (var require in questRecord.questRequireList)
         {
             QuestRequire newRequire = require.Clone();
-            newRequire.OnRequireCompletedEvent += OnRequireComlatedHandler;
+            newRequire.OnUpdateRequireEvent += OnUpdateRequireHandler;
             this.questRequireList.Add(newRequire);
         }
     }
@@ -190,7 +175,7 @@ public class Quest
 
         foreach (var require in questRequireList)
         {
-            if (require.isComplated) continue;
+            //if (require.isComplated) continue;
             switch (require.questRequireInfo.requireType)
             {
                 case ERequireType.KillEnemy:
@@ -211,7 +196,13 @@ public class Quest
 
     public void SetStartState() => questState = EQuestState.Start;
 
-    public void SetFinishState() => questState = EQuestState.Finished;
+    public void SetFinishState()
+    {
+        questState = EQuestState.Finished;
+
+        questRequireList.ForEach((quesetReqiure) => quesetReqiure.ResetEvent());
+        OnQuestCompletedEvent = null;
+    }
 
     public void RealizeReward()
     {
@@ -224,18 +215,32 @@ public class Quest
         }
     }
 
-    private void OnRequireComlatedHandler(QuestRequire questRequire)
+    public void SubstituteItems()
+    {
+        Debug.Log("SubstituteItems");
+
+        foreach (var require in questRequireList)
+        {
+            PlayerManager.Instance.PlayerData.InventoryController.
+                DropItem(require.questRequireInfo.name,
+                require.questRequireInfo.requireAmount);
+        }
+    }
+
+    private void OnUpdateRequireHandler(QuestRequire questRequire)
     {
         int index = questRequireList.IndexOf(questRequire);
         if (index == -1) return;
 
         if (questRequireList.Any(questRequire => questRequire.isComplated == false))
+        {
+            questState = EQuestState.Start;
             return;
+        }
         
-        questRequireList.ForEach((quesetReqiure) => questRequire.ResetEvent());
         questState = EQuestState.Complete;
         OnQuestCompletedEvent?.Invoke(this);
-        OnQuestCompletedEvent = null;
+        //OnQuestCompletedEvent = null;
     }
 }
 #endregion

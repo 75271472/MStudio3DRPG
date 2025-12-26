@@ -269,6 +269,52 @@ public class InventoryData : MonoBehaviour
     }
 
     /// <summary>
+    /// 根据传入的 InventoryItemInfo 删除指定数量的特定物品。
+    /// 会直接修改传入的 inventoryItemInfo.quantity 以反映剩余未删除的数量。
+    /// </summary>
+    /// <param name="inventoryItemInfo">包含要删除的物品类型、ID和总数量</param>
+    public void RemoveItem(string itemName, int quantity)
+    {
+        // 遍历所有物品格子（包括快捷栏等，如果不想遍历特殊区，可以将 Count 改为 Count - UnAddableSize）
+        for (int i = 0; i < inventoryItemList.Count; i++)
+        {
+            // 如果已经删除了足够的数量，停止遍历
+            if (quantity <= 0) break;
+
+            InventoryItem currentItem = inventoryItemList[i];
+
+            // 跳过空格子
+            if (currentItem.IsEmpty) continue;
+
+            // 检查物品类型和ID是否匹配
+            if (currentItem.itemInfo.name != itemName)
+                continue;
+
+            // 计算当前格子能扣除的数量（取“当前格子持有量”和“剩余需要删除量”的较小值）
+            int amountToRemove = Mathf.Min(currentItem.quantity, quantity);
+
+            // 从需求总量中减去即将删除的数量
+            quantity -= amountToRemove;
+
+            // 更新当前格子的状态
+            int remainingInSlot = currentItem.quantity - amountToRemove;
+            if (remainingInSlot > 0)
+            {
+                // 如果格子还有剩余，更新数量
+                inventoryItemList[i] = currentItem.ChangeQuantity(remainingInSlot);
+            }
+            else
+            {
+                // 如果格子被扣光，变为空格子
+                inventoryItemList[i] = InventoryItem.GetEmptyItem();
+            }
+        }
+
+        // 删除操作完成后更新UI和数据状态
+        UpdateInventory();
+    }
+
+    /// <summary>
     /// 
     /// </summary>
     /// <param name="index"></param>
@@ -280,8 +326,8 @@ public class InventoryData : MonoBehaviour
         if (inventoryItemList[index].IsEmpty) return null;
 
         int reminder = inventoryItemList[index].quantity - amount;
-        ItemInfo itemInfo = inventoryItemList[index].itemInfo;
-        InventoryItemInfo inventoryItemInfo = 
+        //ItemInfo itemInfo = inventoryItemList[index].itemInfo;
+        InventoryItemInfo inventoryItemInfo =
             new InventoryItemInfo(inventoryItemList[index], -1);
         if (reminder <= 0)
         {

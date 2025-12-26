@@ -2,6 +2,7 @@
     {
         "characterId": 0,
         "characterName": "player",
-        "dialogueId": 0
+        "dialogueId": 0,
+        "conditionId": 0
     }
 ]
