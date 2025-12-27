@@ -1222,6 +1222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e547def28cd9cf045a4fa4da2733ec9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterId: 0
+  characterName: Player
   profileTexture: {fileID: 8400000, guid: b920b4a3cabbc154a92d7ed0f8d974b3, type: 2}
 --- !u!95 &1237216870556239425
 Animator:

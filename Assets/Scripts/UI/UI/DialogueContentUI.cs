@@ -32,6 +32,13 @@ public class DialogueContentUI : MonoBehaviour
 
     public void SetProfileTexture(Texture profileTexture)
     {
+        if (profileTexture == null)
+        {
+            this.profileRawImg.enabled = false;
+            return;
+        }
+
+        this.profileRawImg.enabled = true;
         this.profileRawImg.texture = profileTexture;
     }
 

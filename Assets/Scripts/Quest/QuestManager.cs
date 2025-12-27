@@ -90,6 +90,13 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         return EQuestState.NotAccepted;
     }
 
+    public void TriggerRequireUpdate(string triggerName, bool isFinish = true)
+    {
+        TriggerRequire triggerRequire = new TriggerRequire(triggerName, isFinish);
+
+        UpdateRequire(null, null, triggerRequire);
+    }
+
     private void CheckAndProcessQuest(int questId)
     {
         // 传入的Id位于finishedQuestIdList中，则直接返回
@@ -161,6 +168,7 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         else if (record.questState == EQuestState.Complete)
         {
             activeQuestDict.Add(record.id, quest);
+            // 任务Complete状态下执行
         }
         else if (record.questState == EQuestState.Start)
         {
@@ -205,13 +213,14 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
             UpdateTipTxt($"任务结束：{quest.questName}");
     }
 
-    private void UpdateRequire(ICharacter character = null, 
-        InventoryItemInfo inventoryItemInfo = null)
+    private void UpdateRequire(ICharacter character = null,
+        InventoryItemInfo inventoryItemInfo = null,
+        TriggerRequire triggerRequire = null)
     {
         print("QuestManager UpdateRequire Trigger");
 
         RequireDataPayload requireDataPayload = new RequireDataPayload(
-            character, inventoryItemInfo);
+            character, inventoryItemInfo, triggerRequire);
 
         OnRequireUpdateEvent?.Invoke(requireDataPayload);
     }

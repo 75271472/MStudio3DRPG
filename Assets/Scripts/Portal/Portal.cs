@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Portal : MonoBehaviour
+public class Portal : MonoBehaviour, IInteractable
 {
     [field: SerializeField] public string SceneName { get; private set; }
     [field: SerializeField] public int PortalId { get; private set; }
@@ -18,6 +18,7 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!CanInteract()) return;
         if (!other.CompareTag("Player")) return;
         // 当SceneName为空时不显现InputActionPanel，不进行传送
         if (string.IsNullOrEmpty(SceneName)) return;
@@ -40,5 +41,12 @@ public class Portal : MonoBehaviour
         //print("OnOperate Invoke");
         UIManager.Instance.HidePanel<InputActionPanel>();
         PortalManager.Instance.PortalEnter(TargetSceneName, TargetPortalID);
+    }
+
+    public bool CanInteract()
+    {
+        if (gameObject.TryGetComponent<QuestCondition>(out var condition))
+            return condition.CheckCondition();
+        return true;
     }
 }

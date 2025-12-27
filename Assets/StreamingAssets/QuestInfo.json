@@ -55,14 +55,9 @@
         "description": "村庄周边的野兽袭击越来越频繁，守卫队长 Ramon 怀疑这背后必有蹊跷。所有的迹象都指向那片幽暗的密林。 Ramon 委托我深入密林腹地，查明野兽发狂的真正原因。这是一次危险的单人侦查，我需要一路杀进去，无论在深处发现了什么，都要活着带回情报。",
         "questRequireInfos": [
             {
-                "name": "Slime",
-                "requireAmount": 3,
-                "requireType": 0
-            },
-            {
-                "name": "Turtle",
-                "requireAmount": 3,
-                "requireType": 0
+                "name": "调查密林深处的异象",
+                "requireAmount": 1,
+                "requireType": 2
             }
         ],
         "rewardItemInfos": []
@@ -73,47 +68,18 @@
         "description": "守卫队长 Ramon 确认了密林深处的漩涡是连接哥布林世界的通道。如果不切断源头，村庄将永无宁日。 Ramon 必须留守指挥防御，他将潜入敌后的重任交给了我。我必须穿过传送门进入地牢，消灭那里的守军，并查明哥布林到底在策划什么阴谋。这可能是一趟有去无回的旅程。",
         "questRequireInfos": [
             {
-                "name": "Slime",
-                "requireAmount": 3,
-                "requireType": 0
-            },
-            {
-                "name": "Turtle",
-                "requireAmount": 4,
-                "requireType": 0
+                "name": "探明哥布林的秘密计划",
+                "requireAmount": 1,
+                "requireType": 2
             }
         ],
-        "rewardItemInfos": [
-            {
-                "itemInfoType": 0,
-                "quantity": 1,
-                "itemId": 0,
-                "index": 3
-            },
-            {
-                "itemInfoType": 1,
-                "quantity": 3,
-                "itemId": 2,
-                "index": 1
-            }
-        ]
+        "rewardItemInfos": []
     },
     {
         "id": 4,
         "questName": "继承遗志战终章",
         "description": "守卫队长 Ramon 为了守护村庄壮烈牺牲，但他留下的盾牌将由我来守护。 根据情报，哥布林已经逃往沙漠世界，并与在那里的石头人结成了同盟，企图发动最后的总攻 。我必须带着 Ramon 的遗志，穿过金色传送门，在它们发起进攻前将这股邪恶势力彻底消灭。这是最后的决战！",
-        "questRequireInfos": [
-            {
-                "name": "Slime",
-                "requireAmount": 3,
-                "requireType": 0
-            },
-            {
-                "name": "Turtle",
-                "requireAmount": 5,
-                "requireType": 0
-            }
-        ],
+        "questRequireInfos": [],
         "rewardItemInfos": [
             {
                 "itemInfoType": 1,

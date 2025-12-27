@@ -7,6 +7,7 @@ public class ConditionDialogueData : MonoBehaviour
 {
     private ConditionDialoguePiece currentPiece;
     private int startPieceId;
+    private event Action OnDialogueEndEvent;
 
     public bool IsPlaying => startPieceId != -1;
     public event Action<KeyValuePair<string, List<string>>?> OnUpdateDialogueEvent;
@@ -16,12 +17,14 @@ public class ConditionDialogueData : MonoBehaviour
 
     }
 
-    public void StartDialogue(ConditionDialoguePiece piece)
+    public void StartDialogue(ConditionDialoguePiece piece, Action action = null)
     {
         if (piece == null) return;
 
         this.currentPiece = piece;
         this.startPieceId = piece.id;
+        OnDialogueEndEvent += action;
+
         UpdateUI();
     }
 
@@ -29,6 +32,8 @@ public class ConditionDialogueData : MonoBehaviour
     {
         currentPiece = null;
         startPieceId = -1;
+        OnDialogueEndEvent?.Invoke();
+        OnDialogueEndEvent = null;
     }
 
     public void UpdateDialogue()

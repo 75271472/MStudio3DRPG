@@ -359,28 +359,28 @@
         "description": "task1-Completed-1",
         "text": "能在绝境中生存下来就是本事。既然你能用拳头活下来，那有了武器，你就能保护更多人。",
         "dialogueOptionList": [],
-        "targetId": 4
+        "targetId": 3
     },
     {
         "id": 29,
         "description": "task1-Completed-2",
         "text": "好大的口气！不过我喜欢你的自信。像你这样身手不凡的人，正是我们现在急需的。",
         "dialogueOptionList": [],
-        "targetId": 4
+        "targetId": 3
     },
     {
         "id": 30,
-        "description": "task1-Completed-4",
+        "description": "task1-Completed-3",
         "text": "（Ramon 解下腰间备用的一把长剑，双手递给你） 拿着。这是你应该得到的报酬——一把精制铁剑。虽然不是什么神兵利器，但斩开甲龟的硬壳绰绰有余。从此以后，你不再是手无寸铁的难民了。",
         "dialogueOptionList": [
             {
                 "text": "谢谢，我会善用它的。",
-                "targetId": 5,
+                "targetId": 4,
                 "isTakeTask": true
             },
             {
                 "text": "终于有象样的家伙了。",
-                "targetId": 5,
+                "targetId": 4,
                 "isTakeTask": true
             }
         ],
@@ -388,7 +388,7 @@
     },
     {
         "id": 31,
-        "description": "task1-Completed-5",
+        "description": "task1-Completed-4",
         "text": "既然你有了武器，也就有了承担更大责任的能力。我一直想知道，为什么这些野物会频繁攻击村庄。我想委托你去密林深处调查一番，如果是你的话，或许能查出真相。",
         "dialogueOptionList": [
             {
@@ -550,12 +550,12 @@
         "dialogueOptionList": [
             {
                 "text": "哥布林？但我没看到它们。",
-                "targetId": -1,
+                "targetId": 2,
                 "isTakeTask": false
             },
             {
                 "text": "那个漩涡又是做什么的？",
-                "targetId": -1,
+                "targetId": 3,
                 "isTakeTask": false
             }
         ],
@@ -742,6 +742,7 @@
         "dialogueOptionList": [
             {
                 "text": "我会继承守卫队长的遗志。不管那个金色传送门通向哪里，不管这背后还有什么敌人，我都会把它们全部消灭！",
+                "targetId": -1,
                 "isTakeTask": true
             }
         ],

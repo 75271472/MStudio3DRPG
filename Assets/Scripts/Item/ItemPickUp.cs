@@ -14,7 +14,7 @@ public class ItemPickUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Item>(out var item))
+        if (other.TryGetComponent<Item>(out var item) && item.enabled)
         {
             //print("Pick up: " + item.ItemInfo.name);
 

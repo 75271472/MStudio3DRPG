@@ -27,4 +27,21 @@ public class NPCManager : MonoBehaviourManager<NPCManager>
 
         NPCManagerInit();
     }
+
+    public NPCController GetNPC(int id)
+    {
+        if (NPCDict.ContainsKey(id))
+            return NPCDict[id];
+        else
+            return null;
+    }
+
+    public void DestroyNPCById(int npcId)
+    {
+        NPCController npc = GetNPC(npcId);
+
+        if (npc == null) return;
+
+        Destroy(GetNPC(npcId).gameObject);
+    }
 }

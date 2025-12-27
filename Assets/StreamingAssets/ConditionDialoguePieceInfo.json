@@ -1,20 +1,86 @@
 [
     {
         "id": 0,
-        "description": "first-dialogue",
-        "text": "我在哪，头好晕~~~",
+        "description": "dialogue-0",
+        "text": "嘶……头好痛。这是哪里？我怎么什么都记不起来了……浑身一点力气都没有。",
         "targetId": 1
     },
     {
         "id": 1,
-        "description": "first-dialogue",
-        "text": "试试还能不能移动，（使用鼠标右键点击地面进行移动）",
+        "description": "dialogue-0",
+        "text": "不管怎样，不能一直躺在这里，得试着活动一下身体。（点击 鼠标右键 进行移动）",
         "targetId": 2
     },
     {
         "id": 2,
-        "description": "first-dialogue",
-        "text": "那边有个人，去问问他什么情况",
+        "description": "dialogue-0",
+        "text": "周围看起来很陌生，我需要观察一下环境。（使用 W/S 上下旋转视角，Q/R 左右旋转视角，滑动 鼠标滚轮 缩放视角）",
+        "targetId": 3
+    },
+    {
+        "id": 3,
+        "description": "dialogue-0",
+        "text": "那是……村口好像站着一个守卫？也许他知道发生了什么，我得过去问问情况。",
+        "targetId": -1
+    },
+    {
+        "id": 4,
+        "description": "dialogue-1",
+        "text": "好刺鼻的气味……密林深处居然藏着一口正在熬制的大锅？",
+        "targetId": 1
+    },
+    {
+        "id": 5,
+        "description": "dialogue-1",
+        "text": "这味道……和那些发狂的史莱姆、甲龟身上的味道一模一样！难道这锅药水就是导致它们发狂的原因？",
+        "targetId": 2
+    },
+    {
+        "id": 6,
+        "description": "dialogue-1",
+        "text": "还有这个旋转的漩涡……它看起来深不见底，里面到底藏着什么秘密？那个幕后黑手是不是就藏在里面？",
+        "targetId": 3
+    },
+    {
+        "id": 7,
+        "description": "dialogue-1",
+        "text": "不管怎样，这肯定就是 Romen 队长要找的源头。情况紧急，我必须赶快回到村子，把这个发现告诉他！",
+        "targetId": -1
+    },
+    {
+        "id": 8,
+        "description": "dialogue-2",
+        "text": "（你拿起桌上沾满灰尘的羊皮纸，借着昏暗的烛光辨认那潦草的字迹，随后面色剧变）天哪……这上面写着，哥布林不仅仅是想骚扰村庄，它们正在筹备一场‘最后的清洗，目的是彻底摧毁整个人类世界！",
+        "targetId": 1
+    },
+    {
+        "id": 9,
+        "description": "dialogue-2",
+        "text": "（你的手指停留在了一个陌生的词汇上，眉头紧锁）它们居然要去联合……‘石头巨人’？那是什么东西？我从来没听说过这种怪物……连哥布林都需要结盟才能驾驭的家伙，到底有多可怕？",
+        "targetId": 2
+    },
+    {
+        "id": 10,
+        "description": "dialogue-2",
+        "text": "（一种前所未有的危机感涌上心头，你迅速将情报塞进怀里）不管那是什么，如果让这两种怪物联手，人类就真的没救了！我必须立刻回去，把这个惊人的消息告诉 Ramon 队长！",
+        "targetId": -1
+    },
+    {
+        "id": 11,
+        "description": "dialogue-3",
+        "text": "（你走出了传送门，发现原本喧嚣的战火已经熄灭。）",
+        "targetId": 1
+    },
+    {
+        "id": 12,
+        "description": "dialogue-3",
+        "text": "（阳光重新洒在村庄的土地上，幸存的村民们正在清理废墟，虽然伤痕累累，但每个人的脸上都带着劫后余生的希望。）",
+        "targetId": 2
+    },
+    {
+        "id": 13,
+        "description": "dialogue-3",
+        "text": "（你握紧了手中的剑与盾，你知道，这片土地的和平，是你和Ramon共同守护的。）",
         "targetId": -1
     }
 ]

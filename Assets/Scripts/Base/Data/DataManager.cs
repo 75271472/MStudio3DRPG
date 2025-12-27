@@ -67,6 +67,8 @@ public class DataManager : BaseManager<DataManager>
     // 游戏对象预设体路径
     public const string ROCKBREAKPARTICAL = "Prefabs/Particle/RockBreakParticle";
     public const string ROCK = "Prefabs/Weapon/Rock";
+    public const string SHIELD = "Prefabs/WordItem/Shield";
+    public const string YELLOWPORTAL = "Prefabs/Portal/YellowPortal";
 
     // 普通UI路径
     public const string INPUTACTIONING = UIROOTPATH + "InputActionUI";
@@ -81,6 +83,7 @@ public class DataManager : BaseManager<DataManager>
 
     // ModifierSO文件路径
     public const string MODIFIER = "GameData/Modifier/";
+    public const string QUESTFINISHER = "GameData/QuestFinisher/";
     #endregion
 
     #region persistentDataPath
@@ -585,6 +588,13 @@ public class DataManager : BaseManager<DataManager>
         UpdateQuestRecordList(activeQuestDict, finishedQuestDict);
 
         JsonManager.Instance.SaveData(QuestRecordList, questRequireListPath);
+    }
+
+    public void SaveConditionInfoList()
+    {
+        string conditionInfoListPath = GetSavePath(ArchiveIndex, CONDITIONINFO);
+
+        JsonManager.Instance.SaveData(ConditionInfoList, conditionInfoListPath);
     }
 
     private string GetSavePath(int archiveIndex, string suffixStr = "")

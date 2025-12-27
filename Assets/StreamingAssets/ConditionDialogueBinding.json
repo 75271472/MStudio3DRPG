@@ -4,5 +4,23 @@
         "characterName": "player",
         "dialogueId": 0,
         "conditionId": 0
+    },
+    {
+        "characterId": 0,
+        "characterName": "player",
+        "dialogueId": 4,
+        "conditionId": 1
+    },
+    {
+        "characterId": 0,
+        "characterName": "player",
+        "dialogueId": 8,
+        "conditionId": 2
+    },
+    {
+        "characterId": 0,
+        "characterName": "player",
+        "dialogueId": 11,
+        "conditionId": 3
     }
 ]

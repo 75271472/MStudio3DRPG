@@ -1,9 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviourManager<DialogueManager>
 {
@@ -51,32 +48,38 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
     }
 
     /// <summary>
-    /// 触发ConditionDialogue
+    /// 触发内心独白，需要传入triggerId指定触发哪一个内心独白
     /// </summary>
     /// <param name="npcId"></param>
+    /// <param name="triggerId"></param>
     /// <param name="profile"></param>
     /// <param name="name"></param>
-    public void BeginConditionDialogue(int npcId, Texture profile, string name)
+    /// <param name="action"></param>
+    /// <returns></returns>
+    public bool BeginConditionDialogue(int npcId, int triggerId, Texture profile, 
+        string name, Action action = null)
     {
-        int pieceId = CalculateStartPieceIdByCondition(npcId);
+        int pieceId = CheckStartPieceId(npcId, triggerId);
 
         if (pieceId == -1)
         {
             Debug.LogWarning($"NPC {npcId} 没有可播放的对话");
-            return;
+            return false;
         }
 
         // 2. 从 DataManager 获取实际数据对象
         ConditionDialoguePiece piece = DataManager.Instance.
             GetConditionDialoguePieceById(pieceId);
-        if (piece == null) return;
+        if (piece == null) return false;
 
         // 3. 设置 UI 并启动会话
         DialoguePanel.SetProfile(profile, name);
         DialoguePanel.ShowMe();
 
         // 注意：DialogueData 现在应该只负责播放，不负责查找
-        ConditionDialogueData.StartDialogue(piece);
+        ConditionDialogueData.StartDialogue(piece, action);
+
+        return true;
     }
 
     /// <summary>
@@ -104,6 +107,9 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
         // 注意：DialogueData 现在应该只负责播放，不负责查找
         DialogueData.StartDialogue(piece, pieceTuple.Item2);
     }
+
+    public void SaveConditionInfo() => 
+        DataManager.Instance.SaveConditionInfoList();
 
     private Tuple<int, int> CalculateStartPieceId(int npcId)
     {
@@ -136,7 +142,7 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
         return null;
     }
 
-    private int CalculateStartPieceIdByCondition(int npcId)
+    private int CheckStartPieceId(int npcId, int triggerId)
     {
         // 1. 获取该 NPC 所有的任务绑定
         if (!DataManager.Instance.ConditionBindingMap.TryGetValue
@@ -145,17 +151,18 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
             return -1;
         }
 
-        foreach (var binding in bindingList)
-        {
-            ConditionInfo conditionInfo = DataManager.Instance.
-                ConditionInfoList[binding.conditionId];
+        ConditionDialogueBinding binding = DataManager.Instance.
+            ConditionBindingMap[npcId][triggerId];
 
-            if (!conditionInfo.isTriggered)
-            {
-                // 标记ConditionInfo.isTriggered为已触发
-                conditionInfo.isTriggered = true;
-                return binding.dialogueId;
-            }
+        ConditionInfo conditionInfo = DataManager.Instance.
+            ConditionInfoList[binding.conditionId];
+
+        if (!conditionInfo.isTriggered)
+        {
+            // 标记ConditionInfo.isTriggered为已触发
+            // 同时DataManager中的数据也会被记录为已触发
+            conditionInfo.isTriggered = true;
+            return binding.dialogueId;
         }
 
         return -1;

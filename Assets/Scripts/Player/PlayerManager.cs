@@ -64,7 +64,7 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
 
     public void PlayerDialogueTrigger()
     {
-        PlayerData.PlayerDialogueTrigger.DialogueTrigger();
+        PlayerData.PlayerDialogueTrigger.ConditionDialogueTrigger(0);
     }
 
     public void PlayerTransInit()

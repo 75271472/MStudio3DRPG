@@ -3,5 +3,20 @@
         "conditionId": 0,
         "description": "进入游戏第一次内心独白",
         "isTriggered": false
+    },
+    {
+        "conditionId": 1,
+        "description": "密林探秘独白",
+        "isTriggered": false
+    },
+    {
+        "conditionId": 2,
+        "description": "玩家发现哥布林的密谋独白",
+        "isTriggered": false
+    },
+    {
+        "conditionId": 3,
+        "description": "游戏结束角色独白",
+        "isTriggered": false
     }
 ]

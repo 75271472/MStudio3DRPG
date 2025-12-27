@@ -195,6 +195,7 @@ public class PlayerData : CharacterData
             transform.position, transform.rotation);
 
         InventoryController.SaveItem();
+        DialogueManager.Instance.SaveConditionInfo();
         QuestManager.Instance.SaveQuests();
         DataManager.Instance.SavePlayerInfo(() =>
         {

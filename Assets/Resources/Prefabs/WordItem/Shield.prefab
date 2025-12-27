@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <ItemType>k__BackingField: 1
-  <Quantity>k__BackingField: 2
+  <Quantity>k__BackingField: 1
   <ItemId>k__BackingField: 2
 --- !u!65 &7815309793427073685
 BoxCollider:
