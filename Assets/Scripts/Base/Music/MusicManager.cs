@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+/**
 public class MusicManager : BaseManager<MusicManager>
 {
     private AudioSource bkMusic;
@@ -137,3 +138,5 @@ public class MusicManager : BaseManager<MusicManager>
         }
     }
 }
+
+**/

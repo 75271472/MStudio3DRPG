@@ -454,7 +454,7 @@ public class DataManager : BaseManager<DataManager>
 
         foreach (var itemInfo in EdibleItemInfoList)
         {
-            itemInfo.img = Resources.Load<Sprite>(itemInfo.imgPath);
+            itemInfo.img = ResourceManager.Instance.Load<Sprite>(itemInfo.imgPath);
         }
     }
 
@@ -465,7 +465,7 @@ public class DataManager : BaseManager<DataManager>
 
         foreach (var itemInfo in EquippableItemInfoList)
         {
-            itemInfo.img = Resources.Load<Sprite>(itemInfo.imgPath);
+            itemInfo.img = ResourceManager.Instance.Load<Sprite>(itemInfo.imgPath);
             if (itemInfo.attackInfoId != -1)
                 itemInfo.weaponAttackInfo = AttackInfoList[itemInfo.attackInfoId];
         }

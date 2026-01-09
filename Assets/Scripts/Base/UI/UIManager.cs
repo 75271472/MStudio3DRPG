@@ -51,8 +51,8 @@ public class UIManager : BaseManager<UIManager>
 
     private void OverlayCanvasInit()
     {
-        GameObject obj = LoadResourceManager.Instance.LoadResources<GameObject>(
-            DataManager.OVERLAYCANVAS);
+        GameObject obj = GameObject.Instantiate(ResourceManager.Instance.
+            Load<GameObject>(DataManager.OVERLAYCANVAS));
         OverlayCanvas = obj.transform as RectTransform;
         GameObject.DontDestroyOnLoad(obj);
     }
@@ -69,8 +69,8 @@ public class UIManager : BaseManager<UIManager>
 
     private void WorldCanvasInit()
     {
-        GameObject obj = LoadResourceManager.Instance.LoadResources<GameObject>(
-            DataManager.WORLDCANVAS);
+        GameObject obj = GameObject.Instantiate(ResourceManager.Instance.
+            Load<GameObject>(DataManager.WORLDCANVAS));
         WorldCanvas = obj.transform as RectTransform;
         WorldCanvas.GetComponent<Canvas>().worldCamera = Camera.main;
         WorldCanvas.GetComponent<Canvas>().planeDistance = 7.5f;
@@ -86,8 +86,8 @@ public class UIManager : BaseManager<UIManager>
             GameObject.Destroy(es.gameObject);
         }
 
-        GameObject obj = LoadResourceManager.Instance.LoadResources<GameObject>(
-            DataManager.EVENTSYSTEM);
+        GameObject obj = GameObject.Instantiate(ResourceManager.Instance.
+            Load<GameObject>(DataManager.EVENTSYSTEM));
         EventSystem = obj.GetComponent<EventSystem>();
 
         GameObject.DontDestroyOnLoad(obj);
@@ -110,6 +110,7 @@ public class UIManager : BaseManager<UIManager>
         }
     }
 
+    /**
     /// <summary>
     /// 异步面板加载，从Resources文件夹中创建面板到场景中的方法
     /// </summary>
@@ -151,6 +152,7 @@ public class UIManager : BaseManager<UIManager>
             panelDic.Add(panelName, panel);
         });
     }
+    **/
 
     /// <summary>
     /// 同步面板加载
@@ -179,8 +181,8 @@ public class UIManager : BaseManager<UIManager>
 
         // 字典中没有该面板，设置父对象，设置相对位置与缩放，
         // 重置偏移量，执行panel脚本ShowMe方法，执行回调函数，添加到面板字典中
-        T panel = LoadResourceManager.Instance.LoadResources<GameObject>(
-            DataManager.PANELROOTPATH + panelName).GetComponent<T>();
+        T panel = GameObject.Instantiate(ResourceManager.Instance.Load<GameObject>(
+            DataManager.PANELROOTPATH + panelName).GetComponent<T>());
         panel.transform.SetParent(father);
 
         panel.transform.localPosition = Vector3.zero;

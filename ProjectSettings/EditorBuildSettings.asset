@@ -18,5 +18,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneThree.unity
     guid: 73bd6cd426d74ef43996a487d190dc03
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 73dbbfa83924a6742976057902df87d2, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 8c2f8d7cc27e4ea4fbc9ec84c06cd23c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e1e3187c8ddd3a84ab879ddaa8a9f1e2, type: 3}

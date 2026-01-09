@@ -51,7 +51,7 @@ public class WeaponHandler : MonoBehaviour
 
         if (weaponItemInfo == null) return; 
 
-        weaponObj = Instantiate(Resources.Load<GameObject>(
+        weaponObj = Instantiate(ResourceManager.Instance.Load<GameObject>(
             weaponItemInfo.weaponPrefabPath));
         weaponObj.transform.SetParent(weaponTrans, false);
 
@@ -74,7 +74,7 @@ public class WeaponHandler : MonoBehaviour
 
         if (shieldItemInfo == null) return;
 
-        shieldObj = Instantiate(Resources.Load<GameObject>(
+        shieldObj = Instantiate(ResourceManager.Instance.Load<GameObject>(
             shieldItemInfo.weaponPrefabPath));
         shieldObj.transform.SetParent(shieldTrans, false);
     }

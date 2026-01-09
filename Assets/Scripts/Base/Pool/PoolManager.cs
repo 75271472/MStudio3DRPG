@@ -70,6 +70,7 @@ public class PoolManager : BaseManager<PoolManager>
     // name��ʾ���������Դ�ļ���·����List��ʾ��ͬ����·����Դ�б�
     private Dictionary<string, PoolData> poolDic = new Dictionary<string, PoolData>();
 
+    /**
     /// <summary>
     /// 从对象池中异步获取对象，如果对象池为空，则异步Load对象
     /// </summary>
@@ -92,6 +93,7 @@ public class PoolManager : BaseManager<PoolManager>
             });
         }
     }
+    **/
 
     /// <summary>
     /// 从对象池中同步获取对象，如果对象池为空，则同步Load对象
@@ -110,7 +112,8 @@ public class PoolManager : BaseManager<PoolManager>
         else
         {
             // 使用ResourcesManager的资源同步加载
-            obj = LoadResourceManager.Instance.LoadResources<GameObject>(name);
+            obj = GameObject.Instantiate(ResourceManager.Instance.Load
+                <GameObject>(name));
         }
 
         return obj;
