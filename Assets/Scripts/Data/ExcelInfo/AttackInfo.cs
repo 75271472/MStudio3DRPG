@@ -35,7 +35,7 @@ public class AttackInfo
     /// AttackInfo攻击数据类型加法规则
     /// 结果攻击数据 为 两攻击数据伤害之和
     /// 暴击伤害倍数为两攻击数据类型中的较大者
-    /// 暴击率为两攻击数据类型之和
+    /// 暴击率为两攻击数据类型之中的较大者
     /// </summary>
     /// <param name="attackInfoA"></param>
     /// <param name="attackInfoB"></param>
@@ -49,9 +49,10 @@ public class AttackInfo
         return new AttackInfo()
         {
             damage = attackInfoA.damage + attackInfoB.damage,
-            criticalMultipler = Mathf.Max(attackInfoA.criticalMultipler, 
+            criticalMultipler = Mathf.Max(attackInfoA.criticalMultipler,
             attackInfoB.criticalMultipler),
-            criticalRate = attackInfoA.criticalRate + attackInfoB.criticalRate
+            criticalRate = Mathf.Max(attackInfoA.criticalRate, 
+            attackInfoB.criticalRate)
         };
     }
 }

@@ -252,8 +252,8 @@ Transform:
   m_GameObject: {fileID: 1000740375312710357}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5000001, y: 0.49999994, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 8.1711645, y: -6.2301764, z: 3.5921268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 8.1715, y: -22.51, z: -8.6875}
+  m_LocalScale: {x: 1.600163, y: 1, z: 1.2833}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3036623835807675585}
@@ -766,6 +766,7 @@ MonoBehaviour:
     attackComboList:
     - {fileID: 11400000, guid: afc41bb1da8576d419b8e5a4135806de, type: 2}
     - {fileID: 11400000, guid: 52af223e29257044e8dd148b7494e375, type: 2}
+  <MoveType>k__BackingField: 0
   <MonsterInfoId>k__BackingField: 2
 --- !u!114 &5528782097256775177
 MonoBehaviour:
@@ -1150,7 +1151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetList: []
-  targetSphereRange: 5
+  targetSphereRange: 7.5
 --- !u!135 &832045708704061470
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1170,7 +1171,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 7.5
   m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!1 &6155226715402876492
 GameObject:

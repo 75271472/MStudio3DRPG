@@ -1,3 +1,4 @@
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class MonsterAttackCDState : MonsterBaseState
@@ -49,18 +50,26 @@ public class MonsterAttackCDState : MonsterBaseState
     private void CheckAttackCD()
     {
         // 如果targetObj位于攻击区域以外，切换ChaseState状态
-        if (!stateMachine.transform.IsTargetInArea(targetObj, 
+        // 让判定在范围内的逻辑更简单，这样在AttacCD中在进行判断存在一定冗余
+        // 避免帧更新后距离更新使得在AttackCD和Chase之间来回跳转
+        if (!stateMachine.transform.IsTargetInAreaByRay(targetObj, 
             stateMachine.MonsterComboList.MaxDiatance, 
-            stateMachine.MonsterComboList.MaxAngle))
+            stateMachine.MonsterComboList.MaxAngle, out float distance))
         {
+            // 如果距离够了但角度不够，则退出函数继续修正角度
+            if (distance <= stateMachine.MonsterComboList.MaxDiatance) return;
+
+            //Debug.Log($"MonsterAttackCD Distance {distance}");
             stateMachine.SwitchState(new MonsterChaseState(stateMachine, targetObj));
             return;
         }
+
         // 使用IsTargetInAreaByRay获取的，当前Transform与Hit.point的间距
         // 作为CanAttack中选择AttackCombo的距离判断依据
-        if (!stateMachine.MonsterComboList.CanAttack(
-            stateMachine.transform.GetTargetDistance(targetObj)))
+        if (!stateMachine.MonsterComboList.CanAttack(distance))
+            //stateMachine.transform.GetTargetDistanceInSaveHeight(targetObj)))
         {
+            //Debug.Log("Monster State AttackCD");
             return;
         }
 

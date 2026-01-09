@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: SlimeComboTemplate2
   m_EditorClassIdentifier: 
   comboList:
-  - {fileID: 11400000, guid: f72597eb5e7dde64aaf2a49ff933d0cb, type: 2}
-  - {fileID: 11400000, guid: 2b987f510df52ff42baee6cf27ca2161, type: 2}
+  - {fileID: 11400000, guid: 60ad46e6252de064b91343d10cc09762, type: 2}
   attackCD: 0.5

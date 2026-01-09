@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Portal : MonoBehaviour, IInteractable
 {
@@ -8,6 +9,8 @@ public class Portal : MonoBehaviour, IInteractable
     [field: SerializeField] public int PortalId { get; private set; }
     [field: SerializeField] public string TargetSceneName { get; private set; }
     [field: SerializeField] public int TargetPortalID { get; private set; }
+    // 进入传送门后执行的事件，在Inspector窗口设置
+    public UnityEvent OnPortalEnterEvent;
 
     public PortalPoint PortalPoint { get; private set; }
 
@@ -40,7 +43,8 @@ public class Portal : MonoBehaviour, IInteractable
     {
         //print("OnOperate Invoke");
         UIManager.Instance.HidePanel<InputActionPanel>();
-        PortalManager.Instance.PortalEnter(TargetSceneName, TargetPortalID);
+        PortalManager.Instance.PortalEnter(TargetSceneName, TargetPortalID, 
+            OnPortalEnterEvent);
     }
 
     public bool CanInteract()

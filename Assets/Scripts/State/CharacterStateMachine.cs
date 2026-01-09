@@ -44,10 +44,10 @@ public abstract class CharacterStateMachine : StateMachine
         Health.HealthInit();
         EffectApplicator.EffectApplicatorInit(this);
 
-        ForceApplicator.OnAddForceEvent += Pause;
+        //ForceApplicator.OnAddForceEvent += Pause;
         //ForceApplicator.OnAddForceEvent += () => print(name + "AddForce");
         ForceApplicator.OnImpactEvent += OnImpactHandler;
-        ForceApplicator.OnRemoveForceEvent += UnPause;
+        //ForceApplicator.OnRemoveForceEvent += UnPause;
         Health.OnTakeDamageEvent += OnTakeDamageHandler;
         Health.OnDieEvent += OnDieHandler;
     }
@@ -68,10 +68,26 @@ public abstract class CharacterStateMachine : StateMachine
 
     }
 
+    //protected virtual void OnImpactHandler(Vector3 impact)
+    //{
+    //    //print(name + impact);
+    //    transform.Translate(impact * Time.deltaTime, Space.World);
+    //}
+
     protected virtual void OnImpactHandler(Vector3 impact)
     {
-        //print(name + impact);
-        transform.Translate(impact * Time.deltaTime, Space.World);
+        // 方案 A：如果你确定 Agent 始终开启且在 NavMesh 上（推荐）
+        if (Agent != null && Agent.enabled)
+        {
+            // agent.Move 会自动处理碰撞检测和贴地
+            Agent.Move(impact * Time.deltaTime);
+        }
+        // 方案 B：如果你的角色可能处于死掉或其他关闭 Agent 的状态
+        else
+        {
+            // 只有在没 Agent 的时候才用 Translate，但要加射线检测防止穿墙（简易版）
+            transform.Translate(impact * Time.deltaTime, Space.World);
+        }
     }
 
     protected virtual void OnDestroy()

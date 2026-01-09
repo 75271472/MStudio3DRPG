@@ -17,13 +17,13 @@ MonoBehaviour:
   comboStateIndex: -1
   comboAttackTime: 0.9
   damageCoeff: 0
-  attackRange: 2.5
-  attackAngle: 10
+  attackRange: 2.2
+  attackAngle: 15
   attackDieCoeff: 1
   attackEffectInfo:
     duration: 0.5
     force: 5
-    forceVect: {x: 0.89940953, y: 0, z: -1.1583204}
+    forceVect: {x: -1.4455872, y: 0, z: -0.42999268}
     attacker: {fileID: 0}
   attackEffectList:
   - {fileID: 11400000, guid: 97ee6ae4993911543add2dcda83c8a82, type: 2}

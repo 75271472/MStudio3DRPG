@@ -16,11 +16,9 @@ MonoBehaviour:
   transitionDuration: 0.1
   comboStateIndex: -1
   comboAttackTime: 0.6
-  damage: 15
-  criticalMultipler: 2
-  criticalRate: 0.4
+  damageCoeff: 0
   attackRange: 15
-  attackAngle: 10
+  attackAngle: 15
   attackDieCoeff: 1
   attackEffectInfo:
     duration: 0.5

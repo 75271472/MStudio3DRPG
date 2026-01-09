@@ -18,7 +18,7 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
     public GameObject CharacterGameObject => gameObject;
 
     public event Action<InventoryItemInfo> OnUpdateItemEvent, OnRemoveItemEvent;
-    public event Action<ICharacter> OnCharacterDieEvent;
+    //public event Action<ICharacter> OnCharacterDieEvent;
 
     public void PlayerManagerInit()
     {
@@ -50,7 +50,12 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         // 所有时间注册结束后执行一次PlayerData.OnEquipEvent
         // 更新WeaponHandler和AttackComboList
         PlayerData.OnEquipEventInvoke();
-
+        PlayerData.OnLevelUpEvent += () =>
+            UIManager.Instance.ShowPanel<EffectPanel>().LevelUpEffect();
+        PlayerData.OnTakeDamageEvent += (a, b, c) => 
+            UIManager.Instance.ShowPanel<EffectPanel>().DamageEffect();
+        PlayerData.OnRecoveryEvent += (a, b, c) => 
+            UIManager.Instance.ShowPanel<EffectPanel>().RecoveryEffect();
         // 加载场景前，将数据保存到DataManager中
         LoadSceneManager.Instance.OnPrepareLoadSceneEvent += 
             PlayerData.OnUpdateDataInMemoryHandler;
@@ -58,6 +63,8 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
             PlayerStateMachine.Pause;
         PortalManager.Instance.OnExitSameScenePortalEvent += 
             PlayerStateMachine.UnPause;
+        InputManager.Instance.OnPauseGameEvent += () =>
+            UIManager.Instance.ShowPanel<PausePanel>();
 
         //print("PlayerManagerInit");
     }
@@ -67,6 +74,7 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         PlayerData.PlayerDialogueTrigger.ConditionDialogueTrigger(0);
     }
 
+    // 外部调用，第一次进入游戏将Player设置在默认位置
     public void PlayerTransInit()
     {
         PlayerInitTrans initTrans = FindObjectOfType<PlayerInitTrans>();
@@ -75,28 +83,29 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         UpdatePlayerTrans(initTrans.Pos, initTrans.Rot);
     }
 
+    // PlayerData调用，将Player设置在存档位置
     public void PlayerTransInit(CharacterTransInfo playerTrans)
     {
         if (playerTrans == null) return;
 
         // 不调用Updateplayer
-        //UpdatePlayerTrans(playerTrans.position, playerTrans.rotation);
-        gameObject.transform.SetPositionAndRotation(playerTrans.GetPosition(), 
-            playerTrans.GetRotation());
+        UpdatePlayerTrans(playerTrans.GetPosition(), playerTrans.GetRotation());
+        //gameObject.transform.SetPositionAndRotation(playerTrans.GetPosition(), 
+        //    playerTrans.GetRotation());
     }
 
     public void ResetEvent()
     {
-        OnCharacterDieEvent = null;
+        //OnCharacterDieEvent = null;
         OnRemoveItemEvent = null;
         OnUpdateItemEvent = null;
     }
 
     private void UpdatePlayerTrans(Vector3 position, Quaternion rotation)
     {
-        PlayerStateMachine.Pause();
+        PlayerStateMachine?.Pause();
         gameObject.transform.SetPositionAndRotation(position, rotation);
-        PlayerStateMachine.UnPause();
+        PlayerStateMachine?.UnPause();
     }
 
     public override void Init()

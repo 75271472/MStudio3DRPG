@@ -21,7 +21,11 @@ public class PlayerStateInfo : CharacterStateInfo
     public float levelBuff;
 
     // 增益计算公式 增益后值 = 1 + （当前等级 - 1） * 升级增益
-    public float LevelMultiplier => 1 + (currentLevel - 1) * levelBuff;
+    //public float LevelMultiplier => 1 + (currentLevel - 1) * levelBuff;
+    public float LevelMultiplier => 1 + levelBuff;
+
+    public event Action<int, int, int> OnLevelUpUpdateHPEvent;
+    public event Action OnLevelUpEvent;
 
     public void UpdateExp(int point)
     {
@@ -29,6 +33,12 @@ public class PlayerStateInfo : CharacterStateInfo
 
         while (currentExp >= baseExp)
             LevelUp();
+    }
+
+    public void ResetEvent()
+    {
+        OnLevelUpEvent = null;
+        OnLevelUpUpdateHPEvent = null;
     }
 
     private void LevelUp()
@@ -39,9 +49,11 @@ public class PlayerStateInfo : CharacterStateInfo
         baseExp = (int)(baseExp * LevelMultiplier);
 
         maxHealth = (int)(maxHealth * LevelMultiplier);
+        OnLevelUpUpdateHPEvent?.Invoke(maxHealth - health, maxHealth, maxHealth);
         health = maxHealth;
 
-        levelBuff *= LevelMultiplier;
+        //levelBuff *= LevelMultiplier;
+        OnLevelUpEvent?.Invoke();
     }
 
     public void SetDie()

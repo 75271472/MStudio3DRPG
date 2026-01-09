@@ -1,16 +1,19 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.TextCore.Text;
 
 public class Trigger : MonoBehaviour, IInteractable
 {
     [SerializeField] private int triggerId;
-    [SerializeField] private string triggerStr;
+    //[SerializeField] private string triggerStr;
 
-    public void SetTrigger(int triggerId, string triggerStr)
-    {
-        this.triggerId = triggerId;
-        this.triggerStr = triggerStr;
-    }
+    public UnityEvent OnDialogueOverEvent;
+
+    //public void SetTrigger(int triggerId, string triggerStr)
+    //{
+    //    this.triggerId = triggerId;
+    //    this.triggerStr = triggerStr;
+    //}
 
     private void OnTriggerEnter(Collider other)
     {
@@ -27,8 +30,7 @@ public class Trigger : MonoBehaviour, IInteractable
             "Survery", () => {
                 PlayerManager.Instance.PlayerData.PlayerDialogueTrigger.
                     ConditionDialogueTrigger(triggerId, () => 
-                        QuestManager.Instance.TriggerRequireUpdate(
-                        triggerStr, true));
+                        OnDialogueOverEvent?.Invoke());
                 UIManager.Instance.HidePanel<InputActionPanel>();
             });
 

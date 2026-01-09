@@ -25,6 +25,7 @@ public class EquippableItemInfo : ItemInfo, IDestroyableItem
     public EEquippableState equippableState;
     public float attackRangeFactor;
     public string weaponPrefabPath;
+    public int defense;
     public int attackInfoId;
     public AttackInfo weaponAttackInfo;
 

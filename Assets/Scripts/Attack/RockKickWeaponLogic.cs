@@ -29,6 +29,26 @@ public class RockKickWeaponLogic : WeaponLogic
         DestructibleEffect(target); 
     }
 
+    private void OnCollidingObjectHandler(Collider collider)
+    {
+        print("OnCollidingObjectHandler Invoke!!!");
+
+        HealthEffect(collider);
+        ForceStandEffect(collider);
+        TryDestroyRock(collider);
+    }
+
+    protected override void HealthEffect(Collider target)
+    {
+        if (target.TryGetComponent<Health>(out var health))
+        {
+            //print("attack");
+            // 重写父类收到伤害逻辑，让石头造成的伤害为玩家造成伤害的两倍
+            health.TakeDamage(handler.CharacterData.AttackInfo.GetDamage() * 2,
+                handlerObj);
+        }
+    }
+
     // TODO:这里直接让MonsterStateMachine转到GetHit状态，而没有使用RepelEffect
     // 原因：WeaponLogic中的AttackSO是通过当前播放的Attack动画设置的，
     // 没有办法对Rock设置一个让击中对象硬直的AttackSO，
@@ -37,17 +57,9 @@ public class RockKickWeaponLogic : WeaponLogic
     {
         if (collider.TryGetComponent<MonsterStateMachine>(out var stateMachine))
         {
+            if (stateMachine.Health.IsDie) return;
             stateMachine.SwitchState(new MonsterGetHitState(stateMachine));
         }
-    }
-
-    private void OnCollidingObjectHandler(Collider collider)
-    {
-        print("OnCollidingObjectHandler Invoke!!!");
-
-        HealthEffect(collider);
-        ForceStandEffect(collider);
-        TryDestroyRock(collider);
     }
 
     private void TryDestroyRock(Collider collider)

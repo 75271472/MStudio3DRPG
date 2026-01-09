@@ -1,5 +1,3 @@
-using System;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 [RequireComponent(typeof(MonsterPatroller))]
@@ -94,6 +92,7 @@ public class MonsterStateMachine : CharacterStateMachine
             player.PlayerData.UpdateExp(MonsterStateSO.point);
         }
 
+        WeaponHandler.DisableAllWeaponLogic();
         MonsterTargeter.SetDisable();
         SwitchState(new MonsterDieState(this));
     }

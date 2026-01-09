@@ -1,6 +1,6 @@
 public class MonsterStateInfo : CharacterStateInfo
 {
-    public int monsterId;
+    //public int monsterId;
     public int point;
 }
 

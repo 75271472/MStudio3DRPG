@@ -10,6 +10,7 @@
         "equippableItemType": 1,
         "attackRangeFactor": 1,
         "weaponPrefabPath": "Prefabs/Weapon/Sword",
+        "defense": 0,
         "attackInfoId": 5
     },
     {
@@ -21,8 +22,9 @@
         "imgPath": "Sprites/Fist",
         "description": "拳头",
         "equippableItemType": 1,
-        "attackRangeFactor": 0.65,
+        "attackRangeFactor": 0.55,
         "weaponPrefabPath": "Prefabs/Weapon/Fist",
+        "defense": 0,
         "attackInfoId": 0
     },
     {
@@ -36,6 +38,35 @@
         "equippableItemType": 2,
         "attackRangeFactor": 0.65,
         "weaponPrefabPath": "Prefabs/Weapon/Shield",
+        "defense": 5,
+        "attackInfoId": -1
+    },
+    {
+        "id": 3,
+        "itemType": 1,
+        "isStackable": false,
+        "name": "RamonSword",
+        "maxStackSize": 1,
+        "imgPath": "Sprites/RamonSword",
+        "description": "Ramon的剑",
+        "equippableItemType": 1,
+        "attackRangeFactor": 1.5,
+        "weaponPrefabPath": "Prefabs/Weapon/RamonSword",
+        "defense": 0,
+        "attackInfoId": 6
+    },
+    {
+        "id": 4,
+        "itemType": 1,
+        "isStackable": false,
+        "name": "RamonShield",
+        "maxStackSize": 1,
+        "imgPath": "Sprites/RamonShield",
+        "description": "Ramon的盾牌",
+        "equippableItemType": 2,
+        "attackRangeFactor": 0.65,
+        "weaponPrefabPath": "Prefabs/Weapon/RamonShield",
+        "defense": 10,
         "attackInfoId": -1
     }
 ]

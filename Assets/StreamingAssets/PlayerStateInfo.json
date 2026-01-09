@@ -2,8 +2,8 @@
     {
         "id": 0,
         "name": "player",
-        "maxHealth": 100000,
-        "health": 100000,
+        "maxHealth": 100,
+        "health": 100,
         "currentLevel": 1,
         "maxLevel": 30,
         "baseExp": 30,

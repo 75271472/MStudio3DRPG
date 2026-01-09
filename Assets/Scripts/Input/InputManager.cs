@@ -17,7 +17,7 @@ public class InputManager : BaseManager<InputManager>, InputControler.IPlayerAct
     public event Action<string> OnHotItemEvent;
     public event Action<float> OnHorizontalEvent, OnVerticalEvent, OnScrollEvent;
     public event Action OnWalkEvent, OnRunEvent, OnOperateEvent, OnSaveEvent, 
-        OnOpenBagEvent, OnOpenQuestEvent;
+        OnOpenBagEvent, OnOpenQuestEvent, OnPauseGameEvent;
 
     private InputControler inputControler = null;
 
@@ -47,6 +47,7 @@ public class InputManager : BaseManager<InputManager>, InputControler.IPlayerAct
         OnOpenBagEvent = null;
         OnHotItemEvent = null;
         OnOpenQuestEvent = null;
+        OnPauseGameEvent = null;
     }
 
     public void OnMovePos(InputAction.CallbackContext context)
@@ -119,5 +120,11 @@ public class InputManager : BaseManager<InputManager>, InputControler.IPlayerAct
     {
         if (!context.performed) return;
         OnOpenQuestEvent?.Invoke();
+    }
+
+    public void OnPauseGame(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+        OnPauseGameEvent?.Invoke();
     }
 }

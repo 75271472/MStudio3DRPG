@@ -2,29 +2,29 @@
     {
         "id": 0,
         "name": "DefaultSlimeBaseStateInfo",
-        "maxHealth": 1,
+        "maxHealth": 25,
         "point": 8,
-        "defence": 5
+        "defense": 2
     },
     {
         "id": 1,
         "name": "DefaultTurtleBaseStateInfo",
-        "maxHealth": 50,
+        "maxHealth": 25,
         "point": 15,
-        "defence": 5
+        "defense": 5
     },
     {
         "id": 2,
         "name": "DefaultGruntBaseStateInfo",
-        "maxHealth": 10000,
+        "maxHealth": 50,
         "point": 50,
-        "defence": 5
+        "defense": 10
     },
     {
         "id": 3,
         "name": "DefaultGolemBaseStateInfo",
-        "maxHealth": 1000,
+        "maxHealth": 150,
         "point": 100,
-        "defence": 5
+        "defense": 20
     }
 ]

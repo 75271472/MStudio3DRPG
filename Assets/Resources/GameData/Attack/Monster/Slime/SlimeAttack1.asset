@@ -14,16 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionName: Attack1
   transitionDuration: 0.1
-  comboStateIndex: 1
+  comboStateIndex: -1
   comboAttackTime: 0.9
-  damage: 10
-  criticalMultipler: 2
-  criticalRate: 0.3
+  damageCoeff: 0
   attackRange: 1
-  attackAngle: 10
+  attackAngle: 15
   attackDieCoeff: 1
   attackEffectInfo:
     duration: 0
     force: 0
-    forceVect: {x: 0.894866, y: 0.012855768, z: -0.10007119}
+    forceVect: {x: -0.63155365, y: 0, z: 0.8301544}
+    attacker: {fileID: 0}
   attackEffectList: []

@@ -30,13 +30,21 @@ public class DialogueTrigger : MonoBehaviour, IInteractable
             inputStr == null ? this.inputStr : inputStr, () => {
                 // 修改点：不再自己计算 Index，而是直接把 NPC ID 扔给 Manager
                 // Manager 会去 DataManager 里查表计算
-                DialogueManager.Instance.BeginDialogue(characterId, profileTexture,
-                    characterName);
+                DialogueInvokeDirectly();
 
                 UIManager.Instance.HidePanel<InputActionPanel>();
             });
 
         UIManager.Instance.GetPanel<InputActionPanel>().SetPosNextToPlayer();
+    }
+
+    /// <summary>
+    /// 不弹InputActionPanel，直接触发对话
+    /// </summary>
+    public void DialogueInvokeDirectly()
+    {
+        DialogueManager.Instance.BeginDialogue(characterId, profileTexture,
+            characterName);
     }
 
     private void OnTriggerExit(Collider other)

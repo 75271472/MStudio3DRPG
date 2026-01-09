@@ -18,9 +18,9 @@ public interface IInteractable
 
 // ±¸Ñ¡×´Ì¬
 [System.Serializable]
-public class BackQuestCondition
+public class QuestConditionItem
 {
-    public UnityEvent OnBackInteractEvent;
+    public UnityEvent OnInteractEvent;
     public int questId;
     public EQuestState questState;
     public ECondition conditionType;
@@ -32,7 +32,7 @@ public class QuestCondition : MonoBehaviour
     public EQuestState questState;
     public ECondition conditionType;
 
-    public List<BackQuestCondition> BackQuestConditionList;
+    public List<QuestConditionItem> BackQuestConditionList;
     
     public bool CheckCondition()
     {
@@ -79,7 +79,7 @@ public class QuestCondition : MonoBehaviour
 
             if (isMeet)
             {
-                condition.OnBackInteractEvent?.Invoke();
+                condition.OnInteractEvent?.Invoke();
                 break;
             }
         }

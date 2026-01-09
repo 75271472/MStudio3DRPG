@@ -10,5 +10,5 @@ public interface ICharacter
     public CharacterUI CharacterUI { get; }
     public GameObject CharacterGameObject { get; }
 
-    public event Action<ICharacter> OnCharacterDieEvent;
+    //public event Action<ICharacter> OnCharacterDieEvent;
 }

@@ -23,8 +23,8 @@ public class QuestReactor : MonoBehaviour, IInteractable
 
     private void ResetObjectActive()
     {
-        foreach (var obj in deactiveObjectList)
-            obj?.SetActive(true);
+        //foreach (var obj in deactiveObjectList)
+        //    obj?.SetActive(true);
         foreach (var obj in activeObjectList)
             obj?.SetActive(false);
     }

@@ -27,16 +27,16 @@
         "characterId": 1,
         "characterName": "Ramon",
         "questId": 3,
-        "notAcceptedDialogueId": 48,
-        "startDialogueId": 55,
-        "completeDialogueId": 59
+        "notAcceptedDialogueId": 49,
+        "startDialogueId": 56,
+        "completeDialogueId": 60
     },
     {
         "characterId": 0,
         "characterName": "Player",
         "questId": 4,
-        "notAcceptedDialogueId": 63,
-        "startDialogueId": 66,
-        "completeDialogueId": 70
+        "notAcceptedDialogueId": 64,
+        "startDialogueId": 67,
+        "completeDialogueId": 71
     }
 ]

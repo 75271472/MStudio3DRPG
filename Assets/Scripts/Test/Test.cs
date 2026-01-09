@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
-using UnityEngine.UI;
 
 [System.Serializable]
 public class TestText
@@ -14,7 +12,6 @@ public class Test : MonoBehaviour
     public DialoguePanel panel;
     public List<TestText> stringList = new List<TestText>();
     public int index = 0;
-    private bool isChanged;
 
     private void Start()
     {
@@ -30,7 +27,7 @@ public class Test : MonoBehaviour
             index++;
             index %= stringList.Count;
 
-            isChanged = true;
+            //isChanged = true;
         }
     }
 }

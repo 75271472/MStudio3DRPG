@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   comboList:
   - {fileID: 11400000, guid: 17a97cdd98b9ee94d83acbd43115ed2d, type: 2}
-  - {fileID: 11400000, guid: 60ad46e6252de064b91343d10cc09762, type: 2}
   attackCD: 0.5

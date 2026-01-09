@@ -52,7 +52,7 @@ public class AccordionUI : MonoBehaviour
             PoolManager.Instance.PushObj(DataManager.QUESTBUTTON, questBtn.gameObject);
         }
 
-        print("ClearBtnList");
+        //print("ClearBtnList");
         questBtnList.Clear();
     }
 

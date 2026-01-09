@@ -2,23 +2,23 @@
     {
         "id": 0,
         "name": "DefaultPlayerAttackInfo",
-        "damage": 5,
+        "damage": 7,
         "criticalMultipler": 2,
-        "criticalRate": 0.3
+        "criticalRate": 0.2
     },
     {
         "id": 1,
         "name": "DefaultSlimeBaseAttackInfo",
         "damage": 10,
         "criticalMultipler": 2,
-        "criticalRate": 0.3
+        "criticalRate": 0.1
     },
     {
         "id": 2,
         "name": "DefaultTurtleBaseAttackInfo",
         "damage": 10,
         "criticalMultipler": 2,
-        "criticalRate": 0.3
+        "criticalRate": 0.1
     },
     {
         "id": 3,
@@ -32,7 +32,7 @@
         "name": "DefaultGolemBaseAttackInfo",
         "damage": 10,
         "criticalMultipler": 2,
-        "criticalRate": 0.3
+        "criticalRate": 0.4
     },
     {
         "id": 5,
@@ -40,5 +40,12 @@
         "damage": 10,
         "criticalMultipler": 2,
         "criticalRate": 0.3
+    },
+    {
+        "id": 6,
+        "name": "DefaultRamonSwordAttackInfo",
+        "damage": 15,
+        "criticalMultipler": 2,
+        "criticalRate": 0.5
     }
 ]

@@ -16,15 +16,14 @@ MonoBehaviour:
   transitionDuration: 0.1
   comboStateIndex: -1
   comboAttackTime: 0.9
-  damage: 10
-  criticalMultipler: 2
-  criticalRate: 0.3
+  damageCoeff: 0
   attackRange: 4
-  attackAngle: 10
+  attackAngle: 15
   attackDieCoeff: 1
   attackEffectInfo:
     duration: 0
     force: 23
     forceVect: {x: -0.26878422, y: -0.2067107, z: -2.2004247}
+    attacker: {fileID: 0}
   attackEffectList:
   - {fileID: 11400000, guid: 97ee6ae4993911543add2dcda83c8a82, type: 2}

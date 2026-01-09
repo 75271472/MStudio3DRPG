@@ -51,11 +51,15 @@ public abstract class CharacterData : MonoBehaviour
     {
         // CharacterStateData中手动设置IsDie为True时
         // 游戏时再次收到伤害不会进入if判断
+        print($"{name} Damage Taken {damage}");
         if (state.isDie || damage <= 0) return;
 
-        print("CharacterData: " + name + " " + state.health);
+        // 通过防御力降低伤害
+        damage = Mathf.Max(0, damage - state.monsterStateInfo.defense);
+        print($"{name} Damage Caused {damage}");
+        //print("CharacterData: " + name + " " + state.health);
         state.health = Mathf.Max(state.health - damage, 0);
-        print("CharacterData: " + name + " " + state.health);
+        //print("CharacterData: " + name + " " + state.health);
         OnTakeDamageEvent?.Invoke(damage, state.health, 
             state.monsterStateInfo.maxHealth);
 
@@ -74,11 +78,14 @@ public abstract class CharacterData : MonoBehaviour
     {
         // CharacterStateData中手动设置IsDie为True时
         // 游戏时再次收到伤害不会进入if判断
+        print($"{name} Damage Taken {damage}");
+
         if (stateInfo.isDie || damage <= 0) return;
 
-        print("CharacterData: " + name + " " + stateInfo.health);
+        damage = Mathf.Max(0, damage - stateInfo.defense);
+        print($"{name} Damage Caused {damage}");
         stateInfo.health = Mathf.Max(stateInfo.health - damage, 0);
-        print("CharacterData: " + name + " " + stateInfo.health);
+        //print("CharacterData: " + name + " " + stateInfo.health);
         OnTakeDamageEvent?.Invoke(damage, stateInfo.health, stateInfo.maxHealth);
 
         if (stateInfo.health == 0)

@@ -24,7 +24,9 @@ public class PlayerData : CharacterData
 
     public event Action<InventoryItemInfo> OnUpdateItemEvent, OnRemoveItemEvent;
     public event Action<int, int, int> OnUpdateExpEvent;
+    public event Action<int, int, int> OnLevelUpUpdateHPEvent;
     public event Action<EquippableItemInfo> OnEquipItemEvent, OnUnloadItemEvent;
+    public event Action OnLevelUpEvent;
 
     public EquippableItemInfo PlayerWeaponInfo
     {
@@ -62,7 +64,10 @@ public class PlayerData : CharacterData
         OnUpdateExpEvent = null;
         OnUpdateItemEvent = null;
         OnRemoveItemEvent = null;
+        OnLevelUpEvent = null;
+        OnLevelUpUpdateHPEvent = null;
 
+        PlayerInfo?.playerStateInfo?.ResetEvent();
         PlayerInfo = DataManager.Instance.PlayerInfo;
 
         if (!PlayerTransInfo.IsEmpty)
@@ -86,13 +91,16 @@ public class PlayerData : CharacterData
         PlayerDialogueTrigger.DialogueTriggerInit(PlayerInfo.characterDialogueId,
             PlayerInfo.playerName);
 
+        PlayerStateInfo.OnLevelUpEvent += OnLevelUpHandler;
+        PlayerStateInfo.OnLevelUpUpdateHPEvent += OnLevelUpUpdateHPHandler;
         //OnEquipItemEvent += (weaponInfo) => print("OnEquipEvent");
         //OnUnloadItemEvent += (weaponInfo) => print("OnUnloadEvent");
         OnEquipItemEvent += (weaponInfo) => UpdateAttackInfo();
+        OnEquipItemEvent += (weaponInfo) => UpdateDefence();
         OnEquipItemEvent += (weaponInfo) => AttackComboList.
             UpdateAttackRangeFactor(PlayerWeaponInfo.attackRangeFactor);
 
-        InputManager.Instance.OnSaveEvent += OnSaveHandler;
+        InputManager.Instance.OnSaveEvent += SaveGame;
 
         base.CharacterDataInit(PlayerManager.Instance);
     }
@@ -118,12 +126,25 @@ public class PlayerData : CharacterData
                 PlayerWeaponInfo.weaponAttackInfo;
     }
 
+    public void UpdateDefence()
+    {
+        if (PlayerShieldInfo == null)
+            PlayerStateInfo.defense = 0;
+        else
+            PlayerStateInfo.defense = PlayerShieldInfo.defense;
+    }
+
     public override CharacterStateData GetCharacterStateData()
     {
         return new CharacterStateData(PlayerStateInfo.health, PlayerStateInfo.maxHealth,
             PlayerStateInfo.currentLevel, PlayerStateInfo.maxLevel,
             PlayerStateInfo.currentExp, PlayerStateInfo.baseExp,
             PlayerStateInfo.levelBuff, AttackInfo.damage, AttackInfo.criticalRate);
+    }
+
+    public void OnLevelUpHandler()
+    {
+        OnLevelUpEvent?.Invoke();
     }
 
     public override void OnTakeDamageHandler(int damage, GameObject attacker)
@@ -134,6 +155,11 @@ public class PlayerData : CharacterData
     public override void OnRecoveryHandler(int recovery)
     {
         base.Recovery(PlayerStateInfo, recovery);
+    }
+
+    public void OnLevelUpUpdateHPHandler(int a, int b, int c)
+    {
+        OnLevelUpUpdateHPEvent?.Invoke(a, b, c);
     }
 
     public void OnUpdateDataInMemoryHandler()
@@ -189,7 +215,7 @@ public class PlayerData : CharacterData
         OnRemoveItemEvent?.Invoke(inventoryItemInfo);
     }
 
-    private void OnSaveHandler()
+    public void SaveGame()
     {
         PlayerTransInfo.UpdateCharacterTransInfo(SceneManager.GetActiveScene().name, 
             transform.position, transform.rotation);
@@ -208,9 +234,9 @@ public class PlayerData : CharacterData
 
     public void UpdateExp(int point)
     {
-        print("UpdateExp" + point);
+        //print("UpdateExp" + point);
         PlayerStateInfo.UpdateExp(point);
-        OnUpdateExpEvent?.Invoke(PlayerStateInfo.currentLevel, PlayerStateInfo.currentExp,
-            PlayerStateInfo.baseExp);
+        OnUpdateExpEvent?.Invoke(PlayerStateInfo.currentLevel, 
+            PlayerStateInfo.currentExp, PlayerStateInfo.baseExp);
     }
 }

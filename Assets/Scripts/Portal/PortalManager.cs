@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using UnityEngine.UIElements.Experimental;
@@ -40,16 +41,17 @@ public class PortalManager : MonoBehaviourManager<PortalManager>
         PortalManagerInit();
     }
 
-    public void PortalEnter(string targetSceneName, int targetPortalId)
+    public void PortalEnter(string targetSceneName, int targetPortalId, 
+        UnityEvent callback = null)
     {
         if (targetSceneName.Equals(SceneManager.GetActiveScene().name))
         {
-            PortalEnterSameScene(targetSceneName, targetPortalId);
+            PortalEnterSameScene(targetSceneName, targetPortalId, callback);
         }
         else
         {
             LoadSceneManager.Instance.LoadSceneAsync(targetSceneName, 
-                () => PortalEnterSameScene(targetSceneName, targetPortalId));
+                () => PortalEnterSameScene(targetSceneName, targetPortalId, callback));
         }
     }
 
@@ -58,7 +60,8 @@ public class PortalManager : MonoBehaviourManager<PortalManager>
         OnExitSameScenePortalEvent?.Invoke();
     }
 
-    private void PortalEnterSameScene(string targetSceneName, int targetPortalId)
+    private void PortalEnterSameScene(string targetSceneName, int targetPortalId, 
+        UnityEvent callback)
     {
         if (!PortalDict.ContainsKey(targetSceneName)) return;
 
@@ -75,5 +78,6 @@ public class PortalManager : MonoBehaviourManager<PortalManager>
         );
 
         OnExitSameScenePortalEvent?.Invoke();
+        callback?.Invoke();
     }
 }

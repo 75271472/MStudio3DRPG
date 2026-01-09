@@ -58,9 +58,26 @@
                 "name": "调查密林深处的异象",
                 "requireAmount": 1,
                 "requireType": 2
+            },
+            {
+                "name": "Slime",
+                "requireAmount": 5,
+                "requireType": 0
+            },
+            {
+                "name": "Turtle",
+                "requireAmount": 5,
+                "requireType": 0
             }
         ],
-        "rewardItemInfos": []
+        "rewardItemInfos": [
+            {
+                "itemInfoType": 1,
+                "quantity": 1,
+                "itemId": 2,
+                "index": 0
+            }
+        ]
     },
     {
         "id": 3,
@@ -71,6 +88,11 @@
                 "name": "探明哥布林的秘密计划",
                 "requireAmount": 1,
                 "requireType": 2
+            },
+            {
+                "name": "Grunt",
+                "requireAmount": 4,
+                "requireType": 0
             }
         ],
         "rewardItemInfos": []
@@ -79,14 +101,18 @@
         "id": 4,
         "questName": "继承遗志战终章",
         "description": "守卫队长 Ramon 为了守护村庄壮烈牺牲，但他留下的盾牌将由我来守护。 根据情报，哥布林已经逃往沙漠世界，并与在那里的石头人结成了同盟，企图发动最后的总攻 。我必须带着 Ramon 的遗志，穿过金色传送门，在它们发起进攻前将这股邪恶势力彻底消灭。这是最后的决战！",
-        "questRequireInfos": [],
-        "rewardItemInfos": [
+        "questRequireInfos": [
             {
-                "itemInfoType": 1,
-                "quantity": 3,
-                "itemId": 2,
-                "index": 1
+                "name": "Golem",
+                "requireAmount": 1,
+                "requireType": 0
+            },
+            {
+                "name": "Grunt",
+                "requireAmount": 5,
+                "requireType": 0
             }
-        ]
+        ],
+        "rewardItemInfos": []
     }
 ]

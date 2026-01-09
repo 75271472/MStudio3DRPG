@@ -16,6 +16,11 @@
     },
     {
         "conditionId": 3,
+        "description": "游戏角色完成所有任务内心独白",
+        "isTriggered": false
+    },
+    {
+        "conditionId": 4,
         "description": "游戏结束角色独白",
         "isTriggered": false
     }

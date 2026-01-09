@@ -22,5 +22,11 @@
         "characterName": "player",
         "dialogueId": 11,
         "conditionId": 3
+    },
+    {
+        "characterId": 0,
+        "characterName": "player",
+        "dialogueId": 14,
+        "conditionId": 4
     }
 ]

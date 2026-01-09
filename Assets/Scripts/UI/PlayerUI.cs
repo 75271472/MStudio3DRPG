@@ -23,11 +23,18 @@ public class PlayerUI : CharacterUI
     {
         playerData.OnTakeDamageEvent += UpdateHealthBar;
         playerData.OnRecoveryEvent += UpdateHealthBar;
+        playerData.OnLevelUpUpdateHPEvent += UpdateHealthBar;
     }
 
     public void UpdateExpRegist(PlayerData playerData)
     {
         playerData.OnUpdateExpEvent += PlayerInfoPanel.OnUpdateExpHandler;
+    }
+
+    // Inspector窗口中不能世界调用UIManager中带有泛型的函数，因此在PlayerUI中封装一回
+    public void ShowGameOverPanel()
+    {
+        UIManager.Instance.ShowPanel<GameOverPanel>(EUILayer.System);
     }
 
     private void UpdateHealthBar(int variableHealth, int currentHealth, int maxHealth)

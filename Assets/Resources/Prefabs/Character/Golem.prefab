@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetList: []
-  targetSphereRange: 15
+  targetSphereRange: 25
 --- !u!135 &4085591387699003860
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -819,6 +819,7 @@ MonoBehaviour:
     attackComboList:
     - {fileID: 11400000, guid: bc2913e8922413847ad87af70296b5e6, type: 2}
     - {fileID: 11400000, guid: 8d60c0c31e43df34caf206d6c359218b, type: 2}
+  <MoveType>k__BackingField: 0
   <MonsterInfoId>k__BackingField: 3
 --- !u!114 &8332422087448253386
 MonoBehaviour:

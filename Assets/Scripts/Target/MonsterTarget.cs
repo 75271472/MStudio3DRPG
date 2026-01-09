@@ -40,7 +40,9 @@ public class MonsterTarget : MonoBehaviour
         // 因此要从后往前移除
         for (int i = targeterList.Count - 1; i >= 0; i--)
         {
-            targeterList[i].RemoveTarget(gameObject);
+            // 游戏退出并重新加载游戏时，此时如果targeterList中有targeter对象
+            // 会变为null，需要使用 ? 防止空引用
+            targeterList[i]?.RemoveTarget(gameObject);
         }
 
         targeterList.Clear();

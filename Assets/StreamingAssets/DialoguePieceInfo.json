@@ -578,7 +578,14 @@
     {
         "id": 47,
         "description": "task2-Completed-4",
-        "text": "我想立刻冲进去毁了它，但你也看到了，我必须留在这里指挥防守，否则村庄立刻就会沦陷。现在我能信任的人只有你了。 勇士，虽然这很危险，但我请求你——进入那个传送门，去哥布林的地盘查清楚它们到底在策划什么阴谋！",
+        "text": "我想立刻冲进去毁了它，但你也看到了，我必须留在这里指挥防守，否则村庄立刻就会沦陷。",
+        "dialogueOptionList": [],
+        "targetId": 5
+    },
+    {
+        "id": 48,
+        "description": "task2-Completed-5",
+        "text": "（Ramon 咬了咬牙，将一面蒙尘的盾牌塞进你手里）拿着。这是库房里最后一面备用盾牌了。现在的物资紧缺到连卫兵都分不到防具，但我把它给你。别把它弄丢了，更别死在里面！进那个传送门，查清楚它们在搞什么鬼！",
         "dialogueOptionList": [
             {
                 "text": "为了村庄，我会去查个水落石出。",
@@ -589,7 +596,7 @@
         "targetId": -1
     },
     {
-        "id": 48,
+        "id": 49,
         "description": "task3-NotAccepted-0",
         "text": "就像我刚才推断的，那个漩涡就是哥布林入侵的通道。只要它还开着，敌人就可能涌入我们的世界，造成更大的破坏",
         "dialogueOptionList": [
@@ -607,21 +614,21 @@
         "targetId": -1
     },
     {
-        "id": 49,
+        "id": 50,
         "description": "task3-NotAccepted-1",
         "text": "没那么简单。那个传送门是由魔法维持的，普通的物理攻击无法摧毁它。况且传送门在某种程度上能够帮助我们查明真相，冒然摧毁反而丧失先机",
         "dialogueOptionList": [],
         "targetId": 3
     },
     {
-        "id": 50,
+        "id": 51,
         "description": "task3-NotAccepted-2",
         "text": "你说得对，情报就是生命。我们不知道传送门对面有多少军队，也不知道它们到底策划了什么规模的进攻。这正是需要你去调查的原因。",
         "dialogueOptionList": [],
         "targetId": 3
     },
     {
-        "id": 51,
+        "id": 52,
         "description": "task3-NotAccepted-3",
         "text": "我要你通过那个传送门，潜入哥布林的地牢世界。虽然我很想派一支军队支援你，但现在村庄危在旦夕，我必须留守。 这可能是一趟单程票……但我相信如果是你，一定能查明真相并活着回来。去调查哥布林到底在搞什么鬼。",
         "dialogueOptionList": [
@@ -639,7 +646,7 @@
         "targetId": -1
     },
     {
-        "id": 52,
+        "id": 53,
         "description": "task3-NotAccepted-4",
         "text": "确实疯狂，但只有疯狂的勇士才能拯救现在的局面。只要找到它们进攻计划的证据，我们或许就能找到反击的机会。",
         "dialogueOptionList": [
@@ -657,23 +664,23 @@
         "targetId": -1
     },
     {
-        "id": 53,
+        "id": 54,
         "description": "task3-NotAccepted-5",
         "text": "勇气可嘉！那个传送门就在密林深处。深吸一口气，跳进去。无论看到什么，一定要查清楚它们的最终目的。全村人的性命就交给你了！",
         "dialogueOptionList": [],
         "targetId": -1
     },
     {
-        "id": 54,
+        "id": 55,
         "description": "task3-NotAccepted-6",
         "text": "我理解你的恐惧，面对未知的世界谁都会颤抖。但请记住，如果我们坐以待毙，战火迟早会烧到这里。希望你能尽快改变主意。",
         "dialogueOptionList": [],
         "targetId": -1
     },
     {
-        "id": 55,
+        "id": 56,
         "description": "task3-Start-0",
-        "text": "（看到你回来，Ramon 几乎是从椅子上跳了起来） 怎么样？你通过那个漩涡了吗？有没有查到哥布林到底在策划什么？快告诉我，是不是大举进攻马上就要开始了？",
+        "text": "（看到你回来，Ramon 几乎激动地跳了起来） 怎么样？你通过那个漩涡了吗？有没有查到哥布林到底在策划什么？快告诉我，是不是大举进攻马上就要开始了？",
         "dialogueOptionList": [
             {
                 "text": "传送门那边敌人太多了，我得回来补给一下。",
@@ -694,54 +701,72 @@
         "targetId": -1
     },
     {
-        "id": 56,
+        "id": 57,
         "description": "task3-Start-1",
         "text": "这是意料之中的。那是哥布林的老巢，它们肯定会拼死抵抗。但别忘了，你现在不仅是为自己而战，更是为了身后这个村庄。坚持住，杀光它们，直到它们再也不敢阻挡你。",
         "dialogueOptionList": [],
         "targetId": -1
     },
     {
-        "id": 57,
+        "id": 58,
         "description": "task3-Start-2",
         "text": "不可能没有线索。哥布林虽然狡猾，但它们总会留下命令或计划书。仔细搜查每一个角落，特别是它们首领所在的地方，一定藏着关于这场入侵的秘密。",
         "dialogueOptionList": [],
         "targetId": -1
     },
     {
-        "id": 58,
+        "id": 59,
         "description": "task3-Start-3",
         "text": "就在密林深处！那口绿色大锅旁边旋转的漩涡就是入口。别再浪费时间了，每一秒的拖延都可能让敌人多一分准备。",
         "dialogueOptionList": [],
         "targetId": -1
     },
     {
-        "id": 59,
+        "id": 60,
         "description": "task3-Completed-0",
-        "text": "（你气喘吁吁地跑回村口，却发现这里空无一人） Ramon 队长？你在哪里！我带回了哥布林的情报！ （你环顾四周，只看到了满地的狼藉和远处徘徊的哥布林）",
-        "dialogueOptionList": [],
+        "text": "（你跑回村口，这里死一般的寂静。周围横七竖八地躺着十几具哥布林的尸体，而在血泊中央，Ramon 仰面躺在地上，双眼紧闭，胸口的起伏已经完全停止了）",
+        "dialogueOptionList": [
+            {
+                "text": "喂……Ramon？玩笑开过头了吧……起来啊。",
+                "targetId": 1,
+                "isTakeTask": false
+            }
+        ],
         "targetId": 1
     },
     {
-        "id": 60,
+        "id": 61,
         "description": "task3-Completed-1",
-        "text": "（你的目光落在脚边的血泊中，那里静静地躺着一面熟悉的盾牌） 这是……Ramon 的盾牌？上面全是缺口和血迹…… 不……不会的。那样强壮的战士，怎么会……",
-        "dialogueOptionList": [],
+        "text": "（你走到他身边。那把总是挂在腰间的佩剑断成了两截，散落在手边。盾牌上也满是深深的凹痕，静静地躺在一旁。这位总是严厉训斥你的队长，现在却连呼吸都做不到了）",
+        "dialogueOptionList": [
+            {
+                "text": "你说过要等我的情报……结果你自己却先躺下了。",
+                "targetId": 2,
+                "isTakeTask": false
+            }
+        ],
         "targetId": 2
     },
     {
-        "id": 61,
+        "id": 62,
         "description": "task3-Completed-2",
-        "text": "（你紧紧攥着从地牢带回的那张纸条，上面的字迹此刻显得格外刺眼） 人类已经快扛不住了，马上时机就成熟啦，你我一起踏平人类世界…… 可恶！原来当我们去调查的时候，它们就已经发动了总攻。Ramon 是为了守卫村庄才……",
-        "dialogueOptionList": [],
+        "text": "（脑海中闪过地牢里那张“总攻计划书”，看着满地的狼藉，明白 Ramon 是为了不让怪物冲进村子，一个人挡住了它们的先头部队，直到力竭战死）,“这些该死的畜生……趁我离开的时候动手了吗……",
+        "dialogueOptionList": [
+            {
+                "text": "这些该死的畜生……趁我离开的时候动手了吗……",
+                "targetId": 3,
+                "isTakeTask": false
+            }
+        ],
         "targetId": 3
     },
     {
-        "id": 62,
+        "id": 63,
         "description": "task3-Completed-3",
-        "text": "（你缓缓捡起沉重的盾牌，眼中的悲伤逐渐变成了坚毅） 可恶，Ramon 已经不在了……但我还在！",
+        "text": "（你看着散落在尸首旁，沾满尘土的盾牌，与满是鲜血的断剑。Ramon未寒的尸体让你感到一种冰冷的责任。你不再迷茫，眼神中只剩下纯粹的杀意）",
         "dialogueOptionList": [
             {
-                "text": "我会继承守卫队长的遗志。不管那个金色传送门通向哪里，不管这背后还有什么敌人，我都会把它们全部消灭！",
+                "text": "休息吧，Ramon。剩下的交给我。我会带着你的盾牌穿过那扇门，把它们杀得干干净净。",
                 "targetId": -1,
                 "isTakeTask": true
             }
@@ -749,21 +774,21 @@
         "targetId": -1
     },
     {
-        "id": 63,
+        "id": 64,
         "description": "task4-NotAccepted-0",
         "text": "（你站在光芒耀眼的传送门前，甚至能感觉到对面吹来的干燥热风） 这个金色的漩涡……那张纸条上说，哥布林已经去联合新的盟友了。如果我没猜错，这后面就是它们的集结地——沙漠世界。",
         "dialogueOptionList": [],
         "targetId": 1
     },
     {
-        "id": 64,
+        "id": 65,
         "description": "task4-NotAccepted-1",
         "text": "（你低头看了一眼手中 Ramon 留下的盾牌，握紧了剑柄） Ramon 队长为了守护这里付出了生命，现在只有我能阻止这场浩劫了。哥布林和那个所谓的‘石头人’正在做最后的进攻准备，我必须在它们出发前解决掉它们！",
         "dialogueOptionList": [],
         "targetId": 2
     },
     {
-        "id": 65,
+        "id": 66,
         "description": "task4-NotAccepted-2",
         "text": "（深吸一口气，你在这个未知的入口前做出了决定） 只要跨过这一步，就没有退路了。是为了 Ramon，也是为了幸存的人们……我要去终结这一切。",
         "dialogueOptionList": [
@@ -781,54 +806,54 @@
         "targetId": -1
     },
     {
-        "id": 66,
+        "id": 67,
         "description": "task4-Start-0",
         "text": "（刚一落地，灼热的气浪就扑面而来，漫天的黄沙让你几乎睁不开眼） 咳咳……这里就是沙漠世界吗？空气烫得像着了火一样，和人类世界完全不同。",
         "dialogueOptionList": [],
         "targetId": 1
     },
     {
-        "id": 67,
+        "id": 68,
         "description": "task4-Start-1",
         "text": "（你眯起眼睛观察四周，发现沙丘之间到处都是绿色的身影） 糟了，我不该惊讶的。哥布林的大部队已经抵达了这里，它们马上就要准备做最后的进攻了",
         "dialogueOptionList": [],
         "targetId": 2
     },
     {
-        "id": 68,
+        "id": 69,
         "description": "task4-Start-2",
         "text": "（在大地的震颤中，一个巨大的岩石身影缓缓站了起来，遮住了太阳） 天哪，看那个大家伙……那是石头人！它的体型比传说中还要巨大，浑身散发着危险的气息。哥布林竟然真的联合了这种怪物。",
         "dialogueOptionList": [],
         "targetId": 3
     },
     {
-        "id": 69,
+        "id": 70,
         "description": "task4-Start-3",
         "text": "（你举起 Ramon 的盾牌，用力拍击了一下剑身，发出清脆的响声） 绝不能让这支军队跨过传送门！哪怕只有我一个人，我也要把它拦在这里。为了 Ramon，为了村庄……杀光它们！",
         "dialogueOptionList": [],
         "targetId": -1
     },
     {
-        "id": 70,
+        "id": 71,
         "description": "task4-Completed-0",
-        "text": "（随着一声震耳欲聋的巨响，巨大的岩石身躯轰然倒塌，化作一堆碎石。周围的哥布林看到首领倒下，尖叫着四散而逃） 终于……结束了。那个大家伙倒下了，哥布林的野心也随之粉碎了。",
+        "text": "你迈出传送门，身后狂暴的魔法波动终于归于沉寂。清凉的晚风吹在脸上，带走了沙漠的燥热和战场的血腥味。结束了……所有的疯狂和杀戮，都在这一刻画上了句号。",
         "dialogueOptionList": [],
         "targetId": 1
     },
     {
-        "id": 71,
+        "id": 72,
         "description": "task4-Completed-1",
-        "text": "（你大口喘着粗气，汗水浸透了盔甲。你缓缓举起手中满是划痕的盾牌，看向天空） Ramon 队长，你看到了吗？我做到了。无论是哥布林还是石头人，都别想再踏入我们的世界半步。",
+        "text": "看着眼前正在清理废墟、重建家园的村民，你突然感到一种深深的疲惫，但随之而来的是前所未有的轻松。那个必须时刻紧绷神经、为了生存而挣扎的长夜，终于过去了。",
         "dialogueOptionList": [],
         "targetId": 2
     },
     {
-        "id": 72,
+        "id": 73,
         "description": "task4-Completed-2",
-        "text": "（金色的传送门开始闪烁，似乎因为失去了魔力维持即将关闭） 传送门快要消失了，我得赶紧回去。",
+        "text": "你看到在 Ramon 战死的地方，人们用剑立在地上，像是一座无名的墓碑。你长长地呼出一口气，对着虚空露出了一个疲惫却释然的微笑。",
         "dialogueOptionList": [
             {
-                "text": "不知道现在的村庄怎么样了……希望一切都还来得及。",
+                "text": "任务完成了，队长。村子守住了……你可以安心睡个好觉了。",
                 "targetId": -1,
                 "isTakeTask": true
             }

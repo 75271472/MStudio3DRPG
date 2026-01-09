@@ -22,7 +22,7 @@ public class PlayerGetHitState : PlayerBaseState
 
     public override void Enter()
     {
-        SpeedNormalizedAnimation(stateMachine.Animator, "GetHit", duration);
+        //SpeedNormalizedAnimation(stateMachine.Animator, "GetHit", duration);
         stateMachine.Animator.CrossFadeInFixedTime(GetHitHash, CrossFixedTime);
         SetIdle();
     }

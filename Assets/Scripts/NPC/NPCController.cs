@@ -15,7 +15,7 @@ public class NPCController : MonoBehaviour, ICharacter
     public CharacterUI CharacterUI => NPCUI;
     public GameObject CharacterGameObject => gameObject;
 
-    public event Action<ICharacter> OnCharacterDieEvent;
+    //public event Action<ICharacter> OnCharacterDieEvent;
 
     public void NPCControllerInit(int id)
     {

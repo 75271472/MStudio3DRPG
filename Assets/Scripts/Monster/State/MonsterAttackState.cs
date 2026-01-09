@@ -77,8 +77,8 @@ public class MonsterAttackState : MonsterBaseState
         if (attackSO.comboStateIndex == -1 || 
             normalizedTime < attackSO.comboAttackTime) return;
 
-        if (stateMachine.transform.IsTargetInArea(targetObj, 
-            attackSO.StopDistance, attackSO.attackAngle))
+        if (stateMachine.transform.IsTargetInAreaByRay(targetObj, 
+            attackSO.StopDistance, attackSO.attackAngle, out var distance))
         {
             stateMachine.SwitchState(new MonsterAttackState(stateMachine,
                 attackSO.comboStateIndex, targetObj));

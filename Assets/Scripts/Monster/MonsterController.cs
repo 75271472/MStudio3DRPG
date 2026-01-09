@@ -43,7 +43,7 @@ public class MonsterController : MonoBehaviour, ICharacter
 
     private void OnMonsterDieHandler(GameObject obj)
     {
-        print(name + " Die");
+        //print(name + " Die");
         OnCharacterDieEvent?.Invoke(this);
     }
 }

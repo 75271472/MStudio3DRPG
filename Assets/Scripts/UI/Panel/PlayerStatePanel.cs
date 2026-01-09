@@ -43,7 +43,7 @@ public class PlayerStatePanel : BaseInventoryPanel
 
     private InventoryBK inventoryBK;
 
-    public event Action<EEquippableItem, IndexInfo> OnEquipEvent, OnUnloadEvent;
+    //public event Action<EEquippableItem, IndexInfo> OnEquipEvent, OnUnloadEvent;
     public event Func<CharacterStateData> OnGetCharacterStateDataEvent;
     public override EInventoryPanel PanelType => EInventoryPanel.PlayerState;
 

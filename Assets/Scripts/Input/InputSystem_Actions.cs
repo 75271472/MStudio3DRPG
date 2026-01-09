@@ -125,6 +125,15 @@ public partial class @InputControler: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PauseGame"",
+                    ""type"": ""Button"",
+                    ""id"": ""303ce9a5-6ee5-41f2-9d9c-01c4f49e0613"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -369,6 +378,17 @@ public partial class @InputControler: IInputActionCollection2, IDisposable
                     ""action"": ""OpenQuest"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3f02d560-638d-4071-bf4d-ccb18e76409f"",
+                    ""path"": ""<Keyboard>/backquote"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PauseGame"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -449,6 +469,7 @@ public partial class @InputControler: IInputActionCollection2, IDisposable
         m_Player_OpenBag = m_Player.FindAction("OpenBag", throwIfNotFound: true);
         m_Player_HotItem = m_Player.FindAction("HotItem", throwIfNotFound: true);
         m_Player_OpenQuest = m_Player.FindAction("OpenQuest", throwIfNotFound: true);
+        m_Player_PauseGame = m_Player.FindAction("PauseGame", throwIfNotFound: true);
     }
 
     ~@InputControler()
@@ -526,6 +547,7 @@ public partial class @InputControler: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_OpenBag;
     private readonly InputAction m_Player_HotItem;
     private readonly InputAction m_Player_OpenQuest;
+    private readonly InputAction m_Player_PauseGame;
     public struct PlayerActions
     {
         private @InputControler m_Wrapper;
@@ -541,6 +563,7 @@ public partial class @InputControler: IInputActionCollection2, IDisposable
         public InputAction @OpenBag => m_Wrapper.m_Player_OpenBag;
         public InputAction @HotItem => m_Wrapper.m_Player_HotItem;
         public InputAction @OpenQuest => m_Wrapper.m_Player_OpenQuest;
+        public InputAction @PauseGame => m_Wrapper.m_Player_PauseGame;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -583,6 +606,9 @@ public partial class @InputControler: IInputActionCollection2, IDisposable
             @OpenQuest.started += instance.OnOpenQuest;
             @OpenQuest.performed += instance.OnOpenQuest;
             @OpenQuest.canceled += instance.OnOpenQuest;
+            @PauseGame.started += instance.OnPauseGame;
+            @PauseGame.performed += instance.OnPauseGame;
+            @PauseGame.canceled += instance.OnPauseGame;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -620,6 +646,9 @@ public partial class @InputControler: IInputActionCollection2, IDisposable
             @OpenQuest.started -= instance.OnOpenQuest;
             @OpenQuest.performed -= instance.OnOpenQuest;
             @OpenQuest.canceled -= instance.OnOpenQuest;
+            @PauseGame.started -= instance.OnPauseGame;
+            @PauseGame.performed -= instance.OnPauseGame;
+            @PauseGame.canceled -= instance.OnPauseGame;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -695,5 +724,6 @@ public partial class @InputControler: IInputActionCollection2, IDisposable
         void OnOpenBag(InputAction.CallbackContext context);
         void OnHotItem(InputAction.CallbackContext context);
         void OnOpenQuest(InputAction.CallbackContext context);
+        void OnPauseGame(InputAction.CallbackContext context);
     }
 }

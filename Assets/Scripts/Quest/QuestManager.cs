@@ -1,8 +1,10 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class QuestManager : MonoBehaviourManager<QuestManager>
 {
@@ -15,13 +17,12 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
 
     public event Action<Quest> OnStartQusetEvent;
     public event Action<Quest> OnCompletedQuestEvent;
+    public event Action<Quest> OnFinishedQuestEvent;
     public event Action<RequireDataPayload> OnRequireUpdateEvent;
 
     public void QuestManagerInit()
     {
-        OnStartQusetEvent = null;
-        OnCompletedQuestEvent = null;
-        OnRequireUpdateEvent = null;
+        ResetEvent();
 
         activeQuestDict.Clear();
         finishedQuestDict.Clear();
@@ -34,13 +35,15 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
 
         questInfoList = DataManager.Instance.QuestInfoList;
 
-        MonsterManager.Instance.ResetEvent();   
+        MonsterManager.Instance.ResetEvent();
         MonsterManager.Instance.OnMonsterDieEvent += OnKillEnemyHandler;
         PlayerManager.Instance.ResetEvent();
         PlayerManager.Instance.OnUpdateItemEvent += OnCollectItemHandler;
         PlayerManager.Instance.OnRemoveItemEvent += OnRemoveItemHandler;
     }
-    
+
+
+
     public override void Init()
     {
         base.Init();
@@ -90,11 +93,20 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         return EQuestState.NotAccepted;
     }
 
-    public void TriggerRequireUpdate(string triggerName, bool isFinish = true)
+    public void TriggerRequireUpdate(string triggerName, bool isFinish)
     {
         TriggerRequire triggerRequire = new TriggerRequire(triggerName, isFinish);
 
         UpdateRequire(null, null, triggerRequire);
+    }
+
+    private void ResetEvent()
+    {
+        Debug.Log($"有人置空了订阅");
+
+        OnStartQusetEvent = null;
+        OnCompletedQuestEvent = null;
+        OnRequireUpdateEvent = null;
     }
 
     private void CheckAndProcessQuest(int questId)
@@ -132,13 +144,13 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
 
     private void OnCollectItemHandler(InventoryItemInfo inventoryItemInfo)
     {
-        print("QuestManager OnUpdateItemHandler Trigger");
+        //print("QuestManager OnUpdateItemHandler Trigger");
         UpdateRequire(null, inventoryItemInfo);
     }
 
     private void OnRemoveItemHandler(InventoryItemInfo inventoryItemInfo)
     {
-        print("QuestManager OnResetItemHandler Trigger");
+        //print("QuestManager OnResetItemHandler Trigger");
         inventoryItemInfo.quantity = -inventoryItemInfo.quantity;
         UpdateRequire(null, inventoryItemInfo);
     }
@@ -148,7 +160,7 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         print(quest.questName + " Completed");
 
         UIManager.Instance.ShowPanel<NoticePanel>().
-            UpdateTipTxt($"任务完成：{quest.questName}，可以去领取奖励了");
+            UpdateTipTxt($"任务完成：{quest.questName}");
         OnCompletedQuestEvent?.Invoke(quest);
     }
 
@@ -211,16 +223,20 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
 
         UIManager.Instance.ShowPanel<NoticePanel>().
             UpdateTipTxt($"任务结束：{quest.questName}");
+        OnFinishedQuestEvent?.Invoke(quest);
     }
 
     private void UpdateRequire(ICharacter character = null,
         InventoryItemInfo inventoryItemInfo = null,
         TriggerRequire triggerRequire = null)
     {
-        print("QuestManager UpdateRequire Trigger");
+        //print("QuestManager UpdateRequire Trigger");
 
         RequireDataPayload requireDataPayload = new RequireDataPayload(
             character, inventoryItemInfo, triggerRequire);
+
+        Debug.Log($"Current QuestManager Instance ID: {this.GetInstanceID()}");
+        Debug.Log($"Singleton Instance ID: {Instance.GetInstanceID()}"); // 对比单例的ID
 
         OnRequireUpdateEvent?.Invoke(requireDataPayload);
     }

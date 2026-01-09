@@ -34,13 +34,6 @@ public class MonsterGetHitState : MonsterBaseState
         SetGuard();
     }
 
-    private IEnumerator DelayedSpeedAdjustment()
-    {
-        yield return null; // 等待一帧，确保 Animator 已初始化
-
-        SpeedNormalizedAnimation(stateMachine.Animator, "GetHit", duration);
-    }
-
     public override void Tick(float deltaTime)
     {
         float normalizedTime = GetNormalizedTime(stateMachine.Animator, AnimationTag);

@@ -54,19 +54,23 @@ public class MonsterChaseState : MonsterBaseState
             return;
         }
 
-        if (!stateMachine.transform.IsTargetInArea(targetObj,
+        // 判断二维平面距离，实际的三维距离可能大于MaxDistance
+
+        if (!stateMachine.transform.IsTargetInAreaByRay(targetObj,
             stateMachine.MonsterComboList.MaxDiatance, 
-            stateMachine.MonsterComboList.MaxAngle))
+            stateMachine.MonsterComboList.MaxAngle, out float distance))
         {
             SetDestination(targetObj.transform.position);
             stateMachine.transform.UpdateLookToTarget(targetObj,
                 stateMachine.MonsterMoveSO.angularSpeed);
             return;
         }
-
-        if (!stateMachine.MonsterComboList.CanAttack(
-            stateMachine.transform.GetTargetDistance(targetObj)))
+        
+        // 距离判定通过的状态下，判断CD
+        if (!stateMachine.MonsterComboList.CanAttack(distance))
+            //stateMachine.transform.GetTargetDistanceInSaveHeight(targetObj)))
         {
+            //Debug.Log($"MonsterChase Distance {distance}");
             stateMachine.SwitchState(new MonsterAttackCDState(stateMachine, targetObj));
             return;
         }

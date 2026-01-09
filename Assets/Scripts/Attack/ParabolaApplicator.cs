@@ -51,7 +51,7 @@ public class ParabolaApplicator : MonoBehaviour
             // 旋转对应的角度（线性插值一定角度，然后每帧绕X轴旋转）
             Quaternion rotation = Quaternion.Euler(Mathf.Clamp(-angle, -42, 42), 0, 0);
             transform.rotation = transform.rotation * rotation;
-            print($"{angle} {rotation}");
+            //print($"{angle} {rotation}");
             // 当前距离目标点
             float currentDist = Vector3.Distance(transform.position, targetPos);
             // 很接近目标了, 准备结束循环

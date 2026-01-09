@@ -1,9 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Unity.VisualScripting.Antlr3.Runtime;
-using UnityEditor;
-using UnityEditor.Search;
 using UnityEngine;
 
 [RequireComponent(typeof(ItemPickUp))]
