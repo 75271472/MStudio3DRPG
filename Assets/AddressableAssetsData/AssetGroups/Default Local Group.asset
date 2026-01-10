@@ -18,527 +18,542 @@ MonoBehaviour:
   m_GUID: 8e6db609cd464dc4a86651b3d46219bb
   m_SerializeEntries:
   - m_GUID: 013af0d241fdda847a01feee989b25c0
-    m_Address: Sprites/Shield.png
+    m_Address: Sprites/Shield
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 04a058cb22c9b2040bd5cce7a585e421
-    m_Address: Prefabs/UI/QuestBtn.prefab
+    m_Address: Prefabs/UI/QuestBtn
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 04b52458a5b4f094f86af9561afd1120
-    m_Address: Prefabs/UI/Panel/PausePanel.prefab
+    m_Address: Prefabs/UI/Panel/PausePanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 07d85ac27271c5542a2831d685240a44
-    m_Address: Prefabs/Manager/MonoManager.prefab
+    m_Address: Prefabs/Manager/MonoManager
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 088749feaee216a45833d9dccce1de51
-    m_Address: Prefabs/Manager/MonsterManager.prefab
+    m_Address: Prefabs/Manager/MonsterManager
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 09b8af4ac95c0b749a9199cdcc6f32b8
-    m_Address: Prefabs/UI/Panel/DiePanel.prefab
+    m_Address: Prefabs/UI/Panel/DiePanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 09da3d04340ff6e49a40669f3c0ac42b
-    m_Address: GameData/Attack/Monster/Grunt/GruntAttack2.asset
+    m_Address: GameData/Attack/Monster/Grunt/GruntAttack2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0d749b253c248c2489bf2484ca7c2c80
-    m_Address: GameData/AttackEffect/ForceStand.asset
+    m_Address: GameData/AttackEffect/ForceStand
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0fcb059386ec98540ac886d9b790815a
-    m_Address: Sprites/Mushroom1.png
+    m_Address: Sprites/Mushroom1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0fec6e61e48bc454fb80de6f490db499
-    m_Address: GameData/Attack/Player/PlayerAttack2.asset
+    m_Address: GameData/Attack/Player/PlayerAttack2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0fffe256a05bd1946b6716e57fd96d5f
-    m_Address: Prefabs/UI/ItemUI/InventoryItemUI.prefab
+    m_Address: Prefabs/UI/ItemUI/InventoryItemUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1077442d313e09a41b4f7fa9f4bcec24
-    m_Address: Prefabs/UI/WorldCanvas.prefab
+    m_Address: Prefabs/UI/WorldCanvas
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 17a97cdd98b9ee94d83acbd43115ed2d
-    m_Address: GameData/Attack/Monster/Slime/SlimeAttack1.asset
+    m_Address: GameData/Attack/Monster/Slime/SlimeAttack1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1c12fd564d58c4f45bf12cc9a96263de
-    m_Address: Prefabs/UI/Panel/TipPanel.prefab
+    m_Address: Prefabs/UI/Panel/TipPanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1d82ab9a8982d17499922b258b22ce5e
-    m_Address: Prefabs/UI/HealthBar.prefab
+    m_Address: Prefabs/UI/HealthBar
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1f6dccaa9ad63aa4b8b68146044e29af
-    m_Address: Prefabs/WordItem/Mushroom1.prefab
+    m_Address: Prefabs/WordItem/Mushroom1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 24026ac7d0462b7419d88f05c75c8342
-    m_Address: Prefabs/UI/OptionBtnUI.prefab
+    m_Address: Prefabs/UI/OptionBtnUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 27cd5de8b659f7e49a640aea008de3ba
-    m_Address: Sprites/Fist.png
+    m_Address: Sprites/Fist
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2b330f8aeaf9a6c4a80d1b157a75a3af
-    m_Address: Sprites/Sword.png
+    m_Address: Sprites/Sword
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2b987f510df52ff42baee6cf27ca2161
-    m_Address: GameData/Attack/Monster/Slime/SlimeAttack4.asset
+    m_Address: GameData/Attack/Monster/Slime/SlimeAttack4
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2c2bba3c830721346a08a54b9114d27a
-    m_Address: Prefabs/Weapon/RamonSword.prefab
+    m_Address: Prefabs/Weapon/RamonSword
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2e122ad735d91964db26234f092c1008
-    m_Address: Prefabs/Character/Grunt.prefab
+    m_Address: Prefabs/Character/Grunt
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2f16cef19e5a0104f9aa6ee69c248be0
-    m_Address: Prefabs/Portal/PurplePortal.prefab
+    m_Address: Prefabs/Portal/PurplePortal
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3aac923b9eb3a2a4ea7e8dd6ca700b1a
-    m_Address: Prefabs/UI/ItemUI/RewardItemUI.prefab
+    m_Address: Prefabs/UI/ItemUI/RewardItemUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 406428086d3e493489374c828589a5a5
-    m_Address: Prefabs/UI/ProgressUI.prefab
+    m_Address: Prefabs/UI/ProgressUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 43215cf22d706f64492b8e8706b0c445
-    m_Address: DOTweenSettings.asset
+    m_Address: DOTweenSettings
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 439c1b1638e34604d816830057064be9
-    m_Address: Prefabs/Character/Golem.prefab
+    m_Address: Prefabs/Character/Golem
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 45c2aeb890d68d04e890096b51c31bf0
-    m_Address: Prefabs/WordItem/Sword.prefab
+    m_Address: Prefabs/WordItem/Sword
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4855e4de5bb951144ac25f0af04d1bb3
-    m_Address: Prefabs/UI/InputActionUI.prefab
+    m_Address: Prefabs/UI/InputActionUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4cbd60797ef393f4f8534dbfa0f30775
-    m_Address: Prefabs/UI/Panel/ArchivePanel.prefab
+    m_Address: Prefabs/UI/Panel/ArchivePanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4cd0d65b996821f41a753be959120676
-    m_Address: Prefabs/UI/ItemUI/HotItemUI.prefab
+    m_Address: Prefabs/UI/ItemUI/HotItemUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4dbb8583eb2bdc34e8e4b8b10ff05b8a
-    m_Address: Prefabs/UI/Panel/NoticePanel.prefab
+    m_Address: Prefabs/UI/Panel/NoticePanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4f5467c8280d91341ae5f20b2c65a603
-    m_Address: Prefabs/WordItem/Apple.prefab
+    m_Address: Prefabs/WordItem/Apple
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 52af223e29257044e8dd148b7494e375
-    m_Address: GameData/Attack/Monster/Grunt/GruntComboTemplate2.asset
+    m_Address: GameData/Attack/Monster/Grunt/GruntComboTemplate2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 53e925ee229830f448bb88878df17873
-    m_Address: Prefabs/UI/ArchiveUI.prefab
+    m_Address: Prefabs/UI/ArchiveUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 574dea48a64189f41ae5d5353d1791a5
-    m_Address: Prefabs/UI/Panel/HotInventoryPanel.prefab
+    m_Address: Prefabs/UI/Panel/HotInventoryPanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 57ae51a842c65b743813bb5bed15a046
-    m_Address: Prefabs/Manager/DialogueManager.prefab
+    m_Address: Prefabs/Manager/DialogueManager
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5891c2fd414ba7b4fb1de87b899f01b2
-    m_Address: Sprites/Pear.png
+    m_Address: Sprites/Pear
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5d96ac6965eb4e94f9f212e138c2cc69
-    m_Address: Prefabs/Manager/CameraManager.prefab
+    m_Address: Prefabs/Manager/CameraManager
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5f9288379f612c049b3d622135784237
-    m_Address: Prefabs/UI/Panel/StartPanel.prefab
+    m_Address: Prefabs/UI/Panel/StartPanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6006009f6985fdb48a65bb3077f16ba1
-    m_Address: Prefabs/Character/Turtle.prefab
+    m_Address: Prefabs/Character/Turtle
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 60ad46e6252de064b91343d10cc09762
-    m_Address: GameData/Attack/Monster/Slime/SlimeAttack2.asset
+    m_Address: GameData/Attack/Monster/Slime/SlimeAttack2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 637f2463e09d67d43a83e1b40593c30a
-    m_Address: Prefabs/Weapon/Rock.prefab
+    m_Address: Prefabs/Weapon/Rock
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6392a7e2440c1ff499f968ee794464b7
-    m_Address: GameData/Attack/Monster/Turtle/TurtleAttack2.asset
+    m_Address: GameData/Attack/Monster/Turtle/TurtleAttack2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 63a8a86dc9cc3a14f982d5c1402f2ae7
-    m_Address: Prefabs/UI/Panel/InventoryPanel.prefab
+    m_Address: Prefabs/UI/Panel/InventoryPanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 64174c3e4f32bf24ba2b3c4a11816bdf
-    m_Address: Prefabs/UI/RenderTexture/DieRamonProfileTexture.renderTexture
+    m_Address: Prefabs/UI/RenderTexture/DieRamonProfileTexture
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 678a734237a406f40b87924e5c478321
-    m_Address: GameData/Attack/Player/PlayerAttack1.asset
+    m_Address: GameData/Attack/Player/PlayerAttack1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 69de57fc3ec3b4a4494b417596f2ce15
-    m_Address: Prefabs/UI/StateTxt.prefab
+    m_Address: Prefabs/UI/StateTxt
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6afff1fbe5e665047b5e7e58e3a6d49a
-    m_Address: Prefabs/UI/Panel/EffectPanel.prefab
+    m_Address: Prefabs/UI/Panel/EffectPanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 708040945bd99b24f9cee2dbc6212d8e
-    m_Address: GameData/Attack/Player/PlayerComboTemplate.asset
+    m_Address: GameData/Attack/Player/PlayerComboTemplate
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 710fa7b53a2cf9a449e092594a20134a
-    m_Address: GameData/Attack/Monster/Slime/SlimeComboTemplate1.asset
+    m_Address: GameData/Attack/Monster/Slime/SlimeComboTemplate1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 71bd47be5558c6648a053df8b213b349
-    m_Address: Prefabs/Manager/QuestManager.prefab
+    m_Address: Prefabs/Manager/QuestManager
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 73a30e197ef692b4c8bf024f785cfabd
-    m_Address: Prefabs/UI/Panel/InputActionPanel.prefab
+    m_Address: Prefabs/UI/Panel/InputActionPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73bd6cd426d74ef43996a487d190dc03
+    m_Address: Scenes/SceneThree
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 76ce50014c12cf54782be89d1f44daa4
-    m_Address: Prefabs/UI/RenderTexture/PlayerTexture.renderTexture
+    m_Address: Prefabs/UI/RenderTexture/PlayerTexture
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 76f4f3bb611228740b833a0ad9195cdd
-    m_Address: Prefabs/Particle/RockBreakParticle.prefab
+    m_Address: Prefabs/Particle/RockBreakParticle
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 79120c7074dc458459b306d3dcbd4e30
-    m_Address: Prefabs/Weapon/Sword.prefab
+    m_Address: Prefabs/Weapon/Sword
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7df39e0b8349a714b81178fde0f5cdb0
-    m_Address: Prefabs/Manager/Player.prefab
+    m_Address: Prefabs/Manager/Player
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 808f62a2f4b1d1d48a3fe6f3dde25bcf
-    m_Address: Prefabs/UI/Panel/DialoguePanel.prefab
+    m_Address: Prefabs/UI/Panel/DialoguePanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 81e262c1c7fc47946bf1f264f4ca6cb6
-    m_Address: Prefabs/UI/Panel/InfoPanel.prefab
+    m_Address: Prefabs/UI/Panel/InfoPanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 897c1b3df35edbc4c915ae2e7f14b256
-    m_Address: Prefabs/UI/Panel/MouseFollower.prefab
+    m_Address: Prefabs/UI/Panel/MouseFollower
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8be6424dedc22a740ad3a179c202c744
+    m_Address: Scenes/SceneTwo
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8d44a55857edb0649ba6ea81e82e9165
-    m_Address: Prefabs/UI/EventSystem.prefab
+    m_Address: Prefabs/UI/EventSystem
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8d60c0c31e43df34caf206d6c359218b
-    m_Address: GameData/Attack/Monster/Golem/GolemComboTemplate2.asset
+    m_Address: GameData/Attack/Monster/Golem/GolemComboTemplate2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 96d01849a4127d049b3050244876ecba
-    m_Address: Prefabs/Manager/MouseManager.prefab
+    m_Address: Prefabs/Manager/MouseManager
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 97ee6ae4993911543add2dcda83c8a82
-    m_Address: GameData/AttackEffect/Repel.asset
+    m_Address: GameData/AttackEffect/Repel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 98488938d3878454eb38ffc381ce259d
-    m_Address: Prefabs/UI/RenderTexture/NPCProfileTexture.renderTexture
+    m_Address: Prefabs/UI/RenderTexture/NPCProfileTexture
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 98ff3e89eafb4b24a876d98cf1fc1057
-    m_Address: Prefabs/UI/AccordionUI.prefab
+    m_Address: Prefabs/UI/AccordionUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9b6e829794469594c85b387803c641c5
-    m_Address: Prefabs/Manager/NPCManager.prefab
+    m_Address: Prefabs/Manager/NPCManager
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9fc0d4010bbf28b4594072e72b8655ab
+    m_Address: Scenes/SceneOne
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a0c648c351163f44a9bc67bd66a18188
-    m_Address: Prefabs/UI/Panel/QuestPanel.prefab
+    m_Address: Prefabs/UI/Panel/QuestPanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a213bf54d0daed140ad4e6d47dea4fae
-    m_Address: Prefabs/UI/OverlayCanvas.prefab
+    m_Address: Prefabs/UI/OverlayCanvas
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a3d390afcd2116240a4b84bf60fd0076
-    m_Address: Sprites/RamonShield.png
+    m_Address: Sprites/RamonShield
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ab18589b5d1420c45ab547d0ff0a56d4
-    m_Address: Prefabs/UI/Panel/GameOverPanel.prefab
+    m_Address: Prefabs/UI/Panel/GameOverPanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ad851a3f0f7d57245a37dd8fa8c92f08
-    m_Address: Prefabs/WordItem/RamonShield.prefab
+    m_Address: Prefabs/WordItem/RamonShield
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: afc41bb1da8576d419b8e5a4135806de
-    m_Address: GameData/Attack/Monster/Grunt/GruntComboTemplate1.asset
+    m_Address: GameData/Attack/Monster/Grunt/GruntComboTemplate1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b447de8df3b48c44fb09224ad3adf85f
-    m_Address: GameData/Modifier/CharacterHealthSO.asset
+    m_Address: GameData/Modifier/CharacterHealthSO
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b920b4a3cabbc154a92d7ed0f8d974b3
-    m_Address: Prefabs/UI/RenderTexture/PlayerProfileTexture.renderTexture
+    m_Address: Prefabs/UI/RenderTexture/PlayerProfileTexture
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb5c44f1cacead5438f5a1ccb7346892
-    m_Address: Sprites/Apple.png
+    m_Address: Sprites/Apple
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc2913e8922413847ad87af70296b5e6
-    m_Address: GameData/Attack/Monster/Golem/GolemComboTemplate1.asset
+    m_Address: GameData/Attack/Monster/Golem/GolemComboTemplate1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc6bcf8453906314e960337da3889a14
-    m_Address: GameData/Attack/Monster/Turtle/TurtleComboTemplate.asset
+    m_Address: GameData/Attack/Monster/Turtle/TurtleComboTemplate
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c06d0e6e6e250f84c969fc1138412dd1
-    m_Address: Prefabs/UI/Panel/ItemDescription.prefab
+    m_Address: Prefabs/UI/Panel/ItemDescription
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c55fffd436d509945acb6fe82adea2e9
-    m_Address: Prefabs/UI/Panel/PlayerInfoPanel.prefab
+    m_Address: Prefabs/UI/Panel/PlayerInfoPanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c584a09981fa68848ba420284b3ff699
-    m_Address: Sprites/Mushroom2.png
+    m_Address: Sprites/Mushroom2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c7c402baf95b9224b93e93d056aec421
-    m_Address: Prefabs/WordItem/Shield.prefab
+    m_Address: Prefabs/WordItem/Shield
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c9e32bca29fda7740aedc708574e4c58
-    m_Address: Prefabs/Portal/RedPortal.prefab
+    m_Address: Prefabs/Portal/RedPortal
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c9e944503483b3149b4c4bba1fe07998
-    m_Address: GameData/Attack/Monster/Slime/SlimeComboTemplate2.asset
+    m_Address: GameData/Attack/Monster/Slime/SlimeComboTemplate2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ca76ae8199c445e45aacce428f61c8a1
-    m_Address: Prefabs/Character/Slime.prefab
+    m_Address: Prefabs/Character/Slime
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cb8061a9d7ef7984da5ca6d8bf2cdce2
-    m_Address: Prefabs/WordItem/Mushroom2.prefab
+    m_Address: Prefabs/WordItem/Mushroom2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ce9df434ab230ad41bef6148ffef4f60
-    m_Address: GameData/Modifier/CharacterHealthDamageSO.asset
+    m_Address: GameData/Modifier/CharacterHealthDamageSO
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d407e93decb1fad4da7efe813d0c3a77
-    m_Address: Sprites/Icon.png
+    m_Address: Sprites/Icon
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d79d7cf62edd57b40a4991c0adc4070e
-    m_Address: Prefabs/Character/NPC.prefab
+    m_Address: Prefabs/Character/NPC
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: db2f31d348a6b584db906a7214bcfbe9
-    m_Address: Prefabs/UI/Panel/PlayerStatePanel.prefab
+    m_Address: Prefabs/UI/Panel/PlayerStatePanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: db64f8677beffcf4292fcaccd42c6a97
-    m_Address: Prefabs/UI/ItemUI/PlayerStateItemUI.prefab
+    m_Address: Prefabs/UI/ItemUI/PlayerStateItemUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e11d62feb994df84d9f598e1309ef94b
-    m_Address: Prefabs/Portal/YellowPortal.prefab
+    m_Address: Prefabs/Portal/YellowPortal
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e40a3321dff294e44b50d1fec4443550
-    m_Address: Sprites/RamonSword.png
+    m_Address: Sprites/RamonSword
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e502c6a831d80da4185baffbe056b399
-    m_Address: Prefabs/UI/InfoTxtUI.prefab
+    m_Address: Prefabs/UI/InfoTxtUI
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e6c682fca59efa44a846d20b41a80951
-    m_Address: GameData/Attack/Monster/Golem/GolemAttack1.asset
+    m_Address: GameData/Attack/Monster/Golem/GolemAttack1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e7201ef6cb6b5e94a9129ffa423988b0
-    m_Address: Prefabs/Manager/PortalManager.prefab
+    m_Address: Prefabs/Manager/PortalManager
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: eb6ade0c7b6fcd341957ec1498605360
-    m_Address: Prefabs/WordItem/RamonSword.prefab
+    m_Address: Prefabs/WordItem/RamonSword
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ec45680c915210c4f9c31e007071ee8e
-    m_Address: GameData/Attack/Monster/Turtle/TurtleAttack1.asset
+    m_Address: GameData/Attack/Monster/Turtle/TurtleAttack1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: efa33535721450c43ae252ae850b76d5
-    m_Address: GameData/Attack/Monster/Grunt/GruntAttack1.asset
+    m_Address: GameData/Attack/Monster/Grunt/GruntAttack1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f19135db42970d743bac4e5916335f4f
-    m_Address: Prefabs/Weapon/Shield.prefab
+    m_Address: Prefabs/Weapon/Shield
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f1ad6bf9d77cb4a478fe9ae222d50897
-    m_Address: Prefabs/Weapon/Fist.prefab
+    m_Address: Prefabs/Weapon/Fist
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f5f70b5b391849747b684f8fb3ba6e7b
-    m_Address: Prefabs/UI/Panel/LoadScenePanel.prefab
+    m_Address: Prefabs/UI/Panel/LoadScenePanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f72597eb5e7dde64aaf2a49ff933d0cb
-    m_Address: GameData/Attack/Monster/Slime/SlimeAttack3.asset
+    m_Address: GameData/Attack/Monster/Slime/SlimeAttack3
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fd22837f4d54ed94993375fe9d3e4149
-    m_Address: GameData/Attack/Monster/Golem/GolemAttack2.asset
+    m_Address: GameData/Attack/Monster/Golem/GolemAttack2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ffbbfdf4fb08bc346950e0d4fcf0c1af
-    m_Address: Prefabs/Weapon/RamonShield.prefab
+    m_Address: Prefabs/Weapon/RamonShield
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

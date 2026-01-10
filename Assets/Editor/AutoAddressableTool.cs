@@ -69,7 +69,7 @@ public class AutoAddressableTool : EditorWindow
             string addressName = Path.GetRelativePath(resourcesRootPath, filePath).
                 Replace("\\", "/");
             // 去除路径后缀名
-            addressName.Substring(0, addressName.LastIndexOf("."));
+            addressName = addressName.Substring(0, addressName.LastIndexOf("."));
             string unityPath = "Assets/" + Path.GetRelativePath(Application.dataPath,
                 filePath).Replace("\\", "/");
 

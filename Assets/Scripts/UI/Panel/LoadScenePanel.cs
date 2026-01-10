@@ -12,7 +12,7 @@ public class LoadScenePanel : BasePanel
     public override void ShowMe()
     {
         base.ShowMe();
-
+        UpdateLoadSceneSlider(0);
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
@@ -46,6 +46,8 @@ public class LoadScenePanel : BasePanel
             canvasGroup.alpha = 1 - progressTime / fadeTime;
             yield return null;
         }
+
+        UIManager.Instance.HidePanel<LoadScenePanel>();
     }
 
     public void UpdateLoadSceneSlider(float progress)

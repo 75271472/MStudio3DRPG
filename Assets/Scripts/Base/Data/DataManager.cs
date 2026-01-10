@@ -48,6 +48,7 @@ public class InventoryInfo
 public class DataManager : BaseManager<DataManager>
 {
     #region const string
+    public const string SCENEROOTPATH = "Scenes/";
     // 开始场景常量名
     public const string STARTSCENE = "StartScene";
     // 第一加载场景常量名

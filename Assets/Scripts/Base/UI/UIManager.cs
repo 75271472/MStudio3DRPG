@@ -207,6 +207,8 @@ public class UIManager : BaseManager<UIManager>
             panelDic[panelName].HideMe();
             GameObject.Destroy(panelDic[panelName].gameObject);
             panelDic.Remove(panelName);
+
+            ResourceManager.Instance.Unload(DataManager.PANELROOTPATH + panelName);
         }
     }
 
