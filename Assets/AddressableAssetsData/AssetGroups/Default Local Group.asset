@@ -57,11 +57,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0fcb059386ec98540ac886d9b790815a
-    m_Address: Sprites/Mushroom1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0fec6e61e48bc454fb80de6f490db499
     m_Address: GameData/Attack/Player/PlayerAttack2
     m_ReadOnly: 0
@@ -322,6 +317,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89d3e0e49d1da7d4b892d46472414d20
+    m_Address: Sprites/Mushroom1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8be6424dedc22a740ad3a179c202c744
     m_Address: Scenes/SceneTwo
     m_ReadOnly: 0
@@ -382,6 +382,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa5944e941cb9b6488dfaff00acc15a1
+    m_Address: Sprites/Apple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ab18589b5d1420c45ab547d0ff0a56d4
     m_Address: Prefabs/UI/Panel/GameOverPanel
     m_ReadOnly: 0
@@ -404,11 +409,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b920b4a3cabbc154a92d7ed0f8d974b3
     m_Address: Prefabs/UI/RenderTexture/PlayerProfileTexture
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bb5c44f1cacead5438f5a1ccb7346892
-    m_Address: Sprites/Apple
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

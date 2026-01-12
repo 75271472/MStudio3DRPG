@@ -1,13 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Events;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class ResourceManager : BaseManager<ResourceManager>
 {
     private Dictionary<string, AsyncOperationHandle> handleMap = 
         new Dictionary<string, AsyncOperationHandle>();
-    public T Load<T>(string addressName) where T : Object
+    public T Load<T>(string addressName, UnityAction<T> onSuccess = null, 
+        UnityAction onFailure = null) where T : Object
     {
         // 打包运行状态下
         //#else
@@ -23,6 +25,17 @@ public class ResourceManager : BaseManager<ResourceManager>
         }
 
         var op = Addressables.LoadAssetAsync<T>(addressName);
+        op.Completed += (handle) =>
+        {
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                onSuccess?.Invoke(handle.Result);
+            }
+            else if (handle.Status == AsyncOperationStatus.Failed)
+            {
+                onFailure?.Invoke();
+            }
+        };
 
         T result = op.WaitForCompletion();
 

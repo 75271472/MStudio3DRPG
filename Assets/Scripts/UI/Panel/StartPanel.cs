@@ -20,7 +20,19 @@ public class StartPanel : BasePanel
 
     public void Start()
     {
-        ShowMe();
+        //// 强制清理所有 AB 包缓存
+        //Caching.ClearCache();
+        //// 强制清理 Addressables 的 Catalog 缓存
+        //UnityEngine.AddressableAssets.Addressables.CleanBundleCache();
+        // 热更新加载完毕后，在启动游戏
+        // Only update catalogs manually保证仅手动更新勾选
+        // 硬更新
+        StartCoroutine(HotUpdateManager.Instance.HotUpdateCoroutine(ShowMe));
+        // Only update catalogs manually保证仅手动更新没有勾选，
+        // 则Addressable从服务器下载数据和游戏加载数据并行
+        // 可能下次游戏启动时才能看到资源更新
+        // 软更新
+        //ShowMe();
     }
 
     private void RemoveBtnListener()

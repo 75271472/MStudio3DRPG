@@ -15,14 +15,14 @@ MonoBehaviour:
   m_DefaultGroup: 8e6db609cd464dc4a86651b3d46219bb
   m_currentHash:
     serializedVersion: 2
-    Hash: ba6111645503e681a921960fc1d0221a
+    Hash: 1610b351ab8d880c88ceca7e501d7365
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
   m_CatalogRequestsTimeout: 0
-  m_DisableCatalogUpdateOnStart: 0
+  m_DisableCatalogUpdateOnStart: 1
   m_IgnoreUnsupportedFilesInBuild: 0
-  m_UniqueBundleIds: 0
+  m_UniqueBundleIds: 1
   m_NonRecursiveBuilding: 1
   m_CCDEnabled: 0
   m_maxConcurrentWebRequests: 3
@@ -42,7 +42,7 @@ MonoBehaviour:
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
-  m_overridePlayerVersion: '[UnityEditor.PlayerSettings.bundleVersion]'
+  m_overridePlayerVersion: 0.1
   m_GroupAssets:
   - {fileID: 11400000, guid: d44854b83cc88644383d5e9dd5c4c6ac, type: 2}
   - {fileID: 11400000, guid: 19bde0482a90053408f8acf7fc9240be, type: 2}
@@ -66,7 +66,7 @@ MonoBehaviour:
       - m_Id: d1ffa4c1e8ea6ad4e8246e1f536b41a0
         m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: fc095faf38abcd84ba2f31f48ab57975
-        m_Value: http://http://127.0.0.1/3DRPG_HTTP_HotUpdate_Server
+        m_Value: http://192.168.127.180/3DRPG_HTTP_HotUpdate_Server/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: 3a0ca390b613d6e4cbe5cd76e0644055
       m_Name: Local.BuildPath

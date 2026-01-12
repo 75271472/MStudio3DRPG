@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class IntInfo
@@ -149,7 +150,6 @@ public class DataManager : BaseManager<DataManager>
 
     public List<EdibleItemInfo> EdibleItemInfoList { get; private set; }
     public List<EquippableItemInfo> EquippableItemInfoList { get; private set; }
-    //public List<InventoryItemInfo> InventoryItemInfoList { get; private set; }
 
     public List<QuestInfo> QuestInfoList { get; private set; }
     public List<QuestRecord> QuestRecordList { get; private set; }
@@ -158,8 +158,7 @@ public class DataManager : BaseManager<DataManager>
     public DataManager()
     {
         LoadAttackInfoList();
-        LoadEdibleItemInfoList();
-        LoadEquippableItemInfoList();
+        LoadAddressableResources();
         LoadQuestInfoList();
 
         LoadPlayerStateInfoList();
@@ -167,7 +166,7 @@ public class DataManager : BaseManager<DataManager>
 
         LoadMonsterStateInfoList();
         LoadMonsterMoveInfoList();
-        
+
         LoadMonsterIdInfoList();
         LoadMonsterInfoList();
 
@@ -184,6 +183,12 @@ public class DataManager : BaseManager<DataManager>
         {
             LoadPlayerData(1);
         }
+    }
+
+    public void LoadAddressableResources()
+    {
+        LoadEdibleItemInfoList();
+        LoadEquippableItemInfoList();
     }
 
     public void LoadPlayerData(int archiveIndex = 0)
@@ -456,6 +461,19 @@ public class DataManager : BaseManager<DataManager>
         foreach (var itemInfo in EdibleItemInfoList)
         {
             itemInfo.img = ResourceManager.Instance.Load<Sprite>(itemInfo.imgPath);
+                //(sprite) => {
+                //    if (sprite != null)
+                //    {
+                //        Debug.Log($"图片加载成功 {sprite.name}");
+                //    }
+                //    else
+                //    {
+                //        Debug.LogError("【严重】资源加载成功，但转换 Sprite 失败！请检查图片 TextureType 是否为 Sprite (2D and UI)");
+
+                //    }
+                //}, () => {
+                //        Debug.LogError("资源加载直接失败");
+                //});
         }
     }
 
@@ -467,6 +485,19 @@ public class DataManager : BaseManager<DataManager>
         foreach (var itemInfo in EquippableItemInfoList)
         {
             itemInfo.img = ResourceManager.Instance.Load<Sprite>(itemInfo.imgPath);
+                //(sprite) => {
+                //    if (sprite != null)
+                //    {
+                //        Debug.Log($"图片加载成功 {sprite.name}");
+                //    }
+                //    else
+                //    {
+                //        Debug.LogError("【严重】资源加载成功，但转换 Sprite 失败！请检查图片 TextureType 是否为 Sprite (2D and UI)");
+
+                //    }
+                //}, () => {
+                //    Debug.LogError("资源加载直接失败");
+                //});
             if (itemInfo.attackInfoId != -1)
                 itemInfo.weaponAttackInfo = AttackInfoList[itemInfo.attackInfoId];
         }

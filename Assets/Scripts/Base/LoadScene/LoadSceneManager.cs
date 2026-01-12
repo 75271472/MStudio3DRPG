@@ -53,7 +53,12 @@ public class LoadSceneManager : BaseManager<LoadSceneManager>
     {
         LoadScenePanel loadScenePanel =
             UIManager.Instance.ShowPanel<LoadScenePanel>(EUILayer.System);
+        
         yield return loadScenePanel.FadeInCoroutine(2.5f);
+
+        // 在开始加载新场景前，建议强制回收一次未使用的资源
+        // 这能确保上一个场景遗留的 Resource 资源被彻底清理，减少内存压力
+        yield return Resources.UnloadUnusedAssets();
 
         // StartScene为游戏初始启动场景，存储在BuildSettings中，由原生SceneManager管理
         // 因此对于StartScene使用SceneManager进行加载
@@ -95,8 +100,6 @@ public class LoadSceneManager : BaseManager<LoadSceneManager>
             }
         }
 
-        loadScenePanel.UpdateLoadSceneSlider(1f);
-
         // 如果从Addressables场景切换到原生场景
         // 需要手动释放Addressbles资源
         if (name == DataManager.STARTSCENE)
@@ -110,11 +113,18 @@ public class LoadSceneManager : BaseManager<LoadSceneManager>
             }
         }
 
-        loadScenePanel.FadeOut(2.5f);
+        // 必须强制等待至少一帧（yield return null），让底层完成旧 Bundle 的卸载。
+        yield return null;
+
+        // 因为刚才清空了所有AB包资源，因此DataManager需要重新加载默认资源
+        DataManager.Instance.LoadAddressableResources();
         // 所有MonoManager初始化完成后执行传入的action回调
         MonoManager.Instance.OnInitCompletedEvent += action;
         // Init中会有op.WaitForCompletion，不能在handle.Completed中执行
         // 因此放到协程结尾，当场景加载完毕后执行
         MonoManager.Instance.Init();
+
+        loadScenePanel.UpdateLoadSceneSlider(1f);
+        loadScenePanel.FadeOut(2.5f);
     }
 }
