@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
+// 先将要激活的变为失活的，满足条件后激活要激活的，失活要失活的
 public class QuestReactor : MonoBehaviour, IInteractable
 {
     [SerializeField] private List<GameObject> activeObjectList;

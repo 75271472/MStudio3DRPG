@@ -21,7 +21,7 @@ public class GameOverPanel : BasePanel
     public override void ShowMe()
     {
         base.ShowMe();
-
+        ResetBtnListener();
         ResetCanvas();
 
         continueBtn.onClick.AddListener(() =>
@@ -32,6 +32,7 @@ public class GameOverPanel : BasePanel
 
         backMenuBtn.onClick.AddListener(() =>
         {
+            Debug.Log("Back Menu");
             // 先删除所有面板在进行场景加载
             // 因为场景加载时也会创建面板，先进行场景加载在删除面板会吧场景加载面板也删除
             LoadSceneManager.Instance.LoadSceneAsync(DataManager.STARTSCENE);
@@ -39,6 +40,12 @@ public class GameOverPanel : BasePanel
 
         StopAllCoroutines();
         StartCoroutine(FadeInPanelCoroutine());
+    }
+
+    private void ResetBtnListener()
+    {
+        continueBtn.onClick.RemoveAllListeners();
+        backMenuBtn.onClick.RemoveAllListeners();
     }
 
     private IEnumerator FadeInPanelCoroutine()

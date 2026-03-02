@@ -11,9 +11,16 @@ public class LoadScenePanel : BasePanel
 
     public override void ShowMe()
     {
+        Debug.Log("Show Load Scene Panel");
         base.ShowMe();
         UpdateLoadSceneSlider(0);
         canvasGroup = GetComponent<CanvasGroup>();
+    }
+
+    public override void HideMe()
+    {
+        base.HideMe();
+        Debug.Log("Hide Load Scene Panel");
     }
 
     public void FadeIn(float fadeTime)

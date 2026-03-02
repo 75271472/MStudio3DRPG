@@ -112,7 +112,7 @@ public class PoolManager : BaseManager<PoolManager>
         else
         {
             // 使用ResourcesManager的资源同步加载
-            obj = GameObject.Instantiate(ResourceManager.Instance.Load
+            obj = GameObject.Instantiate(ResourcesManager.Instance.LoadResources
                 <GameObject>(name));
         }
 

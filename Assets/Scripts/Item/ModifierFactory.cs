@@ -17,7 +17,7 @@ public class ModifierFactory
     {
         if (!modifierDict.ContainsKey(modifierType))
         {
-            CharacterModifierSO modifier = ResourceManager.Instance.Load<CharacterModifierSO>(
+            CharacterModifierSO modifier = ResourcesManager.Instance.LoadResources<CharacterModifierSO>(
                 GetModifierPath(modifierType));
 
             //CharacterModifierSO modifier = modifierType switch

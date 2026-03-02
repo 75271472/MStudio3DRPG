@@ -183,6 +183,8 @@ public class DataManager : BaseManager<DataManager>
         {
             LoadPlayerData(1);
         }
+
+        Debug.Log(Application.persistentDataPath);
     }
 
     public void LoadAddressableResources()
@@ -460,7 +462,7 @@ public class DataManager : BaseManager<DataManager>
 
         foreach (var itemInfo in EdibleItemInfoList)
         {
-            itemInfo.img = ResourceManager.Instance.Load<Sprite>(itemInfo.imgPath);
+            itemInfo.img = ResourcesManager.Instance.LoadResources<Sprite>(itemInfo.imgPath);
                 //(sprite) => {
                 //    if (sprite != null)
                 //    {
@@ -484,7 +486,7 @@ public class DataManager : BaseManager<DataManager>
 
         foreach (var itemInfo in EquippableItemInfoList)
         {
-            itemInfo.img = ResourceManager.Instance.Load<Sprite>(itemInfo.imgPath);
+            itemInfo.img = ResourcesManager.Instance.LoadResources<Sprite>(itemInfo.imgPath);
                 //(sprite) => {
                 //    if (sprite != null)
                 //    {

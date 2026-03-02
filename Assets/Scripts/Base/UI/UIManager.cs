@@ -51,8 +51,8 @@ public class UIManager : BaseManager<UIManager>
 
     private void OverlayCanvasInit()
     {
-        GameObject obj = GameObject.Instantiate(ResourceManager.Instance.
-            Load<GameObject>(DataManager.OVERLAYCANVAS));
+        GameObject obj = GameObject.Instantiate(ResourcesManager.Instance.
+            LoadResources<GameObject>(DataManager.OVERLAYCANVAS));
         OverlayCanvas = obj.transform as RectTransform;
         GameObject.DontDestroyOnLoad(obj);
     }
@@ -69,8 +69,8 @@ public class UIManager : BaseManager<UIManager>
 
     private void WorldCanvasInit()
     {
-        GameObject obj = GameObject.Instantiate(ResourceManager.Instance.
-            Load<GameObject>(DataManager.WORLDCANVAS));
+        GameObject obj = GameObject.Instantiate(ResourcesManager.Instance.
+            LoadResources<GameObject>(DataManager.WORLDCANVAS));
         WorldCanvas = obj.transform as RectTransform;
         WorldCanvas.GetComponent<Canvas>().worldCamera = Camera.main;
         WorldCanvas.GetComponent<Canvas>().planeDistance = 7.5f;
@@ -86,8 +86,8 @@ public class UIManager : BaseManager<UIManager>
             GameObject.Destroy(es.gameObject);
         }
 
-        GameObject obj = GameObject.Instantiate(ResourceManager.Instance.
-            Load<GameObject>(DataManager.EVENTSYSTEM));
+        GameObject obj = GameObject.Instantiate(ResourcesManager.Instance.
+            LoadResources<GameObject>(DataManager.EVENTSYSTEM));
         EventSystem = obj.GetComponent<EventSystem>();
 
         GameObject.DontDestroyOnLoad(obj);
@@ -181,7 +181,7 @@ public class UIManager : BaseManager<UIManager>
 
         // 字典中没有该面板，设置父对象，设置相对位置与缩放，
         // 重置偏移量，执行panel脚本ShowMe方法，执行回调函数，添加到面板字典中
-        T panel = GameObject.Instantiate(ResourceManager.Instance.Load<GameObject>(
+        T panel = GameObject.Instantiate(ResourcesManager.Instance.LoadResources<GameObject>(
             DataManager.PANELROOTPATH + panelName).GetComponent<T>());
         panel.transform.SetParent(father);
 
@@ -208,7 +208,7 @@ public class UIManager : BaseManager<UIManager>
             GameObject.Destroy(panelDic[panelName].gameObject);
             panelDic.Remove(panelName);
 
-            ResourceManager.Instance.Unload(DataManager.PANELROOTPATH + panelName);
+            ResourcesManager.Instance.Unload(DataManager.PANELROOTPATH + panelName);
         }
     }
 

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660bdc679d793ae4a96fcb7dbdc9697c, type: 3}
+  m_Name: TurtleComboTemplate
+  m_EditorClassIdentifier: 
+  comboList:
+  - {fileID: 11400000, guid: ec45680c915210c4f9c31e007071ee8e, type: 2}
+  - {fileID: 11400000, guid: 6392a7e2440c1ff499f968ee794464b7, type: 2}
+  attackCD: 0.5

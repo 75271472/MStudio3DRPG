@@ -59,6 +59,8 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
     public bool BeginConditionDialogue(int npcId, int triggerId, Texture profile, 
         string name, Action action = null)
     {
+        print("Show Dialogue Panel");
+
         int pieceId = CheckStartPieceId(npcId, triggerId);
 
         if (pieceId == -1)
