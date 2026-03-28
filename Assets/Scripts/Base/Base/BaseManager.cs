@@ -15,7 +15,7 @@ public class BaseManager<T> where T : new()
         }
     }
 
-    // ÀÁººÄ£Ê½µ¥Àı¶ÔÏóÆô¶¯·½·¨
-    // ¹©Íâ½çµ÷ÓÃInstanceÊµÀı»¯µ¥ÀıÄ£Ê½¶ÔÏó
-    public void Start() { }
+    // æ‡’æ±‰æ¨¡å¼å•ä¾‹å¯¹è±¡å¯åŠ¨æ–¹æ³•
+    // ä¾›å¤–ç•Œè°ƒç”¨Instanceå®ä¾‹åŒ–å•ä¾‹æ¨¡å¼å¯¹è±¡
+    public virtual void Start() { }
 }

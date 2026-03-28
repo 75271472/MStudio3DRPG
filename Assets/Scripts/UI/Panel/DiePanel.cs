@@ -23,16 +23,16 @@ public class DiePanel : BasePanel
         {
             int archiveIndex = DataManager.Instance.ArchiveIndex;
 
-            // ���浵֮ǰû�б������
+            // 本存档之前没有保存过，
             if (DataManager.Instance.UpdateEmptyArchiveIndex(archiveIndex))
             {
-                // ���½��г�������
+                // 重新进行场景加载
                 LoadSceneManager.Instance.LoadSceneAsync(DataManager.FIRSTSCENE,
                     () => PlayerManager.Instance.PlayerTransInit());
                 return;
             }
 
-            // ֮ǰ�����
+            // 之前保存过
             DataManager.Instance.LoadPlayerData(archiveIndex);
 
             LoadSceneManager.Instance.LoadSceneAsync(
@@ -41,8 +41,8 @@ public class DiePanel : BasePanel
 
         backToStartSceneBtn.onClick.AddListener(() =>
         {
-            // ��ɾ����������ڽ��г�������
-            // ��Ϊ��������ʱҲ�ᴴ����壬�Ƚ��г���������ɾ������ɳ����������Ҳɾ��
+            // 先删除所有面板在进行场景加载
+            // 因为场景加载时也会创建面板，先进行场景加载在删除面板会吧场景加载面板也删除
             LoadSceneManager.Instance.LoadSceneAsync(DataManager.STARTSCENE);
         });
 

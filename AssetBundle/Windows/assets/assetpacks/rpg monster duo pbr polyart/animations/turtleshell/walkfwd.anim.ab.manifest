@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2733323969
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 98f2082973c5b568cbffdc136b631f0e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 98f2082973c5b568cbffdc136b631f0e
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/WalkFWD.anim
+Dependencies: []

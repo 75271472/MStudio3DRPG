@@ -14,9 +14,9 @@ public class InputActionPanel : BasePanel
         Bottom,
     }
 
-    // ÒòÎªPlayerPostion²»ÊÇÎ»ÓÚPlayerµÄÊÓ¾õÖĞÑë£¬Òò´ËÒª¶ÔPlayerPosition½øĞĞÆ«ÒÆ
+    // å› ä¸ºPlayerPostionä¸æ˜¯ä½äºPlayerçš„è§†è§‰ä¸­å¤®ï¼Œå› æ­¤è¦å¯¹PlayerPositionè¿›è¡Œåç§»
     private Vector2 playerOffsetVect = new Vector2(-0.2f, 0);
-    // Í¨¹ıÆ«ÒÆºóµÄPlayerPositionÔÚ½øĞĞÆ«ÒÆ£¬»ñµÃÃæ°åµÄÏÔÊ¾Î»ÖÃ
+    // é€šè¿‡åç§»åçš„PlayerPositionåœ¨è¿›è¡Œåç§»ï¼Œè·å¾—é¢æ¿çš„æ˜¾ç¤ºä½ç½®
     private Vector3 panelOffsetVect = new Vector3(-200, 50, 0);
     [field: SerializeField] public Transform inputActionBG { get; private set; } 
     private Dictionary<string, InputActionUI> actionDict = 
@@ -49,7 +49,7 @@ public class InputActionPanel : BasePanel
         Transform cameraTrans = Camera.main.transform;
 
         Vector3 playerPos = PlayerManager.Instance.gameObject.transform.position + 
-            // Æ«ÒÆÊÇÏà¶ÔÉãÏñ»úµÄ¹Û²ì·½ÏòµÄ
+            // åç§»æ˜¯ç›¸å¯¹æ‘„åƒæœºçš„è§‚å¯Ÿæ–¹å‘çš„
             cameraTrans.right * playerOffsetVect.x + cameraTrans.up * playerOffsetVect.y;
         Vector3 targetPos = Camera.main.WorldToScreenPoint(playerPos) + 
             panelOffsetVect;
@@ -71,11 +71,11 @@ public class InputActionPanel : BasePanel
 
         actionDict.Add(actionName, inputActionUI);
 
-        // 3.¡¾¹Ø¼üĞŞ¸Ä¡¿Æô¶¯Ğ­³Ì£¬ÔÚÖ¡Ä©Ç¿ÖÆË¢ĞÂ²¼¾Ö
-        // ±ØĞëÔÚÉèÖÃÍêÎÄ×ÖÖ®ºóµ÷ÓÃ
+        // 3.ã€å…³é”®ä¿®æ”¹ã€‘å¯åŠ¨åç¨‹ï¼Œåœ¨å¸§æœ«å¼ºåˆ¶åˆ·æ–°å¸ƒå±€
+        // å¿…é¡»åœ¨è®¾ç½®å®Œæ–‡å­—ä¹‹åè°ƒç”¨
         if (gameObject.activeInHierarchy)
         {
-            StopAllCoroutines(); // ·ÀÖ¹¿ìËÙÇĞ»»µ¼ÖÂĞ­³Ì³åÍ»
+            StopAllCoroutines(); // é˜²æ­¢å¿«é€Ÿåˆ‡æ¢å¯¼è‡´åç¨‹å†²çª
             StartCoroutine(UpdateLayoutCoroutine());
         }
     }
@@ -108,13 +108,13 @@ public class InputActionPanel : BasePanel
         rt.pivot = newPivot.Value;
     }
 
-    // --- ĞÂÔöµÄ²¼¾ÖË¢ĞÂĞ­³Ì ---
+    // --- æ–°å¢çš„å¸ƒå±€åˆ·æ–°åç¨‹ ---
     private IEnumerator UpdateLayoutCoroutine()
     {
-        // µÈ´ıµ±Ç°Ö¡½áÊø£¬È·±£ Text ×é¼şÒÑ¾­ÄÃµ½ÁËĞÂµÄ×Ö·û´®²¢¼ÆËãÁË»ù±¾µÄÍø¸ñĞÅÏ¢
+        // ç­‰å¾…å½“å‰å¸§ç»“æŸï¼Œç¡®ä¿ Text ç»„ä»¶å·²ç»æ‹¿åˆ°äº†æ–°çš„å­—ç¬¦ä¸²å¹¶è®¡ç®—äº†åŸºæœ¬çš„ç½‘æ ¼ä¿¡æ¯
         yield return new WaitForEndOfFrame();
 
-        // Ç¿ÖÆË¢ĞÂ×ÔÉí²¼¾Ö (ContentSizeFitter »áÔÚÕâÀï¼ÆËãÕıÈ·´óĞ¡)
+        // å¼ºåˆ¶åˆ·æ–°è‡ªèº«å¸ƒå±€ (ContentSizeFitter ä¼šåœ¨è¿™é‡Œè®¡ç®—æ­£ç¡®å¤§å°)
         ExtensionTool.UpdateUI(transform);
     }
 }

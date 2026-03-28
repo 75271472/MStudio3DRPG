@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.UI;
@@ -43,9 +41,9 @@ public class StartPanel : BasePanel
         archiveBtn.onClick.AddListener(TurnToArchive);
         quitBtn.onClick.AddListener(QuitGame);
 
-        // µ±Ç°ÓĞ¿ÉÓÃµÄ¿Õ´æµµ£¬¾Í¼¤»îStartBtn
+        // å½“å‰æœ‰å¯ç”¨çš„ç©ºå­˜æ¡£ï¼Œå°±æ¿€æ´»StartBtn
         startBtn.gameObject.SetActive(DataManager.Instance.UpdateEmptyArchiveIndex());
-        // µ±Ç°ÓĞArchiveIndexÊı¾İ´æ´¢£¬¾Í¼¤»îContinueBtn
+        // å½“å‰æœ‰ArchiveIndexæ•°æ®å­˜å‚¨ï¼Œå°±æ¿€æ´»ContinueBtn
         continueBtn.gameObject.SetActive(DataManager.Instance.LoadArchiveIndex());
 
         SwitchCanvasGroup(true);
@@ -67,14 +65,14 @@ public class StartPanel : BasePanel
 
     private void LoadNewGame()
     {
-        // ÕâÒ»²½ÊÇ±Ø²»¿ÉÉÙµÄ£¬ÒòÎªShowº¯ÊıÖĞµ÷ÓÃUpdateEmptyArchiveIndexºó
-        // ÓĞµ÷ÓÃÁËLoadArchiveIndex£¬»á¸üĞÂDataManagerµÄArchiveIndex
-        // ´ËÊ±Èç¹ûÖ±½Ó¼ÓÔØ½øÈëĞÂÓÎÏ·ËäÈ»DataManager¼ÓÔØÁËDefaultPlayerStateInfo
-        // µ«ArchiveIndexÊÇ¾É´æµµµÄArchiveIndex
-        // ´æµµ¼ì²â¸üĞÂArchiveIndex
+        // è¿™ä¸€æ­¥æ˜¯å¿…ä¸å¯å°‘çš„ï¼Œå› ä¸ºShowå‡½æ•°ä¸­è°ƒç”¨UpdateEmptyArchiveIndexå
+        // æœ‰è°ƒç”¨äº†LoadArchiveIndexï¼Œä¼šæ›´æ–°DataManagerçš„ArchiveIndex
+        // æ­¤æ—¶å¦‚æœç›´æ¥åŠ è½½è¿›å…¥æ–°æ¸¸æˆè™½ç„¶DataManageråŠ è½½äº†DefaultPlayerStateInfo
+        // ä½†ArchiveIndexæ˜¯æ—§å­˜æ¡£çš„ArchiveIndex
+        // å­˜æ¡£æ£€æµ‹æ›´æ–°ArchiveIndex
         if (!DataManager.Instance.UpdateEmptyArchiveIndex())
         {
-            Debug.LogError("Ã»ÓĞ¿ÉÓÃµÄ¿Õ´æµµ");
+            Debug.LogError("æ²¡æœ‰å¯ç”¨çš„ç©ºå­˜æ¡£");
             return;
         }
 
@@ -96,7 +94,7 @@ public class StartPanel : BasePanel
     {
         if (!DataManager.Instance.LoadArchiveIndex())
         {
-            Debug.LogError("ÎŞ¿ÉÓÃ´æµµÏÂ±ê");
+            Debug.LogError("æ— å¯ç”¨å­˜æ¡£ä¸‹æ ‡");
             return;
         }
 

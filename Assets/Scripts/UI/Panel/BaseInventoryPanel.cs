@@ -160,11 +160,11 @@ public abstract class BaseInventoryPanel : BasePanel
 
         if (itemIndex == -1) return;
 
-        // ÔÚControllerÖĞÍ¨¹ıInventoryData£¬ÅĞ¶ÏËùÑ¡ÏîÊÇ·ñÎª¿ÕÊı¾İ
-        // ¾ö¶¨ÊÇ·ñÄÜ¹»Ñ¡ÖĞ
+        // åœ¨Controllerä¸­é€šè¿‡InventoryDataï¼Œåˆ¤æ–­æ‰€é€‰é¡¹æ˜¯å¦ä¸ºç©ºæ•°æ®
+        // å†³å®šæ˜¯å¦èƒ½å¤Ÿé€‰ä¸­
         OnItemSelectEvent?.Invoke(GetIndexInfo(itemIndex));
-        // OnItemSelectEvent»áÖ´ĞĞResetSelectionÖØÖÃÑ¡ÖĞ
-        // Òò´ËÔÚOnItemSelectEventÖ´ĞĞºóÖ´ĞĞOnShowDescriptionHandler
+        // OnItemSelectEventä¼šæ‰§è¡ŒResetSelectioné‡ç½®é€‰ä¸­
+        // å› æ­¤åœ¨OnItemSelectEventæ‰§è¡Œåæ‰§è¡ŒOnShowDescriptionHandler
         OnShowDescriptionHandler(itemUI);
     }
 
@@ -200,23 +200,23 @@ public abstract class BaseInventoryPanel : BasePanel
         int itemIndex = itemUIList.IndexOf(itemUI);
         if (itemIndex == -1) return;
 
-        // ÎïÌåÊı¾İ½»»»Âß¼­
+        // ç‰©ä½“æ•°æ®äº¤æ¢é€»è¾‘
         OnSwapItemEvent?.Invoke(GetIndexInfo(itemIndex));
-        // OnItemSwapHandlerÖ´ĞĞÖ®Ç°»áÖ´ĞĞOnItemBeginDragHandler£¬
-        // ÔÚOnItemBeginDragHandlerÖĞ»áÖ´ĞĞOnItemSelectedHandler£¬
-        // ´Ó¶øÔÚInventoryManagerÖĞÖ´ĞĞOnItemSelectHandler£¬Ö´ĞĞResetSelection
-        // ÖØÖÃËùÓĞÑ¡ÖĞ²¢¹Ø±ÕÃèÊö½çÃæ
-        // Òò´ËÔÚ½»»»²Ù×÷Íê³É£¬Ò²¾ÍÊÇÖ´ĞĞOnItemSwapHandlerÊ±£¬ÖØĞÂÑ¡ÖĞ±»½»»»ÎïÌå
+        // OnItemSwapHandleræ‰§è¡Œä¹‹å‰ä¼šæ‰§è¡ŒOnItemBeginDragHandlerï¼Œ
+        // åœ¨OnItemBeginDragHandlerä¸­ä¼šæ‰§è¡ŒOnItemSelectedHandlerï¼Œ
+        // ä»è€Œåœ¨InventoryManagerä¸­æ‰§è¡ŒOnItemSelectHandlerï¼Œæ‰§è¡ŒResetSelection
+        // é‡ç½®æ‰€æœ‰é€‰ä¸­å¹¶å…³é—­æè¿°ç•Œé¢
+        // å› æ­¤åœ¨äº¤æ¢æ“ä½œå®Œæˆï¼Œä¹Ÿå°±æ˜¯æ‰§è¡ŒOnItemSwapHandleræ—¶ï¼Œé‡æ–°é€‰ä¸­è¢«äº¤æ¢ç‰©ä½“
         //OnItemSelectedHandler(itemUI);
-        // ÓÉÓÚOnDrop»áÔÚOnEndDragÖ®Ç°ÏÔÊ¾
-        // Òò´ËOnItemEndDragHandler»áÔÚOnSwapHandlerÖ®ºó²Å»áÖ´ĞĞResetDraggedItem
-        // ½«currentDraggedItemIndexÖÃÎª-1
-        // ¶øOnShowDescriptionHandler»á¶ÔcurrentDraggedItemIndexÊÇ·ñµÈÓÚ-1½øĞĞ¼ì²é
-        // Òò´ËÕâÀïÖ±½Óµ÷ÓÃOnShowDescriptionHandlerÎŞĞ§
-        // ÒòÎª´ËÊ±currentDraggedItemIndexÎ´±»ÖØÖÃ
+        // ç”±äºOnDropä¼šåœ¨OnEndDragä¹‹å‰æ˜¾ç¤º
+        // å› æ­¤OnItemEndDragHandlerä¼šåœ¨OnSwapHandlerä¹‹åæ‰ä¼šæ‰§è¡ŒResetDraggedItem
+        // å°†currentDraggedItemIndexç½®ä¸º-1
+        // è€ŒOnShowDescriptionHandlerä¼šå¯¹currentDraggedItemIndexæ˜¯å¦ç­‰äº-1è¿›è¡Œæ£€æŸ¥
+        // å› æ­¤è¿™é‡Œç›´æ¥è°ƒç”¨OnShowDescriptionHandleræ— æ•ˆ
+        // å› ä¸ºæ­¤æ—¶currentDraggedItemIndexæœªè¢«é‡ç½®
         //OnShowDescriptionHandler(itemUI);
-        // Òò´ËÕâÀïÖ±½Ó´¥·¢»Øµ÷£¬ÈÆ¹ıcurrentDraggedItemIndex != -1¼ì²é
-        // ÊµÏÖ½»»»ÎïÆ·ºóÈÔÈ»ÏÔÊ¾ÎïÆ·ÃèÊö
+        // å› æ­¤è¿™é‡Œç›´æ¥è§¦å‘å›è°ƒï¼Œç»•è¿‡currentDraggedItemIndex != -1æ£€æŸ¥
+        // å®ç°äº¤æ¢ç‰©å“åä»ç„¶æ˜¾ç¤ºç‰©å“æè¿°
         //OnDescriptionRequestEvent?.Invoke(itemIndex);
         //itemDescription.ItemDescriptionSwitch(true);
     }
@@ -224,12 +224,12 @@ public abstract class BaseInventoryPanel : BasePanel
     protected void OnShowDescriptionHandler(BaseInventoryItemUI itemUI)
     {
         int itemIndex = itemUIList.IndexOf(itemUI);
-        // ËùÑ¡ÎïÆ·²»´æÔÚ£¬»òÕßµ±Ç°ÕıÔÚÍÏ¶¯ÎïÆ·£¬²»ÏÔÊ¾ÎïÆ·ÃèÊö
+        // æ‰€é€‰ç‰©å“ä¸å­˜åœ¨ï¼Œæˆ–è€…å½“å‰æ­£åœ¨æ‹–åŠ¨ç‰©å“ï¼Œä¸æ˜¾ç¤ºç‰©å“æè¿°
         if (itemIndex == -1) return;
 
         OnDescriptionRequestEvent?.Invoke(GetIndexInfo(itemIndex));
-        // OnDescriptionRequestEvent»Øµ÷»áµ÷ÓÃitemDescription.SetDescription
-        // ÔÚ¸Ã·½·¨ÖĞ¼¤»îitemDescription¶ÔÏó
+        // OnDescriptionRequestEventå›è°ƒä¼šè°ƒç”¨itemDescription.SetDescription
+        // åœ¨è¯¥æ–¹æ³•ä¸­æ¿€æ´»itemDescriptionå¯¹è±¡
         //itemDescription.ItemDescriptionSwitch(true);
 
         SetDescriptionPosition(itemIndex);

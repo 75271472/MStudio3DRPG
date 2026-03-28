@@ -1,0 +1,39 @@
+ManifestFileVersion: 0
+CRC: 3145385099
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f6fc2d6c4befa92cb0e9e613cfc20a5c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fad8153b233b99d9794a82028be97d35
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f6fc2d6c4befa92cb0e9e613cfc20a5c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 22e3c198b50adb04390a87dbca14c275, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2b955c69162851749a37084f7e9a204f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4b73dbfe71457134c8473ca1f3cf3bda, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: CursorInfo
+Assets:
+- Assets/Resources/Prefabs/Manager/MouseManager.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/cursor/01.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/cursor/02.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/cursor/03.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/cursor/04.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/cursor/05.png.ab

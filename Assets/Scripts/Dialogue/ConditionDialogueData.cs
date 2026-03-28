@@ -40,7 +40,7 @@ public class ConditionDialogueData : MonoBehaviour
     {
         if (currentPiece == null) return;
 
-        // ½áÊø¶Ô»°
+        // ç»“æŸå¯¹è¯
         if (currentPiece.targetId == -1)
         {
             OnUpdateDialogueEvent?.Invoke(null);

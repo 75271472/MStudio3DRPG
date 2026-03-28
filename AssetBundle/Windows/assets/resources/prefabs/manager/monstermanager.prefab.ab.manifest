@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 3710162696
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 03cdf2ca64d5344cb7fa613e384565de
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d6f38bf7653898fd898e6bcd28605484
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 03cdf2ca64d5344cb7fa613e384565de
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f8bf2a31ff5d0e44e981cd6a21c8b1fd, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/Manager/MonsterManager.prefab
+Dependencies: []

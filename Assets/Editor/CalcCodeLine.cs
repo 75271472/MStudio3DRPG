@@ -4,9 +4,9 @@ using System.IO;
 
 public class CalcCodeLine
 {
-    static string calcPath = "Assets/Scripts"; //´úÂëÍ³¼ÆÂ·¾¶¡¾¿É×Ô¶¨Òå¡¿
+    static string calcPath = "Assets/Scripts"; //ä»£ç ç»Ÿè®¡è·¯å¾„ã€å¯è‡ªå®šä¹‰ã€‘
 
-    [MenuItem("Tools/Í³¼Æ´úÂëĞĞÊı")]
+    [MenuItem("Tools/ç»Ÿè®¡ä»£ç è¡Œæ•°")]
     static void CalcCode()
     {
         if (!Directory.Exists(calcPath))
@@ -15,10 +15,10 @@ public class CalcCodeLine
             return;
         }
         string[] fileName = Directory.GetFiles(calcPath, "*.cs", SearchOption.AllDirectories);
-        int totalLine = 0; //´úÂë×ÜĞĞÊı
+        int totalLine = 0; //ä»£ç æ€»è¡Œæ•°
         foreach (var temp in fileName)
         {
-            int nowLine = 0; //µ±Ç°ÎÄ¼şÀÛ¼ÆĞĞÊı
+            int nowLine = 0; //å½“å‰æ–‡ä»¶ç´¯è®¡è¡Œæ•°
             StreamReader sr = new StreamReader(temp);
             while (sr.ReadLine() != null)
             {
@@ -26,6 +26,6 @@ public class CalcCodeLine
             }
             totalLine += nowLine;
         }
-        Debug.Log(string.Format("´úÂë×ÜĞĞÊı: {0} -> ´úÂëÎÄ¼şÊı:{1}", totalLine, fileName.Length));
+        Debug.Log(string.Format("ä»£ç æ€»è¡Œæ•°: {0} -> ä»£ç æ–‡ä»¶æ•°:{1}", totalLine, fileName.Length));
     }
 }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2971203849209234129}
   - component: {fileID: 3286826322107847761}
+  - component: {fileID: 3351913882321749506}
   m_Layer: 0
   m_Name: PortalManager
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7637227129618001175}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.258122, y: -1.8597354, z: 6.88447}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44,3 +45,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384669886969e5042bb305777dbbf1da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsNotSubManagerInit: 0
+--- !u!114 &3351913882321749506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7637227129618001175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3933ed0643506a941b3634d112751ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questId: 3
+  questState: 1
+  conditionType: 2
+  BackQuestConditionList: []

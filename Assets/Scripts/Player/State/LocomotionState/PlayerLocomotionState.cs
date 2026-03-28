@@ -6,12 +6,12 @@ using UnityEngine;
 public abstract class PlayerLocomotionState : PlayerBaseState
 {
     protected readonly int LocomotionSpeedHash = Animator.StringToHash("Speed");
-    // 动画混合树值设置的阻尼时间
+    // 鍔ㄧ敾娣峰悎鏍戝�艰缃殑闃诲凹鏃堕棿
     protected const float AnimatorDampTime = 0.05f;
     protected float SpeedValue;
 
     private readonly int LocomotionHash = Animator.StringToHash("Locomotion");
-    // 动画切换阻尼时间
+    // 鍔ㄧ敾鍒囨崲闃诲凹鏃堕棿
     private const float CrossFixedTime = 0.3f;
 
     public PlayerLocomotionState(PlayerStateMachine stateMachine) : 

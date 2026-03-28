@@ -32,7 +32,7 @@ public class MonoManager : MonoBehaviourManager<MonoManager>
     }
 
     /// <summary>
-    /// ¹¹Ôì·½·¨ÖĞ´´½¨ÓÎÏ·¶ÔÏó²¢¹ÒÔØmonoController
+    /// æ„é€ æ–¹æ³•ä¸­åˆ›å»ºæ¸¸æˆå¯¹è±¡å¹¶æŒ‚è½½monoController
     /// </summary>
     public override void Init()
     {
@@ -41,10 +41,15 @@ public class MonoManager : MonoBehaviourManager<MonoManager>
         bool isStartScene =
             SceneManager.GetActiveScene().name == DataManager.STARTSCENE;
         SetManagerIsNotInit(isStartScene);
-        // Èç¹ûÊÇ¿ªÊ¼³¡¾°£¬ÔòÊ§»îËùÓĞ¼Ì³ĞMonoBaseManagerµÄManager
+        // å¦‚æœæ˜¯å¼€å§‹åœºæ™¯ï¼Œåˆ™å¤±æ´»æ‰€æœ‰ç»§æ‰¿MonoBaseManagerçš„Manager
         SetManagerActive(!isStartScene);
-        // UIManagerÆô¶¯·½·¨£¬UIManagerÊôÓÚÀÁººÄ£Ê½µÄµ¥Àı¶ÔÏó
-        // ²»µ÷ÓÃInstance²»ÊµÀı»¯£¬²»»áÉú³ÉEventSystem¶ÔÏó
+
+        // å¼€å§‹åœºæ™¯ï¼Œè¿›è¡ŒResourcesManagerçš„æ¿€æ´»ï¼Œè¯»å–Bundleæ–‡ä»¶
+        if (isStartScene)
+            ResourcesInit.Instance.Start();
+        
+        // UIManagerå¯åŠ¨æ–¹æ³•ï¼ŒUIManagerå±äºæ‡’æ±‰æ¨¡å¼çš„å•ä¾‹å¯¹è±¡
+        // ä¸è°ƒç”¨Instanceä¸å®ä¾‹åŒ–ï¼Œä¸ä¼šç”ŸæˆEventSystemå¯¹è±¡
         UIManager.Instance.Start();
 
         if (monoController == null)
@@ -52,7 +57,7 @@ public class MonoManager : MonoBehaviourManager<MonoManager>
             monoController = gameObject.AddComponent<MonoController>();
         }
 
-        // ±ØĞëÊÖ¶¯Ìí¼ÓManager£¬²¢¿¼ÂÇ²»Í¬Manager¼äµÄ³õÊ¼»¯Ë³Ğò
+        // å¿…é¡»æ‰‹åŠ¨æ·»åŠ Managerï¼Œå¹¶è€ƒè™‘ä¸åŒManageré—´çš„åˆå§‹åŒ–é¡ºåº
         foreach (var mono in monoList)
         {
             if (!mono.Equals(this))
@@ -61,8 +66,8 @@ public class MonoManager : MonoBehaviourManager<MonoManager>
             }
         }
 
-        // ÏÈÖ´ĞĞÍêËùÓĞ×ÓÀàµÄInit£¬ÔÚÅĞ¶ÏIsNotInstance
-        // ÈÃ×ÓÀà¶Ô×Ô¼ºÊÇ·ñÎªInstance½øĞĞÅĞ¶Ï
+        // å…ˆæ‰§è¡Œå®Œæ‰€æœ‰å­ç±»çš„Initï¼Œåœ¨åˆ¤æ–­IsNotInstance
+        // è®©å­ç±»å¯¹è‡ªå·±æ˜¯å¦ä¸ºInstanceè¿›è¡Œåˆ¤æ–­
         if (IsNotSubManagerInit) return;
 
         OnInitCompletedEvent?.Invoke();
@@ -70,7 +75,7 @@ public class MonoManager : MonoBehaviourManager<MonoManager>
     }
 
     /// <summary>
-    /// Ìí¼ÓÊÂ¼ş¼àÌı·½·¨·â×°
+    /// æ·»åŠ äº‹ä»¶ç›‘å¬æ–¹æ³•å°è£…
     /// </summary>
     /// <param name="action"></param>
     public void AddEventListener(UnityAction action, ETriggerTiming triggerTiming)
@@ -94,7 +99,7 @@ public class MonoManager : MonoBehaviourManager<MonoManager>
     }
 
     /// <summary>
-    /// ÒÆ³ıÊÂ¼ş¼àÌı·½·¨·â×°
+    /// ç§»é™¤äº‹ä»¶ç›‘å¬æ–¹æ³•å°è£…
     /// </summary>
     /// <param name="action"></param>
     public void RemoveEventListener(UnityAction action, ETriggerTiming triggerTiming)

@@ -50,7 +50,7 @@ public class QuestContentUI : MonoBehaviour
 
     public void UpdateNoQuest()
     {
-        nameTxt.text = "µ±Ç°ÎŞÈÎÎñ";
+        nameTxt.text = "å½“å‰æ— ä»»åŠ¡";
 
         DisableTitleTxt();
     }

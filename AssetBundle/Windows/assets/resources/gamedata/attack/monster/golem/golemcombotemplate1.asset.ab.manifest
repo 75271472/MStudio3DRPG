@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 1637677076
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cb9329416658aa5dc9fc84a4616917e2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e22eca1505de47c4d3e33b0485aa12b1
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: cb9329416658aa5dc9fc84a4616917e2
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 660bdc679d793ae4a96fcb7dbdc9697c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ce11b6d208c105247ba61133149aba42, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/GameData/Attack/Monster/Golem/GolemComboTemplate1.asset
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/gamedata/attack/monster/golem/golemattack1.asset.ab

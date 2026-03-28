@@ -45,10 +45,10 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         PlayerUI.CharacterDataEventRegist(PlayerData);
         PlayerUI.UpdateExpRegist(PlayerData);
 
-        // ×°±¸ÎäÆ÷Ç°ÏÈ±£ÕÏ×°±¸ÁËÄ¬ÈÏÎäÆ÷
+        // è£…å¤‡æ­¦å™¨å‰å…ˆä¿éšœè£…å¤‡äº†é»˜è®¤æ­¦å™¨
         PlayerData.OnResetEquipEventInvoke();
-        // ËùÓĞÊ±¼ä×¢²á½áÊøºóÖ´ĞĞÒ»´ÎPlayerData.OnEquipEvent
-        // ¸üĞÂWeaponHandlerºÍAttackComboList
+        // æ‰€æœ‰æ—¶é—´æ³¨å†Œç»“æŸåæ‰§è¡Œä¸€æ¬¡PlayerData.OnEquipEvent
+        // æ›´æ–°WeaponHandlerå’ŒAttackComboList
         PlayerData.OnEquipEventInvoke();
         PlayerData.OnLevelUpEvent += () =>
             UIManager.Instance.ShowPanel<EffectPanel>().LevelUpEffect();
@@ -56,7 +56,7 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
             UIManager.Instance.ShowPanel<EffectPanel>().DamageEffect();
         PlayerData.OnRecoveryEvent += (a, b, c) => 
             UIManager.Instance.ShowPanel<EffectPanel>().RecoveryEffect();
-        // ¼ÓÔØ³¡¾°Ç°£¬½«Êı¾İ±£´æµ½DataManagerÖĞ
+        // åŠ è½½åœºæ™¯å‰ï¼Œå°†æ•°æ®ä¿å­˜åˆ°DataManagerä¸­
         LoadSceneManager.Instance.OnPrepareLoadSceneEvent += 
             PlayerData.OnUpdateDataInMemoryHandler;
         PortalManager.Instance.OnEnterSameScenePortalEvent += 
@@ -74,7 +74,7 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         PlayerData.PlayerDialogueTrigger.ConditionDialogueTrigger(0);
     }
 
-    // Íâ²¿µ÷ÓÃ£¬µÚÒ»´Î½øÈëÓÎÏ·½«PlayerÉèÖÃÔÚÄ¬ÈÏÎ»ÖÃ
+    // å¤–éƒ¨è°ƒç”¨ï¼Œç¬¬ä¸€æ¬¡è¿›å…¥æ¸¸æˆå°†Playerè®¾ç½®åœ¨é»˜è®¤ä½ç½®
     public void PlayerTransInit()
     {
         PlayerInitTrans initTrans = FindObjectOfType<PlayerInitTrans>();
@@ -83,12 +83,12 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
         UpdatePlayerTrans(initTrans.Pos, initTrans.Rot);
     }
 
-    // PlayerDataµ÷ÓÃ£¬½«PlayerÉèÖÃÔÚ´æµµÎ»ÖÃ
+    // PlayerDataè°ƒç”¨ï¼Œå°†Playerè®¾ç½®åœ¨å­˜æ¡£ä½ç½®
     public void PlayerTransInit(CharacterTransInfo playerTrans)
     {
         if (playerTrans == null) return;
 
-        // ²»µ÷ÓÃUpdateplayer
+        // ä¸è°ƒç”¨Updateplayer
         UpdatePlayerTrans(playerTrans.GetPosition(), playerTrans.GetRotation());
         //gameObject.transform.SetPositionAndRotation(playerTrans.GetPosition(), 
         //    playerTrans.GetRotation());

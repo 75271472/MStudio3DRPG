@@ -26,13 +26,13 @@ public class MonsterController : MonoBehaviour, ICharacter
         MonsterData = GetComponent<MonsterData>();
         MonsterUI = GetComponent<MonsterUI>();
 
-        // ÏÈÊý¾Ý³õÊ¼»¯£¬Æä´ÎStateMachine³õÊ¼»¯
+        // å…ˆæ•°æ®åˆå§‹åŒ–ï¼Œå…¶æ¬¡StateMachineåˆå§‹åŒ–
         MonsterData.MonsterDataInit(id);
         MonsterStateMachine.MonsterStateMachineInit(this, id);
         MonsterUI.MonsterUIInit(this, MonsterData, id);
 
         MonsterData.HealthEventRegist(MonsterStateMachine.Health);
-        // µ±Player¶ÔMonsterÔì³ÉÉËº¦Ê±£¬ÉãÏñ»ú¶¶¶¯
+        // å½“Playerå¯¹Monsteré€ æˆä¼¤å®³æ—¶ï¼Œæ‘„åƒæœºæŠ–åŠ¨
         MonsterData.OnTakeDamageEvent += (a, b, c) =>
             CameraManager.Instance.ShakeCamera(0.8f, 0.1f);
         MonsterStateMachine.DieDataRegist(MonsterData);

@@ -57,8 +57,8 @@ public class ArchivePanel : BasePanel
 
     public override void ShowMe()
     {
-        // ÉèÖÃCanvasGroupÎªÒş²Ø×´Ì¬
-        // µ±ÍêÈ«ÏÔÊ¾Ê±²ÅÄÜ½øĞĞÉäÏß¼ì²âºÍÊÂ¼ş»¥¶¯
+        // è®¾ç½®CanvasGroupä¸ºéšè—çŠ¶æ€
+        // å½“å®Œå…¨æ˜¾ç¤ºæ—¶æ‰èƒ½è¿›è¡Œå°„çº¿æ£€æµ‹å’Œäº‹ä»¶äº’åŠ¨
         SwitchCanvasGroup(false);
 
         StopAllCoroutines();
@@ -72,7 +72,7 @@ public class ArchivePanel : BasePanel
 
     public override void HideMe()
     {
-        // ÉèÖÃCanvasGroupÎªÒş²Ø×´Ì¬
+        // è®¾ç½®CanvasGroupä¸ºéšè—çŠ¶æ€
         SwitchCanvasGroup(false);
 
         StopAllCoroutines();
@@ -99,7 +99,7 @@ public class ArchivePanel : BasePanel
     }
 
     /// <summary>
-    /// µ÷ÕûCanvasGroup×´Ì¬
+    /// è°ƒæ•´CanvasGroupçŠ¶æ€
     /// </summary>
     /// <param name="isShow"></param>
     private void SwitchCanvasGroup(bool isShow)
@@ -130,7 +130,7 @@ public class ArchivePanel : BasePanel
     {
         HideMe();
 
-        // Èç¹ûÑ¡Ôñ´æµµÎª¿Õ´æµµ
+        // å¦‚æœé€‰æ‹©å­˜æ¡£ä¸ºç©ºå­˜æ¡£
         if (DataManager.Instance.UpdateEmptyArchiveIndex(archiveIndex))
         {
             LoadNewGame();
@@ -150,7 +150,7 @@ public class ArchivePanel : BasePanel
 
     private void OnDeleteBtnClickHandler(int archiveIndex)
     {
-        UIManager.Instance.ShowPanel<TipPanel>().UpdateTipTxt("ÊÇ·ñÉ¾³ı´æµµ£¿",
+        UIManager.Instance.ShowPanel<TipPanel>().UpdateTipTxt("æ˜¯å¦åˆ é™¤å­˜æ¡£ï¼Ÿ",
             () => {
                 DataManager.Instance.DeletePlayerDataInPersistentData(archiveIndex);
 

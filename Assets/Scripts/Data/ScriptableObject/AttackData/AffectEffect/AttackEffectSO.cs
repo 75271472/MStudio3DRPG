@@ -5,13 +5,13 @@ using UnityEngine;
 [System.Serializable]
 public class AttackEffectInfo
 {
-    // Ïà¶Ô¶¯»­µÄ±ê×¼»¯³ÖĞøÊ±¼ä
+    // ç›¸å¯¹åŠ¨ç”»çš„æ ‡å‡†åŒ–æŒç»­æ—¶é—´
     public float duration;
-    // »÷ÍËÁ¦´óĞ¡
+    // å‡»é€€åŠ›å¤§å°
     public float force;
-    // »÷ÍËÁ¦·½Ïò£¨Íâ²¿¸³Öµ£©
+    // å‡»é€€åŠ›æ–¹å‘ï¼ˆå¤–éƒ¨èµ‹å€¼ï¼‰
     [HideInInspector] public Vector3 forceVect;
-    // ¹¥»÷Õß£¨Íâ²¿¸³Öµ£©
+    // æ”»å‡»è€…ï¼ˆå¤–éƒ¨èµ‹å€¼ï¼‰
     [HideInInspector] public GameObject attacker;
 }
 

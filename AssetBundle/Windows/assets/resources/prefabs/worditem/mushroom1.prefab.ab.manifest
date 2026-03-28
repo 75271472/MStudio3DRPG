@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 1210176994
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c38219da337039c9d5242604efa70fb6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 371222f6d0c828f3db65088ff5390974
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c38219da337039c9d5242604efa70fb6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: c133baeea99ae4b42953f1b5d9989361, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/WordItem/Mushroom1.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/mushroom_01.fbx.ab

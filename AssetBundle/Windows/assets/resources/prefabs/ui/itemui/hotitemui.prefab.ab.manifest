@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 3090259634
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3e680251c11101ab1504d68c4c33d9af
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 03ab23a723c507ceb3943800e8d62acf
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 3e680251c11101ab1504d68c4c33d9af
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0e31ba4f8aee0654d8d0199a840581f6, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Resources/Prefabs/UI/ItemUI/HotItemUI.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/font/high-jinks-1.otf.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/cryo's mini
+  gui/gui/gui_1x.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simple fantasy
+  gui/png/inventory/inventory_slot.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simple fantasy
+  gui/png/quest panel/crystal_icon.png.ab

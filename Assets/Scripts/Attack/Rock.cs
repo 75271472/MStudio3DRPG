@@ -9,9 +9,9 @@ public class Rock : MonoBehaviour
 {
     [SerializeField] public GameObject handlerObj { get; private set; }
     
-    // ½áÊøParabolaÇ°£¬Åö×²ÎïÌåÖ´ĞĞµÄÊÂ¼ş
+    // ç»“æŸParabolaå‰ï¼Œç¢°æ’ç‰©ä½“æ‰§è¡Œçš„äº‹ä»¶
     public event Action<Collider> OnCollidingObjectEvent;
-    // ½áÊøParabolaÊ±£¬Ö´ĞĞµÄÊÂ¼ş
+    // ç»“æŸParabolaæ—¶ï¼Œæ‰§è¡Œçš„äº‹ä»¶
     public event Action OnParabolaEvent;
 
     //[SerializeField] private GameObject rockBreakParticlePrefab;
@@ -27,8 +27,8 @@ public class Rock : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="handlerObj">Í¶ÖÀ¶ÔÏó</param>
-    /// <param name="targeterObj">Ä¿±ê¶ÔÏó</param>
+    /// <param name="handlerObj">æŠ•æ·å¯¹è±¡</param>
+    /// <param name="targeterObj">ç›®æ ‡å¯¹è±¡</param>
     public void RockInit(GameObject handlerObj, Vector3 targetPos)
     {
         if (handlerObj == null || handlerObj.transform.position == targetPos) return;
@@ -41,8 +41,8 @@ public class Rock : MonoBehaviour
         if (parabolaApplicator == null)
             parabolaApplicator = GetComponent<ParabolaApplicator>();
 
-        // Íâ²¿Îñ±ØÔÚRockInitÓï¾äµ÷ÓÃÖ®Ç°ÏòOnParabolaEventºÍOnCollidingObjectEvent
-        // Á½ÊÂ¼şÌí¼ÓÊÂ¼ş
+        // å¤–éƒ¨åŠ¡å¿…åœ¨RockInitè¯­å¥è°ƒç”¨ä¹‹å‰å‘OnParabolaEventå’ŒOnCollidingObjectEvent
+        // ä¸¤äº‹ä»¶æ·»åŠ äº‹ä»¶
         parabolaApplicator.StartParabola(targetPos, OnParabolaEvent);
     }
 
@@ -52,7 +52,7 @@ public class Rock : MonoBehaviour
         OnParabolaEvent = null;
     }
 
-    // µÚÒ»´Î´ÓÍ¶ÖÀÕßÏòÄ¿±êÅ×ÎïÏßÔË¶¯ºóÖ´ĞĞÊÂ¼ş
+    // ç¬¬ä¸€æ¬¡ä»æŠ•æ·è€…å‘ç›®æ ‡æŠ›ç‰©çº¿è¿åŠ¨åæ‰§è¡Œäº‹ä»¶
     private void OnParabolaHandler()
     {
         isBeingCollided = false;

@@ -7,14 +7,14 @@ public class MonsterDebug : MonoBehaviour
 
     void Update()
     {
-        // ¼ì²éÎ»ÖÃ±ä»¯
+        // æ£€æŸ¥ä½ç½®å˜åŒ–
         if (transform.position != lastPosition)
         {
             Debug.Log($"{name} moved from {lastPosition} to {transform.position}");
             lastPosition = transform.position;
         }
 
-        // ¼ì²éÅö×²Ìå±ß½ç±ä»¯
+        // æ£€æŸ¥ç¢°æ’ä½“è¾¹ç•Œå˜åŒ–
         if (TryGetComponent<Collider>(out var collider))
         {
             Bounds currentBounds = collider.bounds;

@@ -23,7 +23,7 @@ public class StateTxtUI : MonoBehaviour
 
     public void UpdateTxt(float value)
     {
-        // 保留两位数字
+        // 淇濈暀涓や綅鏁板瓧
         stateTxt.text = $"{Title}: {(float)Math.Round(value, 2)}";
     }
 }

@@ -26,10 +26,10 @@ public class PausePanel : BasePanel
 
         backToStartSceneBtn.onClick.AddListener(() =>
         {
-            // ȡ��ʱ�侲ֹ��loadScenePanel��FadeInCoroutine�л��ۼ�Time.detatime
+            // 取消时间静止，loadScenePanel的FadeInCoroutine中回累加Time.detatime
             UnPauseGame();
-            // ��ɾ����������ڽ��г�������
-            // ��Ϊ��������ʱҲ�ᴴ����壬�Ƚ��г���������ɾ������ɳ����������Ҳɾ��
+            // 先删除所有面板在进行场景加载
+            // 因为场景加载时也会创建面板，先进行场景加载在删除面板会吧场景加载面板也删除
             LoadSceneManager.Instance.LoadSceneAsync(DataManager.STARTSCENE);
         });
     }

@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 328832401
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d43783e2e68d698e97e650c20a00bdc5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d43783e2e68d698e97e650c20a00bdc5
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/YellowPartal.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/materials/shader/portal.shadergraph.ab

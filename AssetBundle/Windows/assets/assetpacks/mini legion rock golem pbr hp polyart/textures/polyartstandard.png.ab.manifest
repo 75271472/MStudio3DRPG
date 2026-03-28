@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1799805252
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 653eb60039e6da1db4ea3b57a5414eca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 653eb60039e6da1db4ea3b57a5414eca
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Textures/PolyartStandard.png
+Dependencies: []

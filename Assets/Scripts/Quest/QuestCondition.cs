@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-// Ìõ¼şÏŞÖÆÃ¶¾Ù
+// æ¡ä»¶é™åˆ¶æšä¸¾
 public enum ECondition
 {
-    During,     // ´¦ÓÚÄ³ÈÎÎñµÄÄ³×´Ì¬ÔÊĞíÖ´ĞĞ
-    Before,     // ÔÚÄ³ÈÎÎñµÄÄ³×´Ì¬Ö®ºóÔÊĞíÖ´ĞĞ
-    After,      // ÔÚÄ³ÈÎÎñµÄÄ³×´Ì¬Ö®Ç°ÔÊĞíÖ´ĞĞ
+    During,     // å¤„äºæŸä»»åŠ¡çš„æŸçŠ¶æ€å…è®¸æ‰§è¡Œ
+    Before,     // åœ¨æŸä»»åŠ¡çš„æŸçŠ¶æ€ä¹‹åå…è®¸æ‰§è¡Œ
+    After,      // åœ¨æŸä»»åŠ¡çš„æŸçŠ¶æ€ä¹‹å‰å…è®¸æ‰§è¡Œ
 }
 
 public interface IInteractable
@@ -16,7 +16,7 @@ public interface IInteractable
     public bool CanInteract();
 }
 
-// ±¸Ñ¡×´Ì¬
+// å¤‡é€‰çŠ¶æ€
 [System.Serializable]
 public class QuestConditionItem
 {

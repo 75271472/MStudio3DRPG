@@ -7,7 +7,7 @@ public class MonsterGuardState : MonsterBaseState, IDefaultState
 
     private const float CrossFixedTime = 0.1f;
 
-    // Ñ²Âß»ùµã¶ÔÏó£¬Èç¹ûÎªGuard×´Ì¬£¬ÔòpatrolObj²»Ó¦Îªnull
+    // å·¡é€»åŸºç‚¹å¯¹è±¡ï¼Œå¦‚æœä¸ºGuardçŠ¶æ€ï¼Œåˆ™patrolObjä¸åº”ä¸ºnull
     private GameObject patrolObj = null;
     private float guartTime;
 
@@ -21,7 +21,7 @@ public class MonsterGuardState : MonsterBaseState, IDefaultState
     {
         stateMachine.Animator.CrossFadeInFixedTime(GuartHash, CrossFixedTime);
 
-        // Ö»ÓĞGuard×´Ì¬²Å»á¶ÔpatrolObj¸³Öµ
+        // åªæœ‰GuardçŠ¶æ€æ‰ä¼šå¯¹patrolObjèµ‹å€¼
         if (stateMachine.MonsterMoveType == EMonsterMoveType.Guard)
         {
             patrolObj = stateMachine.MonsterPatroller.GetPatrolPos();
@@ -30,7 +30,7 @@ public class MonsterGuardState : MonsterBaseState, IDefaultState
         SetGuard();
     }
 
-    // ÔÚTickÖĞÏÈ¼ì²éÊÇ·ñÓĞTarget£¬·ñÔò¼ì²éPatrol
+    // åœ¨Tickä¸­å…ˆæ£€æŸ¥æ˜¯å¦æœ‰Targetï¼Œå¦åˆ™æ£€æŸ¥Patrol
     public override void Tick(float deltaTime)
     {
         if (stateMachine.IsPause) return;
@@ -38,8 +38,8 @@ public class MonsterGuardState : MonsterBaseState, IDefaultState
         if (stateMachine.MonsterTargeter.TryGetTarget(out var targetObj))
         {
             // TODO:
-            // SwitchStateÖ®ºóÒ»¶¨ÒªRETURNÍË³öµ±Ç°×´Ì¬²»ÔÚÖ´ĞĞÊ£ÓàÓï¾ä£¡£¡£¡
-            // ·ñÔò¿ÉÄÜ»á³öÏÖSwitchµ½ĞÂµÄStateÖ®ºóÓÖÒòÎªÃ»ÓĞ¼°Ê±ÍË³ö¾É×´Ì¬¶øÔÙ´ÎSwitch
+            // SwitchStateä¹‹åä¸€å®šè¦RETURNé€€å‡ºå½“å‰çŠ¶æ€ä¸åœ¨æ‰§è¡Œå‰©ä½™è¯­å¥ï¼ï¼ï¼
+            // å¦åˆ™å¯èƒ½ä¼šå‡ºç°Switchåˆ°æ–°çš„Stateä¹‹ååˆå› ä¸ºæ²¡æœ‰åŠæ—¶é€€å‡ºæ—§çŠ¶æ€è€Œå†æ¬¡Switch
             stateMachine.SwitchState(new MonsterChaseState(stateMachine, targetObj));
             return;
         }
@@ -54,8 +54,8 @@ public class MonsterGuardState : MonsterBaseState, IDefaultState
 
     private void CheckGuard()
     {
-        // µ±Ç°´¦ÓÚGuard×´Ì¬£¬²¢ÇÒÓëÑ²Âß»ùµã¾àÀëĞ¡ÓÚAgent.stoppingDistance£¬±£³ÖGuard×´Ì¬
-        // ²¢ÏòpatrolObjÑ²Âß»ùµãµÄĞı×ª½Ç¶ÈĞı×ª
+        // å½“å‰å¤„äºGuardçŠ¶æ€ï¼Œå¹¶ä¸”ä¸å·¡é€»åŸºç‚¹è·ç¦»å°äºAgent.stoppingDistanceï¼Œä¿æŒGuardçŠ¶æ€
+        // å¹¶å‘patrolObjå·¡é€»åŸºç‚¹çš„æ—‹è½¬è§’åº¦æ—‹è½¬
         if (patrolObj != null && stateMachine.transform.IsTargetInDistance(
             patrolObj, stateMachine.Agent.stoppingDistance))
         {

@@ -40,7 +40,7 @@ public class AccordionUI : MonoBehaviour
             dropdownBtnTrans.localRotation = isExpanded ? Quaternion.Euler(0, 0, 180) :
                 Quaternion.identity;
         }
-        // Ë¢ÐÂUI²¼¾Ö
+        // åˆ·æ–°UIå¸ƒå±€
         ExtensionTool.UpdateUI(transform.parent);
     }
 

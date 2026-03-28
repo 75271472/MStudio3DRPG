@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 3701070144
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 63b6197160a4895f3b8e95158f07015c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 63b6197160a4895f3b8e95158f07015c
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/RedPortal.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/materials/shader/portal.shadergraph.ab

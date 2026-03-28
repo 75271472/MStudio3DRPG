@@ -47,7 +47,7 @@ public class MonsterTargeter : MonoBehaviour
     {
         if (!ContainsTarget(targetObj, out var target)) return;
 
-        // ´ÓTargetµÄTargeterListÁĞ±íÖĞÒÆ³ı×Ô¼º
+        // ä»Targetçš„TargeterListåˆ—è¡¨ä¸­ç§»é™¤è‡ªå·±
         target.RemoveTargeter(this);
         targetList.Remove(targetObj.GetComponent<MonsterTarget>());
         OnTargetExit?.Invoke(targetObj);
@@ -60,11 +60,11 @@ public class MonsterTargeter : MonoBehaviour
         Clear();
     }
 
-    // Ö´ĞĞÂß¼­: ±éÀútarget£¬ÔÚtargetListÖĞÒÆ³ı¸Ãtarget
+    // æ‰§è¡Œé€»è¾‘: éå†targetï¼Œåœ¨targetListä¸­ç§»é™¤è¯¥target
     public void Clear()
     {
-        // ±éÀú¹ı³ÌÖĞ»áÖ´ĞĞtargetList.Remove£¬ĞŞ¸ÄtargetÁĞ±í
-        // Òò´Ë´ÓºóÏòÇ°ÒÆ³ı
+        // éå†è¿‡ç¨‹ä¸­ä¼šæ‰§è¡ŒtargetList.Removeï¼Œä¿®æ”¹targetåˆ—è¡¨
+        // å› æ­¤ä»åå‘å‰ç§»é™¤
         for (int i = targetList.Count - 1; i >= 0; i--)
         {
             RemoveTarget(targetList[i].gameObject);
@@ -87,10 +87,10 @@ public class MonsterTargeter : MonoBehaviour
         return targetObj;
     }
 
-    // ÅĞ¶ÏtargetObjÊÇ·ñº¬ÓĞMonsterTarget£¬²¢ÇÒÊÇ·ñÔÚtargetListÁĞ±íÖĞ
+    // åˆ¤æ–­targetObjæ˜¯å¦å«æœ‰MonsterTargetï¼Œå¹¶ä¸”æ˜¯å¦åœ¨targetListåˆ—è¡¨ä¸­
     public bool ContainsTarget(GameObject targetObj, out MonsterTarget target)
     {
-        // ²»Ê¹ÓÃIsTargetÅĞ¶Ï£¬·ÀÖ¹ÎŞ·¨ÅĞ¶ÏIsVisible = falseµÄTarget
+        // ä¸ä½¿ç”¨IsTargetåˆ¤æ–­ï¼Œé˜²æ­¢æ— æ³•åˆ¤æ–­IsVisible = falseçš„Target
         if (targetObj.TryGetComponent<MonsterTarget>(out target))
         {
             return targetList.Contains(target);

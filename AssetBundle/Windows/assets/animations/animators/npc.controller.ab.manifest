@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 3282316769
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 786e0dfb220ddbadd764dd987ea6724a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 147058da82bee871bbce28e472030442
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 786e0dfb220ddbadd764dd987ea6724a
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Animations/Animators/NPC.controller
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpghero/animations/idle_swordshield.anim.ab

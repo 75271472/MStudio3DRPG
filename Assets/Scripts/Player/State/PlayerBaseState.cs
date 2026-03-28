@@ -63,10 +63,10 @@ public abstract class PlayerBaseState : State
         stateMachine.SwitchState(new PlayerRunState(stateMachine, targetObj));
     }
 
-    // ÈıÖÖ×´Ì¬£º
-    // µã»÷µØÃæ£ºIsGroundTarget = true && IsMonsterAlive = false;
-    // µã»÷»îMonster£ºIsGroundTarget = false && IsMonsterAlive = true
-    // µã»÷ËÀMonster£ºIsGroundTarget = false && IsMonsterAlive = false
+    // ä¸‰ç§çŠ¶æ€ï¼š
+    // ç‚¹å‡»åœ°é¢ï¼šIsGroundTarget = true && IsMonsterAlive = false;
+    // ç‚¹å‡»æ´»Monsterï¼šIsGroundTarget = false && IsMonsterAlive = true
+    // ç‚¹å‡»æ­»Monsterï¼šIsGroundTarget = false && IsMonsterAlive = false
     protected bool IsGroundTarget(MouseTarget targetObj)
     {
         return targetObj is GroundTarget;

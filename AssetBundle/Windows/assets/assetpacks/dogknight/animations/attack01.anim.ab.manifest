@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 294748638
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ae785c09af45abfa577d53fb33dfcc2c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ae785c09af45abfa577d53fb33dfcc2c
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/DogKnight/Animations/Attack01.anim
+Dependencies: []

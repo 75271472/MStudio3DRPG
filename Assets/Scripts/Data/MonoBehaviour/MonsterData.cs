@@ -6,8 +6,8 @@ public class MonsterData : CharacterData
 {
     private MonsterState monsterState;
 
-    // MonsterControllerÔÚMonsterManagerÁĞ±íÖĞµÄid£¬
-    // ·½±ãÍ¨¹ıidµ÷ÓÃMosnterControllerÖĞµÄ×é¼ş
+    // MonsterControlleråœ¨MonsterManageråˆ—è¡¨ä¸­çš„idï¼Œ
+    // æ–¹ä¾¿é€šè¿‡idè°ƒç”¨MosnterControllerä¸­çš„ç»„ä»¶
     public int Id { get; private set; }
     
     public MonsterInfo MonsterInfo { get; private set; }
@@ -18,7 +18,7 @@ public class MonsterData : CharacterData
 
     [field: SerializeField] public EMonsterMoveType MoveType { get; set; }
 
-    // MonsterÀàĞÍid£¬ÓÃÓÚ»ñÈ¡Ö¸¶¨ÀàĞÍµÄMonsterInfo
+    // Monsterç±»å‹idï¼Œç”¨äºè·å–æŒ‡å®šç±»å‹çš„MonsterInfo
     [field: SerializeField] public int MonsterInfoId { get; private set; }
 
     public MonsterState MonsterState
@@ -37,7 +37,7 @@ public class MonsterData : CharacterData
 
         base.CharacterDataInit(character);
 
-        // ÖØĞÂ¶¯Ì¬Éú³ÉÒ»·İStateSOÊı¾İ
+        // é‡æ–°åŠ¨æ€ç”Ÿæˆä¸€ä»½StateSOæ•°æ®
         //MonsterStateSO = Instantiate(MonsterStateSO);
     }
 

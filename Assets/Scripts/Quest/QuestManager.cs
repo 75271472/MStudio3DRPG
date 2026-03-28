@@ -10,9 +10,9 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
 {
     private List<QuestInfo> questInfoList;
 
-    // Ê¹ÓÃ Dictionary ³ÖÓĞ ´¦ÓÚStartºÍCompleted×´Ì¬µÄQuest¶ÔÏó
+    // ä½¿ç”¨ Dictionary æŒæœ‰ å¤„äºStartå’ŒCompletedçŠ¶æ€çš„Questå¯¹è±¡
     private Dictionary<int, Quest> activeQuestDict = new Dictionary<int, Quest>();
-    // µ±Ç°FinishedµÄÈÎÎñÁĞ±í
+    // å½“å‰Finishedçš„ä»»åŠ¡åˆ—è¡¨
     private Dictionary<int, Quest> finishedQuestDict = new Dictionary<int, Quest>();
 
     public event Action<Quest> OnStartQusetEvent;
@@ -52,7 +52,7 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         QuestManagerInit();
     }
 
-    // Ìá¹©¸ø UI »ñÈ¡µ±Ç°ËùÓĞÎ´Íê³ÉÈÎÎñµÄ·½·¨
+    // æä¾›ç»™ UI è·å–å½“å‰æ‰€æœ‰æœªå®Œæˆä»»åŠ¡çš„æ–¹æ³•
     public List<Quest> GetActiveQuests()
     {
         return activeQuestDict.Values.ToList();
@@ -88,8 +88,8 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         if (activeQuestDict.ContainsKey(questId))
             return activeQuestDict[questId].questState;
 
-        // ¼ÈÃ»×öÍê£¬Ò²Ã»¿ªÊ¼£¬ÄÇ¾ÍÊÇ»¹Ã»½Ó
-        // È·±£ÄãµÄ EQuestState Ã¶¾ÙÀïÓĞ NotAccepted »òÕß None
+        // æ—¢æ²¡åšå®Œï¼Œä¹Ÿæ²¡å¼€å§‹ï¼Œé‚£å°±æ˜¯è¿˜æ²¡æ¥
+        // ç¡®ä¿ä½ çš„ EQuestState æšä¸¾é‡Œæœ‰ NotAccepted æˆ–è€… None
         return EQuestState.NotAccepted;
     }
 
@@ -102,7 +102,7 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
 
     private void ResetEvent()
     {
-        Debug.Log($"ÓĞÈËÖÃ¿ÕÁË¶©ÔÄ");
+        Debug.Log($"æœ‰äººç½®ç©ºäº†è®¢é˜…");
 
         OnStartQusetEvent = null;
         OnCompletedQuestEvent = null;
@@ -111,26 +111,26 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
 
     private void CheckAndProcessQuest(int questId)
     {
-        // ´«ÈëµÄIdÎ»ÓÚfinishedQuestIdListÖĞ£¬ÔòÖ±½Ó·µ»Ø
+        // ä¼ å…¥çš„Idä½äºfinishedQuestIdListä¸­ï¼Œåˆ™ç›´æ¥è¿”å›
         if (finishedQuestDict.ContainsKey(questId)) return;
         
-        // ´«Èë´¦ÓÚÎ´Íê³É×´Ì¬µÄÈÎÎñId
+        // ä¼ å…¥å¤„äºæœªå®ŒæˆçŠ¶æ€çš„ä»»åŠ¡Id
         if (activeQuestDict.ContainsKey(questId))
         {
             Quest activeQuest = activeQuestDict[questId];
-            // µ±Ç°ÈÎÎñÒÑ¾­Íê³É
+            // å½“å‰ä»»åŠ¡å·²ç»å®Œæˆ
             if (activeQuest.questState == EQuestState.Complete)
             {
                 FinishQuest(activeQuest);
             }
-            // µ±Ç°ÈÎÎñ»¹Î´Íê³É
+            // å½“å‰ä»»åŠ¡è¿˜æœªå®Œæˆ
             else
             {
 
             }
         }
 
-        // ´«ÈëÎ´¿ªÊ¼×´Ì¬µÄÈÎÎñId
+        // ä¼ å…¥æœªå¼€å§‹çŠ¶æ€çš„ä»»åŠ¡Id
         else
         {
             StartQuest(questId);
@@ -160,17 +160,17 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         print(quest.questName + " Completed");
 
         UIManager.Instance.ShowPanel<NoticePanel>().
-            UpdateTipTxt($"ÈÎÎñÍê³É£º{quest.questName}");
+            UpdateTipTxt($"ä»»åŠ¡å®Œæˆï¼š{quest.questName}");
         OnCompletedQuestEvent?.Invoke(quest);
     }
 
-    // ´ÓÓ²ÅÌÖĞ¼ÓÔØÈÎÎñÊı¾İ£¬²¢¸üĞÂÄÚ´æÖĞµÄÈÎÎñÊı¾İ
+    // ä»ç¡¬ç›˜ä¸­åŠ è½½ä»»åŠ¡æ•°æ®ï¼Œå¹¶æ›´æ–°å†…å­˜ä¸­çš„ä»»åŠ¡æ•°æ®
     private void LoadQuest(QuestRecord record)
     {
         if (record.questState == EQuestState.NotAccepted) return;
 
         Quest quest = new Quest(record);
-        print("LoadQeust£º" + quest.questState);
+        print("LoadQeustï¼š" + quest.questState);
 
         if (record.questState == EQuestState.Finished)
         {
@@ -180,7 +180,7 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         else if (record.questState == EQuestState.Complete)
         {
             activeQuestDict.Add(record.id, quest);
-            // ÈÎÎñComplete×´Ì¬ÏÂÖ´ĞĞ
+            // ä»»åŠ¡CompleteçŠ¶æ€ä¸‹æ‰§è¡Œ
         }
         else if (record.questState == EQuestState.Start)
         {
@@ -197,7 +197,7 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         QuestInfo questInfo = questInfoList[questId];
         Quest quest = new Quest(questInfo, EQuestState.Start);
 
-        // ×¢²áÈÎÎñÄÚ²¿ÊÂ¼ş
+        // æ³¨å†Œä»»åŠ¡å†…éƒ¨äº‹ä»¶
         quest.OnQuestCompletedEvent += OnQuestCompletedHandler;
         OnRequireUpdateEvent += quest.UpdateRequire;
 
@@ -206,7 +206,7 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         activeQuestDict.Add(questId, quest);
 
         UIManager.Instance.ShowPanel<NoticePanel>().
-            UpdateTipTxt($"ÈÎÎñ¿ªÊ¼£º{quest.questName}");
+            UpdateTipTxt($"ä»»åŠ¡å¼€å§‹ï¼š{quest.questName}");
         OnStartQusetEvent?.Invoke(quest);
     }
 
@@ -222,7 +222,7 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         quest.SubstituteItems();
 
         UIManager.Instance.ShowPanel<NoticePanel>().
-            UpdateTipTxt($"ÈÎÎñ½áÊø£º{quest.questName}");
+            UpdateTipTxt($"ä»»åŠ¡ç»“æŸï¼š{quest.questName}");
         OnFinishedQuestEvent?.Invoke(quest);
     }
 
@@ -236,7 +236,7 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
             character, inventoryItemInfo, triggerRequire);
 
         Debug.Log($"Current QuestManager Instance ID: {this.GetInstanceID()}");
-        Debug.Log($"Singleton Instance ID: {Instance.GetInstanceID()}"); // ¶Ô±Èµ¥ÀıµÄID
+        Debug.Log($"Singleton Instance ID: {Instance.GetInstanceID()}"); // å¯¹æ¯”å•ä¾‹çš„ID
 
         OnRequireUpdateEvent?.Invoke(requireDataPayload);
     }

@@ -2,7 +2,7 @@ using System;
 //using UnityEditor.Animations;
 using UnityEngine;
 
-// ×´Ì¬»úÄ¬ÈÏ×´Ì¬
+// çŠ¶æ€æœºé»˜è®¤çŠ¶æ€
 public interface IDefaultState { }
 public abstract class State
 {
@@ -11,7 +11,7 @@ public abstract class State
     public abstract void Exit();
 
     /// <summary>
-    /// ·µ»ØÖ¸¶¨±êÇ©µÄ¶¯»­µÄ±ê×¼»¯Ê±¼äÖµ
+    /// è¿”å›æŒ‡å®šæ ‡ç­¾çš„åŠ¨ç”»çš„æ ‡å‡†åŒ–æ—¶é—´å€¼
     /// </summary>
     /// <param name="animator"></param>
     /// <param name="tag"></param>
@@ -35,7 +35,7 @@ public abstract class State
         }
     }
 
-    // ÉèÖÃ¶¯»­Ê±¼ä£¬ÈÃ¶¯»­ÔÚÉèÖÃÊ±¼äÄÚÄÜ¹»Ç¡ºÃ²¥·ÅÍê±Ï
+    // è®¾ç½®åŠ¨ç”»æ—¶é—´ï¼Œè®©åŠ¨ç”»åœ¨è®¾ç½®æ—¶é—´å†…èƒ½å¤Ÿæ°å¥½æ’­æ”¾å®Œæ¯•
     //protected void SpeedNormalizedAnimation(
     //    Animator animator, string animationName, float time)
     //{
@@ -60,14 +60,14 @@ public abstract class State
 
     //private AnimatorState GetStateByName(Animator animator, string animationName)
     //{
-    //    //»ñÈ¡AnimatorControllerÖĞµÄ0²ã¼¶
+    //    //è·å–AnimatorControllerä¸­çš„0å±‚çº§
     //    AnimatorController controller = GetAnimatorController(
     //        animator.runtimeAnimatorController);
 
     //    foreach (AnimatorControllerLayer layer in controller.layers)
     //    {
     //        AnimatorStateMachine stateMachine = layer.stateMachine;
-    //        //»ñÈ¡²ã¼¶ÖĞµÄ×´Ì¬»ú
+    //        //è·å–å±‚çº§ä¸­çš„çŠ¶æ€æœº
     //        ChildAnimatorState[] states = stateMachine.states;
     //        ChildAnimatorState state = 
     //            Array.Find(states, state => state.state.name.Contains(animationName));
@@ -82,13 +82,13 @@ public abstract class State
     //    if (runtimeAnimatorController == null)
     //        return null;
 
-    //    // Èç¹ûÊÇ¸²Ğ´¿ØÖÆÆ÷£¬»ñÈ¡ËüµÄ»ù´¡¿ØÖÆÆ÷
+    //    // å¦‚æœæ˜¯è¦†å†™æ§åˆ¶å™¨ï¼Œè·å–å®ƒçš„åŸºç¡€æ§åˆ¶å™¨
     //    if (runtimeAnimatorController is AnimatorOverrideController overrideController)
     //    {
     //        return overrideController.runtimeAnimatorController as AnimatorController;
     //    }
 
-    //    // ·ñÔòÖ±½Ó·µ»Ø
+    //    // å¦åˆ™ç›´æ¥è¿”å›
     //    return runtimeAnimatorController as AnimatorController;
     //}
 }

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3418918428
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e06fce63ecdb473287f80eb285e3aa9a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e06fce63ecdb473287f80eb285e3aa9a
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/IdleNormal.anim
+Dependencies: []

@@ -5,25 +5,25 @@ using UnityEngine.Events;
 
 
 /// <summary>
-/// Éè¼Æ±àĞ´£º³£³É¹¦
-/// ´´½¨Ê±¼ä£º2020/05/12 
-/// ½Å±¾¹¦ÄÜ£º´ÓAµã(ÆğÊ¼µã), µ½Bµã(Ä¿±êµã)µÄÅ×ÎïÏßÔË¶¯
-/// ¹ÒÔØÎ»ÖÃ£º¶¯Ì¬¹ÒÔØ, ¼´½«ÔË¶¯µÄÎïÌåÉÏ
+/// è®¾è®¡ç¼–å†™ï¼šå¸¸æˆåŠŸ
+/// åˆ›å»ºæ—¶é—´ï¼š2020/05/12 
+/// è„šæœ¬åŠŸèƒ½ï¼šä»Aç‚¹(èµ·å§‹ç‚¹), åˆ°Bç‚¹(ç›®æ ‡ç‚¹)çš„æŠ›ç‰©çº¿è¿åŠ¨
+/// æŒ‚è½½ä½ç½®ï¼šåŠ¨æ€æŒ‚è½½, å³å°†è¿åŠ¨çš„ç‰©ä½“ä¸Š
 /// </summary>
 /// 
-/// ps. ¹ØÓÚ¼ıµÄÖÆ×÷:
-/// 1, ×ÊÔ´Ô­µã, ÔÚ¼ıÍ·ÉÏ(Ò»°ãÊÇ¼ıÍ·²úÉú¹¥»÷Á¦)
-/// 2, ¼ıÍ·³¯Ïò, ÊÇzÖáµÄÔö³¤·½Ïò
+/// ps. å…³äºç®­çš„åˆ¶ä½œ:
+/// 1, èµ„æºåŸç‚¹, åœ¨ç®­å¤´ä¸Š(ä¸€èˆ¬æ˜¯ç®­å¤´äº§ç”Ÿæ”»å‡»åŠ›)
+/// 2, ç®­å¤´æœå‘, æ˜¯zè½´çš„å¢é•¿æ–¹å‘
 
 
-// ´ÓAµã(ÆğÊ¼µã), µ½Bµã(Ä¿±êµã)µÄÅ×ÎïÏßÔË¶¯
+// ä»Aç‚¹(èµ·å§‹ç‚¹), åˆ°Bç‚¹(ç›®æ ‡ç‚¹)çš„æŠ›ç‰©çº¿è¿åŠ¨
 public class ParabolaApplicator : MonoBehaviour
 {
-    // ÔË¶¯ËÙ¶È
+    // è¿åŠ¨é€Ÿåº¦
     public float speed = 10;
-    // Ä¿±êµã×ø±ê
+    // ç›®æ ‡ç‚¹åæ ‡
     private Vector3 targetPos;
-    // ×îĞ¡½Ó½ü¾àÀë, ÒÔÍ£Ö¹ÔË¶¯
+    // æœ€å°æ¥è¿‘è·ç¦», ä»¥åœæ­¢è¿åŠ¨
     public float minDistance = 0.5f;
     private float distanceToTarget;
     private bool moveFlag = true;
@@ -43,34 +43,34 @@ public class ParabolaApplicator : MonoBehaviour
 
         while (moveFlag)
         {
-            // ³¯ÏòÄ¿±ê, ÒÔ¼ÆËãÔË¶¯
+            // æœå‘ç›®æ ‡, ä»¥è®¡ç®—è¿åŠ¨
             transform.LookAt(targetPos);
-            // ¸ù¾İ¾àÀëË¥¼õ ½Ç¶È
+            // æ ¹æ®è·ç¦»è¡°å‡ è§’åº¦
             float angle = Mathf.Min(1, Vector3.Distance(
                 transform.position, targetPos) / distanceToTarget) * 45;
-            // Ğı×ª¶ÔÓ¦µÄ½Ç¶È£¨ÏßĞÔ²åÖµÒ»¶¨½Ç¶È£¬È»ºóÃ¿Ö¡ÈÆXÖáĞı×ª£©
+            // æ—‹è½¬å¯¹åº”çš„è§’åº¦ï¼ˆçº¿æ€§æ’å€¼ä¸€å®šè§’åº¦ï¼Œç„¶åæ¯å¸§ç»•Xè½´æ—‹è½¬ï¼‰
             Quaternion rotation = Quaternion.Euler(Mathf.Clamp(-angle, -42, 42), 0, 0);
             transform.rotation = transform.rotation * rotation;
             //print($"{angle} {rotation}");
-            // µ±Ç°¾àÀëÄ¿±êµã
+            // å½“å‰è·ç¦»ç›®æ ‡ç‚¹
             float currentDist = Vector3.Distance(transform.position, targetPos);
-            // ºÜ½Ó½üÄ¿±êÁË, ×¼±¸½áÊøÑ­»·
+            // å¾ˆæ¥è¿‘ç›®æ ‡äº†, å‡†å¤‡ç»“æŸå¾ªç¯
             if (currentDist < minDistance)
             {
                 moveFlag = false;
             }
-            // Æ½ÒÆ (³¯ÏòZÖáÒÆ¶¯)
+            // å¹³ç§» (æœå‘Zè½´ç§»åŠ¨)
             transform.Translate(Vector3.forward * Mathf.Min(speed * Time.deltaTime, 
                 currentDist));
-            // ÔİÍ£Ö´ĞĞ, µÈ´ıÏÂÒ»Ö¡ÔÙÖ´ĞĞwhile
+            // æš‚åœæ‰§è¡Œ, ç­‰å¾…ä¸‹ä¸€å¸§å†æ‰§è¡Œwhile
             yield return null;
         }
         if (moveFlag == false)
         {
-            // Ê¹×Ô¼ºµÄÎ»ÖÃ, ¸ú[Ä¿±êµã]ÖØºÏ
+            // ä½¿è‡ªå·±çš„ä½ç½®, è·Ÿ[ç›®æ ‡ç‚¹]é‡åˆ
             transform.position = targetPos;
             action?.Invoke();
-            // [Í£Ö¹]µ±Ç°Ğ­³ÌÈÎÎñ,²ÎÊıÊÇĞ­³Ì·½·¨Ãû
+            // [åœæ­¢]å½“å‰åç¨‹ä»»åŠ¡,å‚æ•°æ˜¯åç¨‹æ–¹æ³•å
             StopCoroutine(ParabolaCoroutine(action));
         }
     }

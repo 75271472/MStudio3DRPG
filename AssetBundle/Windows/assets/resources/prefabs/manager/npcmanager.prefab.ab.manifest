@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2535855754
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ddd729729647b30d5f9f5887c462bc11
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 366f8e3d5a05a287f77942dfad3af945
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ddd729729647b30d5f9f5887c462bc11
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1c64502a741c7944cb7a683fd9168287, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/Manager/NPCManager.prefab
+Dependencies: []

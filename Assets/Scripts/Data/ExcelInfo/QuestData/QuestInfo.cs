@@ -8,9 +8,9 @@ using UnityEngine;
 
 public enum ERequireType
 {
-    KillEnemy,      // »÷É±¹ÖÎïÀàĞÍ
-    CollectItem,    // ÊÕ¼¯ÎïÆ·ÀàĞÍ
-    Trigger,        // ´¥·¢ÀàĞÍ
+    KillEnemy,      // å‡»æ€æ€ªç‰©ç±»å‹
+    CollectItem,    // æ”¶é›†ç‰©å“ç±»å‹
+    Trigger,        // è§¦å‘ç±»å‹
 }
 
 public enum EQuestState
@@ -23,8 +23,8 @@ public enum EQuestState
 
 public class TriggerRequire
 {
-    public const string triggerStr1 = "µ÷²éÃÜÁÖÉî´¦µÄÒìÏó";
-    public const string triggerStr2 = "Ì½Ã÷¸ç²¼ÁÖµÄÃØÃÜ¼Æ»®";
+    public const string triggerStr1 = "è°ƒæŸ¥å¯†æ—æ·±å¤„çš„å¼‚è±¡";
+    public const string triggerStr2 = "æ¢æ˜å“¥å¸ƒæ—çš„ç§˜å¯†è®¡åˆ’";
 
     public string triggerString;
     public bool isFinish;
@@ -54,7 +54,7 @@ public class RequireDataPayload
     }
 }
 
-#region Excel±íÖĞ¼ÇÂ¼Êı¾İ
+#region Excelè¡¨ä¸­è®°å½•æ•°æ®
 
 [System.Serializable]
 public class QuestRequireInfo
@@ -83,7 +83,7 @@ public class QuestInfo
     public List<InventoryItemInfo> rewardItemInfos;
 }
 #endregion
-#region ÄÚ´æÖĞ¼ÇÂ¼Êı¾İ
+#region å†…å­˜ä¸­è®°å½•æ•°æ®
 [System.Serializable]
 public class QuestRequire
 {
@@ -102,7 +102,7 @@ public class QuestRequire
         isComplated = currentAmount >= questRequireInfo.requireAmount;
     }
 
-    // Éî¿½±´
+    // æ·±æ‹·è´
     public QuestRequire Clone()
     {
         QuestRequire newRequire = new QuestRequire(this.questRequireInfo);
@@ -131,11 +131,11 @@ public class QuestRequire
 
         Debug.Log("UpdateItemRequire: " + questRequireInfo.name);
 
-        // ¸ù¾İ´«ÈëµÄÊı¾İÖØÖÃ½ø¶È
+        // æ ¹æ®ä¼ å…¥çš„æ•°æ®é‡ç½®è¿›åº¦
         currentAmount = Mathf.Max(currentAmount + quantity, 0);
 
         isComplated = currentAmount >= questRequireInfo.requireAmount;
-        // µ±½ø¶È¸üĞÂÊ±´¥·¢
+        // å½“è¿›åº¦æ›´æ–°æ—¶è§¦å‘
         OnUpdateRequireEvent?.Invoke(this);
     }
 
@@ -288,7 +288,7 @@ public class Quest
     }
 }
 #endregion
-#region ´æ´¢µ½Ó²ÅÌÉÏµÄÊı¾İ
+#region å­˜å‚¨åˆ°ç¡¬ç›˜ä¸Šçš„æ•°æ®
 public class QuestRecord
 {
     public int id;

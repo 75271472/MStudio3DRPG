@@ -20,7 +20,7 @@ public class PlayerAttackCDState : PlayerLocomotionState
 
     public override void Enter()
     {
-        // Ö»ÓĞTargetÎªMonster²ÅÄÜ½øÈë
+        // åªæœ‰Targetä¸ºMonsteræ‰èƒ½è¿›å…¥
         if (targetObj == null || !IsMonsterAlive(targetObj))
         {
             stateMachine.SwitchState(new PlayerIdleState(stateMachine));
@@ -28,8 +28,8 @@ public class PlayerAttackCDState : PlayerLocomotionState
         }
 
         base.Enter();
-        // ÔÚSetAttackÇ°£¬ÏÈSetIdle£¬Í£Ö¹×ÔÉíÒÆ¶¯£¬·ÀÖ¹´ÓRun×´Ì¬ÇĞ»»¹ıÀ´ºóÓÉÓÚDestination
-        // ÒÀÈ»ÒÆ¶¯
+        // åœ¨SetAttackå‰ï¼Œå…ˆSetIdleï¼Œåœæ­¢è‡ªèº«ç§»åŠ¨ï¼Œé˜²æ­¢ä»RunçŠ¶æ€åˆ‡æ¢è¿‡æ¥åç”±äºDestination
+        // ä¾ç„¶ç§»åŠ¨
         //SetIdle();
         SetAttack(targetObj.transform.position, ref stopDistance, ref stopAngle);
         MouseManager.Instance.OnMoveEvent += OnMoveHandler;
@@ -59,7 +59,7 @@ public class PlayerAttackCDState : PlayerLocomotionState
 
     private void CheckAttackCD()
     {
-        // target²»ÔÚ¹¥»÷·¶Î§ÄÚ£¬ÇĞ»»Run×´Ì¬
+        // targetä¸åœ¨æ”»å‡»èŒƒå›´å†…ï¼Œåˆ‡æ¢RunçŠ¶æ€
         if (!stateMachine.transform.IsTargetInAreaByRay(targetObj.gameObject, stopDistance, 
             stopAngle))
         {
@@ -67,9 +67,9 @@ public class PlayerAttackCDState : PlayerLocomotionState
             return;
         }
 
-        // targetÔÚ¹¥»÷·¶Î§ÄÚ£¬µ«´¦ÓÚ¹¥»÷CD×´Ì¬
-        // Í£Ö¹AgentÒÆ¶¯£¬×¢Òâ²»ÄÜÖ±½Óµ÷ÓÃSetIdle£¬
-        // ÕâÑù»á½«stopDistanceÉèÖÃMoveDataµÄstopDistance¶ø²»ÊÇAttackDataÖĞµÄAttackRange
+        // targetåœ¨æ”»å‡»èŒƒå›´å†…ï¼Œä½†å¤„äºæ”»å‡»CDçŠ¶æ€
+        // åœæ­¢Agentç§»åŠ¨ï¼Œæ³¨æ„ä¸èƒ½ç›´æ¥è°ƒç”¨SetIdleï¼Œ
+        // è¿™æ ·ä¼šå°†stopDistanceè®¾ç½®MoveDataçš„stopDistanceè€Œä¸æ˜¯AttackDataä¸­çš„AttackRange
         if (!stateMachine.PlayerComboList.CanAttackByComboIndex(0))
         {
             StopAgent();
@@ -81,7 +81,7 @@ public class PlayerAttackCDState : PlayerLocomotionState
 
     private void OnMoveHandler(MouseTarget targetObj)
     {
-        // Èç¹ûÄ¿±ê¶ÔÏóÓëµ±Ç°¶ÔÏóÏàÍ¬£¬ÍË³ö
+        // å¦‚æœç›®æ ‡å¯¹è±¡ä¸å½“å‰å¯¹è±¡ç›¸åŒï¼Œé€€å‡º
         if (this.targetObj.Equals(targetObj)) return;
 
         stateMachine.SwitchState(new PlayerRunState(stateMachine, targetObj));

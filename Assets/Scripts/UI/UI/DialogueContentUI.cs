@@ -57,11 +57,11 @@ public class DialogueContentUI : MonoBehaviour
     {
         ResetContent();
 
-        // 1. ÏÈ°ÑÍêÕûÄÚÈİ¸ø Ghost£¬ÈÃËüË²¼ä°Ñ UI ³Åµ½×îÖÕ´óĞ¡
+        // 1. å…ˆæŠŠå®Œæ•´å†…å®¹ç»™ Ghostï¼Œè®©å®ƒç¬é—´æŠŠ UI æ’‘åˆ°æœ€ç»ˆå¤§å°
         ghostTxt.text = dialogueContent;
 
-        // 2. Ç¿ÖÆË¢ĞÂÒ»´ÎËùÓĞ²ã¼¶£¬È·±£ UI ¶¨¸ñÔÚ×îÖÕ´óĞ¡
-        // ÒòÎªÖ»Ö´ĞĞÒ»´Î£¬ËùÒÔ¶àË¢ĞÂ¼¸²ãÒ²Ã»ĞÔÄÜÎÊÌâ
+        // 2. å¼ºåˆ¶åˆ·æ–°ä¸€æ¬¡æ‰€æœ‰å±‚çº§ï¼Œç¡®ä¿ UI å®šæ ¼åœ¨æœ€ç»ˆå¤§å°
+        // å› ä¸ºåªæ‰§è¡Œä¸€æ¬¡ï¼Œæ‰€ä»¥å¤šåˆ·æ–°å‡ å±‚ä¹Ÿæ²¡æ€§èƒ½é—®é¢˜
         // DialogueUp
         ExtensionTool.UpdateUI(ghostTxt.transform.parent); 
         // DialogueBK
@@ -70,7 +70,7 @@ public class DialogueContentUI : MonoBehaviour
         if (transform.parent != null) 
             ExtensionTool.UpdateUI(transform.parent); 
 
-        // 3. ÔÚ¹Ì¶¨ºÃµÄ¿òÀï²¥·Å´ò×Ö¶¯»­ (²»ĞèÒª OnUpdate ÁË)
+        // 3. åœ¨å›ºå®šå¥½çš„æ¡†é‡Œæ’­æ”¾æ‰“å­—åŠ¨ç”» (ä¸éœ€è¦ OnUpdate äº†)
         dialogueTxt.DOText(dialogueContent, 1f).SetEase(Ease.Linear);
 
         nextBtn.gameObject.SetActive(hasNext);

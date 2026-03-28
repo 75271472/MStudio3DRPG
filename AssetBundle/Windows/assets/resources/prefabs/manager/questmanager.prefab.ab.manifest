@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 1237361240
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fa69b11fb3a7fcd8d1e9bb28c9a553eb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a83cd1547c365d205aa20a4c71bc82ee
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: fa69b11fb3a7fcd8d1e9bb28c9a553eb
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9590858c2f957164fae02512d97ff7b5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/Manager/QuestManager.prefab
+Dependencies: []

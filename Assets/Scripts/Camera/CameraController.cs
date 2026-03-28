@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
 
         isPause = false;
 
-        // FIX 2: ³õÊ¼»¯Ê±Ç¿ÖÆ½«Õğ¶¯¹éÁã£¬·ÀÖ¹½øÓÎÏ·Ê±Ïà»úÂÒ»Î
+        // FIX 2: åˆå§‹åŒ–æ—¶å¼ºåˆ¶å°†éœ‡åŠ¨å½’é›¶ï¼Œé˜²æ­¢è¿›æ¸¸æˆæ—¶ç›¸æœºä¹±æ™ƒ
         SetRigAmplitude(0f);
     }
 
@@ -46,13 +46,13 @@ public class CameraController : MonoBehaviour
     }
 
     // ---------------------------------------------------------
-    // ĞÂÔö£ºÍâ²¿µ÷ÓÃµÄ¶¶¶¯·½·¨
-    // intensity: ¶¶¶¯Ç¿¶È (ÀıÈç 1.0f - 5.0f)
-    // duration: ¶¶¶¯³ÖĞøÊ±¼ä (Ä¬ÈÏ¸øÁËÒ»¸ö 0.2Ãë)
+    // æ–°å¢ï¼šå¤–éƒ¨è°ƒç”¨çš„æŠ–åŠ¨æ–¹æ³•
+    // intensity: æŠ–åŠ¨å¼ºåº¦ (ä¾‹å¦‚ 1.0f - 5.0f)
+    // duration: æŠ–åŠ¨æŒç»­æ—¶é—´ (é»˜è®¤ç»™äº†ä¸€ä¸ª 0.2ç§’)
     // ---------------------------------------------------------
     public void ShakeCamera(float intensity, float duration = 0.2f)
     {
-        // Èç¹ûµ±Ç°ÕıÔÚ¶¶¶¯£¬ÏÈÍ£Ö¹Ö®Ç°µÄĞ­³Ì£¬±ÜÃâ³åÍ»
+        // å¦‚æœå½“å‰æ­£åœ¨æŠ–åŠ¨ï¼Œå…ˆåœæ­¢ä¹‹å‰çš„åç¨‹ï¼Œé¿å…å†²çª
         if (shakeCoroutine != null)
         {
             StopCoroutine(shakeCoroutine);
@@ -60,28 +60,28 @@ public class CameraController : MonoBehaviour
         shakeCoroutine = StartCoroutine(ProcessShake(intensity, duration));
     }
 
-    // ´¦Àí¶¶¶¯µÄĞ­³Ì
+    // å¤„ç†æŠ–åŠ¨çš„åç¨‹
     private IEnumerator ProcessShake(float intensity, float duration)
     {
-        // 1. ÉèÖÃ¶¶¶¯Ç¿¶È
+        // 1. è®¾ç½®æŠ–åŠ¨å¼ºåº¦
         SetRigAmplitude(intensity);
 
-        // 2. µÈ´ıÖ¸¶¨Ê±¼ä
+        // 2. ç­‰å¾…æŒ‡å®šæ—¶é—´
         yield return new WaitForSeconds(duration);
 
-        // 3. ¹éÁã£¨Í£Ö¹¶¶¶¯£©
+        // 3. å½’é›¶ï¼ˆåœæ­¢æŠ–åŠ¨ï¼‰
         SetRigAmplitude(0f);
 
         shakeCoroutine = null;
     }
 
-    // ¸¨Öú·½·¨£ºÉèÖÃFreeLookÏà»úMiddleRigµÄÕñ·ù
+    // è¾…åŠ©æ–¹æ³•ï¼šè®¾ç½®FreeLookç›¸æœºMiddleRigçš„æŒ¯å¹…
     private void SetRigAmplitude(float amplitude)
     {
         CinemachineVirtualCamera rig = freeLookCamera.GetRig(1);
         if (rig != null)
         {
-            // »ñÈ¡Ôëµã×é¼ş
+            // è·å–å™ªç‚¹ç»„ä»¶
             var noise = rig.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
             if (noise != null)
             {
@@ -100,13 +100,13 @@ public class CameraController : MonoBehaviour
         freeLookCamera.m_XAxis.m_InputAxisValue = horzontalValue * horizontalSpeed;
     }
 
-    // InputManagerÖĞµÄ»Øµ÷£¬Ö»ÓĞÔÚÊäÈëÖµ·¢Éú¸Ä±äÊ±²Å»áµ÷ÓÃ
-    // m_Orbits[1].m_Height¸ß¶ÈÉèÖÃÓëm_XAxis.m_InputAxisValue²»Í¬
-    // m_InputAxisValueÄÚ²¿µÄÊµÏÖÓ¦¸ÃÊÇ´«ÈëÒ»¸öËÙ¶ÈÖµ£¬¸üĞÂËÙ¶ÈÖµºó±ã»áÒ»Ö±¸ù¾İËÙ¶ÈÖµ½øĞĞ×ª¶¯
-    // Òò´Ëm_InputAxisValueÖ»ÔÚÊäÈë·¢Éú¸Ä±äÊ±ĞŞ¸Ä¼´¿É£¬²»ÓÃÃ¿Ö¡¸üĞÂ
-    // m_Orbits[1].m_HeightĞèÒª¸ù¾İInputManagerÖĞµÄÊäÈëÖµ½øĞĞÃ¿Ö¡¸üĞÂ
-    // ²»È»Ê¹ÓÃ»Øµ÷º¯Êı½øĞĞ¸üĞÂ»á³öÏÖ°´×¡w¼üÖ»¸üĞÂÒ»´ÎµÄÇé¿ö
-    // m_Orbits[1].m_RadiusÍ¬Àí
+    // InputManagerä¸­çš„å›è°ƒï¼Œåªæœ‰åœ¨è¾“å…¥å€¼å‘ç”Ÿæ”¹å˜æ—¶æ‰ä¼šè°ƒç”¨
+    // m_Orbits[1].m_Heighté«˜åº¦è®¾ç½®ä¸m_XAxis.m_InputAxisValueä¸åŒ
+    // m_InputAxisValueå†…éƒ¨çš„å®ç°åº”è¯¥æ˜¯ä¼ å…¥ä¸€ä¸ªé€Ÿåº¦å€¼ï¼Œæ›´æ–°é€Ÿåº¦å€¼åä¾¿ä¼šä¸€ç›´æ ¹æ®é€Ÿåº¦å€¼è¿›è¡Œè½¬åŠ¨
+    // å› æ­¤m_InputAxisValueåªåœ¨è¾“å…¥å‘ç”Ÿæ”¹å˜æ—¶ä¿®æ”¹å³å¯ï¼Œä¸ç”¨æ¯å¸§æ›´æ–°
+    // m_Orbits[1].m_Heightéœ€è¦æ ¹æ®InputManagerä¸­çš„è¾“å…¥å€¼è¿›è¡Œæ¯å¸§æ›´æ–°
+    // ä¸ç„¶ä½¿ç”¨å›è°ƒå‡½æ•°è¿›è¡Œæ›´æ–°ä¼šå‡ºç°æŒ‰ä½wé”®åªæ›´æ–°ä¸€æ¬¡çš„æƒ…å†µ
+    // m_Orbits[1].m_RadiusåŒç†
     private void UpdateHeight(float verticalValue)
     {
         if (isPause) return;

@@ -1,0 +1,57 @@
+ManifestFileVersion: 0
+CRC: 1782868336
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 435f2bec0176821926fb698d884bb52f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8af4f908a200f226f5242b0f38dfd85a
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 435f2bec0176821926fb698d884bb52f
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 221
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Animations/Animators/EnemyTurtle.overrideController
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/animations/animators/enemyslime.controller.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/slime/attack01.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/slime/attack02.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/slime/die.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/slime/gethit.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/slime/idlebattle.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/slime/idlenormal.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/slime/runfwd.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/slime/walkfwd.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/turtleshell/attack01.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/turtleshell/attack02.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/turtleshell/die.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/turtleshell/gethit.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/turtleshell/idlebattle.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/turtleshell/idlenormal.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/turtleshell/runfwd.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/animations/turtleshell/walkfwd.anim.ab

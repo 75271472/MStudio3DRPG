@@ -5,15 +5,15 @@ using UnityEngine.UIElements;
 
 public enum EItemInfo
 {
-    // ¿ÉÊ¹ÓÃÎïÆ·Àà
+    // å¯ä½¿ç”¨ç‰©å“ç±»
     Editable,
-    // ¿É×°±¸ÎïÆ·Àà
+    // å¯è£…å¤‡ç‰©å“ç±»
     Equippable,
-    // ÕıÔÚ×°±¸ÎïÆ·Àà
+    // æ­£åœ¨è£…å¤‡ç‰©å“ç±»
 
 }
 
-// ÎïÆ·Êı¾İÀà
+// ç‰©å“æ•°æ®ç±»
 public abstract class ItemInfo
 {
     public int id;

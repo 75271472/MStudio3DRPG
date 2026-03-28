@@ -25,8 +25,8 @@ public class ArchiveUI : MonoBehaviour
 
     public int ArchiveIndex { get; private set; }
 
-    // ÏòOnChoseBtnClickEventÖĞÌí¼ÓÊÂ¼şÒªÔÚArchiveUIInitÖ®Ç°Ìí¼Ó
-    // ·ñÔò»á±»ÖØÖÃµô
+    // å‘OnChoseBtnClickEventä¸­æ·»åŠ äº‹ä»¶è¦åœ¨ArchiveUIInitä¹‹å‰æ·»åŠ 
+    // å¦åˆ™ä¼šè¢«é‡ç½®æ‰
     public void ArchiveUIInit(int archiveIndex)
     {
         ArchiveIndex = archiveIndex;

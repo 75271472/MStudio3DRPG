@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public abstract class BasePanel : MonoBehaviour
 {
-    // ¿Ø¼ş¹ÜÀí×Öµä£¬×Öµä¼üÃû£º¿Ø¼şÒÀ¸½¶ÔÏóÃû£¬×Öµä¼üÖµ£ºÒÀ¸½¶ÔÏó¹ÒÔØµÄËùÓĞ¿Ø¼ş£¬Í¨¹ıUIBehaviour¿Ø¼ş»ùÀà´æ´¢
+    // æ§ä»¶ç®¡ç†å­—å…¸ï¼Œå­—å…¸é”®åï¼šæ§ä»¶ä¾é™„å¯¹è±¡åï¼Œå­—å…¸é”®å€¼ï¼šä¾é™„å¯¹è±¡æŒ‚è½½çš„æ‰€æœ‰æ§ä»¶ï¼Œé€šè¿‡UIBehaviouræ§ä»¶åŸºç±»å­˜å‚¨
     private Dictionary<string, List<UIBehaviour>> uiDic = new Dictionary<string, List<UIBehaviour>>();
 
     /// <summary>
-    /// Awakeº¯Êı£¬½«µ±Ç°Ãæ°åÏÂËùÓĞÀàĞÍ¿Ø¼şÌí¼Óµ½×ÖµäÖĞ
+    /// Awakeå‡½æ•°ï¼Œå°†å½“å‰é¢æ¿ä¸‹æ‰€æœ‰ç±»å‹æ§ä»¶æ·»åŠ åˆ°å­—å…¸ä¸­
     /// </summary>
     protected virtual void Awake()
     {
@@ -26,9 +26,9 @@ public abstract class BasePanel : MonoBehaviour
     }
 
     /// <summary>
-    /// ¿Ø¼şÌí¼Óº¯Êı
+    /// æ§ä»¶æ·»åŠ å‡½æ•°
     /// </summary>
-    /// <typeparam name="T">ÒªÌí¼ÓµÄ¿Ø¼şÀàĞÍ</typeparam>
+    /// <typeparam name="T">è¦æ·»åŠ çš„æ§ä»¶ç±»å‹</typeparam>
     private void AddControl<T>() where T : UIBehaviour
     {
         T[] controls = GetComponentsInChildren<T>();
@@ -104,7 +104,7 @@ public abstract class BasePanel : MonoBehaviour
     }
 
     /// <summary>
-    /// ´Ó¿Ø¼ş×ÖµäÖĞ»ñÈ¡Ö¸¶¨¶ÔÏóËù¹ÒÔÚµÄÖ¸¶¨ÀàĞÍ¿Ø¼ş
+    /// ä»æ§ä»¶å­—å…¸ä¸­è·å–æŒ‡å®šå¯¹è±¡æ‰€æŒ‚åœ¨çš„æŒ‡å®šç±»å‹æ§ä»¶
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="name"></param>

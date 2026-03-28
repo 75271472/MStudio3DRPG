@@ -31,7 +31,7 @@ public class PlayerUI : CharacterUI
         playerData.OnUpdateExpEvent += PlayerInfoPanel.OnUpdateExpHandler;
     }
 
-    // Inspector´°¿ÚÖĞ²»ÄÜÊÀ½çµ÷ÓÃUIManagerÖĞ´øÓĞ·ºĞÍµÄº¯Êı£¬Òò´ËÔÚPlayerUIÖĞ·â×°Ò»»Ø
+    // Inspectorçª—å£ä¸­ä¸èƒ½ä¸–ç•Œè°ƒç”¨UIManagerä¸­å¸¦æœ‰æ³›å‹çš„å‡½æ•°ï¼Œå› æ­¤åœ¨PlayerUIä¸­å°è£…ä¸€å›
     public void ShowGameOverPanel()
     {
         UIManager.Instance.ShowPanel<GameOverPanel>(EUILayer.System);

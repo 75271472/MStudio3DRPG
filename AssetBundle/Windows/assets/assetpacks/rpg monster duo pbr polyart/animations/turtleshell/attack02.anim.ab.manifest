@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2489610917
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 60eb06f8bf9cdcba256612c918b28554
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 60eb06f8bf9cdcba256612c918b28554
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Attack02.anim
+Dependencies: []

@@ -14,7 +14,7 @@ public class AttackComboList
     [SerializeField] private List<AttackComboSO> attackComboList = new List<AttackComboSO>();
     
     private AttackComboSO currentCombo;
-    // ¹¥»÷¾àÀëÏµÊı£¬ÇĞ»»ÎäÆ÷Ê±¸üĞÂ
+    // æ”»å‡»è·ç¦»ç³»æ•°ï¼Œåˆ‡æ¢æ­¦å™¨æ—¶æ›´æ–°
     private float attackRangeFactor = 1;
 
     public void AttackComboListInit()
@@ -24,7 +24,7 @@ public class AttackComboList
             combo.AttackComboInit();
         }
 
-        // ½«combo°´AttackRangeÁ¬ÕĞÅĞ¶¨¾àÀë´ÓĞ¡µ½´óÅÅĞò
+        // å°†comboæŒ‰AttackRangeè¿æ‹›åˆ¤å®šè·ç¦»ä»å°åˆ°å¤§æ’åº
         attackComboList.Sort((comboA, comboB) =>
             comboA.AttackRange.CompareTo(comboB.AttackRange));
     }
@@ -34,7 +34,7 @@ public class AttackComboList
         this.attackRangeFactor = attackRangeFactor;
     }
 
-    // ´«ÈëÅĞ¶¨¾àÀë£¬·µ»Ø×îĞ¡µÄ£¬´óÓÚÅĞ¶¨¾àÀëµÄÁ¬ÕĞ
+    // ä¼ å…¥åˆ¤å®šè·ç¦»ï¼Œè¿”å›æœ€å°çš„ï¼Œå¤§äºåˆ¤å®šè·ç¦»çš„è¿æ‹›
     public AttackSO GetAttack(int attackIndex)
     {
         return currentCombo?.GetAttack(attackIndex);
@@ -63,8 +63,8 @@ public class AttackComboList
         return currentCombo.CanAttack();
     }
 
-    // ·µ»ØÖµ£¬·µ»Ø¸üĞÂºóµÄcurrentComboÓëÖ®Ç°ÊÇ·ñÏàÍ¬£¬ÏàÍ¬·µ»Øtrue
-    // ²¢ÅĞ¶ÏcurrentComboÊÇ·ñÎªnull£¬Îªnull·µ»Øfalse
+    // è¿”å›å€¼ï¼Œè¿”å›æ›´æ–°åçš„currentComboä¸ä¹‹å‰æ˜¯å¦ç›¸åŒï¼Œç›¸åŒè¿”å›true
+    // å¹¶åˆ¤æ–­currentComboæ˜¯å¦ä¸ºnullï¼Œä¸ºnullè¿”å›false
     private bool UpdateCurrentAttack(float distance)
     {
         if (distance > MaxDiatance)
@@ -73,7 +73,7 @@ public class AttackComboList
         }
 
         AttackComboSO attackCombo = null;
-        // Ñ°ÕÒÅĞ¶¨¾àÀëÄÚ£¬¹¥»÷·¶Î§×î´óµÄ×î¼ÑÁ¬ÕĞ
+        // å¯»æ‰¾åˆ¤å®šè·ç¦»å†…ï¼Œæ”»å‡»èŒƒå›´æœ€å¤§çš„æœ€ä½³è¿æ‹›
         foreach (var combo in attackComboList)
         {
             if (combo.AttackRange * attackRangeFactor >= distance)
@@ -83,14 +83,14 @@ public class AttackComboList
             }
         }
 
-        // Óëµ±Ç°Á¬ÕĞ±È½Ï£¬Èç¹ûµ±Ç°Á¬ÕĞ¾ÍÊÇ×î¼ÑÁ¬ÕĞ£¬»òÕßµ±Ç°Á¬ÕĞµÄ¹¥»÷·¶Î§´óÓÚ×î¼ÑÁ¬ÕĞ
-        // ·µ»Øµ±Ç°Á¬ÕĞµÄÏÂÒ»¸ö¹¥»÷
+        // ä¸å½“å‰è¿æ‹›æ¯”è¾ƒï¼Œå¦‚æœå½“å‰è¿æ‹›å°±æ˜¯æœ€ä½³è¿æ‹›ï¼Œæˆ–è€…å½“å‰è¿æ‹›çš„æ”»å‡»èŒƒå›´å¤§äºæœ€ä½³è¿æ‹›
+        // è¿”å›å½“å‰è¿æ‹›çš„ä¸‹ä¸€ä¸ªæ”»å‡»
         if (currentCombo != null && attackCombo.Equals(currentCombo))
         {
             return true;
         }
-        // µ±Ç°Á¬ÕĞÎª¿Õ»òÕß×î¼ÑÁ¬ÕĞµÄ¹¥»÷¾àÀë´óÓÚµ±Ç°Á¬ÕĞ
-        // ·µ»Ø×î¼ÑÁ¬ÕĞµÄµÚÒ»¸ö¹¥»÷£¬²¢¸üĞÂµ±Ç°Á¬ÕĞ
+        // å½“å‰è¿æ‹›ä¸ºç©ºæˆ–è€…æœ€ä½³è¿æ‹›çš„æ”»å‡»è·ç¦»å¤§äºå½“å‰è¿æ‹›
+        // è¿”å›æœ€ä½³è¿æ‹›çš„ç¬¬ä¸€ä¸ªæ”»å‡»ï¼Œå¹¶æ›´æ–°å½“å‰è¿æ‹›
         else
         {
             currentCombo = attackCombo;
@@ -102,7 +102,7 @@ public class AttackComboList
 [CreateAssetMenu(fileName = "New Data", menuName = "Data/Attack/AttackCombo")]
 public class AttackComboSO : ScriptableObject
 {
-    // Á¬ÕĞÅĞ¶¨¾àÀë
+    // è¿æ‹›åˆ¤å®šè·ç¦»
     public float AttackRange {  get; private set; }
     public float AttackAngle { get; private set; }
 
@@ -121,7 +121,7 @@ public class AttackComboSO : ScriptableObject
     public void AttackComboInit()
     {
         nowAttackCD = attackCD;
-        // ½«×îÔ¶µÄ¹¥»÷¾àÀë×÷ÎªÁ¬ÕĞµÄÅĞ¶¨¾àÀë
+        // å°†æœ€è¿œçš„æ”»å‡»è·ç¦»ä½œä¸ºè¿æ‹›çš„åˆ¤å®šè·ç¦»
         AttackSO maxRangeAttackSO = GetMaxRange();
         AttackRange = maxRangeAttackSO.attackRange;
         AttackAngle = maxRangeAttackSO.attackAngle;
@@ -144,7 +144,7 @@ public class AttackComboSO : ScriptableObject
         return true;
     }
 
-    // »ñÈ¡Á¬ÕĞÖĞ¼¼ÄÜ¹¥»÷·¶Î§×îÔ¶µÄ¹¥»÷¾àÀë
+    // è·å–è¿æ‹›ä¸­æŠ€èƒ½æ”»å‡»èŒƒå›´æœ€è¿œçš„æ”»å‡»è·ç¦»
     private AttackSO GetMaxRange()
     {
         float range = 0;

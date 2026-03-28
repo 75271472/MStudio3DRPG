@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 2314604443
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6477d1fcbaf17d99f52ae5e407f998d3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b6dc1c45c4365bfeb5be21c7bf6ac1fe
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6477d1fcbaf17d99f52ae5e407f998d3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: c133baeea99ae4b42953f1b5d9989361, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/WordItem/Sword.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/material/polyart.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/mesh/swordpolyart.fbx.ab

@@ -7,7 +7,7 @@ public class Tool_FastScreenShot : EditorWindow
     private static string directory = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "\\Screen Shot";
     private static string latestScreenshotPath = "";
 
-    [MenuItem("PIXEL/Screen Capture/´ò¿ª´æ´¢ÎÄ¼þ¼Ð &2", false, 2)]
+    [MenuItem("PIXEL/Screen Capture/æ‰“å¼€å­˜å‚¨æ–‡ä»¶å¤¹ &2", false, 2)]
     private static void ShowFolder()
     {
         if (File.Exists(latestScreenshotPath))
@@ -20,7 +20,7 @@ public class Tool_FastScreenShot : EditorWindow
         EditorUtility.RevealInFinder(directory);
     }
 
-    [MenuItem("PIXEL/Screen Capture/½ØÍ¼ &1", false, 1)]
+    [MenuItem("PIXEL/Screen Capture/æˆªå›¾ &1", false, 1)]
     private static void TakeScreenshot()
     {
         Directory.CreateDirectory(directory);
@@ -29,7 +29,7 @@ public class Tool_FastScreenShot : EditorWindow
         var path = directory + "\\" + filename;
         ScreenCapture.CaptureScreenshot(path);
         latestScreenshotPath = path;
-        Debug.Log($"½ØÍ¼Â·¾¶: <b>{path}</b> ·Ö±æÂÊ£º <b>{GetResolution()}</b>");
+        Debug.Log($"æˆªå›¾è·¯å¾„: <b>{path}</b> åˆ†è¾¨çŽ‡ï¼š <b>{GetResolution()}</b>");
     }
 
     private static string GetResolution()

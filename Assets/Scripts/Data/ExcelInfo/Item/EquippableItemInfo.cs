@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-// ×°±¸ÀàĞÍÃ¶¾Ù
+// è£…å¤‡ç±»å‹æšä¸¾
 public enum EEquippableItem
 {
-    Jewelry,    // ÊÎÆ·
-    Sword,      // ½£
-    Shield      // ¶ÜÅÆ
+    Jewelry,    // é¥°å“
+    Sword,      // å‰‘
+    Shield      // ç›¾ç‰Œ
 }
 
-// µ±Ç°×°±¸×´Ì¬Ã¶¾Ù
+// å½“å‰è£…å¤‡çŠ¶æ€æšä¸¾
 public enum EEquippableState
 {
-    Equipped,   // ÒÑ×°±¸
-    UnEquipped  // Î´×°±¸
+    Equipped,   // å·²è£…å¤‡
+    UnEquipped  // æœªè£…å¤‡
 }
 
 public class EquippableItemInfo : ItemInfo, IDestroyableItem

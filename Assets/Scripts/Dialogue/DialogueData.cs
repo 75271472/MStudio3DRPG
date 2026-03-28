@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class DialogueData : MonoBehaviour
 {
-    // ÔËĞĞÊ±×´Ì¬£ºµ±Ç°ÕıÔÚ²¥·ÅµÄ¶Ô»°Á´£¨Èç¹ûÓĞºóĞøÌø×ª£©
-    // currentPieceÒ²¿ÉÓÃÓÚÅĞ¶Ïµ±Ç°ÊÇ·ñ´¦ÓÚ²¥·Å×´Ì¬
+    // è¿è¡Œæ—¶çŠ¶æ€ï¼šå½“å‰æ­£åœ¨æ’­æ”¾çš„å¯¹è¯é“¾ï¼ˆå¦‚æœæœ‰åç»­è·³è½¬ï¼‰
+    // currentPieceä¹Ÿå¯ç”¨äºåˆ¤æ–­å½“å‰æ˜¯å¦å¤„äºæ’­æ”¾çŠ¶æ€
     private DialoguePiece currentPiece;
     private int startPieceId = -1;
     private int questId = -1;
 
-    // ÊÂ¼ş£ºÍ¨Öª Manager ¸üĞÂ UI
-    // ¶Ô»°Êı¾İ ¼üÎªDialoguePiece.text£¬ÖµÎªDialogueOption.text
+    // äº‹ä»¶ï¼šé€šçŸ¥ Manager æ›´æ–° UI
+    // å¯¹è¯æ•°æ® é”®ä¸ºDialoguePiece.textï¼Œå€¼ä¸ºDialogueOption.text
     public event Action<KeyValuePair<string, List<string>>?> OnUpdateDialogueEvent;
 
     public void DialogueDataInit()
     {
-        // °ó¶¨ Manager µÄ¼àÌı (·´Ïò°ó¶¨Ò²¿ÉÒÔ£¬¿´Äã¼Ü¹¹Ï°¹ß£¬ÕâÀï¼ÙÉè Manager »áÀ´¶©ÔÄ)
-        // ÔÚ Manager µÄ Init ÀïÆäÊµ²¢Ã»ÓĞ¶©ÔÄÕâ¸ö Event£¬½¨ÒéÔÚ Manager µÄ PrepareData Àï¶©ÔÄ
-        // »òÕßÏñÉÏÃæ Manager ´úÂëÀïÄÇÑù£¬Ö±½Ó°Ñ Manager µÄ Handler ´«½øÀ´£¬»òÕß±©Â¶ Event ¸ø Manager
+        // ç»‘å®š Manager çš„ç›‘å¬ (åå‘ç»‘å®šä¹Ÿå¯ä»¥ï¼Œçœ‹ä½ æ¶æ„ä¹ æƒ¯ï¼Œè¿™é‡Œå‡è®¾ Manager ä¼šæ¥è®¢é˜…)
+        // åœ¨ Manager çš„ Init é‡Œå…¶å®å¹¶æ²¡æœ‰è®¢é˜…è¿™ä¸ª Eventï¼Œå»ºè®®åœ¨ Manager çš„ PrepareData é‡Œè®¢é˜…
+        // æˆ–è€…åƒä¸Šé¢ Manager ä»£ç é‡Œé‚£æ ·ï¼Œç›´æ¥æŠŠ Manager çš„ Handler ä¼ è¿›æ¥ï¼Œæˆ–è€…æš´éœ² Event ç»™ Manager
     }
 
     public void StartDialogue(DialoguePiece piece, int questId)
@@ -41,19 +41,19 @@ public class DialogueData : MonoBehaviour
     {
         if (currentPiece == null) return;
 
-        // 1. ´¦ÀíÑ¡ÏîÂß¼­
+        // 1. å¤„ç†é€‰é¡¹é€»è¾‘
         int nextPieceId = -1;
 
-        // Ñ¡ÔñÁËDialoguePieceÖĞµÄOption
+        // é€‰æ‹©äº†DialoguePieceä¸­çš„Option
         if (optionIndex != -1 && currentPiece.dialogueOptionList != null &&
             currentPiece.dialogueOptionList.Count > optionIndex)
         {
             var option = currentPiece.dialogueOptionList[optionIndex];
 
-            // ½ÓÈÎÎñÂß¼­
+            // æ¥ä»»åŠ¡é€»è¾‘
             if (option.isTakeTask)
             {
-                // ÕâÀïµÄ questId ×îºÃ´æÔÚ Option Àï»òÕß Piece Àï
+                // è¿™é‡Œçš„ questId æœ€å¥½å­˜åœ¨ Option é‡Œæˆ–è€… Piece é‡Œ
                 QuestManager.Instance.SelectQuest(questId);
             }
 
@@ -64,16 +64,16 @@ public class DialogueData : MonoBehaviour
         }
         else if (currentPiece.targetId != -1)
         {
-            // µã»÷¼ÌĞø£ºÈç¹ûÃ»ÓĞÑ¡Ïî£¬ÔòÖ±½Ó¸³Öµ
-            // targetId = -1£¬½áÊø¶Ô»°
-            // target != -1£¬½øĞĞÌø×ª
+            // ç‚¹å‡»ç»§ç»­ï¼šå¦‚æœæ²¡æœ‰é€‰é¡¹ï¼Œåˆ™ç›´æ¥èµ‹å€¼
+            // targetId = -1ï¼Œç»“æŸå¯¹è¯
+            // target != -1ï¼Œè¿›è¡Œè·³è½¬
             nextPieceId = startPieceId + currentPiece.targetId;
         }
 
-        // 2. Ìø×ªµ½ÏÂÒ»¾ä
+        // 2. è·³è½¬åˆ°ä¸‹ä¸€å¥
         if (nextPieceId != -1)
         {
-            // È¥ DataManager ²éÏÂÒ»¾ä
+            // å» DataManager æŸ¥ä¸‹ä¸€å¥
             if (DataManager.Instance.DialoguePieceMap.
                 TryGetValue(nextPieceId, out var piece))
             {
@@ -83,8 +83,8 @@ public class DialogueData : MonoBehaviour
             }
         }
 
-        // 3. Ã»ÓĞÏÂÒ»¾ä£¬½áÊø¶Ô»°
-        // ²»ÄÜÖ±½Óµ÷ÓÃEndDialogue£¬·ñÔò»á·´¸´µ÷ÓÃDialogueManagerÖĞµÄEndDialogue
+        // 3. æ²¡æœ‰ä¸‹ä¸€å¥ï¼Œç»“æŸå¯¹è¯
+        // ä¸èƒ½ç›´æ¥è°ƒç”¨EndDialogueï¼Œå¦åˆ™ä¼šåå¤è°ƒç”¨DialogueManagerä¸­çš„EndDialogue
         OnUpdateDialogueEvent?.Invoke(null);
     }
 

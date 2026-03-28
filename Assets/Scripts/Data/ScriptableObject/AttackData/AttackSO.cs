@@ -4,22 +4,22 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Data", menuName = "Data/Attack")]
 public class AttackSO : ScriptableObject
 {
-    // ¹¥»÷¶¯»­Ãû³Æ
+    // æ”»å‡»åŠ¨ç”»åç§°
     public string actionName;
-    // ÓëÇ°Ò»¶¯»­µÄ¹ý¶ÈÊ±¼ä
+    // ä¸Žå‰ä¸€åŠ¨ç”»çš„è¿‡åº¦æ—¶é—´
     public float transitionDuration;
-    // ÏÂÒ»Á¬»÷¶¯»­ÏÂ±ê
+    // ä¸‹ä¸€è¿žå‡»åŠ¨ç”»ä¸‹æ ‡
     public int comboStateIndex;
-    // ¿ÉÁ¬»÷Ê±¼ä±ÈÀý£¬×¢ÒâDisableWeaponLogicµÄÊ±¼ä
-    // ·ñÔòÁ¬»÷Ê±WeaponLogic²»»áDisable
+    // å¯è¿žå‡»æ—¶é—´æ¯”ä¾‹ï¼Œæ³¨æ„DisableWeaponLogicçš„æ—¶é—´
+    // å¦åˆ™è¿žå‡»æ—¶WeaponLogicä¸ä¼šDisable
     public float comboAttackTime;
-    // ¹¥»÷Á¦ÏµÊý
+    // æ”»å‡»åŠ›ç³»æ•°
     public float damageCoeff;
-    // ¹¥»÷°ë¾¶
+    // æ”»å‡»åŠå¾„
     public float attackRange;
-    // ¹¥»÷ÔÊÐíµÄ½Ç¶È£¨½Ç¶ÈÖÆ£©
+    // æ”»å‡»å…è®¸çš„è§’åº¦ï¼ˆè§’åº¦åˆ¶ï¼‰
     public float attackAngle;
-    // navMeshStopDistance ÈßÓàÏµÊý£¬Í¨³£ÉèÖÃÎª0.9
+    // navMeshStopDistance å†—ä½™ç³»æ•°ï¼Œé€šå¸¸è®¾ç½®ä¸º0.9
     public float attackDieCoeff;
     public float StopDistance => attackRange * attackDieCoeff;
 

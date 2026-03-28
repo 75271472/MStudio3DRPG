@@ -1,0 +1,421 @@
+﻿assets/resources/dotweensettings.asset.ab
+	Assets/Resources/DOTweenSettings.asset
+assets/resources/gamedata/attackeffect/forcestand.asset.ab
+	Assets/Resources/GameData/AttackEffect/ForceStand.asset
+assets/resources/gamedata/attackeffect/repel.asset.ab
+	Assets/Resources/GameData/AttackEffect/Repel.asset
+assets/resources/gamedata/modifier/characterhealthdamageso.asset.ab
+	Assets/Resources/GameData/Modifier/CharacterHealthDamageSO.asset
+assets/resources/gamedata/modifier/characterhealthso.asset.ab
+	Assets/Resources/GameData/Modifier/CharacterHealthSO.asset
+assets/resources/gamedata/attack/player/playerattack1.asset.ab
+	Assets/Resources/GameData/Attack/Player/PlayerAttack1.asset
+assets/resources/gamedata/attack/player/playerattack2.asset.ab
+	Assets/Resources/GameData/Attack/Player/PlayerAttack2.asset
+assets/resources/gamedata/attack/player/playercombotemplate.asset.ab
+	Assets/Resources/GameData/Attack/Player/PlayerComboTemplate.asset
+assets/resources/gamedata/attack/monster/golem/golemattack1.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Golem/GolemAttack1.asset
+assets/resources/gamedata/attack/monster/golem/golemattack2.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Golem/GolemAttack2.asset
+assets/resources/gamedata/attack/monster/golem/golemcombotemplate1.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Golem/GolemComboTemplate1.asset
+assets/resources/gamedata/attack/monster/golem/golemcombotemplate2.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Golem/GolemComboTemplate2.asset
+assets/resources/gamedata/attack/monster/grunt/gruntattack1.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Grunt/GruntAttack1.asset
+assets/resources/gamedata/attack/monster/grunt/gruntattack2.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Grunt/GruntAttack2.asset
+assets/resources/gamedata/attack/monster/grunt/gruntcombotemplate1.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Grunt/GruntComboTemplate1.asset
+assets/resources/gamedata/attack/monster/grunt/gruntcombotemplate2.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Grunt/GruntComboTemplate2.asset
+assets/resources/gamedata/attack/monster/slime/slimeattack1.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Slime/SlimeAttack1.asset
+assets/resources/gamedata/attack/monster/slime/slimeattack2.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Slime/SlimeAttack2.asset
+assets/resources/gamedata/attack/monster/slime/slimeattack3.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Slime/SlimeAttack3.asset
+assets/resources/gamedata/attack/monster/slime/slimeattack4.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Slime/SlimeAttack4.asset
+assets/resources/gamedata/attack/monster/slime/slimecombotemplate1.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Slime/SlimeComboTemplate1.asset
+assets/resources/gamedata/attack/monster/slime/slimecombotemplate2.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Slime/SlimeComboTemplate2.asset
+assets/resources/gamedata/attack/monster/turtle/turtleattack1.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Turtle/TurtleAttack1.asset
+assets/resources/gamedata/attack/monster/turtle/turtleattack2.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Turtle/TurtleAttack2.asset
+assets/resources/gamedata/attack/monster/turtle/turtlecombotemplate.asset.ab
+	Assets/Resources/GameData/Attack/Monster/Turtle/TurtleComboTemplate.asset
+assets/resources/prefabs/character/golem.prefab.ab
+	Assets/Resources/Prefabs/Character/Golem.prefab
+assets/resources/prefabs/character/grunt.prefab.ab
+	Assets/Resources/Prefabs/Character/Grunt.prefab
+assets/resources/prefabs/character/npc.prefab.ab
+	Assets/Resources/Prefabs/Character/NPC.prefab
+assets/resources/prefabs/character/slime.prefab.ab
+	Assets/Resources/Prefabs/Character/Slime.prefab
+assets/resources/prefabs/character/turtle.prefab.ab
+	Assets/Resources/Prefabs/Character/Turtle.prefab
+assets/resources/prefabs/manager/cameramanager.prefab.ab
+	Assets/Resources/Prefabs/Manager/CameraManager.prefab
+assets/resources/prefabs/manager/dialoguemanager.prefab.ab
+	Assets/Resources/Prefabs/Manager/DialogueManager.prefab
+assets/resources/prefabs/manager/monomanager.prefab.ab
+	Assets/Resources/Prefabs/Manager/MonoManager.prefab
+assets/resources/prefabs/manager/monstermanager.prefab.ab
+	Assets/Resources/Prefabs/Manager/MonsterManager.prefab
+assets/resources/prefabs/manager/mousemanager.prefab.ab
+	Assets/Resources/Prefabs/Manager/MouseManager.prefab
+assets/resources/prefabs/manager/npcmanager.prefab.ab
+	Assets/Resources/Prefabs/Manager/NPCManager.prefab
+assets/resources/prefabs/manager/player.prefab.ab
+	Assets/Resources/Prefabs/Manager/Player.prefab
+assets/resources/prefabs/manager/portalmanager.prefab.ab
+	Assets/Resources/Prefabs/Manager/PortalManager.prefab
+assets/resources/prefabs/manager/questmanager.prefab.ab
+	Assets/Resources/Prefabs/Manager/QuestManager.prefab
+assets/resources/prefabs/particle/rockbreakparticle.prefab.ab
+	Assets/Resources/Prefabs/Particle/RockBreakParticle.prefab
+assets/resources/prefabs/portal/purpleportal.prefab.ab
+	Assets/Resources/Prefabs/Portal/PurplePortal.prefab
+assets/resources/prefabs/portal/redportal.prefab.ab
+	Assets/Resources/Prefabs/Portal/RedPortal.prefab
+assets/resources/prefabs/portal/yellowportal.prefab.ab
+	Assets/Resources/Prefabs/Portal/YellowPortal.prefab
+assets/resources/prefabs/ui/accordionui.prefab.ab
+	Assets/Resources/Prefabs/UI/AccordionUI.prefab
+assets/resources/prefabs/ui/archiveui.prefab.ab
+	Assets/Resources/Prefabs/UI/ArchiveUI.prefab
+assets/resources/prefabs/ui/eventsystem.prefab.ab
+	Assets/Resources/Prefabs/UI/EventSystem.prefab
+assets/resources/prefabs/ui/healthbar.prefab.ab
+	Assets/Resources/Prefabs/UI/HealthBar.prefab
+assets/resources/prefabs/ui/infotxtui.prefab.ab
+	Assets/Resources/Prefabs/UI/InfoTxtUI.prefab
+assets/resources/prefabs/ui/inputactionui.prefab.ab
+	Assets/Resources/Prefabs/UI/InputActionUI.prefab
+assets/resources/prefabs/ui/optionbtnui.prefab.ab
+	Assets/Resources/Prefabs/UI/OptionBtnUI.prefab
+assets/resources/prefabs/ui/overlaycanvas.prefab.ab
+	Assets/Resources/Prefabs/UI/OverlayCanvas.prefab
+assets/resources/prefabs/ui/progressui.prefab.ab
+	Assets/Resources/Prefabs/UI/ProgressUI.prefab
+assets/resources/prefabs/ui/questbtn.prefab.ab
+	Assets/Resources/Prefabs/UI/QuestBtn.prefab
+assets/resources/prefabs/ui/statetxt.prefab.ab
+	Assets/Resources/Prefabs/UI/StateTxt.prefab
+assets/resources/prefabs/ui/worldcanvas.prefab.ab
+	Assets/Resources/Prefabs/UI/WorldCanvas.prefab
+assets/resources/prefabs/weapon/fist.prefab.ab
+	Assets/Resources/Prefabs/Weapon/Fist.prefab
+assets/resources/prefabs/weapon/ramonshield.prefab.ab
+	Assets/Resources/Prefabs/Weapon/RamonShield.prefab
+assets/resources/prefabs/weapon/ramonsword.prefab.ab
+	Assets/Resources/Prefabs/Weapon/RamonSword.prefab
+assets/resources/prefabs/weapon/rock.prefab.ab
+	Assets/Resources/Prefabs/Weapon/Rock.prefab
+assets/resources/prefabs/weapon/shield.prefab.ab
+	Assets/Resources/Prefabs/Weapon/Shield.prefab
+assets/resources/prefabs/weapon/sword.prefab.ab
+	Assets/Resources/Prefabs/Weapon/Sword.prefab
+assets/resources/prefabs/worditem/apple.prefab.ab
+	Assets/Resources/Prefabs/WordItem/Apple.prefab
+assets/resources/prefabs/worditem/mushroom1.prefab.ab
+	Assets/Resources/Prefabs/WordItem/Mushroom1.prefab
+assets/resources/prefabs/worditem/mushroom2.prefab.ab
+	Assets/Resources/Prefabs/WordItem/Mushroom2.prefab
+assets/resources/prefabs/worditem/ramonshield.prefab.ab
+	Assets/Resources/Prefabs/WordItem/RamonShield.prefab
+assets/resources/prefabs/worditem/ramonsword.prefab.ab
+	Assets/Resources/Prefabs/WordItem/RamonSword.prefab
+assets/resources/prefabs/worditem/shield.prefab.ab
+	Assets/Resources/Prefabs/WordItem/Shield.prefab
+assets/resources/prefabs/worditem/sword.prefab.ab
+	Assets/Resources/Prefabs/WordItem/Sword.prefab
+assets/resources/prefabs/ui/itemui/hotitemui.prefab.ab
+	Assets/Resources/Prefabs/UI/ItemUI/HotItemUI.prefab
+assets/resources/prefabs/ui/itemui/inventoryitemui.prefab.ab
+	Assets/Resources/Prefabs/UI/ItemUI/InventoryItemUI.prefab
+assets/resources/prefabs/ui/itemui/playerstateitemui.prefab.ab
+	Assets/Resources/Prefabs/UI/ItemUI/PlayerStateItemUI.prefab
+assets/resources/prefabs/ui/itemui/rewarditemui.prefab.ab
+	Assets/Resources/Prefabs/UI/ItemUI/RewardItemUI.prefab
+assets/resources/prefabs/ui/panel/abupdatepanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/ABUpdatePanel.prefab
+assets/resources/prefabs/ui/panel/archivepanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/ArchivePanel.prefab
+assets/resources/prefabs/ui/panel/dialoguepanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/DialoguePanel.prefab
+assets/resources/prefabs/ui/panel/diepanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/DiePanel.prefab
+assets/resources/prefabs/ui/panel/effectpanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/EffectPanel.prefab
+assets/resources/prefabs/ui/panel/gameoverpanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/GameOverPanel.prefab
+assets/resources/prefabs/ui/panel/hotinventorypanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/HotInventoryPanel.prefab
+assets/resources/prefabs/ui/panel/infopanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/InfoPanel.prefab
+assets/resources/prefabs/ui/panel/inputactionpanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/InputActionPanel.prefab
+assets/resources/prefabs/ui/panel/inventorypanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/InventoryPanel.prefab
+assets/resources/prefabs/ui/panel/itemdescription.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/ItemDescription.prefab
+assets/resources/prefabs/ui/panel/loadscenepanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/LoadScenePanel.prefab
+assets/resources/prefabs/ui/panel/mousefollower.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/MouseFollower.prefab
+assets/resources/prefabs/ui/panel/noticepanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/NoticePanel.prefab
+assets/resources/prefabs/ui/panel/pausepanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/PausePanel.prefab
+assets/resources/prefabs/ui/panel/playerinfopanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/PlayerInfoPanel.prefab
+assets/resources/prefabs/ui/panel/playerstatepanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/PlayerStatePanel.prefab
+assets/resources/prefabs/ui/panel/questpanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/QuestPanel.prefab
+assets/resources/prefabs/ui/panel/startpanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/StartPanel.prefab
+assets/resources/prefabs/ui/panel/tippanel.prefab.ab
+	Assets/Resources/Prefabs/UI/Panel/TipPanel.prefab
+assets/resources/sprites.ab
+	Assets/Resources/Sprites/Apple.png
+	Assets/Resources/Sprites/Fist.png
+	Assets/Resources/Sprites/Icon.png
+	Assets/Resources/Sprites/Mushroom1.png
+	Assets/Resources/Sprites/Mushroom2.png
+	Assets/Resources/Sprites/Pear.png
+	Assets/Resources/Sprites/RamonShield.png
+	Assets/Resources/Sprites/RamonSword.png
+	Assets/Resources/Sprites/Shield.png
+	Assets/Resources/Sprites/Sword.png
+assets/animations/animators/enemygolem.overridecontroller.ab
+	Assets/Animations/Animators/EnemyGolem.overrideController
+assets/assetpacks/mini legion rock golem pbr hp polyart/materials/polyartstandard.mat.ab
+	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Materials/PolyartStandard.mat
+assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/golempolyart.fbx.ab
+	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Meshes/GolemPolyart.fbx
+assets/assetpacks/mini legion grunt pbr hp polyart/mesh/gruntpolyart.fbx.ab
+	Assets/AssetPacks/Mini Legion Grunt PBR HP Polyart/Mesh/GruntPolyart.fbx
+assets/animations/animators/enemygrunt.controller.ab
+	Assets/Animations/Animators/EnemyGrunt.controller
+assets/assetpacks/mini legion grunt pbr hp polyart/material/polyartstandard.mat.ab
+	Assets/AssetPacks/Mini Legion Grunt PBR HP Polyart/Material/PolyartStandard.mat
+assets/assetpacks/rpghero/meshes/polyartsword.fbx.ab
+	Assets/AssetPacks/RPGHero/Meshes/PolyartSword.fbx
+assets/assetpacks/rpghero/materials/polyart.mat.ab
+	Assets/AssetPacks/RPGHero/Materials/PolyArt.mat
+assets/resources/prefabs/ui/rendertexture/npcprofiletexture.rendertexture.ab
+	Assets/Resources/Prefabs/UI/RenderTexture/NPCProfileTexture.renderTexture
+assets/animations/animators/npc.controller.ab
+	Assets/Animations/Animators/NPC.controller
+assets/assetpacks/rpghero/meshes/newfreerpgheropolyart.fbx.ab
+	Assets/AssetPacks/RPGHero/Meshes/NewFreeRPGHeroPolyart.fbx
+assets/assetpacks/rpg monster duo pbr polyart/meshes/slimepolyartmesh.fbx.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Meshes/SlimePolyartMesh.fbx
+assets/animations/animators/enemyslime.controller.ab
+	Assets/Animations/Animators/EnemySlime.controller
+assets/assetpacks/rpg monster duo pbr polyart/materials/polyartdefault.mat.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Materials/PolyartDefault.mat
+assets/animations/animators/enemyturtle.overridecontroller.ab
+	Assets/Animations/Animators/EnemyTurtle.overrideController
+assets/assetpacks/rpg monster duo pbr polyart/meshes/turtleshellpolyartmesh.fbx.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Meshes/TurtleShellPolyartMesh.fbx
+packages/com.unity.cinemachine/presets/noise/6d shake.asset.ab
+	Packages/com.unity.cinemachine/Presets/Noise/6D Shake.asset
+assets/artres/cursor/03.png.ab
+	Assets/ArtRes/Cursor/03.png
+assets/artres/cursor/04.png.ab
+	Assets/ArtRes/Cursor/04.png
+assets/artres/cursor/01.png.ab
+	Assets/ArtRes/Cursor/01.png
+assets/artres/cursor/02.png.ab
+	Assets/ArtRes/Cursor/02.png
+assets/artres/cursor/05.png.ab
+	Assets/ArtRes/Cursor/05.png
+assets/assetpacks/dogknight/material/polyart.mat.ab
+	Assets/AssetPacks/DogKnight/Material/Polyart.mat
+assets/assetpacks/dogknight/mesh/dogpolyart.fbx.ab
+	Assets/AssetPacks/DogKnight/Mesh/DogPolyart.fbx
+assets/resources/prefabs/ui/rendertexture/playertexture.rendertexture.ab
+	Assets/Resources/Prefabs/UI/RenderTexture/PlayerTexture.renderTexture
+assets/animations/animators/player.controller.ab
+	Assets/Animations/Animators/Player.controller
+assets/resources/prefabs/ui/rendertexture/playerprofiletexture.rendertexture.ab
+	Assets/Resources/Prefabs/UI/RenderTexture/PlayerProfileTexture.renderTexture
+assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/rockmesh.fbx.ab
+	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Meshes/RockMesh.fbx
+assets/materials/greenportal.mat.ab
+	Assets/Materials/GreenPortal.mat
+assets/materials/redportal.mat.ab
+	Assets/Materials/RedPortal.mat
+assets/materials/yellowpartal.mat.ab
+	Assets/Materials/YellowPartal.mat
+assets/artres/font/汉仪超级战甲.ttf.ab
+	Assets/ArtRes/Font/汉仪超级战甲.ttf
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board small  stone.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small  stone.png
+assets/assetpacks/simple fantasy gui/png/quest panel/reward_slot.png.ab
+	Assets/AssetPacks/Simple Fantasy GUI/PNG/Quest Panel/Reward_Slot.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony title  empty.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/IRONY TITLE  empty.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium stone.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium stone.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_medium.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/TextBTN_Medium.png
+packages/com.unity.inputsystem/inputsystem/plugins/playerinput/defaultinputactions.inputactions.ab
+	Packages/com.unity.inputsystem/InputSystem/Plugins/PlayerInput/DefaultInputActions.inputactions
+assets/artres/bar/healthbareffect.png.ab
+	Assets/ArtRes/Bar/HealthBarEffect.png
+assets/artres/bar/healthbarbg.png.ab
+	Assets/ArtRes/Bar/HealthBarBG.png
+assets/artres/bar/monster/healthbar.png.ab
+	Assets/ArtRes/Bar/Monster/HealthBar.png
+assets/artres/font/high-jinks-1.otf.ab
+	Assets/ArtRes/Font/High-Jinks-1.otf
+assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
+	Assets/AssetPacks/DogKnight/Mesh/ShieldPolyart.fbx
+assets/assetpacks/rpghero/meshes/polyartshield.fbx.ab
+	Assets/AssetPacks/RPGHero/Meshes/PolyartShield.fbx
+assets/assetpacks/dogknight/mesh/swordpolyart.fbx.ab
+	Assets/AssetPacks/DogKnight/Mesh/SwordPolyart.fbx
+assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/materials/palette256bitsgradient.mat.ab
+	Assets/AssetPacks/ResilientLogicGames/FruitsLowPolyPackLite/Materials/Palette256bitsGradient.mat
+assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/apple_lp.fbx.ab
+	Assets/AssetPacks/ResilientLogicGames/FruitsLowPolyPackLite/Models/Apple_LP.fbx
+assets/assetpacks/simplenaturepack/models/mushroom_01.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Mushroom_01.fbx
+assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+	Assets/AssetPacks/SimpleNaturePack/Materials/SimpleNaturePack_Texture_01.mat
+assets/assetpacks/simplenaturepack/models/mushroom_02.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Mushroom_02.fbx
+assets/assetpacks/cryo's mini gui/gui/gui_1x.png.ab
+	Assets/AssetPacks/Cryo's Mini GUI/GUI/GUI_1x.png
+assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab
+	Assets/AssetPacks/Simple Fantasy GUI/PNG/Inventory/Inventory_Slot.png
+assets/assetpacks/simple fantasy gui/png/quest panel/crystal_icon.png.ab
+	Assets/AssetPacks/Simple Fantasy GUI/PNG/Quest Panel/Crystal_Icon.png
+assets/assetpacks/simple fantasy gui/png/icons/sword_icon.png.ab
+	Assets/AssetPacks/Simple Fantasy GUI/PNG/Icons/Sword_Icon.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board small  parchment.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small  parchment.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_big.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/TextBTN_Big.png
+assets/artres/bar/expbar/expbarbg.png.ab
+	Assets/ArtRes/Bar/ExpBar/ExpBarBG.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large set.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large Set.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony title  large.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/IRONY TITLE  Large.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/close button.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/Close Button.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large  parchment.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large  parchment.png
+assets/assetpacks/simple fantasy gui/png/icons/close_icon.png.ab
+	Assets/AssetPacks/Simple Fantasy GUI/PNG/Icons/Close_Icon.png
+assets/materials/vignettemat.mat.ab
+	Assets/Materials/VignetteMat.mat
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium  parchment.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium  parchment.png
+assets/assetpacks/simple fantasy gui/png/character panel/nickname_slot.png.ab
+	Assets/AssetPacks/Simple Fantasy GUI/PNG/Character Panel/Nickname_Slot.png
+assets/artres/bar/player/healthbar.png.ab
+	Assets/ArtRes/Bar/Player/HealthBar.png
+assets/artres/bar/player/healthbarbg.png.ab
+	Assets/ArtRes/Bar/Player/HealthBarBG.png
+assets/artres/bar/expbar/expbar.png.ab
+	Assets/ArtRes/Bar/ExpBar/ExpBar.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large stone.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large stone.png
+assets/assetpacks/simple fantasy gui/png/icons/shield_icon.png.ab
+	Assets/AssetPacks/Simple Fantasy GUI/PNG/Icons/Shield_Icon.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium set.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium Set.png
+assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/exclamation_yellow.png.ab
+	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/Exclamation_Yellow.png
+assets/assetpacks/mini legion rock golem pbr hp polyart/animations/idle.anim.ab
+	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Animations/Idle.anim
+assets/assetpacks/mini legion rock golem pbr hp polyart/animations/die.anim.ab
+	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Animations/Die.anim
+assets/assetpacks/mini legion rock golem pbr hp polyart/animations/walk.anim.ab
+	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Animations/Walk.anim
+assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack1.anim.ab
+	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack1.anim
+assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack2.anim.ab
+	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack2.anim
+assets/assetpacks/mini legion rock golem pbr hp polyart/animations/gethit.anim.ab
+	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Animations/GetHit.anim
+assets/assetpacks/mini legion rock golem pbr hp polyart/textures/polyartstandard.png.ab
+	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Textures/PolyartStandard.png
+packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+	Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader
+packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+	Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
+assets/assetpacks/mini legion grunt pbr hp polyart/textures/polyartstandard.png.ab
+	Assets/AssetPacks/Mini Legion Grunt PBR HP Polyart/Textures/PolyartStandard.png
+assets/assetpacks/rpghero/textures/polyarttexture.png.ab
+	Assets/AssetPacks/RPGHero/Textures/PolyArtTexture.png
+assets/assetpacks/rpghero/animations/idle_swordshield.anim.ab
+	Assets/AssetPacks/RPGHero/Animations/Idle_SwordShield.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/slime/runfwd.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/RunFWD.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlebattle.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/IdleBattle.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack01.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Attack01.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlenormal.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/IdleNormal.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack01.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/Attack01.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/slime/die.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/Die.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/slime/walkfwd.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/WalkFWD.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack02.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/Attack02.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack02.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Attack02.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/slime/gethit.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/GetHit.anim
+assets/assetpacks/rpg monster duo pbr polyart/textures/emission.png.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Textures/Emission.png
+assets/assetpacks/rpg monster duo pbr polyart/textures/albedo.png.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Textures/Albedo.png
+assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/runfwd.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/RunFWD.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlebattle.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/IdleBattle.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/gethit.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/GetHit.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/walkfwd.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/WalkFWD.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/die.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/Die.anim
+assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlenormal.anim.ab
+	Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/IdleNormal.anim
+assets/assetpacks/dogknight/texture/standardalbedo.png.ab
+	Assets/AssetPacks/DogKnight/Texture/StandardAlbedo.png
+assets/assetpacks/dogknight/animations/gethit.anim.ab
+	Assets/AssetPacks/DogKnight/Animations/GetHit.anim
+assets/assetpacks/dogknight/animations/die.anim.ab
+	Assets/AssetPacks/DogKnight/Animations/Die.anim
+assets/assetpacks/dogknight/animations/attack02.anim.ab
+	Assets/AssetPacks/DogKnight/Animations/Attack02.anim
+assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab
+	Assets/AssetPacks/DogKnight/Animations/RunForwardBattle.anim
+assets/assetpacks/dogknight/animations/idle_battle.anim.ab
+	Assets/AssetPacks/DogKnight/Animations/Idle_Battle.anim
+assets/assetpacks/dogknight/animations/attack01.anim.ab
+	Assets/AssetPacks/DogKnight/Animations/Attack01.anim
+assets/materials/shader/portal.shadergraph.ab
+	Assets/Materials/Shader/Portal.shadergraph
+assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/palettes/palette256bitsgradient.png.ab
+	Assets/AssetPacks/ResilientLogicGames/FruitsLowPolyPackLite/Palettes/Palette256bitsGradient.png
+assets/assetpacks/simplenaturepack/textures/naturepacklite_texture_01.png.ab
+	Assets/AssetPacks/SimpleNaturePack/Textures/NaturePackLite_Texture_01.png
+assets/materials/shader/simplevigetee.shader.ab
+	Assets/Materials/Shader/SimpleVigetee.shader

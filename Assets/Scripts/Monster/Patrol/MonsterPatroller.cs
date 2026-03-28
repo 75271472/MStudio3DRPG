@@ -7,7 +7,7 @@ public class MonsterPatroller : MonoBehaviour
 {
     public int Id { get; private set; }
 
-    // Ñ²Âß°ë¾¶
+    // å·¡é€»åŠå¾„
     [SerializeField] private float patrolRange;
     [SerializeField] private List<MonsterPatrol> patrolList = 
         new List<MonsterPatrol>();
@@ -15,7 +15,7 @@ public class MonsterPatroller : MonoBehaviour
 
     private const string navMeshLayerMask = "Walkable";
 
-    // Ñ²Âß»ùµã
+    // å·¡é€»åŸºç‚¹
     private Vector3 basePos;
     private int patrolIndex;
     private GameObject basePatrol;
@@ -31,7 +31,7 @@ public class MonsterPatroller : MonoBehaviour
 
     public GameObject GetPatrolPos()
     {
-        // Èç¹ûÊØÎÀÎªGuard×´Ì¬£¬ÔòÓÀÔ¶·µ»ØÑ²Âß»ùµã
+        // å¦‚æœå®ˆå«ä¸ºGuardçŠ¶æ€ï¼Œåˆ™æ°¸è¿œè¿”å›å·¡é€»åŸºç‚¹
         if (MonsterManager.Instance.GetMonster(Id).MonsterData.MoveType ==
             EMonsterMoveType.Guard)
         {
@@ -69,9 +69,9 @@ public class MonsterPatroller : MonoBehaviour
             radius * patrolRange;
         
         NavMeshHit hit = new NavMeshHit();
-        // TODO:MonsterÎ»ÓÚÉ½ÑÂµÈ´¹Ö±Âä²î½Ï´óµÄµØµãÊ±£¬Ëæ»úÄ¿±êµãÓĞ¿ÉÄÜÉú³ÉÔÚÉ½ÄÚ»ò¿ÕÖĞ
-        // µ¼ÖÂMonsterÎŞ·¨µ½´ï
-        // Èç¹ûËæ»úµÄÄ¿±êÇøÓò²»¿É´ï£¬ÔòÖØĞÂ»ñÈ¡Ëæ»úÄ¿±êµã
+        // TODO:Monsterä½äºå±±å´–ç­‰å‚ç›´è½å·®è¾ƒå¤§çš„åœ°ç‚¹æ—¶ï¼Œéšæœºç›®æ ‡ç‚¹æœ‰å¯èƒ½ç”Ÿæˆåœ¨å±±å†…æˆ–ç©ºä¸­
+        // å¯¼è‡´Monsteræ— æ³•åˆ°è¾¾
+        // å¦‚æœéšæœºçš„ç›®æ ‡åŒºåŸŸä¸å¯è¾¾ï¼Œåˆ™é‡æ–°è·å–éšæœºç›®æ ‡ç‚¹
         if (!NavMesh.SamplePosition(basePatrol.transform.position, out hit,
             patrolRange, 1 << NavMesh.GetAreaFromName(navMeshLayerMask)))
             return GetRandomPatrolPos();

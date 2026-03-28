@@ -10,7 +10,7 @@ public class PlayerRunState : PlayerLocomotionState
     private MouseTarget targetObj;
     private float stopDistance;
     private float stopAngle;
-    // Ä¿±êÊÇ·ñÎªMonster
+    // ç›®æ ‡æ˜¯å¦ä¸ºMonster
     private bool isChasing;
 
     public PlayerRunState(PlayerStateMachine stateMachine, 
@@ -22,7 +22,7 @@ public class PlayerRunState : PlayerLocomotionState
 
     public override void Enter()
     {
-        // target = null»ò MonsterÒÑËÀ
+        // target = nullæˆ– Monsterå·²æ­»
         if (!stateMachine.Agent.enabled || targetObj == null || 
             targetObj is EnemyTarget && IsMonsterDie(targetObj))
         {
@@ -32,11 +32,11 @@ public class PlayerRunState : PlayerLocomotionState
 
         base.Enter();
 
-        // target != null ²¢ÇÒ Monster´æ»î »ò µã»÷µØÃæ
+        // target != null å¹¶ä¸” Monsterå­˜æ´» æˆ– ç‚¹å‡»åœ°é¢
         SetRun();
-        // ÔÙ´Îµã»÷Ê±ÖØĞÂ½øÈë×´Ì¬£¬
-        // ·ñÔòÈôÖ®Ç°RunÎªµã»÷GourndÊ±½øÈë
-        // Èç¹û´ËÊ±µã»÷Monster£¬IsChasieÈÔÎ´Ö®Ç°µÄfalse£¬
+        // å†æ¬¡ç‚¹å‡»æ—¶é‡æ–°è¿›å…¥çŠ¶æ€ï¼Œ
+        // å¦åˆ™è‹¥ä¹‹å‰Runä¸ºç‚¹å‡»Gourndæ—¶è¿›å…¥
+        // å¦‚æœæ­¤æ—¶ç‚¹å‡»Monsterï¼ŒIsChasieä»æœªä¹‹å‰çš„falseï¼Œ
         MouseManager.Instance.OnMoveEvent += OnRunHandler;
     }
 
@@ -56,7 +56,7 @@ public class PlayerRunState : PlayerLocomotionState
 
     private void SetRun()
     {
-        // ÊÇ·ñµã»÷Monster »òµã»÷ ¿É´İ»ÙÎïÌå
+        // æ˜¯å¦ç‚¹å‡»Monster æˆ–ç‚¹å‡» å¯æ‘§æ¯ç‰©ä½“
         isChasing = IsMonsterAlive(targetObj) || targetObj is DestructibleTarget;
 
         if (isChasing)
@@ -71,20 +71,20 @@ public class PlayerRunState : PlayerLocomotionState
 
     private void CheckRun()
     {
-        // targetObj = null »ò ³õÊ¼Ä¿±êÎªMonsterµ«Monster.IsActiveTarget = false£¨Ä¿±êËÀÍö£©
+        // targetObj = null æˆ– åˆå§‹ç›®æ ‡ä¸ºMonsterä½†Monster.IsActiveTarget = falseï¼ˆç›®æ ‡æ­»äº¡ï¼‰
         if (targetObj == null || targetObj is EnemyTarget && IsMonsterDie(targetObj))
         {
             stateMachine.SwitchState(new PlayerIdleState(stateMachine));
             return;
         }
 
-        // ÏòMonster»òDestructibleÒÆ¶¯×´Ì¬ÏÂ
+        // å‘Monsteræˆ–Destructibleç§»åŠ¨çŠ¶æ€ä¸‹
         if (isChasing)
         {
             if (!stateMachine.transform.IsTargetInAreaByRay(targetObj.gameObject, 
                 stopDistance, stopAngle))
             {
-                // ¸üĞÂMonsterÎ»ÖÃºÍ¹¥»÷³¯Ïò
+                // æ›´æ–°Monsterä½ç½®å’Œæ”»å‡»æœå‘
                 stateMachine.Agent.destination = targetObj.transform.position;
                 stateMachine.transform.UpdateLookToTarget(targetObj.gameObject,
                     stateMachine.PlayerMoveSO.angularSpeed);
@@ -92,13 +92,13 @@ public class PlayerRunState : PlayerLocomotionState
                 return;
             }
         }
-        // ÏòTargetÒÆ¶¯×´Ì¬ÏÂ
+        // å‘Targetç§»åŠ¨çŠ¶æ€ä¸‹
         else
         {
             if (!stateMachine.transform.IsTargetInDistance(targetObj.gameObject, 
                 stopDistance))
             {
-                // Ö»¸üĞÂMonsterÎ»ÖÃ
+                // åªæ›´æ–°Monsterä½ç½®
                 stateMachine.Agent.destination = targetObj.transform.position;
 
                 return;

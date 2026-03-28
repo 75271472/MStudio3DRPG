@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 648342473
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4e3bfe01932ad0ccdca72e9ff61213e8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4e3bfe01932ad0ccdca72e9ff61213e8
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/ResilientLogicGames/FruitsLowPolyPackLite/Materials/Palette256bitsGradient.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/palettes/palette256bitsgradient.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab

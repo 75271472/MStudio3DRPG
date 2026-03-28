@@ -25,11 +25,11 @@ public class DialogueTrigger : MonoBehaviour, IInteractable
 
     public void DialogueInvoke(string inputStr = null)
     {
-        // °ó¶¨ÊäÈë°´¼ü
+        // ç»‘å®šè¾“å…¥æŒ‰é”®
         UIManager.Instance.ShowPanel<InputActionPanel>().AddInput(
             inputStr == null ? this.inputStr : inputStr, () => {
-                // ĞŞ¸Äµã£º²»ÔÙ×Ô¼º¼ÆËã Index£¬¶øÊÇÖ±½Ó°Ñ NPC ID ÈÓ¸ø Manager
-                // Manager »áÈ¥ DataManager Àï²é±í¼ÆËã
+                // ä¿®æ”¹ç‚¹ï¼šä¸å†è‡ªå·±è®¡ç®— Indexï¼Œè€Œæ˜¯ç›´æ¥æŠŠ NPC ID æ‰”ç»™ Manager
+                // Manager ä¼šå» DataManager é‡ŒæŸ¥è¡¨è®¡ç®—
                 DialogueInvokeDirectly();
 
                 UIManager.Instance.HidePanel<InputActionPanel>();
@@ -39,7 +39,7 @@ public class DialogueTrigger : MonoBehaviour, IInteractable
     }
 
     /// <summary>
-    /// ²»µ¯InputActionPanel£¬Ö±½Ó´¥·¢¶Ô»°
+    /// ä¸å¼¹InputActionPanelï¼Œç›´æ¥è§¦å‘å¯¹è¯
     /// </summary>
     public void DialogueInvokeDirectly()
     {
@@ -58,7 +58,7 @@ public class DialogueTrigger : MonoBehaviour, IInteractable
     {
         if (gameObject.TryGetComponent<QuestCondition>(out var condition))
             return condition.CheckCondition();
-        // µ±Ã»ÓĞQuestCondition×é¼şÊ±ÊÇ·ñÔÊĞí
+        // å½“æ²¡æœ‰QuestConditionç»„ä»¶æ—¶æ˜¯å¦å…è®¸
         return true;
     }
 }

@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 216313939
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 20c2bd922565e32d79cd3da4f4e0c6e6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bed96176f3458eb3826700299c41fa87
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 20c2bd922565e32d79cd3da4f4e0c6e6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 26890c5954a2a2d41a1c823dbbb11bae, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.RectOffset
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Resources/Prefabs/UI/Panel/InputActionPanel.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/fantasy wooden
+  gui  free/normal_ui_set a/ui board medium  parchment.png.ab

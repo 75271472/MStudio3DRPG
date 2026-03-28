@@ -34,7 +34,7 @@ public class InputManager : BaseManager<InputManager>, InputControler.IPlayerAct
         inputControler.Enable();
     }
 
-    // Ã¿´ÎÌí¼ÓÊÂ¼şºó£¬¼ÇµÃÔÚ´ËÊ±Ìí¼ÓÖÃ¿ÕÓï¾ä
+    // æ¯æ¬¡æ·»åŠ äº‹ä»¶åï¼Œè®°å¾—åœ¨æ­¤æ—¶æ·»åŠ ç½®ç©ºè¯­å¥
     public void ResetInputAction()
     {
         OnHorizontalEvent = null;

@@ -1,12 +1,12 @@
 /// <summary>
-/// ×´Ì¬Óë¶Ô»°µÄÓ³Éä
-/// Ò»¸öÈÎÎñ¶ÔÓ¦Ò»Binding
+/// çŠ¶æ€ä¸å¯¹è¯çš„æ˜ å°„
+/// ä¸€ä¸ªä»»åŠ¡å¯¹åº”ä¸€Binding
 /// </summary>
 [System.Serializable]
 public class QuestDialogueBinding
 {
     public int characterId;
-    public int questId;              // °ó¶¨µÄÈÎÎñID
+    public int questId;              // ç»‘å®šçš„ä»»åŠ¡ID
 
     public int notAcceptedDialogueId = -1;
     public int startDialogueId = -1;

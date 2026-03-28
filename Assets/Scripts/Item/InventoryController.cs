@@ -15,12 +15,12 @@ public class InventoryController : MonoBehaviour
     public const int HotItemQuantitty = 8;
     public const int PlayerStateItemQuantity = 2;
 
-    // ÏòÍâ²¿¹ã²¥±³°üÖĞµÄÎïÆ·
+    // å‘å¤–éƒ¨å¹¿æ’­èƒŒåŒ…ä¸­çš„ç‰©å“
     public event Action<InventoryItemInfo> OnCheckItemEvent, OnRemoveItemEvent;
-    // ×°±¸ÎïÆ·ÊÂ¼ş£¬¹©PlayerData¼àÌıÖ´ĞĞOnEnqupHandler£¬ÔÚÖ´ĞĞOnEquipItemEvent½«ÏûÏ¢·Ö·¢¸øÍâ²¿
+    // è£…å¤‡ç‰©å“äº‹ä»¶ï¼Œä¾›PlayerDataç›‘å¬æ‰§è¡ŒOnEnqupHandlerï¼Œåœ¨æ‰§è¡ŒOnEquipItemEventå°†æ¶ˆæ¯åˆ†å‘ç»™å¤–éƒ¨
     public event Action<EquippableItemInfo> OnEquipEvent, 
-    // ´ËÊ±OnUnloadEventÖĞ´«ÈëµÄitemInfoÎª¿Õ£¬StateItemUIÖĞµÄÎïÆ·ÒÑ±»Ğ¶ÏÂºó
-    // Ö´ĞĞ¸Ã»Øµ÷
+    // æ­¤æ—¶OnUnloadEventä¸­ä¼ å…¥çš„itemInfoä¸ºç©ºï¼ŒStateItemUIä¸­çš„ç‰©å“å·²è¢«å¸ä¸‹å
+    // æ‰§è¡Œè¯¥å›è°ƒ
         OnUnloadEvent;
 
     [SerializeField] private List<InventoryItemInfo> itemInfoList =
@@ -28,15 +28,15 @@ public class InventoryController : MonoBehaviour
 
     private int currentDraggedItemIndex = -1;
 
-    // Á½¸öÃæ°å¶¼²»¿ªÆôÇé¿öÏÂisPanelOpen = false
-    // Á½¸öÃæ°åÓĞÒ»¸ö¿ªÆôÇé¿öÏÂ£¬isPanelOpen = true
+    // ä¸¤ä¸ªé¢æ¿éƒ½ä¸å¼€å¯æƒ…å†µä¸‹isPanelOpen = false
+    // ä¸¤ä¸ªé¢æ¿æœ‰ä¸€ä¸ªå¼€å¯æƒ…å†µä¸‹ï¼ŒisPanelOpen = true
     private bool IsPanelOpen => InventoryPanel.isActiveAndEnabled || 
         PlayerStatePanel.isActiveAndEnabled;
 
     /// <summary>
-    /// ³õÊ¼»¯±³°ü
+    /// åˆå§‹åŒ–èƒŒåŒ…
     /// </summary>
-    /// <param name="character">±³°üËùÓĞÕß</param>
+    /// <param name="character">èƒŒåŒ…æ‰€æœ‰è€…</param>
     public void InventoryControllerInit(ICharacter character)
     {
         OnEquipEvent = null;
@@ -46,11 +46,11 @@ public class InventoryController : MonoBehaviour
 
         this.Character = character;
 
-        // È·±£Ê°È¡½Å±¾ºÍ²Ö¿â¿ØÖÆÆ÷´¦ÓÚÍ¬Ò»¶ÔÏóÉÏ
+        // ç¡®ä¿æ‹¾å–è„šæœ¬å’Œä»“åº“æ§åˆ¶å™¨å¤„äºåŒä¸€å¯¹è±¡ä¸Š
         ItemPickUp = GetComponent<ItemPickUp>();
         InventoryData = GetComponent<InventoryData>();
 
-        // Data³õÊ¼»¯Ç°£¬È·±£¾ÉµÄPanel±»É¾³ı£¬ĞÂµÄPanel±»´´½¨
+        // Dataåˆå§‹åŒ–å‰ï¼Œç¡®ä¿æ—§çš„Panelè¢«åˆ é™¤ï¼Œæ–°çš„Panelè¢«åˆ›å»º
         UIManager.Instance.HidePanel<InventoryPanel>();
         UIManager.Instance.HidePanel<HotInventoryPanel>();
         UIManager.Instance.HidePanel<PlayerStatePanel>();
@@ -68,11 +68,11 @@ public class InventoryController : MonoBehaviour
         ItemPickUp.ItemPickUpInit(this);
 
         InputManager.Instance.OnOpenBagEvent += SwitchPanel;
-        // ½ÓÊÜÈÎÎñÊ±£¬¼ì²é²Ö¿âÖĞµÄËùÓĞÎïÆ·
+        // æ¥å—ä»»åŠ¡æ—¶ï¼Œæ£€æŸ¥ä»“åº“ä¸­çš„æ‰€æœ‰ç‰©å“
         QuestManager.Instance.OnStartQusetEvent += (Quest) =>
             OnCheckInventoryHandler();
         
-        // ³õÊ¼»¯Ö´ĞĞÍê±Ïºó¸üĞÂUIÃæ°å£¬ÏÔÊ¾InventoryDataÖĞ¼ÓÔØµÄÊı¾İ
+        // åˆå§‹åŒ–æ‰§è¡Œå®Œæ¯•åæ›´æ–°UIé¢æ¿ï¼Œæ˜¾ç¤ºInventoryDataä¸­åŠ è½½çš„æ•°æ®
         InventoryData.UpdateInventory();
     }
 
@@ -82,11 +82,11 @@ public class InventoryController : MonoBehaviour
         {
             InventoryPanel.HideMe();
             PlayerStatePanel.HideMe();
-            // ×¢Òâ²»ÄÜÔÙInventoryPanelÖĞ¿ØÖÆPlayerÊÇ·ñÔİÍ£
-            // InventoryControllerÏàµ±ÓÚ·â×°ÁËÒ»²ãInventoryPanelµÄShowºÍHide
-            // Ô­±¾UIManagerµÄShowºÍHide»áÉú³ÉºÍÏú»ÙÃæ°å¶ÔÏó
-            // ·â×°ºóÊ×ÏÈÉú³ÉÃæ°å¶ÔÏó£¬ShowºÍHideÊÇÏÔÊ¾ºÍÒş²ØÃæ°å¶ÔÏó
-            // Òò´Ë²»ÄÜÖ±½ÓÔÙInventoryPanelµÄShowMeºÍHideMeÖĞµ÷ÓÃPause»òUnPause
+            // æ³¨æ„ä¸èƒ½å†InventoryPanelä¸­æ§åˆ¶Playeræ˜¯å¦æš‚åœ
+            // InventoryControllerç›¸å½“äºå°è£…äº†ä¸€å±‚InventoryPanelçš„Showå’ŒHide
+            // åŸæœ¬UIManagerçš„Showå’ŒHideä¼šç”Ÿæˆå’Œé”€æ¯é¢æ¿å¯¹è±¡
+            // å°è£…åé¦–å…ˆç”Ÿæˆé¢æ¿å¯¹è±¡ï¼ŒShowå’ŒHideæ˜¯æ˜¾ç¤ºå’Œéšè—é¢æ¿å¯¹è±¡
+            // å› æ­¤ä¸èƒ½ç›´æ¥å†InventoryPanelçš„ShowMeå’ŒHideMeä¸­è°ƒç”¨Pauseæˆ–UnPause
             OnPlayerUnPauseHandler();
         }
         else
@@ -106,7 +106,7 @@ public class InventoryController : MonoBehaviour
         InventoryData.InventoryDataInit();
         InventoryData.OnInventoryUpdatedEvent += UpdateInventoryPanel;
 
-        // ²âÊÔ´úÂë
+        // æµ‹è¯•ä»£ç 
         //InventoryData.ClearItem();
 
         //foreach (var itemInfo in itemInfoList)
@@ -152,7 +152,7 @@ public class InventoryController : MonoBehaviour
         HotInventoryPanel.OnPlayerPauseEvent += OnPlayerPauseHandler;
         HotInventoryPanel.OnPlayerUnPauseEvent += OnPlayerUnPauseHandler;
 
-        // Initº¯ÊıÖĞ»áÓÃµ½OnResetDragHandler»Øµ÷£¬Òò´ËÏÈ×¢²áÊÂ¼şÔÚ³õÊ¼»¯
+        // Initå‡½æ•°ä¸­ä¼šç”¨åˆ°OnResetDragHandlerå›è°ƒï¼Œå› æ­¤å…ˆæ³¨å†Œäº‹ä»¶åœ¨åˆå§‹åŒ–
         HotInventoryPanel.HotInventoryInit();
     }
 
@@ -231,7 +231,7 @@ public class InventoryController : MonoBehaviour
         InventoryData.SaveItem();
     }
 
-    // ÎªPlayerStateÖĞËùÓĞÒÑ×°±¸µÄÎïÆ·Ö´ĞĞOnEquipEvent
+    // ä¸ºPlayerStateä¸­æ‰€æœ‰å·²è£…å¤‡çš„ç‰©å“æ‰§è¡ŒOnEquipEvent
     public void UpdateEquipEvent()
     {
         IndexInfo indexInfo = new IndexInfo(EInventoryPanel.PlayerState, -1);
@@ -273,29 +273,29 @@ public class InventoryController : MonoBehaviour
 
     public bool EquipItem(EquippableItemInfo itemInfo, int itemIndex)
     {
-        // ´ÓPlayerStatePanelÖĞ²éÕÒ¸ÃÀàĞÍ×°±¸µÄÎïÆ·À¸ÏÂ±ê£¨ÔÚPanelÖĞµÄÏÂ±ê£©
+        // ä»PlayerStatePanelä¸­æŸ¥æ‰¾è¯¥ç±»å‹è£…å¤‡çš„ç‰©å“æ ä¸‹æ ‡ï¼ˆåœ¨Panelä¸­çš„ä¸‹æ ‡ï¼‰
         int itemIndexInPanel = PlayerStatePanel.GetEquippableItemIndex(itemInfo.
             equippableItemType);
         if (itemIndexInPanel == -1) return false;
 
-        // Òª×°±¸µ½µÄÎïÆ·À¸ÔÚDataÖĞµÄÏÂ±ê
+        // è¦è£…å¤‡åˆ°çš„ç‰©å“æ åœ¨Dataä¸­çš„ä¸‹æ ‡
         currentDraggedItemIndex = itemIndex;
-        // ½»»»Á½ÎïÆ·
+        // äº¤æ¢ä¸¤ç‰©å“
         OnSwapItemHandler(new IndexInfo(EInventoryPanel.PlayerState, itemIndexInPanel));
 
         return true;
     }
 
     /// <summary>
-    /// ½«PlayerStateÖĞµÄÎïÆ·Ğ¶µ½±³°üÖĞ
+    /// å°†PlayerStateä¸­çš„ç‰©å“å¸åˆ°èƒŒåŒ…ä¸­
     /// </summary>
-    /// <param name="itemInfo">ÒªĞ¶ÏÂµÄÎïÆ·</param>
-    /// <param name="itemIndex">Ğ¶ÏÂÎïÆ·µÄDataÏÂ±ê</param>
+    /// <param name="itemInfo">è¦å¸ä¸‹çš„ç‰©å“</param>
+    /// <param name="itemIndex">å¸ä¸‹ç‰©å“çš„Dataä¸‹æ ‡</param>
     /// <returns></returns>
     public bool UnloadItem(EquippableItemInfo itemInfo, int itemIndex)
     {
         int itemIndexInData = InventoryData.GetEmptyItem();
-        // ÎïÆ·À¸ÒÑÂú
+        // ç‰©å“æ å·²æ»¡
         if (itemIndexInData == -1) return false;
 
         currentDraggedItemIndex = itemIndex;
@@ -421,7 +421,7 @@ public class InventoryController : MonoBehaviour
     }
 
     /// <summary>
-    /// ÏÔÊ¾Ãæ°åÔÙÖ´ĞĞPerformAction
+    /// æ˜¾ç¤ºé¢æ¿å†æ‰§è¡ŒPerformAction
     /// </summary>
     /// <param name="indexInfo"></param>
     private void OnItemActionRequestHandler(IndexInfo indexInfo)
@@ -431,21 +431,21 @@ public class InventoryController : MonoBehaviour
         if (inventoryItem.IsEmpty) return;
 
         GetPanel(indexInfo).ResetSelection();
-        // ÏÈÒş²ØÃæ°å£¬È¥µôÃæ°åÖĞµÄÒÑÓĞÊÂ¼ş
+        // å…ˆéšè—é¢æ¿ï¼Œå»æ‰é¢æ¿ä¸­çš„å·²æœ‰äº‹ä»¶
         GetPanel(indexInfo).HideItemAction();
 
-        // ÎïÆ·Îª¿É×°±¸ÎïÆ· µ¥¶À´¦Àí
+        // ç‰©å“ä¸ºå¯è£…å¤‡ç‰©å“ å•ç‹¬å¤„ç†
         if (inventoryItem.itemInfo is EquippableItemInfo equippableItemInfo)
         {
-            // ×°±¸²»Î»ÓÚPlayerState
-            // Ö»ÓĞµ±×°±¸Î»ÓÚPlayerState²Å¿ÉDrop
+            // è£…å¤‡ä¸ä½äºPlayerState
+            // åªæœ‰å½“è£…å¤‡ä½äºPlayerStateæ‰å¯Drop
             if (indexInfo.panelType != EInventoryPanel.PlayerState)
             {
                 GetPanel(indexInfo).ShowItemAction(indexInfo.index);
                 GetPanel(indexInfo).AddAction("Equip", () =>
                     EquipItem(equippableItemInfo, GetIndex(indexInfo)));
 
-                // ÎïÆ·Îª¿ÉÒÆ³ıÎïÆ·
+                // ç‰©å“ä¸ºå¯ç§»é™¤ç‰©å“
                 if (inventoryItem.itemInfo is IDestroyableItem itemDestroy)
                 {
                     GetPanel(indexInfo).ShowItemAction(indexInfo.index);
@@ -453,7 +453,7 @@ public class InventoryController : MonoBehaviour
                         DropItem(GetIndex(indexInfo), inventoryItem.quantity));
                 }
             }
-            // ×°±¸Î»ÓÚPlayerState
+            // è£…å¤‡ä½äºPlayerState
             else
             {
                 GetPanel(indexInfo).ShowItemAction(indexInfo.index);
@@ -463,14 +463,14 @@ public class InventoryController : MonoBehaviour
         }
         else
         {
-            // ÎïÆ·Îª¿ÉÖ´ĞĞ²Ù×÷µÄÎïÆ·
+            // ç‰©å“ä¸ºå¯æ‰§è¡Œæ“ä½œçš„ç‰©å“
             if (inventoryItem.itemInfo is IItemAction itemAction)
             {
                 GetPanel(indexInfo).ShowItemAction(indexInfo.index);
                 GetPanel(indexInfo).AddAction(itemAction.ActionName,
                     () => PerformAction(GetIndex(indexInfo)));
             }
-            // ÎïÆ·Îª¿ÉÒÆ³ıÎïÆ·
+            // ç‰©å“ä¸ºå¯ç§»é™¤ç‰©å“
             if (inventoryItem.itemInfo is IDestroyableItem itemDestroy)
             {
                 GetPanel(indexInfo).ShowItemAction(indexInfo.index);
@@ -504,12 +504,12 @@ public class InventoryController : MonoBehaviour
         InventoryItem inventoryItem = InventoryData.GetInventoryItem(index);
         if (inventoryItem.IsEmpty) return;
 
-        // ÏÈ½«ÒªÊ¹ÓÃµÄÎïÆ·´Ó±³°üÖĞÒÆ³ı
+        // å…ˆå°†è¦ä½¿ç”¨çš„ç‰©å“ä»èƒŒåŒ…ä¸­ç§»é™¤
         if (inventoryItem.itemInfo is IDestroyableItem itemDestroy)
         {
             RemoveItem(index, 1);
         }
-        // ÔÚÊ¹ÓÃÎïÆ·
+        // åœ¨ä½¿ç”¨ç‰©å“
         if (inventoryItem.itemInfo is IItemAction itemAction)
         {
             itemAction.PerformAction(new PerformActionInfo(Character, index));
@@ -525,7 +525,7 @@ public class InventoryController : MonoBehaviour
 
     private void OnStartDragHandler(IndexInfo indexInfo)
     {
-        // PlayerStateÖĞµÄÎïÆ·²»ÄÜÍ¨¹ıDragĞ¶ÏÂ£¬Ö»ÄÜµã»÷DropĞ¶ÏÂ
+        // PlayerStateä¸­çš„ç‰©å“ä¸èƒ½é€šè¿‡Dragå¸ä¸‹ï¼Œåªèƒ½ç‚¹å‡»Dropå¸ä¸‹
         if (indexInfo.panelType == EInventoryPanel.PlayerState) return;
 
         InventoryItem inventoryItem = 
@@ -550,11 +550,11 @@ public class InventoryController : MonoBehaviour
             InventoryItem inventoryItem =
                 InventoryData.GetInventoryItem(currentDraggedItemIndex);
 
-            // Èç¹ûÒª½»»»µÄÎïÆ·ÀàĞÍ²»ÊÇ¿É×°±¸ÀàĞÍ£¬²»¼ÌĞøÖ´ĞĞ
+            // å¦‚æœè¦äº¤æ¢çš„ç‰©å“ç±»å‹ä¸æ˜¯å¯è£…å¤‡ç±»å‹ï¼Œä¸ç»§ç»­æ‰§è¡Œ
             if (inventoryItem.itemInfo is EquippableItemInfo itemInfo)
             {
-                // Èç¹ûÒª½»»»µÄÎïÆ·ÀàĞÍ²»ÊÇ PlayerStatePanelÖĞ¶ÔÓ¦ÎïÆ·À¸ÒªÇóµÄÎïÆ·ÀàĞÍ
-                // ²»¼ÌĞøÖ´ĞĞ
+                // å¦‚æœè¦äº¤æ¢çš„ç‰©å“ç±»å‹ä¸æ˜¯ PlayerStatePanelä¸­å¯¹åº”ç‰©å“æ è¦æ±‚çš„ç‰©å“ç±»å‹
+                // ä¸ç»§ç»­æ‰§è¡Œ
                 if (itemInfo.equippableItemType != PlayerStatePanel.
                     GetEquippableItemType(indexInfo.index)) return;
 

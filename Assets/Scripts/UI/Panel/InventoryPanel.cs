@@ -65,7 +65,7 @@ public class InventoryPanel : BaseInventoryPanel
     protected override void SetItemActionPosition(InputActionPanel panel, 
         int index)
     {
-        // 这里不知道为什么要等两帧，但等两帧才能将面板显示在正确位置
+        // 杩欓噷涓嶇煡閬撲负浠�涔堣绛変袱甯э紝浣嗙瓑涓ゅ抚鎵嶈兘灏嗛潰鏉挎樉绀哄湪姝ｇ‘浣嶇疆
         //yield return null;
         //yield return null;
 

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2160732504
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 292b685fdc698362a9bb3a2f857da5fb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 292b685fdc698362a9bb3a2f857da5fb
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/Simple Fantasy GUI/PNG/Icons/Sword_Icon.png
+Dependencies: []

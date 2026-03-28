@@ -46,11 +46,11 @@ public class ItemDescription : BasePanel
         titleTxt.text = itemName;
         descriptionTxt.text = itemDescription;
 
-        // 3. ¡¾¹Ø¼üĞŞ¸Ä¡¿Æô¶¯Ğ­³Ì£¬ÔÚÖ¡Ä©Ç¿ÖÆË¢ĞÂ²¼¾Ö
-        // ±ØĞëÔÚÉèÖÃÍêÎÄ×ÖÖ®ºóµ÷ÓÃ
+        // 3. ã€å…³é”®ä¿®æ”¹ã€‘å¯åŠ¨åç¨‹ï¼Œåœ¨å¸§æœ«å¼ºåˆ¶åˆ·æ–°å¸ƒå±€
+        // å¿…é¡»åœ¨è®¾ç½®å®Œæ–‡å­—ä¹‹åè°ƒç”¨
         if (gameObject.activeInHierarchy)
         {
-            StopAllCoroutines(); // ·ÀÖ¹¿ìËÙÇĞ»»µ¼ÖÂĞ­³Ì³åÍ»
+            StopAllCoroutines(); // é˜²æ­¢å¿«é€Ÿåˆ‡æ¢å¯¼è‡´åç¨‹å†²çª
             StartCoroutine(UpdateLayoutCoroutine());
         }
     }
@@ -72,7 +72,7 @@ public class ItemDescription : BasePanel
     /// 
     /// </summary>
     /// <param name="position"></param>
-    /// <param name="pos">Ãæ°åÏÔÊ¾ÔÚÎïÌåµÄÄÄ¸ö·½Ïò</param>
+    /// <param name="pos">é¢æ¿æ˜¾ç¤ºåœ¨ç‰©ä½“çš„å“ªä¸ªæ–¹å‘</param>
     public void SetPosition(Vector3 position, EPos pos)
     {
         SetPivot(pos);
@@ -97,13 +97,13 @@ public class ItemDescription : BasePanel
         rt.pivot = newPivot.Value;
     }
 
-    // --- ĞÂÔöµÄ²¼¾ÖË¢ĞÂĞ­³Ì ---
+    // --- æ–°å¢çš„å¸ƒå±€åˆ·æ–°åç¨‹ ---
     private IEnumerator UpdateLayoutCoroutine()
     {
-        // µÈ´ıµ±Ç°Ö¡½áÊø£¬È·±£ Text ×é¼şÒÑ¾­ÄÃµ½ÁËĞÂµÄ×Ö·û´®²¢¼ÆËãÁË»ù±¾µÄÍø¸ñĞÅÏ¢
+        // ç­‰å¾…å½“å‰å¸§ç»“æŸï¼Œç¡®ä¿ Text ç»„ä»¶å·²ç»æ‹¿åˆ°äº†æ–°çš„å­—ç¬¦ä¸²å¹¶è®¡ç®—äº†åŸºæœ¬çš„ç½‘æ ¼ä¿¡æ¯
         yield return new WaitForEndOfFrame();
 
-        // Ç¿ÖÆË¢ĞÂ×ÔÉí²¼¾Ö (ContentSizeFitter »áÔÚÕâÀï¼ÆËãÕıÈ·´óĞ¡)
+        // å¼ºåˆ¶åˆ·æ–°è‡ªèº«å¸ƒå±€ (ContentSizeFitter ä¼šåœ¨è¿™é‡Œè®¡ç®—æ­£ç¡®å¤§å°)
         ExtensionTool.UpdateUI(transform);
     }
 }

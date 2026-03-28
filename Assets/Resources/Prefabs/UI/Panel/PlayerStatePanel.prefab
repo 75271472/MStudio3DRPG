@@ -745,6 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25063728a68c6c4449f2d737d703b960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterImage: {fileID: 5979983700744568357}
   weaponItemUI: {fileID: 8614437374119490791}
   shieldItemUI: {fileID: 3675208254339997037}
   healthStateTxtUI: {fileID: 3094203112036246087}

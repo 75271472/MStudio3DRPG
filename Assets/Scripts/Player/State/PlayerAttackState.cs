@@ -23,7 +23,7 @@ public class PlayerAttackState : PlayerBaseState
         }
 
         SetIdle();
-        // µã»÷ÎïÌåÎª¿É´İ»Ù¶ÔÏó£¬isAttackOnceÖÃÕæ
+        // ç‚¹å‡»ç‰©ä½“ä¸ºå¯æ‘§æ¯å¯¹è±¡ï¼ŒisAttackOnceç½®çœŸ
         isAttackOnce = targetObj is DestructibleTarget;
         stateMachine.WeaponHandler.SetDamage(attackSO, targetObj.gameObject);
         MouseManager.Instance.OnMoveEvent += OnAttackHandler;
@@ -60,7 +60,7 @@ public class PlayerAttackState : PlayerBaseState
         MouseManager.Instance.OnMoveEvent -= OnAttackHandler;
         stateMachine.WeaponHandler.DisableAllWeaponLogic();
 
-        // Ö»ÓĞÁ¬ÕĞµÄ×îºóÒ»¸ö¹¥»÷¶¯»­£¬²Å»áÖØÖÃ¹¥»÷CD
+        // åªæœ‰è¿æ‹›çš„æœ€åä¸€ä¸ªæ”»å‡»åŠ¨ç”»ï¼Œæ‰ä¼šé‡ç½®æ”»å‡»CD
         if (attackSO.comboStateIndex == -1)
             stateMachine.PlayerComboList.ResetAttackCD();
     }
@@ -74,15 +74,15 @@ public class PlayerAttackState : PlayerBaseState
         if (attackSO.comboStateIndex == -1 ||
             normalizedTime < attackSO.comboAttackTime) return;
 
-        // MonsterËÀÍö×ª»» »ò isAttackOnceÎªÕæ ÎªIdle×´Ì¬
+        // Monsteræ­»äº¡è½¬æ¢ æˆ– isAttackOnceä¸ºçœŸ ä¸ºIdleçŠ¶æ€
         if (IsMonsterDie(targetObj) || isAttackOnce)
         {
-            // ×´Ì¬×ª»»ºóÒ»¶¨Òªreturn !!!
+            // çŠ¶æ€è½¬æ¢åä¸€å®šè¦return !!!
             stateMachine.SwitchState(new PlayerIdleState(stateMachine));
             return;
         }
             
-        // ÔÚ¹¥»÷·¶Î§ÄÚ£¬×ª»»attackState×´Ì¬
+        // åœ¨æ”»å‡»èŒƒå›´å†…ï¼Œè½¬æ¢attackStateçŠ¶æ€
         if (stateMachine.transform.IsTargetInAreaByRay(targetObj.gameObject, 
             attackSO.StopDistance, attackSO.attackAngle))
         {
@@ -93,8 +93,8 @@ public class PlayerAttackState : PlayerBaseState
             stateMachine.SwitchState(new PlayerRunState(stateMachine, targetObj));
     }
 
-    // ¹¥»÷Ê±Êó±êµã»÷´¥·¢OnMoveEvent£¬Ö´ĞĞOnAttackHandler£¬Èç¹ûµã»÷ÎïÌåÎªµ±Ç°¹¥»÷ÎïÌå
-    // ²»ÇĞ»»×´Ì¬£¬·ñÔòÇĞ»»Run×´Ì¬²¢ÏòÄ¿±êÅÜÈ¥
+    // æ”»å‡»æ—¶é¼ æ ‡ç‚¹å‡»è§¦å‘OnMoveEventï¼Œæ‰§è¡ŒOnAttackHandlerï¼Œå¦‚æœç‚¹å‡»ç‰©ä½“ä¸ºå½“å‰æ”»å‡»ç‰©ä½“
+    // ä¸åˆ‡æ¢çŠ¶æ€ï¼Œå¦åˆ™åˆ‡æ¢RunçŠ¶æ€å¹¶å‘ç›®æ ‡è·‘å»
     private void OnAttackHandler(MouseTarget targetObj)
     {
         if (this.targetObj.Equals(targetObj)) return;

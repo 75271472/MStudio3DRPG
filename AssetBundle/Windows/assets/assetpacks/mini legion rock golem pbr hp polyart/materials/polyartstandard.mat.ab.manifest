@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 1411336159
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 85fbfbe8a819e5f4af6f32b0dee8d65a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 85fbfbe8a819e5f4af6f32b0dee8d65a
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Materials/PolyartStandard.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  rock golem pbr hp polyart/textures/polyartstandard.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab

@@ -31,6 +31,8 @@ public class CharacterStateData
 
 public class PlayerStatePanel : BaseInventoryPanel
 {
+    [SerializeField] private RawImage characterImage;
+
     [SerializeField] private StateItemUI weaponItemUI;
     [SerializeField] private StateItemUI shieldItemUI;
 
@@ -59,6 +61,23 @@ public class PlayerStatePanel : BaseInventoryPanel
         ResetSelection();
 
         UpdateStateUI(OnGetCharacterStateDataEvent?.Invoke());
+
+        // 动态覆盖并修复 AB 包加载体系下 RenderTexture 内存引用大概率分离导致的不显示图像问题
+        if (PlayerManager.Instance != null && characterImage != null)
+        {
+            // 在 Player 身上寻找名为 CharacterCamera 的相机
+            Camera[] playerCameras = PlayerManager.Instance.GetComponentsInChildren<Camera>(true);
+            foreach (Camera cam in playerCameras)
+            {
+                if (cam.gameObject.name == "CharacterCamera" && cam.targetTexture != null)
+                {
+                    print("targetTexture");
+                    characterImage.texture = cam.targetTexture;
+                    // 若有需要，可以手动唤醒相机让其刷新画面（通常重新赋值纹理即可拉起管线）
+                    break;
+                }
+            }
+        }
     }
 
     public override void HideMe()
@@ -133,7 +152,7 @@ public class PlayerStatePanel : BaseInventoryPanel
 
     protected override void SetItemActionPosition(InputActionPanel panel, int index)
     {
-        // ���ﲻ֪��ΪʲôҪ����֡��������֡���ܽ������ʾ����ȷλ��
+        // 这里不知道为什么要等两帧，但等两帧才能将面板显示在正确位置
         //yield return null;
         //yield return null;
 

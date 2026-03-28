@@ -70,7 +70,7 @@ public class QuestController : MonoBehaviour
             QuestPanel.ShowMe();
             //QuestData.UpdateQuestNameList();
             UpdateQuestList();
-            // 默认查看第一个任务的详细信息
+            // 榛樿鏌ョ湅绗竴涓换鍔＄殑璇︾粏淇℃伅
             OnQuestShowHandler(0, false);
         }
     }

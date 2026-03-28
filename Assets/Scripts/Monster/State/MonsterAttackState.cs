@@ -22,7 +22,7 @@ public class MonsterAttackState : MonsterBaseState
             return;
         }
 
-        // ÉèÖÃGuard×´Ì¬µÄAgent£¬·ÀÖ¹ÔÚ¹¥»÷×´Ì¬ÒÆ¶¯
+        // è®¾ç½®GuardçŠ¶æ€çš„Agentï¼Œé˜²æ­¢åœ¨æ”»å‡»çŠ¶æ€ç§»åŠ¨
         SetGuard();
         stateMachine.WeaponHandler.SetDamage(attackSO, targetObj);
         stateMachine.Animator.CrossFadeInFixedTime(
@@ -58,7 +58,7 @@ public class MonsterAttackState : MonsterBaseState
         stateMachine.MonsterTargeter.OnTargetExit -= OnTargetExitHandler;
         stateMachine.WeaponHandler.DisableAllWeaponLogic();
 
-        // Ö»ÓĞÁ¬ÕĞµÄ×îºóÒ»¸ö¹¥»÷¶¯»­£¬²Å»áÖØÖÃ¹¥»÷CD
+        // åªæœ‰è¿æ‹›çš„æœ€åä¸€ä¸ªæ”»å‡»åŠ¨ç”»ï¼Œæ‰ä¼šé‡ç½®æ”»å‡»CD
         if (attackSO.comboStateIndex == -1)
             stateMachine.MonsterComboList.ResetAttackCD();
     }

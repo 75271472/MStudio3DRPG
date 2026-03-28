@@ -21,7 +21,7 @@ public class StateItemUI : BaseInventoryItemUI
 
     public override void ResetData()
     {
-        // 当前没有物品不执行ResetData，避免外部调用ReestAllItems频繁触发OnUnloadEvent
+        // 褰撳墠娌℃湁鐗╁搧涓嶆墽琛孯esetData锛岄伩鍏嶅閮ㄨ皟鐢≧eestAllItems棰戠箒瑙﹀彂OnUnloadEvent
         if (isEmpty) return;
         itemImg.sprite = defaultSprite;
 

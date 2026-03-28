@@ -5,15 +5,15 @@ using System;
 
 public class EffectPanel : BasePanel
 {
-    [SerializeField] private Image effectImg; // ÍÏÈë¸Õ²Å´´½¨µÄ FlashOverlay
+    [SerializeField] private Image effectImg; // æ‹–å…¥åˆšæ‰åˆ›å»ºçš„ FlashOverlay
     [SerializeField] private int defaultAlpha;
     [SerializeField] private CanvasGroup canvasGroup;
 
-    public Color damageColor = new Color(1f, 0f, 0f, 1f);   // ºìÉ«
-    public Color levelUpColor = new Color(1f, 0.92f, 0.016f, 1f); // ½ğ»ÆÉ«
-    public Color recoveryColor = new Color(0.13f, 0.63f, 0.38f, 1f); // ´äÂÌÉ«
+    public Color damageColor = new Color(1f, 0f, 0f, 1f);   // çº¢è‰²
+    public Color levelUpColor = new Color(1f, 0.92f, 0.016f, 1f); // é‡‘é»„è‰²
+    public Color recoveryColor = new Color(0.13f, 0.63f, 0.38f, 1f); // ç¿ ç»¿è‰²
 
-    public float alphaTime = 2f; // ÏûÊ§Ê±¼ä
+    public float alphaTime = 2f; // æ¶ˆå¤±æ—¶é—´
 
     public override void ShowMe()
     {
@@ -22,16 +22,16 @@ public class EffectPanel : BasePanel
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    // Íâ²¿µ÷ÓÃ£º½ÇÉ«ÊÜÉË
+    // å¤–éƒ¨è°ƒç”¨ï¼šè§’è‰²å—ä¼¤
     public void DamageEffect()
     {
         print("DamageEffect Trigger");
 
-        StopAllCoroutines(); // Èç¹ûÓĞÕıÔÚ²¥·ÅµÄ¶¯»­£¬´ò¶ÏËü
+        StopAllCoroutines(); // å¦‚æœæœ‰æ­£åœ¨æ’­æ”¾çš„åŠ¨ç”»ï¼Œæ‰“æ–­å®ƒ
         StartCoroutine(FlashRoutine(damageColor));
     }
 
-    // Íâ²¿µ÷ÓÃ£º½ÇÉ«Éı¼¶
+    // å¤–éƒ¨è°ƒç”¨ï¼šè§’è‰²å‡çº§
     public void LevelUpEffect()
     {
         print("LevelUpEffect Trigger");
@@ -48,10 +48,10 @@ public class EffectPanel : BasePanel
         StartCoroutine(FlashRoutine(recoveryColor));
     }
 
-    // ½¥±äĞ­³Ì
+    // æ¸å˜åç¨‹
     IEnumerator FlashRoutine(Color targetColor)
     {
-        // 1. Ë²¼ä±äÉ«²¢ÏÔÊ¾£¨AlphaÉèÎª1»òÄãÏëÒªµÄ×î´óÍ¸Ã÷¶È£©
+        // 1. ç¬é—´å˜è‰²å¹¶æ˜¾ç¤ºï¼ˆAlphaè®¾ä¸º1æˆ–ä½ æƒ³è¦çš„æœ€å¤§é€æ˜åº¦ï¼‰
         effectImg.color = new Color(targetColor.r, targetColor.g, targetColor.b, 
             defaultAlpha * 1.0f / 255);
 

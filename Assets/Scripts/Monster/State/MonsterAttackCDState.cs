@@ -22,7 +22,7 @@ public class MonsterAttackCDState : MonsterBaseState
             return;
         }
 
-        // ÉèÖÃGuard×´Ì¬µÄAgent£¬·ÀÖ¹ÔÚ¹¥»÷×´Ì¬ÒÆ¶¯
+        // è®¾ç½®GuardçŠ¶æ€çš„Agentï¼Œé˜²æ­¢åœ¨æ”»å‡»çŠ¶æ€ç§»åŠ¨
         SetGuard();
         stateMachine.Animator.CrossFadeInFixedTime(AttackCDHash, CrossFixedTime);
 
@@ -49,14 +49,14 @@ public class MonsterAttackCDState : MonsterBaseState
 
     private void CheckAttackCD()
     {
-        // Èç¹ûtargetObjÎ»ÓÚ¹¥»÷ÇøÓòÒÔÍâ£¬ÇĞ»»ChaseState×´Ì¬
-        // ÈÃÅĞ¶¨ÔÚ·¶Î§ÄÚµÄÂß¼­¸ü¼òµ¥£¬ÕâÑùÔÚAttacCDÖĞÔÚ½øĞĞÅĞ¶Ï´æÔÚÒ»¶¨ÈßÓà
-        // ±ÜÃâÖ¡¸üĞÂºó¾àÀë¸üĞÂÊ¹µÃÔÚAttackCDºÍChaseÖ®¼äÀ´»ØÌø×ª
+        // å¦‚æœtargetObjä½äºæ”»å‡»åŒºåŸŸä»¥å¤–ï¼Œåˆ‡æ¢ChaseStateçŠ¶æ€
+        // è®©åˆ¤å®šåœ¨èŒƒå›´å†…çš„é€»è¾‘æ›´ç®€å•ï¼Œè¿™æ ·åœ¨AttacCDä¸­åœ¨è¿›è¡Œåˆ¤æ–­å­˜åœ¨ä¸€å®šå†—ä½™
+        // é¿å…å¸§æ›´æ–°åè·ç¦»æ›´æ–°ä½¿å¾—åœ¨AttackCDå’ŒChaseä¹‹é—´æ¥å›è·³è½¬
         if (!stateMachine.transform.IsTargetInAreaByRay(targetObj, 
             stateMachine.MonsterComboList.MaxDiatance, 
             stateMachine.MonsterComboList.MaxAngle, out float distance))
         {
-            // Èç¹û¾àÀë¹»ÁËµ«½Ç¶È²»¹»£¬ÔòÍË³öº¯Êı¼ÌĞøĞŞÕı½Ç¶È
+            // å¦‚æœè·ç¦»å¤Ÿäº†ä½†è§’åº¦ä¸å¤Ÿï¼Œåˆ™é€€å‡ºå‡½æ•°ç»§ç»­ä¿®æ­£è§’åº¦
             if (distance <= stateMachine.MonsterComboList.MaxDiatance) return;
 
             //Debug.Log($"MonsterAttackCD Distance {distance}");
@@ -64,8 +64,8 @@ public class MonsterAttackCDState : MonsterBaseState
             return;
         }
 
-        // Ê¹ÓÃIsTargetInAreaByRay»ñÈ¡µÄ£¬µ±Ç°TransformÓëHit.pointµÄ¼ä¾à
-        // ×÷ÎªCanAttackÖĞÑ¡ÔñAttackComboµÄ¾àÀëÅĞ¶ÏÒÀ¾İ
+        // ä½¿ç”¨IsTargetInAreaByRayè·å–çš„ï¼Œå½“å‰Transformä¸Hit.pointçš„é—´è·
+        // ä½œä¸ºCanAttackä¸­é€‰æ‹©AttackComboçš„è·ç¦»åˆ¤æ–­ä¾æ®
         if (!stateMachine.MonsterComboList.CanAttack(distance))
             //stateMachine.transform.GetTargetDistanceInSaveHeight(targetObj)))
         {

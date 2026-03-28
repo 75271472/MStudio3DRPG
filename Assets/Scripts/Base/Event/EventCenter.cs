@@ -1,9 +1,9 @@
-//ÀïÊÏ×ª»»Ô­Ôò  À´±ÜÃâ×°Ïä²ğÏä
+//é‡Œæ°è½¬æ¢åŸåˆ™  æ¥é¿å…è£…ç®±æ‹†ç®±
 using System;
 using System.Collections.Generic;
 using UnityEngine.Events;
 
-public interface IEventInfo { }//¿Õ½Ó¿Ú
+public interface IEventInfo { }//ç©ºæ¥å£
 
 public class EventInfo<T> : IEventInfo
 {
@@ -26,72 +26,72 @@ public class EventInfo : IEventInfo
 }
 
 /// <summary>
-/// ÊÂ¼şÖĞĞÄ
+/// äº‹ä»¶ä¸­å¿ƒ
 /// </summary>
 public class EventCenter : BaseManager<EventCenter>
 {
     /// <summary>
-    /// key£ºÊÂ¼şµÄÃû×Ö
-    /// vslue: ¶ÔÓ¦µÄÊÇ¼àÌı¸ÃÊÂ¼şµÄÎ¯ÍĞ·½·¨(¸¸Àà×°×ÓÀà)
+    /// keyï¼šäº‹ä»¶çš„åå­—
+    /// vslue: å¯¹åº”çš„æ˜¯ç›‘å¬è¯¥äº‹ä»¶çš„å§”æ‰˜æ–¹æ³•(çˆ¶ç±»è£…å­ç±»)
     /// </summary>
     private Dictionary<Events, IEventInfo> eventDic = new Dictionary<Events, IEventInfo>();
 
     /// <summary>
-    /// ¼àÌıÊÂ¼ş(´ø·ºĞÍ²ÎÊı)
+    /// ç›‘å¬äº‹ä»¶(å¸¦æ³›å‹å‚æ•°)
     /// </summary>
-    /// <param name="events">ÊÂ¼şµÄÃû×Ö</param>
-    /// <param name="action">ÓÃÀ´´¦Àí¸ÃÊÂ¼şµÄ·½·¨</param>
+    /// <param name="events">äº‹ä»¶çš„åå­—</param>
+    /// <param name="action">ç”¨æ¥å¤„ç†è¯¥äº‹ä»¶çš„æ–¹æ³•</param>
     public void EventListenner<T>(Events events, UnityAction<T> action)
     {
-        //ÓĞÃ»ÓĞ¶ÔÓ¦µÄÊÂ¼ş¼àÌı
-        //ÓĞ
+        //æœ‰æ²¡æœ‰å¯¹åº”çš„äº‹ä»¶ç›‘å¬
+        //æœ‰
         if (eventDic.ContainsKey(events))
         {
-            //Î¯ÍĞ Ò»¶Ô¶à
+            //å§”æ‰˜ ä¸€å¯¹å¤š
             (eventDic[events] as EventInfo<T>).actions += action;
         }
-        else//Ã»ÓĞ
+        else//æ²¡æœ‰
         {
             eventDic[events] = new EventInfo<T>(action);
         }
     }
 
     /// <summary>
-    /// ¼àÌıÊÂ¼ş²»´ø²ÎÊı
+    /// ç›‘å¬äº‹ä»¶ä¸å¸¦å‚æ•°
     /// </summary>
     /// <param name="events"></param>
     /// <param name="action"></param>
     public void EventListenner(Events events, UnityAction action)
     {
-        //ÓĞÃ»ÓĞ¶ÔÓ¦µÄÊÂ¼ş¼àÌı
-        //ÓĞ
+        //æœ‰æ²¡æœ‰å¯¹åº”çš„äº‹ä»¶ç›‘å¬
+        //æœ‰
         if (eventDic.ContainsKey(events))
         {
-            //Î¯ÍĞ Ò»¶Ô¶à
+            //å§”æ‰˜ ä¸€å¯¹å¤š
             (eventDic[events] as EventInfo).actions += action;
         }
-        else//Ã»ÓĞ
+        else//æ²¡æœ‰
         {
             eventDic[events] = new EventInfo(action);
         }
     }
 
     /// <summary>
-    /// ÊÂ¼ş´¥·¢£¨´ø·ºĞÍ²ÎÊı£©
+    /// äº‹ä»¶è§¦å‘ï¼ˆå¸¦æ³›å‹å‚æ•°ï¼‰
     /// </summary>
-    /// <param name="events">ÄÇ¸öÃû×ÖµÄÊÂ¼ş´¥·¢ÁË</param>
+    /// <param name="events">é‚£ä¸ªåå­—çš„äº‹ä»¶è§¦å‘äº†</param>
     public void EventTrigger<T>(Events events, T info)
     {
         if (eventDic.ContainsKey(events))
         {
             // eventDic[events]?.Invoke(info);
             if ((eventDic[events] as EventInfo<T>).actions != null)
-                (eventDic[events] as EventInfo<T>).actions(info);//Ö´ĞĞÎ¯ÍĞº¯Êı
+                (eventDic[events] as EventInfo<T>).actions(info);//æ‰§è¡Œå§”æ‰˜å‡½æ•°
         }
     }
 
     /// <summary>
-    /// ÊÂ¼ş´¥·¢£¨²»´ø·ºĞÍ²ÎÊı£©
+    /// äº‹ä»¶è§¦å‘ï¼ˆä¸å¸¦æ³›å‹å‚æ•°ï¼‰
     /// </summary>
     /// <param name="events"></param>
     public void EventTrigger(Events events)
@@ -100,15 +100,15 @@ public class EventCenter : BaseManager<EventCenter>
         {
             // eventDic[events]?.Invoke(info);
             if ((eventDic[events] as EventInfo).actions != null)
-                (eventDic[events] as EventInfo).actions();//Ö´ĞĞÎ¯ÍĞº¯Êı
+                (eventDic[events] as EventInfo).actions();//æ‰§è¡Œå§”æ‰˜å‡½æ•°
         }
     }
 
     /// <summary>
-    /// ÒÆ³ı¶ÔÓ¦ÊÂ¼ş(ÊÂ¼şÓĞ¼Ó¾ÍÓĞ¼õ ²»È»»á³öÎÊÌâ)
+    /// ç§»é™¤å¯¹åº”äº‹ä»¶(äº‹ä»¶æœ‰åŠ å°±æœ‰å‡ ä¸ç„¶ä¼šå‡ºé—®é¢˜)
     /// </summary>
-    /// <param name="events">ÊÂ¼şµÄÃû×Ö</param>
-    /// <param name="action">¶ÔÓ¦Ö®¼äÌí¼ÓµÄÎ¯ÍĞº¯Êı</param>
+    /// <param name="events">äº‹ä»¶çš„åå­—</param>
+    /// <param name="action">å¯¹åº”ä¹‹é—´æ·»åŠ çš„å§”æ‰˜å‡½æ•°</param>
     public void RemoveEvent<T>(Events events, UnityAction<T> action)
     {
         if (eventDic.ContainsKey(events))
@@ -118,7 +118,7 @@ public class EventCenter : BaseManager<EventCenter>
     }
 
     /// <summary>
-    /// ²»´ø²ÎÊıµÄ
+    /// ä¸å¸¦å‚æ•°çš„
     /// </summary>
     /// <param name="events"></param>
     /// <param name="action"></param>

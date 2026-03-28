@@ -25,7 +25,7 @@ public class Trigger : MonoBehaviour, IInteractable
 
     private void EventTrigger()
     {
-        // °ó¶¨ÊäÈë°´¼ü
+        // ç»‘å®šè¾“å…¥æŒ‰é”®
         UIManager.Instance.ShowPanel<InputActionPanel>().AddInput(
             "Survery", () => {
                 PlayerManager.Instance.PlayerData.PlayerDialogueTrigger.

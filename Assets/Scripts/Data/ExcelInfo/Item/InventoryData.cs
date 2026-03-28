@@ -9,12 +9,12 @@ public class InventoryData : MonoBehaviour
 {
     public event Action<Dictionary<int, InventoryItem>> OnInventoryUpdatedEvent;
 
-    // Ç°°Ë¸öÎïÆ·Îª¿ì½İÀ¸ÎïÆ·£¬ºóÁ½¸öÎïÆ·ÎªPlayerStateÎïÆ·£¬Ê£ÓàÎïÆ·Îª±³°üÖĞµÄÎïÆ·
+    // å‰å…«ä¸ªç‰©å“ä¸ºå¿«æ·æ ç‰©å“ï¼Œåä¸¤ä¸ªç‰©å“ä¸ºPlayerStateç‰©å“ï¼Œå‰©ä½™ç‰©å“ä¸ºèƒŒåŒ…ä¸­çš„ç‰©å“
     private List<InventoryItem> inventoryItemList;
-    // ±³°üÖĞµÄ¸÷×ÔÊıÁ¿£¬°üÀ¨ÓĞÎïÆ·µÄ¸ñ×ÓºÍÃ»ÓĞÎïÆ·µÄ¸ñ×Ó
+    // èƒŒåŒ…ä¸­çš„å„è‡ªæ•°é‡ï¼ŒåŒ…æ‹¬æœ‰ç‰©å“çš„æ ¼å­å’Œæ²¡æœ‰ç‰©å“çš„æ ¼å­
     public int Size => inventoryItemList.Count;
-    // ²»¿ÉÌí¼ÓµÄÎïÆ·ÊıÁ¿£¨´Ó²Ö¿â½áÎ²¿ªÊ¼£¬±íÏÖÎª²»¿ÉÏòPlayerStatePanelÖĞÌí¼ÓÎïÆ·£©
-    // UnAddableSizeÎïÆ·¸ñµÄÎïÆ·Ö»¿ÉÍ¨¹ıSwap»òAddToSpecialÌí¼Ó
+    // ä¸å¯æ·»åŠ çš„ç‰©å“æ•°é‡ï¼ˆä»ä»“åº“ç»“å°¾å¼€å§‹ï¼Œè¡¨ç°ä¸ºä¸å¯å‘PlayerStatePanelä¸­æ·»åŠ ç‰©å“ï¼‰
+    // UnAddableSizeç‰©å“æ ¼çš„ç‰©å“åªå¯é€šè¿‡Swapæˆ–AddToSpecialæ·»åŠ 
     public const int UnAddableSize = InventoryController.PlayerStateItemQuantity;
 
     public void InventoryDataInit()
@@ -24,13 +24,13 @@ public class InventoryData : MonoBehaviour
         List<InventoryItemInfo> inventoryItemInfoList = 
             inventoryInfo.inventoryItemList;
 
-        // ³õÊ¼»¯±³°ü
+        // åˆå§‹åŒ–èƒŒåŒ…
         for (int i = 0; i < inventoryInfo.size; i++) 
         {
             AddEmptySlot();
         }
 
-        // Ïò±³°üÖĞÌí¼ÓÎïÆ·
+        // å‘èƒŒåŒ…ä¸­æ·»åŠ ç‰©å“
         for (int i = 0; i < inventoryItemInfoList.Count; i++)
         {
             AddItemToSpecialSlot(inventoryItemInfoList[i]);
@@ -85,21 +85,21 @@ public class InventoryData : MonoBehaviour
             DataManager.Instance.GetItemInfo(itemInfoType, itemId);
 
         quantity = AddItemToSpecifiedSlot(itemInfo, quantity, index);
-        // Èç¹û»¹ÓĞÊ£ÓàÎïÆ·£¬ÔòÏòÆäËû¸ñ×ÓÖĞÌí¼Ó
+        // å¦‚æœè¿˜æœ‰å‰©ä½™ç‰©å“ï¼Œåˆ™å‘å…¶ä»–æ ¼å­ä¸­æ·»åŠ 
         //if (quantity > 0)
         //    quantity = AddItem(itemInfoType, itemId, quantity);
 
-        // ¸üĞÂUI
+        // æ›´æ–°UI
         UpdateInventory();
         return quantity;
     }
 
     /// <summary>
-    /// ÏòInventoryÖĞÌí¼ÓÎïÆ·
+    /// å‘Inventoryä¸­æ·»åŠ ç‰©å“
     /// </summary>
     /// <param name="itemId"></param>
     /// <param name="quantity"></param>
-    /// <returns>Ê£ÓàÎïÆ·ÊıÁ¿</returns>
+    /// <returns>å‰©ä½™ç‰©å“æ•°é‡</returns>
     public int AddItem(int itemInfoType, int itemId, int quantity)
     {
         if (itemId == -1 || quantity <= 0) return quantity;
@@ -110,43 +110,43 @@ public class InventoryData : MonoBehaviour
 
         if (!itemInfo.isStackable)
         {
-            // ²»¿É¶ÑµşÎïÆ·£¬Ö±½Ó½«ÎïÆ··ÅÈë¿Õ¸ñ×ÓÖĞ
+            // ä¸å¯å †å ç‰©å“ï¼Œç›´æ¥å°†ç‰©å“æ”¾å…¥ç©ºæ ¼å­ä¸­
             quantity = AddItemToEmptySlot(itemInfo, quantity);
         }
         else
         {
-            // ¿É¶ÑµşÎïÆ·£¬½«ÎïÆ··ÅÈë²»¿Õ¸ñ×ÓÖĞ½øĞĞµş¼Ó
+            // å¯å †å ç‰©å“ï¼Œå°†ç‰©å“æ”¾å…¥ä¸ç©ºæ ¼å­ä¸­è¿›è¡Œå åŠ 
             quantity = AddItemToNotEmptySlot(itemInfo, quantity);
         }
 
-        // ¸üĞÂUI
+        // æ›´æ–°UI
         UpdateInventory();
         return quantity;
     }
 
-    // ±³°üÄÚÃ»ÓĞ¿Õ¸ñ×Ó£¬µ«¿ÉÄÜ»¹ÄÜÔÚ¿É¶ÑµşÎïÆ·¸ñÉÏ¶Ñ¶«Î÷
+    // èƒŒåŒ…å†…æ²¡æœ‰ç©ºæ ¼å­ï¼Œä½†å¯èƒ½è¿˜èƒ½åœ¨å¯å †å ç‰©å“æ ¼ä¸Šå †ä¸œè¥¿
     public bool IsInventoryExistEmptySlot()
     {
         return inventoryItemList.Exists(inventoryItem => inventoryItem.IsEmpty);
     }
 
     /// <summary>
-    /// ÏòÖ¸¶¨ÏÂ±êµÄ¸ñ×ÓÖĞÌí¼ÓÎïÆ·
+    /// å‘æŒ‡å®šä¸‹æ ‡çš„æ ¼å­ä¸­æ·»åŠ ç‰©å“
     /// </summary>
     /// <returns></returns>
     private int AddItemToSpecifiedSlot(ItemInfo itemInfo, int quantity, int index)
     {
-        // Ö¸¶¨¸ñ×ÓÎª¿Õ¸ñ×Ó
+        // æŒ‡å®šæ ¼å­ä¸ºç©ºæ ¼å­
         if (inventoryItemList[index].IsEmpty)
         {
-            // »ñÈ¡Ìí¼ÓÊıÁ¿ºÍ×î´ó¶ÑµşÊıÖ®¼äµÄ½ÏĞ¡Öµ
+            // è·å–æ·»åŠ æ•°é‡å’Œæœ€å¤§å †å æ•°ä¹‹é—´çš„è¾ƒå°å€¼
             int fillQuantity = Mathf.Min(quantity, itemInfo.maxStackSize);
 
             inventoryItemList[index] =
                 new InventoryItem(itemInfo, fillQuantity);
             quantity -= fillQuantity;
         }
-        // Ö¸¶¨¸ñ×ÓÖĞÒÑÓĞÎïÆ·
+        // æŒ‡å®šæ ¼å­ä¸­å·²æœ‰ç‰©å“
         else
         {
             if (inventoryItemList[index].itemInfo.itemType != itemInfo.itemType ||
@@ -166,23 +166,23 @@ public class InventoryData : MonoBehaviour
     }
 
     /// <summary>
-    /// Ïò¿Õ¸ñ×ÓÖĞÌîÈëÎïÆ·
+    /// å‘ç©ºæ ¼å­ä¸­å¡«å…¥ç‰©å“
     /// </summary>
     /// <param name="itemInfo"></param>
     /// <param name="itemId"></param>
-    /// <param name="quantity">ÒªÌîÈëµÄÎïÆ·×ÜÊıÁ¿</param>
-    /// <returns>Ê£ÓàÎïÆ·ÊıÁ¿</returns>
+    /// <param name="quantity">è¦å¡«å…¥çš„ç‰©å“æ€»æ•°é‡</param>
+    /// <returns>å‰©ä½™ç‰©å“æ•°é‡</returns>
     private int AddItemToEmptySlot(ItemInfo itemInfo, int quantity)
     {
         int fillQuantity = 0;
 
-        // ±éÀúËùÓĞ¸ñ×Ó£¬Ö±µ½±éÀúÍê³É»òÒª·ÅÈëµÄÎïÆ·ÊıÁ¿Îª0£¬²»¿ÉÌí¼ÓÎïÆ·¸ñ³ıÍâ
+        // éå†æ‰€æœ‰æ ¼å­ï¼Œç›´åˆ°éå†å®Œæˆæˆ–è¦æ”¾å…¥çš„ç‰©å“æ•°é‡ä¸º0ï¼Œä¸å¯æ·»åŠ ç‰©å“æ ¼é™¤å¤–
         for (int i = 0; i < inventoryItemList.Count - UnAddableSize && 
             quantity > 0; i++)
         {
             if (!inventoryItemList[i].IsEmpty) continue;
 
-            // »ñÈ¡Ìí¼ÓÊıÁ¿ºÍ×î´ó¶ÑµşÊıÖ®¼äµÄ½ÏĞ¡Öµ
+            // è·å–æ·»åŠ æ•°é‡å’Œæœ€å¤§å †å æ•°ä¹‹é—´çš„è¾ƒå°å€¼
             fillQuantity = Mathf.Min(quantity, itemInfo.maxStackSize);
 
             inventoryItemList[i] =
@@ -194,25 +194,25 @@ public class InventoryData : MonoBehaviour
     }
 
     /// <summary>
-    /// ÏòÒÑÓĞÎïÆ·µÄ¸ñ×ÓÉÏ¶Ñ¼ÓÎïÆ·
+    /// å‘å·²æœ‰ç‰©å“çš„æ ¼å­ä¸Šå †åŠ ç‰©å“
     /// </summary>
     /// <param name="itemInfo"></param>
     /// <param name="itemId"></param>
     /// <param name="quantity"></param>
-    /// <returns>Ê£ÓàÎïÆ·Êı</returns>
+    /// <returns>å‰©ä½™ç‰©å“æ•°</returns>
     private int AddItemToNotEmptySlot(ItemInfo itemInfo, int quantity)
     {
         int fillQuantity = 0;
         int addAmount = 0;
 
-        // Ê×ÏÈÏòÏàÍ¬ÎïÆ·IdµÄ¸ñ×ÓÖĞÌî³ä£¬²»¿ÉÌí¼ÓÎïÆ·¸ñ³ıÍâ
+        // é¦–å…ˆå‘ç›¸åŒç‰©å“Idçš„æ ¼å­ä¸­å¡«å……ï¼Œä¸å¯æ·»åŠ ç‰©å“æ ¼é™¤å¤–
         for (int i = 0; i < inventoryItemList.Count - UnAddableSize && 
             quantity > 0; i++)
         {
             if (inventoryItemList[i].IsEmpty || 
                 inventoryItemList[i].itemInfo.itemType != itemInfo.itemType ||
                 inventoryItemList[i].itemInfo.id != itemInfo.id) continue;
-            // ¼ÆËãµ±Ç°¸ñ×Ó¿ÉÈİÄÉÎïÆ·ÊıÁ¿
+            // è®¡ç®—å½“å‰æ ¼å­å¯å®¹çº³ç‰©å“æ•°é‡
             fillQuantity = itemInfo.maxStackSize - inventoryItemList[i].quantity;
             addAmount = Math.Min(fillQuantity, quantity);
 
@@ -269,48 +269,48 @@ public class InventoryData : MonoBehaviour
     }
 
     /// <summary>
-    /// ¸ù¾İ´«ÈëµÄ InventoryItemInfo É¾³ıÖ¸¶¨ÊıÁ¿µÄÌØ¶¨ÎïÆ·¡£
-    /// »áÖ±½ÓĞŞ¸Ä´«ÈëµÄ inventoryItemInfo.quantity ÒÔ·´Ó³Ê£ÓàÎ´É¾³ıµÄÊıÁ¿¡£
+    /// æ ¹æ®ä¼ å…¥çš„ InventoryItemInfo åˆ é™¤æŒ‡å®šæ•°é‡çš„ç‰¹å®šç‰©å“ã€‚
+    /// ä¼šç›´æ¥ä¿®æ”¹ä¼ å…¥çš„ inventoryItemInfo.quantity ä»¥åæ˜ å‰©ä½™æœªåˆ é™¤çš„æ•°é‡ã€‚
     /// </summary>
-    /// <param name="inventoryItemInfo">°üº¬ÒªÉ¾³ıµÄÎïÆ·ÀàĞÍ¡¢IDºÍ×ÜÊıÁ¿</param>
+    /// <param name="inventoryItemInfo">åŒ…å«è¦åˆ é™¤çš„ç‰©å“ç±»å‹ã€IDå’Œæ€»æ•°é‡</param>
     public void RemoveItem(string itemName, int quantity)
     {
-        // ±éÀúËùÓĞÎïÆ·¸ñ×Ó£¨°üÀ¨¿ì½İÀ¸µÈ£¬Èç¹û²»Ïë±éÀúÌØÊâÇø£¬¿ÉÒÔ½« Count ¸ÄÎª Count - UnAddableSize£©
+        // éå†æ‰€æœ‰ç‰©å“æ ¼å­ï¼ˆåŒ…æ‹¬å¿«æ·æ ç­‰ï¼Œå¦‚æœä¸æƒ³éå†ç‰¹æ®ŠåŒºï¼Œå¯ä»¥å°† Count æ”¹ä¸º Count - UnAddableSizeï¼‰
         for (int i = 0; i < inventoryItemList.Count; i++)
         {
-            // Èç¹ûÒÑ¾­É¾³ıÁË×ã¹»µÄÊıÁ¿£¬Í£Ö¹±éÀú
+            // å¦‚æœå·²ç»åˆ é™¤äº†è¶³å¤Ÿçš„æ•°é‡ï¼Œåœæ­¢éå†
             if (quantity <= 0) break;
 
             InventoryItem currentItem = inventoryItemList[i];
 
-            // Ìø¹ı¿Õ¸ñ×Ó
+            // è·³è¿‡ç©ºæ ¼å­
             if (currentItem.IsEmpty) continue;
 
-            // ¼ì²éÎïÆ·ÀàĞÍºÍIDÊÇ·ñÆ¥Åä
+            // æ£€æŸ¥ç‰©å“ç±»å‹å’ŒIDæ˜¯å¦åŒ¹é…
             if (currentItem.itemInfo.name != itemName)
                 continue;
 
-            // ¼ÆËãµ±Ç°¸ñ×ÓÄÜ¿Û³ıµÄÊıÁ¿£¨È¡¡°µ±Ç°¸ñ×Ó³ÖÓĞÁ¿¡±ºÍ¡°Ê£ÓàĞèÒªÉ¾³ıÁ¿¡±µÄ½ÏĞ¡Öµ£©
+            // è®¡ç®—å½“å‰æ ¼å­èƒ½æ‰£é™¤çš„æ•°é‡ï¼ˆå–â€œå½“å‰æ ¼å­æŒæœ‰é‡â€å’Œâ€œå‰©ä½™éœ€è¦åˆ é™¤é‡â€çš„è¾ƒå°å€¼ï¼‰
             int amountToRemove = Mathf.Min(currentItem.quantity, quantity);
 
-            // ´ÓĞèÇó×ÜÁ¿ÖĞ¼õÈ¥¼´½«É¾³ıµÄÊıÁ¿
+            // ä»éœ€æ±‚æ€»é‡ä¸­å‡å»å³å°†åˆ é™¤çš„æ•°é‡
             quantity -= amountToRemove;
 
-            // ¸üĞÂµ±Ç°¸ñ×ÓµÄ×´Ì¬
+            // æ›´æ–°å½“å‰æ ¼å­çš„çŠ¶æ€
             int remainingInSlot = currentItem.quantity - amountToRemove;
             if (remainingInSlot > 0)
             {
-                // Èç¹û¸ñ×Ó»¹ÓĞÊ£Óà£¬¸üĞÂÊıÁ¿
+                // å¦‚æœæ ¼å­è¿˜æœ‰å‰©ä½™ï¼Œæ›´æ–°æ•°é‡
                 inventoryItemList[i] = currentItem.ChangeQuantity(remainingInSlot);
             }
             else
             {
-                // Èç¹û¸ñ×Ó±»¿Û¹â£¬±äÎª¿Õ¸ñ×Ó
+                // å¦‚æœæ ¼å­è¢«æ‰£å…‰ï¼Œå˜ä¸ºç©ºæ ¼å­
                 inventoryItemList[i] = InventoryItem.GetEmptyItem();
             }
         }
 
-        // É¾³ı²Ù×÷Íê³Éºó¸üĞÂUIºÍÊı¾İ×´Ì¬
+        // åˆ é™¤æ“ä½œå®Œæˆåæ›´æ–°UIå’Œæ•°æ®çŠ¶æ€
         UpdateInventory();
     }
 
@@ -319,7 +319,7 @@ public class InventoryData : MonoBehaviour
     /// </summary>
     /// <param name="index"></param>
     /// <param name="amount"></param>
-    /// <returns>RemoveµÄÊıÁ¿µÄInventoryItemInfo</returns>
+    /// <returns>Removeçš„æ•°é‡çš„InventoryItemInfo</returns>
     public InventoryItemInfo RemoveItem(int index, int amount)
     {
         if (index < 0 || index >= inventoryItemList.Count) return null;
@@ -362,7 +362,7 @@ public class InventoryData : MonoBehaviour
 }
 
 [Serializable]
-// PresentdataÖĞ´æ´¢µÄµ¥¸öÎïÌåÊı¾İ
+// Presentdataä¸­å­˜å‚¨çš„å•ä¸ªç‰©ä½“æ•°æ®
 public class InventoryItemInfo
 {
     public int itemInfoType;
@@ -413,7 +413,7 @@ public class InventoryItemInfo
     }
 }
 
-// ±³°üÖĞµÄµ¥¸öÎïÌåÊı¾İ½á¹¹Ìå
+// èƒŒåŒ…ä¸­çš„å•ä¸ªç‰©ä½“æ•°æ®ç»“æ„ä½“
 public struct InventoryItem
 {
     //public int itemInfoType;
@@ -422,7 +422,7 @@ public struct InventoryItem
     public ItemInfo itemInfo;
     public bool IsEmpty => itemInfo == null;
 
-    // ´ÓPersisentdata¼ÓÔØInventoryItemInfoÊµÀı»¯±³°üÖĞµÄÎïÌå½á¹¹Ìå
+    // ä»PersisentdataåŠ è½½InventoryItemInfoå®ä¾‹åŒ–èƒŒåŒ…ä¸­çš„ç‰©ä½“ç»“æ„ä½“
     public InventoryItem(InventoryItemInfo inventoryItemInfo)
     {
         if (inventoryItemInfo.IsEmpty)

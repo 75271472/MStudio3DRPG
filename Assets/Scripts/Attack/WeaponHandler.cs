@@ -31,9 +31,9 @@ public class WeaponHandler : MonoBehaviour
         weaponLogicList.Clear();
     }
 
-    // ÖØÖÃÊÖ³ÖÎäÆ÷£¬·ÀÖ¹ÇĞ»»³¡¾°Ê±£¬ÓÉÓÚWeaponHandlerÎªDontDestroyOnLoad
-    // ÆäWeaponItemInfoºÍWeaponObj²»»áÖØÖÃ
-    // µ¼ÖÂÖ´ĞĞSetWeaponÊ±»áÖ´ĞĞOnUnLoadWeaponEvent£¬ÔÚ±³°üÖĞÆ¾¿ÕÔö¼ÓÒ»¸öÊÖ³ÖÎäÆ÷
+    // é‡ç½®æ‰‹æŒæ­¦å™¨ï¼Œé˜²æ­¢åˆ‡æ¢åœºæ™¯æ—¶ï¼Œç”±äºWeaponHandlerä¸ºDontDestroyOnLoad
+    // å…¶WeaponItemInfoå’ŒWeaponObjä¸ä¼šé‡ç½®
+    // å¯¼è‡´æ‰§è¡ŒSetWeaponæ—¶ä¼šæ‰§è¡ŒOnUnLoadWeaponEventï¼Œåœ¨èƒŒåŒ…ä¸­å‡­ç©ºå¢åŠ ä¸€ä¸ªæ‰‹æŒæ­¦å™¨
     public void ResetWeapon()
     {
         if (weaponObj != null)

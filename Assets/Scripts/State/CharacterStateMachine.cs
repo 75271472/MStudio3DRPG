@@ -54,7 +54,7 @@ public abstract class CharacterStateMachine : StateMachine
 
     public void DieDataRegist(CharacterData characterData)
     {
-        // TODO:Ã»ÓĞ -=
+        // TODO:æ²¡æœ‰ -=
         characterData.OnDieEvent += Health.OnDieHandler;
     }
 
@@ -76,16 +76,16 @@ public abstract class CharacterStateMachine : StateMachine
 
     protected virtual void OnImpactHandler(Vector3 impact)
     {
-        // ·½°¸ A£ºÈç¹ûÄãÈ·¶¨ Agent Ê¼ÖÕ¿ªÆôÇÒÔÚ NavMesh ÉÏ£¨ÍÆ¼ö£©
+        // æ–¹æ¡ˆ Aï¼šå¦‚æœä½ ç¡®å®š Agent å§‹ç»ˆå¼€å¯ä¸”åœ¨ NavMesh ä¸Šï¼ˆæ¨èï¼‰
         if (Agent != null && Agent.enabled)
         {
-            // agent.Move »á×Ô¶¯´¦ÀíÅö×²¼ì²âºÍÌùµØ
+            // agent.Move ä¼šè‡ªåŠ¨å¤„ç†ç¢°æ’æ£€æµ‹å’Œè´´åœ°
             Agent.Move(impact * Time.deltaTime);
         }
-        // ·½°¸ B£ºÈç¹ûÄãµÄ½ÇÉ«¿ÉÄÜ´¦ÓÚËÀµô»òÆäËû¹Ø±Õ Agent µÄ×´Ì¬
+        // æ–¹æ¡ˆ Bï¼šå¦‚æœä½ çš„è§’è‰²å¯èƒ½å¤„äºæ­»æ‰æˆ–å…¶ä»–å…³é—­ Agent çš„çŠ¶æ€
         else
         {
-            // Ö»ÓĞÔÚÃ» Agent µÄÊ±ºò²ÅÓÃ Translate£¬µ«Òª¼ÓÉäÏß¼ì²â·ÀÖ¹´©Ç½£¨¼òÒ×°æ£©
+            // åªæœ‰åœ¨æ²¡ Agent çš„æ—¶å€™æ‰ç”¨ Translateï¼Œä½†è¦åŠ å°„çº¿æ£€æµ‹é˜²æ­¢ç©¿å¢™ï¼ˆç®€æ˜“ç‰ˆï¼‰
             transform.Translate(impact * Time.deltaTime, Space.World);
         }
     }

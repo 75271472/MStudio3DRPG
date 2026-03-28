@@ -6,12 +6,12 @@ using UnityEngine.UIElements;
 
 public class ExcelConvertJson : EditorWindow
 {
-    // python×ª»»½Å±¾Â·¾¶
+    // pythonè½¬æ¢è„šæœ¬è·¯å¾„
     private static string pythonScript = "";
-    // python½âÊÍÆ÷Â·¾¶
+    // pythonè§£é‡Šå™¨è·¯å¾„
     private const string interpreter = "python";
 
-    // ÓÃ»§×Ô¶¨ÒåÂ·¾¶
+    // ç”¨æˆ·è‡ªå®šä¹‰è·¯å¾„
     private static string jsonFilePath = "";
     private static string excelFilePath = "";
 
@@ -20,71 +20,71 @@ public class ExcelConvertJson : EditorWindow
     [MenuItem("Tools/ExcelConvertJson")]
     public static void ShowWindow()
     {
-        GetWindow<ExcelConvertJson>("Excel/JSON×ª»»¹¤¾ß");
+        GetWindow<ExcelConvertJson>("Excel/JSONè½¬æ¢å·¥å…·");
     }
 
     private void OnGUI()
     {
-        GUILayout.Label("Â·¾¶ÉèÖÃ", EditorStyles.boldLabel);
+        GUILayout.Label("è·¯å¾„è®¾ç½®", EditorStyles.boldLabel);
 
-        EditorGUILayout.LabelField($"Python½Å±¾Â·¾¶£º{pythonScript}", EditorStyles.boldLabel);
-        EditorGUILayout.TextField($"JSONÎÄ¼şÂ·¾¶£º{jsonFilePath}", EditorStyles.boldLabel);
-        EditorGUILayout.TextField($"ExcelÎÄ¼şÂ·¾¶£º{excelFilePath}", EditorStyles.boldLabel);
+        EditorGUILayout.LabelField($"Pythonè„šæœ¬è·¯å¾„ï¼š{pythonScript}", EditorStyles.boldLabel);
+        EditorGUILayout.TextField($"JSONæ–‡ä»¶è·¯å¾„ï¼š{jsonFilePath}", EditorStyles.boldLabel);
+        EditorGUILayout.TextField($"Excelæ–‡ä»¶è·¯å¾„ï¼š{excelFilePath}", EditorStyles.boldLabel);
 
         EditorGUILayout.Space();
-        GUILayout.Label("Â·¾¶¹¤¾ß", EditorStyles.boldLabel);
+        GUILayout.Label("è·¯å¾„å·¥å…·", EditorStyles.boldLabel);
 
-        if (GUILayout.Button("Ñ¡ÔñJSONÎÄ¼ş¼Ğ"))
+        if (GUILayout.Button("é€‰æ‹©JSONæ–‡ä»¶å¤¹"))
         {
-            tempPath = EditorUtility.OpenFolderPanel("Ñ¡ÔñJSONÎÄ¼ş¼Ğ", Application.dataPath, "");
+            tempPath = EditorUtility.OpenFolderPanel("é€‰æ‹©JSONæ–‡ä»¶å¤¹", Application.dataPath, "");
             if (!string.IsNullOrEmpty(tempPath)) jsonFilePath = tempPath;
         }
-        if (GUILayout.Button("Ñ¡ÔñExcelÎÄ¼ş¼Ğ"))
+        if (GUILayout.Button("é€‰æ‹©Excelæ–‡ä»¶å¤¹"))
         {
-            tempPath = EditorUtility.OpenFolderPanel("Ñ¡ÔñExcelÎÄ¼ş¼Ğ", Application.dataPath, "");
+            tempPath = EditorUtility.OpenFolderPanel("é€‰æ‹©Excelæ–‡ä»¶å¤¹", Application.dataPath, "");
             if (!string.IsNullOrEmpty(tempPath)) excelFilePath = tempPath;
         }
-        if (GUILayout.Button("Ñ¡ÔñPython½Å±¾"))
+        if (GUILayout.Button("é€‰æ‹©Pythonè„šæœ¬"))
         {
-            tempPath = EditorUtility.OpenFilePanel("Ñ¡ÔñPython½Å±¾", Application.dataPath, "py");
+            tempPath = EditorUtility.OpenFilePanel("é€‰æ‹©Pythonè„šæœ¬", Application.dataPath, "py");
             if (!string.IsNullOrEmpty(tempPath)) pythonScript = tempPath;
         }
 
         EditorGUILayout.Space();
-        GUILayout.Label("×ª»»²Ù×÷", EditorStyles.boldLabel);
+        GUILayout.Label("è½¬æ¢æ“ä½œ", EditorStyles.boldLabel);
 
         if (GUILayout.Button("Excel To Json"))
         {
-            Execute("2");  // 2 ±íÊ¾ Excel ×ª JSON
+            Execute("2");  // 2 è¡¨ç¤º Excel è½¬ JSON
         }
         //if (GUILayout.Button("Json To Excel"))
         //{
-        //    Execute("1");  // 1 ±íÊ¾ JSON ×ª Excel
+        //    Execute("1");  // 1 è¡¨ç¤º JSON è½¬ Excel
         //}
     }
 
     private void Execute(string argument)
     {
-        // ÑéÖ¤Â·¾¶ÊÇ·ñÉèÖÃ
+        // éªŒè¯è·¯å¾„æ˜¯å¦è®¾ç½®
         if (string.IsNullOrEmpty(pythonScript))
         {
-            EditorUtility.DisplayDialog("´íÎó", "ÇëÏÈÉèÖÃPython½Å±¾Â·¾¶", "È·¶¨");
+            EditorUtility.DisplayDialog("é”™è¯¯", "è¯·å…ˆè®¾ç½®Pythonè„šæœ¬è·¯å¾„", "ç¡®å®š");
             return;
         }
 
         if (string.IsNullOrEmpty(jsonFilePath))
         {
-            EditorUtility.DisplayDialog("´íÎó", "ÇëÏÈÉèÖÃJSONÎÄ¼şÂ·¾¶", "È·¶¨");
+            EditorUtility.DisplayDialog("é”™è¯¯", "è¯·å…ˆè®¾ç½®JSONæ–‡ä»¶è·¯å¾„", "ç¡®å®š");
             return;
         }
 
         if (string.IsNullOrEmpty(excelFilePath))
         {
-            EditorUtility.DisplayDialog("´íÎó", "ÇëÏÈÉèÖÃExcelÎÄ¼şÂ·¾¶", "È·¶¨");
+            EditorUtility.DisplayDialog("é”™è¯¯", "è¯·å…ˆè®¾ç½®Excelæ–‡ä»¶è·¯å¾„", "ç¡®å®š");
             return;
         }
 
-        // ÅäÖÃ Python Ö´ĞĞ»·¾³
+        // é…ç½® Python æ‰§è¡Œç¯å¢ƒ
         ProcessStartInfo startInfo = new ProcessStartInfo
         {
             FileName = interpreter,
@@ -95,13 +95,13 @@ public class ExcelConvertJson : EditorWindow
             CreateNoWindow = true
         };
 
-        // Æô¶¯½ø³Ì
+        // å¯åŠ¨è¿›ç¨‹
         using (Process process = new Process())
         {
             process.StartInfo = startInfo;
             process.Start();
 
-            // ¶ÁÈ¡ Python Êä³ö
+            // è¯»å– Python è¾“å‡º
             string output = process.StandardOutput.ReadToEnd();
             string error = process.StandardError.ReadToEnd();
             process.WaitForExit();
@@ -109,14 +109,14 @@ public class ExcelConvertJson : EditorWindow
             if (!string.IsNullOrEmpty(error))
             {
                 UnityEngine.Debug.LogError("Python Error: " + error);
-                EditorUtility.DisplayDialog("×ª»»´íÎó", $"×ª»»¹ı³ÌÖĞ³öÏÖ´íÎó£º\n{error}", "È·¶¨");
+                EditorUtility.DisplayDialog("è½¬æ¢é”™è¯¯", $"è½¬æ¢è¿‡ç¨‹ä¸­å‡ºç°é”™è¯¯ï¼š\n{error}", "ç¡®å®š");
             }
             else
             {
                 UnityEngine.Debug.Log("Python Output: " + output);
-                EditorUtility.DisplayDialog("×ª»»Íê³É", $"×ª»»³É¹¦£¡\n{output}", "È·¶¨");
+                EditorUtility.DisplayDialog("è½¬æ¢å®Œæˆ", $"è½¬æ¢æˆåŠŸï¼\n{output}", "ç¡®å®š");
 
-                // Ë¢ĞÂAssetÊı¾İ¿â£¬ÈÃUnity¼ì²âµ½ĞÂÎÄ¼ş
+                // åˆ·æ–°Assetæ•°æ®åº“ï¼Œè®©Unityæ£€æµ‹åˆ°æ–°æ–‡ä»¶
                 AssetDatabase.Refresh();
             }
         }
@@ -124,7 +124,7 @@ public class ExcelConvertJson : EditorWindow
 
     private void OnEnable()
     {
-        // ³õÊ¼»¯Ä¬ÈÏÂ·¾¶
+        // åˆå§‹åŒ–é»˜è®¤è·¯å¾„
         if (string.IsNullOrEmpty(pythonScript))
         {
             pythonScript = Application.dataPath + "/Editor/main.py";

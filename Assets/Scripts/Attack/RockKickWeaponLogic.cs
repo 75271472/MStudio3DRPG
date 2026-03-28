@@ -20,8 +20,8 @@ public class RockKickWeaponLogic : WeaponLogic
     }
 
     /// <summary>
-    /// ÖØĞ´¸¸ÀàWeaponLogicµÄEffectApplyÂß¼­Îª¿Õ
-    /// ±ÜÃâÆÕÍ¨¹¥»÷Ê±¶ÔµĞÈË½øĞĞEffectApply
+    /// é‡å†™çˆ¶ç±»WeaponLogicçš„EffectApplyé€»è¾‘ä¸ºç©º
+    /// é¿å…æ™®é€šæ”»å‡»æ—¶å¯¹æ•Œäººè¿›è¡ŒEffectApply
     /// </summary>
     /// <param name="target"></param>
     protected override void EffectApply(Collider target) 
@@ -43,16 +43,16 @@ public class RockKickWeaponLogic : WeaponLogic
         if (target.TryGetComponent<Health>(out var health))
         {
             //print("attack");
-            // ÖØĞ´¸¸ÀàÊÕµ½ÉËº¦Âß¼­£¬ÈÃÊ¯Í·Ôì³ÉµÄÉËº¦ÎªÍæ¼ÒÔì³ÉÉËº¦µÄÁ½±¶
+            // é‡å†™çˆ¶ç±»æ”¶åˆ°ä¼¤å®³é€»è¾‘ï¼Œè®©çŸ³å¤´é€ æˆçš„ä¼¤å®³ä¸ºç©å®¶é€ æˆä¼¤å®³çš„ä¸¤å€
             health.TakeDamage(handler.CharacterData.AttackInfo.GetDamage() * 2,
                 handlerObj);
         }
     }
 
-    // TODO:ÕâÀïÖ±½ÓÈÃMonsterStateMachine×ªµ½GetHit×´Ì¬£¬¶øÃ»ÓĞÊ¹ÓÃRepelEffect
-    // Ô­Òò£ºWeaponLogicÖĞµÄAttackSOÊÇÍ¨¹ıµ±Ç°²¥·ÅµÄAttack¶¯»­ÉèÖÃµÄ£¬
-    // Ã»ÓĞ°ì·¨¶ÔRockÉèÖÃÒ»¸öÈÃ»÷ÖĞ¶ÔÏóÓ²Ö±µÄAttackSO£¬
-    // ÒªÃ´¾ÍµÃĞŞ¸ÄPlayerµÄAttackSO£¬ÄÇÑù»áÈÃPlayer¹¥»÷µ½µÄËùÓĞObj¶¼Ó²Ö±
+    // TODO:è¿™é‡Œç›´æ¥è®©MonsterStateMachineè½¬åˆ°GetHitçŠ¶æ€ï¼Œè€Œæ²¡æœ‰ä½¿ç”¨RepelEffect
+    // åŸå› ï¼šWeaponLogicä¸­çš„AttackSOæ˜¯é€šè¿‡å½“å‰æ’­æ”¾çš„AttackåŠ¨ç”»è®¾ç½®çš„ï¼Œ
+    // æ²¡æœ‰åŠæ³•å¯¹Rockè®¾ç½®ä¸€ä¸ªè®©å‡»ä¸­å¯¹è±¡ç¡¬ç›´çš„AttackSOï¼Œ
+    // è¦ä¹ˆå°±å¾—ä¿®æ”¹Playerçš„AttackSOï¼Œé‚£æ ·ä¼šè®©Playeræ”»å‡»åˆ°çš„æ‰€æœ‰Objéƒ½ç¡¬ç›´
     private void ForceStandEffect(Collider collider)
     {
         if (collider.TryGetComponent<MonsterStateMachine>(out var stateMachine))

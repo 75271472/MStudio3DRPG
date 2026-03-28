@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 2906964128
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6371e7b1b1d0d9d54f6c20c1036df504
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9703a6493cae245b73eb1a81dc0c57f5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6371e7b1b1d0d9d54f6c20c1036df504
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f94c84970360f2145a043585c3b0feaf, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Resources/Prefabs/UI/StateTxt.prefab
+Dependencies: []

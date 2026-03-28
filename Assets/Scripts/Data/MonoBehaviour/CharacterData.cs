@@ -13,10 +13,10 @@ public abstract class CharacterData : MonoBehaviour
     public AttackComboList AttackComboList { get; protected set; }
     public virtual AttackInfo AttackInfo { get; protected set; }
 
-    // ¹©Íâ²¿µ÷ÓÃµÄÊÕµ½ÉËº¦»Øµ÷
-    // ÉËº¦Öµ¡¢µ±Ç°ÑªÁ¿¡¢×ÜÑªÁ¿
+    // ä¾›å¤–éƒ¨è°ƒç”¨çš„æ”¶åˆ°ä¼¤å®³å›è°ƒ
+    // ä¼¤å®³å€¼ã€å½“å‰è¡€é‡ã€æ€»è¡€é‡
     public event Action<int, int, int> OnTakeDamageEvent;
-    // »Ö¸´Öµ¡¢µ±Ç°ÑªÁ¿¡¢×ÜÑªÁ¿
+    // æ¢å¤å€¼ã€å½“å‰è¡€é‡ã€æ€»è¡€é‡
     public event Action<int, int, int> OnRecoveryEvent;
 
     public event Action<GameObject> OnDieEvent;
@@ -36,7 +36,7 @@ public abstract class CharacterData : MonoBehaviour
 
     public void HealthEventRegist(Health health)
     {
-        // TODO:Ã»ÓĞ-=
+        // TODO:æ²¡æœ‰-=
         health.OnTakeDamageEvent += OnTakeDamageHandler;
         health.OnRecoveryEvent += OnRecoveryHandler;
     }
@@ -46,15 +46,15 @@ public abstract class CharacterData : MonoBehaviour
     public abstract void OnTakeDamageHandler(int damage, GameObject attacker);
     public abstract void OnRecoveryHandler(int recovery);
 
-    // ĞŞ¸ÄMonsterStateÖĞµÄÑªÁ¿£¬MonsterStateÖĞµÄÑªÁ¿±£´æÔÚÄÚ´æÖĞ
+    // ä¿®æ”¹MonsterStateä¸­çš„è¡€é‡ï¼ŒMonsterStateä¸­çš„è¡€é‡ä¿å­˜åœ¨å†…å­˜ä¸­
     protected void TakeDamage(MonsterState state, int damage, GameObject attacker)
     {
-        // CharacterStateDataÖĞÊÖ¶¯ÉèÖÃIsDieÎªTrueÊ±
-        // ÓÎÏ·Ê±ÔÙ´ÎÊÕµ½ÉËº¦²»»á½øÈëifÅĞ¶Ï
+        // CharacterStateDataä¸­æ‰‹åŠ¨è®¾ç½®IsDieä¸ºTrueæ—¶
+        // æ¸¸æˆæ—¶å†æ¬¡æ”¶åˆ°ä¼¤å®³ä¸ä¼šè¿›å…¥ifåˆ¤æ–­
         print($"{name} Damage Taken {damage}");
         if (state.isDie || damage <= 0) return;
 
-        // Í¨¹ı·ÀÓùÁ¦½µµÍÉËº¦
+        // é€šè¿‡é˜²å¾¡åŠ›é™ä½ä¼¤å®³
         damage = Mathf.Max(0, damage - state.monsterStateInfo.defense);
         print($"{name} Damage Caused {damage}");
         //print("CharacterData: " + name + " " + state.health);
@@ -72,12 +72,12 @@ public abstract class CharacterData : MonoBehaviour
         }
     }
 
-    // ĞŞ¸ÄPlayerStateInfoÖĞµÄÑªÁ¿£¬PlayerStateInfoÊı¾İ»áĞ´ÈëÍâ´æ
+    // ä¿®æ”¹PlayerStateInfoä¸­çš„è¡€é‡ï¼ŒPlayerStateInfoæ•°æ®ä¼šå†™å…¥å¤–å­˜
     protected void TakeDamage(PlayerStateInfo stateInfo,
         int damage, GameObject attacker)
     {
-        // CharacterStateDataÖĞÊÖ¶¯ÉèÖÃIsDieÎªTrueÊ±
-        // ÓÎÏ·Ê±ÔÙ´ÎÊÕµ½ÉËº¦²»»á½øÈëifÅĞ¶Ï
+        // CharacterStateDataä¸­æ‰‹åŠ¨è®¾ç½®IsDieä¸ºTrueæ—¶
+        // æ¸¸æˆæ—¶å†æ¬¡æ”¶åˆ°ä¼¤å®³ä¸ä¼šè¿›å…¥ifåˆ¤æ–­
         print($"{name} Damage Taken {damage}");
 
         if (stateInfo.isDie || damage <= 0) return;

@@ -22,23 +22,24 @@ public enum ECanvasType
 
 public class UIManager : BaseManager<UIManager>
 {
-    // Ãæ°å´æ´¢×Öµä Ãæ°åÃû - Ãæ°å½Å±¾
-    public Dictionary<string, BasePanel> panelDic = 
-        new Dictionary<string, BasePanel>();
+    // å®ä¾‹åŒ–çš„é¢æ¿å­˜å‚¨å­—å…¸ (é¢æ¿å - é¢æ¿å®ä¾‹è„šæœ¬)
+    public Dictionary<string, BasePanel> panelDic = new Dictionary<string, BasePanel>();
+    // ä»ABä¸­åŠ è½½å‡ºæ¥çš„é¢„åˆ¶ä½“èµ„æº (é¢æ¿å - IResource)
+    private Dictionary<string, IResource> resDic = new Dictionary<string, IResource>();
 
     private Transform bot;
     private Transform mid;
     private Transform top;
     private Transform system;
 
-    // ¼ÇÂ¼Canvas¶ÔÏó£¬·½±ãÍâ²¿»ñÈ¡
+    // è®°å½•Canvaså¯¹è±¡ï¼Œæ–¹ä¾¿å¤–éƒ¨è·å–
     public RectTransform OverlayCanvas { get; private set; }
     public RectTransform WorldCanvas { get; private set; }
     public EventSystem EventSystem { get; private set; }
 
     /// <summary>
-    /// Ãæ°å¹¹Ôìº¯Êı£¬³¡¾°ÖĞ´´½¨CanvasºÍEventSystem¶ÔÏó£¬²¢ÉèÖÃÆä¹ı³¡¾°²»ÒÆ³ı
-    /// Ñ°ÕÒCanvasÖĞµÄBot¡¢Mid¡¢Top¡¢System²ã¼¶×Ó¶ÔÏó
+    /// é¢æ¿æ„é€ å‡½æ•°ï¼Œåœºæ™¯ä¸­åˆ›å»ºCanvaså’ŒEventSystemå¯¹è±¡ï¼Œå¹¶è®¾ç½®å…¶è¿‡åœºæ™¯ä¸ç§»é™¤
+    /// å¯»æ‰¾Canvasä¸­çš„Botã€Midã€Topã€Systemå±‚çº§å­å¯¹è±¡
     /// </summary>
     public UIManager()
     {
@@ -60,7 +61,7 @@ public class UIManager : BaseManager<UIManager>
     private void LayerInit()
     {
         if (OverlayCanvas == null) return;
-        
+
         bot = OverlayCanvas.Find("Bot");
         mid = OverlayCanvas.Find("Mid");
         top = OverlayCanvas.Find("Top");
@@ -79,7 +80,7 @@ public class UIManager : BaseManager<UIManager>
 
     private void EventSystemInit()
     {
-        // ²éÕÒ³¡¾°ÖĞ¶àÓàµÄEventSystem²¢É¾³ı
+        // æŸ¥æ‰¾åœºæ™¯ä¸­å¤šä½™çš„EventSystemå¹¶åˆ é™¤
         foreach (var es in GameObject.FindObjectsByType<EventSystem>(
             FindObjectsSortMode.InstanceID))
         {
@@ -94,13 +95,13 @@ public class UIManager : BaseManager<UIManager>
     }
 
     /// <summary>
-    /// »ñÈ¡²ã¼¶Transform
+    /// è·å–å±‚çº§Transform
     /// </summary>
-    /// <param name="layer">´«Èë²ã¼¶Ã¶¾Ù</param>
+    /// <param name="layer">ä¼ å…¥å±‚çº§æšä¸¾</param>
     /// <returns></returns>
     public Transform GetLayer(EUILayer layer)
     {
-        switch (layer) 
+        switch (layer)
         {
             case EUILayer.Bot: return bot;
             case EUILayer.Mid: return mid;
@@ -110,55 +111,11 @@ public class UIManager : BaseManager<UIManager>
         }
     }
 
-    /**
     /// <summary>
-    /// Òì²½Ãæ°å¼ÓÔØ£¬´ÓResourcesÎÄ¼ş¼ĞÖĞ´´½¨Ãæ°åµ½³¡¾°ÖĞµÄ·½·¨
+    /// åŒæ­¥é¢æ¿åŠ è½½
     /// </summary>
-    /// <typeparam name="T">Ãæ°åÀàĞÍ</typeparam>
-    /// <param name="layer">ÊµÀı»¯Ãæ°å</param>
-    /// <param name="callBack">ÊµÀı»¯Ãæ°åºóµ÷ÓÃµÄ»Øµ÷º¯Êı</param>
-    public void ShowPanelAsync<T>(EUILayer layer = EUILayer.Mid, 
-        UnityAction<T> callBack = null) where T : BasePanel
-    {
-        string panelName = typeof(T).Name;
-        // ¸ù¾İ´«ÈëÃ¶¾Ù£¬ÉèÖÃ¸¸¶ÔÏó²ã¼¶
-        Transform father = GetLayer(layer);
-
-        // µ±Ç°×ÖµäÖĞº¬ÓĞ¸ÃÃæ°å£¬ÉèÖÃ¸¸¶ÔÏó£¬µ÷ÓÃÏÔÊ¾·½·¨²¢Ö´ĞĞ»Øµ÷º¯Êı
-        if (panelDic.ContainsKey(panelName))
-        {
-            panelDic[panelName].transform.SetParent(father);
-            panelDic[panelName].ShowMe();
-            callBack?.Invoke(panelDic[panelName] as T);
-            return;
-        }
-
-        // ×ÖµäÖĞÃ»ÓĞ¸ÃÃæ°å£¬Òì²½¼ÓÔØ×ÊÔ´£¬ÉèÖÃ¸¸¶ÔÏó£¬ÉèÖÃÏà¶ÔÎ»ÖÃÓëËõ·Å£¬
-        // ÖØÖÃÆ«ÒÆÁ¿£¬Ö´ĞĞpanel½Å±¾ShowMe·½·¨£¬Ö´ĞĞ»Øµ÷º¯Êı£¬Ìí¼Óµ½Ãæ°å×ÖµäÖĞ
-        LoadResourceManager.Instance.LoadResourcesAsync<GameObject>(
-            DataManager.PANELROOTPATH + panelName, (obj) =>
-        {
-            obj.transform.SetParent(father);
-
-            obj.transform.localPosition = Vector3.zero;
-            obj.transform.localScale = Vector3.one;
-            (obj.transform as RectTransform).offsetMax = Vector3.zero;
-            (obj.transform as RectTransform).offsetMin = Vector3.zero;
-
-            T panel = obj.GetComponent<T>();
-            panel.ShowMe();
-            callBack?.Invoke(panel);
-
-            panelDic.Add(panelName, panel);
-        });
-    }
-    **/
-
-    /// <summary>
-    /// Í¬²½Ãæ°å¼ÓÔØ
-    /// </summary>
-    /// <typeparam name="T">Ãæ°å·ºĞÍ</typeparam>
-    /// <param name="layer">Éè¶¨²ã¼¶</param>
+    /// <typeparam name="T">é¢æ¿æ³›å‹</typeparam>
+    /// <param name="layer">è®¾å®šå±‚çº§</param>
     /// <returns></returns>
     public T ShowPanel<T>(EUILayer layer = EUILayer.Mid) where T : BasePanel
     {
@@ -168,22 +125,28 @@ public class UIManager : BaseManager<UIManager>
     private T ShowOverlayPanel<T>(EUILayer layer) where T : BasePanel
     {
         string panelName = typeof(T).Name;
-        // ¸ù¾İ´«ÈëÃ¶¾Ù£¬ÉèÖÃ¸¸¶ÔÏó²ã¼¶
+        // æ ¹æ®ä¼ å…¥æšä¸¾ï¼Œè®¾ç½®çˆ¶å¯¹è±¡å±‚çº§
         Transform father = GetLayer(layer);
 
-        // µ±Ç°×ÖµäÖĞº¬ÓĞ¸ÃÃæ°å£¬ÉèÖÃ¸¸¶ÔÏó£¬µ÷ÓÃÏÔÊ¾·½·¨²¢Ö´ĞĞ»Øµ÷º¯Êı
-        if (panelDic.ContainsKey(panelName))
+        // 1. å¦‚æœå½“å‰å­—å…¸ä¸­å·²ç»å®ä¾‹åŒ–è¿‡è¯¥é¢æ¿ï¼Œç›´æ¥æ˜¾ç¤º
+        if (panelDic.TryGetValue(panelName, out BasePanel existingPanel))
         {
-            panelDic[panelName].transform.SetParent(father);
-            panelDic[panelName].ShowMe();
-            return panelDic[panelName] as T;
+            existingPanel.transform.SetParent(father, false);
+            existingPanel.ShowMe();
+            return existingPanel as T;
         }
 
-        // ×ÖµäÖĞÃ»ÓĞ¸ÃÃæ°å£¬ÉèÖÃ¸¸¶ÔÏó£¬ÉèÖÃÏà¶ÔÎ»ÖÃÓëËõ·Å£¬
-        // ÖØÖÃÆ«ÒÆÁ¿£¬Ö´ĞĞpanel½Å±¾ShowMe·½·¨£¬Ö´ĞĞ»Øµ÷º¯Êı£¬Ìí¼Óµ½Ãæ°å×ÖµäÖĞ
-        T panel = GameObject.Instantiate(ResourcesManager.Instance.LoadResources<GameObject>(
-            DataManager.PANELROOTPATH + panelName).GetComponent<T>());
-        panel.transform.SetParent(father);
+        // 2. å¦‚æœé¢æ¿è¿˜æ²¡è¢«å®ä¾‹åŒ–ï¼Œæ£€æŸ¥ AB èµ„æºæ˜¯å¦å·²ç»è¯»å–åˆ°å†…å­˜
+        if (!resDic.TryGetValue(panelName, out IResource resource))
+        {
+            string fullUrl = ResourcesManager.Instance.GetFullUrl(DataManager.PANELROOTPATH + panelName);
+            resource = ResourcesManager.Instance.Load(fullUrl, false);
+            resDic.Add(panelName, resource);
+        }
+
+        // 3. ä»å†…å­˜çš„é¢„åˆ¶ä½“èµ„æºä¸­å®ä¾‹åŒ–å¯¹è±¡
+        T panel = GameObject.Instantiate(resource.GetAsset<GameObject>()).GetComponent<T>();
+        panel.transform.SetParent(father, false);
 
         panel.transform.localPosition = Vector3.zero;
         panel.transform.localScale = Vector3.one;
@@ -196,19 +159,25 @@ public class UIManager : BaseManager<UIManager>
     }
 
     /// <summary>
-    /// ´Ó³¡¾°ÖĞÉ¾³ıÃæ°å·½·¨
+    /// ä»åœºæ™¯ä¸­åˆ é™¤é¢æ¿æ–¹æ³•
     /// </summary>
     public void HidePanel<T>()
     {
         string panelName = typeof(T).Name;
-        // µ÷ÓÃÃæ°åÒş²Ø·½·¨£¬Ïú»Ù¶ÔÏó£¬´Ó×ÖµäÖĞÒÆ³ı
+        
+        // è°ƒç”¨éšè—å¹¶é”€æ¯å®ä¾‹
         if (panelDic.ContainsKey(panelName))
         {
             panelDic[panelName].HideMe();
             GameObject.Destroy(panelDic[panelName].gameObject);
             panelDic.Remove(panelName);
+        }
 
-            ResourcesManager.Instance.Unload(DataManager.PANELROOTPATH + panelName);
+        // ä» AB åº•å±‚é‡Šæ”¾å¯¹é¢„åˆ¶ä»¶çš„å¼•ç”¨å¹¶å¸è½½
+        if (resDic.ContainsKey(panelName))
+        {
+            ResourcesManager.Instance.Unload(resDic[panelName]);
+            resDic.Remove(panelName);
         }
     }
 
@@ -219,14 +188,19 @@ public class UIManager : BaseManager<UIManager>
             panel.HideMe();
             GameObject.Destroy(panel.gameObject);
         }
-
         panelDic.Clear();
+
+        foreach (var resource in resDic.Values)
+        {
+            ResourcesManager.Instance.Unload(resource);
+        }
+        resDic.Clear();
     }
 
     /// <summary>
-    /// »ñÈ¡Ãæ°åÖĞÒÑ´æ´¢µÄÃæ°å
+    /// è·å–é¢æ¿ä¸­å·²å­˜å‚¨çš„é¢æ¿
     /// </summary>
-    /// <typeparam name="T">Ãæ°åÀàĞÍ</typeparam>
+    /// <typeparam name="T">é¢æ¿ç±»å‹</typeparam>
     /// <returns></returns>
     public T GetPanel<T>() where T : BasePanel
     {
@@ -237,12 +211,12 @@ public class UIManager : BaseManager<UIManager>
     }
 
     /// <summary>
-    /// Îª¿Ø¼şÌí¼Ó×Ô¶¨ÒåÊÂ¼ş
+    /// ä¸ºæ§ä»¶æ·»åŠ è‡ªå®šä¹‰äº‹ä»¶
     /// </summary>
-    /// <param name="control">¿Ø¼ş</param>
-    /// <param name="type">ÊÂ¼şÀàĞÍ</param>
-    /// <param name="callBack">»Øµ÷º¯Êı</param>
-    public static void AddControlListener(UIBehaviour control, 
+    /// <param name="control">æ§ä»¶</param>
+    /// <param name="type">äº‹ä»¶ç±»å‹</param>
+    /// <param name="callBack">å›è°ƒå‡½æ•°</param>
+    public static void AddControlListener(UIBehaviour control,
         EventTriggerType type, UnityAction<BaseEventData> callBack)
     {
         EventTrigger trigger = control.GetComponent<EventTrigger>();
@@ -252,6 +226,6 @@ public class UIManager : BaseManager<UIManager>
         EventTrigger.Entry entry = new EventTrigger.Entry();
         entry.eventID = type;
         entry.callback.AddListener(callBack);
-        trigger.triggers.Add( entry );
+        trigger.triggers.Add(entry);
     }
 }

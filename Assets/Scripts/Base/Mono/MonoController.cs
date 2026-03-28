@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class MonoController : MonoBehaviour
 {
-    // Ã»ÓĞ¼Ì³ĞMonoÀàÔÚUpdateº¯ÊıÖĞÖ´ĞĞÊÂ¼ş
+    // æ²¡æœ‰ç»§æ‰¿Monoç±»åœ¨Updateå‡½æ•°ä¸­æ‰§è¡Œäº‹ä»¶
     private UnityAction updateEvent;
     private UnityAction awakeEvent;
     private UnityAction startEvent;
@@ -13,7 +13,7 @@ public class MonoController : MonoBehaviour
 
     //private void Awake()
     //{
-    //    // ¹ı³¡¾°²»ÒÆ³ı£¬±£³ÖÓÎÏ·¶ÔÏóÎ¨Ò»ĞÔ£¬½ø¶ø±£Ö¤½Å±¾Î¨Ò»ĞÔ
+    //    // è¿‡åœºæ™¯ä¸ç§»é™¤ï¼Œä¿æŒæ¸¸æˆå¯¹è±¡å”¯ä¸€æ€§ï¼Œè¿›è€Œä¿è¯è„šæœ¬å”¯ä¸€æ€§
     //    DontDestroyOnLoad(gameObject);
     //}
 
@@ -43,7 +43,7 @@ public class MonoController : MonoBehaviour
     }
 
     /// <summary>
-    /// Ìí¼ÓÊÂ¼ş
+    /// æ·»åŠ äº‹ä»¶
     /// </summary>
     /// <param name="action"></param>
     public void AddUpdateEventListener(UnityAction action)
@@ -52,7 +52,7 @@ public class MonoController : MonoBehaviour
     }
 
     /// <summary>
-    /// ÒÆ³öÊÂ¼ş
+    /// ç§»å‡ºäº‹ä»¶
     /// </summary>
     /// <param name="action"></param>
     public void RemoveUpdateEventListener(UnityAction action)

@@ -14,10 +14,10 @@ public static class ExtensionTool
     }
 
     /// <summary>
-    /// Ê¹ÓÃGetPosByRay»ñÈ¡Pos
-    /// ´ÓPosÏòÏÂ·¢Éä³¤¶ÈÎªdistanceµÄÉäÏß£¬
-    /// ÉäÏßÅö×²µ½ÎïÌå·µ»ØÎïÌåÅö×²µãposition£¬
-    /// ·ñÔò·µ»ØPos + Vector3.down * distance
+    /// ä½¿ç”¨GetPosByRayè·å–Pos
+    /// ä»Poså‘ä¸‹å‘å°„é•¿åº¦ä¸ºdistanceçš„å°„çº¿ï¼Œ
+    /// å°„çº¿ç¢°æ’åˆ°ç‰©ä½“è¿”å›ç‰©ä½“ç¢°æ’ç‚¹positionï¼Œ
+    /// å¦åˆ™è¿”å›Pos + Vector3.down * distance
     /// </summary>
     /// <param name="transform"></param>
     /// <param name="direction"></param>
@@ -36,9 +36,9 @@ public static class ExtensionTool
     }
 
     /// <summary>
-    /// ´Ótransform.positonÏòdirection·½Ïò·¢Éä³¤¶ÈÎªdistanceµÄÉäÏß
-    /// ÉäÏßÅö×²µ½ÎïÌå·µ»ØÎïÌåÅö×²µãposition£¬
-    /// ·ñÔò·µ»Øtransform.position + transform.forward * distance
+    /// ä»transform.positonå‘directionæ–¹å‘å‘å°„é•¿åº¦ä¸ºdistanceçš„å°„çº¿
+    /// å°„çº¿ç¢°æ’åˆ°ç‰©ä½“è¿”å›ç‰©ä½“ç¢°æ’ç‚¹positionï¼Œ
+    /// å¦åˆ™è¿”å›transform.position + transform.forward * distance
     /// </summary>
     /// <param name="transform"></param>
     /// <param name="distance"></param>
@@ -56,14 +56,14 @@ public static class ExtensionTool
     }
 
     /// <summary>
-    /// ¼ì²âÉäÏßÓëTargetµÄÅö×²µãÊÇ·ñÔÚAreaÄÚ
-    /// ¶ø·ÇÖ±½Ó±È½ÏTarget.positionÊÇ·ñÔÚAreaÄÚ
+    /// æ£€æµ‹å°„çº¿ä¸Targetçš„ç¢°æ’ç‚¹æ˜¯å¦åœ¨Areaå†…
+    /// è€Œéç›´æ¥æ¯”è¾ƒTarget.positionæ˜¯å¦åœ¨Areaå†…
     /// </summary>
-    /// <param name="transform">µ÷ÓÃtransform</param>
+    /// <param name="transform">è°ƒç”¨transform</param>
     /// <param name="target"></param>
-    /// <param name="distance">¼ì²â°ë¾¶</param>
-    /// <param name="angle">¼ì²âµãÓë×ÔÉípositionÁ¬ÏßÓë×ÔÉíforwardË®Æ½¼Ğ½Ç×î´óÖµ</param>
-    /// <param name="isDebug">´«Èë·Çnull×Ö·û´®´òÓ¡µ÷ÊÔĞÅÏ¢</param>
+    /// <param name="distance">æ£€æµ‹åŠå¾„</param>
+    /// <param name="angle">æ£€æµ‹ç‚¹ä¸è‡ªèº«positionè¿çº¿ä¸è‡ªèº«forwardæ°´å¹³å¤¹è§’æœ€å¤§å€¼</param>
+    /// <param name="isDebug">ä¼ å…¥énullå­—ç¬¦ä¸²æ‰“å°è°ƒè¯•ä¿¡æ¯</param>
     /// <returns></returns>
     //public static bool IsTargetInAreaByRay(this Transform transform, GameObject target,
     //    float distance, float angle, string isDebug = null)
@@ -72,7 +72,7 @@ public static class ExtensionTool
     //    Ray ray = new Ray(transform.position, direction);
     //    Debug.DrawRay(transform.position, direction.normalized * distance, Color.red, 0.1f);
 
-    //    // ÊÇ·ñ¼ì²âµ½ÎïÌå£¨¼ì²âËùÓĞ²ã£©
+    //    // æ˜¯å¦æ£€æµ‹åˆ°ç‰©ä½“ï¼ˆæ£€æµ‹æ‰€æœ‰å±‚ï¼‰
     //    if (!Physics.Raycast(ray, out var hitInfo, distance, GetLayer()))
     //    {
     //        return false;
@@ -87,10 +87,10 @@ public static class ExtensionTool
     //        Debug.Log($"{isDebug} {hitInfo.collider.name} {target.name}");
     //    }
 
-    //    // ¼ì²âµ½µÄÎïÌåÊÇ·ñºÍtargetÊÇÍ¬Ò»¸ö
-    //    // Èç¹ûcolliderÎªtargetµÄ×ÓÎïÌå£¬»áÅĞ¶¨Ê§°Ü£¡£¡£¡
+    //    // æ£€æµ‹åˆ°çš„ç‰©ä½“æ˜¯å¦å’Œtargetæ˜¯åŒä¸€ä¸ª
+    //    // å¦‚æœcolliderä¸ºtargetçš„å­ç‰©ä½“ï¼Œä¼šåˆ¤å®šå¤±è´¥ï¼ï¼ï¼
     //    if (!hitInfo.collider.gameObject.Equals(target)) return false;
-    //    // ¶¼Âú×ã²Î¿¼½Ç¶ÈÊÇ·ñÔÚ·¶Î§ÄÚ
+    //    // éƒ½æ»¡è¶³å‚è€ƒè§’åº¦æ˜¯å¦åœ¨èŒƒå›´å†…
     //    return IsTargetInAngle(transform, target, angle, isDebug);
     //}
 
@@ -101,62 +101,62 @@ public static class ExtensionTool
             isDebug, heightOffset);
     }
 
-    // Ôö¼Ó heightOffset ²ÎÊı£¬Í¨³£ÉèÎª 1.0f - 1.5f (¸ù¾İ½ÇÉ«Éí¸ß)
+    // å¢åŠ  heightOffset å‚æ•°ï¼Œé€šå¸¸è®¾ä¸º 1.0f - 1.5f (æ ¹æ®è§’è‰²èº«é«˜)
     /// <summary>
-    /// ¼ì²âÄ¿±êÊÇ·ñÔÚÉÈĞÎÇøÓòÄÚ£¬²¢·µ»Ø±íÃæ×î¶Ì¾àÀë
+    /// æ£€æµ‹ç›®æ ‡æ˜¯å¦åœ¨æ‰‡å½¢åŒºåŸŸå†…ï¼Œå¹¶è¿”å›è¡¨é¢æœ€çŸ­è·ç¦»
     /// </summary>
-    /// <param name="transform">·¢ÆğÕß</param>
-    /// <param name="target">Ä¿±ê</param>
-    /// <param name="maxDistance">×î´ó¼ì²â¾àÀë</param>
-    /// <param name="angle">ÉÈĞÎ½Ç¶È</param>
-    /// <param name="surfaceDistance">¡¾Êä³ö¡¿¼ÆËã³öµÄ±íÃæ×î¶Ì¾àÀë£¨Èç¹ûÊ§°Ü¿ÉÄÜÎª Infinity£©</param>
-    /// <param name="heightOffset">·¢ÆğÕßµÄ¸ß¶ÈÆ«ÒÆ£¨ÈçÑÛ¾¦¸ß¶È£©£¬·ÀÖ¹½Åµ×±»ÕÚµ²</param>
-    /// <param name="isDebug">Debug±êÇ©</param>
-    /// <returns>ÊÇ·ñÔÚ·¶Î§ÄÚÇÒ¿É¼û</returns>
+    /// <param name="transform">å‘èµ·è€…</param>
+    /// <param name="target">ç›®æ ‡</param>
+    /// <param name="maxDistance">æœ€å¤§æ£€æµ‹è·ç¦»</param>
+    /// <param name="angle">æ‰‡å½¢è§’åº¦</param>
+    /// <param name="surfaceDistance">ã€è¾“å‡ºã€‘è®¡ç®—å‡ºçš„è¡¨é¢æœ€çŸ­è·ç¦»ï¼ˆå¦‚æœå¤±è´¥å¯èƒ½ä¸º Infinityï¼‰</param>
+    /// <param name="heightOffset">å‘èµ·è€…çš„é«˜åº¦åç§»ï¼ˆå¦‚çœ¼ç›é«˜åº¦ï¼‰ï¼Œé˜²æ­¢è„šåº•è¢«é®æŒ¡</param>
+    /// <param name="isDebug">Debugæ ‡ç­¾</param>
+    /// <returns>æ˜¯å¦åœ¨èŒƒå›´å†…ä¸”å¯è§</returns>
     public static bool IsTargetInAreaByRay(this Transform transform, GameObject target,
         float maxDistance, float angle, out float surfaceDistance,
         string isDebug = null, float heightOffset = 1.0f)
     {
-        // ³õÊ¼»¯Êä³ö²ÎÊı (±ØĞëÔÚÈÎºÎ return Ç°¸³Öµ)
+        // åˆå§‹åŒ–è¾“å‡ºå‚æ•° (å¿…é¡»åœ¨ä»»ä½• return å‰èµ‹å€¼)
         surfaceDistance = Mathf.Infinity;
 
         if (target == null) return false;
 
-        // 1. È·¶¨Æğµã£º¼ÓÉÏ¸ß¶ÈÆ«ÒÆ£¬´Ó¡°ĞØ¿Ú/ÑÛ¾¦¡±·¢Éä£¬±ÜÃâ±»µØÃæµÄÎ¢Ğ¡Æğ·üÕÚµ²
+        // 1. ç¡®å®šèµ·ç‚¹ï¼šåŠ ä¸Šé«˜åº¦åç§»ï¼Œä»â€œèƒ¸å£/çœ¼ç›â€å‘å°„ï¼Œé¿å…è¢«åœ°é¢çš„å¾®å°èµ·ä¼é®æŒ¡
         Vector3 startPos = transform.position + Vector3.up * heightOffset;
 
-        // 2. ¼ÆËãÄ¿±ê±íÃæ×î½üµã
+        // 2. è®¡ç®—ç›®æ ‡è¡¨é¢æœ€è¿‘ç‚¹
         Vector3 targetPoint;
         Collider targetCollider = target.GetComponent<Collider>();
 
         if (targetCollider != null)
         {
-            // »ñÈ¡Åö×²Ìå±íÃæ¾àÀë startPos ×î½üµÄµã
+            // è·å–ç¢°æ’ä½“è¡¨é¢è·ç¦» startPos æœ€è¿‘çš„ç‚¹
             targetPoint = targetCollider.ClosestPoint(startPos);
         }
         else
         {
-            // Èç¹ûÄ¿±êÃ»ÓĞCollider£¬»ØÍËµ½Ê¹ÓÃÄ¿±êÖĞĞÄµã£¨²¢¼ÓÉÏÍ¬ÑùµÄ¸ß¶ÈÆ«ÒÆÒÔ·ÀÖ»¼ì²â½Åµ×£©
+            // å¦‚æœç›®æ ‡æ²¡æœ‰Colliderï¼Œå›é€€åˆ°ä½¿ç”¨ç›®æ ‡ä¸­å¿ƒç‚¹ï¼ˆå¹¶åŠ ä¸ŠåŒæ ·çš„é«˜åº¦åç§»ä»¥é˜²åªæ£€æµ‹è„šåº•ï¼‰
             targetPoint = target.transform.position + Vector3.up * heightOffset;
         }
 
-        // 3. ¡¾ºËĞÄĞŞ¸Ä¡¿¼ÆËã²¢¸³Öµ±íÃæ¾àÀë
+        // 3. ã€æ ¸å¿ƒä¿®æ”¹ã€‘è®¡ç®—å¹¶èµ‹å€¼è¡¨é¢è·ç¦»
         Vector3 direction = targetPoint - startPos;
         surfaceDistance = direction.magnitude;
 
-        // 4. ¾àÀëÔ¤ÅĞ£ºÈç¹û¼¸ºÎ¾àÀëÒÑ¾­³¬¹ı×î´ó¾àÀë£¬Ö±½Ó·µ»Ø false
+        // 4. è·ç¦»é¢„åˆ¤ï¼šå¦‚æœå‡ ä½•è·ç¦»å·²ç»è¶…è¿‡æœ€å¤§è·ç¦»ï¼Œç›´æ¥è¿”å› false
         if (surfaceDistance > maxDistance)
         {
             return false;
         }
 
-        // 5. ÉäÏß¼ì²â£¨¼ì²âÕÚµ²£©
+        // 5. å°„çº¿æ£€æµ‹ï¼ˆæ£€æµ‹é®æŒ¡ï¼‰
         Ray ray = new Ray(startPos, direction.normalized);
 
-        // ÉÔÎ¢¼ÓÒ»µã¾àÀëÈİ²î (0.05f) ·ÀÖ¹¸¡µãÊı¾«¶ÈÎÊÌâµ¼ÖÂ´ò²»µ½×ÔÉí±íÃæ
+        // ç¨å¾®åŠ ä¸€ç‚¹è·ç¦»å®¹å·® (0.05f) é˜²æ­¢æµ®ç‚¹æ•°ç²¾åº¦é—®é¢˜å¯¼è‡´æ‰“ä¸åˆ°è‡ªèº«è¡¨é¢
         if (Physics.Raycast(ray, out var hitInfo, surfaceDistance + 0.05f, GetLayer()))
         {
-            // ÅĞ¶¨»÷ÖĞÎïÌåÊÇ·ñÊôÓÚÄ¿±ê (°üÀ¨×ÔÉí»òÊÇ×ÓÎïÌå)
+            // åˆ¤å®šå‡»ä¸­ç‰©ä½“æ˜¯å¦å±äºç›®æ ‡ (åŒ…æ‹¬è‡ªèº«æˆ–æ˜¯å­ç‰©ä½“)
             bool isTarget = hitInfo.collider.gameObject == target ||
                             hitInfo.collider.transform.IsChildOf(target.transform);
 
@@ -167,18 +167,18 @@ public static class ExtensionTool
                 Debug.Log($"{isDebug} distance {surfaceDistance} maxDistance {maxDistance}");
             }
 
-            if (!isTarget) return false; // ±»Ç½ÌåÕÚµ²
+            if (!isTarget) return false; // è¢«å¢™ä½“é®æŒ¡
 
-            // 6. ½Ç¶ÈÅĞ¶¨ (×îºó×ö£¬ÒòÎªÇ°ÃæµÄ Raycast Ò²¾ÍÊÇÒ»Ìõ£¬¿ªÏú²»´ó)
+            // 6. è§’åº¦åˆ¤å®š (æœ€ååšï¼Œå› ä¸ºå‰é¢çš„ Raycast ä¹Ÿå°±æ˜¯ä¸€æ¡ï¼Œå¼€é”€ä¸å¤§)
             return IsTargetInAngle(transform, target, angle, isDebug);
         }
 
-        // Èç¹û Raycast Ã»´òÖĞÈÎºÎ¶«Î÷£¨¼«Æäº±¼û£¬¿ÉÄÜÊÇClosestPointÔÚÄÚ²¿£©£¬
-        // »òÕß¾àÀë¼«½ü£¬Í¨³£ÊÓÎª¿É¼û£¬¼ÌĞøÅĞ¶Ï½Ç¶È
+        // å¦‚æœ Raycast æ²¡æ‰“ä¸­ä»»ä½•ä¸œè¥¿ï¼ˆæå…¶ç½•è§ï¼Œå¯èƒ½æ˜¯ClosestPointåœ¨å†…éƒ¨ï¼‰ï¼Œ
+        // æˆ–è€…è·ç¦»æè¿‘ï¼Œé€šå¸¸è§†ä¸ºå¯è§ï¼Œç»§ç»­åˆ¤æ–­è§’åº¦
         return IsTargetInAngle(transform, target, angle, isDebug);
     }
 
-    // ±¸ÓÃ£ºÈç¹ûÄ¿±êÃ»ÓĞCollider£¬Ê¹ÓÃÖĞĞÄµã¶ÔÉä
+    // å¤‡ç”¨ï¼šå¦‚æœç›®æ ‡æ²¡æœ‰Colliderï¼Œä½¿ç”¨ä¸­å¿ƒç‚¹å¯¹å°„
     private static bool CheckByPosition(Transform transform, GameObject target, 
         Vector3 startPos, Vector3 targetPos, float distance, float angle, 
         string isDebug)
@@ -197,7 +197,7 @@ public static class ExtensionTool
     }
 
     /// <summary>
-    /// Ö±½Ó±È½ÏTarget.positionÊÇ·ñÔÚAreaÄÚ
+    /// ç›´æ¥æ¯”è¾ƒTarget.positionæ˜¯å¦åœ¨Areaå†…
     /// </summary>
     /// <param name="transform"></param>
     /// <param name="target"></param>
@@ -222,7 +222,7 @@ public static class ExtensionTool
         Vector3 pos, float angle, string isDebug = null)
     {
         Vector3 direction = pos - transform.position;
-        // ºöÂÔyÖáÓ°Ïì
+        // å¿½ç•¥yè½´å½±å“
         direction.y = 0;
 
         if (isDebug != null)
@@ -252,26 +252,26 @@ public static class ExtensionTool
             Debug.Log($"{isDebug} Distance: {Vector3.Distance(pos, transform.position)} " +
                 $"TargetDistance: {distance}");
         }
-        // ¼ÆËãË®Æ½ÃæÄÚ¾àÀë
+        // è®¡ç®—æ°´å¹³é¢å†…è·ç¦»
         
         return Vector3.SqrMagnitude(pos - transform.position) <
             distance * distance;
     }
 
-    // ³¯ÏòtargetµÄRotation
+    // æœå‘targetçš„Rotation
     public static void UpdateRotateToTarget(this Transform transform,
         GameObject targetObj, float rotateSpeed)
     {
-        // Ã¿Ö¡Ğı×ª¹Ì¶¨½Ç¶È£¬¸ü¾«È·¿ØÖÆĞı×ªËÙ¶È
+        // æ¯å¸§æ—‹è½¬å›ºå®šè§’åº¦ï¼Œæ›´ç²¾ç¡®æ§åˆ¶æ—‹è½¬é€Ÿåº¦
         transform.rotation = Quaternion.RotateTowards(transform.rotation,
             targetObj.transform.rotation, rotateSpeed * Time.deltaTime);
     }
 
-    // ³¯Ïòtarget
+    // æœå‘target
     public static void UpdateLookToTarget(this Transform transform, 
         GameObject targetObj, float rotateSpeed)
     {
-        // Ã¿Ö¡Ğı×ª¹Ì¶¨½Ç¶È£¬¸ü¾«È·¿ØÖÆĞı×ªËÙ¶È
+        // æ¯å¸§æ—‹è½¬å›ºå®šè§’åº¦ï¼Œæ›´ç²¾ç¡®æ§åˆ¶æ—‹è½¬é€Ÿåº¦
         transform.rotation = Quaternion.RotateTowards(transform.rotation,
             Quaternion.LookRotation(targetObj.transform.position - transform.position),
             rotateSpeed * Time.deltaTime
@@ -287,7 +287,7 @@ public static class ExtensionTool
         return Vector3.Distance(transform.position, targetPos);
     }
 
-    // ÉäÏß¼ì²â¹¥»÷µã£¬Ö»¶ÔPlayerºÍMonster²ã½øĞĞ¼ì²â
+    // å°„çº¿æ£€æµ‹æ”»å‡»ç‚¹ï¼Œåªå¯¹Playerå’ŒMonsterå±‚è¿›è¡Œæ£€æµ‹
     private static int GetLayer()
     {
         return 1 << LayerMask.NameToLayer("Player") | 

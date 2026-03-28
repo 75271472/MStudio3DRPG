@@ -33,8 +33,8 @@ public class GameOverPanel : BasePanel
         backMenuBtn.onClick.AddListener(() =>
         {
             Debug.Log("Back Menu");
-            // ÏÈÉ¾³ıËùÓĞÃæ°åÔÚ½øĞĞ³¡¾°¼ÓÔØ
-            // ÒòÎª³¡¾°¼ÓÔØÊ±Ò²»á´´½¨Ãæ°å£¬ÏÈ½øĞĞ³¡¾°¼ÓÔØÔÚÉ¾³ıÃæ°å»á°É³¡¾°¼ÓÔØÃæ°åÒ²É¾³ı
+            // å…ˆåˆ é™¤æ‰€æœ‰é¢æ¿åœ¨è¿›è¡Œåœºæ™¯åŠ è½½
+            // å› ä¸ºåœºæ™¯åŠ è½½æ—¶ä¹Ÿä¼šåˆ›å»ºé¢æ¿ï¼Œå…ˆè¿›è¡Œåœºæ™¯åŠ è½½åœ¨åˆ é™¤é¢æ¿ä¼šå§åœºæ™¯åŠ è½½é¢æ¿ä¹Ÿåˆ é™¤
             LoadSceneManager.Instance.LoadSceneAsync(DataManager.STARTSCENE);
         });
 
@@ -50,15 +50,15 @@ public class GameOverPanel : BasePanel
 
     private IEnumerator FadeInPanelCoroutine()
     {
-        // µ­ÈëÃæ°å
+        // æ·¡å…¥é¢æ¿
         yield return FadeInCoroutine(panelCanvasGroup);
-        // µ­Èëµ­³ögameovertext
+        // æ·¡å…¥æ·¡å‡ºgameovertext
         yield return FadeInCoroutine(gameOverCanvasGroup);
         yield return FadeOutCoroutine(gameOverCanvasGroup);
-        // µ­Èëµ­³öthanktext
+        // æ·¡å…¥æ·¡å‡ºthanktext
         yield return FadeInCoroutine(thankCanvasGroup);
         yield return FadeOutCoroutine(thankCanvasGroup);
-        // µ­Èëbtngroup
+        // æ·¡å…¥btngroup
         yield return FadeInCoroutine(btnCanvasGroup);
     }
 

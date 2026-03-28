@@ -30,7 +30,7 @@ public class PlayerStateMachine : CharacterStateMachine
         base.ComponentInit();
 
         NavMeshInit(Agent, PlayerMoveSO);
-        // Èç¹ûÃ»ËÀ£¬½«IsVisibleÖÃÕæ
+        // å¦‚æœæ²¡æ­»ï¼Œå°†IsVisibleç½®çœŸ
         if (!PlayerManager.Instance.PlayerData.PlayerStateInfo.isDie)
         {
             Health.ResetIsDie();
@@ -47,29 +47,29 @@ public class PlayerStateMachine : CharacterStateMachine
 
     private IEnumerator WaitForNavMeshAgent()
     {
-        // Ôö¼ÓÒ»¸ö³¬Ê±±£ÏÕ£¬·ÀÖ¹ËÀÑ­»·µ¼ÖÂÂß¼­ÓÀÔ¶¿¨ÔÚÕâÀï
+        // å¢åŠ ä¸€ä¸ªè¶…æ—¶ä¿é™©ï¼Œé˜²æ­¢æ­»å¾ªç¯å¯¼è‡´é€»è¾‘æ°¸è¿œå¡åœ¨è¿™é‡Œ
         float timeout = 5f;
         float timer = 0f;
 
         while (Agent != null && !Agent.isOnNavMesh)
         {
-            // ³¢ÊÔ½«½ÇÉ«ÌùºÏµ½ NavMesh ÉÏ
+            // å°è¯•å°†è§’è‰²è´´åˆåˆ° NavMesh ä¸Š
             if (NavMesh.SamplePosition(transform.position, out NavMeshHit hit, 10f, 
                 NavMesh.AllAreas))
             {
                 Agent.Warp(hit.position);
-                // ÕÒµ½ÁËÒ²²»ÄÜÁ¢¼´ÍË³ö£¬ÏÂÒ»Ö¡ isOnNavMesh ²Å»á¸üĞÂ£¬ËùÒÔÕâÀï×ÔÈ»Ò²»á×ßµ½ÏÂÃæµÄ yield
+                // æ‰¾åˆ°äº†ä¹Ÿä¸èƒ½ç«‹å³é€€å‡ºï¼Œä¸‹ä¸€å¸§ isOnNavMesh æ‰ä¼šæ›´æ–°ï¼Œæ‰€ä»¥è¿™é‡Œè‡ªç„¶ä¹Ÿä¼šèµ°åˆ°ä¸‹é¢çš„ yield
             }
 
             timer += Time.deltaTime;
             if (timer > timeout)
             {
-                Debug.LogError("ÑÏÖØ¾¯¸æ£ºÔÚ 5 ÃëÄÚÎ´ÄÜÕÒµ½ÓĞĞ§µÄ NavMesh£¡Çë¼ì²é³¡¾°ÊÇ·ñÒÑºæ±º NavMesh¡£Ç¿ÖÆÍË³öµÈ´ı¡£");
+                Debug.LogError("ä¸¥é‡è­¦å‘Šï¼šåœ¨ 5 ç§’å†…æœªèƒ½æ‰¾åˆ°æœ‰æ•ˆçš„ NavMeshï¼è¯·æ£€æŸ¥åœºæ™¯æ˜¯å¦å·²çƒ˜ç„™ NavMeshã€‚å¼ºåˆ¶é€€å‡ºç­‰å¾…ã€‚");
                 break;
             }
 
-            // ¡¾¹Ø¼üĞŞ¸Ä¡¿½« yield ÒÆµ½ if ÍâÃæ
-            // È·±£ÎŞÂÛ SamplePosition ³É¹¦»¹ÊÇÊ§°Ü£¬¶¼»áÈÃ³öÖ÷Ïß³Ì£¬µÈ´ıÏÂÒ»Ö¡
+            // ã€å…³é”®ä¿®æ”¹ã€‘å°† yield ç§»åˆ° if å¤–é¢
+            // ç¡®ä¿æ— è®º SamplePosition æˆåŠŸè¿˜æ˜¯å¤±è´¥ï¼Œéƒ½ä¼šè®©å‡ºä¸»çº¿ç¨‹ï¼Œç­‰å¾…ä¸‹ä¸€å¸§
             yield return null;
         }
 
@@ -78,14 +78,14 @@ public class PlayerStateMachine : CharacterStateMachine
 
     //private IEnumerator WaitForNavMeshAgent()
     //{
-    //    // µÈ´ıÖ±µ½NavMeshAgent¾ÍĞ÷
+    //    // ç­‰å¾…ç›´åˆ°NavMeshAgentå°±ç»ª
     //    while (Agent != null && !Agent.isOnNavMesh)
     //    {
-    //        // Ç¿ÖÆ·ÅÖÃÔÚNavMeshÉÏ
+    //        // å¼ºåˆ¶æ”¾ç½®åœ¨NavMeshä¸Š
     //        if (NavMesh.SamplePosition(transform.position, out NavMeshHit hit, 10f, NavMesh.AllAreas))
     //        {
     //            Agent.Warp(hit.position);
-    //            yield return null; // µÈ´ıÒ»Ö¡ÈÃWarpÉúĞ§
+    //            yield return null; // ç­‰å¾…ä¸€å¸§è®©Warpç”Ÿæ•ˆ
     //        }
     //        //print($"WaitForNavMeshAgent {Agent == null} {Agent.isOnNavMesh}");
     //    }
@@ -95,7 +95,7 @@ public class PlayerStateMachine : CharacterStateMachine
 
     public override void Pause()
     {
-        // Îªnull±íÊ¾Î´³õÊ¼»¯²»ÔÙ¼ÌĞøÖ´ĞĞ
+        // ä¸ºnullè¡¨ç¤ºæœªåˆå§‹åŒ–ä¸å†ç»§ç»­æ‰§è¡Œ
         if (Agent == null) return;
 
         Agent.enabled = false;
@@ -104,7 +104,7 @@ public class PlayerStateMachine : CharacterStateMachine
 
     public override void UnPause()
     {
-        // Îªnull±íÊ¾Î´³õÊ¼»¯²»ÔÙ¼ÌĞøÖ´ĞĞ
+        // ä¸ºnullè¡¨ç¤ºæœªåˆå§‹åŒ–ä¸å†ç»§ç»­æ‰§è¡Œ
         if (Agent == null) return;
 
         Agent.enabled = true;

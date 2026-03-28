@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3556641653
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 35552358613c8bb489accf172b645466
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 35552358613c8bb489accf172b645466
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/Exclamation_Yellow.png
+Dependencies: []

@@ -34,7 +34,7 @@ public class Item : MonoBehaviour
 }
 
 /// <summary>
-/// ¿ÉÏú»ÙÎïÆ·½Ó¿Ú£¬±íÊ¾¸ÃÎïÆ·ÊÇ¿É±»Ïú»ÙµÄ
+/// å¯é”€æ¯ç‰©å“æ¥å£ï¼Œè¡¨ç¤ºè¯¥ç‰©å“æ˜¯å¯è¢«é”€æ¯çš„
 /// </summary>
 public interface IDestroyableItem
 {
@@ -42,7 +42,7 @@ public interface IDestroyableItem
 }
 
 /// <summary>
-/// ¿É×°±¸ÎïÆ·
+/// å¯è£…å¤‡ç‰©å“
 /// </summary>
 public interface IEquippableItem
 {
@@ -50,7 +50,7 @@ public interface IEquippableItem
 }
 
 /// <summary>
-/// ¿ÉĞ¶ÏÂÎïÆ·
+/// å¯å¸ä¸‹ç‰©å“
 /// </summary>
 public interface IDetachableItem
 {
@@ -70,7 +70,7 @@ public class PerformActionInfo
 }
 
 /// <summary>
-/// ÎïÆ·ÊÂ¼ş½Ó¿Ú£¬±íÊ¾¸ÃÎïÆ·¿ÉÓÃÖ´ĞĞµÄÒ»¸ö¶¯×÷
+/// ç‰©å“äº‹ä»¶æ¥å£ï¼Œè¡¨ç¤ºè¯¥ç‰©å“å¯ç”¨æ‰§è¡Œçš„ä¸€ä¸ªåŠ¨ä½œ
 /// </summary>
 public interface IItemAction
 {

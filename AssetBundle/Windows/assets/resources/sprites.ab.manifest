@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 391772333
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 433cb232150788b13b2ab60e5d1f0695
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 433cb232150788b13b2ab60e5d1f0695
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Sprites/Mushroom1.png
+- Assets/Resources/Sprites/Icon.png
+- Assets/Resources/Sprites/Apple.png
+- Assets/Resources/Sprites/Shield.png
+- Assets/Resources/Sprites/Pear.png
+- Assets/Resources/Sprites/RamonSword.png
+- Assets/Resources/Sprites/Mushroom2.png
+- Assets/Resources/Sprites/Sword.png
+- Assets/Resources/Sprites/RamonShield.png
+- Assets/Resources/Sprites/Fist.png
+Dependencies: []

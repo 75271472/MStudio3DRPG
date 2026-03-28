@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ValueBar : MonoBehaviour
 {
     [field: SerializeField] public float buffTime;
-    // ¸ÃÖµ´óÓÚÁã£¬±íÊ¾¸üĞÂÑªÌõÊ±ĞŞ¸ÄÑªÌõÍ¸Ã÷¶È
+    // è¯¥å€¼å¤§äºé›¶ï¼Œè¡¨ç¤ºæ›´æ–°è¡€æ¡æ—¶ä¿®æ”¹è¡€æ¡é€æ˜åº¦
     [field: SerializeField] public float alphaTime;
 
     [SerializeField] private CanvasGroup canvasGroup;
@@ -47,7 +47,7 @@ public class ValueBar : MonoBehaviour
 
         float elapsedTime = 0;
 
-        // Ğ¡ÓÚÁãËµÃ÷barÒªÔö³¤
+        // å°äºé›¶è¯´æ˜barè¦å¢é•¿
         if (difference < 0)
         {
             effectBar.fillAmount = barFillAmount;
@@ -64,7 +64,7 @@ public class ValueBar : MonoBehaviour
 
             bar.fillAmount = effectBar.fillAmount;
         }
-        // ´óÓÚÁãËµÃ÷barÒª¼õÉÙ
+        // å¤§äºé›¶è¯´æ˜barè¦å‡å°‘
         else
         {
             bar.fillAmount = barFillAmount;

@@ -48,7 +48,7 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
     }
 
     /// <summary>
-    /// ´¥·¢ÄÚĞÄ¶À°×£¬ĞèÒª´«ÈëtriggerIdÖ¸¶¨´¥·¢ÄÄÒ»¸öÄÚĞÄ¶À°×
+    /// è§¦å‘å†…å¿ƒç‹¬ç™½ï¼Œéœ€è¦ä¼ å…¥triggerIdæŒ‡å®šè§¦å‘å“ªä¸€ä¸ªå†…å¿ƒç‹¬ç™½
     /// </summary>
     /// <param name="npcId"></param>
     /// <param name="triggerId"></param>
@@ -65,48 +65,48 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
 
         if (pieceId == -1)
         {
-            Debug.LogWarning($"NPC {npcId} Ã»ÓĞ¿É²¥·ÅµÄ¶Ô»°");
+            Debug.LogWarning($"NPC {npcId} æ²¡æœ‰å¯æ’­æ”¾çš„å¯¹è¯");
             return false;
         }
 
-        // 2. ´Ó DataManager »ñÈ¡Êµ¼ÊÊı¾İ¶ÔÏó
+        // 2. ä» DataManager è·å–å®é™…æ•°æ®å¯¹è±¡
         ConditionDialoguePiece piece = DataManager.Instance.
             GetConditionDialoguePieceById(pieceId);
         if (piece == null) return false;
 
-        // 3. ÉèÖÃ UI ²¢Æô¶¯»á»°
+        // 3. è®¾ç½® UI å¹¶å¯åŠ¨ä¼šè¯
         DialoguePanel.SetProfile(profile, name);
         DialoguePanel.ShowMe();
 
-        // ×¢Òâ£ºDialogueData ÏÖÔÚÓ¦¸ÃÖ»¸ºÔğ²¥·Å£¬²»¸ºÔğ²éÕÒ
+        // æ³¨æ„ï¼šDialogueData ç°åœ¨åº”è¯¥åªè´Ÿè´£æ’­æ”¾ï¼Œä¸è´Ÿè´£æŸ¥æ‰¾
         ConditionDialogueData.StartDialogue(piece, action);
 
         return true;
     }
 
     /// <summary>
-    /// ĞÂµÄÈë¿Ú£ºÖ»ĞèÒª NPC ID
+    /// æ–°çš„å…¥å£ï¼šåªéœ€è¦ NPC ID
     /// </summary>
     public void BeginDialogue(int npcId, Texture profile, string name)
     {
-        // 1. ¼ÆËãÓ¦¸Ã²¥·ÅÄÄ¸ö Piece ID
+        // 1. è®¡ç®—åº”è¯¥æ’­æ”¾å“ªä¸ª Piece ID
         Tuple<int, int> pieceTuple = CalculateStartPieceId(npcId);
 
         if (pieceTuple == null)
         {
-            Debug.LogWarning($"NPC {npcId} Ã»ÓĞ¿É²¥·ÅµÄ¶Ô»°");
+            Debug.LogWarning($"NPC {npcId} æ²¡æœ‰å¯æ’­æ”¾çš„å¯¹è¯");
             return;
         }
 
-        // 2. ´Ó DataManager »ñÈ¡Êµ¼ÊÊı¾İ¶ÔÏó
+        // 2. ä» DataManager è·å–å®é™…æ•°æ®å¯¹è±¡
         DialoguePiece piece = DataManager.Instance.GetDialoguePieceById(pieceTuple.Item1);
         if (piece == null) return;
 
-        // 3. ÉèÖÃ UI ²¢Æô¶¯»á»°
+        // 3. è®¾ç½® UI å¹¶å¯åŠ¨ä¼šè¯
         DialoguePanel.SetProfile(profile, name);
         DialoguePanel.ShowMe();
 
-        // ×¢Òâ£ºDialogueData ÏÖÔÚÓ¦¸ÃÖ»¸ºÔğ²¥·Å£¬²»¸ºÔğ²éÕÒ
+        // æ³¨æ„ï¼šDialogueData ç°åœ¨åº”è¯¥åªè´Ÿè´£æ’­æ”¾ï¼Œä¸è´Ÿè´£æŸ¥æ‰¾
         DialogueData.StartDialogue(piece, pieceTuple.Item2);
     }
 
@@ -115,38 +115,38 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
 
     private Tuple<int, int> CalculateStartPieceId(int npcId)
     {
-        // 1. »ñÈ¡¸Ã NPC ËùÓĞµÄÈÎÎñ°ó¶¨
+        // 1. è·å–è¯¥ NPC æ‰€æœ‰çš„ä»»åŠ¡ç»‘å®š
         if (!DataManager.Instance.BindingMap.TryGetValue(npcId, out var bindingList))
         {
-            // Èç¹ûÃ»ÓĞ°ó¶¨ÈÎÎñ£¬¿ÉÄÜÓĞÄ¬ÈÏ¶Ô»°Âß¼­£¬ÕâÀïÔİÊ±·µ»Ø -1 »òÄ¬ÈÏID
+            // å¦‚æœæ²¡æœ‰ç»‘å®šä»»åŠ¡ï¼Œå¯èƒ½æœ‰é»˜è®¤å¯¹è¯é€»è¾‘ï¼Œè¿™é‡Œæš‚æ—¶è¿”å› -1 æˆ–é»˜è®¤ID
             return null;
         }
 
-        // 2. ±éÀú°ó¶¨£¬Ñ°ÕÒ×î¸ßÓÅÏÈ¼¶µÄÓĞĞ§¶Ô»°
-        // ½¨Òé°´ÓÅÏÈ¼¶ÅÅĞò£¬»òÕß°´ÁĞ±íË³Ğò
+        // 2. éå†ç»‘å®šï¼Œå¯»æ‰¾æœ€é«˜ä¼˜å…ˆçº§çš„æœ‰æ•ˆå¯¹è¯
+        // å»ºè®®æŒ‰ä¼˜å…ˆçº§æ’åºï¼Œæˆ–è€…æŒ‰åˆ—è¡¨é¡ºåº
         foreach (var binding in bindingList)
         {
-            // Ïò QuestManager Ñ¯ÎÊ×´Ì¬
+            // å‘ QuestManager è¯¢é—®çŠ¶æ€
             EQuestState state = QuestManager.Instance.GetQuestState(binding.questId);
 
-            // »ñÈ¡¸Ã×´Ì¬¶ÔÓ¦µÄ Piece ID
+            // è·å–è¯¥çŠ¶æ€å¯¹åº”çš„ Piece ID
             int candidateId = binding.GetDialogueIndexByState(state);
 
-            // Èç¹ûÕÒµ½ÁËÓĞĞ§µÄ¶Ô»°ID (²»ÊÇ -1)£¬Ö±½Ó·µ»Ø
-            // ÕâÀïÊµÏÖÁË¡°ÈÎÎñ×´Ì¬À¹½Ø¶Ô»°¡±µÄÂß¼­
+            // å¦‚æœæ‰¾åˆ°äº†æœ‰æ•ˆçš„å¯¹è¯ID (ä¸æ˜¯ -1)ï¼Œç›´æ¥è¿”å›
+            // è¿™é‡Œå®ç°äº†â€œä»»åŠ¡çŠ¶æ€æ‹¦æˆªå¯¹è¯â€çš„é€»è¾‘
             if (candidateId != -1)
             {
                 return new Tuple<int, int>(candidateId, binding.questId);
             }
         }
 
-        // 3. Èç¹ûËùÓĞÈÎÎñ×´Ì¬¶¼Ã»»°¿ÉËµ£¬·µ»Ø±£µ×¶Ô»°
+        // 3. å¦‚æœæ‰€æœ‰ä»»åŠ¡çŠ¶æ€éƒ½æ²¡è¯å¯è¯´ï¼Œè¿”å›ä¿åº•å¯¹è¯
         return null;
     }
 
     private int CheckStartPieceId(int npcId, int triggerId)
     {
-        // 1. »ñÈ¡¸Ã NPC ËùÓĞµÄÈÎÎñ°ó¶¨
+        // 1. è·å–è¯¥ NPC æ‰€æœ‰çš„ä»»åŠ¡ç»‘å®š
         if (!DataManager.Instance.ConditionBindingMap.TryGetValue
             (npcId, out var bindingList))
         {
@@ -161,8 +161,8 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
 
         if (!conditionInfo.isTriggered)
         {
-            // ±ê¼ÇConditionInfo.isTriggeredÎªÒÑ´¥·¢
-            // Í¬Ê±DataManagerÖĞµÄÊı¾İÒ²»á±»¼ÇÂ¼ÎªÒÑ´¥·¢
+            // æ ‡è®°ConditionInfo.isTriggeredä¸ºå·²è§¦å‘
+            // åŒæ—¶DataManagerä¸­çš„æ•°æ®ä¹Ÿä¼šè¢«è®°å½•ä¸ºå·²è§¦å‘
             conditionInfo.isTriggered = true;
             return binding.dialogueId;
         }
@@ -172,12 +172,12 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
 
     private int GetDefaultDialogueId(int npcId)
     {
-        // ÕâÀï¿ÉÒÔÈ¥²é NPCInfo ±íÀïµÄ defaultDialogueId
-        // ¼ÙÉè DataManager.Instance.GetNPCDefaultDialogueId(npcId);
+        // è¿™é‡Œå¯ä»¥å»æŸ¥ NPCInfo è¡¨é‡Œçš„ defaultDialogueId
+        // å‡è®¾ DataManager.Instance.GetNPCDefaultDialogueId(npcId);
         return -1;
     }
 
-    // ÓÉUI²ã³ö´«ÈëÓÃ»§ĞÅºÅÊ±ÅĞ¶Ïµ±Ç°ÊÇ·ñ´¦ÓÚÕıÔÚ¶Ô»°×´Ì¬
+    // ç”±UIå±‚å‡ºä¼ å…¥ç”¨æˆ·ä¿¡å·æ—¶åˆ¤æ–­å½“å‰æ˜¯å¦å¤„äºæ­£åœ¨å¯¹è¯çŠ¶æ€
     private void OnEndDialogueHandler()
     {
         DialoguePanel.HideMe();
@@ -194,7 +194,7 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
     {
         //print($"DialogueController: OnOptionSelectHandloer");
 
-        // ÖØÖÃÑ¡Ïî
+        // é‡ç½®é€‰é¡¹
         DialoguePanel.ResetDialogueOption();
         DialogueData.UpdateDialogue(index);
         ConditionDialogueData.UpdateDialogue();
@@ -211,7 +211,7 @@ public class DialogueManager : MonoBehaviourManager<DialogueManager>
             return;
         }
 
-        // µ±Ã»ÓĞOption£¬hasNext = true£¬Ö±½ÓÏÔÊ¾Next°´Å¥
+        // å½“æ²¡æœ‰Optionï¼ŒhasNext = trueï¼Œç›´æ¥æ˜¾ç¤ºNextæŒ‰é’®
         bool hasNext = dialoguePair.Value.Value == null ||
             dialoguePair.Value.Value.Count == 0;
 

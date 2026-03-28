@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4002572064
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a0e3d473bdb17f85fe1a5754cb4d1406
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ba83f2286ed62465660261d51a2a78cd
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a0e3d473bdb17f85fe1a5754cb4d1406
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e5ffc023358be94da09f7f2431922a2, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/GameData/AttackEffect/Repel.asset
+Dependencies: []

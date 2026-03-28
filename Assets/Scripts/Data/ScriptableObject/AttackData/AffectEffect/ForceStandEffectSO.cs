@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Data", menuName = "Data/AttackEffect/ForceStand")]
-// ¹¥»÷ºóµĞÈËÇ¿ÖÆÕ¾Á¢Ğ§¹û
+// æ”»å‡»åæ•Œäººå¼ºåˆ¶ç«™ç«‹æ•ˆæœ
 public class ForceStandEffectSO : AttackEffectSO
 {
     public override void CharacterEffect(CharacterStateMachine stateMachine, 

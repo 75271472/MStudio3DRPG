@@ -54,9 +54,9 @@ public class MonsterStateMachine : CharacterStateMachine
     public override void Pause()
     {
         IsPause = true;
-        // TODO:ÔÚÔİÍ£×´Ì¬Ç¿ÖÆ×ª»»ÎªÄ¬ÈÏµÄGurad×´Ì¬
-        // µ±MonsterÊÕµ½¹¥»÷Ê±µ÷ÓÃPauseÔİÍ£×´Ì¬»ú£¬
-        // Gurad»á¸²¸ÇGetHitÊÜ»÷×´Ì¬
+        // TODO:åœ¨æš‚åœçŠ¶æ€å¼ºåˆ¶è½¬æ¢ä¸ºé»˜è®¤çš„GuradçŠ¶æ€
+        // å½“Monsteræ”¶åˆ°æ”»å‡»æ—¶è°ƒç”¨Pauseæš‚åœçŠ¶æ€æœºï¼Œ
+        // Guradä¼šè¦†ç›–GetHitå—å‡»çŠ¶æ€
         SwitchState(new MonsterGuardState(this));
     }
 
@@ -78,10 +78,10 @@ public class MonsterStateMachine : CharacterStateMachine
 
     protected override void OnTakeDamageHandler(int damage, GameObject attacker)
     {
-        // ÅĞ¶ÏÊÇ·ñÔÚTargetListÁĞ±íÖĞ
+        // åˆ¤æ–­æ˜¯å¦åœ¨TargetListåˆ—è¡¨ä¸­
         //if (!MonsterTargeter.ContainsTarget(attacker)) return;
 
-        // ÊÜ»÷Ê±ÇĞ»»µ½GetHit×´Ì¬
+        // å—å‡»æ—¶åˆ‡æ¢åˆ°GetHitçŠ¶æ€
         //SwitchState(new MonsterGetHitState(this));
     }
 

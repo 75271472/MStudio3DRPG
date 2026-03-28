@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1476782264
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 358a54b677fa4b6b0de2cddd23ac39b7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 358a54b677fa4b6b0de2cddd23ac39b7
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/Simple Fantasy GUI/PNG/Icons/Shield_Icon.png
+Dependencies: []

@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 3221629186
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5de9a5d51d5bdbf930782cc1f255aa4c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a6bef7aa6cf9e103b142d36686889216
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5de9a5d51d5bdbf930782cc1f255aa4c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3933ed0643506a941b3634d112751ba9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 384669886969e5042bb305777dbbf1da, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/Manager/PortalManager.prefab
+Dependencies: []

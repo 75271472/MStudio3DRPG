@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
-// ÏÈ½«Òª¼¤»îµÄ±äÎªÊ§»îµÄ£¬Âú×ãÌõ¼şºó¼¤»îÒª¼¤»îµÄ£¬Ê§»îÒªÊ§»îµÄ
+// å…ˆå°†è¦æ¿€æ´»çš„å˜ä¸ºå¤±æ´»çš„ï¼Œæ»¡è¶³æ¡ä»¶åæ¿€æ´»è¦æ¿€æ´»çš„ï¼Œå¤±æ´»è¦å¤±æ´»çš„
 public class QuestReactor : MonoBehaviour, IInteractable
 {
     [SerializeField] private List<GameObject> activeObjectList;

@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 2910131387
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4623d354a3f10ace90ffffc094a7bb37
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c7aa16accef068d85a4a71579269ef67
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4623d354a3f10ace90ffffc094a7bb37
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e5ffc023358be94da09f7f2431922a2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ce11b6d208c105247ba61133149aba42, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: AttackEffectInfo
+Assets:
+- Assets/Resources/GameData/Attack/Monster/Grunt/GruntAttack1.asset
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/gamedata/attackeffect/repel.asset.ab

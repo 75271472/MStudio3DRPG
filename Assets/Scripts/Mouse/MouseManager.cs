@@ -34,8 +34,8 @@ public class MouseManager : MonoBehaviourManager<MouseManager>
 
     private void Update()
     {
-        // ¡¾ĞÂÔöÂß¼­¡¿ÔÚ Update ÖĞ¼ì²â²¢»º´æ UI ×´Ì¬
-        // Update ÔËĞĞÔÚ Input ÊÂ¼ş´¦ÀíÖ®ºó£¬´ËÊ±²éÑ¯ÊÇ°²È«µÄ
+        // ã€æ–°å¢é€»è¾‘ã€‘åœ¨ Update ä¸­æ£€æµ‹å¹¶ç¼“å­˜ UI çŠ¶æ€
+        // Update è¿è¡Œåœ¨ Input äº‹ä»¶å¤„ç†ä¹‹åï¼Œæ­¤æ—¶æŸ¥è¯¢æ˜¯å®‰å…¨çš„
         UpdateIsOverUI();
         UpdateHitInfo();
         UpdateMouseCursor();
@@ -55,12 +55,12 @@ public class MouseManager : MonoBehaviourManager<MouseManager>
     private void UpdateHitInfo()
     {
         Ray mouseRay = Camera.main.ScreenPointToRay(InputManager.Instance.MousePos);
-        // ¿ÉÊÓ»¯ÉäÏß£¨ÔÚSceneÊÓÍ¼ÖĞ¿É¼û£©
+        // å¯è§†åŒ–å°„çº¿ï¼ˆåœ¨Sceneè§†å›¾ä¸­å¯è§ï¼‰
         Debug.DrawRay(mouseRay.origin, mouseRay.direction * 1000, Color.red);
 
         Physics.Raycast(mouseRay, out hitInfo, 1000, rayLayerMask);
 
-        // Èç¹û»÷ÖĞÎïÌå£¬»æÖÆ»÷ÖĞµãºÍ·¨Ïß
+        // å¦‚æœå‡»ä¸­ç‰©ä½“ï¼Œç»˜åˆ¶å‡»ä¸­ç‚¹å’Œæ³•çº¿
         if (hitInfo.collider != null)
         {
             Debug.DrawRay(hitInfo.point, hitInfo.normal * 2, Color.green);

@@ -9,7 +9,7 @@ public class Portal : MonoBehaviour, IInteractable
     [field: SerializeField] public int PortalId { get; private set; }
     [field: SerializeField] public string TargetSceneName { get; private set; }
     [field: SerializeField] public int TargetPortalID { get; private set; }
-    // ½øÈë´«ËÍÃÅºóÖ´ĞĞµÄÊÂ¼ş£¬ÔÚInspector´°¿ÚÉèÖÃ
+    // è¿›å…¥ä¼ é€é—¨åæ‰§è¡Œçš„äº‹ä»¶ï¼Œåœ¨Inspectorçª—å£è®¾ç½®
     public UnityEvent OnPortalEnterEvent;
 
     public PortalPoint PortalPoint { get; private set; }
@@ -23,7 +23,7 @@ public class Portal : MonoBehaviour, IInteractable
     {
         if (!CanInteract()) return;
         if (!other.CompareTag("Player")) return;
-        // µ±SceneNameÎª¿ÕÊ±²»ÏÔÏÖInputActionPanel£¬²»½øĞĞ´«ËÍ
+        // å½“SceneNameä¸ºç©ºæ—¶ä¸æ˜¾ç°InputActionPanelï¼Œä¸è¿›è¡Œä¼ é€
         if (string.IsNullOrEmpty(SceneName)) return;
 
         UIManager.Instance.ShowPanel<InputActionPanel>().AddInput(

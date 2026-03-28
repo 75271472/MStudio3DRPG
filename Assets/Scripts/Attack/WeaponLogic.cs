@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class WeaponLogic : MonoBehaviour
 {
-    // °ó¶¨µÄ¹¥»÷¶¯»­Ãû³Æ
-    // AttackName = AttackAllÊ±£¬Ó¦ÓÃÓÚËùÓĞ¹¥»÷¶¯»­
+    // ç»‘å®šçš„æ”»å‡»åŠ¨ç”»åç§°
+    // AttackName = AttackAllæ—¶ï¼Œåº”ç”¨äºæ‰€æœ‰æ”»å‡»åŠ¨ç”»
     [field: SerializeField] public string AttackName {  get; private set; }
 
     protected ICharacter handler;
@@ -20,9 +20,9 @@ public class WeaponLogic : MonoBehaviour
         this.handler = handler;
 
         this.handlerObj = handler.CharacterGameObject;
-        // ÕâÀï²»Í¨¹ı¼ÇÂ¼attackInfoÒıÓÃ·½Ê½´æ´¢attackInfo
-        // ¶øÊÇÖ±½Óµ÷ÓÃhandler.AttackInfo·½Ê½»ñÈ¡attackInfo
-        // ±ÜÃâhandlerÖĞµÄattackInfo¸üĞÂÎªĞÂµÄÖµºó£¬WeaponLogic»¹Ê¹ÓÃ¾ÉÖµµÄÒıÓÃ
+        // è¿™é‡Œä¸é€šè¿‡è®°å½•attackInfoå¼•ç”¨æ–¹å¼å­˜å‚¨attackInfo
+        // è€Œæ˜¯ç›´æ¥è°ƒç”¨handler.AttackInfoæ–¹å¼è·å–attackInfo
+        // é¿å…handlerä¸­çš„attackInfoæ›´æ–°ä¸ºæ–°çš„å€¼åï¼ŒWeaponLogicè¿˜ä½¿ç”¨æ—§å€¼çš„å¼•ç”¨
         //this.attackInfo = handler.CharacterData.AttackInfo;
     }
 
@@ -42,7 +42,7 @@ public class WeaponLogic : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    // other ±»¹¥»÷Õß handler ¹¥»÷Õß
+    // other è¢«æ”»å‡»è€… handler æ”»å‡»è€…
     protected void OnTriggerEnter(Collider other)
     {
         EffectApply(other);
@@ -79,13 +79,13 @@ public class WeaponLogic : MonoBehaviour
     {
         if (target.TryGetComponent<EffectApplicator>(out var applicator))
         {
-            // Ê©¼ÓÁ¦·½Ïò¼ÆËã
+            // æ–½åŠ åŠ›æ–¹å‘è®¡ç®—
             attackSO.attackEffectInfo.forceVect =
                 target.transform.position - handlerObj.transform.position;
-            // ÊúÖ±·½ÏòÖÃÁã
+            // ç«–ç›´æ–¹å‘ç½®é›¶
             attackSO.attackEffectInfo.forceVect.y = 0;
 
-            // ¹¥»÷Õß¸³Öµ
+            // æ”»å‡»è€…èµ‹å€¼
             attackSO.attackEffectInfo.attacker = handlerObj;
 
             //print(handler.name + applicator.gameObject.name);

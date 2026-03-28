@@ -15,10 +15,10 @@ public class Partical : MonoBehaviour
     }
     private IEnumerator PlayParticleSystem()
     {
-        // 播放粒子系统
+        // 鎾斁绮掑瓙绯荤粺
         particle.Play();
 
-        // 等待粒子系统播放完成
+        // 绛夊緟绮掑瓙绯荤粺鎾斁瀹屾垚
         while (particle.isPlaying)
         {
             yield return null;

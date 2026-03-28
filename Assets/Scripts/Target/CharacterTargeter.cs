@@ -46,7 +46,7 @@ public class CharacterTargeter : MonoBehaviour
     {
         if (!targetList.Contains(target)) return;
 
-        // ´ÓTargetµÄTargeterListÁÐ±íÖÐÒÆ³ý×Ô¼º
+        // ä»ŽTargetçš„TargeterListåˆ—è¡¨ä¸­ç§»é™¤è‡ªå·±
         //target.RemoveTargeter(this);
         targetList.Remove(target);
         OnTargetExit?.Invoke(target);
@@ -59,11 +59,11 @@ public class CharacterTargeter : MonoBehaviour
         Clear();
     }
 
-    // Ö´ÐÐÂß¼­: ±éÀútarget£¬ÔÚtargetListÖÐÒÆ³ý¸Ãtarget
+    // æ‰§è¡Œé€»è¾‘: éåŽ†targetï¼Œåœ¨targetListä¸­ç§»é™¤è¯¥target
     public void Clear()
     {
-        // ±éÀú¹ý³ÌÖÐ»áÖ´ÐÐtargetList.Remove£¬ÐÞ¸ÄtargetÁÐ±í
-        // Òò´Ë´ÓºóÏòÇ°ÒÆ³ý
+        // éåŽ†è¿‡ç¨‹ä¸­ä¼šæ‰§è¡ŒtargetList.Removeï¼Œä¿®æ”¹targetåˆ—è¡¨
+        // å› æ­¤ä»ŽåŽå‘å‰ç§»é™¤
         for (int i = targetList.Count - 1; i >= 0; i--)
         {
             RemoveTarget(targetList[i]);

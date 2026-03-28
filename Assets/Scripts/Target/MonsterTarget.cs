@@ -33,15 +33,15 @@ public class MonsterTarget : MonoBehaviour
         targeterList.Remove(targeter);
     }
 
-    // Ö´ĞĞÂß¼­: ±éÀútargeter£¬ÔÚtargeterListÖĞÒÆ³ıtargeter
+    // æ‰§è¡Œé€»è¾‘: éå†targeterï¼Œåœ¨targeterListä¸­ç§»é™¤targeter
     public void Clear()
     {
-        // ÒòÎªÔÚ±éÀú¹ı³ÌÖĞTargeter»áµ÷ÓÃtarget.RemoveTargeterĞŞ¸ÄtargeterListÁĞ±í
-        // Òò´ËÒª´ÓºóÍùÇ°ÒÆ³ı
+        // å› ä¸ºåœ¨éå†è¿‡ç¨‹ä¸­Targeterä¼šè°ƒç”¨target.RemoveTargeterä¿®æ”¹targeterListåˆ—è¡¨
+        // å› æ­¤è¦ä»åå¾€å‰ç§»é™¤
         for (int i = targeterList.Count - 1; i >= 0; i--)
         {
-            // ÓÎÏ·ÍË³ö²¢ÖØĞÂ¼ÓÔØÓÎÏ·Ê±£¬´ËÊ±Èç¹ûtargeterListÖĞÓĞtargeter¶ÔÏó
-            // »á±äÎªnull£¬ĞèÒªÊ¹ÓÃ ? ·ÀÖ¹¿ÕÒıÓÃ
+            // æ¸¸æˆé€€å‡ºå¹¶é‡æ–°åŠ è½½æ¸¸æˆæ—¶ï¼Œæ­¤æ—¶å¦‚æœtargeterListä¸­æœ‰targeterå¯¹è±¡
+            // ä¼šå˜ä¸ºnullï¼Œéœ€è¦ä½¿ç”¨ ? é˜²æ­¢ç©ºå¼•ç”¨
             targeterList[i]?.RemoveTarget(gameObject);
         }
 

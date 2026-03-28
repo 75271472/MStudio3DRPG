@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 已装备物品类
+// 宸茶澶囩墿鍝佺被
 public class EquippedItemInfo : EquippableItemInfo, IDetachableItem
 {
 

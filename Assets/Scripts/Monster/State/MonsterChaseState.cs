@@ -43,9 +43,9 @@ public class MonsterChaseState : MonsterBaseState
         }
     }
 
-    // 判断是否在攻击距离内 -> 判断AttackCD时间 -> 条件满足跳转AttackState
-    // 不在攻击距离内设置Agent.destination
-    // 不在AttackCD时间跳转AttackCD
+    // 鍒ゆ柇鏄惁鍦ㄦ敾鍑昏窛绂诲唴 -> 鍒ゆ柇AttackCD鏃堕棿 -> 鏉′欢婊¤冻璺宠浆AttackState
+    // 涓嶅湪鏀诲嚮璺濈鍐呰缃瓵gent.destination
+    // 涓嶅湪AttackCD鏃堕棿璺宠浆AttackCD
     private void CheckChase()
     {
         if (targetObj == null)
@@ -54,7 +54,7 @@ public class MonsterChaseState : MonsterBaseState
             return;
         }
 
-        // 判断二维平面距离，实际的三维距离可能大于MaxDistance
+        // 鍒ゆ柇浜岀淮骞抽潰璺濈锛屽疄闄呯殑涓夌淮璺濈鍙兘澶т簬MaxDistance
 
         if (!stateMachine.transform.IsTargetInAreaByRay(targetObj,
             stateMachine.MonsterComboList.MaxDiatance, 
@@ -66,7 +66,7 @@ public class MonsterChaseState : MonsterBaseState
             return;
         }
         
-        // 距离判定通过的状态下，判断CD
+        // 璺濈鍒ゅ畾閫氳繃鐨勭姸鎬佷笅锛屽垽鏂瑿D
         if (!stateMachine.MonsterComboList.CanAttack(distance))
             //stateMachine.transform.GetTargetDistanceInSaveHeight(targetObj)))
         {

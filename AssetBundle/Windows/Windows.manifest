@@ -1,0 +1,926 @@
+ManifestFileVersion: 0
+CRC: 641052236
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: assets/resources/dotweensettings.asset.ab
+      Dependencies: {}
+    Info_1:
+      Name: assets/resources/gamedata/attackeffect/forcestand.asset.ab
+      Dependencies: {}
+    Info_2:
+      Name: assets/resources/gamedata/attackeffect/repel.asset.ab
+      Dependencies: {}
+    Info_3:
+      Name: assets/resources/gamedata/modifier/characterhealthdamageso.asset.ab
+      Dependencies: {}
+    Info_4:
+      Name: assets/resources/gamedata/modifier/characterhealthso.asset.ab
+      Dependencies: {}
+    Info_5:
+      Name: assets/resources/gamedata/attack/player/playerattack1.asset.ab
+      Dependencies: {}
+    Info_6:
+      Name: assets/resources/gamedata/attack/player/playerattack2.asset.ab
+      Dependencies: {}
+    Info_7:
+      Name: assets/resources/gamedata/attack/player/playercombotemplate.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/player/playerattack1.asset.ab
+        Dependency_1: assets/resources/gamedata/attack/player/playerattack2.asset.ab
+    Info_8:
+      Name: assets/resources/gamedata/attack/monster/golem/golemattack1.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attackeffect/repel.asset.ab
+    Info_9:
+      Name: assets/resources/gamedata/attack/monster/golem/golemattack2.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attackeffect/repel.asset.ab
+    Info_10:
+      Name: assets/resources/gamedata/attack/monster/golem/golemcombotemplate1.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/golem/golemattack1.asset.ab
+    Info_11:
+      Name: assets/resources/gamedata/attack/monster/golem/golemcombotemplate2.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/golem/golemattack2.asset.ab
+    Info_12:
+      Name: assets/resources/gamedata/attack/monster/grunt/gruntattack1.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attackeffect/repel.asset.ab
+    Info_13:
+      Name: assets/resources/gamedata/attack/monster/grunt/gruntattack2.asset.ab
+      Dependencies: {}
+    Info_14:
+      Name: assets/resources/gamedata/attack/monster/grunt/gruntcombotemplate1.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/grunt/gruntattack1.asset.ab
+    Info_15:
+      Name: assets/resources/gamedata/attack/monster/grunt/gruntcombotemplate2.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/grunt/gruntattack2.asset.ab
+    Info_16:
+      Name: assets/resources/gamedata/attack/monster/slime/slimeattack1.asset.ab
+      Dependencies: {}
+    Info_17:
+      Name: assets/resources/gamedata/attack/monster/slime/slimeattack2.asset.ab
+      Dependencies: {}
+    Info_18:
+      Name: assets/resources/gamedata/attack/monster/slime/slimeattack3.asset.ab
+      Dependencies: {}
+    Info_19:
+      Name: assets/resources/gamedata/attack/monster/slime/slimeattack4.asset.ab
+      Dependencies: {}
+    Info_20:
+      Name: assets/resources/gamedata/attack/monster/slime/slimecombotemplate1.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/slime/slimeattack1.asset.ab
+    Info_21:
+      Name: assets/resources/gamedata/attack/monster/slime/slimecombotemplate2.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/slime/slimeattack2.asset.ab
+    Info_22:
+      Name: assets/resources/gamedata/attack/monster/turtle/turtleattack1.asset.ab
+      Dependencies: {}
+    Info_23:
+      Name: assets/resources/gamedata/attack/monster/turtle/turtleattack2.asset.ab
+      Dependencies: {}
+    Info_24:
+      Name: assets/resources/gamedata/attack/monster/turtle/turtlecombotemplate.asset.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/turtle/turtleattack1.asset.ab
+        Dependency_1: assets/resources/gamedata/attack/monster/turtle/turtleattack2.asset.ab
+    Info_25:
+      Name: assets/resources/prefabs/character/golem.prefab.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/golem/golemcombotemplate1.asset.ab
+        Dependency_1: assets/resources/gamedata/attack/monster/golem/golemcombotemplate2.asset.ab
+        Dependency_2: assets/animations/animators/enemygolem.overridecontroller.ab
+        Dependency_3: assets/assetpacks/mini legion rock golem pbr hp polyart/materials/polyartstandard.mat.ab
+        Dependency_4: assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/golempolyart.fbx.ab
+    Info_26:
+      Name: assets/resources/prefabs/character/grunt.prefab.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/grunt/gruntcombotemplate1.asset.ab
+        Dependency_1: assets/resources/gamedata/attack/monster/grunt/gruntcombotemplate2.asset.ab
+        Dependency_2: assets/assetpacks/mini legion grunt pbr hp polyart/mesh/gruntpolyart.fbx.ab
+        Dependency_3: assets/animations/animators/enemygrunt.controller.ab
+        Dependency_4: assets/assetpacks/mini legion grunt pbr hp polyart/material/polyartstandard.mat.ab
+    Info_27:
+      Name: assets/resources/prefabs/character/npc.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/rpghero/meshes/polyartsword.fbx.ab
+        Dependency_1: assets/assetpacks/rpghero/materials/polyart.mat.ab
+        Dependency_2: assets/resources/prefabs/ui/rendertexture/npcprofiletexture.rendertexture.ab
+        Dependency_3: assets/animations/animators/npc.controller.ab
+        Dependency_4: assets/assetpacks/rpghero/meshes/newfreerpgheropolyart.fbx.ab
+        Dependency_5: assets/assetpacks/dogknight/material/polyart.mat.ab
+        Dependency_6: assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
+    Info_28:
+      Name: assets/resources/prefabs/character/slime.prefab.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/slime/slimecombotemplate1.asset.ab
+        Dependency_1: assets/resources/gamedata/attack/monster/slime/slimecombotemplate2.asset.ab
+        Dependency_2: assets/assetpacks/rpg monster duo pbr polyart/meshes/slimepolyartmesh.fbx.ab
+        Dependency_3: assets/animations/animators/enemyslime.controller.ab
+        Dependency_4: assets/assetpacks/rpg monster duo pbr polyart/materials/polyartdefault.mat.ab
+    Info_29:
+      Name: assets/resources/prefabs/character/turtle.prefab.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/monster/turtle/turtlecombotemplate.asset.ab
+        Dependency_1: assets/assetpacks/rpg monster duo pbr polyart/materials/polyartdefault.mat.ab
+        Dependency_2: assets/animations/animators/enemyturtle.overridecontroller.ab
+        Dependency_3: assets/assetpacks/rpg monster duo pbr polyart/meshes/turtleshellpolyartmesh.fbx.ab
+    Info_30:
+      Name: assets/resources/prefabs/manager/cameramanager.prefab.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.cinemachine/presets/noise/6d shake.asset.ab
+    Info_31:
+      Name: assets/resources/prefabs/manager/dialoguemanager.prefab.ab
+      Dependencies: {}
+    Info_32:
+      Name: assets/resources/prefabs/manager/monomanager.prefab.ab
+      Dependencies: {}
+    Info_33:
+      Name: assets/resources/prefabs/manager/monstermanager.prefab.ab
+      Dependencies: {}
+    Info_34:
+      Name: assets/resources/prefabs/manager/mousemanager.prefab.ab
+      Dependencies:
+        Dependency_0: assets/artres/cursor/03.png.ab
+        Dependency_1: assets/artres/cursor/04.png.ab
+        Dependency_2: assets/artres/cursor/01.png.ab
+        Dependency_3: assets/artres/cursor/02.png.ab
+        Dependency_4: assets/artres/cursor/05.png.ab
+    Info_35:
+      Name: assets/resources/prefabs/manager/npcmanager.prefab.ab
+      Dependencies: {}
+    Info_36:
+      Name: assets/resources/prefabs/manager/player.prefab.ab
+      Dependencies:
+        Dependency_0: assets/resources/gamedata/attack/player/playercombotemplate.asset.ab
+        Dependency_1: assets/assetpacks/dogknight/material/polyart.mat.ab
+        Dependency_2: assets/assetpacks/dogknight/mesh/dogpolyart.fbx.ab
+        Dependency_3: assets/resources/prefabs/ui/rendertexture/playertexture.rendertexture.ab
+        Dependency_4: assets/animations/animators/player.controller.ab
+        Dependency_5: assets/resources/prefabs/ui/rendertexture/playerprofiletexture.rendertexture.ab
+    Info_37:
+      Name: assets/resources/prefabs/manager/portalmanager.prefab.ab
+      Dependencies: {}
+    Info_38:
+      Name: assets/resources/prefabs/manager/questmanager.prefab.ab
+      Dependencies: {}
+    Info_39:
+      Name: assets/resources/prefabs/particle/rockbreakparticle.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/mini legion rock golem pbr hp polyart/materials/polyartstandard.mat.ab
+        Dependency_1: assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/rockmesh.fbx.ab
+    Info_40:
+      Name: assets/resources/prefabs/portal/purpleportal.prefab.ab
+      Dependencies:
+        Dependency_0: assets/materials/greenportal.mat.ab
+    Info_41:
+      Name: assets/resources/prefabs/portal/redportal.prefab.ab
+      Dependencies:
+        Dependency_0: assets/materials/redportal.mat.ab
+    Info_42:
+      Name: assets/resources/prefabs/portal/yellowportal.prefab.ab
+      Dependencies:
+        Dependency_0: assets/materials/yellowpartal.mat.ab
+    Info_43:
+      Name: assets/resources/prefabs/ui/accordionui.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board small  stone.png.ab
+        Dependency_2: assets/assetpacks/simple fantasy gui/png/quest panel/reward_slot.png.ab
+    Info_44:
+      Name: assets/resources/prefabs/ui/archiveui.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony
+          title  empty.png.ab
+        Dependency_2: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board medium stone.png.ab
+        Dependency_3: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_medium.png.ab
+    Info_45:
+      Name: assets/resources/prefabs/ui/eventsystem.prefab.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.inputsystem/inputsystem/plugins/playerinput/defaultinputactions.inputactions.ab
+    Info_46:
+      Name: assets/resources/prefabs/ui/healthbar.prefab.ab
+      Dependencies:
+        Dependency_0: assets/artres/bar/healthbareffect.png.ab
+        Dependency_1: assets/artres/bar/healthbarbg.png.ab
+        Dependency_2: assets/artres/bar/monster/healthbar.png.ab
+    Info_47:
+      Name: assets/resources/prefabs/ui/infotxtui.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+    Info_48:
+      Name: assets/resources/prefabs/ui/inputactionui.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_medium.png.ab
+        Dependency_1: assets/artres/font/high-jinks-1.otf.ab
+    Info_49:
+      Name: assets/resources/prefabs/ui/optionbtnui.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+    Info_50:
+      Name: assets/resources/prefabs/ui/overlaycanvas.prefab.ab
+      Dependencies: {}
+    Info_51:
+      Name: assets/resources/prefabs/ui/progressui.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+    Info_52:
+      Name: assets/resources/prefabs/ui/questbtn.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_medium.png.ab
+    Info_53:
+      Name: assets/resources/prefabs/ui/statetxt.prefab.ab
+      Dependencies: {}
+    Info_54:
+      Name: assets/resources/prefabs/ui/worldcanvas.prefab.ab
+      Dependencies: {}
+    Info_55:
+      Name: assets/resources/prefabs/weapon/fist.prefab.ab
+      Dependencies: {}
+    Info_56:
+      Name: assets/resources/prefabs/weapon/ramonshield.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/dogknight/material/polyart.mat.ab
+        Dependency_1: assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
+    Info_57:
+      Name: assets/resources/prefabs/weapon/ramonsword.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/rpghero/meshes/polyartsword.fbx.ab
+        Dependency_1: assets/assetpacks/rpghero/materials/polyart.mat.ab
+    Info_58:
+      Name: assets/resources/prefabs/weapon/rock.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/mini legion rock golem pbr hp polyart/materials/polyartstandard.mat.ab
+        Dependency_1: assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/rockmesh.fbx.ab
+    Info_59:
+      Name: assets/resources/prefabs/weapon/shield.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/rpghero/materials/polyart.mat.ab
+        Dependency_1: assets/assetpacks/rpghero/meshes/polyartshield.fbx.ab
+    Info_60:
+      Name: assets/resources/prefabs/weapon/sword.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/dogknight/material/polyart.mat.ab
+        Dependency_1: assets/assetpacks/dogknight/mesh/swordpolyart.fbx.ab
+    Info_61:
+      Name: assets/resources/prefabs/worditem/apple.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/materials/palette256bitsgradient.mat.ab
+        Dependency_1: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/apple_lp.fbx.ab
+    Info_62:
+      Name: assets/resources/prefabs/worditem/mushroom1.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/models/mushroom_01.fbx.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+    Info_63:
+      Name: assets/resources/prefabs/worditem/mushroom2.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/mushroom_02.fbx.ab
+    Info_64:
+      Name: assets/resources/prefabs/worditem/ramonshield.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/dogknight/material/polyart.mat.ab
+        Dependency_1: assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
+    Info_65:
+      Name: assets/resources/prefabs/worditem/ramonsword.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/rpghero/meshes/polyartsword.fbx.ab
+        Dependency_1: assets/assetpacks/rpghero/materials/polyart.mat.ab
+    Info_66:
+      Name: assets/resources/prefabs/worditem/shield.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/rpghero/materials/polyart.mat.ab
+        Dependency_1: assets/assetpacks/rpghero/meshes/polyartshield.fbx.ab
+    Info_67:
+      Name: assets/resources/prefabs/worditem/sword.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/dogknight/material/polyart.mat.ab
+        Dependency_1: assets/assetpacks/dogknight/mesh/swordpolyart.fbx.ab
+    Info_68:
+      Name: assets/resources/prefabs/ui/itemui/hotitemui.prefab.ab
+      Dependencies:
+        Dependency_0: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_1: assets/assetpacks/cryo's mini gui/gui/gui_1x.png.ab
+        Dependency_2: assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab
+        Dependency_3: assets/assetpacks/simple fantasy gui/png/quest panel/crystal_icon.png.ab
+    Info_69:
+      Name: assets/resources/prefabs/ui/itemui/inventoryitemui.prefab.ab
+      Dependencies:
+        Dependency_0: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_1: assets/assetpacks/cryo's mini gui/gui/gui_1x.png.ab
+        Dependency_2: assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab
+        Dependency_3: assets/assetpacks/simple fantasy gui/png/quest panel/crystal_icon.png.ab
+    Info_70:
+      Name: assets/resources/prefabs/ui/itemui/playerstateitemui.prefab.ab
+      Dependencies:
+        Dependency_0: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_1: assets/assetpacks/cryo's mini gui/gui/gui_1x.png.ab
+        Dependency_2: assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab
+        Dependency_3: assets/assetpacks/simple fantasy gui/png/icons/sword_icon.png.ab
+    Info_71:
+      Name: assets/resources/prefabs/ui/itemui/rewarditemui.prefab.ab
+      Dependencies:
+        Dependency_0: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_1: assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab
+        Dependency_2: assets/assetpacks/simple fantasy gui/png/quest panel/crystal_icon.png.ab
+    Info_72:
+      Name: assets/resources/prefabs/ui/panel/abupdatepanel.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board small  stone.png.ab
+        Dependency_2: assets/artres/bar/healthbareffect.png.ab
+        Dependency_3: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board small  parchment.png.ab
+        Dependency_4: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_big.png.ab
+        Dependency_5: assets/artres/bar/expbar/expbarbg.png.ab
+    Info_73:
+      Name: assets/resources/prefabs/ui/panel/archivepanel.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony
+          title  empty.png.ab
+        Dependency_2: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board medium stone.png.ab
+        Dependency_3: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_medium.png.ab
+        Dependency_4: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board large set.png.ab
+        Dependency_5: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony
+          title  large.png.ab
+        Dependency_6: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/close
+          button.png.ab
+    Info_74:
+      Name: assets/resources/prefabs/ui/panel/dialoguepanel.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board medium stone.png.ab
+        Dependency_2: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_medium.png.ab
+        Dependency_3: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_4: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board large  parchment.png.ab
+        Dependency_5: assets/assetpacks/simple fantasy gui/png/icons/close_icon.png.ab
+    Info_75:
+      Name: assets/resources/prefabs/ui/panel/diepanel.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/artres/font/high-jinks-1.otf.ab
+    Info_76:
+      Name: assets/resources/prefabs/ui/panel/effectpanel.prefab.ab
+      Dependencies:
+        Dependency_0: assets/materials/vignettemat.mat.ab
+    Info_77:
+      Name: assets/resources/prefabs/ui/panel/gameoverpanel.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+    Info_78:
+      Name: assets/resources/prefabs/ui/panel/hotinventorypanel.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board medium stone.png.ab
+        Dependency_1: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_2: assets/assetpacks/cryo's mini gui/gui/gui_1x.png.ab
+        Dependency_3: assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab
+        Dependency_4: assets/assetpacks/simple fantasy gui/png/quest panel/crystal_icon.png.ab
+    Info_79:
+      Name: assets/resources/prefabs/ui/panel/infopanel.prefab.ab
+      Dependencies: {}
+    Info_80:
+      Name: assets/resources/prefabs/ui/panel/inputactionpanel.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board medium  parchment.png.ab
+    Info_81:
+      Name: assets/resources/prefabs/ui/panel/inventorypanel.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simple fantasy gui/png/quest panel/reward_slot.png.ab
+        Dependency_1: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_2: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board large set.png.ab
+        Dependency_3: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony
+          title  large.png.ab
+        Dependency_4: assets/assetpacks/simple fantasy gui/png/character panel/nickname_slot.png.ab
+    Info_82:
+      Name: assets/resources/prefabs/ui/panel/itemdescription.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board small  parchment.png.ab
+    Info_83:
+      Name: assets/resources/prefabs/ui/panel/loadscenepanel.prefab.ab
+      Dependencies:
+        Dependency_0: assets/artres/bar/healthbareffect.png.ab
+        Dependency_1: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_2: assets/artres/bar/expbar/expbarbg.png.ab
+    Info_84:
+      Name: assets/resources/prefabs/ui/panel/mousefollower.prefab.ab
+      Dependencies:
+        Dependency_0: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_1: assets/assetpacks/cryo's mini gui/gui/gui_1x.png.ab
+        Dependency_2: assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab
+        Dependency_3: assets/assetpacks/simple fantasy gui/png/quest panel/crystal_icon.png.ab
+    Info_85:
+      Name: assets/resources/prefabs/ui/panel/noticepanel.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+    Info_86:
+      Name: assets/resources/prefabs/ui/panel/pausepanel.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/artres/font/high-jinks-1.otf.ab
+    Info_87:
+      Name: assets/resources/prefabs/ui/panel/playerinfopanel.prefab.ab
+      Dependencies:
+        Dependency_0: assets/artres/bar/healthbareffect.png.ab
+        Dependency_1: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_2: assets/artres/bar/expbar/expbarbg.png.ab
+        Dependency_3: assets/artres/bar/player/healthbar.png.ab
+        Dependency_4: assets/artres/bar/player/healthbarbg.png.ab
+        Dependency_5: assets/artres/bar/expbar/expbar.png.ab
+    Info_88:
+      Name: assets/resources/prefabs/ui/panel/playerstatepanel.prefab.ab
+      Dependencies:
+        Dependency_0: assets/resources/prefabs/ui/rendertexture/playertexture.rendertexture.ab
+        Dependency_1: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_2: assets/assetpacks/cryo's mini gui/gui/gui_1x.png.ab
+        Dependency_3: assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab
+        Dependency_4: assets/assetpacks/simple fantasy gui/png/icons/sword_icon.png.ab
+        Dependency_5: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board large set.png.ab
+        Dependency_6: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony
+          title  large.png.ab
+        Dependency_7: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board large stone.png.ab
+        Dependency_8: assets/assetpacks/simple fantasy gui/png/icons/shield_icon.png.ab
+    Info_89:
+      Name: assets/resources/prefabs/ui/panel/questpanel.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board small  stone.png.ab
+        Dependency_2: assets/assetpacks/simple fantasy gui/png/quest panel/reward_slot.png.ab
+        Dependency_3: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony
+          title  large.png.ab
+        Dependency_4: assets/assetpacks/simple fantasy gui/png/character panel/nickname_slot.png.ab
+        Dependency_5: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board medium set.png.ab
+    Info_90:
+      Name: assets/resources/prefabs/ui/panel/startpanel.prefab.ab
+      Dependencies:
+        Dependency_0: assets/artres/font/high-jinks-1.otf.ab
+    Info_91:
+      Name: assets/resources/prefabs/ui/panel/tippanel.prefab.ab
+      Dependencies:
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board small  stone.png.ab
+        Dependency_2: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui
+          board small  parchment.png.ab
+        Dependency_3: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_big.png.ab
+        Dependency_4: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/exclamation_yellow.png.ab
+    Info_92:
+      Name: assets/resources/sprites.ab
+      Dependencies: {}
+    Info_93:
+      Name: assets/animations/animators/enemygolem.overridecontroller.ab
+      Dependencies:
+        Dependency_0: assets/animations/animators/enemygrunt.controller.ab
+        Dependency_1: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/idle.anim.ab
+        Dependency_2: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/die.anim.ab
+        Dependency_3: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/walk.anim.ab
+        Dependency_4: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack1.anim.ab
+        Dependency_5: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack2.anim.ab
+        Dependency_6: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/gethit.anim.ab
+    Info_94:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/materials/polyartstandard.mat.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/mini legion rock golem pbr hp polyart/textures/polyartstandard.png.ab
+        Dependency_1: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_95:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/golempolyart.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_96:
+      Name: assets/assetpacks/mini legion grunt pbr hp polyart/mesh/gruntpolyart.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_97:
+      Name: assets/animations/animators/enemygrunt.controller.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/idle.anim.ab
+        Dependency_1: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/die.anim.ab
+        Dependency_2: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/walk.anim.ab
+        Dependency_3: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack1.anim.ab
+        Dependency_4: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack2.anim.ab
+        Dependency_5: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/gethit.anim.ab
+    Info_98:
+      Name: assets/assetpacks/mini legion grunt pbr hp polyart/material/polyartstandard.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/mini legion grunt pbr hp polyart/textures/polyartstandard.png.ab
+    Info_99:
+      Name: assets/assetpacks/rpghero/meshes/polyartsword.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_100:
+      Name: assets/assetpacks/rpghero/materials/polyart.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/rpghero/textures/polyarttexture.png.ab
+    Info_101:
+      Name: assets/resources/prefabs/ui/rendertexture/npcprofiletexture.rendertexture.ab
+      Dependencies: {}
+    Info_102:
+      Name: assets/animations/animators/npc.controller.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/rpghero/animations/idle_swordshield.anim.ab
+    Info_103:
+      Name: assets/assetpacks/rpghero/meshes/newfreerpgheropolyart.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_104:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/meshes/slimepolyartmesh.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_105:
+      Name: assets/animations/animators/enemyslime.controller.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/runfwd.anim.ab
+        Dependency_1: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlebattle.anim.ab
+        Dependency_2: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack01.anim.ab
+        Dependency_3: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlenormal.anim.ab
+        Dependency_4: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack01.anim.ab
+        Dependency_5: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/die.anim.ab
+        Dependency_6: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/walkfwd.anim.ab
+        Dependency_7: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack02.anim.ab
+        Dependency_8: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack02.anim.ab
+        Dependency_9: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/gethit.anim.ab
+    Info_106:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/materials/polyartdefault.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/rpg monster duo pbr polyart/textures/emission.png.ab
+        Dependency_2: assets/assetpacks/rpg monster duo pbr polyart/textures/albedo.png.ab
+    Info_107:
+      Name: assets/animations/animators/enemyturtle.overridecontroller.ab
+      Dependencies:
+        Dependency_0: assets/animations/animators/enemyslime.controller.ab
+        Dependency_1: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/runfwd.anim.ab
+        Dependency_2: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlebattle.anim.ab
+        Dependency_3: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack01.anim.ab
+        Dependency_4: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlenormal.anim.ab
+        Dependency_5: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack01.anim.ab
+        Dependency_6: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/die.anim.ab
+        Dependency_7: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/walkfwd.anim.ab
+        Dependency_8: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack02.anim.ab
+        Dependency_9: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack02.anim.ab
+        Dependency_10: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/gethit.anim.ab
+        Dependency_11: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/runfwd.anim.ab
+        Dependency_12: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlebattle.anim.ab
+        Dependency_13: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/gethit.anim.ab
+        Dependency_14: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/walkfwd.anim.ab
+        Dependency_15: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/die.anim.ab
+        Dependency_16: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlenormal.anim.ab
+    Info_108:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/meshes/turtleshellpolyartmesh.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_109:
+      Name: packages/com.unity.cinemachine/presets/noise/6d shake.asset.ab
+      Dependencies: {}
+    Info_110:
+      Name: assets/artres/cursor/03.png.ab
+      Dependencies: {}
+    Info_111:
+      Name: assets/artres/cursor/04.png.ab
+      Dependencies: {}
+    Info_112:
+      Name: assets/artres/cursor/01.png.ab
+      Dependencies: {}
+    Info_113:
+      Name: assets/artres/cursor/02.png.ab
+      Dependencies: {}
+    Info_114:
+      Name: assets/artres/cursor/05.png.ab
+      Dependencies: {}
+    Info_115:
+      Name: assets/assetpacks/dogknight/material/polyart.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/dogknight/texture/standardalbedo.png.ab
+    Info_116:
+      Name: assets/assetpacks/dogknight/mesh/dogpolyart.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_117:
+      Name: assets/resources/prefabs/ui/rendertexture/playertexture.rendertexture.ab
+      Dependencies: {}
+    Info_118:
+      Name: assets/animations/animators/player.controller.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/dogknight/animations/gethit.anim.ab
+        Dependency_1: assets/assetpacks/dogknight/animations/die.anim.ab
+        Dependency_2: assets/assetpacks/dogknight/animations/attack02.anim.ab
+        Dependency_3: assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab
+        Dependency_4: assets/assetpacks/dogknight/animations/idle_battle.anim.ab
+        Dependency_5: assets/assetpacks/dogknight/animations/attack01.anim.ab
+    Info_119:
+      Name: assets/resources/prefabs/ui/rendertexture/playerprofiletexture.rendertexture.ab
+      Dependencies: {}
+    Info_120:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/rockmesh.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/mini legion rock golem pbr hp polyart/textures/polyartstandard.png.ab
+        Dependency_1: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_121:
+      Name: assets/materials/greenportal.mat.ab
+      Dependencies:
+        Dependency_0: assets/materials/shader/portal.shadergraph.ab
+    Info_122:
+      Name: assets/materials/redportal.mat.ab
+      Dependencies:
+        Dependency_0: assets/materials/shader/portal.shadergraph.ab
+    Info_123:
+      Name: assets/materials/yellowpartal.mat.ab
+      Dependencies:
+        Dependency_0: assets/materials/shader/portal.shadergraph.ab
+    Info_124:
+      Name: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+      Dependencies: {}
+    Info_125:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board small 
+        stone.png.ab
+      Dependencies: {}
+    Info_126:
+      Name: assets/assetpacks/simple fantasy gui/png/quest panel/reward_slot.png.ab
+      Dependencies: {}
+    Info_127:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony title 
+        empty.png.ab
+      Dependencies: {}
+    Info_128:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium
+        stone.png.ab
+      Dependencies: {}
+    Info_129:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_medium.png.ab
+      Dependencies: {}
+    Info_130:
+      Name: packages/com.unity.inputsystem/inputsystem/plugins/playerinput/defaultinputactions.inputactions.ab
+      Dependencies: {}
+    Info_131:
+      Name: assets/artres/bar/healthbareffect.png.ab
+      Dependencies: {}
+    Info_132:
+      Name: assets/artres/bar/healthbarbg.png.ab
+      Dependencies: {}
+    Info_133:
+      Name: assets/artres/bar/monster/healthbar.png.ab
+      Dependencies: {}
+    Info_134:
+      Name: assets/artres/font/high-jinks-1.otf.ab
+      Dependencies: {}
+    Info_135:
+      Name: assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_136:
+      Name: assets/assetpacks/rpghero/meshes/polyartshield.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_137:
+      Name: assets/assetpacks/dogknight/mesh/swordpolyart.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_138:
+      Name: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/materials/palette256bitsgradient.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/palettes/palette256bitsgradient.png.ab
+    Info_139:
+      Name: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/apple_lp.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/palettes/palette256bitsgradient.png.ab
+    Info_140:
+      Name: assets/assetpacks/simplenaturepack/models/mushroom_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_141:
+      Name: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/textures/naturepacklite_texture_01.png.ab
+    Info_142:
+      Name: assets/assetpacks/simplenaturepack/models/mushroom_02.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_143:
+      Name: assets/assetpacks/cryo's mini gui/gui/gui_1x.png.ab
+      Dependencies: {}
+    Info_144:
+      Name: assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab
+      Dependencies: {}
+    Info_145:
+      Name: assets/assetpacks/simple fantasy gui/png/quest panel/crystal_icon.png.ab
+      Dependencies: {}
+    Info_146:
+      Name: assets/assetpacks/simple fantasy gui/png/icons/sword_icon.png.ab
+      Dependencies: {}
+    Info_147:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board small 
+        parchment.png.ab
+      Dependencies: {}
+    Info_148:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_big.png.ab
+      Dependencies: {}
+    Info_149:
+      Name: assets/artres/bar/expbar/expbarbg.png.ab
+      Dependencies: {}
+    Info_150:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large
+        set.png.ab
+      Dependencies: {}
+    Info_151:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony title 
+        large.png.ab
+      Dependencies: {}
+    Info_152:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/close button.png.ab
+      Dependencies: {}
+    Info_153:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large 
+        parchment.png.ab
+      Dependencies: {}
+    Info_154:
+      Name: assets/assetpacks/simple fantasy gui/png/icons/close_icon.png.ab
+      Dependencies: {}
+    Info_155:
+      Name: assets/materials/vignettemat.mat.ab
+      Dependencies:
+        Dependency_0: assets/materials/shader/simplevigetee.shader.ab
+    Info_156:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium 
+        parchment.png.ab
+      Dependencies: {}
+    Info_157:
+      Name: assets/assetpacks/simple fantasy gui/png/character panel/nickname_slot.png.ab
+      Dependencies: {}
+    Info_158:
+      Name: assets/artres/bar/player/healthbar.png.ab
+      Dependencies: {}
+    Info_159:
+      Name: assets/artres/bar/player/healthbarbg.png.ab
+      Dependencies: {}
+    Info_160:
+      Name: assets/artres/bar/expbar/expbar.png.ab
+      Dependencies: {}
+    Info_161:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large
+        stone.png.ab
+      Dependencies: {}
+    Info_162:
+      Name: assets/assetpacks/simple fantasy gui/png/icons/shield_icon.png.ab
+      Dependencies: {}
+    Info_163:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium
+        set.png.ab
+      Dependencies: {}
+    Info_164:
+      Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/exclamation_yellow.png.ab
+      Dependencies: {}
+    Info_165:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/idle.anim.ab
+      Dependencies: {}
+    Info_166:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/die.anim.ab
+      Dependencies: {}
+    Info_167:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/walk.anim.ab
+      Dependencies: {}
+    Info_168:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack1.anim.ab
+      Dependencies: {}
+    Info_169:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack2.anim.ab
+      Dependencies: {}
+    Info_170:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/gethit.anim.ab
+      Dependencies: {}
+    Info_171:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/textures/polyartstandard.png.ab
+      Dependencies: {}
+    Info_172:
+      Name: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+      Dependencies: {}
+    Info_173:
+      Name: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_174:
+      Name: assets/assetpacks/mini legion grunt pbr hp polyart/textures/polyartstandard.png.ab
+      Dependencies: {}
+    Info_175:
+      Name: assets/assetpacks/rpghero/textures/polyarttexture.png.ab
+      Dependencies: {}
+    Info_176:
+      Name: assets/assetpacks/rpghero/animations/idle_swordshield.anim.ab
+      Dependencies: {}
+    Info_177:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/runfwd.anim.ab
+      Dependencies: {}
+    Info_178:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlebattle.anim.ab
+      Dependencies: {}
+    Info_179:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack01.anim.ab
+      Dependencies: {}
+    Info_180:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlenormal.anim.ab
+      Dependencies: {}
+    Info_181:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack01.anim.ab
+      Dependencies: {}
+    Info_182:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/die.anim.ab
+      Dependencies: {}
+    Info_183:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/walkfwd.anim.ab
+      Dependencies: {}
+    Info_184:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack02.anim.ab
+      Dependencies: {}
+    Info_185:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack02.anim.ab
+      Dependencies: {}
+    Info_186:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/gethit.anim.ab
+      Dependencies: {}
+    Info_187:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/textures/emission.png.ab
+      Dependencies: {}
+    Info_188:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/textures/albedo.png.ab
+      Dependencies: {}
+    Info_189:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/runfwd.anim.ab
+      Dependencies: {}
+    Info_190:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlebattle.anim.ab
+      Dependencies: {}
+    Info_191:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/gethit.anim.ab
+      Dependencies: {}
+    Info_192:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/walkfwd.anim.ab
+      Dependencies: {}
+    Info_193:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/die.anim.ab
+      Dependencies: {}
+    Info_194:
+      Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlenormal.anim.ab
+      Dependencies: {}
+    Info_195:
+      Name: assets/assetpacks/dogknight/texture/standardalbedo.png.ab
+      Dependencies: {}
+    Info_196:
+      Name: assets/assetpacks/dogknight/animations/gethit.anim.ab
+      Dependencies: {}
+    Info_197:
+      Name: assets/assetpacks/dogknight/animations/die.anim.ab
+      Dependencies: {}
+    Info_198:
+      Name: assets/assetpacks/dogknight/animations/attack02.anim.ab
+      Dependencies: {}
+    Info_199:
+      Name: assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab
+      Dependencies: {}
+    Info_200:
+      Name: assets/assetpacks/dogknight/animations/idle_battle.anim.ab
+      Dependencies: {}
+    Info_201:
+      Name: assets/assetpacks/dogknight/animations/attack01.anim.ab
+      Dependencies: {}
+    Info_202:
+      Name: assets/materials/shader/portal.shadergraph.ab
+      Dependencies: {}
+    Info_203:
+      Name: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/palettes/palette256bitsgradient.png.ab
+      Dependencies: {}
+    Info_204:
+      Name: assets/assetpacks/simplenaturepack/textures/naturepacklite_texture_01.png.ab
+      Dependencies: {}
+    Info_205:
+      Name: assets/materials/shader/simplevigetee.shader.ab
+      Dependencies: {}

@@ -9,18 +9,18 @@ public class PlayerStateInfo : CharacterStateInfo
 {
     public bool isDie;
     public int health;
-    // µ±Ç°µÈ¼¶
+    // å½“å‰ç­‰çº§
     public int currentLevel;
-    // ×î´óµÈ¼¶
+    // æœ€å¤§ç­‰çº§
     public int maxLevel;
-    // µÈ¼¶»ù´¡¾­ÑéÖµ
+    // ç­‰çº§åŸºç¡€ç»éªŒå€¼
     public int baseExp;
-    // µ±Ç°¾­ÑéÖµ
+    // å½“å‰ç»éªŒå€¼
     public int currentExp;
-    // Éý¼¶ÔöÒæ
+    // å‡çº§å¢žç›Š
     public float levelBuff;
 
-    // ÔöÒæ¼ÆËã¹«Ê½ ÔöÒæºóÖµ = 1 + £¨µ±Ç°µÈ¼¶ - 1£© * Éý¼¶ÔöÒæ
+    // å¢žç›Šè®¡ç®—å…¬å¼ å¢žç›ŠåŽå€¼ = 1 + ï¼ˆå½“å‰ç­‰çº§ - 1ï¼‰ * å‡çº§å¢žç›Š
     //public float LevelMultiplier => 1 + (currentLevel - 1) * levelBuff;
     public float LevelMultiplier => 1 + levelBuff;
 

@@ -9,11 +9,11 @@ public class Health : MonoBehaviour
     public event Action<int, GameObject> OnTakeDamageEvent;
     public event Action<int> OnRecoveryEvent;
     public event Action<GameObject> OnDieEvent;
-    // ¿ÉÒÔ±»ÄÄĞ©²ã¼¶µÄCharacter¹¥»÷
+    // å¯ä»¥è¢«å“ªäº›å±‚çº§çš„Characteræ”»å‡»
     public LayerMask attackMask;
 
-    // TODO:Õû¸öÏîÄ¿Ó¦¸ÃÍ³Ò»Ê¹ÓÃManagerÖĞCharachterDataÖĞµÄIsDie
-    // ÕâÀïÏÈ¼òµ¥Ğ´
+    // TODO:æ•´ä¸ªé¡¹ç›®åº”è¯¥ç»Ÿä¸€ä½¿ç”¨Managerä¸­CharachterDataä¸­çš„IsDie
+    // è¿™é‡Œå…ˆç®€å•å†™
     public bool IsDie {  get; private set; }
 
     public void ResetIsDie()
@@ -31,11 +31,11 @@ public class Health : MonoBehaviour
             + " By " + obj.name);
     }
 
-    // ×ÔÉíÉËº¦º¯Êıµ÷ÓÃ
+    // è‡ªèº«ä¼¤å®³å‡½æ•°è°ƒç”¨
     // TakeDamage(10, null, true)
     public void TakeDamage(int damage, GameObject obj)
     {
-        // µ±Ç°ËÀÍö¡¢¹¥»÷ÕßÎª×ÔÉíÇÒisSelfDamageÎª¼Ù£¬ÍË³öÉËº¦º¯Êı
+        // å½“å‰æ­»äº¡ã€æ”»å‡»è€…ä¸ºè‡ªèº«ä¸”isSelfDamageä¸ºå‡ï¼Œé€€å‡ºä¼¤å®³å‡½æ•°
         if (IsDie || obj == null) return;
         if ((attackMask.value & (1 << obj.layer)) == 0) return;
         //print($"TakeDamage {damage} {obj.name} {gameObject.name}");

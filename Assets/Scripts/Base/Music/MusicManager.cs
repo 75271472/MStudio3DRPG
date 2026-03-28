@@ -10,7 +10,7 @@ public class MusicManager : BaseManager<MusicManager>
     private float bkMusicVolume;
     private float soundVolume;
 
-    // ÒôÁ¿´óĞ¡ÊôĞÔ
+    // éŸ³é‡å¤§å°å±æ€§
     public float BkMusicVolume
     {
         set
@@ -23,7 +23,7 @@ public class MusicManager : BaseManager<MusicManager>
         get => bkMusicVolume;
     }
 
-    // ÒôĞ§´óĞ¡ÊôĞÔ
+    // éŸ³æ•ˆå¤§å°å±æ€§
     public float SoundVolume
     {
         set
@@ -37,7 +37,7 @@ public class MusicManager : BaseManager<MusicManager>
     }
 
     /// <summary>
-    /// ¹¹Ôìº¯Êı£¬Í¨¹ıMonoManagerÏòUpdateÖĞÌí¼ÓCheckStopSoundÊÂ¼ş
+    /// æ„é€ å‡½æ•°ï¼Œé€šè¿‡MonoManagerå‘Updateä¸­æ·»åŠ CheckStopSoundäº‹ä»¶
     /// </summary>
     public MusicManager()
     {
@@ -45,7 +45,7 @@ public class MusicManager : BaseManager<MusicManager>
     }
 
     /// <summary>
-    /// ´«Èë±³¾°ÒôÀÖÂ·¾¶£¬²¥·Å±³¾°ÒôÀÖ
+    /// ä¼ å…¥èƒŒæ™¯éŸ³ä¹è·¯å¾„ï¼Œæ’­æ”¾èƒŒæ™¯éŸ³ä¹
     /// </summary>
     /// <param name="name"></param>
     public void PlayBkMusic(string name)
@@ -67,7 +67,7 @@ public class MusicManager : BaseManager<MusicManager>
     }
 
     /// <summary>
-    /// ÉèÖÃ±³¾°ÒôÀÖÊÇ·ñ¾²Òô
+    /// è®¾ç½®èƒŒæ™¯éŸ³ä¹æ˜¯å¦é™éŸ³
     /// </summary>
     /// <param name="isMute"></param>
     public void SetBkMusicMute(bool isMute)
@@ -78,12 +78,12 @@ public class MusicManager : BaseManager<MusicManager>
     }
 
     /// <summary>
-    /// ²¥·ÅÒôĞ§
+    /// æ’­æ”¾éŸ³æ•ˆ
     /// </summary>
-    /// <param name="name">ÒôĞ§Â·¾¶</param>
-    /// <param name="obj">¹ÒÔØÒôĞ§¶ÔÏó</param>
-    /// <param name="isLoop">ÒôĞ§ÊÇ·ñÑ­»·</param>
-    /// <param name="callback">Òì²½¼ÓÔØÒôĞ§£¬Í¨¹ı´«Èë»Øµ÷º¯Êı»ñÈ¡¼ÓÔØÒôĞ§</param>
+    /// <param name="name">éŸ³æ•ˆè·¯å¾„</param>
+    /// <param name="obj">æŒ‚è½½éŸ³æ•ˆå¯¹è±¡</param>
+    /// <param name="isLoop">éŸ³æ•ˆæ˜¯å¦å¾ªç¯</param>
+    /// <param name="callback">å¼‚æ­¥åŠ è½½éŸ³æ•ˆï¼Œé€šè¿‡ä¼ å…¥å›è°ƒå‡½æ•°è·å–åŠ è½½éŸ³æ•ˆ</param>
     public void PlaySound(string name, GameObject obj, bool isLoop, UnityAction<AudioSource> callback = null)
     {
         LoadResourceManager.Instance.LoadResourcesAsync<AudioClip>(name, (clip) =>
@@ -99,7 +99,7 @@ public class MusicManager : BaseManager<MusicManager>
     }
 
     /// <summary>
-    /// ÉèÖÃÒôĞ§ÊÇ·ñ¾²Òô
+    /// è®¾ç½®éŸ³æ•ˆæ˜¯å¦é™éŸ³
     /// </summary>
     /// <param name="isMute"></param>
     public void SetSoundMute(bool isMute)
@@ -111,7 +111,7 @@ public class MusicManager : BaseManager<MusicManager>
     }
 
     /// <summary>
-    /// Í£Ö¹ÒôĞ§²¥·Å²¢ÒÆ³ı
+    /// åœæ­¢éŸ³æ•ˆæ’­æ”¾å¹¶ç§»é™¤
     /// </summary>
     /// <param name="sound"></param>
     public void StopSound(AudioSource sound)
@@ -124,7 +124,7 @@ public class MusicManager : BaseManager<MusicManager>
     }
 
     /// <summary>
-    /// ¼ì²â²¥·ÅÍê±ÏµÄÒôĞ§²¢ÒÆ³ı
+    /// æ£€æµ‹æ’­æ”¾å®Œæ¯•çš„éŸ³æ•ˆå¹¶ç§»é™¤
     /// </summary>
     public void CheckStopSound()
     {

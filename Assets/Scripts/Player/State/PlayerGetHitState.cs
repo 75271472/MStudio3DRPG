@@ -9,9 +9,9 @@ public class PlayerGetHitState : PlayerBaseState
     private const string AnimationTag = "GetHit";
     private readonly int GetHitHash = Animator.StringToHash("GetHit");
     private const float CrossFixedTime = 0.3f;
-    // ÊÜ»÷×´Ì¬³ÖĞøÊ±¼ä
+    // å—å‡»çŠ¶æ€æŒç»­æ—¶é—´
     private float duration;
-    // µ±Ç°¶¯»­²¥·ÅÊ±¼ä£¬Õâ¾ÍÒªÇóGetHit¶¯»­ÒªÎªÑ­»·¶¯»­
+    // å½“å‰åŠ¨ç”»æ’­æ”¾æ—¶é—´ï¼Œè¿™å°±è¦æ±‚GetHitåŠ¨ç”»è¦ä¸ºå¾ªç¯åŠ¨ç”»
     private float playTime;
 
     public PlayerGetHitState(PlayerStateMachine stateMachine,
@@ -38,7 +38,7 @@ public class PlayerGetHitState : PlayerBaseState
         }
         else
         {
-            // ²¥·ÅÍê±ÏÇĞ»»µ½Guard×´Ì¬£¬Ö»ÓĞGuard×´Ì¬»áÑ­»·¼ì²âTargeterÖĞµÄTarget
+            // æ’­æ”¾å®Œæ¯•åˆ‡æ¢åˆ°GuardçŠ¶æ€ï¼Œåªæœ‰GuardçŠ¶æ€ä¼šå¾ªç¯æ£€æµ‹Targeterä¸­çš„Target
             stateMachine.SwitchState(new PlayerIdleState(stateMachine));
         }
 

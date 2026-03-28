@@ -105,10 +105,10 @@ public class PlayerData : CharacterData
         base.CharacterDataInit(PlayerManager.Instance);
     }
 
-    // ÷ÿ÷√π•ª˜Œ‰∆˜£¨
+    // ÈáçÁΩÆÊîªÂáªÊ≠¶Âô®Ôºå
     public void OnResetEquipEventInvoke()
     {
-        // –∂œ¬µ±«∞Œ‰∆˜£¨»√π„≤•ƒ¨»œŒ‰∆˜
+        // Âç∏‰∏ãÂΩìÂâçÊ≠¶Âô®ÔºåËÆ©ÂπøÊí≠ÈªòËÆ§Ê≠¶Âô®
         OnUnloadHandler(PlayerWeaponInfo);
     }
 
@@ -184,16 +184,16 @@ public class PlayerData : CharacterData
         switch (itemInfo.equippableItemType)
         {
             case EEquippableItem.Sword:
-                // œ»Ω´PlayerWeaponInfo÷√ø’£¨¥À ±PlayerWeaponInfo = DefaultWeaponInfo
+                // ÂÖàÂ∞ÜPlayerWeaponInfoÁΩÆÁ©∫ÔºåÊ≠§Êó∂PlayerWeaponInfo = DefaultWeaponInfo
                 PlayerWeaponInfo = null;
-                // µ˜”√OnEquipItemEvent£¨Ω´DefaultWeaponInfo◊∞±∏…œ
-                // À˘“‘ µº …œ≤ªª·µ˜”√WeaponHandlerµƒOnUnloadItemHandler
+                // Ë∞ÉÁî®OnEquipItemEventÔºåÂ∞ÜDefaultWeaponInfoË£ÖÂ§á‰∏ä
+                // ÊâÄ‰ª•ÂÆûÈôÖ‰∏ä‰∏ç‰ºöË∞ÉÁî®WeaponHandlerÁöÑOnUnloadItemHandler
                 OnEquipItemEvent?.Invoke(PlayerWeaponInfo);
                 break;
             case EEquippableItem.Shield: 
-                // œ»¥•∑¢ªÿµ˜Ω´PlayerShieldInfo¥´»Î
+                // ÂÖàËß¶ÂèëÂõûË∞ÉÂ∞ÜPlayerShieldInfo‰º†ÂÖ•
                 OnUnloadItemEvent?.Invoke(PlayerShieldInfo);
-                // ‘ŸΩ´PlayerShieldInfo÷√ø’
+                // ÂÜçÂ∞ÜPlayerShieldInfoÁΩÆÁ©∫
                 PlayerShieldInfo = null;
                 break;
         }
@@ -225,10 +225,10 @@ public class PlayerData : CharacterData
         QuestManager.Instance.SaveQuests();
         DataManager.Instance.SavePlayerInfo(() =>
         {
-            UIManager.Instance.ShowPanel<NoticePanel>().UpdateTipTxt("±£¥Ê≥…π¶");
+            UIManager.Instance.ShowPanel<NoticePanel>().UpdateTipTxt("‰øùÂ≠òÊàêÂäü");
         }, () =>
         {
-            UIManager.Instance.ShowPanel<NoticePanel>().UpdateTipTxt("±£¥Ê ß∞‹");
+            UIManager.Instance.ShowPanel<NoticePanel>().UpdateTipTxt("‰øùÂ≠òÂ§±Ë¥•");
         });
     }
 

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3007431492
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bd47927d9a5b8ba1bfb031fa07669414
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: bd47927d9a5b8ba1bfb031fa07669414
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/SimpleNaturePack/Textures/NaturePackLite_Texture_01.png
+Dependencies: []

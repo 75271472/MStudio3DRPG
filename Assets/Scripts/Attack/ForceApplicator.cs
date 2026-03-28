@@ -12,7 +12,7 @@ public class ForceApplicator : MonoBehaviour
 
     private Vector3 impact;
     private Vector3 dampingVelocity;
-    // 越大速度降得越慢
+    // 瓒婂ぇ閫熷害闄嶅緱瓒婃參
     private float drag = 0.5f;
 
     public void ForceApplicatorInit()

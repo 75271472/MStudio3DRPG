@@ -10,10 +10,10 @@ public class LoadSceneManager : BaseManager<LoadSceneManager>
     public event Action OnPrepareLoadSceneEvent;
 
     /// <summary>
-    /// Í¬²½³¡¾°ÇĞ»»
+    /// åŒæ­¥åœºæ™¯åˆ‡æ¢
     /// </summary>
-    /// <param name="name">ÇĞ»»³¡¾°Ãû</param>
-    /// <param name="action">ÇĞ»»Íê³ÉÖ´ĞĞÊÂ¼ş</param>
+    /// <param name="name">åˆ‡æ¢åœºæ™¯å</param>
+    /// <param name="action">åˆ‡æ¢å®Œæˆæ‰§è¡Œäº‹ä»¶</param>
     public void LoadScene(string name, Action action)
     {
         SceneManager.LoadScene(name);
@@ -21,26 +21,26 @@ public class LoadSceneManager : BaseManager<LoadSceneManager>
     }
 
     /// <summary>
-    /// Òì²½³¡¾°ÇĞ»»
+    /// å¼‚æ­¥åœºæ™¯åˆ‡æ¢
     /// </summary>
-    /// <param name="name">ÇĞ»»³¡¾°Ãû</param>
-    /// <param name="action">ÇĞ»»Íê³ÉÖ´ĞĞÊÂ¼ş</param>
+    /// <param name="name">åˆ‡æ¢åœºæ™¯å</param>
+    /// <param name="action">åˆ‡æ¢å®Œæˆæ‰§è¡Œäº‹ä»¶</param>
     public void LoadSceneAsync(string name, Action action = null)
     {
-        // Çå¿Õ¶ÔÏó³Ø
+        // æ¸…ç©ºå¯¹è±¡æ± 
         PoolManager.Instance.Clear();
         UIManager.Instance.HidePanelAll();
         InputManager.Instance.ResetInputAction();
-        ResourcesManager.Instance.UnloadAll();
+        //ResourcesManager.Instance.UnloadAll();
         OnPrepareLoadSceneEvent?.Invoke();
         OnPrepareLoadSceneEvent = null;
 
-        // Òì²½¼ÓÔØĞ­³Ì£¬·ÖÖ¡·µ»Ø¼ÓÔØ½ø¶È
+        // å¼‚æ­¥åŠ è½½åç¨‹ï¼Œåˆ†å¸§è¿”å›åŠ è½½è¿›åº¦
         MonoManager.Instance.StartCoroutine(LoadSceneAnsycCoroutine(name, action));
     }
 
     /// <summary>
-    /// Òì²½³¡¾°ÇĞ»»µü´úÆ÷
+    /// å¼‚æ­¥åœºæ™¯åˆ‡æ¢è¿­ä»£å™¨
     /// </summary>
     /// <param name="name"></param>
     /// <param name="action"></param>
@@ -53,19 +53,19 @@ public class LoadSceneManager : BaseManager<LoadSceneManager>
             UIManager.Instance.ShowPanel<LoadScenePanel>(EUILayer.System);
         yield return loadScenePanel.FadeInCoroutine(2.5f);
 
-        // Òì²½¼ÓÔØ³¡¾°
+        // å¼‚æ­¥åŠ è½½åœºæ™¯
         AsyncOperation ao = SceneManager.LoadSceneAsync(name);
-        // ÉèÖÃ¼ÓÔØÍê³ÉÊÂ¼ş
+        // è®¾ç½®åŠ è½½å®Œæˆäº‹ä»¶
         // ao.completed += (a) => action?.Invoke();
 
-        // ³¡¾°¼ÓÔØÍê³ÉºóÖ´ĞĞMonoManager.Instance.Init£¬
-        // ÖØĞÂÖ´ĞĞËùÓĞMonoManagerµÄInit·½·¨
+        // åœºæ™¯åŠ è½½å®Œæˆåæ‰§è¡ŒMonoManager.Instance.Initï¼Œ
+        // é‡æ–°æ‰§è¡Œæ‰€æœ‰MonoManagerçš„Initæ–¹æ³•
         ao.completed += (a) => MonoManager.Instance.Init();
         ao.completed += (a) => loadScenePanel.FadeOut(2.5f);
-        // ËùÓĞMonoManager³õÊ¼»¯Íê³ÉºóÖ´ĞĞ´«ÈëµÄaction»Øµ÷
+        // æ‰€æœ‰MonoManageråˆå§‹åŒ–å®Œæˆåæ‰§è¡Œä¼ å…¥çš„actionå›è°ƒ
         MonoManager.Instance.OnInitCompletedEvent += action;
 
-        // µ±Ç°Î´¼ÓÔØÍê³É
+        // å½“å‰æœªåŠ è½½å®Œæˆ
         while (!ao.isDone)
         {
             loadScenePanel.UpdateLoadSceneSlider(ao.progress);

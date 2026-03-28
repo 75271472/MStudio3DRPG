@@ -13,12 +13,12 @@ public class CharacterTransInfo
     public bool IsEmpty => positionArray == null || rotationArray == null;
     public string SceneName;
 
-    // ½«ÒªĞòÁĞ»¯µÄ×Ö¶Î±£³Ö¹²ÓĞ·ÃÎÊĞŞÊÎ·û
+    // å°†è¦åºåˆ—åŒ–çš„å­—æ®µä¿æŒå…±æœ‰è®¿é—®ä¿®é¥°ç¬¦
     public float[] positionArray { get; private set; }
     public float[] rotationArray { get; private set; }
 
-    // ½«Vector3³ÉÔ±±äÁ¿±äÎª³ÉÔ±·½·¨£¬±ÜÃâ±»JsonĞòÁĞ»¯£¬
-    // ÒòÎªLitJsonĞòÁĞ»¯Vector3ÀàĞÍ±äÁ¿»á±¨´í
+    // å°†Vector3æˆå‘˜å˜é‡å˜ä¸ºæˆå‘˜æ–¹æ³•ï¼Œé¿å…è¢«Jsonåºåˆ—åŒ–ï¼Œ
+    // å› ä¸ºLitJsonåºåˆ—åŒ–Vector3ç±»å‹å˜é‡ä¼šæŠ¥é”™
     public Vector3 GetPosition() => new Vector3(
     positionArray[0], positionArray[1], positionArray[2]);
     public Quaternion GetRotation() => new Quaternion(
@@ -50,29 +50,29 @@ public class DataManager : BaseManager<DataManager>
 {
     #region const string
     public const string SCENEROOTPATH = "Scenes/";
-    // ¿ªÊ¼³¡¾°³£Á¿Ãû
+    // å¼€å§‹åœºæ™¯å¸¸é‡å
     public const string STARTSCENE = "StartScene";
-    // µÚÒ»¼ÓÔØ³¡¾°³£Á¿Ãû
+    // ç¬¬ä¸€åŠ è½½åœºæ™¯å¸¸é‡å
     public const string FIRSTSCENE = "SceneOne";
     
     #region resources
-    // UIÎÄ¼ş¼Ğ¸ùÂ·¾¶
+    // UIæ–‡ä»¶å¤¹æ ¹è·¯å¾„
     public const string UIROOTPATH = "Prefabs/UI/";
     public const string ITEMUIROOTPATH = UIROOTPATH + "ItemUI/";
 
-    // PanelÎÄ¼ş¼Ğ¸ùÂ·¾¶
+    // Panelæ–‡ä»¶å¤¹æ ¹è·¯å¾„
     public const string PANELROOTPATH = UIROOTPATH + "Panel/";
     public const string OVERLAYCANVAS = UIROOTPATH + "OverlayCanvas";
     public const string WORLDCANVAS = UIROOTPATH + "WorldCanvas";
     public const string EVENTSYSTEM = UIROOTPATH + "EventSystem";
     
-    // ÓÎÏ·¶ÔÏóÔ¤ÉèÌåÂ·¾¶
+    // æ¸¸æˆå¯¹è±¡é¢„è®¾ä½“è·¯å¾„
     public const string ROCKBREAKPARTICAL = "Prefabs/Particle/RockBreakParticle";
     public const string ROCK = "Prefabs/Weapon/Rock";
     public const string SHIELD = "Prefabs/WordItem/Shield";
     public const string YELLOWPORTAL = "Prefabs/Portal/YellowPortal";
 
-    // ÆÕÍ¨UIÂ·¾¶
+    // æ™®é€šUIè·¯å¾„
     public const string INPUTACTIONING = UIROOTPATH + "InputActionUI";
     public const string HEALTHBAR = UIROOTPATH + "HealthBar";
     public const string OPTIONBUTTONUI = UIROOTPATH + "OptionBtnUI";
@@ -83,7 +83,7 @@ public class DataManager : BaseManager<DataManager>
     public const string INVENTORYITEMUI = ITEMUIROOTPATH + "InventoryItemUI";
     public const string REWARDITEMUI = ITEMUIROOTPATH + "RewardItemUI";
 
-    // ModifierSOÎÄ¼şÂ·¾¶
+    // ModifierSOæ–‡ä»¶è·¯å¾„
     public const string MODIFIER = "GameData/Modifier/";
     public const string QUESTFINISHER = "GameData/QuestFinisher/";
     #endregion
@@ -206,22 +206,22 @@ public class DataManager : BaseManager<DataManager>
         LoadConditionInfoList();
     }
 
-    // Èç¹û²»ÌîÈëÖµ£¬¾ÍÊÇÓÃDataManagerÖĞµÄArchiveIndex¼ÓÔØ´æµµ
+    // å¦‚æœä¸å¡«å…¥å€¼ï¼Œå°±æ˜¯ç”¨DataManagerä¸­çš„ArchiveIndexåŠ è½½å­˜æ¡£
     private void LoadPlayerInfo()
     {
-        // ÏÈÔÚPersistentDataÖĞ²éÕÒÒÑ¾­´æÔÚµÄ´æµµ
-        // PersistentDataÖĞµÄÊı¾İÊÇµ¥¸öµÄ
+        // å…ˆåœ¨PersistentDataä¸­æŸ¥æ‰¾å·²ç»å­˜åœ¨çš„å­˜æ¡£
+        // PersistentDataä¸­çš„æ•°æ®æ˜¯å•ä¸ªçš„
         PlayerInfo = GetPlayerInfoByIndex(ArchiveIndex);
         if (PlayerInfo != null)
         {
             //Debug.Log($"Load Archive {ArchiveIndex}");
-            // Èç¹ûPersistentDataÖĞÓĞÏÈÇ°µÄ´æµµ£¬¾Í¸üĞÂArchiveIndex
+            // å¦‚æœPersistentDataä¸­æœ‰å…ˆå‰çš„å­˜æ¡£ï¼Œå°±æ›´æ–°ArchiveIndex
             SaveCurrentArchiveIndex();
             return;
         }
 
-        // Èç¹ûÃ»ÓĞ¾ÍÔÚStreamingAsstesÖĞ²éÕÒÄ¬ÈÏ´æµµ
-        // StreamingAsstesÖĞµÄÊı¾İÊÇÒÔ¼¯ºÏĞÎÊ½³ÊÏÖµÄ
+        // å¦‚æœæ²¡æœ‰å°±åœ¨StreamingAsstesä¸­æŸ¥æ‰¾é»˜è®¤å­˜æ¡£
+        // StreamingAsstesä¸­çš„æ•°æ®æ˜¯ä»¥é›†åˆå½¢å¼å‘ˆç°çš„
 
         LoadPlayerIdInfo();
 
@@ -238,14 +238,14 @@ public class DataManager : BaseManager<DataManager>
 
     private void LoadInventoryItemInfoList()
     {
-        // ÏÈ´ÓPersistentDataÖĞ¼ÓÔØ×ÊÔ´
-        // PersistentDataÖĞ¼ÇÂ¼ÓĞÎïÆ·µÄ¸ñ×Ó£¬ºÍ±³°ü´óĞ¡size
+        // å…ˆä»PersistentDataä¸­åŠ è½½èµ„æº
+        // PersistentDataä¸­è®°å½•æœ‰ç‰©å“çš„æ ¼å­ï¼Œå’ŒèƒŒåŒ…å¤§å°size
         InventoryInfo = GetInventoryItemInfoListByIndex(ArchiveIndex);
         if (InventoryInfo != null) return;
 
         InventoryInfo = new InventoryInfo();
-        // ÔÙ´ÓStreamingAssetsÖĞ¼ÓÔØ
-        // StreamingAssetsÄ¬ÈÏ×ÊÔ´ÖĞ£¬¼ÇÂ¼ÁËËùÓĞ¸ñ×Ó£¬°üÀ¨ÓĞÎïÆ·µÄºÍÃ»ÓĞÎïÆ·µÄ
+        // å†ä»StreamingAssetsä¸­åŠ è½½
+        // StreamingAssetsé»˜è®¤èµ„æºä¸­ï¼Œè®°å½•äº†æ‰€æœ‰æ ¼å­ï¼ŒåŒ…æ‹¬æœ‰ç‰©å“çš„å’Œæ²¡æœ‰ç‰©å“çš„
         InventoryInfo.inventoryItemList = JsonManager.Instance.
             LoadDataFromStreamingAssets<List<InventoryItemInfo>>(
             DEFAULTINVENTORYITEMINFO);
@@ -275,7 +275,7 @@ public class DataManager : BaseManager<DataManager>
     }
 
     /// <summary>
-    /// ¼ÓÔØÉÏÒ»´ÎÓÎÏ·´æµµÏÂ±êÍ¬Ê±¼ì²é¸Ã´æµµÊÇ·ñÍêÕû
+    /// åŠ è½½ä¸Šä¸€æ¬¡æ¸¸æˆå­˜æ¡£ä¸‹æ ‡åŒæ—¶æ£€æŸ¥è¯¥å­˜æ¡£æ˜¯å¦å®Œæ•´
     /// </summary>
     /// <returns></returns>
     public bool LoadArchiveIndex()
@@ -466,15 +466,15 @@ public class DataManager : BaseManager<DataManager>
                 //(sprite) => {
                 //    if (sprite != null)
                 //    {
-                //        Debug.Log($"Í¼Æ¬¼ÓÔØ³É¹¦ {sprite.name}");
+                //        Debug.Log($"å›¾ç‰‡åŠ è½½æˆåŠŸ {sprite.name}");
                 //    }
                 //    else
                 //    {
-                //        Debug.LogError("¡¾ÑÏÖØ¡¿×ÊÔ´¼ÓÔØ³É¹¦£¬µ«×ª»» Sprite Ê§°Ü£¡Çë¼ì²éÍ¼Æ¬ TextureType ÊÇ·ñÎª Sprite (2D and UI)");
+                //        Debug.LogError("ã€ä¸¥é‡ã€‘èµ„æºåŠ è½½æˆåŠŸï¼Œä½†è½¬æ¢ Sprite å¤±è´¥ï¼è¯·æ£€æŸ¥å›¾ç‰‡ TextureType æ˜¯å¦ä¸º Sprite (2D and UI)");
 
                 //    }
                 //}, () => {
-                //        Debug.LogError("×ÊÔ´¼ÓÔØÖ±½ÓÊ§°Ü");
+                //        Debug.LogError("èµ„æºåŠ è½½ç›´æ¥å¤±è´¥");
                 //});
         }
     }
@@ -490,15 +490,15 @@ public class DataManager : BaseManager<DataManager>
                 //(sprite) => {
                 //    if (sprite != null)
                 //    {
-                //        Debug.Log($"Í¼Æ¬¼ÓÔØ³É¹¦ {sprite.name}");
+                //        Debug.Log($"å›¾ç‰‡åŠ è½½æˆåŠŸ {sprite.name}");
                 //    }
                 //    else
                 //    {
-                //        Debug.LogError("¡¾ÑÏÖØ¡¿×ÊÔ´¼ÓÔØ³É¹¦£¬µ«×ª»» Sprite Ê§°Ü£¡Çë¼ì²éÍ¼Æ¬ TextureType ÊÇ·ñÎª Sprite (2D and UI)");
+                //        Debug.LogError("ã€ä¸¥é‡ã€‘èµ„æºåŠ è½½æˆåŠŸï¼Œä½†è½¬æ¢ Sprite å¤±è´¥ï¼è¯·æ£€æŸ¥å›¾ç‰‡ TextureType æ˜¯å¦ä¸º Sprite (2D and UI)");
 
                 //    }
                 //}, () => {
-                //    Debug.LogError("×ÊÔ´¼ÓÔØÖ±½ÓÊ§°Ü");
+                //    Debug.LogError("èµ„æºåŠ è½½ç›´æ¥å¤±è´¥");
                 //});
             if (itemInfo.attackInfoId != -1)
                 itemInfo.weaponAttackInfo = AttackInfoList[itemInfo.attackInfoId];
@@ -554,7 +554,7 @@ public class DataManager : BaseManager<DataManager>
 
             JsonManager.Instance.SaveData(PlayerInfo, playerInfoPath);
 
-            // ¸üĞÂ×îĞÂ¼ÇÂ¼µÄ´æµµÏÂ±ê
+            // æ›´æ–°æœ€æ–°è®°å½•çš„å­˜æ¡£ä¸‹æ ‡
             SaveCurrentArchiveIndex();
 
             saveOKAction?.Invoke();
@@ -573,9 +573,9 @@ public class DataManager : BaseManager<DataManager>
         }, ARCHIVEINDEX);
     }
 
-    // ¸üĞÂInventoryItemInfoList
-    // ÓÃÓÚÊı¾İ±£´æµ½±¾µØ£¬»òÇĞ»»³¡¾°Ê±Êı¾İ±£´æµ½ÄÚ´æ
-    // £¨ÒòÎªDataManagerÎª²»¼Ì³ĞMonoµÄµ¥ÀıÄ£Ê½£©£¬Òò´ËÇĞ»»³¡¾°Ê±Êı¾İ²»±ä
+    // æ›´æ–°InventoryItemInfoList
+    // ç”¨äºæ•°æ®ä¿å­˜åˆ°æœ¬åœ°ï¼Œæˆ–åˆ‡æ¢åœºæ™¯æ—¶æ•°æ®ä¿å­˜åˆ°å†…å­˜
+    // ï¼ˆå› ä¸ºDataManagerä¸ºä¸ç»§æ‰¿Monoçš„å•ä¾‹æ¨¡å¼ï¼‰ï¼Œå› æ­¤åˆ‡æ¢åœºæ™¯æ—¶æ•°æ®ä¸å˜
     public void UpdateInventoryItemInfoList(int size, 
         Dictionary<int, InventoryItem> itemDict)
     {
@@ -610,7 +610,7 @@ public class DataManager : BaseManager<DataManager>
         foreach (var questPair in finishedQuestDict)
         {
             QuestRecordList[questPair.Key] = new QuestRecord(questPair.Value);
-            //Debug.Log("UpdateQuest£º" + QuestRecordList[questPair.Key].questState);
+            //Debug.Log("UpdateQuestï¼š" + QuestRecordList[questPair.Key].questState);
         }
     }
 
@@ -642,7 +642,7 @@ public class DataManager : BaseManager<DataManager>
         };
     }
 
-    // É¾³ı´æµµ
+    // åˆ é™¤å­˜æ¡£
     public void DeletePlayerDataInPersistentData(int archiveIndex)
     {
         if (!CheckArchiveExist(archiveIndex)) return;
@@ -657,10 +657,10 @@ public class DataManager : BaseManager<DataManager>
     }
 
     /// <summary>
-    /// ´Ó1µ½3²éÕÒµÚÒ»¸ö¿Õ´æµµ£¬²éÕÒÖ¸¶¨ÏÂ±êµÄ´æµµÊÇ·ñÎª¿Õ
-    /// ÕÒµ½¿Õ´æµµÔò¸üĞÂArchiveIndex
+    /// ä»1åˆ°3æŸ¥æ‰¾ç¬¬ä¸€ä¸ªç©ºå­˜æ¡£ï¼ŒæŸ¥æ‰¾æŒ‡å®šä¸‹æ ‡çš„å­˜æ¡£æ˜¯å¦ä¸ºç©º
+    /// æ‰¾åˆ°ç©ºå­˜æ¡£åˆ™æ›´æ–°ArchiveIndex
     /// </summary>
-    /// <param name="archiveIndex">ÒªÅĞ¶ÏµÄ´æµµÏÂ±ê</param>
+    /// <param name="archiveIndex">è¦åˆ¤æ–­çš„å­˜æ¡£ä¸‹æ ‡</param>
     /// <returns></returns>
     public bool UpdateEmptyArchiveIndex(int archiveIndex = 0)
     {
@@ -702,7 +702,7 @@ public class DataManager : BaseManager<DataManager>
     }
 
     /// <summary>
-    /// »ñÈ¡ÏÂ±ê´æµµµÄPlayerStateInfoÊı¾İĞÅÏ¢
+    /// è·å–ä¸‹æ ‡å­˜æ¡£çš„PlayerStateInfoæ•°æ®ä¿¡æ¯
     /// </summary>
     /// <param name="archiveIndex"></param>
     /// <returns></returns>
@@ -767,7 +767,7 @@ public class DataManager : BaseManager<DataManager>
     }
 
     /// <summary>
-    /// ¼ì²éÖ´ĞĞÏÂ±ê´æµµÊÇ·ñ´æÔÚ²¢ÇÒÍêÕû
+    /// æ£€æŸ¥æ‰§è¡Œä¸‹æ ‡å­˜æ¡£æ˜¯å¦å­˜åœ¨å¹¶ä¸”å®Œæ•´
     /// </summary>
     /// <param name="archiveIndex"></param>
     /// <returns></returns>

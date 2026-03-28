@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2981550260
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e444a110e5870e30566b518fe0861a75
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e444a110e5870e30566b518fe0861a75
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/TurtleShell/GetHit.anim
+Dependencies: []
