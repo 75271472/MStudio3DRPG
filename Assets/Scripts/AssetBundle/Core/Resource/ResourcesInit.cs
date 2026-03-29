@@ -45,6 +45,18 @@ public class ResourcesInit : BaseManager<ResourcesInit>
 
     private string GetFileUrl(string assetUrl)
     {
+        // 优先检查热更新沙盒目录
+        string hotUpdatePath = string.Format("{0}{1}{2}", 
+            Application.persistentDataPath, 
+            ABPackUtils.GetABPackPathPlatformStr(), 
+            assetUrl);
+
+        if (File.Exists(hotUpdatePath))
+        {
+            return hotUpdatePath;
+        }
+
+        // 默认回退到原始包内路径
         return $"{PrefixPath}/{assetUrl}";
     }
 }

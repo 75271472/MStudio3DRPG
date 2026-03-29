@@ -4,30 +4,30 @@ using System.Xml.Serialization;
 
 public class BuildItem
 {
-    [DisplayName("×ÊÔ´Â·¾¶")]
+    [DisplayName("èµ„æºè·¯å¾„")]
     [XmlAttribute("AssetPath")]
     public string assetPath { get; set; }
 
-    [DisplayName("×ÊÔ´ÀàĞÍ")]
+    [DisplayName("èµ„æºç±»å‹")]
     [XmlAttribute("ResourceType")]
     public EResourceType resourceType { get; set; } = EResourceType.Direct;
 
-    [DisplayName("abÁ£¶ÈÀàĞÍ")]
+    [DisplayName("abç²’åº¦ç±»å‹")]
     [XmlAttribute("BundleType")]
     public EBundleType bundleType { get; set; } = EBundleType.File;
 
-    [DisplayName("×ÊÔ´ºó×º")]
+    [DisplayName("èµ„æºåç¼€")]
     [XmlAttribute("Suffix")]
     public string suffix { get; set; } = ".prefab";
 
     [XmlIgnore]
     public List<string> ignorePaths { get; set; } = new List<string>();
 
-    // ´ò°üÊı¾İÀàĞÍÒÔ"|"½øĞĞ·Ö¸î£¬»ñÈ¡ËùÓĞ´ò°üÊı¾İÀàĞÍ
+    // æ‰“åŒ…æ•°æ®ç±»å‹ä»¥"|"è¿›è¡Œåˆ†å‰²ï¼Œè·å–æ‰€æœ‰æ‰“åŒ…æ•°æ®ç±»å‹
     [XmlIgnore]
     public List<string> suffixes { get; set; } = new List<string>();
 
-    // Æ¥Åä´ò°üµÄ¸öÊı
+    // åŒ¹é…æ‰“åŒ…çš„ä¸ªæ•°
     [XmlIgnore]
     public int Count { get; set; }
 }

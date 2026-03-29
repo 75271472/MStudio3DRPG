@@ -23,7 +23,8 @@ public class ArchivePanel : BasePanel
     {
         RemoveBtnListener();
 
-        canvasGroup = GetComponent<CanvasGroup>();
+        if (canvasGroup == null)
+            canvasGroup = GetComponent<CanvasGroup>();
 
         SwitchCanvasGroup(false);
 

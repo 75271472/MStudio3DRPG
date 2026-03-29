@@ -5,19 +5,19 @@ using System.Xml.Serialization;
 public static class XmlUtility
 {
     /// <summary>
-    /// ¸ù¾İÎÄ¼şÂ·¾¶¶ÁÈ¡ÎªTÀàĞÍ¶ÔÏó£¬¶ÁÈ¡Ê§°Ü·µ»ØÄ¬ÈÏÖµ
+    /// æ ¹æ®æ–‡ä»¶è·¯å¾„è¯»å–ä¸ºTç±»å‹å¯¹è±¡ï¼Œè¯»å–å¤±è´¥è¿”å›é»˜è®¤å€¼
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <param name="fileName">ÎÄ¼şÂ·¾¶</param>
+    /// <param name="fileName">æ–‡ä»¶è·¯å¾„</param>
     /// <returns></returns>
-    public static T Read<T> (string fileName) where T : class
+    public static T Read<T>(string fileName) where T : class
     {
         FileStream stream = null;
         if (!File.Exists(fileName))
         {
             return default(T);
         }
-        // ²»×èÈûÏß³Ì
+        // ä¸é˜»å¡çº¿ç¨‹
         try
         {
             XmlSerializer serializer = new XmlSerializer(typeof(T));

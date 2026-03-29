@@ -16,11 +16,6 @@ public class StartPanel : BasePanel
 
     private CanvasGroup canvasGroup;
 
-    private void Start()
-    {
-        ShowMe();
-    }
-
     private void RemoveBtnListener()
     {
         startBtn.onClick.RemoveAllListeners();
@@ -51,6 +46,7 @@ public class StartPanel : BasePanel
 
     public override void HideMe()
     {
+        print("HideMe");
         SwitchCanvasGroup(false);
         gameObject.SetActive(false);
     }
