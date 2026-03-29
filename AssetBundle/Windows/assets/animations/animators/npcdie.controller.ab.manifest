@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 434299693
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a7663b687fe8a177410506a1db4fd000
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 147058da82bee871bbce28e472030442
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a7663b687fe8a177410506a1db4fd000
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Animations/Animators/NPCDie.controller
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpghero/animations/dienpc.anim.ab

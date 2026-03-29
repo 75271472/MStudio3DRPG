@@ -9,6 +9,9 @@ public class LoadSceneManager : BaseManager<LoadSceneManager>
 {
     public event Action OnPrepareLoadSceneEvent;
 
+    // 持有当前正在游戏的场景资源包引用，用于切场景时的精准垃圾回收
+    private IResource currentSceneResource;
+
     /// <summary>
     /// 同步场景切换
     /// </summary>
@@ -31,7 +34,15 @@ public class LoadSceneManager : BaseManager<LoadSceneManager>
         PoolManager.Instance.Clear();
         UIManager.Instance.HidePanelAll();
         InputManager.Instance.ResetInputAction();
-        //ResourcesManager.Instance.UnloadAll();
+
+        // 当准备加载新场景前，强制通知底层剥离上一个驻留在内存里的旧场景包裹引用！
+        if (currentSceneResource != null)
+        {
+            ResourcesManager.Instance.Unload(currentSceneResource);
+            currentSceneResource = null;
+            Debug.Log($"【LoadSceneManager】已成功向管理器申请卸载上一个场景所在的 AB 资源包引用。");
+        }
+
         OnPrepareLoadSceneEvent?.Invoke();
         OnPrepareLoadSceneEvent = null;
 
@@ -53,6 +64,12 @@ public class LoadSceneManager : BaseManager<LoadSceneManager>
             UIManager.Instance.ShowPanel<LoadScenePanel>(EUILayer.System);
         yield return loadScenePanel.FadeInCoroutine(2.5f);
 
+        // --- 先把装有该游戏场景的独立 AB 货箱接回内存 ---
+        string fullUrl = ResourcesManager.Instance.GetFullUrl(DataManager.SCENEROOTPATH + name);
+        currentSceneResource = ResourcesManager.Instance.Load(fullUrl, false);
+        Debug.Log($"【LoadSceneManager】已于底层内存成功加载场景所在 AB 货箱：{fullUrl}");
+
+        // --- 然后委托引擎去沙箱里把它拆开实体化 ---
         // 异步加载场景
         AsyncOperation ao = SceneManager.LoadSceneAsync(name);
         // 设置加载完成事件

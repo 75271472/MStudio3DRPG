@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 1364151105
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 613ace898e0ada98572cdc7302d10a04
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 147058da82bee871bbce28e472030442
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 613ace898e0ada98572cdc7302d10a04
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/DogKnight/Animator/DogControl.controller
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/attack01.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/attack02.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/defend.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/die.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/dierecover.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/dizzy.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/gethit.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/idle_battle.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/walkforwardbattle.anim.ab

@@ -1,0 +1,216 @@
+ManifestFileVersion: 0
+CRC: 2934121631
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5178dfbe1aeda1d7d36025e485d2d007
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: fe1c90bfd35925ea446d590a036f8c8a
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5178dfbe1aeda1d7d36025e485d2d007
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 84
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 126b7e94d49ecfe4c8d6497f6709e488, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3933ed0643506a941b3634d112751ba9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 176b5f89c02a08e48997ae3a09ca0fac, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4294e9ec537526f4485b310a2bca8182, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1dc60d62db0e4404f8b91d86e3b0e327, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8d20094343170d5408c54dd4a35cc6fd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2d2f2b8afa1c51e42a560a6c9e68c5ed, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8dfb71a0e44fda748a2b5ff2028970bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 436e17274292cd94994bdb915590efd3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c8d4d83ecd35171458b409bbc4303661, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1d86b580e0959af4b807b51aa1068f61, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bd888215a5a2bd64db37c5bd3fbb5719, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ad9b5ed6dd369244fa56c210d1828069, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ef135533effec2e4297eb7e14925d5c7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 534b725f96f73e244b1aad46e8895444, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c278899927e5bd647b79a059eb3c85dd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e5ffc023358be94da09f7f2431922a2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c825d473014b13d44aa91ff20fe994e6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c9ae5329df1cf504d9f19ea1c9ca15b6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 32a647d32b3bbee42847196484676f6d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1bdbf93346e29ea4ebcc51fc063de65f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 994f8715114b9004789cc768c8ea8a02, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7594a34ab09dcb949b1820a1c02f9648, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 63e40c716e79ba343bffd5bd5c95215c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 660bdc679d793ae4a96fcb7dbdc9697c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 037895d5b0cb0d94bbb5b6f8739e9d96, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8907873234dbb544fba19a1267e72f17, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e477fe12ec31dc43b71c637f7f3e20f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67921e748c1aa224095ce813cd703f7a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ce11b6d208c105247ba61133149aba42, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b8760819690411e4ca16ffab4d992044, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e547def28cd9cf045a4fa4da2733ec9b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 196
+  Script: {instanceID: 0}
+- Class: 221
+  Script: {instanceID: 0}
+- Class: 238
+  Script: {instanceID: 0}
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Scenes/SceneThree.unity
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/demo/skybox.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/brown.15.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/brown.2.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/brown.8.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/green.12.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/orange.1.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/orange.2.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/orange.3.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/yellow.2.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/yellow.3.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/rock_1.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/rock_2.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/rock_4.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/rock_5.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/rock_6.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/tree_3.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/environment_1.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/grass_1.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/grass_2.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/mounting_1.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/mounting_2.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/mounting_3.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/plant_1.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/plant_4.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/rock_1.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/rock_2.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/rock_3.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/rock_4.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/rock_5.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/rock_6.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/stone_1.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/prefabs/tree_3.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/materials/yellowpartal.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/character/golem.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/character/grunt.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/manager/player.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/scenes/scenethree/navmesh.asset.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/scenes/scenethreesettings.lighting.ab

@@ -193,6 +193,18 @@ assets/resources/sprites.ab
 	Assets/Resources/Sprites/RamonSword.png
 	Assets/Resources/Sprites/Shield.png
 	Assets/Resources/Sprites/Sword.png
+assets/resources/scenes/sceneone.unity.ab
+	Assets/Resources/Scenes/SceneOne.unity
+assets/resources/scenes/scenethree.unity.ab
+	Assets/Resources/Scenes/SceneThree.unity
+assets/resources/scenes/scenetwo.unity.ab
+	Assets/Resources/Scenes/SceneTwo.unity
+assets/resources/scenes/screenshot.unity.ab
+	Assets/Resources/Scenes/Screenshot.unity
+assets/resources/scenes/startscene.unity.ab
+	Assets/Resources/Scenes/StartScene.unity
+assets/resources/scenes/testscene.unity.ab
+	Assets/Resources/Scenes/TestScene.unity
 assets/animations/animators/enemygolem.overridecontroller.ab
 	Assets/Animations/Animators/EnemyGolem.overrideController
 assets/assetpacks/mini legion rock golem pbr hp polyart/materials/polyartstandard.mat.ab
@@ -337,6 +349,238 @@ assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium set.p
 	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium Set.png
 assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/exclamation_yellow.png.ab
 	Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/Exclamation_Yellow.png
+assets/assetpacks/simplenaturepack/models/bush_01.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Bush_01.fbx
+assets/assetpacks/simplenaturepack/prefabs/bush_02.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Bush_02.prefab
+assets/assetpacks/simplenaturepack/prefabs/rock_01.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Rock_01.prefab
+assets/assetpacks/simplenaturepack/models/tree_03.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Tree_03.fbx
+assets/assetpacks/simplenaturepack/prefabs/rock_02.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Rock_02.prefab
+assets/assetpacks/simplenaturepack/models/rock_04.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Rock_04.fbx
+assets/assetpacks/simplenaturepack/prefabs/tree_02.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Tree_02.prefab
+assets/assetpacks/simplenaturepack/prefabs/rock_03.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Rock_03.prefab
+assets/assetpacks/simplenaturepack/prefabs/rock_05.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Rock_05.prefab
+assets/assetpacks/simplenaturepack/prefabs/grass_02.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Grass_02.prefab
+assets/assetpacks/simplenaturepack/prefabs/tree_01.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Tree_01.prefab
+assets/assetpacks/simplenaturepack/prefabs/flowers_02.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Flowers_02.prefab
+assets/assetpacks/simplenaturepack/models/tree_02.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Tree_02.fbx
+assets/assetpacks/occasoftware/low poly fantasy village/materials/color.mat.ab
+	Assets/AssetPacks/OccaSoftware/Low Poly Fantasy Village/Materials/Color.mat
+assets/resources/scenes/sceneone/navmesh.asset.ab
+	Assets/Resources/Scenes/SceneOne/NavMesh.asset
+assets/assetpacks/simplenaturepack/models/tree_01.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Tree_01.fbx
+assets/assetpacks/simplenaturepack/prefabs/grass_01.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Grass_01.prefab
+assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Materials/LowPolyDungeonsLite_MAIN.mat
+assets/assetpacks/simplenaturepack/prefabs/rock_04.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Rock_04.prefab
+assets/assetpacks/simplenaturepack/prefabs/bush_01.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Bush_01.prefab
+assets/assetpacks/simplenaturepack/models/tree_05.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Tree_05.fbx
+assets/animations/animators/gruntdie.controller.ab
+	Assets/Animations/Animators/GruntDie.controller
+assets/assetpacks/simplenaturepack/prefabs/tree_03.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Tree_03.prefab
+assets/resources/scenes/sceneone/global volume profile.asset.ab
+	Assets/Resources/Scenes/SceneOne/Global Volume Profile.asset
+assets/assetpacks/occasoftware/low poly fantasy village/materials/light.mat.ab
+	Assets/AssetPacks/OccaSoftware/Low Poly Fantasy Village/Materials/Light.mat
+assets/assetpacks/occasoftware/low poly fantasy village/meshes/village.fbx.ab
+	Assets/AssetPacks/OccaSoftware/Low Poly Fantasy Village/Meshes/Village.fbx
+assets/animations/animators/npcdie.controller.ab
+	Assets/Animations/Animators/NPCDie.controller
+assets/assetpacks/simplenaturepack/prefabs/bush_03.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Bush_03.prefab
+assets/assetpacks/simplenaturepack/models/rock_05.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Rock_05.fbx
+assets/assetpacks/simplenaturepack/models/tree_04.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Tree_04.fbx
+assets/assetpacks/simplenaturepack/prefabs/branch_01.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Branch_01.prefab
+assets/resources/prefabs/ui/rendertexture/dieramonprofiletexture.rendertexture.ab
+	Assets/Resources/Prefabs/UI/RenderTexture/DieRamonProfileTexture.renderTexture
+assets/assetpacks/simplenaturepack/prefabs/tree_04.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Tree_04.prefab
+assets/assetpacks/simplenaturepack/prefabs/flowers_01.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Flowers_01.prefab
+assets/piplinesettings/gamescene lighting settings.lighting.ab
+	Assets/PiplineSettings/GameScene Lighting Settings.lighting
+assets/assetpacks/simplenaturepack/prefabs/tree_05.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Tree_05.prefab
+assets/assetpacks/boxophobic/skybox cubemap extended/demo/materials/skybox cubemap extended day.mat.ab
+	Assets/AssetPacks/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap Extended Day.mat
+assets/materials/ground.mat.ab
+	Assets/Materials/Ground.mat
+assets/assetpacks/simplenaturepack/models/bush_03.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Bush_03.fbx
+assets/assetpacks/lowpolydungeonslite/models/pot_01.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Pot_01.fbx
+assets/assetpacks/lowpoly environment pack/fbx/rock_1.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Rock_1.fbx
+assets/assetpacks/lowpoly environment pack/prefabs/rock_5.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Rock_5.prefab
+assets/assetpacks/lowpoly environment pack/fbx/materials/yellow.2.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Yellow.2.mat
+assets/assetpacks/lowpoly environment pack/fbx/rock_5.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Rock_5.fbx
+assets/assetpacks/lowpoly environment pack/fbx/rock_4.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Rock_4.fbx
+assets/assetpacks/lowpoly environment pack/fbx/materials/brown.15.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Brown.15.mat
+assets/assetpacks/lowpoly environment pack/demo/skybox.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Demo/Skybox.mat
+assets/assetpacks/lowpoly environment pack/prefabs/grass_2.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Grass_2.prefab
+assets/assetpacks/lowpoly environment pack/fbx/tree_3.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Tree_3.fbx
+assets/assetpacks/lowpoly environment pack/prefabs/plant_4.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Plant_4.prefab
+assets/assetpacks/lowpoly environment pack/fbx/materials/brown.8.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Brown.8.mat
+assets/assetpacks/lowpoly environment pack/fbx/materials/orange.3.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Orange.3.mat
+assets/assetpacks/lowpoly environment pack/prefabs/plant_1.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Plant_1.prefab
+assets/resources/scenes/scenethree/navmesh.asset.ab
+	Assets/Resources/Scenes/SceneThree/NavMesh.asset
+assets/assetpacks/lowpoly environment pack/fbx/materials/yellow.3.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Yellow.3.mat
+assets/assetpacks/lowpoly environment pack/prefabs/rock_4.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Rock_4.prefab
+assets/assetpacks/lowpoly environment pack/prefabs/rock_2.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Rock_2.prefab
+assets/assetpacks/lowpoly environment pack/prefabs/rock_3.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Rock_3.prefab
+assets/assetpacks/lowpoly environment pack/prefabs/rock_6.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Rock_6.prefab
+assets/assetpacks/lowpoly environment pack/prefabs/mounting_3.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Mounting_3.prefab
+assets/assetpacks/lowpoly environment pack/prefabs/grass_1.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Grass_1.prefab
+assets/assetpacks/lowpoly environment pack/fbx/materials/orange.2.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Orange.2.mat
+assets/assetpacks/lowpoly environment pack/prefabs/tree_3.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Tree_3.prefab
+assets/assetpacks/lowpoly environment pack/fbx/materials/orange.1.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Orange.1.mat
+assets/assetpacks/lowpoly environment pack/prefabs/mounting_1.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Mounting_1.prefab
+assets/assetpacks/lowpoly environment pack/prefabs/stone_1.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Stone_1.prefab
+assets/assetpacks/lowpoly environment pack/fbx/rock_2.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Rock_2.fbx
+assets/assetpacks/lowpoly environment pack/fbx/materials/brown.2.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Brown.2.mat
+assets/assetpacks/lowpoly environment pack/prefabs/rock_1.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Rock_1.prefab
+assets/assetpacks/lowpoly environment pack/fbx/rock_6.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Rock_6.fbx
+assets/assetpacks/lowpoly environment pack/prefabs/mounting_2.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Mounting_2.prefab
+assets/assetpacks/lowpoly environment pack/prefabs/environment_1.prefab.ab
+	Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Environment_1.prefab
+assets/resources/scenes/scenethreesettings.lighting.ab
+	Assets/Resources/Scenes/SceneThreeSettings.lighting
+assets/assetpacks/lowpoly environment pack/fbx/materials/green.12.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Green.12.mat
+assets/resources/scenes/scenetwo/navmesh.asset.ab
+	Assets/Resources/Scenes/SceneTwo/NavMesh.asset
+assets/assetpacks/lowpolydungeonslite/prefabs/column_01.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Column_01.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/box_02.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Box_02.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/particles_dust.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Particles_Dust.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/jug_02.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Jug_02.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/chair_05.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Chair_05.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/pot_01.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Pot_01.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/walldecor_05.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/WallDecor_05.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/light_08.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Light_08.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/book_09.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Book_09.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/table_01.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Table_01.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/particles_pot.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Particles_Pot.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/ground_03.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Ground_03.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/candle_01.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Candle_01.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/bottle_05.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Bottle_05.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/ground_01.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Ground_01.prefab
+assets/assetpacks/lowpolydungeonslite/models/book_09.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Book_09.fbx
+assets/resources/scenes/scenetwo/global volume profile.asset.ab
+	Assets/Resources/Scenes/SceneTwo/Global Volume Profile.asset
+assets/assetpacks/lowpolydungeonslite/prefabs/rock_01.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Rock_01.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/wood_02.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Wood_02.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/mud_04.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Mud_04.prefab
+assets/assetpacks/lowpolydungeonslite/prefabs/wall_27.prefab.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Wall_27.prefab
+assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/pear_lp.fbx.ab
+	Assets/AssetPacks/ResilientLogicGames/FruitsLowPolyPackLite/Models/Pear_LP.fbx
+assets/resources/scenes/startscene/volume profile.asset.ab
+	Assets/Resources/Scenes/StartScene/Volume Profile.asset
+assets/assetpacks/simplenaturepack/prefabs/ground_03.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Ground_03.prefab
+assets/animations/timeline/backtomainpaneldirectortimeline.playable.ab
+	Assets/Animations/Timeline/BackToMainPanelDirectorTimeline.playable
+assets/assetpacks/simplenaturepack/prefabs/stump_01.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Stump_01.prefab
+assets/animations/timeline/continuedirectortimeline.playable.ab
+	Assets/Animations/Timeline/ContinueDirectorTimeline.playable
+assets/animations/timeline/maindirectortimeline.playable.ab
+	Assets/Animations/Timeline/MainDirectorTimeline.playable
+assets/assetpacks/simplenaturepack/scenes/simplenaturepack_overviewsettings.lighting.ab
+	Assets/AssetPacks/SimpleNaturePack/Scenes/SimpleNaturePack_OverviewSettings.lighting
+assets/assetpacks/simplenaturepack/prefabs/ground_01.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Ground_01.prefab
+assets/assetpacks/boxophobic/skybox cubemap extended/demo/materials/skybox cubemap extended night.mat.ab
+	Assets/AssetPacks/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap Extended Night.mat
+assets/assetpacks/simplenaturepack/prefabs/mushroom_02.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Mushroom_02.prefab
+assets/assetpacks/dogknight/animator/dogcontrol.controller.ab
+	Assets/AssetPacks/DogKnight/Animator/DogControl.controller
+assets/assetpacks/simplenaturepack/models/ground_02.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Ground_02.fbx
+assets/assetpacks/simplenaturepack/models/ground_01.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Ground_01.fbx
+assets/animations/timeline/continuegamedirectortimeline.playable.ab
+	Assets/Animations/Timeline/ContinueGameDirectorTimeline.playable
+assets/assetpacks/simplenaturepack/prefabs/ground_02.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Ground_02.prefab
+assets/assetpacks/simplenaturepack/prefabs/mushroom_01.prefab.ab
+	Assets/AssetPacks/SimpleNaturePack/Prefabs/Mushroom_01.prefab
+assets/assetpacks/simplenaturepack/models/ground_03.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Ground_03.fbx
+assets/assetpacks/simplenaturepack/scenes/simplenaturepack_demo/navmesh.asset.ab
+	Assets/AssetPacks/SimpleNaturePack/Scenes/SimpleNaturePack_Demo/NavMesh.asset
+packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+	Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
 assets/assetpacks/mini legion rock golem pbr hp polyart/animations/idle.anim.ab
 	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Animations/Idle.anim
 assets/assetpacks/mini legion rock golem pbr hp polyart/animations/die.anim.ab
@@ -353,8 +597,6 @@ assets/assetpacks/mini legion rock golem pbr hp polyart/textures/polyartstandard
 	Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Textures/PolyartStandard.png
 packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
 	Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader
-packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-	Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
 assets/assetpacks/mini legion grunt pbr hp polyart/textures/polyartstandard.png.ab
 	Assets/AssetPacks/Mini Legion Grunt PBR HP Polyart/Textures/PolyartStandard.png
 assets/assetpacks/rpghero/textures/polyarttexture.png.ab
@@ -419,3 +661,115 @@ assets/assetpacks/simplenaturepack/textures/naturepacklite_texture_01.png.ab
 	Assets/AssetPacks/SimpleNaturePack/Textures/NaturePackLite_Texture_01.png
 assets/materials/shader/simplevigetee.shader.ab
 	Assets/Materials/Shader/SimpleVigetee.shader
+assets/assetpacks/simplenaturepack/models/bush_02.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Bush_02.fbx
+assets/assetpacks/simplenaturepack/models/rock_01.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Rock_01.fbx
+assets/assetpacks/simplenaturepack/models/rock_02.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Rock_02.fbx
+assets/assetpacks/simplenaturepack/models/rock_03.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Rock_03.fbx
+assets/assetpacks/simplenaturepack/models/grass_02.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Grass_02.fbx
+assets/assetpacks/simplenaturepack/models/flowers_02.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Flowers_02.fbx
+assets/assetpacks/occasoftware/low poly fantasy village/textures/gradient.png.ab
+	Assets/AssetPacks/OccaSoftware/Low Poly Fantasy Village/Textures/Gradient.png
+assets/assetpacks/simplenaturepack/models/grass_01.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Grass_01.fbx
+assets/assetpacks/lowpolydungeonslite/textures/lowpolydungeonslite_texture_01.png.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Textures/LowPolyDungeonsLite_Texture_01.png
+assets/assetpacks/mini legion grunt pbr hp polyart/animations/die.anim.ab
+	Assets/AssetPacks/Mini Legion Grunt PBR HP Polyart/Animations/Die.anim
+assets/assetpacks/rpghero/animations/dienpc.anim.ab
+	Assets/AssetPacks/RPGHero/Animations/DieNPC.anim
+assets/assetpacks/simplenaturepack/models/branch_01.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Branch_01.fbx
+assets/assetpacks/simplenaturepack/models/flowers_01.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Flowers_01.fbx
+assets/assetpacks/boxophobic/skybox cubemap extended/core/shaders/skybox cubemap extended.shader.ab
+	Assets/AssetPacks/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap Extended.shader
+assets/assetpacks/boxophobic/skybox cubemap extended/demo/textures/polyverse skies - blue sky.png.ab
+	Assets/AssetPacks/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Textures/Polyverse Skies - Blue Sky.png
+assets/addons/samples/polybrush/1.1.8/shader examples (urp)/shader/lit vertex color urp.shadergraph.ab
+	Assets/Addons/Samples/Polybrush/1.1.8/Shader Examples (URP)/Shader/Lit Vertex Color URP.ShaderGraph
+assets/assetpacks/lowpoly environment pack/fbx/materials/gray.2.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Gray.2.mat
+assets/assetpacks/lowpoly environment pack/fbx/materials/gray.1.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Gray.1.mat
+assets/assetpacks/lowpoly environment pack/fbx/materials/gray.4.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Gray.4.mat
+assets/assetpacks/lowpoly environment pack/fbx/materials/green.3.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Green.3.mat
+assets/assetpacks/lowpoly environment pack/fbx/grass_2.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Grass_2.fbx
+assets/assetpacks/lowpoly environment pack/fbx/plant_4.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Plant_4.fbx
+assets/assetpacks/lowpoly environment pack/fbx/plant_1.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Plant_1.fbx
+assets/assetpacks/lowpoly environment pack/fbx/materials/green.4.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Green.4.mat
+assets/assetpacks/lowpoly environment pack/fbx/rock_3.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Rock_3.fbx
+assets/assetpacks/lowpoly environment pack/fbx/materials/gray.3.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Gray.3.mat
+assets/assetpacks/lowpoly environment pack/fbx/mounting_3.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Mounting_3.fbx
+assets/assetpacks/lowpoly environment pack/fbx/materials/brown.14.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Brown.14.mat
+assets/assetpacks/lowpoly environment pack/fbx/grass_1.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Grass_1.fbx
+assets/assetpacks/lowpoly environment pack/fbx/materials/green.2.mat.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Green.2.mat
+assets/assetpacks/lowpoly environment pack/fbx/mounting_1.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Mounting_1.fbx
+assets/assetpacks/lowpoly environment pack/fbx/stone_1.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Stone_1.fbx
+assets/assetpacks/lowpoly environment pack/fbx/mounting_2.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Mounting_2.fbx
+assets/assetpacks/lowpoly environment pack/fbx/environment_1.fbx.ab
+	Assets/AssetPacks/LowPoly Environment Pack/FBX/Environment_1.fbx
+assets/assetpacks/lowpolydungeonslite/models/column_01.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Column_01.fbx
+assets/assetpacks/lowpolydungeonslite/models/box_02.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Box_02.fbx
+assets/assetpacks/lowpolydungeonslite/models/jug_02.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Jug_02.fbx
+assets/assetpacks/lowpolydungeonslite/models/chair_05.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Chair_05.fbx
+assets/assetpacks/lowpolydungeonslite/models/walldecor_05.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/WallDecor_05.fbx
+assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_light.mat.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Materials/LowPolyDungeonsLite_Light.mat
+assets/assetpacks/lowpolydungeonslite/models/light_08.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Light_08.fbx
+assets/assetpacks/lowpolydungeonslite/models/table_01.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Table_01.fbx
+assets/assetpacks/lowpolydungeonslite/models/ground_03.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Ground_03.fbx
+assets/assetpacks/lowpolydungeonslite/models/candle_01.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Candle_01.fbx
+assets/assetpacks/lowpolydungeonslite/models/bottle_05.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Bottle_05.fbx
+assets/assetpacks/lowpolydungeonslite/models/ground_01.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Ground_01.fbx
+assets/assetpacks/lowpolydungeonslite/models/rock_01.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Rock_01.fbx
+assets/assetpacks/lowpolydungeonslite/models/wood_02.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Wood_02.fbx
+assets/assetpacks/lowpolydungeonslite/models/mud_04.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Mud_04.fbx
+assets/assetpacks/lowpolydungeonslite/models/wall_27.fbx.ab
+	Assets/AssetPacks/LowPolyDungeonsLite/Models/Wall_27.fbx
+assets/assetpacks/simplenaturepack/models/stump_01.fbx.ab
+	Assets/AssetPacks/SimpleNaturePack/Models/Stump_01.fbx
+assets/assetpacks/boxophobic/skybox cubemap extended/demo/textures/polyverse skies - night sky.exr.ab
+	Assets/AssetPacks/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Textures/Polyverse Skies - Night Sky.exr
+assets/assetpacks/dogknight/animations/defend.anim.ab
+	Assets/AssetPacks/DogKnight/Animations/Defend.anim
+assets/assetpacks/dogknight/animations/dizzy.anim.ab
+	Assets/AssetPacks/DogKnight/Animations/Dizzy.anim
+assets/assetpacks/dogknight/animations/dierecover.anim.ab
+	Assets/AssetPacks/DogKnight/Animations/DieRecover.anim
+assets/assetpacks/dogknight/animations/walkforwardbattle.anim.ab
+	Assets/AssetPacks/DogKnight/Animations/WalkForwardBattle.anim

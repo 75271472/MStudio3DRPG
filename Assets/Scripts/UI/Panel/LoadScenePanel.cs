@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LoadScenePanel : BasePanel
 {
     [SerializeField] private Slider slider;
+    [SerializeField] private Text loadDescription;
     private CanvasGroup canvasGroup;
 
     public override void ShowMe()

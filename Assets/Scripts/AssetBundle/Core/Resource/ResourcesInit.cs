@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ResourcesInit : BaseManager<ResourcesInit>
 {
+    private bool hasInit = false;
     // 前置路径
     private string PrefixPath { get; set; }
     // 平台
@@ -10,6 +11,9 @@ public class ResourcesInit : BaseManager<ResourcesInit>
 
     public override void Start()
     {
+        // 确保整个游戏过程中只进行依次ResourcesManager初始化
+        if (hasInit) return;
+
         Platform = GetPlatform();
         // 获取打包文件前置路径，以AssetBundle结尾
         PrefixPath = Path.GetFullPath(Path.Combine(
@@ -18,6 +22,8 @@ public class ResourcesInit : BaseManager<ResourcesInit>
         PrefixPath += $"/{Platform}";
 
         ResourcesManager.Instance.Initialize(Platform, GetFileUrl, false, 0);
+
+        hasInit = true;
     }
 
     // 获取当前平台

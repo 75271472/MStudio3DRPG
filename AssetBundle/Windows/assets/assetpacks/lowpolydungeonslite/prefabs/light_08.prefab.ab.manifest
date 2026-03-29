@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 3775736508
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5591a10412534f44cd5f4438f35dc9bc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d76d0903a3dfcdecc411f80894a679a8
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5591a10412534f44cd5f4438f35dc9bc
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Light_08.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_light.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/light_08.fbx.ab

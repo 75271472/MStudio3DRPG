@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1405870695
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1fcc4a8fc5a2f747c6a4a87098d9ab5d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1fcc4a8fc5a2f747c6a4a87098d9ab5d
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/DogKnight/Animations/WalkForwardBattle.anim
+Dependencies: []

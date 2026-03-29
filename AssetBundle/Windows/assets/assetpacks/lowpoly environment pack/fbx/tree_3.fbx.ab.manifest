@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 4026125497
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a87a258c36430c1de4783fdba7ee8a0f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 134b7874faf1e4f485ed3c5a681e862b
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a87a258c36430c1de4783fdba7ee8a0f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/LowPoly Environment Pack/FBX/Tree_3.fbx
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/brown.8.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/green.12.mat.ab

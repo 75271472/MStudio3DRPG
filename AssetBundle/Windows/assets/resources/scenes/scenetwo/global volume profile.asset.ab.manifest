@@ -1,0 +1,60 @@
+ManifestFileVersion: 0
+CRC: 1244158610
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7251e86ebc7a8e4fc0a1b6792c4de436
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 06be7ecb4a4347b4727ef0e5ed83c3a9
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7251e86ebc7a8e4fc0a1b6792c4de436
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.RenderPipelines.Core.Runtime
+  ClassName: UnityEngine.Rendering.BoolParameter
+- AssemblyName: Unity.RenderPipelines.Core.Runtime
+  ClassName: UnityEngine.Rendering.ClampedFloatParameter
+- AssemblyName: Unity.RenderPipelines.Core.Runtime
+  ClassName: UnityEngine.Rendering.ClampedIntParameter
+- AssemblyName: Unity.RenderPipelines.Core.Runtime
+  ClassName: UnityEngine.Rendering.ColorParameter
+- AssemblyName: Unity.RenderPipelines.Core.Runtime
+  ClassName: UnityEngine.Rendering.FloatParameter
+- AssemblyName: Unity.RenderPipelines.Core.Runtime
+  ClassName: UnityEngine.Rendering.MinFloatParameter
+- AssemblyName: Unity.RenderPipelines.Core.Runtime
+  ClassName: UnityEngine.Rendering.TextureParameter
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.DepthOfFieldModeParameter
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.DownscaleParameter
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.HDRACESPresetParameter
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.MotionBlurModeParameter
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.MotionBlurQualityParameter
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.NeutralRangeReductionModeParameter
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.TonemappingModeParameter
+Assets:
+- Assets/Resources/Scenes/SceneTwo/Global Volume Profile.asset
+Dependencies: []

@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 1471895429
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8f8e7742968d6a59013e5fd532989bf8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d76d0903a3dfcdecc411f80894a679a8
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8f8e7742968d6a59013e5fd532989bf8
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Rock_2.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/gray.2.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/rock_2.fbx.ab

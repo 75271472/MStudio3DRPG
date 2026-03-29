@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 1824203304
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a05df0d9fe4c5b86ffcdc416be251d5c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d76d0903a3dfcdecc411f80894a679a8
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a05df0d9fe4c5b86ffcdc416be251d5c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/LowPolyDungeonsLite/Prefabs/Chair_05.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/chair_05.fbx.ab

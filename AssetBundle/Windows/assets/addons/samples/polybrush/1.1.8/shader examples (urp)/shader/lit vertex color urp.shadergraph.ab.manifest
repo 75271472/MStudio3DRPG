@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 205734598
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 82560ee48f4ab340ce42aaed4bd27394
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5e762ccb57c4caaabbb5a4199ac82c23
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 82560ee48f4ab340ce42aaed4bd27394
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Addons/Samples/Polybrush/1.1.8/Shader Examples (URP)/Shader/Lit Vertex Color
+  URP.ShaderGraph
+Dependencies: []

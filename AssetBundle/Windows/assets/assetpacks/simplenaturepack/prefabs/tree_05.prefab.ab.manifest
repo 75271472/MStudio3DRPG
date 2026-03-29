@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+CRC: 3354782099
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5a35164c6ee48e36ee129f306bd0da30
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d7c5942f4f3f961fcc516b29a67eb06e
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5a35164c6ee48e36ee129f306bd0da30
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/SimpleNaturePack/Prefabs/Tree_05.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_05.fbx.ab

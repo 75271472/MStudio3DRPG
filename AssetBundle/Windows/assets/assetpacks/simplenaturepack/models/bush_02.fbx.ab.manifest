@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 860154462
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 235041076aa7d8703acb87127d351ec4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0282162fcb1192b504081a859b414c34
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 235041076aa7d8703acb87127d351ec4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/SimpleNaturePack/Models/Bush_02.fbx
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab

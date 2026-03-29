@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class Profiler
 {
@@ -51,7 +53,8 @@ public class Profiler
     {
         if (stampTime != -1)
         {
-            throw new Exception($"{nameof(Profiler)} {nameof(Start)} 发生重入: {name}");
+            //throw new Exception($"{nameof(Profiler)} {nameof(Start)} 发生重入: {name}");
+            Debug.LogWarning($"{nameof(Profiler)} {nameof(Start)} 发生重入: {name}");
         }
         // 记录开始时间戳，直接强制覆盖脏数据
         stampTime = stopwatch.ElapsedTicks;

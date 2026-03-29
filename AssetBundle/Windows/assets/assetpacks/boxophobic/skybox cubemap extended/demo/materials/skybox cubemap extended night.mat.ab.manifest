@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 2450513311
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 049812314271dcd9473a37d20c5d4aef
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cd6acaf1aaec159fb3b4e5ceab71b539
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 049812314271dcd9473a37d20c5d4aef
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap
+  Extended Night.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/boxophobic/skybox
+  cubemap extended/core/shaders/skybox cubemap extended.shader.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/boxophobic/skybox
+  cubemap extended/demo/textures/polyverse skies - blue sky.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/boxophobic/skybox
+  cubemap extended/demo/textures/polyverse skies - night sky.exr.ab

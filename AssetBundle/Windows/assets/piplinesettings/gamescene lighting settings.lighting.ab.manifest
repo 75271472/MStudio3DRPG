@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2322007578
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e18e375e42638086d10de2098e2347e2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a4b57b1a56d6b76d200651994ae0863
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e18e375e42638086d10de2098e2347e2
+HashAppended: 0
+ClassTypes:
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/PiplineSettings/GameScene Lighting Settings.lighting
+Dependencies: []

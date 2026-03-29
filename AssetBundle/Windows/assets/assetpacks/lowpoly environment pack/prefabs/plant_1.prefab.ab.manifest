@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 3982063052
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d85e92bf58c3b801446d1034eff19b89
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 134b7874faf1e4f485ed3c5a681e862b
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d85e92bf58c3b801446d1034eff19b89
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/LowPoly Environment Pack/Prefabs/Plant_1.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/materials/green.4.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpoly environment
+  pack/fbx/plant_1.fbx.ab

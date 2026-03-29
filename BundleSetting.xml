@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BuildSetting ProjectName="MStudio3DRPG" BuildRoot=".\AssetBundle">
+  
+  <!-- 【主动打包部分：仅涵盖 Resources 目录下你提供的真实结构后缀】 -->
+  <!-- DOTweenSettings 等根目录配置 -->
+  <BuildItem AssetPath="Assets/Resources/" ResourceType="Direct" BundleType="File" Suffix=".asset" />
+  
+  <!-- GameData 中的数据 (如 Attack, AttackEffect, Modifier 等) -->
+  <BuildItem AssetPath="Assets/Resources/GameData/" ResourceType="Direct" BundleType="File" Suffix=".asset" />
+
+  <!-- Prefabs 子系统下的所有预制件 (Character, Manager 等) -->
+  <BuildItem AssetPath="Assets/Resources/Prefabs/" ResourceType="Direct" BundleType="File" Suffix=".prefab" />
+  
+  <!-- UI 子目录中特有的 RenderTexture -->
+  <BuildItem AssetPath="Assets/Resources/Prefabs/UI/RenderTexture/" ResourceType="Direct" BundleType="File" Suffix=".renderTexture" />
+
+  <!-- Sprites 图集资源 -->
+  <BuildItem AssetPath="Assets/Resources/Sprites/" ResourceType="Direct" BundleType="Directory" Suffix=".png" />
+
+  <!-- 游玩业务场景特供打包位，单个文件成独立包 -->
+  <BuildItem AssetPath="Assets/Resources/Scenes/" ResourceType="Direct" BundleType="File" Suffix=".unity" />
+
+  <!-- 【被动依赖部分：处理大量你在控制台拦截到的外部的美术模型、字体与渲染依赖】 -->
+  <!-- 兜底 Assets 目录下的所有材质、贴图、模型及字体等被预制件依赖引用的散碎文件 -->
+  <BuildItem AssetPath="Assets/" ResourceType="Dependency" BundleType="File" Suffix=".png|.jpg|.mat|.fbx|.ttf|.otf|.renderTexture|.inputactions|.shader|.shadergraph|.asset|.anim|.overrideController|.controller" />
+  
+  <!-- 兜底 Packages 包(如 InputSystem, URP渲染管线) 里面被你引用到的依赖项 -->
+  <BuildItem AssetPath="Packages/" ResourceType="Dependency" BundleType="File" Suffix=".png|.mat|.shader|.inputactions|.asset" />
+
+</BuildSetting>

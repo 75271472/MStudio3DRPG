@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 641052236
+CRC: 675726528
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -420,9 +420,10 @@ AssetBundleManifest:
     Info_83:
       Name: assets/resources/prefabs/ui/panel/loadscenepanel.prefab.ab
       Dependencies:
-        Dependency_0: assets/artres/bar/healthbareffect.png.ab
-        Dependency_1: assets/artres/font/high-jinks-1.otf.ab
-        Dependency_2: assets/artres/bar/expbar/expbarbg.png.ab
+        Dependency_0: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
+        Dependency_1: assets/artres/bar/healthbareffect.png.ab
+        Dependency_2: assets/artres/font/high-jinks-1.otf.ab
+        Dependency_3: assets/artres/bar/expbar/expbarbg.png.ab
     Info_84:
       Name: assets/resources/prefabs/ui/panel/mousefollower.prefab.ab
       Dependencies:
@@ -493,6 +494,217 @@ AssetBundleManifest:
       Name: assets/resources/sprites.ab
       Dependencies: {}
     Info_93:
+      Name: assets/resources/scenes/sceneone.unity.ab
+      Dependencies:
+        Dependency_0: assets/resources/prefabs/character/npc.prefab.ab
+        Dependency_1: assets/resources/prefabs/character/slime.prefab.ab
+        Dependency_2: assets/resources/prefabs/character/turtle.prefab.ab
+        Dependency_3: assets/resources/prefabs/manager/player.prefab.ab
+        Dependency_4: assets/resources/prefabs/worditem/apple.prefab.ab
+        Dependency_5: assets/resources/prefabs/worditem/mushroom1.prefab.ab
+        Dependency_6: assets/resources/prefabs/worditem/mushroom2.prefab.ab
+        Dependency_7: assets/resources/prefabs/worditem/ramonshield.prefab.ab
+        Dependency_8: assets/resources/prefabs/worditem/ramonsword.prefab.ab
+        Dependency_9: assets/resources/prefabs/worditem/sword.prefab.ab
+        Dependency_10: assets/assetpacks/mini legion grunt pbr hp polyart/mesh/gruntpolyart.fbx.ab
+        Dependency_11: assets/assetpacks/mini legion grunt pbr hp polyart/material/polyartstandard.mat.ab
+        Dependency_12: assets/assetpacks/rpghero/materials/polyart.mat.ab
+        Dependency_13: assets/assetpacks/rpghero/meshes/newfreerpgheropolyart.fbx.ab
+        Dependency_14: assets/assetpacks/dogknight/material/polyart.mat.ab
+        Dependency_15: assets/materials/greenportal.mat.ab
+        Dependency_16: assets/materials/yellowpartal.mat.ab
+        Dependency_17: assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
+        Dependency_18: assets/assetpacks/rpghero/meshes/polyartshield.fbx.ab
+        Dependency_19: assets/assetpacks/dogknight/mesh/swordpolyart.fbx.ab
+        Dependency_20: assets/assetpacks/simplenaturepack/models/bush_01.fbx.ab
+        Dependency_21: assets/assetpacks/simplenaturepack/prefabs/bush_02.prefab.ab
+        Dependency_22: assets/assetpacks/simplenaturepack/prefabs/rock_01.prefab.ab
+        Dependency_23: assets/assetpacks/simplenaturepack/models/tree_03.fbx.ab
+        Dependency_24: assets/assetpacks/simplenaturepack/prefabs/rock_02.prefab.ab
+        Dependency_25: assets/assetpacks/simplenaturepack/models/rock_04.fbx.ab
+        Dependency_26: assets/assetpacks/simplenaturepack/prefabs/tree_02.prefab.ab
+        Dependency_27: assets/assetpacks/simplenaturepack/prefabs/rock_03.prefab.ab
+        Dependency_28: assets/assetpacks/simplenaturepack/prefabs/rock_05.prefab.ab
+        Dependency_29: assets/assetpacks/simplenaturepack/prefabs/grass_02.prefab.ab
+        Dependency_30: assets/assetpacks/simplenaturepack/prefabs/tree_01.prefab.ab
+        Dependency_31: assets/assetpacks/simplenaturepack/prefabs/flowers_02.prefab.ab
+        Dependency_32: assets/assetpacks/simplenaturepack/models/tree_02.fbx.ab
+        Dependency_33: assets/assetpacks/occasoftware/low poly fantasy village/materials/color.mat.ab
+        Dependency_34: assets/resources/scenes/sceneone/navmesh.asset.ab
+        Dependency_35: assets/assetpacks/simplenaturepack/models/tree_01.fbx.ab
+        Dependency_36: assets/assetpacks/simplenaturepack/prefabs/grass_01.prefab.ab
+        Dependency_37: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_38: assets/assetpacks/simplenaturepack/prefabs/rock_04.prefab.ab
+        Dependency_39: assets/assetpacks/simplenaturepack/prefabs/bush_01.prefab.ab
+        Dependency_40: assets/assetpacks/simplenaturepack/models/tree_05.fbx.ab
+        Dependency_41: assets/animations/animators/gruntdie.controller.ab
+        Dependency_42: assets/assetpacks/simplenaturepack/prefabs/tree_03.prefab.ab
+        Dependency_43: assets/resources/scenes/sceneone/global volume profile.asset.ab
+        Dependency_44: assets/assetpacks/occasoftware/low poly fantasy village/materials/light.mat.ab
+        Dependency_45: assets/assetpacks/occasoftware/low poly fantasy village/meshes/village.fbx.ab
+        Dependency_46: assets/animations/animators/npcdie.controller.ab
+        Dependency_47: assets/assetpacks/simplenaturepack/prefabs/bush_03.prefab.ab
+        Dependency_48: assets/assetpacks/simplenaturepack/models/rock_05.fbx.ab
+        Dependency_49: assets/assetpacks/simplenaturepack/models/tree_04.fbx.ab
+        Dependency_50: assets/assetpacks/simplenaturepack/prefabs/branch_01.prefab.ab
+        Dependency_51: assets/resources/prefabs/ui/rendertexture/dieramonprofiletexture.rendertexture.ab
+        Dependency_52: assets/assetpacks/simplenaturepack/prefabs/tree_04.prefab.ab
+        Dependency_53: assets/assetpacks/simplenaturepack/prefabs/flowers_01.prefab.ab
+        Dependency_54: assets/piplinesettings/gamescene lighting settings.lighting.ab
+        Dependency_55: assets/assetpacks/simplenaturepack/prefabs/tree_05.prefab.ab
+        Dependency_56: assets/assetpacks/boxophobic/skybox cubemap extended/demo/materials/skybox
+          cubemap extended day.mat.ab
+        Dependency_57: assets/materials/ground.mat.ab
+        Dependency_58: assets/assetpacks/simplenaturepack/models/bush_03.fbx.ab
+        Dependency_59: assets/assetpacks/lowpolydungeonslite/models/pot_01.fbx.ab
+    Info_94:
+      Name: assets/resources/scenes/scenethree.unity.ab
+      Dependencies:
+        Dependency_0: assets/resources/prefabs/character/golem.prefab.ab
+        Dependency_1: assets/resources/prefabs/character/grunt.prefab.ab
+        Dependency_2: assets/resources/prefabs/manager/player.prefab.ab
+        Dependency_3: assets/materials/yellowpartal.mat.ab
+        Dependency_4: assets/assetpacks/lowpoly environment pack/fbx/rock_1.fbx.ab
+        Dependency_5: assets/assetpacks/lowpoly environment pack/prefabs/rock_5.prefab.ab
+        Dependency_6: assets/assetpacks/lowpoly environment pack/fbx/materials/yellow.2.mat.ab
+        Dependency_7: assets/assetpacks/lowpoly environment pack/fbx/rock_5.fbx.ab
+        Dependency_8: assets/assetpacks/lowpoly environment pack/fbx/rock_4.fbx.ab
+        Dependency_9: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.15.mat.ab
+        Dependency_10: assets/assetpacks/lowpoly environment pack/demo/skybox.mat.ab
+        Dependency_11: assets/assetpacks/lowpoly environment pack/prefabs/grass_2.prefab.ab
+        Dependency_12: assets/assetpacks/lowpoly environment pack/fbx/tree_3.fbx.ab
+        Dependency_13: assets/assetpacks/lowpoly environment pack/prefabs/plant_4.prefab.ab
+        Dependency_14: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.8.mat.ab
+        Dependency_15: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.3.mat.ab
+        Dependency_16: assets/assetpacks/lowpoly environment pack/prefabs/plant_1.prefab.ab
+        Dependency_17: assets/resources/scenes/scenethree/navmesh.asset.ab
+        Dependency_18: assets/assetpacks/lowpoly environment pack/fbx/materials/yellow.3.mat.ab
+        Dependency_19: assets/assetpacks/lowpoly environment pack/prefabs/rock_4.prefab.ab
+        Dependency_20: assets/assetpacks/lowpoly environment pack/prefabs/rock_2.prefab.ab
+        Dependency_21: assets/assetpacks/lowpoly environment pack/prefabs/rock_3.prefab.ab
+        Dependency_22: assets/assetpacks/lowpoly environment pack/prefabs/rock_6.prefab.ab
+        Dependency_23: assets/assetpacks/lowpoly environment pack/prefabs/mounting_3.prefab.ab
+        Dependency_24: assets/assetpacks/lowpoly environment pack/prefabs/grass_1.prefab.ab
+        Dependency_25: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.2.mat.ab
+        Dependency_26: assets/assetpacks/lowpoly environment pack/prefabs/tree_3.prefab.ab
+        Dependency_27: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.1.mat.ab
+        Dependency_28: assets/assetpacks/lowpoly environment pack/prefabs/mounting_1.prefab.ab
+        Dependency_29: assets/assetpacks/lowpoly environment pack/prefabs/stone_1.prefab.ab
+        Dependency_30: assets/assetpacks/lowpoly environment pack/fbx/rock_2.fbx.ab
+        Dependency_31: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.2.mat.ab
+        Dependency_32: assets/assetpacks/lowpoly environment pack/prefabs/rock_1.prefab.ab
+        Dependency_33: assets/assetpacks/lowpoly environment pack/fbx/rock_6.fbx.ab
+        Dependency_34: assets/assetpacks/lowpoly environment pack/prefabs/mounting_2.prefab.ab
+        Dependency_35: assets/assetpacks/lowpoly environment pack/prefabs/environment_1.prefab.ab
+        Dependency_36: assets/resources/scenes/scenethreesettings.lighting.ab
+        Dependency_37: assets/assetpacks/lowpoly environment pack/fbx/materials/green.12.mat.ab
+    Info_95:
+      Name: assets/resources/scenes/scenetwo.unity.ab
+      Dependencies:
+        Dependency_0: assets/resources/prefabs/character/grunt.prefab.ab
+        Dependency_1: assets/resources/prefabs/portal/purpleportal.prefab.ab
+        Dependency_2: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_3: assets/piplinesettings/gamescene lighting settings.lighting.ab
+        Dependency_4: assets/resources/scenes/scenetwo/navmesh.asset.ab
+        Dependency_5: assets/assetpacks/lowpolydungeonslite/prefabs/column_01.prefab.ab
+        Dependency_6: assets/assetpacks/lowpolydungeonslite/prefabs/box_02.prefab.ab
+        Dependency_7: assets/assetpacks/lowpolydungeonslite/prefabs/particles_dust.prefab.ab
+        Dependency_8: assets/assetpacks/lowpolydungeonslite/prefabs/jug_02.prefab.ab
+        Dependency_9: assets/assetpacks/lowpolydungeonslite/prefabs/chair_05.prefab.ab
+        Dependency_10: assets/assetpacks/lowpolydungeonslite/prefabs/pot_01.prefab.ab
+        Dependency_11: assets/assetpacks/lowpolydungeonslite/prefabs/walldecor_05.prefab.ab
+        Dependency_12: assets/assetpacks/lowpolydungeonslite/prefabs/light_08.prefab.ab
+        Dependency_13: assets/assetpacks/lowpolydungeonslite/prefabs/book_09.prefab.ab
+        Dependency_14: assets/assetpacks/lowpolydungeonslite/prefabs/table_01.prefab.ab
+        Dependency_15: assets/assetpacks/lowpolydungeonslite/prefabs/particles_pot.prefab.ab
+        Dependency_16: assets/assetpacks/lowpolydungeonslite/prefabs/ground_03.prefab.ab
+        Dependency_17: assets/assetpacks/lowpolydungeonslite/prefabs/candle_01.prefab.ab
+        Dependency_18: assets/assetpacks/lowpolydungeonslite/prefabs/bottle_05.prefab.ab
+        Dependency_19: assets/assetpacks/lowpolydungeonslite/prefabs/ground_01.prefab.ab
+        Dependency_20: assets/assetpacks/lowpolydungeonslite/models/book_09.fbx.ab
+        Dependency_21: assets/resources/scenes/scenetwo/global volume profile.asset.ab
+        Dependency_22: assets/assetpacks/lowpolydungeonslite/prefabs/rock_01.prefab.ab
+        Dependency_23: assets/assetpacks/lowpolydungeonslite/prefabs/wood_02.prefab.ab
+        Dependency_24: assets/assetpacks/lowpolydungeonslite/prefabs/mud_04.prefab.ab
+        Dependency_25: assets/assetpacks/lowpolydungeonslite/prefabs/wall_27.prefab.ab
+    Info_96:
+      Name: assets/resources/scenes/screenshot.unity.ab
+      Dependencies:
+        Dependency_0: assets/resources/prefabs/weapon/ramonsword.prefab.ab
+        Dependency_1: assets/resources/prefabs/worditem/apple.prefab.ab
+        Dependency_2: assets/resources/prefabs/worditem/mushroom1.prefab.ab
+        Dependency_3: assets/resources/prefabs/worditem/mushroom2.prefab.ab
+        Dependency_4: assets/resources/prefabs/worditem/shield.prefab.ab
+        Dependency_5: assets/resources/prefabs/worditem/sword.prefab.ab
+        Dependency_6: assets/assetpacks/dogknight/material/polyart.mat.ab
+        Dependency_7: assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
+        Dependency_8: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/materials/palette256bitsgradient.mat.ab
+        Dependency_9: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/pear_lp.fbx.ab
+    Info_97:
+      Name: assets/resources/scenes/startscene.unity.ab
+      Dependencies:
+        Dependency_0: assets/resources/prefabs/manager/cameramanager.prefab.ab
+        Dependency_1: assets/resources/prefabs/manager/dialoguemanager.prefab.ab
+        Dependency_2: assets/resources/prefabs/manager/monomanager.prefab.ab
+        Dependency_3: assets/resources/prefabs/manager/monstermanager.prefab.ab
+        Dependency_4: assets/resources/prefabs/manager/mousemanager.prefab.ab
+        Dependency_5: assets/resources/prefabs/manager/npcmanager.prefab.ab
+        Dependency_6: assets/resources/prefabs/manager/player.prefab.ab
+        Dependency_7: assets/resources/prefabs/manager/portalmanager.prefab.ab
+        Dependency_8: assets/resources/prefabs/manager/questmanager.prefab.ab
+        Dependency_9: assets/resources/prefabs/portal/yellowportal.prefab.ab
+        Dependency_10: assets/resources/prefabs/ui/panel/abupdatepanel.prefab.ab
+        Dependency_11: assets/resources/prefabs/ui/panel/archivepanel.prefab.ab
+        Dependency_12: assets/resources/prefabs/ui/panel/startpanel.prefab.ab
+        Dependency_13: assets/assetpacks/dogknight/material/polyart.mat.ab
+        Dependency_14: assets/assetpacks/dogknight/mesh/dogpolyart.fbx.ab
+        Dependency_15: assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
+        Dependency_16: assets/assetpacks/dogknight/mesh/swordpolyart.fbx.ab
+        Dependency_17: assets/assetpacks/simplenaturepack/prefabs/bush_02.prefab.ab
+        Dependency_18: assets/assetpacks/simplenaturepack/prefabs/rock_01.prefab.ab
+        Dependency_19: assets/assetpacks/simplenaturepack/prefabs/rock_02.prefab.ab
+        Dependency_20: assets/assetpacks/simplenaturepack/prefabs/tree_02.prefab.ab
+        Dependency_21: assets/assetpacks/simplenaturepack/prefabs/rock_03.prefab.ab
+        Dependency_22: assets/assetpacks/simplenaturepack/prefabs/rock_05.prefab.ab
+        Dependency_23: assets/assetpacks/simplenaturepack/prefabs/grass_02.prefab.ab
+        Dependency_24: assets/assetpacks/simplenaturepack/prefabs/tree_01.prefab.ab
+        Dependency_25: assets/assetpacks/simplenaturepack/prefabs/flowers_02.prefab.ab
+        Dependency_26: assets/assetpacks/simplenaturepack/prefabs/grass_01.prefab.ab
+        Dependency_27: assets/assetpacks/simplenaturepack/prefabs/rock_04.prefab.ab
+        Dependency_28: assets/assetpacks/simplenaturepack/prefabs/tree_03.prefab.ab
+        Dependency_29: assets/assetpacks/simplenaturepack/prefabs/bush_03.prefab.ab
+        Dependency_30: assets/assetpacks/simplenaturepack/models/rock_05.fbx.ab
+        Dependency_31: assets/assetpacks/simplenaturepack/prefabs/branch_01.prefab.ab
+        Dependency_32: assets/assetpacks/simplenaturepack/prefabs/tree_04.prefab.ab
+        Dependency_33: assets/assetpacks/simplenaturepack/prefabs/flowers_01.prefab.ab
+        Dependency_34: assets/assetpacks/simplenaturepack/prefabs/tree_05.prefab.ab
+        Dependency_35: assets/resources/scenes/startscene/volume profile.asset.ab
+        Dependency_36: assets/assetpacks/simplenaturepack/prefabs/ground_03.prefab.ab
+        Dependency_37: assets/animations/timeline/backtomainpaneldirectortimeline.playable.ab
+        Dependency_38: assets/assetpacks/simplenaturepack/prefabs/stump_01.prefab.ab
+        Dependency_39: assets/animations/timeline/continuedirectortimeline.playable.ab
+        Dependency_40: assets/animations/timeline/maindirectortimeline.playable.ab
+        Dependency_41: assets/assetpacks/simplenaturepack/scenes/simplenaturepack_overviewsettings.lighting.ab
+        Dependency_42: assets/assetpacks/simplenaturepack/prefabs/ground_01.prefab.ab
+        Dependency_43: assets/assetpacks/boxophobic/skybox cubemap extended/demo/materials/skybox
+          cubemap extended night.mat.ab
+        Dependency_44: assets/assetpacks/simplenaturepack/prefabs/mushroom_02.prefab.ab
+        Dependency_45: assets/assetpacks/dogknight/animator/dogcontrol.controller.ab
+        Dependency_46: assets/assetpacks/simplenaturepack/models/ground_02.fbx.ab
+        Dependency_47: assets/assetpacks/simplenaturepack/models/ground_01.fbx.ab
+        Dependency_48: assets/animations/timeline/continuegamedirectortimeline.playable.ab
+        Dependency_49: assets/assetpacks/simplenaturepack/prefabs/ground_02.prefab.ab
+        Dependency_50: assets/assetpacks/simplenaturepack/prefabs/mushroom_01.prefab.ab
+        Dependency_51: assets/assetpacks/simplenaturepack/models/ground_03.fbx.ab
+        Dependency_52: assets/assetpacks/simplenaturepack/scenes/simplenaturepack_demo/navmesh.asset.ab
+    Info_98:
+      Name: assets/resources/scenes/testscene.unity.ab
+      Dependencies:
+        Dependency_0: assets/resources/prefabs/ui/overlaycanvas.prefab.ab
+        Dependency_1: assets/resources/prefabs/ui/panel/abupdatepanel.prefab.ab
+        Dependency_2: packages/com.unity.inputsystem/inputsystem/plugins/playerinput/defaultinputactions.inputactions.ab
+        Dependency_3: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_99:
       Name: assets/animations/animators/enemygolem.overridecontroller.ab
       Dependencies:
         Dependency_0: assets/animations/animators/enemygrunt.controller.ab
@@ -502,20 +714,20 @@ AssetBundleManifest:
         Dependency_4: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack1.anim.ab
         Dependency_5: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack2.anim.ab
         Dependency_6: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/gethit.anim.ab
-    Info_94:
+    Info_100:
       Name: assets/assetpacks/mini legion rock golem pbr hp polyart/materials/polyartstandard.mat.ab
       Dependencies:
         Dependency_0: assets/assetpacks/mini legion rock golem pbr hp polyart/textures/polyartstandard.png.ab
         Dependency_1: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
-    Info_95:
+    Info_101:
       Name: assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/golempolyart.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_96:
+    Info_102:
       Name: assets/assetpacks/mini legion grunt pbr hp polyart/mesh/gruntpolyart.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_97:
+    Info_103:
       Name: assets/animations/animators/enemygrunt.controller.ab
       Dependencies:
         Dependency_0: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/idle.anim.ab
@@ -524,36 +736,36 @@ AssetBundleManifest:
         Dependency_3: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack1.anim.ab
         Dependency_4: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack2.anim.ab
         Dependency_5: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/gethit.anim.ab
-    Info_98:
+    Info_104:
       Name: assets/assetpacks/mini legion grunt pbr hp polyart/material/polyartstandard.mat.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
         Dependency_1: assets/assetpacks/mini legion grunt pbr hp polyart/textures/polyartstandard.png.ab
-    Info_99:
+    Info_105:
       Name: assets/assetpacks/rpghero/meshes/polyartsword.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_100:
+    Info_106:
       Name: assets/assetpacks/rpghero/materials/polyart.mat.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
         Dependency_1: assets/assetpacks/rpghero/textures/polyarttexture.png.ab
-    Info_101:
+    Info_107:
       Name: assets/resources/prefabs/ui/rendertexture/npcprofiletexture.rendertexture.ab
       Dependencies: {}
-    Info_102:
+    Info_108:
       Name: assets/animations/animators/npc.controller.ab
       Dependencies:
         Dependency_0: assets/assetpacks/rpghero/animations/idle_swordshield.anim.ab
-    Info_103:
+    Info_109:
       Name: assets/assetpacks/rpghero/meshes/newfreerpgheropolyart.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_104:
+    Info_110:
       Name: assets/assetpacks/rpg monster duo pbr polyart/meshes/slimepolyartmesh.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_105:
+    Info_111:
       Name: assets/animations/animators/enemyslime.controller.ab
       Dependencies:
         Dependency_0: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/runfwd.anim.ab
@@ -566,13 +778,13 @@ AssetBundleManifest:
         Dependency_7: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack02.anim.ab
         Dependency_8: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack02.anim.ab
         Dependency_9: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/gethit.anim.ab
-    Info_106:
+    Info_112:
       Name: assets/assetpacks/rpg monster duo pbr polyart/materials/polyartdefault.mat.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
         Dependency_1: assets/assetpacks/rpg monster duo pbr polyart/textures/emission.png.ab
         Dependency_2: assets/assetpacks/rpg monster duo pbr polyart/textures/albedo.png.ab
-    Info_107:
+    Info_113:
       Name: assets/animations/animators/enemyturtle.overridecontroller.ab
       Dependencies:
         Dependency_0: assets/animations/animators/enemyslime.controller.ab
@@ -592,41 +804,41 @@ AssetBundleManifest:
         Dependency_14: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/walkfwd.anim.ab
         Dependency_15: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/die.anim.ab
         Dependency_16: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlenormal.anim.ab
-    Info_108:
+    Info_114:
       Name: assets/assetpacks/rpg monster duo pbr polyart/meshes/turtleshellpolyartmesh.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_109:
+    Info_115:
       Name: packages/com.unity.cinemachine/presets/noise/6d shake.asset.ab
       Dependencies: {}
-    Info_110:
+    Info_116:
       Name: assets/artres/cursor/03.png.ab
       Dependencies: {}
-    Info_111:
+    Info_117:
       Name: assets/artres/cursor/04.png.ab
       Dependencies: {}
-    Info_112:
+    Info_118:
       Name: assets/artres/cursor/01.png.ab
       Dependencies: {}
-    Info_113:
+    Info_119:
       Name: assets/artres/cursor/02.png.ab
       Dependencies: {}
-    Info_114:
+    Info_120:
       Name: assets/artres/cursor/05.png.ab
       Dependencies: {}
-    Info_115:
+    Info_121:
       Name: assets/assetpacks/dogknight/material/polyart.mat.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
         Dependency_1: assets/assetpacks/dogknight/texture/standardalbedo.png.ab
-    Info_116:
+    Info_122:
       Name: assets/assetpacks/dogknight/mesh/dogpolyart.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_117:
+    Info_123:
       Name: assets/resources/prefabs/ui/rendertexture/playertexture.rendertexture.ab
       Dependencies: {}
-    Info_118:
+    Info_124:
       Name: assets/animations/animators/player.controller.ab
       Dependencies:
         Dependency_0: assets/assetpacks/dogknight/animations/gethit.anim.ab
@@ -635,292 +847,1040 @@ AssetBundleManifest:
         Dependency_3: assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab
         Dependency_4: assets/assetpacks/dogknight/animations/idle_battle.anim.ab
         Dependency_5: assets/assetpacks/dogknight/animations/attack01.anim.ab
-    Info_119:
+    Info_125:
       Name: assets/resources/prefabs/ui/rendertexture/playerprofiletexture.rendertexture.ab
       Dependencies: {}
-    Info_120:
+    Info_126:
       Name: assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/rockmesh.fbx.ab
       Dependencies:
         Dependency_0: assets/assetpacks/mini legion rock golem pbr hp polyart/textures/polyartstandard.png.ab
         Dependency_1: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
-    Info_121:
+    Info_127:
       Name: assets/materials/greenportal.mat.ab
       Dependencies:
         Dependency_0: assets/materials/shader/portal.shadergraph.ab
-    Info_122:
+    Info_128:
       Name: assets/materials/redportal.mat.ab
       Dependencies:
         Dependency_0: assets/materials/shader/portal.shadergraph.ab
-    Info_123:
+    Info_129:
       Name: assets/materials/yellowpartal.mat.ab
       Dependencies:
         Dependency_0: assets/materials/shader/portal.shadergraph.ab
-    Info_124:
+    Info_130:
       Name: "assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"
       Dependencies: {}
-    Info_125:
+    Info_131:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board small 
         stone.png.ab
       Dependencies: {}
-    Info_126:
+    Info_132:
       Name: assets/assetpacks/simple fantasy gui/png/quest panel/reward_slot.png.ab
       Dependencies: {}
-    Info_127:
+    Info_133:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony title 
         empty.png.ab
       Dependencies: {}
-    Info_128:
+    Info_134:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium
         stone.png.ab
       Dependencies: {}
-    Info_129:
+    Info_135:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_medium.png.ab
       Dependencies: {}
-    Info_130:
+    Info_136:
       Name: packages/com.unity.inputsystem/inputsystem/plugins/playerinput/defaultinputactions.inputactions.ab
       Dependencies: {}
-    Info_131:
+    Info_137:
       Name: assets/artres/bar/healthbareffect.png.ab
       Dependencies: {}
-    Info_132:
+    Info_138:
       Name: assets/artres/bar/healthbarbg.png.ab
       Dependencies: {}
-    Info_133:
+    Info_139:
       Name: assets/artres/bar/monster/healthbar.png.ab
       Dependencies: {}
-    Info_134:
+    Info_140:
       Name: assets/artres/font/high-jinks-1.otf.ab
       Dependencies: {}
-    Info_135:
+    Info_141:
       Name: assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_136:
+    Info_142:
       Name: assets/assetpacks/rpghero/meshes/polyartshield.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_137:
+    Info_143:
       Name: assets/assetpacks/dogknight/mesh/swordpolyart.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_138:
+    Info_144:
       Name: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/materials/palette256bitsgradient.mat.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
         Dependency_1: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/palettes/palette256bitsgradient.png.ab
-    Info_139:
+    Info_145:
       Name: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/apple_lp.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
         Dependency_1: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/palettes/palette256bitsgradient.png.ab
-    Info_140:
+    Info_146:
       Name: assets/assetpacks/simplenaturepack/models/mushroom_01.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_141:
+    Info_147:
       Name: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
         Dependency_1: assets/assetpacks/simplenaturepack/textures/naturepacklite_texture_01.png.ab
-    Info_142:
+    Info_148:
       Name: assets/assetpacks/simplenaturepack/models/mushroom_02.fbx.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
-    Info_143:
+    Info_149:
       Name: assets/assetpacks/cryo's mini gui/gui/gui_1x.png.ab
       Dependencies: {}
-    Info_144:
+    Info_150:
       Name: assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab
       Dependencies: {}
-    Info_145:
+    Info_151:
       Name: assets/assetpacks/simple fantasy gui/png/quest panel/crystal_icon.png.ab
       Dependencies: {}
-    Info_146:
+    Info_152:
       Name: assets/assetpacks/simple fantasy gui/png/icons/sword_icon.png.ab
       Dependencies: {}
-    Info_147:
+    Info_153:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board small 
         parchment.png.ab
       Dependencies: {}
-    Info_148:
+    Info_154:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_big.png.ab
       Dependencies: {}
-    Info_149:
+    Info_155:
       Name: assets/artres/bar/expbar/expbarbg.png.ab
       Dependencies: {}
-    Info_150:
+    Info_156:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large
         set.png.ab
       Dependencies: {}
-    Info_151:
+    Info_157:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony title 
         large.png.ab
       Dependencies: {}
-    Info_152:
+    Info_158:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/close button.png.ab
       Dependencies: {}
-    Info_153:
+    Info_159:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large 
         parchment.png.ab
       Dependencies: {}
-    Info_154:
+    Info_160:
       Name: assets/assetpacks/simple fantasy gui/png/icons/close_icon.png.ab
       Dependencies: {}
-    Info_155:
+    Info_161:
       Name: assets/materials/vignettemat.mat.ab
       Dependencies:
         Dependency_0: assets/materials/shader/simplevigetee.shader.ab
-    Info_156:
+    Info_162:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium 
         parchment.png.ab
       Dependencies: {}
-    Info_157:
+    Info_163:
       Name: assets/assetpacks/simple fantasy gui/png/character panel/nickname_slot.png.ab
       Dependencies: {}
-    Info_158:
+    Info_164:
       Name: assets/artres/bar/player/healthbar.png.ab
       Dependencies: {}
-    Info_159:
+    Info_165:
       Name: assets/artres/bar/player/healthbarbg.png.ab
       Dependencies: {}
-    Info_160:
+    Info_166:
       Name: assets/artres/bar/expbar/expbar.png.ab
       Dependencies: {}
-    Info_161:
+    Info_167:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large
         stone.png.ab
       Dependencies: {}
-    Info_162:
+    Info_168:
       Name: assets/assetpacks/simple fantasy gui/png/icons/shield_icon.png.ab
       Dependencies: {}
-    Info_163:
+    Info_169:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium
         set.png.ab
       Dependencies: {}
-    Info_164:
+    Info_170:
       Name: assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/exclamation_yellow.png.ab
       Dependencies: {}
-    Info_165:
-      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/idle.anim.ab
-      Dependencies: {}
-    Info_166:
-      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/die.anim.ab
-      Dependencies: {}
-    Info_167:
-      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/walk.anim.ab
-      Dependencies: {}
-    Info_168:
-      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack1.anim.ab
-      Dependencies: {}
-    Info_169:
-      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack2.anim.ab
-      Dependencies: {}
-    Info_170:
-      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/gethit.anim.ab
-      Dependencies: {}
     Info_171:
-      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/textures/polyartstandard.png.ab
-      Dependencies: {}
+      Name: assets/assetpacks/simplenaturepack/models/bush_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
     Info_172:
-      Name: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
-      Dependencies: {}
+      Name: assets/assetpacks/simplenaturepack/prefabs/bush_02.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/bush_02.fbx.ab
     Info_173:
+      Name: assets/assetpacks/simplenaturepack/prefabs/rock_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/rock_01.fbx.ab
+    Info_174:
+      Name: assets/assetpacks/simplenaturepack/models/tree_03.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_175:
+      Name: assets/assetpacks/simplenaturepack/prefabs/rock_02.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/rock_02.fbx.ab
+    Info_176:
+      Name: assets/assetpacks/simplenaturepack/models/rock_04.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_177:
+      Name: assets/assetpacks/simplenaturepack/prefabs/tree_02.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/tree_02.fbx.ab
+    Info_178:
+      Name: assets/assetpacks/simplenaturepack/prefabs/rock_03.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/rock_03.fbx.ab
+    Info_179:
+      Name: assets/assetpacks/simplenaturepack/prefabs/rock_05.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/rock_05.fbx.ab
+    Info_180:
+      Name: assets/assetpacks/simplenaturepack/prefabs/grass_02.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/grass_02.fbx.ab
+    Info_181:
+      Name: assets/assetpacks/simplenaturepack/prefabs/tree_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/tree_01.fbx.ab
+    Info_182:
+      Name: assets/assetpacks/simplenaturepack/prefabs/flowers_02.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/flowers_02.fbx.ab
+    Info_183:
+      Name: assets/assetpacks/simplenaturepack/models/tree_02.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_184:
+      Name: assets/assetpacks/occasoftware/low poly fantasy village/materials/color.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/occasoftware/low poly fantasy village/textures/gradient.png.ab
+    Info_185:
+      Name: assets/resources/scenes/sceneone/navmesh.asset.ab
+      Dependencies: {}
+    Info_186:
+      Name: assets/assetpacks/simplenaturepack/models/tree_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_187:
+      Name: assets/assetpacks/simplenaturepack/prefabs/grass_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/grass_01.fbx.ab
+    Info_188:
+      Name: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/textures/lowpolydungeonslite_texture_01.png.ab
+    Info_189:
+      Name: assets/assetpacks/simplenaturepack/prefabs/rock_04.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/rock_04.fbx.ab
+    Info_190:
+      Name: assets/assetpacks/simplenaturepack/prefabs/bush_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/bush_01.fbx.ab
+    Info_191:
+      Name: assets/assetpacks/simplenaturepack/models/tree_05.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_192:
+      Name: assets/animations/animators/gruntdie.controller.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/mini legion grunt pbr hp polyart/animations/die.anim.ab
+    Info_193:
+      Name: assets/assetpacks/simplenaturepack/prefabs/tree_03.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/tree_03.fbx.ab
+    Info_194:
+      Name: assets/resources/scenes/sceneone/global volume profile.asset.ab
+      Dependencies: {}
+    Info_195:
+      Name: assets/assetpacks/occasoftware/low poly fantasy village/materials/light.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/occasoftware/low poly fantasy village/textures/gradient.png.ab
+    Info_196:
+      Name: assets/assetpacks/occasoftware/low poly fantasy village/meshes/village.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/occasoftware/low poly fantasy village/materials/color.mat.ab
+        Dependency_1: assets/assetpacks/occasoftware/low poly fantasy village/materials/light.mat.ab
+    Info_197:
+      Name: assets/animations/animators/npcdie.controller.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/rpghero/animations/dienpc.anim.ab
+    Info_198:
+      Name: assets/assetpacks/simplenaturepack/prefabs/bush_03.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/bush_03.fbx.ab
+    Info_199:
+      Name: assets/assetpacks/simplenaturepack/models/rock_05.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_200:
+      Name: assets/assetpacks/simplenaturepack/models/tree_04.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_201:
+      Name: assets/assetpacks/simplenaturepack/prefabs/branch_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/branch_01.fbx.ab
+    Info_202:
+      Name: assets/resources/prefabs/ui/rendertexture/dieramonprofiletexture.rendertexture.ab
+      Dependencies: {}
+    Info_203:
+      Name: assets/assetpacks/simplenaturepack/prefabs/tree_04.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/tree_04.fbx.ab
+    Info_204:
+      Name: assets/assetpacks/simplenaturepack/prefabs/flowers_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/flowers_01.fbx.ab
+    Info_205:
+      Name: assets/piplinesettings/gamescene lighting settings.lighting.ab
+      Dependencies: {}
+    Info_206:
+      Name: assets/assetpacks/simplenaturepack/prefabs/tree_05.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/tree_05.fbx.ab
+    Info_207:
+      Name: assets/assetpacks/boxophobic/skybox cubemap extended/demo/materials/skybox
+        cubemap extended day.mat.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/boxophobic/skybox cubemap extended/core/shaders/skybox
+          cubemap extended.shader.ab
+        Dependency_1: assets/assetpacks/boxophobic/skybox cubemap extended/demo/textures/polyverse
+          skies - blue sky.png.ab
+    Info_208:
+      Name: assets/materials/ground.mat.ab
+      Dependencies:
+        Dependency_0: assets/addons/samples/polybrush/1.1.8/shader examples (urp)/shader/lit
+          vertex color urp.shadergraph.ab
+    Info_209:
+      Name: assets/assetpacks/simplenaturepack/models/bush_03.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_210:
+      Name: assets/assetpacks/lowpolydungeonslite/models/pot_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_211:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/rock_1.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.2.mat.ab
+    Info_212:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/rock_5.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/rock_5.fbx.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.1.mat.ab
+    Info_213:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/yellow.2.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_214:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/rock_5.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.1.mat.ab
+    Info_215:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/rock_4.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.4.mat.ab
+    Info_216:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.15.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_217:
+      Name: assets/assetpacks/lowpoly environment pack/demo/skybox.mat.ab
+      Dependencies: {}
+    Info_218:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/grass_2.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/green.3.mat.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/grass_2.fbx.ab
+    Info_219:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/tree_3.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.8.mat.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/green.12.mat.ab
+    Info_220:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/plant_4.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/yellow.2.mat.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/plant_4.fbx.ab
+    Info_221:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.8.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_222:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.3.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_223:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/plant_1.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/plant_1.fbx.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/green.4.mat.ab
+    Info_224:
+      Name: assets/resources/scenes/scenethree/navmesh.asset.ab
+      Dependencies: {}
+    Info_225:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/yellow.3.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_226:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/rock_4.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/rock_4.fbx.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.4.mat.ab
+    Info_227:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/rock_2.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/rock_2.fbx.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.2.mat.ab
+    Info_228:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/rock_3.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/rock_3.fbx.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.3.mat.ab
+    Info_229:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/rock_6.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/rock_6.fbx.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.4.mat.ab
+    Info_230:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/mounting_3.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.15.mat.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/mounting_3.fbx.ab
+        Dependency_2: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.14.mat.ab
+    Info_231:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/grass_1.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/grass_1.fbx.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/green.2.mat.ab
+    Info_232:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.2.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_233:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/tree_3.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/tree_3.fbx.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.8.mat.ab
+        Dependency_2: assets/assetpacks/lowpoly environment pack/fbx/materials/green.12.mat.ab
+    Info_234:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.1.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_235:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/mounting_1.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.3.mat.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/mounting_1.fbx.ab
+    Info_236:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/stone_1.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.2.mat.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/stone_1.fbx.ab
+    Info_237:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/rock_2.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.2.mat.ab
+    Info_238:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.2.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_239:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/rock_1.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/rock_1.fbx.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.2.mat.ab
+    Info_240:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/rock_6.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.4.mat.ab
+    Info_241:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/mounting_2.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.3.mat.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/mounting_2.fbx.ab
+    Info_242:
+      Name: assets/assetpacks/lowpoly environment pack/prefabs/environment_1.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.3.mat.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/environment_1.fbx.ab
+    Info_243:
+      Name: assets/resources/scenes/scenethreesettings.lighting.ab
+      Dependencies: {}
+    Info_244:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/green.12.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_245:
+      Name: assets/resources/scenes/scenetwo/navmesh.asset.ab
+      Dependencies: {}
+    Info_246:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/column_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/column_01.fbx.ab
+    Info_247:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/box_02.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/box_02.fbx.ab
+    Info_248:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/particles_dust.prefab.ab
+      Dependencies: {}
+    Info_249:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/jug_02.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/jug_02.fbx.ab
+    Info_250:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/chair_05.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/chair_05.fbx.ab
+    Info_251:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/pot_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/pot_01.fbx.ab
+    Info_252:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/walldecor_05.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/walldecor_05.fbx.ab
+    Info_253:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/light_08.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_light.mat.ab
+        Dependency_2: assets/assetpacks/lowpolydungeonslite/models/light_08.fbx.ab
+    Info_254:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/book_09.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/book_09.fbx.ab
+    Info_255:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/table_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/table_01.fbx.ab
+    Info_256:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/particles_pot.prefab.ab
+      Dependencies: {}
+    Info_257:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/ground_03.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/ground_03.fbx.ab
+    Info_258:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/candle_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/candle_01.fbx.ab
+    Info_259:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/bottle_05.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/bottle_05.fbx.ab
+    Info_260:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/ground_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/ground_01.fbx.ab
+    Info_261:
+      Name: assets/assetpacks/lowpolydungeonslite/models/book_09.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_262:
+      Name: assets/resources/scenes/scenetwo/global volume profile.asset.ab
+      Dependencies: {}
+    Info_263:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/rock_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/rock_01.fbx.ab
+    Info_264:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/wood_02.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/wood_02.fbx.ab
+    Info_265:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/mud_04.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/mud_04.fbx.ab
+    Info_266:
+      Name: assets/assetpacks/lowpolydungeonslite/prefabs/wall_27.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/models/wall_27.fbx.ab
+    Info_267:
+      Name: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/pear_lp.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/palettes/palette256bitsgradient.png.ab
+    Info_268:
+      Name: assets/resources/scenes/startscene/volume profile.asset.ab
+      Dependencies: {}
+    Info_269:
+      Name: assets/assetpacks/simplenaturepack/prefabs/ground_03.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/ground_03.fbx.ab
+    Info_270:
+      Name: assets/animations/timeline/backtomainpaneldirectortimeline.playable.ab
+      Dependencies: {}
+    Info_271:
+      Name: assets/assetpacks/simplenaturepack/prefabs/stump_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/stump_01.fbx.ab
+    Info_272:
+      Name: assets/animations/timeline/continuedirectortimeline.playable.ab
+      Dependencies: {}
+    Info_273:
+      Name: assets/animations/timeline/maindirectortimeline.playable.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab
+    Info_274:
+      Name: assets/assetpacks/simplenaturepack/scenes/simplenaturepack_overviewsettings.lighting.ab
+      Dependencies: {}
+    Info_275:
+      Name: assets/assetpacks/simplenaturepack/prefabs/ground_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/ground_01.fbx.ab
+    Info_276:
+      Name: assets/assetpacks/boxophobic/skybox cubemap extended/demo/materials/skybox
+        cubemap extended night.mat.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/boxophobic/skybox cubemap extended/core/shaders/skybox
+          cubemap extended.shader.ab
+        Dependency_1: assets/assetpacks/boxophobic/skybox cubemap extended/demo/textures/polyverse
+          skies - blue sky.png.ab
+        Dependency_2: assets/assetpacks/boxophobic/skybox cubemap extended/demo/textures/polyverse
+          skies - night sky.exr.ab
+    Info_277:
+      Name: assets/assetpacks/simplenaturepack/prefabs/mushroom_02.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/mushroom_02.fbx.ab
+    Info_278:
+      Name: assets/assetpacks/dogknight/animator/dogcontrol.controller.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/dogknight/animations/gethit.anim.ab
+        Dependency_1: assets/assetpacks/dogknight/animations/die.anim.ab
+        Dependency_2: assets/assetpacks/dogknight/animations/attack02.anim.ab
+        Dependency_3: assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab
+        Dependency_4: assets/assetpacks/dogknight/animations/idle_battle.anim.ab
+        Dependency_5: assets/assetpacks/dogknight/animations/attack01.anim.ab
+        Dependency_6: assets/assetpacks/dogknight/animations/defend.anim.ab
+        Dependency_7: assets/assetpacks/dogknight/animations/dizzy.anim.ab
+        Dependency_8: assets/assetpacks/dogknight/animations/dierecover.anim.ab
+        Dependency_9: assets/assetpacks/dogknight/animations/walkforwardbattle.anim.ab
+    Info_279:
+      Name: assets/assetpacks/simplenaturepack/models/ground_02.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_280:
+      Name: assets/assetpacks/simplenaturepack/models/ground_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_281:
+      Name: assets/animations/timeline/continuegamedirectortimeline.playable.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab
+    Info_282:
+      Name: assets/assetpacks/simplenaturepack/prefabs/ground_02.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/models/ground_02.fbx.ab
+    Info_283:
+      Name: assets/assetpacks/simplenaturepack/prefabs/mushroom_01.prefab.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/simplenaturepack/models/mushroom_01.fbx.ab
+        Dependency_1: assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab
+    Info_284:
+      Name: assets/assetpacks/simplenaturepack/models/ground_03.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_285:
+      Name: assets/assetpacks/simplenaturepack/scenes/simplenaturepack_demo/navmesh.asset.ab
+      Dependencies: {}
+    Info_286:
       Name: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
       Dependencies:
         Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
-    Info_174:
+    Info_287:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/idle.anim.ab
+      Dependencies: {}
+    Info_288:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/die.anim.ab
+      Dependencies: {}
+    Info_289:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/walk.anim.ab
+      Dependencies: {}
+    Info_290:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack1.anim.ab
+      Dependencies: {}
+    Info_291:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack2.anim.ab
+      Dependencies: {}
+    Info_292:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/animations/gethit.anim.ab
+      Dependencies: {}
+    Info_293:
+      Name: assets/assetpacks/mini legion rock golem pbr hp polyart/textures/polyartstandard.png.ab
+      Dependencies: {}
+    Info_294:
+      Name: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+      Dependencies: {}
+    Info_295:
       Name: assets/assetpacks/mini legion grunt pbr hp polyart/textures/polyartstandard.png.ab
       Dependencies: {}
-    Info_175:
+    Info_296:
       Name: assets/assetpacks/rpghero/textures/polyarttexture.png.ab
       Dependencies: {}
-    Info_176:
+    Info_297:
       Name: assets/assetpacks/rpghero/animations/idle_swordshield.anim.ab
       Dependencies: {}
-    Info_177:
+    Info_298:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/runfwd.anim.ab
       Dependencies: {}
-    Info_178:
+    Info_299:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlebattle.anim.ab
       Dependencies: {}
-    Info_179:
+    Info_300:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack01.anim.ab
       Dependencies: {}
-    Info_180:
+    Info_301:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlenormal.anim.ab
       Dependencies: {}
-    Info_181:
+    Info_302:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack01.anim.ab
       Dependencies: {}
-    Info_182:
+    Info_303:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/die.anim.ab
       Dependencies: {}
-    Info_183:
+    Info_304:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/walkfwd.anim.ab
       Dependencies: {}
-    Info_184:
+    Info_305:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack02.anim.ab
       Dependencies: {}
-    Info_185:
+    Info_306:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack02.anim.ab
       Dependencies: {}
-    Info_186:
+    Info_307:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/slime/gethit.anim.ab
       Dependencies: {}
-    Info_187:
+    Info_308:
       Name: assets/assetpacks/rpg monster duo pbr polyart/textures/emission.png.ab
       Dependencies: {}
-    Info_188:
+    Info_309:
       Name: assets/assetpacks/rpg monster duo pbr polyart/textures/albedo.png.ab
       Dependencies: {}
-    Info_189:
+    Info_310:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/runfwd.anim.ab
       Dependencies: {}
-    Info_190:
+    Info_311:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlebattle.anim.ab
       Dependencies: {}
-    Info_191:
+    Info_312:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/gethit.anim.ab
       Dependencies: {}
-    Info_192:
+    Info_313:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/walkfwd.anim.ab
       Dependencies: {}
-    Info_193:
+    Info_314:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/die.anim.ab
       Dependencies: {}
-    Info_194:
+    Info_315:
       Name: assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlenormal.anim.ab
       Dependencies: {}
-    Info_195:
+    Info_316:
       Name: assets/assetpacks/dogknight/texture/standardalbedo.png.ab
       Dependencies: {}
-    Info_196:
+    Info_317:
       Name: assets/assetpacks/dogknight/animations/gethit.anim.ab
       Dependencies: {}
-    Info_197:
+    Info_318:
       Name: assets/assetpacks/dogknight/animations/die.anim.ab
       Dependencies: {}
-    Info_198:
+    Info_319:
       Name: assets/assetpacks/dogknight/animations/attack02.anim.ab
       Dependencies: {}
-    Info_199:
+    Info_320:
       Name: assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab
       Dependencies: {}
-    Info_200:
+    Info_321:
       Name: assets/assetpacks/dogknight/animations/idle_battle.anim.ab
       Dependencies: {}
-    Info_201:
+    Info_322:
       Name: assets/assetpacks/dogknight/animations/attack01.anim.ab
       Dependencies: {}
-    Info_202:
+    Info_323:
       Name: assets/materials/shader/portal.shadergraph.ab
       Dependencies: {}
-    Info_203:
+    Info_324:
       Name: assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/palettes/palette256bitsgradient.png.ab
       Dependencies: {}
-    Info_204:
+    Info_325:
       Name: assets/assetpacks/simplenaturepack/textures/naturepacklite_texture_01.png.ab
       Dependencies: {}
-    Info_205:
+    Info_326:
       Name: assets/materials/shader/simplevigetee.shader.ab
+      Dependencies: {}
+    Info_327:
+      Name: assets/assetpacks/simplenaturepack/models/bush_02.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_328:
+      Name: assets/assetpacks/simplenaturepack/models/rock_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_329:
+      Name: assets/assetpacks/simplenaturepack/models/rock_02.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_330:
+      Name: assets/assetpacks/simplenaturepack/models/rock_03.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_331:
+      Name: assets/assetpacks/simplenaturepack/models/grass_02.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_332:
+      Name: assets/assetpacks/simplenaturepack/models/flowers_02.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_333:
+      Name: assets/assetpacks/occasoftware/low poly fantasy village/textures/gradient.png.ab
+      Dependencies: {}
+    Info_334:
+      Name: assets/assetpacks/simplenaturepack/models/grass_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_335:
+      Name: assets/assetpacks/lowpolydungeonslite/textures/lowpolydungeonslite_texture_01.png.ab
+      Dependencies: {}
+    Info_336:
+      Name: assets/assetpacks/mini legion grunt pbr hp polyart/animations/die.anim.ab
+      Dependencies: {}
+    Info_337:
+      Name: assets/assetpacks/rpghero/animations/dienpc.anim.ab
+      Dependencies: {}
+    Info_338:
+      Name: assets/assetpacks/simplenaturepack/models/branch_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_339:
+      Name: assets/assetpacks/simplenaturepack/models/flowers_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_340:
+      Name: assets/assetpacks/boxophobic/skybox cubemap extended/core/shaders/skybox
+        cubemap extended.shader.ab
+      Dependencies: {}
+    Info_341:
+      Name: assets/assetpacks/boxophobic/skybox cubemap extended/demo/textures/polyverse
+        skies - blue sky.png.ab
+      Dependencies: {}
+    Info_342:
+      Name: assets/addons/samples/polybrush/1.1.8/shader examples (urp)/shader/lit
+        vertex color urp.shadergraph.ab
+      Dependencies: {}
+    Info_343:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.2.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_344:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.1.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_345:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.4.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_346:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/green.3.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_347:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/grass_2.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/green.3.mat.ab
+    Info_348:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/plant_4.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/yellow.2.mat.ab
+    Info_349:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/plant_1.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/green.4.mat.ab
+    Info_350:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/green.4.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_351:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/rock_3.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.3.mat.ab
+    Info_352:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/gray.3.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_353:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/mounting_3.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.15.mat.ab
+        Dependency_1: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.14.mat.ab
+    Info_354:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.14.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_355:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/grass_1.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/green.2.mat.ab
+    Info_356:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/materials/green.2.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+    Info_357:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/mounting_1.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.3.mat.ab
+    Info_358:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/stone_1.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/brown.2.mat.ab
+    Info_359:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/mounting_2.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.3.mat.ab
+    Info_360:
+      Name: assets/assetpacks/lowpoly environment pack/fbx/environment_1.fbx.ab
+      Dependencies:
+        Dependency_0: assets/assetpacks/lowpoly environment pack/fbx/materials/orange.3.mat.ab
+    Info_361:
+      Name: assets/assetpacks/lowpolydungeonslite/models/column_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_362:
+      Name: assets/assetpacks/lowpolydungeonslite/models/box_02.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_363:
+      Name: assets/assetpacks/lowpolydungeonslite/models/jug_02.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_364:
+      Name: assets/assetpacks/lowpolydungeonslite/models/chair_05.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_365:
+      Name: assets/assetpacks/lowpolydungeonslite/models/walldecor_05.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_366:
+      Name: assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_light.mat.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
+        Dependency_1: assets/assetpacks/lowpolydungeonslite/textures/lowpolydungeonslite_texture_01.png.ab
+    Info_367:
+      Name: assets/assetpacks/lowpolydungeonslite/models/light_08.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_368:
+      Name: assets/assetpacks/lowpolydungeonslite/models/table_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_369:
+      Name: assets/assetpacks/lowpolydungeonslite/models/ground_03.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_370:
+      Name: assets/assetpacks/lowpolydungeonslite/models/candle_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_371:
+      Name: assets/assetpacks/lowpolydungeonslite/models/bottle_05.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_372:
+      Name: assets/assetpacks/lowpolydungeonslite/models/ground_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_373:
+      Name: assets/assetpacks/lowpolydungeonslite/models/rock_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_374:
+      Name: assets/assetpacks/lowpolydungeonslite/models/wood_02.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_375:
+      Name: assets/assetpacks/lowpolydungeonslite/models/mud_04.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_376:
+      Name: assets/assetpacks/lowpolydungeonslite/models/wall_27.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_377:
+      Name: assets/assetpacks/simplenaturepack/models/stump_01.fbx.ab
+      Dependencies:
+        Dependency_0: packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab
+    Info_378:
+      Name: assets/assetpacks/boxophobic/skybox cubemap extended/demo/textures/polyverse
+        skies - night sky.exr.ab
+      Dependencies: {}
+    Info_379:
+      Name: assets/assetpacks/dogknight/animations/defend.anim.ab
+      Dependencies: {}
+    Info_380:
+      Name: assets/assetpacks/dogknight/animations/dizzy.anim.ab
+      Dependencies: {}
+    Info_381:
+      Name: assets/assetpacks/dogknight/animations/dierecover.anim.ab
+      Dependencies: {}
+    Info_382:
+      Name: assets/assetpacks/dogknight/animations/walkforwardbattle.anim.ab
       Dependencies: {}

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 24331224
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 317fb7345408246b78e195fa0eaed87b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d9da41d144468ef771ac0bfebf61c5d
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 317fb7345408246b78e195fa0eaed87b
+HashAppended: 0
+ClassTypes:
+- Class: 84
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/UI/RenderTexture/DieRamonProfileTexture.renderTexture
+Dependencies: []

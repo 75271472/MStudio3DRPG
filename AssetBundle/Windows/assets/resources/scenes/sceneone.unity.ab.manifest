@@ -1,0 +1,250 @@
+ManifestFileVersion: 0
+CRC: 2983212350
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8aad2b8f2976364579f16acbe0907889
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0321439fc55c4509272dfad32f71c330
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8aad2b8f2976364579f16acbe0907889
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 84
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 126b7e94d49ecfe4c8d6497f6709e488, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3933ed0643506a941b3634d112751ba9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b9bd9b50cada475419bdd20325697f39, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 176b5f89c02a08e48997ae3a09ca0fac, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d0134299870a2a143b14818a601ca882, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c5689bacf4b5ab04da81f89c6a856db8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4294e9ec537526f4485b310a2bca8182, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6e3e0da5e832bc345bad2610e49eccbb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1dc60d62db0e4404f8b91d86e3b0e327, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8d20094343170d5408c54dd4a35cc6fd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 528c6b2016d33814fbf141f9ecc5cb60, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5cf56e2b10bc0454ab5edcc02aea24ad, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2d2f2b8afa1c51e42a560a6c9e68c5ed, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c133baeea99ae4b42953f1b5d9989361, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8dfb71a0e44fda748a2b5ff2028970bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 436e17274292cd94994bdb915590efd3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c8d4d83ecd35171458b409bbc4303661, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bd888215a5a2bd64db37c5bd3fbb5719, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ad9b5ed6dd369244fa56c210d1828069, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ef135533effec2e4297eb7e14925d5c7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 534b725f96f73e244b1aad46e8895444, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4bd5e5ddd242bd64581fb5ed9c0e0507, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c278899927e5bd647b79a059eb3c85dd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b883790f2b2efbe4082dff2326ee72b6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c825d473014b13d44aa91ff20fe994e6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c9ae5329df1cf504d9f19ea1c9ca15b6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 32a647d32b3bbee42847196484676f6d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1bdbf93346e29ea4ebcc51fc063de65f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7594a34ab09dcb949b1820a1c02f9648, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 63e40c716e79ba343bffd5bd5c95215c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 660bdc679d793ae4a96fcb7dbdc9697c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 037895d5b0cb0d94bbb5b6f8739e9d96, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8907873234dbb544fba19a1267e72f17, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e477fe12ec31dc43b71c637f7f3e20f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67921e748c1aa224095ce813cd703f7a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ce11b6d208c105247ba61133149aba42, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b8760819690411e4ca16ffab4d992044, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 73e57b94f089ad448b5f857ecf0549e8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e547def28cd9cf045a4fa4da2733ec9b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 196
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+- Class: 221
+  Script: {instanceID: 0}
+- Class: 238
+  Script: {instanceID: 0}
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Scenes/SceneOne.unity
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/animations/animators/gruntdie.controller.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/animations/animators/npcdie.controller.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/boxophobic/skybox
+  cubemap extended/demo/materials/skybox cubemap extended day.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/material/polyart.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/mesh/swordpolyart.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/pot_01.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  grunt pbr hp polyart/material/polyartstandard.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  grunt pbr hp polyart/mesh/gruntpolyart.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/occasoftware/low
+  poly fantasy village/materials/color.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/occasoftware/low
+  poly fantasy village/materials/light.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/occasoftware/low
+  poly fantasy village/meshes/village.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpghero/materials/polyart.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpghero/meshes/newfreerpgheropolyart.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpghero/meshes/polyartshield.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/bush_01.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/bush_03.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/rock_04.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/rock_05.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_01.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_02.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_03.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_04.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_05.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/branch_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/bush_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/bush_02.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/bush_03.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/flowers_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/flowers_02.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/grass_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/grass_02.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/rock_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/rock_02.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/rock_03.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/rock_04.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/rock_05.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/tree_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/tree_02.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/tree_03.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/tree_04.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/tree_05.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/materials/greenportal.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/materials/ground.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/materials/yellowpartal.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/piplinesettings/gamescene
+  lighting settings.lighting.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/character/npc.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/character/slime.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/character/turtle.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/manager/player.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/ui/rendertexture/dieramonprofiletexture.rendertexture.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/apple.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/mushroom1.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/mushroom2.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/ramonshield.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/ramonsword.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/sword.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/scenes/sceneone/global
+  volume profile.asset.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/scenes/sceneone/navmesh.asset.ab

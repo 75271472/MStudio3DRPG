@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 3592780943
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 81bf256eb3c8b4b781da325fbc66ce6a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0df1dec30b5d061d422d3e6493d27647
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 81bf256eb3c8b4b781da325fbc66ce6a
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap
+  Extended.shader
+Dependencies: []

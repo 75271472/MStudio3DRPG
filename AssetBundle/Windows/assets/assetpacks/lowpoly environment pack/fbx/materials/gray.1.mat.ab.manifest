@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 2478230772
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 07206621febff8d20aed1574f7eadcad
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5e762ccb57c4caaabbb5a4199ac82c23
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 07206621febff8d20aed1574f7eadcad
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Gray.1.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab
