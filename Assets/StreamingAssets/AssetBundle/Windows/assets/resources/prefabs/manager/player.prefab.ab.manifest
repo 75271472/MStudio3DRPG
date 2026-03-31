@@ -1,0 +1,92 @@
+ManifestFileVersion: 0
+CRC: 1317606381
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 217cc0488d9b4ff132ac127b1fb58b28
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bf69dd6c18c5905aa053781979e5e443
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 217cc0488d9b4ff132ac127b1fb58b28
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 84
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 176b5f89c02a08e48997ae3a09ca0fac, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4294e9ec537526f4485b310a2bca8182, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1dc60d62db0e4404f8b91d86e3b0e327, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2d2f2b8afa1c51e42a560a6c9e68c5ed, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8dfb71a0e44fda748a2b5ff2028970bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 436e17274292cd94994bdb915590efd3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bd888215a5a2bd64db37c5bd3fbb5719, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ad9b5ed6dd369244fa56c210d1828069, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c278899927e5bd647b79a059eb3c85dd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c825d473014b13d44aa91ff20fe994e6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c9ae5329df1cf504d9f19ea1c9ca15b6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1bdbf93346e29ea4ebcc51fc063de65f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 660bdc679d793ae4a96fcb7dbdc9697c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 037895d5b0cb0d94bbb5b6f8739e9d96, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67921e748c1aa224095ce813cd703f7a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e547def28cd9cf045a4fa4da2733ec9b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: AttackComboList
+- AssemblyName: Assembly-CSharp
+  ClassName: InventoryItemInfo
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.TemporalAA/Settings
+Assets:
+- Assets/Resources/Prefabs/Manager/Player.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/animations/animators/player.controller.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/material/polyart.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/mesh/dogpolyart.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/gamedata/attack/player/playercombotemplate.asset.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/ui/rendertexture/playerprofiletexture.rendertexture.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/ui/rendertexture/playertexture.rendertexture.ab

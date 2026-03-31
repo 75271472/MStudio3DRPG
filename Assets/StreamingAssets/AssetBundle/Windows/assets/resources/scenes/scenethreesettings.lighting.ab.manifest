@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3187387103
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c1164ead76357ff416a9f1d9a4cb9e01
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a4b57b1a56d6b76d200651994ae0863
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c1164ead76357ff416a9f1d9a4cb9e01
+HashAppended: 0
+ClassTypes:
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Scenes/SceneThreeSettings.lighting
+Dependencies: []

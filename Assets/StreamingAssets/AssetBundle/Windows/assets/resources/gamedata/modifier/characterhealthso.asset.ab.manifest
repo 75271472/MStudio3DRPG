@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 34675369
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 66f31c913d72ac5f5b61d2b24a115f77
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 871efb463d20d008de50933b6bf099e7
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 66f31c913d72ac5f5b61d2b24a115f77
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: c08bf412db3d2a14fa20735f99137dca, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/GameData/Modifier/CharacterHealthSO.asset
+Dependencies: []

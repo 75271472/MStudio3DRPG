@@ -1,0 +1,61 @@
+ManifestFileVersion: 0
+CRC: 1051097812
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b193f5161a5440f66807fdde8b70261a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 84f0ea845eccf2ad7b0eb1db906e3113
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b193f5161a5440f66807fdde8b70261a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0e31ba4f8aee0654d8d0199a840581f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ba232ca41ea17e94cabfde44969f1d01, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b463d5c157f7a5040af7961b40e84d5b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.RectOffset
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Resources/Prefabs/UI/Panel/HotInventoryPanel.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/font/high-jinks-1.otf.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/cryo's mini
+  gui/gui/gui_1x.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/fantasy wooden
+  gui  free/normal_ui_set a/ui board medium stone.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simple fantasy
+  gui/png/inventory/inventory_slot.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simple fantasy
+  gui/png/quest panel/crystal_icon.png.ab

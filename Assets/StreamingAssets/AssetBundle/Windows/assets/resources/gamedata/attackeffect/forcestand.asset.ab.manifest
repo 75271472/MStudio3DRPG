@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3108082999
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 20bb4af08ec7ac76a2570eeba6c8434c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2a695e7664dd4cfcaa0a58f614cfc254
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 20bb4af08ec7ac76a2570eeba6c8434c
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: b218c54936b30a64082e81a906fd0ba5, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/GameData/AttackEffect/ForceStand.asset
+Dependencies: []

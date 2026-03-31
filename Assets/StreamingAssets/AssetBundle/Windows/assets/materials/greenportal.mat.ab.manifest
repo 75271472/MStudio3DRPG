@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 80320734
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d0439a2f531b7fe1caef6f18324669fc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d0439a2f531b7fe1caef6f18324669fc
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/GreenPortal.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/materials/shader/portal.shadergraph.ab

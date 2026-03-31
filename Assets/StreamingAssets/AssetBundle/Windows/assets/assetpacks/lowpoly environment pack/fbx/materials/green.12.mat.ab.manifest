@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 1458965098
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6b9da39e6d8695980caa7cf7038e3461
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5e762ccb57c4caaabbb5a4199ac82c23
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6b9da39e6d8695980caa7cf7038e3461
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Green.12.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab

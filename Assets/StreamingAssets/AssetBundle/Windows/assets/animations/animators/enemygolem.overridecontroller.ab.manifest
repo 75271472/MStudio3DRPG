@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 734229257
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: def3876d005ed0dd851702ed89ecbe93
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8af4f908a200f226f5242b0f38dfd85a
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: def3876d005ed0dd851702ed89ecbe93
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 221
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Animations/Animators/EnemyGolem.overrideController
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/animations/animators/enemygrunt.controller.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  rock golem pbr hp polyart/animations/attack1.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  rock golem pbr hp polyart/animations/attack2.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  rock golem pbr hp polyart/animations/die.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  rock golem pbr hp polyart/animations/gethit.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  rock golem pbr hp polyart/animations/idle.anim.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  rock golem pbr hp polyart/animations/walk.anim.ab

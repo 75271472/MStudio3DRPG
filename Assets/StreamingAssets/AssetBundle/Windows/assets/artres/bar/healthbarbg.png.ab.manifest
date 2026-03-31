@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2242236692
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e9f3ec801ef1e8ebe298755500d6e682
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e9f3ec801ef1e8ebe298755500d6e682
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/ArtRes/Bar/HealthBarBG.png
+Dependencies: []

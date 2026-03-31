@@ -1,0 +1,78 @@
+ManifestFileVersion: 0
+CRC: 3050638983
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a3d19ce2f5db557856b42d14ac23236c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 507eed125027b58c42cc4504345cc22b
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a3d19ce2f5db557856b42d14ac23236c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 191918ff32061074eaf5b8eaebcb1765, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c133baeea99ae4b42953f1b5d9989361, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 534b725f96f73e244b1aad46e8895444, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 196
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Scenes/Screenshot.unity
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/material/polyart.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/materials/palette256bitsgradient.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/pear_lp.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/weapon/ramonsword.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/apple.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/mushroom1.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/mushroom2.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/shield.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/worditem/sword.prefab.ab

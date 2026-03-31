@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2458854446
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7fa14613d89184a81f104a04b3044218
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bb2c096739db3b30e2f5c500dd1dc2d0
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7fa14613d89184a81f104a04b3044218
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: ddcc34330bfc3484f803af31a00ea47f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/Particle/RockBreakParticle.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  rock golem pbr hp polyart/materials/polyartstandard.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  rock golem pbr hp polyart/meshes/rockmesh.fbx.ab

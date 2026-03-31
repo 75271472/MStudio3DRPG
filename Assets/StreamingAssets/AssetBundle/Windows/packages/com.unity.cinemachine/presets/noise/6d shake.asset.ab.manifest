@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 1392092162
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: deeeaf3ca8f3f9a3592162dac7cb8a50
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 80bdfe4e6ba1bb6873c7c7ecd03a0ae8
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: deeeaf3ca8f3f9a3592162dac7cb8a50
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: b7f59e54f2bfd184b9dd451a678d089b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Cinemachine
+  ClassName: Cinemachine.NoiseSettings/NoiseParams
+- AssemblyName: Cinemachine
+  ClassName: Cinemachine.NoiseSettings/TransformNoiseParams
+Assets:
+- Packages/com.unity.cinemachine/Presets/Noise/6D Shake.asset
+Dependencies: []

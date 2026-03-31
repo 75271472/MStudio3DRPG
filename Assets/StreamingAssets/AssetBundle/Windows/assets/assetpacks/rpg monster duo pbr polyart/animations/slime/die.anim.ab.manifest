@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 573048823
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b54df33c5ae42aa15cc112d0a264166f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b54df33c5ae42aa15cc112d0a264166f
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/Die.anim
+Dependencies: []

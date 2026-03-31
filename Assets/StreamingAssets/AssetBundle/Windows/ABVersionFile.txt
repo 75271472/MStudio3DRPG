@@ -1,0 +1,385 @@
+AssetBundle/Windows/manifest.ab 938ee22a18f6a5fc683969c1bf100b46 13
+AssetBundle/Windows/assets/materials/greenportal.mat.ab 51b20331b24cff876daba3b241a66a6f 13
+AssetBundle/Windows/assets/materials/ground.mat.ab f7d08b9cac5e1cf42578a21bfd0ee511 3
+AssetBundle/Windows/assets/materials/redportal.mat.ab 9f42297eea7fed34731db1966831402d 13
+AssetBundle/Windows/assets/materials/vignettemat.mat.ab 7d1948cf7688fe7b0ece1e3f838fb536 3
+AssetBundle/Windows/assets/materials/yellowpartal.mat.ab 3860901b0c8c57c6b27a6fe99602c305 13
+AssetBundle/Windows/assets/piplinesettings/gamescene lighting settings.lighting.ab 8debd345dda21e19480b78e9b0b0b6e4 2
+AssetBundle/Windows/assets/resources/dotweensettings.asset.ab 977646d13a7374cefe9face2eabf166e 3
+AssetBundle/Windows/assets/resources/sprites.ab 9dbbe2ff1bb58e5ec54b17ff787f8b20 56
+AssetBundle/Windows/assets/animations/animators/enemygolem.overridecontroller.ab f2ae17ead90e237b88ff141f4375af6b 2
+AssetBundle/Windows/assets/animations/animators/enemygrunt.controller.ab 6421a92e386cab8f985566c337f7906d 6
+AssetBundle/Windows/assets/animations/animators/enemyslime.controller.ab 4a4ca6e9b181a20844ab070862958ed0 6
+AssetBundle/Windows/assets/animations/animators/enemyturtle.overridecontroller.ab a1d1353b82080ce062ea388ceafb9d08 3
+AssetBundle/Windows/assets/animations/animators/gruntdie.controller.ab 3332874f2543d5e9f5d68a5e024fb38a 5
+AssetBundle/Windows/assets/animations/animators/npc.controller.ab fd051caedefe94e3b8838f9423854f40 5
+AssetBundle/Windows/assets/animations/animators/npcdie.controller.ab b4df02959e9b29340234304612c43024 5
+AssetBundle/Windows/assets/animations/animators/player.controller.ab 0e5386d97cdfd5d6a1b7aae75037e6f3 6
+AssetBundle/Windows/assets/animations/timeline/backtomainpaneldirectortimeline.playable.ab 48a4296dc1d84ebff02417923d8674b3 9
+AssetBundle/Windows/assets/animations/timeline/continuedirectortimeline.playable.ab a9bfee53e713118768e9617c16dee0f2 9
+AssetBundle/Windows/assets/animations/timeline/continuegamedirectortimeline.playable.ab 6be9c50e471d2b381993ea773fc68848 10
+AssetBundle/Windows/assets/animations/timeline/maindirectortimeline.playable.ab aa0a2f632f86845015d806258292faee 10
+AssetBundle/Windows/assets/artres/bar/healthbarbg.png.ab 68df7b8a1681c6e6ee595edddce3f2d2 5
+AssetBundle/Windows/assets/artres/bar/healthbareffect.png.ab cfb028f3c7c24bb6c9d11452f99e9415 5
+AssetBundle/Windows/assets/artres/cursor/01.png.ab 231eb152ea8c5a1710ac5c005ddb3bc4 4
+AssetBundle/Windows/assets/artres/cursor/02.png.ab f9a12c30aaa716107ee54348731a2342 4
+AssetBundle/Windows/assets/artres/cursor/03.png.ab ae59e8a3c648d9441491a12bbfae355f 4
+AssetBundle/Windows/assets/artres/cursor/04.png.ab 6feb0c64afe63fb9e15a7828b65046ff 4
+AssetBundle/Windows/assets/artres/cursor/05.png.ab 8698a9f033b212163e363f3c6ca938ec 4
+AssetBundle/Windows/assets/artres/font/high-jinks-1.otf.ab d9bc85af32b0efc432bbb8688e8d92c6 9
+AssetBundle/Windows/assets/artres/font/汉仪超级战甲.ttf.ab f008dc69ecb798866030e973c3ae8449 1345
+AssetBundle/Windows/assets/materials/shader/portal.shadergraph.ab fd50b31fe3580da23bc5bedd589e9d02 35
+AssetBundle/Windows/assets/materials/shader/simplevigetee.shader.ab 242b34555426d52cde56d980edb2352c 18
+AssetBundle/Windows/assets/resources/scenes/sceneone.unity.ab aee76a9bd71c0ce46fc96b9b7a9827e3 3323
+AssetBundle/Windows/assets/resources/scenes/scenethree.unity.ab 00cf7b9934207f21e0e45ca458e3c375 1368
+AssetBundle/Windows/assets/resources/scenes/scenethreesettings.lighting.ab 5654ab3da87d09562694a78fc4dfbef4 2
+AssetBundle/Windows/assets/resources/scenes/scenetwo.unity.ab cf996b90040914b5e0b56e9ff94a3915 3023
+AssetBundle/Windows/assets/resources/scenes/screenshot.unity.ab 95fe956d912ebde79708194b158a6f41 14
+AssetBundle/Windows/assets/resources/scenes/startscene.unity.ab 66392be8d94fdedef261730b63a06227 688
+AssetBundle/Windows/assets/resources/scenes/testscene.unity.ab 8e4fd2ee354f8258e83fa35369e42b06 129
+AssetBundle/Windows/packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab 5e42bd3361d8995c600802af4e09b63b 37
+AssetBundle/Windows/assets/artres/bar/expbar/expbar.png.ab e4131265e04494415649fce9014f9287 5
+AssetBundle/Windows/assets/artres/bar/expbar/expbarbg.png.ab de649a8c63218b1c9f4edb18c2b35fde 5
+AssetBundle/Windows/assets/artres/bar/monster/healthbar.png.ab ba871acbd06850f04e0d0ebb11d91eb0 5
+AssetBundle/Windows/assets/artres/bar/player/healthbar.png.ab 54a979c67a2f776ad1dc8d41b1d0297a 5
+AssetBundle/Windows/assets/artres/bar/player/healthbarbg.png.ab 3b65762419a171155a62d8dba247a5ff 5
+AssetBundle/Windows/assets/assetpacks/cryo's mini gui/gui/gui_1x.png.ab b3104198b7442e55238654c730d66b1c 9
+AssetBundle/Windows/assets/assetpacks/dogknight/animations/attack01.anim.ab 83811c443cc52a0637708d236b6ce64f 24
+AssetBundle/Windows/assets/assetpacks/dogknight/animations/attack02.anim.ab 9c7d40435cc57bba7d9585f57beff557 24
+AssetBundle/Windows/assets/assetpacks/dogknight/animations/defend.anim.ab 7d04a1a3e1646969c3c99704de998204 19
+AssetBundle/Windows/assets/assetpacks/dogknight/animations/die.anim.ab 371344ac9044cd51e1670846b55c9cf4 29
+AssetBundle/Windows/assets/assetpacks/dogknight/animations/dierecover.anim.ab 390074b2457ccd6ef303298fcdeb1757 29
+AssetBundle/Windows/assets/assetpacks/dogknight/animations/dizzy.anim.ab 708a963d78b142202ac66d245b301b7b 30
+AssetBundle/Windows/assets/assetpacks/dogknight/animations/gethit.anim.ab da4e2d4cfe8fe477f3ea6ef551e888e2 21
+AssetBundle/Windows/assets/assetpacks/dogknight/animations/idle_battle.anim.ab 0d62dd8949eb55de7d86bb4b650013a3 19
+AssetBundle/Windows/assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab 8ce321e013f1ab045b435c9d38539d49 22
+AssetBundle/Windows/assets/assetpacks/dogknight/animations/walkforwardbattle.anim.ab e00130a018d5623ff29aa443c36812ce 26
+AssetBundle/Windows/assets/assetpacks/dogknight/animator/dogcontrol.controller.ab 9b701b83e297d666aa59fa8872344988 6
+AssetBundle/Windows/assets/assetpacks/dogknight/material/polyart.mat.ab 901b38e4d2768336cb915f9ec61fe7a0 3
+AssetBundle/Windows/assets/assetpacks/dogknight/mesh/dogpolyart.fbx.ab 0bb765d6f6735b1591017fb8da8be7d6 205
+AssetBundle/Windows/assets/assetpacks/dogknight/mesh/shieldpolyart.fbx.ab 8d1f21a16ca1ca6d78df2daea5532b16 11
+AssetBundle/Windows/assets/assetpacks/dogknight/mesh/swordpolyart.fbx.ab d8ad2585125b200f3215fc2aeb796dd8 16
+AssetBundle/Windows/assets/assetpacks/dogknight/texture/standardalbedo.png.ab 1103941d653fafb48fa2a712b0ef6526 6
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/close button.png.ab 4e49d3e87542e2a851035ce525387720 15
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/exclamation_yellow.png.ab 428565bb843a4f3ea5750906d5fba718 19
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony title  empty.png.ab ea6016f5f100c19b500f95d10c26f4ff 44
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/irony title  large.png.ab 4f815bf298635cff0ba8631b5641dfb2 55
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_big.png.ab 0ea43266b6f4cbc1dc717c8e18db04ca 13
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/textbtn_medium.png.ab dde633638ee51555f2ffdb5993043f23 12
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large  parchment.png.ab d4ac824f1e41c2f8a0d0db42fcbe9392 86
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large set.png.ab 638b776b1900f6cfc6b575b6f6510abe 210
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board large stone.png.ab 9263243d0d68b8531488d1a2457a77e5 624
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium  parchment.png.ab ec2d1ff8b1a56c7d49955be400ce4cc8 68
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium set.png.ab 3dfbcfecfd9a2129324556aa02c18d6f 131
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board medium stone.png.ab b2b17586df669ed03bcc279c01ef64ae 395
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board small  parchment.png.ab cbb02be105e3873d7d9fc69e39ad4539 23
+AssetBundle/Windows/assets/assetpacks/fantasy wooden gui  free/normal_ui_set a/ui board small  stone.png.ab 80f7bd644f25923ea14369b5482cb3f2 217
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/demo/skybox.mat.ab 370b26a1d448e5a46f422ebc90d28074 21
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/environment_1.fbx.ab 107c3db39c9221603b1d228629c8362d 339
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/grass_1.fbx.ab 673901c39ee7d03950bdb62091333ee1 9
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/grass_2.fbx.ab bf6492036b2b078105336e7e312b5d2d 14
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/mounting_1.fbx.ab 2ad000795d51d5b0357ae40f6fb0edb5 174
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/mounting_2.fbx.ab 4e92d2634cc492a67894af3c913fad66 172
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/mounting_3.fbx.ab b32e6559243ccb54575aa0256ae4fbec 54
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/plant_1.fbx.ab 4c2d227f002030e770cb1d7d64a621c6 12
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/plant_4.fbx.ab b15968fb2b7d6b0265ec50f423706906 10
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/rock_1.fbx.ab 948e53d2374721e95fe7cc6129eef022 9
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/rock_2.fbx.ab 4ddf3979b44ad8d86c1299c0fa418c62 10
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/rock_3.fbx.ab 787b74519859495233db334eea9a4b96 8
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/rock_4.fbx.ab 87397034053a676828085bc0ccf1a82d 10
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/rock_5.fbx.ab 93847675494362a65bdba514ad1061c2 10
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/rock_6.fbx.ab 6357f6143272f8d8c995b7eb49a57ec5 10
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/stone_1.fbx.ab 9c5aad0744590e19f7b14bcaeee36f5e 6
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/tree_3.fbx.ab 0fc9ebd267a82218fc95662a345e3cd4 67
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/environment_1.prefab.ab 1af9c6c16e2db062e93c3f6a2651e5ee 4
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/grass_1.prefab.ab 64e418180c5e6e435c9b6740f244971e 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/grass_2.prefab.ab b96c1652f6809a78df5421c0b12ccbca 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/mounting_1.prefab.ab 22f618334d773e9f33c384ee931f8549 4
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/mounting_2.prefab.ab d3dfba2a2d648fdf2d90fc8a2d81d2a2 4
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/mounting_3.prefab.ab ca3aa459362eb83479d78b7b0efa626d 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/plant_1.prefab.ab 3a2627ed7c423be50f85a54e8c2f294f 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/plant_4.prefab.ab 9b760352681efe7856587acd5cc73602 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/rock_1.prefab.ab 7c2138f83a26cd05d51bab16e6aa6e1e 4
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/rock_2.prefab.ab 4c2c62e699cd3fa85e2100295330d778 4
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/rock_3.prefab.ab 75c5505845f591017717253ee25ec704 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/rock_4.prefab.ab 35cfd152348d9d3118c49a1f8c369763 4
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/rock_5.prefab.ab a33ddf4bc62e251fce4f189b402b64cb 4
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/rock_6.prefab.ab 93febc04bd19a318ba6a4e3b58a3bc68 4
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/stone_1.prefab.ab a9f1565a004b1ca76ae5edc9c3cdc7f1 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/prefabs/tree_3.prefab.ab 8954032469b3f492d9d01eb294a7fba3 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_light.mat.ab 5d2c19b6a438eb35964502a237df223d 5
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab 7a4c369e17c832e051bf5ac899e010ad 5
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/book_09.fbx.ab a996db03e6c2c0a01ab5311697efaf61 11
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/bottle_05.fbx.ab a4ffde512ecb3a1116c2503db078dd93 14
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/box_02.fbx.ab bf9585eb5c7e0325e1fce497e6eb665a 26
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/candle_01.fbx.ab 05df8fff2349932156f6a916c6f30744 8
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/chair_05.fbx.ab b12e3a83380750d8258e556ab25ab24c 25
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/column_01.fbx.ab 376d1f585ac4192844dc7eff1b8f9110 10
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/ground_01.fbx.ab a6c7d44d18f023247aacf5a7be524611 6
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/ground_03.fbx.ab 597fe37705331bdfc1438e697abf33dd 12
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/jug_02.fbx.ab 7810d8e0b89fc68350655a3804657800 15
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/light_08.fbx.ab 71494b4f450956e14842bd891ac739f9 14
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/mud_04.fbx.ab 387d60ca48eba508438798daaed2d3f7 11
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/pot_01.fbx.ab 8fd8e68413110fbfef1cb82fca9902a9 42
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/rock_01.fbx.ab 1af9cb15407370f74d36b4908b44001d 9
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/table_01.fbx.ab e7ce4630fcc65c40919aad13d0868245 26
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/walldecor_05.fbx.ab 5bd81fa06bbb587ec51942d384ef6888 14
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/wall_27.fbx.ab c052dd23726d52f021c2edca9ff82683 63
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/wood_02.fbx.ab 38c8a845a7171bf809619fa528a2dd91 7
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/book_09.prefab.ab ba8195e255f7283c257126f61678b2f4 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/bottle_05.prefab.ab 5980451b77df51860cf349553523719a 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/box_02.prefab.ab 7d69cacb3930ab624d324b6c67835a28 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/candle_01.prefab.ab 94c3f6894ce805467e8e277c37cdf75c 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/chair_05.prefab.ab cbb43bed91b9473f8b48d8745eafca18 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/column_01.prefab.ab 30d76ff9d7d4eff227563e5eb7e8bc8f 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/ground_01.prefab.ab 49f25d5123d2c312d77df7b29ee1d756 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/ground_03.prefab.ab 7453a511cfa1c4de42b38b385c9a5d13 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/jug_02.prefab.ab 6d4ef5483b1fcc53a002ef7a7609fe03 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/light_08.prefab.ab e15914d46fba20ff5f8227b51baedfec 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/mud_04.prefab.ab 166f7621d02f08c234e6d5e0cc5aa8b3 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/particles_dust.prefab.ab b29270d840efaab40b8b56ab7546fb91 56
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/particles_pot.prefab.ab 6771b73bd517a425b6eb119c69ceb17b 56
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/pot_01.prefab.ab e68077e55d6cca459223958271938bd7 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/rock_01.prefab.ab 41e5da2a4cd349ff08a8769eef9e10e2 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/table_01.prefab.ab f2659fe4c8e4198526572e297e4cba76 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/walldecor_05.prefab.ab 3fc788b060ed832723ee248d64b7c734 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/wall_27.prefab.ab be5a91db9b4261053b8bc6f6d5fa9720 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/wood_02.prefab.ab a5b3a4b63c4e6d054906cb11a5385704 4
+AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/textures/lowpolydungeonslite_texture_01.png.ab d7188ba2246a1baecfe41eb492574e5c 66
+AssetBundle/Windows/assets/assetpacks/mini legion grunt pbr hp polyart/animations/die.anim.ab b77377de29890edd809b3fe3a8dbb5f3 8
+AssetBundle/Windows/assets/assetpacks/mini legion grunt pbr hp polyart/material/polyartstandard.mat.ab 3ac8d8c2009ab1cd930ef4810c635f21 3
+AssetBundle/Windows/assets/assetpacks/mini legion grunt pbr hp polyart/mesh/gruntpolyart.fbx.ab 884a9d1938b657578649936696552fbf 51
+AssetBundle/Windows/assets/assetpacks/mini legion grunt pbr hp polyart/textures/polyartstandard.png.ab 0ecbbdedb72814423b9085a2e4bcccf7 11
+AssetBundle/Windows/assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack1.anim.ab a941c0ee5f278d4acf0d9b2c90895125 25
+AssetBundle/Windows/assets/assetpacks/mini legion rock golem pbr hp polyart/animations/attack2.anim.ab 27fb190a0b24ac5bef1380fafb85aac6 30
+AssetBundle/Windows/assets/assetpacks/mini legion rock golem pbr hp polyart/animations/die.anim.ab 9772ff29f1b34f0cc407310c6e4cef3d 18
+AssetBundle/Windows/assets/assetpacks/mini legion rock golem pbr hp polyart/animations/gethit.anim.ab ea5bad459061c6557aab71f9f0009cf1 19
+AssetBundle/Windows/assets/assetpacks/mini legion rock golem pbr hp polyart/animations/idle.anim.ab 15ee68a04306ccc07a92dd0617043823 18
+AssetBundle/Windows/assets/assetpacks/mini legion rock golem pbr hp polyart/animations/walk.anim.ab b55c3e5a861a0e75c6e509c4251755e4 19
+AssetBundle/Windows/assets/assetpacks/mini legion rock golem pbr hp polyart/materials/polyartstandard.mat.ab 3cc8c607732630e10581f5a508a399e7 3
+AssetBundle/Windows/assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/golempolyart.fbx.ab 40a67d60c6b3ee31ffcdec3817178b2c 61
+AssetBundle/Windows/assets/assetpacks/mini legion rock golem pbr hp polyart/meshes/rockmesh.fbx.ab d97f555554e45201f6cffc5d5e09fc8c 11
+AssetBundle/Windows/assets/assetpacks/mini legion rock golem pbr hp polyart/textures/polyartstandard.png.ab a99984c25d0791094c33a7b8053fab29 11
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/materials/polyartdefault.mat.ab b335ff473ab611d779bf2acd73b47f40 4
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/meshes/slimepolyartmesh.fbx.ab 0a33eee9ae1a731b7b30374be1573e17 45
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/meshes/turtleshellpolyartmesh.fbx.ab 97576e63d76f46abb9a14e759097149e 55
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/textures/albedo.png.ab 9ee7d7cfcc875f191c7fd4cf0892bbfa 8
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/textures/emission.png.ab 4a1c1bebba96b44ff1654c220810dbf6 3
+AssetBundle/Windows/assets/assetpacks/rpghero/animations/dienpc.anim.ab 9d232ae96f730cc764786f287dde2702 9
+AssetBundle/Windows/assets/assetpacks/rpghero/animations/idle_swordshield.anim.ab 92027d477ec81ac2a3c5162e438e9bfd 17
+AssetBundle/Windows/assets/assetpacks/rpghero/materials/polyart.mat.ab cbf484dfd107fe5696d4e2fdf0bd9526 3
+AssetBundle/Windows/assets/assetpacks/rpghero/meshes/newfreerpgheropolyart.fbx.ab fa2eb036b378fb8ef17cd771ffc92de0 195
+AssetBundle/Windows/assets/assetpacks/rpghero/meshes/polyartshield.fbx.ab fd8b6b361ad81ad368f3c90c42475dae 21
+AssetBundle/Windows/assets/assetpacks/rpghero/meshes/polyartsword.fbx.ab 0268f4a0a1dbe789f0d857bdb7536319 13
+AssetBundle/Windows/assets/assetpacks/rpghero/textures/polyarttexture.png.ab f293f2387d24e244e9418b9bcf0f4ea3 5
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/materials/simplenaturepack_texture_01.mat.ab caf489784823c3bd4a85e54cb179bb78 5
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/branch_01.fbx.ab b184307dacd8c2fae826c6f022b84cd5 9
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/bush_01.fbx.ab 6317a6e3de0bee1e66e7d34cd858405b 11
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/bush_02.fbx.ab 4248ee461912db9a4f667220339cd500 11
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/bush_03.fbx.ab af20ac7698d40b607db2d1c865d8be62 42
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/flowers_01.fbx.ab 9a2828fcfb31dce1d9f1262ad35f3b1d 28
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/flowers_02.fbx.ab 39d3580245ed861be99fc054f1f9d59c 36
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/grass_01.fbx.ab 141774d7e52c6eaabd749e2f4d7fb8d0 15
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/grass_02.fbx.ab 2f815438dbba78bad0512a6b493b3411 10
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/ground_01.fbx.ab 5f93a99f1cb0144a0f458e2512d3c11c 24
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/ground_02.fbx.ab eda3a024ba1bac60d016ca907f8a3032 24
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/ground_03.fbx.ab e194ce3b6621bb0e53c69db78c4cb6b1 24
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/mushroom_01.fbx.ab 8819ed87504231ce20636190233a8d19 21
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/mushroom_02.fbx.ab dacee4ae4539f7309576545c3d5327ea 10
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/rock_01.fbx.ab 7709b11d0339438b04d5c97b7a71e762 7
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/rock_02.fbx.ab 6f519eb6b1d85be586cf6a308c827836 7
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/rock_03.fbx.ab 01c074c1aaec356676d8465ec716803f 7
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/rock_04.fbx.ab e6cc674cd179e1d36673a10d0b4aec73 7
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/rock_05.fbx.ab fd6bb3a56f0bd433b148fb0941a5db0d 8
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/stump_01.fbx.ab a47211d2b22fd1f723d6b270ac86f22a 13
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_01.fbx.ab f690a1b705530128de1a6517756060bd 33
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_02.fbx.ab 8e619078e91b43e15af9fcf90281fb00 30
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_03.fbx.ab 31351d92eade4fb85b8ad1de03955bb7 31
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_04.fbx.ab d772ef085d9999efd74da5f1e32ad861 30
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/models/tree_05.fbx.ab 08df01b3e358e46153c48b666d1294ab 18
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/branch_01.prefab.ab a4774c2551cb6a45e8504380b541c53c 9
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/bush_01.prefab.ab f3b0733e2716f569a3c7e641a3a2b428 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/bush_02.prefab.ab 4140197357edcc614c6e4b97dd2216ea 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/bush_03.prefab.ab ed5f660e44ef65baf94284bd01bd0cc7 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/flowers_01.prefab.ab cf6bb87f38cf6b60afec3e54beafc21c 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/flowers_02.prefab.ab 7d7010a163cd33d10848a038dd758bf9 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/grass_01.prefab.ab 5e602668142ad8bd5c3ba3cc17a2c9a5 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/grass_02.prefab.ab f82455eba8ebcbc428fb89a7f036cffe 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/ground_01.prefab.ab 93daf1f3711b0c6c0bc2521dc182feaa 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/ground_02.prefab.ab b5fe11efaa3c6618f88ed851e53c8e3e 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/ground_03.prefab.ab 176fa812e8a5ac76e6cf540bcdb59d8e 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/mushroom_01.prefab.ab 4b054bd40fc161c3f2b087c379babe84 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/mushroom_02.prefab.ab f7141fd265c6df62fc91bbffe71f78e4 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/rock_01.prefab.ab fb039fc11ef95856d4f5c53e0e15e1c9 7
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/rock_02.prefab.ab e448a9c1ef8fb68a3606a1b8bb21edf2 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/rock_03.prefab.ab 146c45b129856f3aeb6bb5881a5221c9 6
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/rock_04.prefab.ab ddce79e7aa07f5d66e2eceeae65e8007 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/rock_05.prefab.ab 62a27e56e975aca5f2bb7e6f9ed33951 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/stump_01.prefab.ab a208efe719dc43d7f5db8843ef2bcd4b 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/tree_01.prefab.ab 29b63acde61b8397e9a2f1c595da5cd3 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/tree_02.prefab.ab c81c32f64697da894542232715325c26 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/tree_03.prefab.ab e2a7bf661e5c03d45ae1ed4d01933f6c 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/tree_04.prefab.ab 5bdf88d29e51b0f8f21000c2f8bf275d 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/prefabs/tree_05.prefab.ab 01ced46771756311dc58dc2f4f9bb744 4
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/scenes/simplenaturepack_overviewsettings.lighting.ab 82fd4b5ac0bda6d67b69fa00446c64c6 2
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/textures/naturepacklite_texture_01.png.ab a78aaefe133b14c40b5379fea8b008e1 7
+AssetBundle/Windows/assets/resources/gamedata/attackeffect/forcestand.asset.ab 4ce6ca31663e83430f1ab2bea3131c5c 2
+AssetBundle/Windows/assets/resources/gamedata/attackeffect/repel.asset.ab 799586da3ae8592d2bb3b4508dd30090 2
+AssetBundle/Windows/assets/resources/gamedata/modifier/characterhealthdamageso.asset.ab e3e5faaa37d0ac811fd620b7dcdb207c 2
+AssetBundle/Windows/assets/resources/gamedata/modifier/characterhealthso.asset.ab 8eac1b4273193420ad9ea76fce391948 2
+AssetBundle/Windows/assets/resources/prefabs/character/golem.prefab.ab a57f804c8e67158b6860fe83507b6be1 11
+AssetBundle/Windows/assets/resources/prefabs/character/grunt.prefab.ab ee4899c2732635bd6978d7d7033e24e2 11
+AssetBundle/Windows/assets/resources/prefabs/character/npc.prefab.ab 86a96cf016983f6b06733cd34d813027 14
+AssetBundle/Windows/assets/resources/prefabs/character/slime.prefab.ab 5aa3a42930b6daaf1a50c9dc2cf67e5c 10
+AssetBundle/Windows/assets/resources/prefabs/character/turtle.prefab.ab 2ef6c85bd429cfe146061407f12cc62e 11
+AssetBundle/Windows/assets/resources/prefabs/manager/cameramanager.prefab.ab a849fbd355217d86abb0586658bcfe02 11
+AssetBundle/Windows/assets/resources/prefabs/manager/dialoguemanager.prefab.ab 6142b2097b240b95960bf34111bb90fa 3
+AssetBundle/Windows/assets/resources/prefabs/manager/monomanager.prefab.ab 2882d533ce723b25d8692b465d8361b8 3
+AssetBundle/Windows/assets/resources/prefabs/manager/monstermanager.prefab.ab 7e8d8c2603190de3ebb4fbe9dfa148dd 3
+AssetBundle/Windows/assets/resources/prefabs/manager/mousemanager.prefab.ab 1b68cddbc48a1de689f91aa9a8016a08 4
+AssetBundle/Windows/assets/resources/prefabs/manager/npcmanager.prefab.ab af07005f5629316183b12adba7d3b600 3
+AssetBundle/Windows/assets/resources/prefabs/manager/player.prefab.ab 3aaa55c09c57a2b9148f8f5fc197e9b3 16
+AssetBundle/Windows/assets/resources/prefabs/manager/portalmanager.prefab.ab 81453326d73ebbc9028eb059f0c4295a 4
+AssetBundle/Windows/assets/resources/prefabs/manager/questmanager.prefab.ab df591e2e7da28eb2674c980992a5393e 3
+AssetBundle/Windows/assets/resources/prefabs/particle/rockbreakparticle.prefab.ab 45cd41e0c4a9b781123eab555926c2dd 29
+AssetBundle/Windows/assets/resources/prefabs/portal/purpleportal.prefab.ab 305946e4797942c6ed65dec44668cfe8 5
+AssetBundle/Windows/assets/resources/prefabs/portal/redportal.prefab.ab de9c1d7c2798b9a11216d979126b5d31 5
+AssetBundle/Windows/assets/resources/prefabs/portal/yellowportal.prefab.ab a3185d8122a9d5993977ea578ddfbbd3 5
+AssetBundle/Windows/assets/resources/prefabs/ui/accordionui.prefab.ab 9eb00756ecff70aac9f010c395cf9bba 11
+AssetBundle/Windows/assets/resources/prefabs/ui/archiveui.prefab.ab 54f91b4b0687884fdc1f195024dc045e 10
+AssetBundle/Windows/assets/resources/prefabs/ui/eventsystem.prefab.ab f2f5a5c51c7c5f5c7f8270de8eae7ab2 4
+AssetBundle/Windows/assets/resources/prefabs/ui/healthbar.prefab.ab 1502dda60e8f6fc26096caa206d6963f 5
+AssetBundle/Windows/assets/resources/prefabs/ui/infotxtui.prefab.ab a279d268601d61aa5c512f0618de629f 4
+AssetBundle/Windows/assets/resources/prefabs/ui/inputactionui.prefab.ab 38f7cb64fb23c4144a6868df5406f038 7
+AssetBundle/Windows/assets/resources/prefabs/ui/optionbtnui.prefab.ab b254cc5bd9d543f15983f9f132752d92 10
+AssetBundle/Windows/assets/resources/prefabs/ui/overlaycanvas.prefab.ab a5ab5924ec26a9000742e2a793d9a453 4
+AssetBundle/Windows/assets/resources/prefabs/ui/progressui.prefab.ab 740131da8b703b154d3b8b74209843ca 5
+AssetBundle/Windows/assets/resources/prefabs/ui/questbtn.prefab.ab 6198370d4bd6fca3d633212f86523d2a 6
+AssetBundle/Windows/assets/resources/prefabs/ui/statetxt.prefab.ab f544d04b49730f5822d79674b0074f81 4
+AssetBundle/Windows/assets/resources/prefabs/ui/worldcanvas.prefab.ab 068d4e4fa0daf49596287647193c067c 4
+AssetBundle/Windows/assets/resources/prefabs/weapon/fist.prefab.ab bc1da3f89d86f4aa2cd181b9296d20e5 3
+AssetBundle/Windows/assets/resources/prefabs/weapon/ramonshield.prefab.ab c2910ea439adf4d6de7d09b19f1a8ecf 3
+AssetBundle/Windows/assets/resources/prefabs/weapon/ramonsword.prefab.ab 3fffa13ebd7e0d59ffe77514f204bdac 5
+AssetBundle/Windows/assets/resources/prefabs/weapon/rock.prefab.ab 35da65f630e570fffbc8db57c00d965c 5
+AssetBundle/Windows/assets/resources/prefabs/weapon/shield.prefab.ab 73c1dbd2d8ff09a0a1adf3511b1e3725 3
+AssetBundle/Windows/assets/resources/prefabs/weapon/sword.prefab.ab 358f2d908c59c7db989854077c2429eb 5
+AssetBundle/Windows/assets/resources/prefabs/worditem/apple.prefab.ab 639a0b9d408096521b3bf1df72859391 5
+AssetBundle/Windows/assets/resources/prefabs/worditem/mushroom1.prefab.ab e4b7285d69d781b87dd2ac65f5888230 5
+AssetBundle/Windows/assets/resources/prefabs/worditem/mushroom2.prefab.ab 54be0371636596140ceca229994a1e2c 5
+AssetBundle/Windows/assets/resources/prefabs/worditem/ramonshield.prefab.ab 6de61611a63f07d96d37e8103df1c3d9 4
+AssetBundle/Windows/assets/resources/prefabs/worditem/ramonsword.prefab.ab 4ae3cd935f9a051d528a0afdc9ca746c 4
+AssetBundle/Windows/assets/resources/prefabs/worditem/shield.prefab.ab 78af1cf9b9ef152b0009b4c417f0fb44 4
+AssetBundle/Windows/assets/resources/prefabs/worditem/sword.prefab.ab 5bd1e87932ca7ca1e9cdd68ab3686adc 5
+AssetBundle/Windows/assets/resources/scenes/sceneone/global volume profile.asset.ab f6dec9def270739d5f1571491345ce68 5
+AssetBundle/Windows/assets/resources/scenes/sceneone/navmesh.asset.ab 30a4a1521cf8986574afe2c003b45022 1251
+AssetBundle/Windows/assets/resources/scenes/scenethree/navmesh.asset.ab 5bb41170af2aa117f1e44f31c363431d 819
+AssetBundle/Windows/assets/resources/scenes/scenetwo/global volume profile.asset.ab 1bd7fe9d851ed0095e2a4abca5637a83 5
+AssetBundle/Windows/assets/resources/scenes/scenetwo/navmesh.asset.ab 1e4d4dd5aecf26af09a970d5b632eaaf 8
+AssetBundle/Windows/assets/resources/scenes/startscene/volume profile.asset.ab fadb872fdb3d73efa050eba543fe8d94 5
+AssetBundle/Windows/packages/com.unity.cinemachine/presets/noise/6d shake.asset.ab 2a7645cd4efb6a64c6f77a5729e9d094 3
+AssetBundle/Windows/packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab 6427fd956961d3d42f7b3347585f9e94 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/brown.14.mat.ab cd06e60de1e224c0f21a1d74224f6e8c 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/brown.15.mat.ab 4fa4a8010dfb2123c6038f5effc8b88d 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/brown.2.mat.ab c66d6785380fa8fd095e6f9e3f07bbdf 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/brown.8.mat.ab 4fa932978273b914b7c5bb0b5ad92292 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/gray.1.mat.ab 6dfe93ee702c10e3ebbf86492b2c8d6b 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/gray.2.mat.ab ef1325f893879b16f193411a8c237114 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/gray.3.mat.ab 0ce4c37d5227bbc5a79cd8d328a68c88 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/gray.4.mat.ab cefddd1b98a1648a9e989ae7c44478cc 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/green.12.mat.ab e46957a4811c2bb1041666e3b1f294b1 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/green.2.mat.ab e891401fa1bb4b05d813fd5ae2f766be 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/green.3.mat.ab 8cda38575aae6dc32af9f663fe9ad802 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/green.4.mat.ab 40e65f3b8800c2425cec333e2b5d5261 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/orange.1.mat.ab 866ef2abaa45f7abc837de7d11a5402d 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/orange.2.mat.ab fb22be8be63024e4c18f094408ff3c60 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/orange.3.mat.ab 2a9bd48c0889e7a4718b24cc66b56a32 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/yellow.2.mat.ab 20dc0e28f6e6051da182cbcef2d04f3c 3
+AssetBundle/Windows/assets/assetpacks/lowpoly environment pack/fbx/materials/yellow.3.mat.ab 6462717737c87a55d2d563226c2a5194 3
+AssetBundle/Windows/assets/assetpacks/occasoftware/low poly fantasy village/materials/color.mat.ab d89993a8846fa3969db87e5277fc99c5 4
+AssetBundle/Windows/assets/assetpacks/occasoftware/low poly fantasy village/materials/light.mat.ab 201ad766103a5f2d144c9cdbba3dec4c 4
+AssetBundle/Windows/assets/assetpacks/occasoftware/low poly fantasy village/meshes/village.fbx.ab d7f83bf23fb2ef23c2768258b6d77e3e 11981
+AssetBundle/Windows/assets/assetpacks/occasoftware/low poly fantasy village/textures/gradient.png.ab c1f910b57086ec2f2e002ad723145ecf 10
+AssetBundle/Windows/assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/materials/palette256bitsgradient.mat.ab 882a9dc8ba2db3a843c7e66fabb85f08 4
+AssetBundle/Windows/assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/apple_lp.fbx.ab ac0964e2b2ab40d8df6ce109fbfcd7da 12
+AssetBundle/Windows/assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/pear_lp.fbx.ab 2a7ba92fcda27fd6bad200fb5e8c2a33 13
+AssetBundle/Windows/assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/palettes/palette256bitsgradient.png.ab c55821d7775ec6977b64dc53aaf65488 10
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack01.anim.ab 6141ade3d095382463d2480c8cfdccc1 10
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/slime/attack02.anim.ab 1659cce773bb468b97734b58fdeec8a1 11
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/slime/die.anim.ab b259b3f51685ae0bee5a7fa32571725e 14
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/slime/gethit.anim.ab b41323af599d86533371fe3f9f92d5bf 10
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlebattle.anim.ab 1094c4df427d24a21f5888797ecac2ee 8
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/slime/idlenormal.anim.ab 82250a9fee1cacdc2b5dfa62f6888531 9
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/slime/runfwd.anim.ab d380f81b9b7435e0d344bd48afa55060 9
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/slime/walkfwd.anim.ab a5549ee7620eb59f349e995524afb412 9
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack01.anim.ab 1f51f7ba27ae41db8d944cf81bfd6bd3 18
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/attack02.anim.ab 1607b1e7706421cf6bc7bc915b2b31cb 17
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/die.anim.ab 099ae6e5283498951da2e9199ead779e 15
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/gethit.anim.ab bfb5b8f785030397848a13838a496e17 14
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlebattle.anim.ab f8c13fea2b70cd38aa91951a6cfc387c 14
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/idlenormal.anim.ab 0d650112dd198d081a7af51aa6e8f2d8 10
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/runfwd.anim.ab f7f43b19505312b295322a80b1bc5927 12
+AssetBundle/Windows/assets/assetpacks/rpg monster duo pbr polyart/animations/turtleshell/walkfwd.anim.ab 01a7c47a5ed2a442f7a00d284c98bc1f 12
+AssetBundle/Windows/assets/assetpacks/simple fantasy gui/png/character panel/nickname_slot.png.ab 95a7558f83626f1eaf1261ea50954f9d 7
+AssetBundle/Windows/assets/assetpacks/simple fantasy gui/png/icons/close_icon.png.ab 12ded3e58c1954605e13cf0de8e3fad3 7
+AssetBundle/Windows/assets/assetpacks/simple fantasy gui/png/icons/shield_icon.png.ab a12cb3d3fddf85930fb6909ccb96c4d1 6
+AssetBundle/Windows/assets/assetpacks/simple fantasy gui/png/icons/sword_icon.png.ab 02483f35f4a7eb7c9a2f7df466f1995f 6
+AssetBundle/Windows/assets/assetpacks/simple fantasy gui/png/inventory/inventory_slot.png.ab 775d3e0297879f1e88e69d2bfd7166d0 10
+AssetBundle/Windows/assets/assetpacks/simple fantasy gui/png/quest panel/crystal_icon.png.ab 489f5470503c1bffdf37ef2e984c8746 20
+AssetBundle/Windows/assets/assetpacks/simple fantasy gui/png/quest panel/reward_slot.png.ab 95ef460b3f8d0063ef2dc44f25c4c623 9
+AssetBundle/Windows/assets/assetpacks/simplenaturepack/scenes/simplenaturepack_demo/navmesh.asset.ab e083d0a1c1e31d07d5d6873b1661524d 120
+AssetBundle/Windows/assets/resources/gamedata/attack/player/playerattack1.asset.ab 1902582f5ba204e4e99903c31a41fea7 3
+AssetBundle/Windows/assets/resources/gamedata/attack/player/playerattack2.asset.ab 7ae255e994a646c7e0fbfd032dc57b40 3
+AssetBundle/Windows/assets/resources/gamedata/attack/player/playercombotemplate.asset.ab 865d5655c19712c8b5825a988a6c6352 2
+AssetBundle/Windows/assets/resources/prefabs/ui/itemui/hotitemui.prefab.ab e20688597e2d1070ca63f85240cae6dd 6
+AssetBundle/Windows/assets/resources/prefabs/ui/itemui/inventoryitemui.prefab.ab d27f9b7388acd9b97c62567619861d44 6
+AssetBundle/Windows/assets/resources/prefabs/ui/itemui/playerstateitemui.prefab.ab 68d6cdc062b28d549cc330522468f29d 6
+AssetBundle/Windows/assets/resources/prefabs/ui/itemui/rewarditemui.prefab.ab fcd997cca61dcb1af350b58a5a58e9dd 5
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/abupdatepanel.prefab.ab 3127c1f1777da6c025bb49b78d6c03ee 9
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/archivepanel.prefab.ab 67f48b6b2366d4eaeb2c61bb7310c88c 17
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/dialoguepanel.prefab.ab 2828eeecc0aeba9a13e6afe31f87b92e 10
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/diepanel.prefab.ab 8d83f5c07edbe7d73d943889eff9e4ae 11
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/effectpanel.prefab.ab 0c056d9ecb36a2fc3b840a57ffbad056 5
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/gameoverpanel.prefab.ab 4885c3784e395bfd1eeb911c50a9478c 12
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/hotinventorypanel.prefab.ab 99597fb857d38d8bdcc2a68189503bea 11
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/infopanel.prefab.ab 8b438b81b2561a91be8cf73acf56aaf3 5
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/inputactionpanel.prefab.ab 736217e445bfa20ff44aaad999c028b3 5
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/inventorypanel.prefab.ab 475b18e45662771d0a342b667e098140 12
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/itemdescription.prefab.ab e56e200b422238168128eb53913867cf 6
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/loadscenepanel.prefab.ab 9ebbd0e93de12e4172c15aa973a5608a 11
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/mousefollower.prefab.ab 9e6cb3255a12d23e442332841343fd5e 6
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/noticepanel.prefab.ab 746750a45b2679fead69e073553ef0bc 5
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/pausepanel.prefab.ab 853d820aa53b4663884b2dcc07a486c6 11
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/playerinfopanel.prefab.ab e6554c06f40eb9347600658d460d4c23 7
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/playerstatepanel.prefab.ab 0f2787771706d9217193001ebfadaa70 10
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/questpanel.prefab.ab 6176a517272520f69923cb9ad3cfe07c 19
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/startpanel.prefab.ab ceb3c6724fe2eecc9f11088da136924c 12
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/tippanel.prefab.ab c079a6a4083b17483d8e395c339ef86a 8
+AssetBundle/Windows/assets/resources/prefabs/ui/rendertexture/dieramonprofiletexture.rendertexture.ab 28ffe4a7bcc023363b0a0e2d214f5a0c 2
+AssetBundle/Windows/assets/resources/prefabs/ui/rendertexture/npcprofiletexture.rendertexture.ab 63aebf5ea3fbc1ebc6e13ec35ef319a9 2
+AssetBundle/Windows/assets/resources/prefabs/ui/rendertexture/playerprofiletexture.rendertexture.ab 3fa3d1ec9a546524768db0d04d5a8839 2
+AssetBundle/Windows/assets/resources/prefabs/ui/rendertexture/playertexture.rendertexture.ab 6a4158537d27c75addefbf367a751a43 2
+AssetBundle/Windows/packages/com.unity.inputsystem/inputsystem/plugins/playerinput/defaultinputactions.inputactions.ab 4e1f4eac78df9e37889c8eff1e19238b 8
+AssetBundle/Windows/assets/assetpacks/boxophobic/skybox cubemap extended/core/shaders/skybox cubemap extended.shader.ab c6326b1977ea02ab01a4424e61749340 20
+AssetBundle/Windows/assets/assetpacks/boxophobic/skybox cubemap extended/demo/materials/skybox cubemap extended day.mat.ab b488fdd64653eca326385b5bf43e8d44 3
+AssetBundle/Windows/assets/assetpacks/boxophobic/skybox cubemap extended/demo/materials/skybox cubemap extended night.mat.ab 6c0f7b9d116874d3a5945f5863f205f9 3
+AssetBundle/Windows/assets/assetpacks/boxophobic/skybox cubemap extended/demo/textures/polyverse skies - blue sky.png.ab 35aaa43b4506adb680cd4b5aaada3079 1140
+AssetBundle/Windows/assets/assetpacks/boxophobic/skybox cubemap extended/demo/textures/polyverse skies - night sky.exr.ab 523b9ed51b1031e64505bb8c27189e49 11288
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/golem/golemattack1.asset.ab eefaa9109e03b9b7e8cc1266b94c5681 3
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/golem/golemattack2.asset.ab babd35686f10b64ee1735bd2b249e30b 3
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/golem/golemcombotemplate1.asset.ab 96e78ffb84657cabc1faff2ea1787d57 2
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/golem/golemcombotemplate2.asset.ab a8c78176333794b4e294d46467cc3975 2
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/grunt/gruntattack1.asset.ab 0f777185b301b39bbd4fe61f7c220bbf 3
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/grunt/gruntattack2.asset.ab 7f04cddf7f079de483871f4d8e74cffd 3
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/grunt/gruntcombotemplate1.asset.ab a6afe4c9f7a134baf5d15dd09a7a6589 2
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/grunt/gruntcombotemplate2.asset.ab bec33cc6b1b5ac81974febe3b556a5c4 2
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/slime/slimeattack1.asset.ab 9d28f7c2c7321e5f52f67d74c617e32a 3
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/slime/slimeattack2.asset.ab 993fa89ef6c373f9219acbe7f2d4b8b9 3
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/slime/slimeattack3.asset.ab 1e6c99f77832890adcd6877e63619426 3
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/slime/slimeattack4.asset.ab 12b508b0b679f1d23e0733b2b54c2645 3
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/slime/slimecombotemplate1.asset.ab 705f0c272faffccb038c91b19c14ac42 2
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/slime/slimecombotemplate2.asset.ab c3aecfc327b4dadbbaae7c7fc78ce5e6 2
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/turtle/turtleattack1.asset.ab de74398e4d91651218608644512c1c4c 3
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/turtle/turtleattack2.asset.ab 9f640b19fd2d04ac574bed6374b62825 3
+AssetBundle/Windows/assets/resources/gamedata/attack/monster/turtle/turtlecombotemplate.asset.ab 66f11de1a95b1c9fb19b3f6571e233a8 2
+AssetBundle/Windows/assets/addons/samples/polybrush/1.1.8/shader examples (urp)/shader/lit vertex color urp.shadergraph.ab d2701ca2992cfb3549449c913f795a03 35
+

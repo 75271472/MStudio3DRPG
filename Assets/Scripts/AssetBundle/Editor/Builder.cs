@@ -1,3 +1,4 @@
+using Codice.Client.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,13 +10,16 @@ using UnityEngine;
 
 public static class Builder
 {
-#if UNITY_IOS
-    private const string PLATFORM = "iOS";
-#elif UNITY_ANDROID
-    private const string PLATFORM = "Android";
-#else
-    private const string PLATFORM = "Windows";
-#endif
+
+    // #if UNITY_IOS
+    //     private const string PLATFORM = "iOS";
+    // #elif UNITY_ANDROID
+    //     private const string PLATFORM = "Android";
+    // #else
+    //     private const string PLATFORM = "Windows";
+    // #endif
+
+    private static string Platform;
 
     // 收集打包设置文件的进度范围，x为开始进度，y为结束进度，范围为0-0.2
     public static readonly Vector2 collectRuleFileProgress = new Vector2(0, 0.2f);
@@ -141,29 +145,18 @@ public static class Builder
     /// </summary>
     public readonly static string DependencyPath_Binary = $"{TempPath}/Dependency.bytes";
 
-    #region Build MenuItem
-
-    [MenuItem("Tools/ResBuild/Windows")]
-    public static void BuildWindows()
+    /// <summary>
+    /// 由 BuildWindow 调用，修改打包平台
+    /// </summary>
+    /// <param name="platform">平台名称: Windows, Android, iOS</param>
+    public static void ChangePlatformByWindow(string platform)
     {
-        Build();
-    }
-
-    [MenuItem("Tools/ResBuild/Android")]
-    public static void BuildAndroid()
-    {
-        Build();
-    }
-
-    [MenuItem("Tools/ResBuild/iOS")]
-    public static void BuildIos()
-    {
-        Build();
+        Platform = platform;
     }
 
     public static void SwitchPlatform()
     {
-        string platform = PLATFORM;
+        string platform = Platform;
 
         switch (platform)
         {
@@ -206,12 +199,12 @@ public static class Builder
             buildPath += "/";
         }
         // 在buildPath后面添加平台名称，并确保路径以"/"结尾
-        buildPath += $"{PLATFORM}/";
+        buildPath += $"{Platform}/";
 
         return buildSetting;
     }
 
-    private static void Build()
+    public static void Build()
     {
         buildProfiler.Start();
 
@@ -245,7 +238,7 @@ public static class Builder
         buildManifestBundleProfiler.Start();
         BuildManifest();
         buildManifestBundleProfiler.Stop();
-        
+
         // 生成资源版本文件用于热更新检测
         GenerateABVersionFile();
 
@@ -263,19 +256,19 @@ public static class Builder
     {
         Debug.Log("正在生成热更新版本文件...");
         StringBuilder sb = new StringBuilder();
-        
+
         // 获取输出目录下所有的 .ab 文件
         string[] allFiles = Directory.GetFiles(buildPath, "*" + BUNDLE_SUFFIX, SearchOption.AllDirectories);
 
         foreach (string filePath in allFiles)
         {
             string normalizedPath = filePath.Replace("\\", "/");
-            
+
             // 获取相对于工程根目录的路径，或者至少包含 AssetBundles/ 这一段
             // 因为 HotUpdateManager 根据这个路径去拼接下载 URL
             int index = normalizedPath.IndexOf("AssetBundle");
             if (index == -1) continue;
-            
+
             string relativePath = normalizedPath.Substring(index);
             string md5 = MD5Mgr.GetABPackEncryptVersion(normalizedPath);
             long fileSize = new FileInfo(normalizedPath).Length;
@@ -672,7 +665,6 @@ public static class Builder
         // 清除进度条
         EditorUtility.ClearProgressBar();
     }
-    #endregion
 
     /// <summary>
     /// 打包AssetBundle
@@ -730,8 +722,8 @@ public static class Builder
             fileSet.Remove($"{path}{bundle}{BUNDLE_MANIFEST_SUFFIX}");
         }
         // 移除平台文件
-        fileSet.Remove($"{path}{PLATFORM}");
-        fileSet.Remove($"{path}{PLATFORM}{BUNDLE_MANIFEST_SUFFIX}");
+        fileSet.Remove($"{path}{Platform}");
+        fileSet.Remove($"{path}{Platform}{BUNDLE_MANIFEST_SUFFIX}");
         // 多线程并行处理，删除剩余的多余文件
         Parallel.ForEach(fileSet, ParallelOptions, File.Delete);
 

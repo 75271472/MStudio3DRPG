@@ -16,19 +16,24 @@ public class HotUpdateManager : BaseManager<HotUpdateManager>
     /// _sBaseUrl下载网址
     /// </summary>
 #if UNITY_EDITOR || UNITY_STANDALONE_WIN
-    public static string _sBaseUrl = "http://198.18.0.1/3DRPG_HTTP_HotUpdate_Server";
+    public static string _sBaseUrl = "http://127.0.0.1/3DRPG_HTTP_HotUpdate_Server";
 #elif UNITY_ANDROID
-    public static string _sBaseUrl = "http://198.18.0.1/3DRPG_HTTP_HotUpdate_Server";
+    public static string _sBaseUrl = "http://127.0.0.1/3DRPG_HTTP_HotUpdate_Server";
 #elif UNITY_IPHONE
-    public static string _sBaseUrl = "http://198.18.0.1/3DRPG_HTTP_HotUpdate_Server";
+    public static string _sBaseUrl = "http://127.0.0.1/3DRPG_HTTP_HotUpdate_Server";
 #endif
 
     private string _sABVersionName = "";
 
     /// <summary>
-    /// 本地版本信息缓存路径
+    /// 本地版本信息读取路径 (优先 PersistentDataPath, 其次 StreamingAssets)
     /// </summary>
     private string _sVersionLocalFilePath = "";
+
+    /// <summary>
+    /// 本地版本信息更新 (写入) 路径 (始终指向 PersistentDataPath)
+    /// </summary>
+    private string _sVersionUpdateFilePath = "";
 
     /// <summary>
     /// 同时下载的最大数量
@@ -65,9 +70,24 @@ public class HotUpdateManager : BaseManager<HotUpdateManager>
         string sPlatformStr = ABPackUtils.GetABPackPathPlatformStr();
         // AssetBundles/Windows/版本号
         _sABVersionName = sPlatformStr + ABPackUtils.sABVersionName;
-        _sVersionLocalFilePath = Application.persistentDataPath + _sABVersionName;
-        // 创建版本号文件夹 Assets/版本号
-        IOUtils.CreateDirectroryOfFile(_sVersionLocalFilePath);
+
+        // 强制写入路径始终指向可写区 PersistentDataPath
+        _sVersionUpdateFilePath = Application.persistentDataPath + _sABVersionName;
+        // 默认读取路径也指向可写区（用于检测是否已有热更新版本）
+        _sVersionLocalFilePath = _sVersionUpdateFilePath;
+
+        // 如果可写路径不存在版本文件（说明还未进行过热更），且 streamingAssets 路径中有资源，则从只读区读取初始版本
+        if (!File.Exists(_sVersionUpdateFilePath))
+        {
+            string streamingPath = Application.streamingAssetsPath + "/AssetBundle";
+            if (Directory.Exists(streamingPath))
+            {
+                _sVersionLocalFilePath = Application.streamingAssetsPath + _sABVersionName;
+            }
+        }
+
+        // 核心：在初始化阶段确保可写路径的文件父目录已被创建，以便后续 UpdateClientABInfo 能成功写入
+        IOUtils.CreateDirectroryOfFile(_sVersionUpdateFilePath);
     }
 
     /// <summary>
@@ -201,7 +221,7 @@ public class HotUpdateManager : BaseManager<HotUpdateManager>
         }
 
         // Notify that we found an update and its total size
-        OnFoundUpdateEvent?.Invoke(_nDownloadTotalSize / 1024.0f / 1024.0f); // IN MB
+        OnFoundUpdateEvent?.Invoke(_nDownloadTotalSize / 1024.0f); // IN KB
     }
 
     public void ConfirmDownload()
@@ -274,7 +294,7 @@ public class HotUpdateManager : BaseManager<HotUpdateManager>
                 obj_temp.sMd5, obj_temp.nSize.ToString()));
         }
 
-        IOUtils.CreatTextFile(_sVersionLocalFilePath, obj_sb.ToString());
+        IOUtils.CreatTextFile(_sVersionUpdateFilePath, obj_sb.ToString());
     }
 
     /// <summary>

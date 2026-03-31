@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 1069915117
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e76d874edbc05607c88a7b95fc9dc8e4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8e60ccea8c58324e69cb73a5f99cdacb
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e76d874edbc05607c88a7b95fc9dc8e4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 96c361b8a677cfe4482b42fafce265cd, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/Manager/MonoManager.prefab
+Dependencies: []

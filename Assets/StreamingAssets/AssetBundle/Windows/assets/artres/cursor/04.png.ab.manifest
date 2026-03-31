@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2873052867
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dd7509366a2d2cc91a9f15b51e550c93
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: dd7509366a2d2cc91a9f15b51e550c93
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/ArtRes/Cursor/04.png
+Dependencies: []

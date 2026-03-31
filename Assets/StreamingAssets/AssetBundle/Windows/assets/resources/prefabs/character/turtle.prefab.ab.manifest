@@ -1,0 +1,80 @@
+ManifestFileVersion: 0
+CRC: 2153090812
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bb0129504c3c1ca1e76772e76010a963
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bf6d8471ba17100294094c35cab2a712
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: bb0129504c3c1ca1e76772e76010a963
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 126b7e94d49ecfe4c8d6497f6709e488, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4294e9ec537526f4485b310a2bca8182, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1dc60d62db0e4404f8b91d86e3b0e327, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8d20094343170d5408c54dd4a35cc6fd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8dfb71a0e44fda748a2b5ff2028970bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c8d4d83ecd35171458b409bbc4303661, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ef135533effec2e4297eb7e14925d5c7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 534b725f96f73e244b1aad46e8895444, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c278899927e5bd647b79a059eb3c85dd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 32a647d32b3bbee42847196484676f6d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7594a34ab09dcb949b1820a1c02f9648, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 660bdc679d793ae4a96fcb7dbdc9697c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8907873234dbb544fba19a1267e72f17, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e477fe12ec31dc43b71c637f7f3e20f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 221
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: AttackComboList
+Assets:
+- Assets/Resources/Prefabs/Character/Turtle.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/animations/animators/enemyturtle.overridecontroller.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/materials/polyartdefault.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpg monster
+  duo pbr polyart/meshes/turtleshellpolyartmesh.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/gamedata/attack/monster/turtle/turtlecombotemplate.asset.ab

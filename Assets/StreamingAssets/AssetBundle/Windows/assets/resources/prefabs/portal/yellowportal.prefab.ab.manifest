@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 3733532621
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 35dd93b945eb3001ac6809f7458a988c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c54036844e51b38c9aa657d6eafa93eb
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 35dd93b945eb3001ac6809f7458a988c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 63e40c716e79ba343bffd5bd5c95215c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b8760819690411e4ca16ffab4d992044, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent
+Assets:
+- Assets/Resources/Prefabs/Portal/YellowPortal.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/materials/yellowpartal.mat.ab

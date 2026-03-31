@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 857822858
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0fc0ef0f6f31c9776096f1f50d8250ea
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 0fc0ef0f6f31c9776096f1f50d8250ea
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/DogKnight/Animations/DieRecover.anim
+Dependencies: []

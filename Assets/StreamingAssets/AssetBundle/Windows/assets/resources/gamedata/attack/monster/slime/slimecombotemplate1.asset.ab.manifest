@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 2543148490
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e4740bdc8f34654597e9f1e7d6954b82
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e22eca1505de47c4d3e33b0485aa12b1
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e4740bdc8f34654597e9f1e7d6954b82
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 660bdc679d793ae4a96fcb7dbdc9697c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ce11b6d208c105247ba61133149aba42, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/GameData/Attack/Monster/Slime/SlimeComboTemplate1.asset
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/gamedata/attack/monster/slime/slimeattack1.asset.ab

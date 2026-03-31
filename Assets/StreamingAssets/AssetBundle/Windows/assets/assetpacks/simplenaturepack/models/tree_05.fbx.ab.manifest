@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 3663306575
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e9022b7d71052e7f9e765a4950b61dab
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0282162fcb1192b504081a859b414c34
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e9022b7d71052e7f9e765a4950b61dab
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/SimpleNaturePack/Models/Tree_05.fbx
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab

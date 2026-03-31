@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3373875180
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d29380cc722d825a32db95ec56cc2dba
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a4b57b1a56d6b76d200651994ae0863
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d29380cc722d825a32db95ec56cc2dba
+HashAppended: 0
+ClassTypes:
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/SimpleNaturePack/Scenes/SimpleNaturePack_OverviewSettings.lighting
+Dependencies: []

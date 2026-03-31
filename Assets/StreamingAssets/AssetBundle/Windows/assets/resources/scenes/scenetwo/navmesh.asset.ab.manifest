@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3402271260
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 69d3783f374d9392ff5de8c44d63ec27
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bc28b7adf343c0b5d21b44ebc2703253
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 69d3783f374d9392ff5de8c44d63ec27
+HashAppended: 0
+ClassTypes:
+- Class: 238
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Scenes/SceneTwo/NavMesh.asset
+Dependencies: []

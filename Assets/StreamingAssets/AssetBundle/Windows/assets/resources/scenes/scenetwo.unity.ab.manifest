@@ -1,0 +1,158 @@
+ManifestFileVersion: 0
+CRC: 1814677864
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ab8f256598808f6379609101608b064a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 670df21938a4f2113935b44a570eea7c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ab8f256598808f6379609101608b064a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 126b7e94d49ecfe4c8d6497f6709e488, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3933ed0643506a941b3634d112751ba9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d0134299870a2a143b14818a601ca882, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4294e9ec537526f4485b310a2bca8182, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1dc60d62db0e4404f8b91d86e3b0e327, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8d20094343170d5408c54dd4a35cc6fd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8dfb71a0e44fda748a2b5ff2028970bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c8d4d83ecd35171458b409bbc4303661, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ef135533effec2e4297eb7e14925d5c7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 534b725f96f73e244b1aad46e8895444, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c278899927e5bd647b79a059eb3c85dd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e5ffc023358be94da09f7f2431922a2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b883790f2b2efbe4082dff2326ee72b6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 32a647d32b3bbee42847196484676f6d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7594a34ab09dcb949b1820a1c02f9648, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 63e40c716e79ba343bffd5bd5c95215c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 660bdc679d793ae4a96fcb7dbdc9697c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8907873234dbb544fba19a1267e72f17, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e477fe12ec31dc43b71c637f7f3e20f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ce11b6d208c105247ba61133149aba42, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b8760819690411e4ca16ffab4d992044, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 196
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 238
+  Script: {instanceID: 0}
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Scenes/SceneTwo.unity
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/materials/lowpolydungeonslite_main.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/models/book_09.fbx.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/book_09.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/bottle_05.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/box_02.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/candle_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/chair_05.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/column_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/ground_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/ground_03.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/jug_02.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/light_08.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/mud_04.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/particles_dust.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/particles_pot.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/pot_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/rock_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/table_01.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/wall_27.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/walldecor_05.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/prefabs/wood_02.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/piplinesettings/gamescene
+  lighting settings.lighting.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/character/grunt.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/prefabs/portal/purpleportal.prefab.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/scenes/scenetwo/global
+  volume profile.asset.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/resources/scenes/scenetwo/navmesh.asset.ab

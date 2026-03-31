@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4255363374
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fd9e351b3c3c51e8d9cf97f905ee6ed0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bc28b7adf343c0b5d21b44ebc2703253
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: fd9e351b3c3c51e8d9cf97f905ee6ed0
+HashAppended: 0
+ClassTypes:
+- Class: 238
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/SimpleNaturePack/Scenes/SimpleNaturePack_Demo/NavMesh.asset
+Dependencies: []

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3805754006
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a063c3a2e5ab01efe344aba736061c81
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a063c3a2e5ab01efe344aba736061c81
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/RPGHero/Animations/DieNPC.anim
+Dependencies: []

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1927391802
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5ff46b74a728f85492220810775c4486
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5ff46b74a728f85492220810775c4486
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/Attack02.anim
+Dependencies: []

@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 2279018055
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: eeee9789185a183008b1c5cc9c530e19
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 35046ff90300e934c39b27fcf3e7293c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: eeee9789185a183008b1c5cc9c530e19
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d21dcc2386d650c4597f3633c75a1f98, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.Timeline
+  ClassName: UnityEngine.Timeline.MarkerList
+- AssemblyName: Unity.Timeline
+  ClassName: UnityEngine.Timeline.TimelineAsset/EditorSettings
+Assets:
+- Assets/Animations/Timeline/ContinueDirectorTimeline.playable
+Dependencies: []

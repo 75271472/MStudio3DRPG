@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 2934708060
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 16cc671c336efe88ef2676f3f135be7f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 17a95a23d181433c6c1250a3e8e8e0bd
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 16cc671c336efe88ef2676f3f135be7f
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d21dcc2386d650c4597f3633c75a1f98, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2a16748d9461eae46a725db9776d5390, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.Timeline
+  ClassName: UnityEngine.Timeline.MarkerList
+- AssemblyName: Unity.Timeline
+  ClassName: UnityEngine.Timeline.TimelineAsset/EditorSettings
+- AssemblyName: Unity.Timeline
+  ClassName: UnityEngine.Timeline.TimelineClip
+Assets:
+- Assets/Animations/Timeline/ContinueGameDirectorTimeline.playable
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/dogknight/animations/runforwardbattle.anim.ab

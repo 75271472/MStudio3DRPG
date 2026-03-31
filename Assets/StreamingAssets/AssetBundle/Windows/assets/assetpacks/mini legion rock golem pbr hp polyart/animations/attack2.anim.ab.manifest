@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2443196728
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 07b52d9d5eb14334f9b4af2013634758
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 07b52d9d5eb14334f9b4af2013634758
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/Mini Legion Rock Golem PBR HP Polyart/Animations/Attack2.anim
+Dependencies: []

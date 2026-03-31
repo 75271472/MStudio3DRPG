@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 2839906985
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 902931d906d308da640c25e5ff267b6b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: aac42fbf05febc4792ecf6e13128e1b6
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 902931d906d308da640c25e5ff267b6b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 191918ff32061074eaf5b8eaebcb1765, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 534b725f96f73e244b1aad46e8895444, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/Weapon/RamonSword.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpghero/materials/polyart.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/rpghero/meshes/polyartsword.fbx.ab

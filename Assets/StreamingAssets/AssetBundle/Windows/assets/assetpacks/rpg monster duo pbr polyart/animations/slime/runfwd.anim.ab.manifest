@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 194579754
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: abc80d74b6a8d0e6a6674a724417d861
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: abc80d74b6a8d0e6a6674a724417d861
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/RPG Monster DUO PBR Polyart/Animations/Slime/RunFWD.anim
+Dependencies: []

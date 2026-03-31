@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1396622870
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f82f3eb11360063d4d7ef8ca48c82de5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f82f3eb11360063d4d7ef8ca48c82de5
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/RPGHero/Animations/Idle_SwordShield.anim
+Dependencies: []

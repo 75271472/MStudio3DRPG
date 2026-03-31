@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 3834689387
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cdfe33d6cab0697d047deb870e4b84ac
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 69009c31f764cefc3cb2117443f24879
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: cdfe33d6cab0697d047deb870e4b84ac
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: e991f4079c9be504eaed369b8cf51db1, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/GameData/Modifier/CharacterHealthDamageSO.asset
+Dependencies: []

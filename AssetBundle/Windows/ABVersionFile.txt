@@ -35,8 +35,8 @@ AssetBundle/Windows/assets/resources/scenes/scenethree.unity.ab 00cf7b9934207f21
 AssetBundle/Windows/assets/resources/scenes/scenethreesettings.lighting.ab 5654ab3da87d09562694a78fc4dfbef4 2
 AssetBundle/Windows/assets/resources/scenes/scenetwo.unity.ab cf996b90040914b5e0b56e9ff94a3915 3023
 AssetBundle/Windows/assets/resources/scenes/screenshot.unity.ab 95fe956d912ebde79708194b158a6f41 14
-AssetBundle/Windows/assets/resources/scenes/startscene.unity.ab 66392be8d94fdedef261730b63a06227 688
-AssetBundle/Windows/assets/resources/scenes/testscene.unity.ab 8e4fd2ee354f8258e83fa35369e42b06 129
+AssetBundle/Windows/assets/resources/scenes/startscene.unity.ab 672fd7fd6c275dd03e2f097981c13c3c 686
+AssetBundle/Windows/assets/resources/scenes/testscene.unity.ab 2b21eed9436a299046554ea4a835faa9 129
 AssetBundle/Windows/packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab 5e42bd3361d8995c600802af4e09b63b 37
 AssetBundle/Windows/assets/artres/bar/expbar/expbar.png.ab e4131265e04494415649fce9014f9287 5
 AssetBundle/Windows/assets/artres/bar/expbar/expbarbg.png.ab de649a8c63218b1c9f4edb18c2b35fde 5
@@ -334,7 +334,7 @@ AssetBundle/Windows/assets/resources/prefabs/ui/itemui/hotitemui.prefab.ab e2068
 AssetBundle/Windows/assets/resources/prefabs/ui/itemui/inventoryitemui.prefab.ab d27f9b7388acd9b97c62567619861d44 6
 AssetBundle/Windows/assets/resources/prefabs/ui/itemui/playerstateitemui.prefab.ab 68d6cdc062b28d549cc330522468f29d 6
 AssetBundle/Windows/assets/resources/prefabs/ui/itemui/rewarditemui.prefab.ab fcd997cca61dcb1af350b58a5a58e9dd 5
-AssetBundle/Windows/assets/resources/prefabs/ui/panel/abupdatepanel.prefab.ab 3127c1f1777da6c025bb49b78d6c03ee 9
+AssetBundle/Windows/assets/resources/prefabs/ui/panel/abupdatepanel.prefab.ab 046076070a8251f35c104301fe452272 9
 AssetBundle/Windows/assets/resources/prefabs/ui/panel/archivepanel.prefab.ab 67f48b6b2366d4eaeb2c61bb7310c88c 17
 AssetBundle/Windows/assets/resources/prefabs/ui/panel/dialoguepanel.prefab.ab 2828eeecc0aeba9a13e6afe31f87b92e 10
 AssetBundle/Windows/assets/resources/prefabs/ui/panel/diepanel.prefab.ab 8d83f5c07edbe7d73d943889eff9e4ae 11

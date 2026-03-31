@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 2235096615
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c71f59a13b6257ee651be17b3f027310
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5e762ccb57c4caaabbb5a4199ac82c23
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c71f59a13b6257ee651be17b3f027310
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/Ground.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/addons/samples/polybrush/1.1.8/shader
+  examples (urp)/shader/lit vertex color urp.shadergraph.ab

@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 3867097874
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f84b013033792963f3fd3bfd7e95f803
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e21ab3358f91b0f297e0c6014d9da16b
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f84b013033792963f3fd3bfd7e95f803
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: ce11b6d208c105247ba61133149aba42, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: AttackEffectInfo
+Assets:
+- Assets/Resources/GameData/Attack/Monster/Turtle/TurtleAttack2.asset
+Dependencies: []

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 607236937
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e3c3d5409c60159c24e7f143f356a6ed
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e3c3d5409c60159c24e7f143f356a6ed
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/Mini Legion Grunt PBR HP Polyart/Animations/Die.anim
+Dependencies: []

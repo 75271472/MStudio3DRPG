@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3556211297
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2a948bc95971465d765f8257565e85a1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2a948bc95971465d765f8257565e85a1
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/DogKnight/Animations/Dizzy.anim
+Dependencies: []

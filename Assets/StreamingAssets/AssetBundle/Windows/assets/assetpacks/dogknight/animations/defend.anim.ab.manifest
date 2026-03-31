@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 188017414
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b6a762f790fcf5597077cf93ef74598b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 958b54fb77cc0a35b3bf79f07d0e96ea
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b6a762f790fcf5597077cf93ef74598b
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/DogKnight/Animations/Defend.anim
+Dependencies: []

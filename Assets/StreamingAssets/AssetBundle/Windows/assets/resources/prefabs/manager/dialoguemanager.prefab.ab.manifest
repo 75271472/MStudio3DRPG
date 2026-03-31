@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 3316298908
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 181bb91f66d3511eee30449e0debba16
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8406abe1c6acd243a86c6d83a0834e75
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 181bb91f66d3511eee30449e0debba16
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: e16cee26307ecb1488f8238c8fe4f5e7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 89e45dd440467ed4aaf7e647dd931158, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2abf28281a8807c428cbef7161a2de6c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/Manager/DialogueManager.prefab
+Dependencies: []

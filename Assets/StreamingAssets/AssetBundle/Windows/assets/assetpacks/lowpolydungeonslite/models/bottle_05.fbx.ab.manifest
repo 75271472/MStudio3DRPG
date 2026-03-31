@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 4039490252
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a0963fced85228294232a58fb61dcdb1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 134b7874faf1e4f485ed3c5a681e862b
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a0963fced85228294232a58fb61dcdb1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/LowPolyDungeonsLite/Models/Bottle_05.fbx
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/packages/com.unity.render-pipelines.universal/runtime/materials/lit.mat.ab

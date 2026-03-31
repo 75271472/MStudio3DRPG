@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4173634897
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a6530f598a64f030e3b58cf2fccf56f5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a6530f598a64f030e3b58cf2fccf56f5
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/Mini Legion Grunt PBR HP Polyart/Textures/PolyartStandard.png
+Dependencies: []

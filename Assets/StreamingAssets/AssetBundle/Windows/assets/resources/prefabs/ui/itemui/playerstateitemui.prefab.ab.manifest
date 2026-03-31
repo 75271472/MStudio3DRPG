@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 321191442
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 043a3db26d3f41e30d3cf72bbbd433c3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a4f7b5171eb84613df40a5daf8e8787
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 043a3db26d3f41e30d3cf72bbbd433c3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 904403b20b570074bbddf5465c3977c0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Resources/Prefabs/UI/ItemUI/PlayerStateItemUI.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/font/high-jinks-1.otf.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/cryo's mini
+  gui/gui/gui_1x.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simple fantasy
+  gui/png/icons/sword_icon.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/simple fantasy
+  gui/png/inventory/inventory_slot.png.ab

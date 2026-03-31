@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 3498480142
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a10285296a7342c083ea5ed1e0ccd6c4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5e762ccb57c4caaabbb5a4199ac82c23
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a10285296a7342c083ea5ed1e0ccd6c4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/LowPoly Environment Pack/FBX/Materials/Yellow.3.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab

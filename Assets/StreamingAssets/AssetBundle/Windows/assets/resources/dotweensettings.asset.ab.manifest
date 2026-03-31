@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 1312481750
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c727bcaa846c14e0f3e28c5c2642df72
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7a8cd312dc918800ce57e935bb9cdd9a
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c727bcaa846c14e0f3e28c5c2642df72
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 16995157, guid: a811bde74b26b53498b4f6d872b09b6d, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: DOTween
+  ClassName: DG.Tweening.Core.DOTweenSettings/ModulesSetup
+- AssemblyName: DOTween
+  ClassName: DG.Tweening.Core.DOTweenSettings/SafeModeOptions
+Assets:
+- Assets/Resources/DOTweenSettings.asset
+Dependencies: []

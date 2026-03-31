@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 618133747
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5e609b19b474379bef5d4715ea9631ca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 06ecde3fece179f784be869ed4fb3a22
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5e609b19b474379bef5d4715ea9631ca
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9a7a61152dda8e94b9155b295eaf98d4, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Resources/Prefabs/UI/HealthBar.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/bar/healthbarbg.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/bar/healthbareffect.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/bar/monster/healthbar.png.ab

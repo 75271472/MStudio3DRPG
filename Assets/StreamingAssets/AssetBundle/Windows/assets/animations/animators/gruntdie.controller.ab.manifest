@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 543479912
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 30b5e4dade33921b54f155c90ac2b2eb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 147058da82bee871bbce28e472030442
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 30b5e4dade33921b54f155c90ac2b2eb
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Animations/Animators/GruntDie.controller
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/mini legion
+  grunt pbr hp polyart/animations/die.anim.ab

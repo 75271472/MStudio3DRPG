@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2726159397
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 10840a9b11f22a2cee3be09f3cbaac7f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 10840a9b11f22a2cee3be09f3cbaac7f
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/LowPolyDungeonsLite/Materials/LowPolyDungeonsLite_MAIN.mat
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/lowpolydungeonslite/textures/lowpolydungeonslite_texture_01.png.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/packages/com.unity.render-pipelines.universal/shaders/lit.shader.ab

@@ -1,0 +1,39 @@
+ManifestFileVersion: 0
+CRC: 99123235
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ba96b0b3fe2ffe45519a3747658c21c4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6070b773557c55994f10b39ecf52036e
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ba96b0b3fe2ffe45519a3747658c21c4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Resources/Prefabs/UI/InfoTxtUI.prefab
+Dependencies:
+- "E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/artres/font/\u6C49\u4EEA\u8D85\u7EA7\u6218\u7532.ttf.ab"

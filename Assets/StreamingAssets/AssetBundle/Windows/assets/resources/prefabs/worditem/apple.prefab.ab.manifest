@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 1241349584
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 98e149bc0c7bdb4d0a9e9af9e478e90e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b5bcfcb0233cc1ab16f71f8f0baf6080
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 98e149bc0c7bdb4d0a9e9af9e478e90e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: c133baeea99ae4b42953f1b5d9989361, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/WordItem/Apple.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/materials/palette256bitsgradient.mat.ab
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/assets/assetpacks/resilientlogicgames/fruitslowpolypacklite/models/apple_lp.fbx.ab

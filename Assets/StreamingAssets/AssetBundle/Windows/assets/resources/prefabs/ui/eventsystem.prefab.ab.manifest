@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 1303740426
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a5540ad7f7ff63871c017716ad1a3e3f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b6f67ac120ed3f75dd4e3e1684982414
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a5540ad7f7ff63871c017716ad1a3e3f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 39fa3d8997a24136984ca6e2c99902bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/UI/EventSystem.prefab
+Dependencies:
+- E:/UnityProject/MStudio3DRPG/AssetBundle/Windows/packages/com.unity.inputsystem/inputsystem/plugins/playerinput/defaultinputactions.inputactions.ab

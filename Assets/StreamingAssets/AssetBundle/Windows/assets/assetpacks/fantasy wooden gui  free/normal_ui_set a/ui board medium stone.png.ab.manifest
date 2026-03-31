@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4194167010
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 15e5ce7fc3401f27906755fcb47c9c7a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 15e5ce7fc3401f27906755fcb47c9c7a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium stone.png
+Dependencies: []

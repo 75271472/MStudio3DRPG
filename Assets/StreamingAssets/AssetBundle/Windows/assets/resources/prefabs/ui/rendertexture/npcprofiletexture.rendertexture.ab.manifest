@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 246194251
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: de0564513381aefc3ff14ad4be98a638
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d9da41d144468ef771ac0bfebf61c5d
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: de0564513381aefc3ff14ad4be98a638
+HashAppended: 0
+ClassTypes:
+- Class: 84
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Prefabs/UI/RenderTexture/NPCProfileTexture.renderTexture
+Dependencies: []

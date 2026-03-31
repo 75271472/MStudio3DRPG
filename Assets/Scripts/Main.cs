@@ -10,13 +10,13 @@ public class Main : MonoBehaviour
     private void Start()
     {
         Debug.Log("【Main】游戏入口启动，开始热更新检测...");
-        
+
         // 注册事件
         HotUpdateManager.Instance.OnFoundUpdateEvent += OnFoundUpdate;
         HotUpdateManager.Instance.OnUpdateProgressEvent += OnUpdateProgress;
         HotUpdateManager.Instance.OnUpdateErrorEvent += OnUpdateError;
         HotUpdateManager.Instance.OnHotUpdateComplete += OnHotUpdateCompleted;
-        
+
         // 显示正在检测
         if (updatePanel != null)
         {
@@ -31,10 +31,10 @@ public class Main : MonoBehaviour
     private void OnFoundUpdate(float totalSizeMB)
     {
         if (updatePanel == null) return;
-        
-        updatePanel.SetTipTxt($"发现新版本资源，共计 {totalSizeMB:F2} MB，是否下载？");
+
+        updatePanel.SetTipTxt($"发现新版本资源，共计 {totalSizeMB:F2} KB，是否下载？");
         updatePanel.ShowBtnGroupForSelectUpdate();
-        
+
         updatePanel.OnUpdateSelectEvent = (isUpdate) =>
         {
             if (isUpdate)
@@ -54,7 +54,7 @@ public class Main : MonoBehaviour
     private void OnUpdateProgress(float progress)
     {
         if (updatePanel == null) return;
-        
+
         updatePanel.UpdateProgress(progress);
         updatePanel.SetTipTxt($"正在下载更新... {(progress * 100):F1}%");
     }
@@ -62,10 +62,10 @@ public class Main : MonoBehaviour
     private void OnUpdateError()
     {
         if (updatePanel == null) return;
-        
+
         updatePanel.SetTipTxt("网络连接异常，是否重试获取？");
         updatePanel.ShowBtnGroupForRetry();
-        
+
         updatePanel.OnRetrySelectEvent = (isRetry) =>
         {
             if (isRetry)
@@ -84,13 +84,13 @@ public class Main : MonoBehaviour
     private void OnHotUpdateCompleted()
     {
         Debug.Log("【Main】接收到热更新完成信号，准备显示初始UI面板。");
-        
+
         if (updatePanel != null)
         {
             updatePanel.SetTipTxt("资源准备完毕！");
             updatePanel.ShowBtnGroupForComplete();
             updatePanel.UpdateProgress(1f);
-            
+
             updatePanel.OnCompletedEvent = () =>
             {
                 updatePanel.HideMe();

@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1509648395
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a05c85e8fa6e683fe69b297af6b88f1e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a05c85e8fa6e683fe69b297af6b88f1e
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetPacks/Simple Fantasy GUI/PNG/Quest Panel/Reward_Slot.png
+Dependencies: []

@@ -10,6 +10,7 @@ public class ABUpdatePanel : BasePanel
     [SerializeField] private Button cancelBtn;
     [SerializeField] private Transform btnGroup;
     [SerializeField] private Transform progressGroup;
+    [SerializeField] private Transform panelBk;
 
     public UnityAction<bool> OnUpdateSelectEvent;
     public UnityAction<bool> OnRetrySelectEvent;
@@ -20,6 +21,8 @@ public class ABUpdatePanel : BasePanel
         gameObject.SetActive(true);
         SetActiveBtnGroup(false);
         progressGroup.gameObject.SetActive(false);
+
+        ExtensionTool.UpdateUI(panelBk);
     }
 
     public override void HideMe() 
@@ -32,12 +35,16 @@ public class ABUpdatePanel : BasePanel
     public void SetTipTxt(string tipStr)
     {
         tipTxt.text = tipStr;
+
+        ExtensionTool.UpdateUI(panelBk);
     }
 
     public void ShowBtnGroupForSelectUpdate()
     {
         progressGroup.gameObject.SetActive(false);
         SetActiveBtnGroup(true);
+
+        ExtensionTool.UpdateUI(panelBk);
 
         sureBtn.onClick.RemoveAllListeners();
         cancelBtn.onClick.RemoveAllListeners();
@@ -57,6 +64,8 @@ public class ABUpdatePanel : BasePanel
         progressGroup.gameObject.SetActive(false);
         SetActiveBtnGroup(true);
 
+        ExtensionTool.UpdateUI(panelBk);
+
         sureBtn.onClick.RemoveAllListeners();
         cancelBtn.onClick.RemoveAllListeners();
 
@@ -74,6 +83,9 @@ public class ABUpdatePanel : BasePanel
     {
         SetActiveBtnGroup(false);
         progressGroup.gameObject.SetActive(true);
+
+        ExtensionTool.UpdateUI(panelBk);
+
         UpdateProgress(0);
     }
 
@@ -88,6 +100,8 @@ public class ABUpdatePanel : BasePanel
         SetActiveBtnGroup(true);
 
         cancelBtn.gameObject.SetActive(false);
+
+        ExtensionTool.UpdateUI(panelBk);
 
         sureBtn.onClick.RemoveAllListeners();
         sureBtn.onClick.AddListener(() =>
