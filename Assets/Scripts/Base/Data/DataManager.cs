@@ -179,11 +179,6 @@ public class DataManager : BaseManager<DataManager>
         LoadConditionBindingMap();
         LoadConditionDialoguePieceMap();
 
-        if (MonoManager.Instance.IsDebug)
-        {
-            LoadPlayerData(1);
-        }
-
         Debug.Log(Application.persistentDataPath);
     }
 

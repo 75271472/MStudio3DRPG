@@ -30,7 +30,7 @@ public class InventoryController : MonoBehaviour
 
     // 两个面板都不开启情况下isPanelOpen = false
     // 两个面板有一个开启情况下，isPanelOpen = true
-    private bool IsPanelOpen => InventoryPanel.isActiveAndEnabled || 
+    public bool IsPanelOpen => InventoryPanel.isActiveAndEnabled || 
         PlayerStatePanel.isActiveAndEnabled;
 
     /// <summary>
@@ -67,7 +67,8 @@ public class InventoryController : MonoBehaviour
 
         ItemPickUp.ItemPickUpInit(this);
 
-        InputManager.Instance.OnOpenBagEvent += SwitchPanel;
+        InputManager.Instance.OnOpenBagEvent += () => 
+            UIManager.Instance.ShowPanel<BagTaskPanel>().ToggleBag();
         // 接受任务时，检查仓库中的所有物品
         QuestManager.Instance.OnStartQusetEvent += (Quest) =>
             OnCheckInventoryHandler();
@@ -76,7 +77,7 @@ public class InventoryController : MonoBehaviour
         InventoryData.UpdateInventory();
     }
 
-    private void SwitchPanel()
+    public void SwitchPanel()
     {
         if (IsPanelOpen)
         {

@@ -54,10 +54,11 @@ public class QuestController : MonoBehaviour
         //PrepareData();
         PrepareUI();
 
-        InputManager.Instance.OnOpenQuestEvent += SwitchPanel;
+        InputManager.Instance.OnOpenQuestEvent += () => 
+            UIManager.Instance.ShowPanel<BagTaskPanel>().ToggleTask();
     }
 
-    private void SwitchPanel()
+    public void SwitchPanel()
     {
         print("Switch Panel");
 

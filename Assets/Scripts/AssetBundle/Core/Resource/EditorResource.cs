@@ -5,13 +5,13 @@ using UnityEngine;
 using UnityEngine.XR;
 using Object = UnityEngine.Object;
 
-// µ÷ÊÔÄ£Ê½ÏÂ£¬²»Í¨¹ıAB°ü£¬Ö±½Ó¼ÓÔØ×ÊÔ´£¬
+// è°ƒè¯•æ¨¡å¼ä¸‹ï¼Œä¸é€šè¿‡ABåŒ…ï¼Œç›´æ¥åŠ è½½èµ„æºï¼Œ
 public class EditorResource : AResource
 {
     public override bool keepWaiting => !done;
 
     /// <summary>
-    /// ¼ÓÔØ×ÊÔ´Ç°µÄ×¼±¾¹¤×÷£¬ÅĞ¶Ïurl
+    /// åŠ è½½èµ„æºå‰çš„å‡†æœ¬å·¥ä½œï¼Œåˆ¤æ–­url
     /// </summary>
     /// <exception cref="ArgumentException"></exception>
     internal override void Load()
@@ -23,7 +23,7 @@ public class EditorResource : AResource
     }
 
     /// <summary>
-    /// ¼ÓÔØ×ÊÔ´
+    /// åŠ è½½èµ„æº
     /// </summary>
     internal override void LoadAsset()
     {

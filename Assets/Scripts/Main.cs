@@ -76,7 +76,8 @@ public class Main : MonoBehaviour
             }
             else
             {
-                Application.Quit();
+                updatePanel.HideMe();
+                TryShowStartPanel();
             }
         };
     }

@@ -9565,6 +9565,10 @@ PrefabInstance:
       propertyPath: monoList.Array.data[7]
       value: 
       objectReference: {fileID: 316940463}
+    - target: {fileID: 8540161729102825301, guid: 07d85ac27271c5542a2831d685240a44, type: 3}
+      propertyPath: <IsDebug>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

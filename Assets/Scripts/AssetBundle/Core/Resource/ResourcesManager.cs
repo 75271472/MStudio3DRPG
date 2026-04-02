@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Resources;
+#if UNITY_EDITOR
 using UnityEditor.Experimental;
+#endif
 using UnityEngine;
 
 public class ResourcesManager : BaseManager<ResourcesManager>
@@ -214,6 +216,31 @@ public class ResourcesManager : BaseManager<ResourcesManager>
         {
             searchTarget = "/" + searchTarget;
         }
+
+#if UNITY_EDITOR
+        if (isEditor)
+        {
+            // 假设传入的 path 是 UI/Panels/LoginPanel，
+            // 这句代码会把最后的 LoginPanel 提取出来作为搜索关键字。
+            string fileName = Path.GetFileNameWithoutExtension(path);
+            // 在整个工程的 Assets 目录中搜索名字包含 LoginPanel 的所有资源。
+            // 这个方法返回的是一堆匹配资源的 GUID（全局唯一标识符）数组，而不是直接的路径
+            string[] guids = UnityEditor.AssetDatabase.FindAssets(fileName);
+            foreach (var guid in guids)
+            {
+                // 通过GUID获取真实路径：Assets/Project/UI/Panels/LoginPanel.prefab
+                string assetPath = UnityEditor.AssetDatabase.GUIDToAssetPath(guid);
+                // 去除后缀名
+                string assetPathNoExt = Path.ChangeExtension(assetPath, null);
+                // 判断路径后缀是否与path相同
+                if (assetPathNoExt.EndsWith(searchTarget, StringComparison.OrdinalIgnoreCase))
+                {
+                    shortPathMapping[path] = assetPath;
+                    return assetPath;
+                }
+            }
+        }
+#endif
 
         foreach (var url in ResourceBunldeDic.Keys)
         {

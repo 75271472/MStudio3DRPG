@@ -7,6 +7,15 @@ public class PlayerInfoPanel : BasePanel
     [field: SerializeField] public ValueBar ExpBar { get; set; }
     [field: SerializeField] public Text ExpTxt { get; set; }
     [field: SerializeField] public Text LevelTxt { get; set; }
+    [field: SerializeField] public Button BagTaskBtn { get; set; }
+
+    public override void ShowMe()
+    {
+        base.ShowMe();
+        BagTaskBtn.onClick.RemoveAllListeners();
+        BagTaskBtn.onClick.AddListener(() => UIManager.Instance.ShowPanel<BagTaskPanel>().
+            ToggleBag());
+    }
 
     public void HealthBarInit(int currentHealth, int maxHealth)
     {
@@ -35,5 +44,10 @@ public class PlayerInfoPanel : BasePanel
     public void UpdateLevelTxt(int currentLevel)
     {
         LevelTxt.text = currentLevel.ToString("00");
+    }
+
+    protected void ButtonOnClicked()
+    {
+        UIManager.Instance.ShowPanel<BagTaskPanel>().ToggleBag();
     }
 }

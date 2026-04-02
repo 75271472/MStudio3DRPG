@@ -21,7 +21,11 @@ public class ResourcesInit : BaseManager<ResourcesInit>
         // 平台路径拼接
         PrefixPath += $"/{Platform}";
 
-        ResourcesManager.Instance.Initialize(Platform, GetFileUrl, false, 0);
+        bool isEditor = false;
+#if UNITY_EDITOR
+        isEditor = MonoManager.Instance.IsDebug;
+#endif
+        ResourcesManager.Instance.Initialize(Platform, GetFileUrl, isEditor, 0);
 
         hasInit = true;
     }
