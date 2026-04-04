@@ -22,9 +22,8 @@ public class InventoryController : MonoBehaviour
     // 此时OnUnloadEvent中传入的itemInfo为空，StateItemUI中的物品已被卸下后
     // 执行该回调
         OnUnloadEvent;
-
-    [SerializeField] private List<InventoryItemInfo> itemInfoList =
-        new List<InventoryItemInfo>();
+    // 新增：当有新物品成功添加到背包时触发
+    public event Action<IndexInfo> OnItemAddedEvent;
 
     private int currentDraggedItemIndex = -1;
 
@@ -43,6 +42,7 @@ public class InventoryController : MonoBehaviour
         OnUnloadEvent = null;
         OnCheckItemEvent = null;
         OnRemoveItemEvent = null;
+        OnItemAddedEvent = null;
 
         this.Character = character;
 
@@ -106,7 +106,7 @@ public class InventoryController : MonoBehaviour
     {
         InventoryData.InventoryDataInit();
         InventoryData.OnInventoryUpdatedEvent += UpdateInventoryPanel;
-
+        InventoryData.OnItemAddedToIndexEvent += HandleItemAddedToIndex;
         // 测试代码
         //InventoryData.ClearItem();
 
@@ -329,6 +329,18 @@ public class InventoryController : MonoBehaviour
             return EInventoryPanel.Inventory;
 
         return EInventoryPanel.PlayerState;
+    }
+
+    /// <summary>
+    /// 将全局下标转换为 Panel下标，并分发给外部UI/红点系统
+    /// </summary>
+    private void HandleItemAddedToIndex(int globalIndex)
+    {
+        EInventoryPanel panelType = GetPanelTypeByIndex(globalIndex);
+        int indexInPanel = GetPanelIndex(globalIndex);
+
+        IndexInfo indexInfo = new IndexInfo(panelType, indexInPanel);
+        OnItemAddedEvent?.Invoke(indexInfo);
     }
 
     private BaseInventoryPanel GetPanel(IndexInfo indexInfo)

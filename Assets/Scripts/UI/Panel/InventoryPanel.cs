@@ -50,6 +50,8 @@ public class InventoryPanel : BaseInventoryPanel
             itemUI.ItemUIInit();
             itemUIList.Add(itemUI);
         }
+
+        InitReddotPaths();
     }
 
     protected override void SetDescriptionPosition(int index)

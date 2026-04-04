@@ -8,6 +8,16 @@ public class PlayerInfoPanel : BasePanel
     [field: SerializeField] public Text ExpTxt { get; set; }
     [field: SerializeField] public Text LevelTxt { get; set; }
     [field: SerializeField] public Button BagTaskBtn { get; set; }
+    [SerializeField] private ReddotUIController bagTaskReddot;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        if (bagTaskReddot != null)
+        {
+            bagTaskReddot.SetReddotPath("Main/BagTask");
+        }
+    }
 
     public override void ShowMe()
     {

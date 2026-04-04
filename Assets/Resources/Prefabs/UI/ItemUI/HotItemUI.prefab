@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 2243546582512907181}
   - component: {fileID: 7787049389353751201}
   - component: {fileID: -6491542711033163144}
+  - component: {fileID: 2323790923317366251}
   m_Layer: 5
   m_Name: HotItemUI
   m_TagString: Untagged
@@ -323,6 +324,20 @@ MonoBehaviour:
   itemImg: {fileID: 8212644083412556437}
   quantityTxt: {fileID: 1311660942435289464}
   borderImg: {fileID: 5090926812431894851}
+  reddotController: {fileID: 2323790923317366251}
+--- !u!114 &2323790923317366251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012930085016990136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0a6bfe105f6e94a99187cab428df5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reddotPath: 
 --- !u!1 &8303891734120625122
 GameObject:
   m_ObjectHideFlags: 0

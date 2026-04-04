@@ -9,6 +9,7 @@ public class BaseInventoryItemUI : BaseItemUI, IBeginDragHandler,
     IEndDragHandler, IDropHandler, IDragHandler
 {
     [SerializeField] protected Image borderImg;
+    [SerializeField] private ReddotUIController reddotController;
 
     public new event Action<BaseInventoryItemUI> OnLeftClickedEvent, 
         OnRightClickedEvent;
@@ -29,6 +30,21 @@ public class BaseInventoryItemUI : BaseItemUI, IBeginDragHandler,
     public void Select()
     {
         borderImg.enabled = true;
+    }
+
+    public void InitReddot(IndexInfo indexInfo)
+    {
+        if (reddotController != null)
+        {
+            if (indexInfo.panelType == EInventoryPanel.Hotbar)
+            {
+                reddotController.SetReddotPath($"Main/Hotbar/{indexInfo.index}");
+            }
+            else if (indexInfo.panelType == EInventoryPanel.Inventory)
+            {
+                reddotController.SetReddotPath($"Main/BagTask/Inventory/{indexInfo.index}");
+            }
+        }
     }
 
     public override void OnPointerClick(PointerEventData eventData)

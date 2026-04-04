@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 296958210182467563}
   - component: {fileID: 8587384242909785831}
   - component: {fileID: 4548301796213950964}
+  - component: {fileID: 8351053233624333736}
   m_Layer: 5
   m_Name: InventoryItemUI
   m_TagString: Untagged
@@ -412,3 +413,17 @@ MonoBehaviour:
   itemImg: {fileID: 7693414912113125075}
   quantityTxt: {fileID: 652556837839369534}
   borderImg: {fileID: 6745044959418987781}
+  reddotController: {fileID: 8351053233624333736}
+--- !u!114 &8351053233624333736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8362631611917569534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0a6bfe105f6e94a99187cab428df5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reddotPath: 

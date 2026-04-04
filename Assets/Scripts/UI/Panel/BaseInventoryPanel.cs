@@ -31,7 +31,7 @@ public abstract class BaseInventoryPanel : BasePanel
     protected List<BaseInventoryItemUI> itemUIList = new List<BaseInventoryItemUI>();
     //protected int currentDraggedItemIndex = -1;
 
-    public abstract EInventoryPanel PanelType { get;}
+    public abstract EInventoryPanel PanelType { get; }
     public event Action OnResetDragEvent, OnResetSelectEvent;
     public event Action<IndexInfo> OnDescriptionRequestEvent, OnItemActionRequestEvent,
         OnStartDragEvent, OnItemSelectEvent;
@@ -141,6 +141,14 @@ public abstract class BaseInventoryPanel : BasePanel
         UIManager.Instance.HidePanel<InputActionPanel>();
     }
 
+    protected void InitReddotPaths()
+    {
+        for (int i = 0; i < itemUIList.Count; i++)
+        {
+            itemUIList[i].InitReddot(GetIndexInfo(i));
+        }
+    }
+
     protected void ResetDraggedItem()
     {
         mouseFollower?.HideMe();
@@ -180,6 +188,11 @@ public abstract class BaseInventoryPanel : BasePanel
     {
         int itemIndex = itemUIList.IndexOf(itemUI);
         if (itemIndex == -1) return;
+
+        if (ReddotHandlerManager.Instance != null && ReddotHandlerManager.Instance.InventoryReddotHandler != null)
+        {
+            ReddotHandlerManager.Instance.InventoryReddotHandler.MarkItemRead(GetIndexInfo(itemIndex));
+        }
 
         //currentDraggedItemIndex = itemIndex;
         //print("OnItemBeginDrag" + itemUI.name);

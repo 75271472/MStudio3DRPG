@@ -8,6 +8,8 @@ using UnityEngine;
 public class InventoryData : MonoBehaviour
 {
     public event Action<Dictionary<int, InventoryItem>> OnInventoryUpdatedEvent;
+    // 当具体某个 index 的格子有物品添加时触发
+    public event Action<int> OnItemAddedToIndexEvent;
 
     // 前八个物品为快捷栏物品，后两个物品为PlayerState物品，剩余物品为背包中的物品
     private List<InventoryItem> inventoryItemList;
@@ -188,6 +190,9 @@ public class InventoryData : MonoBehaviour
             inventoryItemList[i] =
                 new InventoryItem(itemInfo, fillQuantity);
             quantity -= fillQuantity;
+
+            // 添加新物品回调
+            OnItemAddedToIndexEvent?.Invoke(i);
         }
 
         return quantity;
@@ -219,6 +224,9 @@ public class InventoryData : MonoBehaviour
             inventoryItemList[i] = inventoryItemList[i].ChangeQuantity(
                 inventoryItemList[i].quantity + addAmount);
             quantity -= addAmount;
+
+            // 添加新物品回调
+            OnItemAddedToIndexEvent?.Invoke(i);
         }
 
         if (quantity != 0)

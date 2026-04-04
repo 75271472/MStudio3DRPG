@@ -96,19 +96,14 @@ public class QuestController : MonoBehaviour
         activeQuestList = QuestManager.Instance.GetActiveQuests();
         finishedQuestList = QuestManager.Instance.GetFinishedQuests();
 
-        List<string> activeNameList = activeQuestList.Select(q => q.questName).
-            ToList();
-        List<string> finishedNameList = finishedQuestList.Select(q => q.questName).
-            ToList();
-
-        UpdateQuestListUI(activeNameList, finishedNameList);
+        UpdateQuestListUI(activeQuestList, finishedQuestList);
     }
 
-    private void UpdateQuestListUI(List<string> activeNameList, 
-        List<string> finishedNameList)
+    private void UpdateQuestListUI(List<Quest> activeList, 
+        List<Quest> finishedList)
     {
-        QuestPanel.UpdateActiveQuestBtnList(activeNameList);
-        QuestPanel.UpdateFinishedQuestBtnList(finishedNameList);
+        QuestPanel.UpdateActiveQuestBtnList(activeList);
+        QuestPanel.UpdateFinishedQuestBtnList(finishedList);
     }
 
     //private void OnAddQuestHandler(Quest quest)

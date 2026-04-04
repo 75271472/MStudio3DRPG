@@ -42,16 +42,16 @@ public class QuestPanel : BasePanel
         questContentUI.QuestContentUIInit();
     }
 
-    public void UpdateActiveQuestBtnList(List<string> questNameList)
+    public void UpdateActiveQuestBtnList(List<Quest> questList)
     {
         activeQuestAccordionUI.SetExpandState(false);
-        activeQuestAccordionUI.UpdateQuestBtnList(questNameList);
+        activeQuestAccordionUI.UpdateQuestBtnList(questList);
     }
 
-    public void UpdateFinishedQuestBtnList(List<string> questNameList)
+    public void UpdateFinishedQuestBtnList(List<Quest> questList)
     {
         finishedQuestAccordionUI.SetExpandState(false);
-        finishedQuestAccordionUI.UpdateQuestBtnList(questNameList);
+        finishedQuestAccordionUI.UpdateQuestBtnList(questList);
     }
 
     public void UpdateQuestContent(RequireUIPayload quest)

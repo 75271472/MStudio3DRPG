@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 5492774062274433492}
   - component: {fileID: 3428401996553076886}
   - component: {fileID: 5559659177099376345}
+  - component: {fileID: 3079123594252604035}
   m_Layer: 5
   m_Name: QuestBtn
   m_TagString: Untagged
@@ -215,3 +216,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questBtn: {fileID: 3428401996553076886}
   questTxt: {fileID: 349307522085721062}
+  reddotController: {fileID: 3079123594252604035}
+--- !u!114 &3079123594252604035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4040318704354836219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0a6bfe105f6e94a99187cab428df5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reddotPath: 

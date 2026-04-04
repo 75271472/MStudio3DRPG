@@ -14,6 +14,21 @@ public class BagTaskPanel : BasePanel
 {
     [field: SerializeField] public Button BagBtn { get; set; }
     [field: SerializeField] public Button TaskBtn { get; set; }
+    [SerializeField] private ReddotUIController taskBtnReddot;
+    [SerializeField] private ReddotUIController bagBtnReddot;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        if (taskBtnReddot != null)
+        {
+            taskBtnReddot.SetReddotPath("Main/BagTask/Quest");
+        }
+        if (bagBtnReddot != null)
+        {
+            bagBtnReddot.SetReddotPath("Main/BagTask/Inventory");
+        }
+    }
 
     // 当前显示的子界面类型
     public EBagTaskType CurrentType { get; private set; } = EBagTaskType.None;

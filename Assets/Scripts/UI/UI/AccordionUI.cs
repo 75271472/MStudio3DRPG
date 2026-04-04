@@ -56,9 +56,9 @@ public class AccordionUI : MonoBehaviour
         questBtnList.Clear();
     }
 
-    public void UpdateQuestBtnList(List<string> questNameList)
+    public void UpdateQuestBtnList(List<Quest> questList)
     {
-        foreach (var questName in questNameList)
+        foreach (var quest in questList)
         {
             GameObject questBtnObj = PoolManager.Instance.PullObj(
                 DataManager.QUESTBUTTON);
@@ -66,7 +66,8 @@ public class AccordionUI : MonoBehaviour
 
             QuestBtn questBtn = questBtnObj.GetComponent<QuestBtn>();
             questBtn.ResetQuestBtn();
-            questBtn.SetQuestBtn(questName);
+            questBtn.SetQuestBtn(quest.questName);
+            questBtn.InitReddot(quest.id); // Add Reddot initialization
             questBtn.OnQuestBtnClickEvent += OnQuestBtnClickHandler;
 
             questBtnList.Add(questBtn);

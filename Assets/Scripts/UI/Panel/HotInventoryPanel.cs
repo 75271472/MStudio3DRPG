@@ -53,6 +53,8 @@ public class HotInventoryPanel : BaseInventoryPanel
         //hotInventoryBK.OnPointerExitEvent += OnPointerExitHandler;
 
         InputManager.Instance.OnHotItemEvent += OnHotItemHandler;
+
+        InitReddotPaths();
     }
 
     private void OnPointerEnterHandler()

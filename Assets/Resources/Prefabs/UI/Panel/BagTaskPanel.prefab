@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 84521377061313024}
   - component: {fileID: 5867243310361397314}
   - component: {fileID: 1122069035528454847}
+  - component: {fileID: 2060980409955455077}
   m_Layer: 5
   m_Name: TaskBtn
   m_TagString: Untagged
@@ -121,6 +122,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2060980409955455077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993244217248462174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0a6bfe105f6e94a99187cab428df5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reddotPath: 
 --- !u!1 &3996949094923106896
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +226,7 @@ GameObject:
   - component: {fileID: 4241185219289124405}
   - component: {fileID: 3401235481925801559}
   - component: {fileID: 2171700700916316063}
+  - component: {fileID: 6510902624008456275}
   m_Layer: 5
   m_Name: BagBtn
   m_TagString: Untagged
@@ -321,6 +336,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6510902624008456275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6357758759354090726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0a6bfe105f6e94a99187cab428df5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reddotPath: 
 --- !u!1 &8137689572850439434
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +453,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9003779810385724287}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -461,3 +489,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <BagBtn>k__BackingField: {fileID: 2171700700916316063}
   <TaskBtn>k__BackingField: {fileID: 1122069035528454847}
+  taskBtnReddot: {fileID: 2060980409955455077}
+  bagBtnReddot: {fileID: 6510902624008456275}

@@ -79,6 +79,7 @@ public class DataManager : BaseManager<DataManager>
     public const string QUESTBUTTON = UIROOTPATH + "QuestBtn";
     public const string PROGRESSUI = UIROOTPATH + "ProgressUI";
     public const string INFOTEXTUI = UIROOTPATH + "InfoTxtUI";
+    public const string REDDOTUI = UIROOTPATH + "ReddotUI";
 
     public const string INVENTORYITEMUI = ITEMUIROOTPATH + "InventoryItemUI";
     public const string REWARDITEMUI = ITEMUIROOTPATH + "RewardItemUI";
