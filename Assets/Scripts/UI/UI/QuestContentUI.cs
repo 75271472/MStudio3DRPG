@@ -85,7 +85,7 @@ public class QuestContentUI : MonoBehaviour
         }
     }
 
-    public void UpdateRequireContent(List<Tuple<Sprite, int>> itemInfoList)
+    public void UpdateRequireContent(List<Tuple<string, int>> itemInfoList)
     {
         rewardTitleTxt.gameObject.SetActive(true);
 

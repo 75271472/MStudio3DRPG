@@ -9,7 +9,8 @@ public abstract class MonoBehaviourBase : MonoBehaviour
 {
     public bool IsNotSubManagerInit;
     public abstract void Init();
-    public abstract void Destroy();
+    public abstract void Delete();
+    public abstract void DestroyManager();
 }
 
 public abstract class MonoBehaviourManager<T> : MonoBehaviourBase
@@ -32,9 +33,13 @@ public abstract class MonoBehaviourManager<T> : MonoBehaviourBase
         instance = this as T;
     }
 
-    public override void Destroy()
+    public override void Delete()
     {
         if (instance == this)
             instance = null;
+    }
+
+    public override void DestroyManager() 
+    { 
     }
 }

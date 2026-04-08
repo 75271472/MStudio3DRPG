@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class ReddotHandlerManager : MonoBehaviourManager<ReddotHandlerManager>
 {
     public QuestReddotHandler QuestReddotHandler { get; private set; }
@@ -21,17 +19,22 @@ public class ReddotHandlerManager : MonoBehaviourManager<ReddotHandlerManager>
         ReddotManager.Instance.Update();
     }
 
-    public override void Destroy()
+    public override void Delete()
     {
-        base.Destroy();
-        
-        if (IsNotSubManagerInit) return;
+        base.Delete();
+    }
+
+    public override void DestroyManager()
+    {
+        base.DestroyManager();
         QuestReddotHandler?.OnDestroy();
         InventoryReddotHandler?.OnDestroy();
+        QuestReddotHandler = null;
+        InventoryReddotHandler = null;
     }
 
     private void OnDestroy()
     {
-        Destroy();
+        Delete();
     }
 }

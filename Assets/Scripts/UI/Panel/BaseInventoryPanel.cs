@@ -65,12 +65,12 @@ public abstract class BaseInventoryPanel : BasePanel
         mouseFollower.HideMe();
     }
 
-    public void UpdateData(int index, Sprite itemImg, int itemQuantity)
+    public void UpdateData(int index, string imgPath, int itemQuantity)
     {
         //print("UpdateData: " + index);
         if (index < 0 || index >= itemUIList.Count) return;
 
-        itemUIList[index].SetData(itemImg, itemQuantity);
+        itemUIList[index].SetData(imgPath, itemQuantity);
     }
 
     public virtual void ResetSelection()
@@ -101,10 +101,10 @@ public abstract class BaseInventoryPanel : BasePanel
         itemDescription.SetDescription(name, description);
     }
 
-    public void CreateDraggedItem(Sprite sprite, int quantity)
+    public void CreateDraggedItem(string imgPath, int quantity)
     {
         mouseFollower.ShowMe();
-        mouseFollower.SetData(sprite, quantity);
+        mouseFollower.SetData(imgPath, quantity);
     }
 
     public void ShowItemAction(int itemIndex)
@@ -168,6 +168,13 @@ public abstract class BaseInventoryPanel : BasePanel
 
         if (itemIndex == -1) return;
 
+        if (ReddotHandlerManager.Instance != null && ReddotHandlerManager.
+            Instance.InventoryReddotHandler != null)
+        {
+            ReddotHandlerManager.Instance.InventoryReddotHandler.MarkItemRead(
+                GetIndexInfo(itemIndex));
+        }
+
         // 在Controller中通过InventoryData，判断所选项是否为空数据
         // 决定是否能够选中
         OnItemSelectEvent?.Invoke(GetIndexInfo(itemIndex));
@@ -189,9 +196,11 @@ public abstract class BaseInventoryPanel : BasePanel
         int itemIndex = itemUIList.IndexOf(itemUI);
         if (itemIndex == -1) return;
 
-        if (ReddotHandlerManager.Instance != null && ReddotHandlerManager.Instance.InventoryReddotHandler != null)
+        if (ReddotHandlerManager.Instance != null && ReddotHandlerManager.
+            Instance.InventoryReddotHandler != null)
         {
-            ReddotHandlerManager.Instance.InventoryReddotHandler.MarkItemRead(GetIndexInfo(itemIndex));
+            ReddotHandlerManager.Instance.InventoryReddotHandler.MarkItemRead(
+                GetIndexInfo(itemIndex));
         }
 
         //currentDraggedItemIndex = itemIndex;

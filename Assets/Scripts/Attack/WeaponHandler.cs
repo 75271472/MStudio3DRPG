@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -12,6 +11,8 @@ public class WeaponHandler : MonoBehaviour
 
     private GameObject weaponObj;
     private GameObject shieldObj;
+    private IResource weaponRes;
+    private IResource shieldRes;
     //private ICharacter handler;
 
     public void UpdateWeaponLogicList(ICharacter handler)
@@ -38,10 +39,16 @@ public class WeaponHandler : MonoBehaviour
     {
         if (weaponObj != null)
         {
-            DestroyImmediate(weaponObj);
+            Destroy(weaponObj);
+        }
+        weaponObj = null;
+
+        if (weaponRes != null)
+        {
+            ResourcesManager.Instance.Unload(weaponRes);
+            weaponRes = null;
         }
 
-        weaponObj = null;
         ClearWeaponLogicList();
     }
 
@@ -51,9 +58,9 @@ public class WeaponHandler : MonoBehaviour
 
         if (weaponItemInfo == null) return; 
 
-        weaponObj = Instantiate(ResourcesManager.Instance.LoadResources<GameObject>(
-            weaponItemInfo.weaponPrefabPath));
-        weaponObj.transform.SetParent(weaponTrans, false);
+        string fullUrl = ResourcesManager.Instance.GetFullUrl(weaponItemInfo.weaponPrefabPath);
+        weaponRes = ResourcesManager.Instance.Load(fullUrl, false);
+        weaponObj = weaponRes.Instantiate(weaponTrans, false);
 
         UpdateWeaponLogicList(character);
     }
@@ -62,10 +69,15 @@ public class WeaponHandler : MonoBehaviour
     {
         if (shieldObj != null)
         {
-            DestroyImmediate(shieldObj);
+            Destroy(shieldObj);
         }
-
         shieldObj = null;
+
+        if (shieldRes != null)
+        {
+            ResourcesManager.Instance.Unload(shieldRes);
+            shieldRes = null;
+        }
     }
 
     public void SetShield(EquippableItemInfo shieldItemInfo)
@@ -74,9 +86,9 @@ public class WeaponHandler : MonoBehaviour
 
         if (shieldItemInfo == null) return;
 
-        shieldObj = Instantiate(ResourcesManager.Instance.LoadResources<GameObject>(
-            shieldItemInfo.weaponPrefabPath));
-        shieldObj.transform.SetParent(shieldTrans, false);
+        string fullUrl = ResourcesManager.Instance.GetFullUrl(shieldItemInfo.weaponPrefabPath);
+        shieldRes = ResourcesManager.Instance.Load(fullUrl, false);
+        shieldObj = shieldRes.Instantiate(shieldTrans, false);
     }
 
     public void OnEquipWeaponHandler(ICharacter character,

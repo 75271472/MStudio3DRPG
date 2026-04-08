@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine;
-
 public class QuestReddotHandler
 {
     private const string QUEST_REDDOT_PREFIX = "Main/BagTask/Quest/";

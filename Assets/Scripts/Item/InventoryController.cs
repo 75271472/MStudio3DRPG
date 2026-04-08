@@ -550,7 +550,7 @@ public class InventoryController : MonoBehaviour
 
         BaseInventoryPanel panel = GetPanel(indexInfo);
         panel.ResetSelection();
-        panel.CreateDraggedItem(inventoryItem.itemInfo.img,
+        panel.CreateDraggedItem(inventoryItem.itemInfo.imgPath,
             inventoryItem.quantity);
     }
 
@@ -603,7 +603,7 @@ public class InventoryController : MonoBehaviour
         foreach (var pair in stateDict)
         {
             GetPanelByIndex(pair.Key).UpdateData(GetPanelIndex(pair.Key),
-                pair.Value.itemInfo.img, pair.Value.quantity);
+                pair.Value.itemInfo.imgPath, pair.Value.quantity);
         }
     }
 }

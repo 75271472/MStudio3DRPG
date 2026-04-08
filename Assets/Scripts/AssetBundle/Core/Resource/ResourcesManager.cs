@@ -175,6 +175,40 @@ public class ResourcesManager : BaseManager<ResourcesManager>
     }
 
     /// <summary>
+    /// 兼容旧版同步加载
+    /// 临时采用加载后永不回收的策略兜底，只进行 Load 而不主动 Unload
+    /// </summary>
+    public T LoadResources<T>(string path) where T : UnityEngine.Object
+    {
+        string fullUrl = GetFullUrl(path);
+        IResource resource = Load(fullUrl, false);
+        if (resource != null)
+        {
+            return resource.GetAsset<T>();
+        }
+        return null;
+    }
+
+    /// <summary>
+    /// 兼容旧版异步加载
+    /// </summary>
+    public void LoadResourcesAsync<T>(string path, Action<T> callback) where T : UnityEngine.Object
+    {
+        string fullUrl = GetFullUrl(path);
+        LoadWithCallback(fullUrl, true, res =>
+        {
+            if (res != null)
+            {
+                callback?.Invoke(res.GetAsset<T>());
+            }
+            else
+            {
+                callback?.Invoke(null);
+            }
+        });
+    }
+
+    /// <summary>
     /// 加载资源
     /// </summary>
     /// <param name="url">资源Url</param>
@@ -256,40 +290,6 @@ public class ResourcesManager : BaseManager<ResourcesManager>
 
         shortPathMapping[path] = path;
         return path;
-    }
-
-    /// <summary>
-    /// 兼容旧版同步加载
-    /// 临时采用加载后永不回收的策略兜底，只进行 Load 而不主动 Unload
-    /// </summary>
-    public T LoadResources<T>(string path) where T : UnityEngine.Object
-    {
-        string fullUrl = GetFullUrl(path);
-        IResource resource = Load(fullUrl, false);
-        if (resource != null)
-        {
-            return resource.GetAsset<T>();
-        }
-        return null;
-    }
-
-    /// <summary>
-    /// 兼容旧版异步加载
-    /// </summary>
-    public void LoadResourcesAsync<T>(string path, Action<T> callback) where T : UnityEngine.Object
-    {
-        string fullUrl = GetFullUrl(path);
-        LoadWithCallback(fullUrl, true, res =>
-        {
-            if (res != null)
-            {
-                callback?.Invoke(res.GetAsset<T>());
-            }
-            else
-            {
-                callback?.Invoke(null);
-            }
-        });
     }
 
     /// <summary>
@@ -380,6 +380,18 @@ public class ResourcesManager : BaseManager<ResourcesManager>
         {
             WillUnload(aResource);
         }
+    }
+
+    // 获取当前已经加载的所有资源
+    public IEnumerable<AResource> GetAllLoadedResources()
+    {
+        return resourceDic.Values;
+    }
+
+    // 获取正在加载的异步资源队列
+    public IEnumerable<AResourceAsync> GetAsyncResources()
+    {
+        return asyncList;
     }
 
     /// <summary>

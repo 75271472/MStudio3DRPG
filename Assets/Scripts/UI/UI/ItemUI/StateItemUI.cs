@@ -29,11 +29,9 @@ public class StateItemUI : BaseInventoryItemUI
         //OnUnloadEvent?.Invoke(EquippableItemType, this);
     }
 
-    public override void SetData(Sprite sprite, int quantity)
+    public override void SetData(string imgPath, int quantity)
     {
-        itemImg.sprite = sprite;
-
-        isEmpty = false;
+        base.SetData(imgPath, quantity);
         //OnEquipEvent?.Invoke(EquippableItemType, this);
     }
 }

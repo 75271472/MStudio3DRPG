@@ -30,6 +30,9 @@ public class LoadSceneManager : BaseManager<LoadSceneManager>
     /// <param name="action">切换完成执行事件</param>
     public void LoadSceneAsync(string name, Action action = null)
     {
+        // 场景退出时，让所有Manager执行数据清理
+        MonoManager.Instance.DestroyAllManagers();
+
         // 清空对象池
         PoolManager.Instance.Clear();
         UIManager.Instance.HidePanelAll();

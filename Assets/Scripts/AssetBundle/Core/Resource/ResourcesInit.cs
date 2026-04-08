@@ -11,7 +11,7 @@ public class ResourcesInit : BaseManager<ResourcesInit>
 
     public override void Start()
     {
-        // 确保整个游戏过程中只进行依次ResourcesManager初始化
+        // 确保整个游戏过程中只进行一次ResourcesManager初始化
         if (hasInit) return;
 
         Platform = GetPlatform();
@@ -26,6 +26,12 @@ public class ResourcesInit : BaseManager<ResourcesInit>
         isEditor = MonoManager.Instance.IsDebug;
 #endif
         ResourcesManager.Instance.Initialize(Platform, GetFileUrl, isEditor, 0);
+
+        // 注册 ResourcesManager 的帧驱动，使异步加载和资源卸载生效
+        MonoManager.Instance.AddEventListener(
+            ResourcesManager.Instance.Update, ETriggerTiming.Update);
+        MonoManager.Instance.AddEventListener(
+            ResourcesManager.Instance.LateUpdate, ETriggerTiming.LateUpdate);
 
         hasInit = true;
     }
@@ -50,9 +56,9 @@ public class ResourcesInit : BaseManager<ResourcesInit>
     private string GetFileUrl(string assetUrl)
     {
         // 优先检查热更新沙盒目录
-        string hotUpdatePath = string.Format("{0}{1}{2}", 
-            Application.persistentDataPath, 
-            ABPackUtils.GetABPackPathPlatformStr(), 
+        string hotUpdatePath = string.Format("{0}{1}{2}",
+            Application.persistentDataPath,
+            ABPackUtils.GetABPackPathPlatformStr(),
             assetUrl);
 
         if (File.Exists(hotUpdatePath))

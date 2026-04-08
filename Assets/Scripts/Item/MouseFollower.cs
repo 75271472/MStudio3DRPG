@@ -29,9 +29,9 @@ public class MouseFollower : BasePanel
         //MouseFollowerSwitch(false);
     }
 
-    public void SetData(Sprite sprite, int quality)
+    public void SetData(string imgPath, int quality)
     {
-        itemUI.SetData(sprite, quality);
+        itemUI.SetData(imgPath, quality);
     }
 
     private void Update()

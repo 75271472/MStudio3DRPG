@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class IntInfo
@@ -455,24 +454,6 @@ public class DataManager : BaseManager<DataManager>
     {
         EdibleItemInfoList = JsonManager.Instance.
             LoadDataFromStreamingAssets<List<EdibleItemInfo>>(EDIBLEITEMINFO);
-
-        foreach (var itemInfo in EdibleItemInfoList)
-        {
-            itemInfo.img = ResourcesManager.Instance.LoadResources<Sprite>(itemInfo.imgPath);
-                //(sprite) => {
-                //    if (sprite != null)
-                //    {
-                //        Debug.Log($"图片加载成功 {sprite.name}");
-                //    }
-                //    else
-                //    {
-                //        Debug.LogError("【严重】资源加载成功，但转换 Sprite 失败！请检查图片 TextureType 是否为 Sprite (2D and UI)");
-
-                //    }
-                //}, () => {
-                //        Debug.LogError("资源加载直接失败");
-                //});
-        }
     }
 
     private void LoadEquippableItemInfoList()
@@ -482,20 +463,6 @@ public class DataManager : BaseManager<DataManager>
 
         foreach (var itemInfo in EquippableItemInfoList)
         {
-            itemInfo.img = ResourcesManager.Instance.LoadResources<Sprite>(itemInfo.imgPath);
-                //(sprite) => {
-                //    if (sprite != null)
-                //    {
-                //        Debug.Log($"图片加载成功 {sprite.name}");
-                //    }
-                //    else
-                //    {
-                //        Debug.LogError("【严重】资源加载成功，但转换 Sprite 失败！请检查图片 TextureType 是否为 Sprite (2D and UI)");
-
-                //    }
-                //}, () => {
-                //    Debug.LogError("资源加载直接失败");
-                //});
             if (itemInfo.attackInfoId != -1)
                 itemInfo.weaponAttackInfo = AttackInfoList[itemInfo.attackInfoId];
         }

@@ -11,71 +11,71 @@ public abstract class ABundle
     internal AssetBundle assetBundle { get; set; }
 
     /// <summary>
-    /// °üÖĞ×ÊÔ´ÊÇ·ñÎª³¡¾°×ÊÔ´£¬³¡¾°×ÊÔ´°üÖĞ¿ÉÒÔÓĞ¶à¸ö³¡¾°×ÊÔ´£¬µ«²»ÄÜÓĞÆäËûÀàĞÍ×ÊÔ´
-    /// ³¡¾°×ÊÔ´°ü½øÈëÄÚ´æ£¬Ö±½ÓÊ¹ÓÃSceneManager.LoadScene("³¡¾°Ãû")¼ÓÔØ³¡¾°
-    /// ²»ÄÜÊ¹ÓÃLoadAsset½øĞĞ¼ÓÔØ
+    /// åŒ…ä¸­èµ„æºæ˜¯å¦ä¸ºåœºæ™¯èµ„æºï¼Œåœºæ™¯èµ„æºåŒ…ä¸­å¯ä»¥æœ‰å¤šä¸ªåœºæ™¯èµ„æºï¼Œä½†ä¸èƒ½æœ‰å…¶ä»–ç±»å‹èµ„æº
+    /// åœºæ™¯èµ„æºåŒ…è¿›å…¥å†…å­˜ï¼Œç›´æ¥ä½¿ç”¨SceneManager.LoadScene("åœºæ™¯å")åŠ è½½åœºæ™¯
+    /// ä¸èƒ½ä½¿ç”¨LoadAssetè¿›è¡ŒåŠ è½½
     /// </summary>
     internal bool isStreamedSceneAssetBundle { get; set; }
 
     /// <summary>
     /// bundle url
     /// </summary>
-    internal string url { get; set; }
+    public string url { get; set; }
 
     /// <summary>
-    /// ÒıÓÃ¼ÆÊıÆ÷
+    /// å¼•ç”¨è®¡æ•°å™¨
     /// </summary>
-    internal int reference { get; set; }
+    public int reference { get; set; }
 
-    //bundleÊÇ·ñ¼ÓÔØÍê³É
+    //bundleæ˜¯å¦åŠ è½½å®Œæˆ
     internal bool done { get; set; }
 
     /// <summary>
-    /// bundleÒÀÀµ
+    /// bundleä¾èµ–
     /// </summary>
     internal ABundle[] dependencies { get; set; }
 
     /// <summary>
-    /// ¼ÓÔØbundle
+    /// åŠ è½½bundle
     /// </summary>
     internal abstract void Load();
 
     /// <summary>
-    /// Ğ¶ÔØbundle
+    /// å¸è½½bundle
     /// </summary>
     internal abstract void UnLoad();
 
     /// <summary>
-    /// Òì²½¼ÓÔØ×ÊÔ´
+    /// å¼‚æ­¥åŠ è½½èµ„æº
     /// </summary>
-    /// <param name="name">×ÊÔ´Ãû³Æ</param>
-    /// <param name="type">×ÊÔ´Type</param>
+    /// <param name="name">èµ„æºåç§°</param>
+    /// <param name="type">èµ„æºType</param>
     /// <returns>AssetBundleRequest</returns>
     internal abstract AssetBundleRequest LoadAssetAsync(string name, Type type);
 
     /// <summary>
-    /// ¼ÓÔØ×ÊÔ´
+    /// åŠ è½½èµ„æº
     /// </summary>
-    /// <param name="name">×ÊÔ´Ãû³Æ</param>
-    /// <param name="type">×ÊÔ´Type</param>
-    /// <returns>Ö¸¶¨Ãû×ÖµÄ×ÊÔ´</returns>
+    /// <param name="name">èµ„æºåç§°</param>
+    /// <param name="type">èµ„æºType</param>
+    /// <returns>æŒ‡å®šåå­—çš„èµ„æº</returns>
     internal abstract UnityEngine.Object LoadAsset(string name, Type type);
 
     /// <summary>
-    /// Ôö¼ÓÒıÓÃ
+    /// å¢åŠ å¼•ç”¨
     /// </summary>
     internal void AddReference()
     {
-        //×Ô¼ºÒıÓÃ+1
+        //è‡ªå·±å¼•ç”¨+1
         ++reference;
     }
 
     /// <summary>
-    /// ¼õÉÙÒıÓÃ
+    /// å‡å°‘å¼•ç”¨
     /// </summary>
     internal void ReduceReference()
     {
-        //×Ô¼ºÒıÓÃ-1
+        //è‡ªå·±å¼•ç”¨-1
         --reference;
 
         if (reference < 0)

@@ -1,18 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting.FullSerializer;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public enum ETriggerTiming
 {
-    Awake,
-    Start,
     Update,
-    Destroy,
+    LateUpdate,
 }
 
 public class MonoManager : MonoBehaviourManager<MonoManager>
@@ -21,19 +18,19 @@ public class MonoManager : MonoBehaviourManager<MonoManager>
 
     public event Action OnInitCompletedEvent;
 
-    [SerializeField] private List<MonoBehaviourBase> monoList = 
+    [SerializeField]
+    private List<MonoBehaviourBase> monoList =
         new List<MonoBehaviourBase>();
-    private MonoController monoController;
+
+    private event UnityAction updateEvent;
+    private event UnityAction lateUpdateEvent;
 
     private void Awake()
     {
-        //print("Awake");
+        ResetAllEvent();
         Init();
     }
 
-    /// <summary>
-    /// 构造方法中创建游戏对象并挂载monoController
-    /// </summary>
     public override void Init()
     {
         base.Init();
@@ -47,15 +44,10 @@ public class MonoManager : MonoBehaviourManager<MonoManager>
         // 开始场景，进行ResourcesManager的激活，读取Bundle文件
         if (isStartScene)
             ResourcesInit.Instance.Start();
-        
+
         // UIManager启动方法，UIManager属于懒汉模式的单例对象
         // 不调用Instance不实例化，不会生成EventSystem对象
         UIManager.Instance.Start();
-
-        if (monoController == null)
-        {
-            monoController = gameObject.AddComponent<MonoController>();
-        }
 
         // 必须手动添加Manager，并考虑不同Manager间的初始化顺序
         foreach (var mono in monoList)
@@ -74,51 +66,46 @@ public class MonoManager : MonoBehaviourManager<MonoManager>
         OnInitCompletedEvent = null;
     }
 
-    /// <summary>
-    /// 添加事件监听方法封装
-    /// </summary>
-    /// <param name="action"></param>
+    private void Update()
+    {
+        updateEvent?.Invoke();
+    }
+
+    private void LateUpdate()
+    {
+        lateUpdateEvent?.Invoke();
+    }
+
     public void AddEventListener(UnityAction action, ETriggerTiming triggerTiming)
     {
         switch (triggerTiming)
         {
-            case ETriggerTiming.Awake:
-                monoController.AddAwakeEventListener(action);
-                break;
             case ETriggerTiming.Update:
-                monoController.AddUpdateEventListener(action);
-                break; 
-            case ETriggerTiming.Start:
-                monoController.AddStartEventListener(action);
+                updateEvent += action;
                 break;
-            case ETriggerTiming.Destroy:
-                monoController.AddDestroyEventListener(action);
+            case ETriggerTiming.LateUpdate:
+                lateUpdateEvent += action;
                 break;
         }
-        
     }
 
-    /// <summary>
-    /// 移除事件监听方法封装
-    /// </summary>
-    /// <param name="action"></param>
     public void RemoveEventListener(UnityAction action, ETriggerTiming triggerTiming)
     {
         switch (triggerTiming)
         {
-            case ETriggerTiming.Awake:
-                monoController.RemoveAwakeEventListener(action);
-                break;
             case ETriggerTiming.Update:
-                monoController.RemoveUpdateEventListener(action);
+                updateEvent -= action;
                 break;
-            case ETriggerTiming.Start:
-                monoController.RemoveStartEventListener(action);
-                break;
-            case ETriggerTiming.Destroy:
-                monoController.RemoveDestroyEventListener(action);
+            case ETriggerTiming.LateUpdate:
+                lateUpdateEvent -= action;
                 break;
         }
+    }
+
+    private void ResetAllEvent()
+    {
+        updateEvent = null;
+        lateUpdateEvent = null;
     }
 
     private void SetManagerIsNotInit(bool isNotInit)
@@ -139,6 +126,17 @@ public class MonoManager : MonoBehaviourManager<MonoManager>
             if (!mono.Equals(this))
             {
                 mono.gameObject.SetActive(isActive);
+            }
+        }
+    }
+
+    public void DestroyAllManagers()
+    {
+        foreach (var mono in monoList)
+        {
+            if (!mono.Equals(this))
+            {
+                mono.DestroyManager();
             }
         }
     }

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class EdibleItemInfo : ItemInfo, IDestroyableItem, IItemAction
@@ -12,14 +11,14 @@ public class EdibleItemInfo : ItemInfo, IDestroyableItem, IItemAction
 
     public bool PerformAction(PerformActionInfo performActionInfo)
     {
-        foreach (ModifierInfo modifierData in modifierInfos) 
+        foreach (ModifierInfo modifierData in modifierInfos)
         {
             ModifierFactory.ApplyModifier(
-                modifierData.modifierType, modifierData.value, 
+                modifierData.modifierType, modifierData.value,
                 performActionInfo.character);
         }
 
-        return true; 
+        return true;
     }
 
     public override string GetDescription()

@@ -143,4 +143,14 @@ public class PlayerStateMachine : CharacterStateMachine
         CameraManager.Instance.SwitchPause(true);
         UIManager.Instance.ShowPanel<DiePanel>();
     }
+
+    public override void OnDestroyStateMachine()
+    {
+        base.OnDestroyStateMachine();
+        if (WeaponHandler != null)
+        {
+            WeaponHandler.ResetWeapon();
+            WeaponHandler.ResetShield();
+        }
+    }
 }

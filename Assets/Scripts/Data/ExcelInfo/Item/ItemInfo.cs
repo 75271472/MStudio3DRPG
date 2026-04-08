@@ -23,7 +23,6 @@ public abstract class ItemInfo
     public string description;
     public string imgPath;
     public int maxStackSize;
-    public Sprite img;
 
     public virtual string GetDescription() => description;
 }

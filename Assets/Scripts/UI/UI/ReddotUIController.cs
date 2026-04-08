@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ReddotUIController : MonoBehaviour
 {
@@ -19,28 +16,45 @@ public class ReddotUIController : MonoBehaviour
     {
         if (isInit) return;
 
-        // 实例化并获取组件
-        reddotUI = Instantiate(ResourcesManager.Instance.LoadResources<GameObject>(
-            DataManager.REDDOTUI), transform, false).GetComponent<ReddotUI>();
-
         isInit = true;
 
         if (!string.IsNullOrEmpty(reddotPath))
         {
-            // 向管理器注册监听，当节点值变化时，自动调用 UpdateValue
-            ReddotManager.Instance.AddListener(reddotPath, reddotUI.UpdateValue);
+            // 向管理器注册监听，当节点值变化时，自动调用 OnReddotValueChanged
+            ReddotManager.Instance.AddListener(reddotPath, OnReddotValueChanged);
             // 主动拉取当前的值，解决实例化晚于事件派发的问题
-            reddotUI.UpdateValue(ReddotManager.Instance.GetValue(reddotPath));
+            OnReddotValueChanged(ReddotManager.Instance.GetValue(reddotPath));
+        }
+    }
+
+    private void OnReddotValueChanged(int value)
+    {
+        if (value >= 1)
+        {
+            // 当值 >= 1 时，如果没有红点实例，则从池中获取
+            if (reddotUI == null)
+            {
+                reddotUI = PoolManager.Instance.PullObj(DataManager.REDDOTUI).GetComponent<ReddotUI>();
+                reddotUI.transform.SetParent(transform, false);
+                reddotUI.transform.localScale = Vector3.one;
+            }
+            // 更新数值显示
+            reddotUI.UpdateValue(value);
         }
         else
         {
-            reddotUI.UpdateValue(0);
+            // 当等于 0 时，如果有红点实例，则将其放入对象池
+            if (reddotUI != null)
+            {
+                PoolManager.Instance.PushObj(DataManager.REDDOTUI, reddotUI.gameObject);
+                reddotUI = null;
+            }
         }
     }
 
     /// <summary>
     /// 设置监听红点路径
-    /// 如何当前Controller已经初始化，从ReddotManager中移除旧的监听事件
+    /// 如果当前Controller已经初始化，从ReddotManager中移除旧的监听事件
     /// 更新监听路径
     /// 如果没有初始化，进行初始化，添加监听事件，调用获取当前节点值更新到UI中
     /// </summary>
@@ -49,7 +63,7 @@ public class ReddotUIController : MonoBehaviour
     {
         if (isInit && !string.IsNullOrEmpty(reddotPath))
         {
-            ReddotManager.Instance.RemoveListener(reddotPath, reddotUI.UpdateValue);
+            ReddotManager.Instance.RemoveListener(reddotPath, OnReddotValueChanged);
         }
 
         reddotPath = path;
@@ -60,17 +74,30 @@ public class ReddotUIController : MonoBehaviour
         }
         else if (!string.IsNullOrEmpty(reddotPath))
         {
-            ReddotManager.Instance.AddListener(reddotPath, reddotUI.UpdateValue);
-            reddotUI.UpdateValue(ReddotManager.Instance.GetValue(reddotPath));
+            ReddotManager.Instance.AddListener(reddotPath, OnReddotValueChanged);
+            OnReddotValueChanged(ReddotManager.Instance.GetValue(reddotPath));
+        }
+        else
+        {
+            // 如果传入的路径为空，强制使红点值归零，触发对象池回收
+            OnReddotValueChanged(0);
         }
     }
 
     void OnDestroy()
     {
         // 必须注销监听，防止内存泄漏和空指针报错
-        if (reddotUI != null && !string.IsNullOrEmpty(reddotPath))
+        if (isInit && !string.IsNullOrEmpty(reddotPath))
         {
-            ReddotManager.Instance.RemoveListener(reddotPath, reddotUI.UpdateValue);
+            ReddotManager.Instance.RemoveListener(reddotPath, OnReddotValueChanged);
+        }
+
+        // 如果在销毁时还持有对象，将其放回池中
+        if (reddotUI != null)
+        {
+            PoolManager.Instance.PushObj(DataManager.REDDOTUI, reddotUI.gameObject);
+            reddotUI = null;
         }
     }
 }
+

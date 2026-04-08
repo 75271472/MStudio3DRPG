@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI;
 
 public class ReddotUI : MonoBehaviour
 {
@@ -15,9 +12,6 @@ public class ReddotUI : MonoBehaviour
     public void UpdateValue(int newValue)
     {
         value = newValue;
-
-        // 值为0时隐藏整个红点，大于0时显示
-        gameObject.SetActive(value > 0);
 
         if (reddotTxtValue != null && value > 0)
         {

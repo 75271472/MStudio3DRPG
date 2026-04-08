@@ -8,51 +8,51 @@ public class BundleManager
     public static BundleManager Instance { get; private set; } = new BundleManager();
 
     /// <summary>
-    /// ¼ÓÃÜÆ«ÒÆ
+    /// åŠ å¯†åç§»
     /// </summary>
     internal ulong offset;
     /// <summary>
-    /// »ñÈ¡×ÊÔ´ÕæÊµÂ·¾¶»Øµ÷
+    /// è·å–èµ„æºçœŸå®è·¯å¾„å›è°ƒ
     /// </summary>
     private Func<string, string> getFileCallback;
     /// <summary>
-    /// bundleÒÀÀµ¹ÜÀíĞÅÏ¢
+    /// bundleä¾èµ–ç®¡ç†ä¿¡æ¯
     /// </summary>
     private AssetBundleManifest assetBundleManifest;
 
     /// <summary>
-    /// ËùÓĞÒÑ¼ÓÔØµÄbundle
+    /// æ‰€æœ‰å·²åŠ è½½çš„bundle
     /// </summary>
     private Dictionary<string, ABundle> bundleDic = new Dictionary<string, ABundle>();
     
-    //Òì²½´´½¨µÄbundle¼ÓÔØÊ±ºòĞèÒªÏÈ±£´æµ½¸ÃÁĞ±í
+    //å¼‚æ­¥åˆ›å»ºçš„bundleåŠ è½½æ—¶å€™éœ€è¦å…ˆä¿å­˜åˆ°è¯¥åˆ—è¡¨
     private List<ABundleAsync> asyncList = new List<ABundleAsync>();
     
     /// <summary>
-    /// ĞèÒªÊÍ·ÅµÄbundle
+    /// éœ€è¦é‡Šæ”¾çš„bundle
     /// </summary>
     private LinkedList<ABundle> needUnloadList = new LinkedList<ABundle>();
 
     /// <summary>
-    /// ³õÊ¼»¯
+    /// åˆå§‹åŒ–
     /// </summary>
-    /// <param name="platform">Æ½Ì¨</param>
-    /// <param name="getFileCallback">»ñÈ¡×ÊÔ´ÕæÊµÂ·¾¶»Øµ÷</param>
-    /// <param name="offset">¼ÓÔØbundleÆ«ÒÆ</param>
+    /// <param name="platform">å¹³å°</param>
+    /// <param name="getFileCallback">è·å–èµ„æºçœŸå®è·¯å¾„å›è°ƒ</param>
+    /// <param name="offset">åŠ è½½bundleåç§»</param>
     internal void Initialize(string platform, Func<string, string> getFileCallback, 
         ulong offset)
     {
         this.getFileCallback = getFileCallback;
         this.offset = offset;
 
-        // »ñÈ¡manifestÎÄ¼ş Â·¾¶£ºAssetBundle/Window/Window
+        // è·å–manifestæ–‡ä»¶ è·¯å¾„ï¼šAssetBundle/Window/Window
         string assetBundleManifestFile = getFileCallback.Invoke(platform);
 
         AssetBundle manifestAssetBundle = AssetBundle.LoadFromFile(
             assetBundleManifestFile);
-        // ¶ÁÈ¡ËùÓĞAssetsÎÄ¼ş
+        // è¯»å–æ‰€æœ‰Assetsæ–‡ä»¶
         UnityEngine.Object[] objs = manifestAssetBundle.LoadAllAssets();
-        // Èç¹ûÃ»ÓĞ¶ÁÈ¡µ½£¬Å×Òì³£
+        // å¦‚æœæ²¡æœ‰è¯»å–åˆ°ï¼ŒæŠ›å¼‚å¸¸
         if (objs.Length == 0)
         {
             throw new Exception($"{nameof(BundleManager)}.{nameof(Initialize)}() AssetBundleManifest load fail.");
@@ -62,10 +62,10 @@ public class BundleManager
     }
 
     /// <summary>
-    /// »ñÈ¡bundleµÄ¾ø¶ÔÂ·¾¶
+    /// è·å–bundleçš„ç»å¯¹è·¯å¾„
     /// </summary>
     /// <param name="url"></param>
-    /// <returns>bundleµÄ¾ø¶ÔÂ·¾¶</returns>
+    /// <returns>bundleçš„ç»å¯¹è·¯å¾„</returns>
     internal string GetFileUrl(string url)
     {
         if (getFileCallback == null)
@@ -73,41 +73,41 @@ public class BundleManager
             throw new Exception($"{nameof(BundleManager)}.{nameof(GetFileUrl)}() {nameof(getFileCallback)} is null.");
         }
 
-        //½»µ½Íâ²¿´¦Àí
+        //äº¤åˆ°å¤–éƒ¨å¤„ç†
         return getFileCallback.Invoke(url);
     }
 
     /// <summary>
-    /// Í¬²½¼ÓÔØbundle
+    /// åŒæ­¥åŠ è½½bundle
     /// </summary>
-    /// <param name="url">assetÂ·¾¶</param>
+    /// <param name="url">assetè·¯å¾„</param>
     internal ABundle Load(string url)
     {
         return LoadInternal(url, false);
     }
 
     /// <summary>
-    /// Òì²½¼ÓÔØbundle
+    /// å¼‚æ­¥åŠ è½½bundle
     /// </summary>
-    /// <param name="url">assetÂ·¾¶</param>
+    /// <param name="url">assetè·¯å¾„</param>
     internal ABundle LoadAsync(string url)
     {
         return LoadInternal(url, true);
     }
 
     /// <summary>
-    /// ÒıÓÃ×Ô¼õ£¬ÒıÓÃÎªÁãĞ¶ÔØbundle
+    /// å¼•ç”¨è‡ªå‡ï¼Œå¼•ç”¨ä¸ºé›¶å¸è½½bundle
     /// </summary>
-    /// <param name="bundle">ÒªĞ¶ÔØµÄbundle</param>
+    /// <param name="bundle">è¦å¸è½½çš„bundle</param>
     internal void UnLoad(ABundle bundle)
     {
         if (bundle == null)
             throw new ArgumentException($"{nameof(BundleManager)}.{nameof(UnLoad)}() bundle is null.");
 
-        //ÒıÓÃ-1
+        //å¼•ç”¨-1
         bundle.ReduceReference();
 
-        //ÒıÓÃÎª0,Ö±½ÓÊÍ·Å
+        //å¼•ç”¨ä¸º0,ç›´æ¥é‡Šæ”¾
         if (bundle.reference == 0)
         {
             WillUnload(bundle);
@@ -115,7 +115,7 @@ public class BundleManager
     }
 
     /// <summary>
-    /// ¼´½«ÒªÊÍ·ÅµÄ×ÊÔ´£¬Ìí¼Óµ½NeedUnloadListÖĞ£¬ÔÚÏÂÒ»¸öLateUpdateÖĞ¼¯ÖĞÊÍ·Å
+    /// å³å°†è¦é‡Šæ”¾çš„èµ„æºï¼Œæ·»åŠ åˆ°NeedUnloadListä¸­ï¼Œåœ¨ä¸‹ä¸€ä¸ªLateUpdateä¸­é›†ä¸­é‡Šæ”¾
     /// </summary>
     /// <param name="resource"></param>
     private void WillUnload(ABundle bundle)
@@ -124,11 +124,11 @@ public class BundleManager
     }
 
     /// <summary>
-    /// ÄÚ²¿¼ÓÔØbundle
+    /// å†…éƒ¨åŠ è½½bundle
     /// </summary>
-    /// <param name="url">assetÂ·¾¶</param>
-    /// <param name="async">ÊÇ·ñÒì²½</param>
-    /// <returns>bundle¶ÔÏó</returns>
+    /// <param name="url">assetè·¯å¾„</param>
+    /// <param name="async">æ˜¯å¦å¼‚æ­¥</param>
+    /// <returns>bundleå¯¹è±¡</returns>
     private ABundle LoadInternal(string url, bool async)
     {
         ABundle bundle;
@@ -139,13 +139,13 @@ public class BundleManager
                 needUnloadList.Remove(bundle);
             }
 
-            //´Ó»º´æÖĞÈ¡²¢ÒıÓÃ+1
+            //ä»ç¼“å­˜ä¸­å–å¹¶å¼•ç”¨+1
             bundle.AddReference();
 
             return bundle;
         }
 
-        //´´½¨ab
+        //åˆ›å»ºab
         if (async)
         {
             bundle = new BundleAsync();
@@ -160,12 +160,12 @@ public class BundleManager
 
         bundleDic.Add(url, bundle);
 
-        // Í¨¹ımanifest¼ÓÔØÒÀÀµ
+        // é€šè¿‡manifeståŠ è½½ä¾èµ–
         string[] dependencies = assetBundleManifest.GetDirectDependencies(url);
         if (dependencies.Length > 0)
         {
             bundle.dependencies = new ABundle[dependencies.Length];
-            // µİ¹éÌí¼ÓÒÀÀµBundle
+            // é€’å½’æ·»åŠ ä¾èµ–Bundle
             for (int i = 0; i < dependencies.Length; i++)
             {
                 string dependencyUrl = dependencies[i];
@@ -182,7 +182,7 @@ public class BundleManager
     }
 
     /// <summary>
-    /// Ö¡Çı¶¯ËùÓĞÒì²½¼ÓÔØ°ü£¬Ö±µ½°ü¼ÓÔØÍê±Ï£¬´ÓasyncListÖĞÒÆ³ı
+    /// å¸§é©±åŠ¨æ‰€æœ‰å¼‚æ­¥åŠ è½½åŒ…ï¼Œç›´åˆ°åŒ…åŠ è½½å®Œæ¯•ï¼Œä»asyncListä¸­ç§»é™¤
     /// </summary>
     public void Update()
     {
@@ -191,7 +191,7 @@ public class BundleManager
             if (asyncList[i].Update())
             {
                 asyncList.RemoveAt(i);
-                // forÑ­»·ÖĞÒÆ³ıÔªËØ£¬×¢ÒâÏÂ±êĞŞ¸Ä
+                // forå¾ªç¯ä¸­ç§»é™¤å…ƒç´ ï¼Œæ³¨æ„ä¸‹æ ‡ä¿®æ”¹
                 i--;
             }
         }
@@ -202,7 +202,7 @@ public class BundleManager
         if (needUnloadList.Count == 0)
             return;
 
-        // Ğ¶ÔØĞèÒªĞ¶ÔØµÄAB°ü
+        // å¸è½½éœ€è¦å¸è½½çš„ABåŒ…
         while (needUnloadList.Count > 0)
         {
             ABundle bundle = needUnloadList.First.Value;
@@ -212,27 +212,39 @@ public class BundleManager
                 continue;
 
             bundleDic.Remove(bundle.url);
-            // Èç¹ûbundleÊÇÒì²½µÄ²¢ÇÒÃ»ÓĞ¼ÓÔØÍê±Ï
+            // å¦‚æœbundleæ˜¯å¼‚æ­¥çš„å¹¶ä¸”æ²¡æœ‰åŠ è½½å®Œæ¯•
             if (!bundle.done && bundle is BundleAsync)
             {
                 BundleAsync bundleAsync = bundle as BundleAsync;
-                // ´ÓÒì²½ÁĞ±íÖĞÒÆ³ı
+                // ä»å¼‚æ­¥åˆ—è¡¨ä¸­ç§»é™¤
                 if (asyncList.Contains(bundleAsync))
                     asyncList.Remove(bundleAsync);
             }
 
             bundle.UnLoad();
 
-            // ÒÀÀµ°üÒıÓÃ×Ô¼õ
+            // ä¾èµ–åŒ…å¼•ç”¨è‡ªå‡
             if (bundle.dependencies != null)
             {
                 for (int i = 0; i < bundle.dependencies.Length; i++)
                 {
                     ABundle temp = bundle.dependencies[i];
-                    // ÒÀÀµ°üÒıÓÃ×Ô¼õ
+                    // ä¾èµ–åŒ…å¼•ç”¨è‡ªå‡
                     UnLoad(temp);
                 }
             }
         }
+    }
+
+    // è·å–å½“å‰å·²ç»åŠ è½½çš„æ‰€æœ‰Bundle
+    public IEnumerable<ABundle> GetAllLoadedBundles()
+    {
+        return bundleDic.Values;
+    }
+
+    // è·å–æ­£åœ¨åŠ è½½çš„å¼‚æ­¥Bundleé˜Ÿåˆ—
+    public IEnumerable<ABundleAsync> GetAsyncBundles()
+    {
+        return asyncList;
     }
 }

@@ -42,8 +42,6 @@ public class QuestManager : MonoBehaviourManager<QuestManager>
         PlayerManager.Instance.OnRemoveItemEvent += OnRemoveItemHandler;
     }
 
-
-
     public override void Init()
     {
         base.Init();

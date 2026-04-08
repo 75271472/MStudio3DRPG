@@ -115,4 +115,13 @@ public class PlayerManager : MonoBehaviourManager<PlayerManager>, ICharacter
 
         PlayerManagerInit();
     }
+
+    public override void DestroyManager()
+    {
+        base.DestroyManager();
+        if (PlayerStateMachine != null)
+        {
+            PlayerStateMachine.OnDestroyStateMachine();
+        }
+    }
 }

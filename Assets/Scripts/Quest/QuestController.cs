@@ -9,14 +9,14 @@ public class RequireUIPayload
     public string questName;
     public string description;
     public List<Tuple<string, int, int>> questProgressList;
-    public List<Tuple<Sprite, int>> rewardItemInfoList;
+    public List<Tuple<string, int>> rewardItemInfoList;
 
     public RequireUIPayload(Quest quest)
     {
         this.questName = quest.questName;
         this.description = quest.description;
         this.questProgressList = new List<Tuple<string, int, int>>();
-        this.rewardItemInfoList = new List<Tuple<Sprite, int>>();
+        this.rewardItemInfoList = new List<Tuple<string, int>>();
 
         foreach (var questRequire in quest.questRequireList)
         {
@@ -30,8 +30,8 @@ public class RequireUIPayload
         {
             ItemInfo itemInfo = reward.GetItemInfo();
 
-            rewardItemInfoList.Add(new Tuple<Sprite, int>(
-                itemInfo.img, reward.quantity));
+            rewardItemInfoList.Add(new Tuple<string, int>(
+                itemInfo.imgPath, reward.quantity));
         }
     }
 }

@@ -11,32 +11,32 @@ public class Resource : AResource
     public override bool keepWaiting => !done;
 
     /// <summary>
-    /// ´ÓResourcesManagerÖĞ»ñÈ¡×ÊÔ´ËùÊôBundeÂ·¾¶
-    /// ¸ù¾İBundleÂ·¾¶´ÓBundleManagerÖĞ¼ÓÔØËùÊô°ü¼°ËùÒÀÀµ°ü
-    /// BundleManagerÖĞ»áµ÷ÓÃBundle.Load£¬½«°ü¼ÓÔØµ½ÄÚ´æ
+    /// ä»ResourcesManagerä¸­è·å–èµ„æºæ‰€å±Bundeè·¯å¾„
+    /// æ ¹æ®Bundleè·¯å¾„ä»BundleManagerä¸­åŠ è½½æ‰€å±åŒ…åŠæ‰€ä¾èµ–åŒ…
+    /// BundleManagerä¸­ä¼šè°ƒç”¨Bundle.Loadï¼Œå°†åŒ…åŠ è½½åˆ°å†…å­˜
     /// </summary>
     internal override void Load()
     {
-        // Èç¹û×ÊÔ´Â·¾¶Îª¿Õ
+        // å¦‚æœèµ„æºè·¯å¾„ä¸ºç©º
         if (string.IsNullOrEmpty(url))
             throw new ArgumentException($"{nameof(Resource)}.{nameof(Load)}() {nameof(url)} is null.");
 
-        // Èç¹ûbundleÎª¿Õ
+        // å¦‚æœbundleä¸ºç©º
         if (bundle != null)
             throw new Exception($"{nameof(Resource)}.{nameof(Load)}() {nameof(bundle)} not null.");
 
-        // ÎŞ·¨´ÓResourcesManagerµÄBundleDicÖĞÈ¡³öurl
+        // æ— æ³•ä»ResourcesManagerçš„BundleDicä¸­å–å‡ºurl
         string bundleUrl = null;
         if (!ResourcesManager.Instance.ResourceBunldeDic.TryGetValue(url, out bundleUrl))
             throw new Exception($"{nameof(Resource)}.{nameof(Load)}() {nameof(bundleUrl)} is null.");
 
-        // Ã¿ÓĞÒ»¸ö×ÊÔ´±»¼ÓÔØ£¬×ÊÔ´ËùÊô°üÒıÓÃ×ÔÔö
+        // æ¯æœ‰ä¸€ä¸ªèµ„æºè¢«åŠ è½½ï¼Œèµ„æºæ‰€å±åŒ…å¼•ç”¨è‡ªå¢
         bundle = BundleManager.Instance.Load(bundleUrl);
         LoadAsset();
     }
 
     /// <summary>
-    /// µ÷ÓÃ×ÊÔ´ËùÊôBundleµÄLoadAsset»ñÈ¡¾ßÌå×ÊÔ´
+    /// è°ƒç”¨èµ„æºæ‰€å±Bundleçš„LoadAssetè·å–å…·ä½“èµ„æº
     /// </summary>
     /// <exception cref="Exception"></exception>
     internal override void LoadAsset()
@@ -44,11 +44,11 @@ public class Resource : AResource
         if (bundle == null)
             throw new Exception($"{nameof(Resource)}.{nameof(LoadAsset)}() {nameof(bundle)} is null.");
 
-        //ÕıÔÚÒì²½¼ÓÔØµÄ×ÊÔ´Òª±ä³ÉÍ¬²½
+        //æ­£åœ¨å¼‚æ­¥åŠ è½½çš„èµ„æºè¦å˜æˆåŒæ­¥
         FreshAsyncAsset();
 
-        // ³¡¾°×ÊÔ´²»ÄÜµ÷ÓÃAssetBundle.LoadAsset£¬
-        // Ö±½ÓÊ¹ÓÃSceneManager.LoadScene("³¡¾°Ãû")¼ÓÔØ³¡¾°
+        // åœºæ™¯èµ„æºä¸èƒ½è°ƒç”¨AssetBundle.LoadAssetï¼Œ
+        // ç›´æ¥ä½¿ç”¨SceneManager.LoadScene("åœºæ™¯å")åŠ è½½åœºæ™¯
         if (!bundle.isStreamedSceneAssetBundle)
             asset = bundle.LoadAsset(url, typeof(Object));
 
@@ -73,7 +73,7 @@ public class Resource : AResource
             asset = null;
         }
 
-        // °üÒıÓÃ×Ô¼õ
+        // åŒ…å¼•ç”¨è‡ªå‡
         BundleManager.Instance.UnLoad(bundle);
 
         bundle = null;
@@ -91,12 +91,12 @@ public class Resource : AResource
             {
                 return tempAsset as T;
             }
-            // ×ÊÔ´¼ÓÔØ£ºasset = bundle.LoadAsset(url, typeof(Object));
-            // Unity¼ÓÔØÍ¼Æ¬Ê±£¬ËüµÄÖ÷×ÊÔ´ (Main Asset) ÊÇ Texture2D
-            // µ«Èç¹ûÔÚ±à¼­Æ÷Àï°ÑÕâÕÅÍ¼Æ¬ÉèÖÃ³ÉÁË Sprite (2D and UI)
-            // Unity »áÔÚÕâÕÅ Texture2D ÏÂÃæÉú³ÉÒ»¸ö¹ØÁªµÄ ×Ó×ÊÔ´£¬ÀàĞÍ²ÅÊÇ Sprite
-            // Òò´Ë¶ÔÓÚSpriteÀàĞÍ×ÊÔ´£¬Ê×ÏÈÅĞ¶ÏÊÇ·ñÎªSpriteÀàĞÍ£¬·ñÔò´ó¸ÅÂÊÊÇÖ÷×ÊÔ´µÄTexture2DÀàĞÍ
-            // ´ËÊ±ĞèÒª½øĞĞ×ÊÔ´Ğ¶ÔØ£¬²¢Ê¹ÓÃSpriteÖØĞÂ½øĞĞ¾ßÌå×ÊÔ´¼ÓÔØ
+            // èµ„æºåŠ è½½ï¼šasset = bundle.LoadAsset(url, typeof(Object));
+            // UnityåŠ è½½å›¾ç‰‡æ—¶ï¼Œå®ƒçš„ä¸»èµ„æº (Main Asset) æ˜¯ Texture2D
+            // ä½†å¦‚æœåœ¨ç¼–è¾‘å™¨é‡ŒæŠŠè¿™å¼ å›¾ç‰‡è®¾ç½®æˆäº† Sprite (2D and UI)
+            // Unity ä¼šåœ¨è¿™å¼  Texture2D ä¸‹é¢ç”Ÿæˆä¸€ä¸ªå…³è”çš„ å­èµ„æºï¼Œç±»å‹æ‰æ˜¯ Sprite
+            // å› æ­¤å¯¹äºSpriteç±»å‹èµ„æºï¼Œé¦–å…ˆåˆ¤æ–­æ˜¯å¦ä¸ºSpriteç±»å‹ï¼Œå¦åˆ™å¤§æ¦‚ç‡æ˜¯ä¸»èµ„æºçš„Texture2Dç±»å‹
+            // æ­¤æ—¶éœ€è¦è¿›è¡Œèµ„æºå¸è½½ï¼Œå¹¶ä½¿ç”¨Spriteé‡æ–°è¿›è¡Œå…·ä½“èµ„æºåŠ è½½
             else
             {
                 if (tempAsset && !(tempAsset is GameObject))

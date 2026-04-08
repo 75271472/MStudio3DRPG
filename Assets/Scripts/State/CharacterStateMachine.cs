@@ -109,4 +109,9 @@ public abstract class CharacterStateMachine : StateMachine
         agent.angularSpeed = moveSO.angularSpeed;
         agent.acceleration = moveSO.acceleration;
     }
+
+    public virtual void OnDestroyStateMachine()
+    {
+
+    }
 }

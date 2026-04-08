@@ -6,55 +6,55 @@ using Object = UnityEngine.Object;
 public abstract class AResource : CustomYieldInstruction, IResource
 {
     /// <summary>
-    /// Asset¶ÔÓ¦µÄUrl
+    /// Assetå¯¹åº”çš„Url
     /// </summary>
     public string url { get; set; }
 
     /// <summary>
-    /// ¼ÓÔØÍê³ÉµÄ×ÊÔ´
+    /// åŠ è½½å®Œæˆçš„èµ„æº
     /// </summary>
     public virtual Object asset { get; protected set; }
 
     /// <summary>
-    /// ÒıÓÃµÄBundle
+    /// å¼•ç”¨çš„Bundle
     /// </summary>
-    internal ABundle bundle { get; set; }
+    public ABundle bundle { get; set; }
 
     /// <summary>
-    /// ÒÀÀµ×ÊÔ´
+    /// ä¾èµ–èµ„æº
     /// </summary>
     internal AResource[] dependencies { get; set; }
 
     /// <summary>
-    /// ÒıÓÃ¼ÆÊıÆ÷
+    /// å¼•ç”¨è®¡æ•°å™¨
     /// </summary>
-    internal int reference { get; set; }
+    public int reference { get; set; }
 
-    //ÊÇ·ñ¼ÓÔØÍê³É
+    //æ˜¯å¦åŠ è½½å®Œæˆ
     internal bool done { get; set; }
 
     /// <summary>
-    /// ¼ÓÔØÍê³É»Øµ÷
+    /// åŠ è½½å®Œæˆå›è°ƒ
     /// </summary>
     internal Action<AResource> finishedCallback { get; set; }
 
     /// <summary>
-    /// ¼ÓÔØ×ÊÔ´
+    /// åŠ è½½èµ„æº
     /// </summary>
     internal abstract void Load();
 
     /// <summary>
-    /// Ğ¶ÔØ×ÊÔ´
+    /// å¸è½½èµ„æº
     /// </summary>
     internal abstract void UnLoad();
 
     /// <summary>
-    /// ¼ÓÔØ×ÊÔ´
+    /// åŠ è½½èµ„æº
     /// </summary>
     internal abstract void LoadAsset();
 
     /// <summary>
-    /// Ë¢ĞÂÒì²½×ÊÔ´£¨µ±Í¬²½×ÊÔ´µÄÒÀÀµ°üº¬Òì²½Ê±£¬ĞèÒªÁ¢¼´Ë¢ĞÂ·µ»Ø£©
+    /// åˆ·æ–°å¼‚æ­¥èµ„æºï¼ˆå½“åŒæ­¥èµ„æºçš„ä¾èµ–åŒ…å«å¼‚æ­¥æ—¶ï¼Œéœ€è¦ç«‹å³åˆ·æ–°è¿”å›ï¼‰
     /// </summary>
     internal void FreshAsyncAsset()
     {
@@ -77,7 +77,7 @@ public abstract class AResource : CustomYieldInstruction, IResource
     }
 
     /// <summary>
-    /// Ôö¼ÓÒıÓÃ
+    /// å¢åŠ å¼•ç”¨
     /// </summary>
     internal void AddReference()
     {
@@ -85,7 +85,7 @@ public abstract class AResource : CustomYieldInstruction, IResource
     }
 
     /// <summary>
-    /// ¼õÉÙÒıÓÃ
+    /// å‡å°‘å¼•ç”¨
     /// </summary>
     internal void ReduceReference()
     {
@@ -113,8 +113,8 @@ public abstract class AResource : CustomYieldInstruction, IResource
 
         if (!(obj is GameObject))
             return null;
-        // Instantiate ½«Ô¤ÖÆÌå¸´ÖÆÒ»·İ
-        // shaderµÈÆäËû×ÊÔ´²»ÊÇ¸³Öµ£¬Ê¹ÓÃÒıÓÃ£¬Ò»´¦¸Ä´¦´¦¸Ä
+        // Instantiate å°†é¢„åˆ¶ä½“å¤åˆ¶ä¸€ä»½
+        // shaderç­‰å…¶ä»–èµ„æºä¸æ˜¯èµ‹å€¼ï¼Œä½¿ç”¨å¼•ç”¨ï¼Œä¸€å¤„æ”¹å¤„å¤„æ”¹
         return Object.Instantiate(obj) as GameObject;
     }
 
